@@ -5,7 +5,16 @@ add_compile_options(-std=c++11)
 
 ###########################################################################
 ## Find catkin and any catkin packages
-FIND_PACKAGE(catkin REQUIRED COMPONENTS roscpp std_msgs genmsg messages archlib)
+FIND_PACKAGE(catkin REQUIRED COMPONENTS 
+    roscpp 
+    std_msgs 
+    genmsg 
+    messages 
+    archlib 
+    rospy
+    std_srvs
+    rostest
+    )
 
 ###########################################################################
 # Export catkin package.
@@ -30,3 +39,16 @@ SET(param_adapter-src "${CMAKE_CURRENT_SOURCE_DIR}/src/ParamAdapter.cpp")
 ADD_EXECUTABLE (param_adapter  "${CMAKE_CURRENT_SOURCE_DIR}/apps/param_adapter.cpp" ${${PROJECT_NAME}-src} ${param_adapter-src})
 TARGET_LINK_LIBRARIES (param_adapter ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_DEPENDENCIES(param_adapter services_generate_messages_cpp)
+
+###########################################################################
+# Test configuration
+if (CATKIN_ENABLE_TESTING)
+  # Find rostest if it's enabled
+  find_package(rostest REQUIRED)
+  
+  # Add ROS tests
+  add_rostest(test/param_adapter.test)  # Register rostest launch file
+
+  # Add Python tests
+  catkin_add_nosetests(test/param_adapter_test.py)  # Register Python test script
+endif()

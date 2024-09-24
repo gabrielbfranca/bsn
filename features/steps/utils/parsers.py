@@ -40,10 +40,11 @@ def get_rostopic_sensor_data(result):
 def get_rosnode_info(result):
     if result.returncode != 0:
         raise Exception(f"Error getting node info: {result.stderr.decode('utf-8')}")
-    
+
     # Decode the output from bytes to string
     output = result.stdout.decode('utf-8')
-    
+    lines = output.splitlines()
+    print(lines)
     # Initialize dictionaries for storing parsed data
     node_info = {
         "publications": [],
@@ -52,28 +53,62 @@ def get_rosnode_info(result):
         "connections": []
     }
 
-    # Parse publications
-    publications_section = re.search(r'Publications:\s+((?:\*.*\n)+)', output)
-    if publications_section:
-        publications = re.findall(r'\*\s([^\[]+)\s\[(.*?)\]', publications_section.group(1))
-        node_info["publications"] = [{"topic": pub[0].strip(), "type": pub[1].strip()} for pub in publications]
+    # Helper function to parse lines with topic and type
+    def parse_topic_lines(start_index):
+        topics = []
+        i = start_index
+        while i < len(lines) and lines[i].startswith(' * '):
+            line = lines[i].strip().split(' [')
+            topic = line[0][2:].strip()  # Remove leading '* '
+            type_ = line[1][:-1].strip() if len(line) > 1 else "unknown type"
+            topics.append({"topic": topic, "type": type_})
+            i += 1
+        return topics, i
 
-    # Parse subscriptions
-    subscriptions_section = re.search(r'Subscriptions:\s+((?:\*.*\n)+)', output)
-    if subscriptions_section:
-        subscriptions = re.findall(r'\*\s([^\[]+)\s\[(.*?)\]', subscriptions_section.group(1))
-        node_info["subscriptions"] = [{"topic": sub[0].strip(), "type": sub[1].strip()} for sub in subscriptions]
+    # Parse sections
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
 
-    # Parse services
-    services_section = re.search(r'Services:\s+((?:\*.*\n)+)', output)
-    if services_section:
-        services = re.findall(r'\*\s([^\s]+)', services_section.group(1))
-        node_info["services"] = services
+        if line.startswith('Publications:'):
+            # Parse publications starting from the next line
+            node_info["publications"], i = parse_topic_lines(i + 1)
 
-    # Parse connections
-    connections_section = re.search(r'Connections:\s+((?:\*.*\n)+)', output)
-    if connections_section:
-        connections = re.findall(r'\*\s+topic:\s+([^\n]+)\n\s+\*\s+to:\s+([^\n]+)\n\s+\*\s+direction:\s+([^\n]+)', connections_section.group(1))
-        node_info["connections"] = [{"topic": conn[0].strip(), "to": conn[1].strip(), "direction": conn[2].strip()} for conn in connections]
+        elif line.startswith('Subscriptions:'):
+            # Parse subscriptions starting from the next line
+            node_info["subscriptions"], i = parse_topic_lines(i + 1)
+
+        elif line.startswith('Services:'):
+            # Parse services starting from the next line
+            i += 1
+            while i < len(lines) and lines[i].startswith(' * '):
+                service = lines[i].strip()[2:]  # Remove leading '* '
+                node_info["services"].append(service)
+                i += 1
+
+        elif line.startswith('Connections:'):
+            # Parse connections starting from the next line
+            i += 1
+            while i < len(lines) and lines[i].startswith(' * topic:'):
+                connection = {}
+                connection["topic"] = lines[i].split(': ')[1].strip()
+                i += 1
+                connection["to"] = lines[i].split(': ')[1].strip()
+                i += 1
+                connection["direction"] = lines[i].split(': ')[1].strip()
+                i += 1
+                connection["transport"] = lines[i].split(': ')[1].strip()
+
+                # Move to the next line to check for the next connection
+                i += 1
+                # Add the connection to the list
+                node_info["connections"].append(connection)
+
+        else:
+            i += 1
 
     return node_info
+
+
+
+

@@ -1,7 +1,7 @@
 from behave import given, when, then
 import subprocess
 import time
-@given('the ROS environment is up')
+@given('the ROS environment is working')
 def step_ros_up(context):
     # Launch ROS or check if it is already running
     try:

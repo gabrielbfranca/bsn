@@ -6,7 +6,7 @@ def check_ros_is_running():
     result = subprocess.run(['rosnode', 'list'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     return result.returncode == 0
 
-@given('the ROS environment is up')
+@given('the /data_access node is on')
 def step_ros_up(context):
     assert check_ros_is_running(), "ROS is not running."
 

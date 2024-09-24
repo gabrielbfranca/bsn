@@ -1,7 +1,7 @@
 Feature: Ensure that /enactor receives and sends data from loggers, publishes data to /reli_engine, and ensures that reli engine receives data from enactor and publishes back to enactor
 
 	Scenario: Check if /enactor receives data from loggers
-		Given the ROS environment is up
+		Given the /enactor node is on
 		When I check if /loggers are publishing data
 		Then /enactor should receive data from /loggers
 

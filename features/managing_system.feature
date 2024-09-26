@@ -1,21 +1,21 @@
-Feature: Ensure that /enactor receives and sends data from loggers, publishes data to /reli_engine, and ensures that reli engine receives data from enactor and publishes back to enactor
+Feature: Ensure managing system and logger components are communicating correctly
 
-	Scenario: Check if /enactor receives data from loggers
-		Given the /enactor node is on
-		When I check if /loggers are publishing data
-		Then /enactor should receive data from /loggers
+	Scenario: Check if /enactor communicates with /reli_engine and /logger
+		Given the /enactor node is online
+		When I check if topics /strategy are inbound and /exception are outbound to /reli_engine
+		And topics /event are inbound and /log_adapt are outbound to /logger
+		Then /enactor connections should have the respective topics
 
-	Scenario: Check if /enactor publishes data to /reli_engine
-		Given the /enactor is receiving data from /loggers
-		When /enactor processes the data
-		Then /enactor should publish data to /reli_engine
+	Scenario: Check if /reli_engine communicates with /enactor
+		Given the /reli_engine node is online
+		When I check if topics /exception are inbound and /strategy are outbound to /enactor
+		Then /reli_engine connections should have the respective topics
 
-	Scenario: Check if /reli_engine receives data from /enactor
-		Given /enactor has published data to /reli_engine
-		When I check if /reli_engine is receiving data
-		Then /reli_engine should receive data from /enactor
-
-	Scenario: Check if /reli_engine publishes data back to /enactor
-		Given /reli_engine has received data from /enactor
-		When /reli_engine processes the data
-		Then /reli_engine should publish data back to /enactor
+	Scenario: Check if /logger communicates with /collector, /param_adapter, /enactor, /data_access, /injector
+		Given the /logger node is online
+		When I check if topics /log_adapt are inbound and /event are outbound to /enactor
+		And I check if topics / are inbound from /collector
+		And I check if topics /log_uncertainty are inbound from /injector
+		And I check if topics /reconfigure are outbound to /param_adapter
+		And i check if topics /persist are outbound to /Data_access
+		Then /logger node is connected appropriately

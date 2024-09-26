@@ -1,11 +1,7 @@
-Feature: Ensure that data_access receives data from /g4t1 and /logger nodes
+Feature: Ensure knowledge repository components are communicating correctly
 
-	Scenario: Ensure /data_access receives data from /g4t1 node
-		Given the /data_access node is on
-		When I check if /g4t1 is publishing data
-		Then /data_access should receive data from /g4t1
-
-	Scenario: Ensure /data_access receives data from /logger node
-		Given the /data_access node is on
-		When I check if /logger is publishing data
-		Then /data_access should receive data from /logger
+	Scenario: Check if /data_access communicates with /g4t1, /logger
+		Given the /data_access node is online
+		When I check if topics /persist are inbound from /logger
+		And I check if topics /TargetSystemData are inbound from /g4t1
+		Then /data_access node is connected appropriately

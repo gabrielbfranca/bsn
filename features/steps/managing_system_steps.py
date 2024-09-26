@@ -1,7 +1,20 @@
 from behave import given, when, then
 from utils.parsers import get_rosnode_info
 import subprocess
+import re
 
+def isNodeg3t1_n(target, topic_list):
+  topic_list = topic_list.split(',')
+  if target == 'g3t1_n':
+    pattern = r'/([^/]+)/'
+    matches = re.findall(pattern, topic_list[0])
+    print(topic_list)
+    node_names = [f'/g3t1_{i}' for i in range(1, 7)]
+    topics = [f'/{matches[0]}{name}' for name in node_names] + topic_list[1:]
+    return True, topics, node_names
+  else:
+    return False, topic_list, [target]
+      
 def isNodeCommunicating(node_info, target, topics, bound):
     return all(
         any(

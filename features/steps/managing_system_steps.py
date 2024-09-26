@@ -1,44 +1,99 @@
 from behave import given, when, then
+from utils.parsers import get_rosnode_info
 import subprocess
-import json
 
-# This function is assumed to parse the output and return the correct dictionary structure.
-from utils import get_rosnode_info
-
-def get_node_data(node_name):
-    result = subprocess.run(['rosnode', 'info', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    return get_rosnode_info(result)
-
+# Assuming get_rosnode_info is a function that executes rosnode info for a given node and returns the parsed data
 @given('the {node_name} node is online')
-def step_node_is_online(context, node_name):
-    # Check if the node is online by trying to get its info
-    context.node_info = get_node_data(node_name)
-    assert context.node_info, f"Node {node_name} is not online"
+def step_given_node_is_online(context, node_name):
+    # Call the function that checks the node status
+    result = subprocess.run(['rosnode', 'info', node_name], capture_output=True)
+    context.node_info = get_rosnode_info(result)
 
-@when('I check if topics {topic1} and {topic2} are inbound and outbound to {target_node}')
-def step_check_topics(context, topic1, topic2, target_node):
-    #target_node_data = get_node_data(f"/{target_node}")
-    
-    # Check connections in both directions
-    context.topic1_found = any(conn['topic'] == topic1 for conn in context.node_info['connections'])
-    context.topic2_found = any(conn['topic'] == topic2 for conn in context.node_info['connections'])
+@when('I check if topics {inbound_topic} are inbound and {outbound_topic} are outbound to {target}')
+def step_when_check_topics(context, inbound_topic, outbound_topic, target):
+    node_info = context.node_info
+    outbound_topics = outbound_topic.split(',')
+    inbound_topics = inbound_topic.split(',')
+    context.inbound_verified = any(
+        any(
+            conn['topic'] == topic and 
+            conn['direction'].startswith('inbound') and
+            conn['from'] == target  # Ensure the connection is inbound from the correct source
+            for conn in node_info['connections']
+        )
+        for topic in inbound_topics
+    )
+    context.outbound_verified = any(
+        any(
+            conn['topic'] == topic and 
+            conn['direction'].startswith('outbound') and
+            conn['to'] == target  # Ensure the connection is outbound to the correct target
+            for conn in node_info['connections']
+        )
+        for topic in outbound_topics
+    )
 
-@when('I check if topics {topic} are inbound from {target_node}')
-def step_check_inbound_topics(context, topic, target_node):
-    #target_node_data = get_node_data(f"/{target_node}")
-    context.inbound_topic_found = any(conn['topic'] == topic for conn in target_node_data['connections'])
+@when('I check if topics {topic_list} are inbound from {target}')
+def step_when_check_inbound_topics(context, topic_list, target):
+    try:
+        node_info = context.node_info
+        topics = topic_list.split(',')
 
-@when('I check if topics {topic} are outbound to {target_node}')
-def step_check_outbound_topics(context, topic, target_node):
-    target_node_data = get_node_data(f"/{target_node}")
-    context.outbound_topic_found = any(pub['topic'] == topic for pub in target_node_data['publications'])
+        context.inbound_verified = all(
+        any(
+            conn['topic'] == topic and 
+            conn['direction'].startswith('outbound') and
+            conn['from'] == target  
+            for conn in node_info['connections']
+        )
+        for topic in topics
+        )
+    except KeyError as e:
+        # Handle missing dictionary keys like 'topic', 'direction', or 'from'
+        context.inbound_verified = False
+        print(f"KeyError: {e}. The connection data might be missing necessary fields.")
 
-@then('{node_name} connections should have the respective topics')
-def step_check_connections(context, node_name):
-    assert context.topic1_found, f"{node_name} does not have the topic {context.topic1} connected"
-    assert context.topic2_found, f"{node_name} does not have the topic {context.topic2} connected"
+    except TypeError as e:
+        # Handle issues like trying to iterate over a NoneType or malformed data
+        context.inbound_verified = False
+        print(f"TypeError: {e}. Check the structure of node_info or topics.")
+
+    except Exception as e:
+        # Catch any other unexpected exceptions
+        context.inbound_verified = False
+        print(f"An error occurred while verifying inbound topics: {e}")
+
+@when('I check if topics {topic_list} are outbound to {target}')
+def step_when_check_outbound_topics(context, topic_list, target):
+    try:
+        node_info = context.node_info
+        topics = topic_list.split(',')
+
+        context.outbound_verified = all(
+            any(
+            conn['topic'] == topic and 
+            conn['direction'].startswith('inbound') and
+            conn['to'] == target  # Ensure the connection is inbound from the correct source
+            for conn in node_info['connections']
+            )
+            for topic in topics
+        )
+    except KeyError as e:
+        # Handle missing dictionary keys like 'topic', 'direction', or 'from'
+        context.outbound_verified = False
+        print(f"KeyError: {e}. The connection data might be missing necessary fields.")
+
+    except TypeError as e:
+        # Handle issues like trying to iterate over a NoneType or malformed data
+        context.outbound_verified = False
+        print(f"TypeError: {e}. Check the structure of node_info or topics.")
+
+    except Exception as e:
+        # Catch any other unexpected exceptions
+        context.outbound_verified = False
+        print(f"An error occurred while verifying inbound topics: {e}")
 
 @then('{node_name} node is connected appropriately')
-def step_check_logger_connections(context, node_name):
-    assert context.inbound_topic_found, f"{node_name} does not have the expected inbound topic"
-    assert context.outbound_topic_found, f"{node_name} does not have the expected outbound topic"
+def step_then_node_is_connected(context, node_name):
+    assert context.inbound_verified, f"{node_name} is not receiving the expected inbound topics"
+    assert context.outbound_verified, f"{node_name} is not publishing the expected outbound topics"

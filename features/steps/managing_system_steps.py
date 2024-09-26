@@ -2,6 +2,14 @@ from behave import given, when, then
 from utils.parsers import get_rosnode_info
 import subprocess
 
+def isNodeCommunicating(node_info, target, topics, bound):
+    return all(
+        any(
+            conn['topic'] == topic and conn['direction'].startswith(bound)
+            for conn in node_info['connections'] if conn['to'] == target
+        )
+        for topic in topics
+    )
 # Assuming get_rosnode_info is a function that executes rosnode info for a given node and returns the parsed data
 @given('the {node_name} node is online')
 def step_given_node_is_online(context, node_name):
@@ -14,24 +22,8 @@ def step_when_check_topics(context, inbound_topic, outbound_topic, target):
     node_info = context.node_info
     outbound_topics = outbound_topic.split(',')
     inbound_topics = inbound_topic.split(',')
-    context.inbound_verified = any(
-        any(
-            conn['topic'] == topic and 
-            conn['direction'].startswith('inbound') and
-            conn['from'] == target  # Ensure the connection is inbound from the correct source
-            for conn in node_info['connections']
-        )
-        for topic in inbound_topics
-    )
-    context.outbound_verified = any(
-        any(
-            conn['topic'] == topic and 
-            conn['direction'].startswith('outbound') and
-            conn['to'] == target  # Ensure the connection is outbound to the correct target
-            for conn in node_info['connections']
-        )
-        for topic in outbound_topics
-    )
+    context.inbound_verified = isNodeCommunicating(node_info, target, inbound_topics, 'inbound')
+    context.outbound_verified = isNodeCommunicating(node_info, target, outbound_topics, 'oubound')
 
 @when('I check if topics {topic_list} are inbound from {target}')
 def step_when_check_inbound_topics(context, topic_list, target):
@@ -39,15 +31,7 @@ def step_when_check_inbound_topics(context, topic_list, target):
         node_info = context.node_info
         topics = topic_list.split(',')
 
-        context.inbound_verified = all(
-        any(
-            conn['topic'] == topic and 
-            conn['direction'].startswith('outbound') and
-            conn['from'] == target  
-            for conn in node_info['connections']
-        )
-        for topic in topics
-        )
+        context.inbound_verified = isNodeCommunicating(node_info, target, outbound_topics, 'oubound')
     except KeyError as e:
         # Handle missing dictionary keys like 'topic', 'direction', or 'from'
         context.inbound_verified = False
@@ -69,15 +53,7 @@ def step_when_check_outbound_topics(context, topic_list, target):
         node_info = context.node_info
         topics = topic_list.split(',')
 
-        context.outbound_verified = all(
-            any(
-            conn['topic'] == topic and 
-            conn['direction'].startswith('inbound') and
-            conn['to'] == target  # Ensure the connection is inbound from the correct source
-            for conn in node_info['connections']
-            )
-            for topic in topics
-        )
+        context.outbound_verified = isNodeCommunicating(node_info, target, topics, 'outbound')
     except KeyError as e:
         # Handle missing dictionary keys like 'topic', 'direction', or 'from'
         context.outbound_verified = False

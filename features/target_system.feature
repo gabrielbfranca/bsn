@@ -15,6 +15,11 @@ Feature: Ensure that central hub receives data from body sensors and publishes t
 	Scenario: Check if /param_adapter node communicate with the g3t1_n, g4t1 and /logger nodes
 		Given the /param_adapter node is online
 		When I check if topics /reconfigure are inbound from /logger
-		And I check if topics /reconfigure_/g3t1_n are outbound to /g3t1_n
+		And I check if topics /reconfigure_/g3t1_1 are outbound to /g3t1_1
+		And I check if topics /reconfigure_/g3t1_2 are outbound to /g3t1_2
+		And I check if topics /reconfigure_/g3t1_3 are outbound to /g3t1_3
+		And I check if topics /reconfigure_/g3t1_4 are outbound to /g3t1_4
+		And I check if topics /reconfigure_/g3t1_5 are outbound to /g3t1_5
+		And I check if topics /reconfigure_/g3t1_6 are outbound to /g3t1_6
 		And I check if topics /reconfigure_/g4t1 are outbound to /g4t1
 		Then /param_adapter node is connected appropriately

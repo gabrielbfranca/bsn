@@ -44,7 +44,6 @@ def get_rosnode_info(result):
     # Decode the output from bytes to string
     output = result.stdout.decode('utf-8')
     lines = output.splitlines()
-    print(lines)
     # Initialize dictionaries for storing parsed data
     node_info = {
         "publications": [],
@@ -106,7 +105,6 @@ def get_rosnode_info(result):
 
         else:
             i += 1
-
     return node_info
 
 

@@ -44,6 +44,9 @@ def get_rosnode_info(result):
     # Decode the output from bytes to string
     output = result.stdout.decode('utf-8')
     lines = output.splitlines()
+    
+    if lines and lines[-1].startswith("cannot contact"):
+        return "unreachable"
     # Initialize dictionaries for storing parsed data
     node_info = {
         "publications": [],

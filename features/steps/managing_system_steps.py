@@ -35,6 +35,9 @@ def step_given_node_is_online(context, node_name):
     result = subprocess.run(['rosnode', 'info', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
     context.tested_node = node_name
     context.node_info = get_rosnode_info(result)
+    if context.node_info == "unreachable":
+        raise Exception(f"Node '{node_name}' is not online or accessible.")
+    
     context.outbound_results = []
     context.inbound_results = []
 

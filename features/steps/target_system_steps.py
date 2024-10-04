@@ -2,7 +2,6 @@ from behave import given, when, then
 import subprocess
 from utils.parsers import get_rostopic_sensor_data
 from utils.asserts import is_node_receiving_multiple_topics, is_node_publishing_to_topics
-
 @given('the ROS environment is on')
 def step_ros_up(context):
     # Launch ROS or check if it is already running

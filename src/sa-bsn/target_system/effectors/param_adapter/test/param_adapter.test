@@ -1,8 +1,0 @@
-<launch>
-  <test test-name="param_adapter_test" pkg="effector" type="param_adapter_test.py" time-limit="60">
-    <param name="test" value="true" />
-    <rosparam>
-      frequency: 100
-    </rosparam>
-  </test>
-</launch>

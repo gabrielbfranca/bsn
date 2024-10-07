@@ -3,7 +3,7 @@ import rospy
 import unittest
 import rostest
 
-class TestExample(unittest.TestCase):
+class TestPatientFlow(unittest.TestCase):
     def test_node_existence(self):
         # Check if the ROS node is active (or ROS master is running)
         rospy.init_node('test_patient_flow', anonymous=True)

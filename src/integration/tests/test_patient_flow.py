@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 import rospy
 import unittest
+import rostest
 
 class TestExample(unittest.TestCase):
     def test_node_existence(self):
         # Check if the ROS node is active (or ROS master is running)
-        rospy.init_node('test_node', anonymous=True)
+        rospy.init_node('test_patient_flow', anonymous=True)
         self.assertTrue(rospy.is_shutdown() is False, "ROS master is not running!")
 
 if __name__ == '__main__':
-    import rostest
-    rostest.rosrun('my_test_package', 'test_example', TestExample)
+    rostest.rosrun('integration', 'test_patient_flow', TestPatientFlow)
 
 """
 import rospy

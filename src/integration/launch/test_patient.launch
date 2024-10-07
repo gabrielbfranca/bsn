@@ -1,0 +1,24 @@
+<launch>
+    <include file="../sa-bsn/configurations/knowledge_repository/data_access.launch" /> <!-- KNOWLEDGE REPOSITORY -->
+
+    <include file="../sa-bsn/configurations/system_manager/strategy_manager.launch" /> <!-- MANAGER SYSTEM -->
+    <include file="../sa-bsn/configurations/system_manager/strategy_enactor.launch" /> <!-- MANAGER SYSTEM -->
+
+    <include file="../sa-bsn/configurations/logging_infrastructure/logger.launch" /> <!-- LOGGING INFRASTRUCTURE -->
+
+    <include file="../sa-bsn/configurations/target_system/probe.launch" />  <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/effector.launch" /> <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/g4t1.launch" /> <!-- APPLICATION -->
+
+    <include file="../sa-bsn/configurations/environment/patient.launch" /> <!-- APPLICATION -->
+
+    <include file="../sa-bsn/configurations/target_system/g3t1_1.launch" /> <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/g3t1_2.launch" /> <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/g3t1_3.launch" /> <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/g3t1_4.launch" /> <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/g3t1_5.launch" /> <!-- APPLICATION -->
+    <include file="../sa-bsn/configurations/target_system/g3t1_6.launch" /> <!-- APPLICATION -->
+
+    <!-- Launch the test node -->
+    <test test-name="test_patient_flow" pkg="integration" type="test_patient_flow.py" />
+</launch>

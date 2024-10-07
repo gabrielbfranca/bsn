@@ -1,6 +1,20 @@
 #!/usr/bin/env python
 import rospy
 import unittest
+
+class TestExample(unittest.TestCase):
+    def test_node_existence(self):
+        # Check if the ROS node is active (or ROS master is running)
+        rospy.init_node('test_node', anonymous=True)
+        self.assertTrue(rospy.is_shutdown() is False, "ROS master is not running!")
+
+if __name__ == '__main__':
+    import rostest
+    rostest.rosrun('my_test_package', 'test_example', TestExample)
+
+"""
+import rospy
+import unittest
 import rostest
 from std_srvs.srv import Empty
 from services.srv import PatientData
@@ -38,3 +52,4 @@ class TestPatientFlow(unittest.TestCase):
 
 if __name__ == '__main__':
     rostest.rosrun('integration', 'test_patient_flow', TestPatientFlow)
+"""

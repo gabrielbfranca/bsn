@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import rospy
 import unittest
-import rostest
 
 class TestPatientFlow(unittest.TestCase):
     def test_node_existence(self):
@@ -10,6 +9,7 @@ class TestPatientFlow(unittest.TestCase):
         self.assertTrue(rospy.is_shutdown() is False, "ROS master is not running!")
 
 if __name__ == '__main__':
+    import rostest
     rostest.rosrun('integration', 'test_patient_flow', TestPatientFlow)
 
 """

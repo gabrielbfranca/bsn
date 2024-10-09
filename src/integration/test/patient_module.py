@@ -1,13 +1,14 @@
 #!/usr/bin/env python
+
 import rospy
 import unittest
 from services.srv import PatientData
 
 
-class TestPatientModule(unittest.TestCase):
+class PatientModule(unittest.TestCase):
 
     def setUp(self):
-        rospy.init_node('test_patient_module', anonymous=True)
+        rospy.init_node('test_ros', anonymous=True)
         rospy.wait_for_service('/getPatientData')
 
     def test_get_patient_data(self):
@@ -26,4 +27,4 @@ class TestPatientModule(unittest.TestCase):
 
 if __name__ == '__main__':
     import rostest
-    rostest.rosrun('patient', 'test_patient_module', TestPatientModule)
+    rostest.rosrun('patient', 'test_patient_module', PatientModule)

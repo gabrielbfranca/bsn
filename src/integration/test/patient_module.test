@@ -1,0 +1,7 @@
+<launch>
+    <!-- Launch the PatientModule node -->
+    <node name="patient_module" pkg="patient" type="patient" output="screen" />
+
+    <!-- Run the test -->
+    <test test-name="patient_module" pkg="integration" type="patient_module.py" />
+</launch>

@@ -3,5 +3,5 @@
     <node name="patient_module" pkg="patient" type="patient" output="screen" />
 
     <!-- Run the test -->
-    <test test-name="patient_module" pkg="integration" type="patient_module.py" />
+    <test test-name="test_ros" pkg="integration" type="test_ros.py" />
 </launch>

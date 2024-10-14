@@ -18,9 +18,9 @@ class TestRos(unittest.TestCase):
             response = get_patient_data("heart_rate")
 
             # Ensure that the response is a float, or implement more specific checks based on your data
-            self.assertTrue(isinstance(response.data, float))
-            
-            rospy.loginfo("Received response: {}".format(response.data))
+            self.assertTrue(isinstance(response.data, float), 
+                            "AssertionError: Response was not of expected type float")
+            print("TEST PASSED")
 
         except rospy.ServiceException as e:
             self.fail("Service call failed: {}".format(e))

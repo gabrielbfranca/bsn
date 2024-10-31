@@ -1,5 +1,5 @@
 import re
-
+import subprocess
 def get_rostopic_sensor_data(result):
     if result.returncode != 0:
         raise Exception(f"Error getting topic data: {result.stderr.decode('utf-8')}")
@@ -110,78 +110,60 @@ def get_rosnode_info(result):
             i += 1
     return node_info
 
-def parse_target_system_data(output):
-    # Initialize parsed_data with empty lists for each expected key
-    parsed_data = {
-        'risks': {
-            'trm_risk': [],
-            'ecg_risk': [],
-            'oxi_risk': [],
-            'abps_risk': [],
-            'abpd_risk': [],
-            'glc_risk': [],
-            'patient_status': []
-        },
-        'data': {
-            'trm_data': [],
-            'ecg_data': [],
-            'oxi_data': [],
-            'abps_data': [],
-            'abpd_data': [],
-            'glc_data': [], 
-        }
-    }
+import subprocess
+import time
 
-    # Split output into lines and parse key-value pairs
-    lines = output.strip().splitlines()
-    for line in lines:
-        line = line.strip()  # Clean leading and trailing whitespace
-        if line.startswith("header:") or not line:  # Skip header lines and empty lines
-            continue
-        
-        if ':' in line:
-            try:
-                key, value = line.split(":", 1)
-                key = key.strip()
-                value = value.strip()
+import subprocess
+import time
 
-                # Check if the key is in the risks dictionary
-                if key in parsed_data['risks']:
-                    parsed_data['risks'][key].append(float(value))  # Append to risk list
-                elif key in parsed_data['data']:
-                    parsed_data['data'][key].append(float(value))  # Append to data list
-            except ValueError as e:
-                print(f"Warning: Could not convert '{value}' to float for line: {line}. Error: {e}")
-            except Exception as e:
-                print(f"Error parsing line: {line}. Exception: {e}")
+def parse_topic_data(topic, line_limit=10, timeout=1):
+    """
+    Capture CSV data from a ROS topic using Popen and organize it into a dictionary 
+    with headers dynamically set from the first line. Stops reading once line_limit 
+    is reached or after the timeout.
+    """
+    process = subprocess.Popen(
+        ['rostopic', 'echo', '-p', '--offset', topic],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        universal_newlines=True  # Use this instead of `text=True` for Python 3.6
+    )
 
-    return parsed_data
+    parsed_data = None
+    start_time = time.time()  # Start timer for timeout handling
 
-def parse_sensor_topic_data(output):
-    parsed_data = {'risks': [],
-                   'data': []}  # Initialize a list for risks
+    try:
+        for i, line in enumerate(iter(process.stdout.readline, '')):
+            line = line.strip()
 
-    # Split output into lines and parse key-value pairs
-    lines = output.strip().splitlines()
-    for line in lines:
-        line = line.strip()  # Clean leading and trailing whitespace
-        if not line:  # Skip empty lines
-            continue
-        
-        if ':' in line:
-            try:
-                key, value = line.split(":", 1)
-                key = key.strip()
-                value = value.strip()
+            # Capture headers from the first line
+            if i == 0:
+                headers = [header.replace("field.", "").strip() for header in line.split(",")]
+                parsed_data = {header: [] for header in headers}
+                continue
 
-                # Check if the key indicates a risk
-                if key == 'risk':
-                    parsed_data['risks'].append(float(value))  # Append to risks list
-                elif key == 'data':
-                    parsed_data['data'].append(float(value))
-            except ValueError as e:
-                print(f"Warning: {e} for line: {line}")
-            except Exception as e:
-                print(f"Error parsing line: {line}. Exception: {e}")
+            # Process data lines after the headers
+            if i > 0 and parsed_data is not None:
+                columns = line.split(',')
 
-    return parsed_data
+                # Only process if the column count matches header count
+                if len(columns) == len(headers):
+                    for header, value in zip(headers, columns):
+                        parsed_data[header].append(value.strip())
+
+                # Check line limit
+                if i >= line_limit:
+                    break
+
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        process.terminate()  # Ensure subprocess terminates
+        process.wait()       # Ensure cleanup
+
+    return parsed_data if parsed_data is not None else {}
+
+
+
+

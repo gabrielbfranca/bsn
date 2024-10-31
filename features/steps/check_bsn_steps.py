@@ -1,20 +1,15 @@
 from behave import given, when, then
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from utils.parsers import parse_target_system_data
-from utils.parsers import parse_sensor_topic_data
+from utils.parsers import parse_topic_data
 def capture_topic_data(topic, data_type):
-    result = subprocess.run(['rostopic', 'echo', '-n', '10', topic],
-                            stdout=subprocess.PIPE,
-                            stderr=subprocess.PIPE,
-                            timeout=40)
-    output = result.stdout.decode()
     if topic == '/TargetSystemData':
-        parsed_data = parse_target_system_data(output)
+        parsed_data = parse_topic_data(topic, line_limit=10)
         return topic, parsed_data, False, None
-    parsed_data = parse_sensor_topic_data(output)
+    parsed_data = parse_topic_data(topic, line_limit=10)
+    print(parsed_data)
     high_risk_detected = any(
-            value > 10 for value in parsed_data['risks']  # Check each value in each list
+            float(value) > 10 for value in parsed_data['risk']  # Check each value in each list
         )
     risk_key = f"{data_type}_risk"  # Append '_risk' to the data type 
     return topic, parsed_data, high_risk_detected, risk_key
@@ -27,7 +22,7 @@ def count_matching_elements(list1, list2):
 @given('the {topic_name} topic is online')
 def step_given_topic_is_online(context, topic_name):
     # Check if /TargetSystemData topic is active
-    result = subprocess.run(['rostopic', 'list', '/TargetSystemData'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    result = subprocess.run(['rostopic', 'list', topic_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     topic_list = result.stdout.decode('utf-8').splitlines()
     assert topic_name in topic_list, f"{topic_name} is not online"
 
@@ -69,7 +64,7 @@ def step_then_check_high_risk(context):
     assert any(context.sensor_data.values()), "No risk data found in sensor topics."
 
     for topic, data in context.sensor_data.items():
-        assert 'risks' in data and data['risks'], f"No risk data detected in topic {topic}."
+        assert 'risk' in data and data['risk'], f"No risk data detected in topic {topic}."
 
 @then('/TargetSystemData will receive the risks from sensors')
 def step_then_check_target_system_receives_risk(context):
@@ -82,15 +77,16 @@ def step_then_check_target_system_receives_risk(context):
     '/abpd_data': 'abpd_risk',
     '/glucosemeter_data': 'glc_risk',
     }
-    target_data_risks = context.target_system_data['risks']
+    print("TARGET SYSTEM DATA: ", context.target_system_data)
+    target_system_data = context.target_system_data
+    print(f'TARGET sytem data risks: {target_system_data}')
     sensor_data = context.sensor_data
-    print(f'TARGET sytem data risks: {target_data_risks}')
     print(f'SENSOR DATA: {sensor_data}')
     for key, value in risk_key_mapping.items():
     
         print("Target:", key, "Sensor:", value)
-        print(f"Target risks: {sensor_data[key]['risks']} Sensor risks: {target_data_risks[value]}")
-        elements = count_matching_elements(sensor_data[key]['risks'], target_data_risks[value])
+        print(f"Target risks: {sensor_data[key]['risk']} Sensor risks: {target_system_data[value]}")
+        elements = count_matching_elements(sensor_data[key]['risk'], target_system_data[value])
         assert elements > 0, f"Topics {key} and {value} do not have matching risk data."
 
     
@@ -110,9 +106,9 @@ def step_check_if_TargetSystem_process_data(context):
     '/abps_data': 'abps_data',
     '/abpd_data': 'abpd_data',
     '/glucosemeter_data': 'glc_data',
-    # Add more mappings as needed
     }
-    target_data= context.target_system_data['data']
+    print(f'TARGET sytem data: {context.target_system_data}')
+    target_data= context.target_system_data
     sensor_data = context.sensor_data
     print(f'TARGET sytem data risks: {target_data}')
     print(f'SENSOR DATA: {sensor_data}')

@@ -1,6 +1,6 @@
 Feature: Check for bsn features
 
-	Scenario: BSN-P05 If a sensor reports a health status risk, an emergency will be detected in body hub
+	Scenario: BSN-P11 If data has been sent by the sensor node, the BodyHub is able to process it as low, moderate or high risk vital sign data.
 		Given the /TargetSystemData topic is online
 		When I listen to topics:
 			| Topic Name         | Data Type             |
@@ -14,7 +14,7 @@ Feature: Check for bsn features
 		Then sensors will process the risks
 		And /TargetSystemData will receive the risks from sensors
 
-	Scenario: BSN-P11 If data has been sent by the sensor node, the BodyHub is able to process it
+	Scenario: BSN-P09 If data has been sent by the sensor node, the BodyHub is able to process it
 		Given the /TargetSystemData topic is online
 		When I listen to topics:
 			| Topic Name         | Data Type             |

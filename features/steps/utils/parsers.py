@@ -1,5 +1,19 @@
 import re
 import subprocess
+
+def format_entity(raw_string):
+    # Check if any words in the string start with an uppercase letter
+    words = raw_string.split()
+    if any(word[0].isupper() for word in words):
+        # If there are uppercase letters, format in camel case
+        formatted_string = ''.join(word.capitalize() for word in words)
+    else:
+        # Otherwise, format in snake case
+        formatted_string = '_'.join(word.lower() for word in words)
+    
+    # Add a forward slash at the beginning
+    return f'/{formatted_string}'
+    
 def get_rostopic_sensor_data(result):
     if result.returncode != 0:
         raise Exception(f"Error getting topic data: {result.stderr.decode('utf-8')}")

@@ -1,29 +1,29 @@
 Feature: Check for bsn features
 
 	Scenario: BSN-P11 If data has been sent by the sensor node, the BodyHub is able to process it as low, moderate or high risk vital sign data.
-		Given the /TargetSystemData topic is online
+		Given the Target System Data topic is online
 		When I listen to topics:
 			| Topic Name         |
-			| /thermometer_data  |
-			| /ecg_data          |
-			| /oximeter_data     |
-			| /abps_data         |
-			| /abpd_data         |
-			| /glucosemeter_data |
-			| /TargetSystemData  |
+			| thermometer data  |
+			| ecg data          |
+			| oximeter data     |
+			| abps data         |
+			| abpd data         |
+			| glucosemeter data |
+			| Target System Data  |
 		Then sensors will process the risks
-		And /TargetSystemData will receive the risks from sensors
+		And Target System Data will receive the risks from sensors
 
 	Scenario: BSN-P09 If data has been sent by the sensor node, the BodyHub is able to process it
-		Given the /TargetSystemData topic is online
+		Given the Target System Data topic is online
 		When I listen to topics:
-			| Topic Name         |
-			| /thermometer_data  |
-			| /ecg_data          |
-			| /oximeter_data     |
-			| /abps_data         |
-			| /abpd_data         |
-			| /glucosemeter_data |
-			| /TargetSystemData  |
+			| Topic Name        |
+			| thermometer data  |
+			| ecg data          |
+			| oximeter data     |
+			| abps data         |
+			| abpd data         |
+			| glucosemeter data |
+			| Target System Data|
 		Then sensors will process the data
-		And /TargetSystemData will receive the data from sensors
+		And Target System Data will receive the data from sensors

@@ -1,8 +1,8 @@
 from behave import given, when, then
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from utils.parsers import parse_topic_data
-def capture_topic_data(topic, data_type):
+from utils.parsers import parse_topic_data, format_entity
+def capture_topic_data(topic):
     if topic == '/TargetSystemData':
         parsed_data = parse_topic_data(topic, line_limit=10)
         return topic, parsed_data, False, None
@@ -11,7 +11,7 @@ def capture_topic_data(topic, data_type):
     high_risk_detected = any(
             float(value) > 10 for value in parsed_data['risk']  # Check each value in each list
         )
-    risk_key = f"{data_type}_risk"  # Append '_risk' to the data type 
+    risk_key = f"{topic}_risk"  # Append '_risk' to the data type 
     return topic, parsed_data, high_risk_detected, risk_key
 
 def count_matching_elements(list1, list2):
@@ -22,6 +22,7 @@ def count_matching_elements(list1, list2):
 @given('the {topic_name} topic is online')
 def step_given_topic_is_online(context, topic_name):
     # Check if /TargetSystemData topic is active
+    topic_name = format_entity(topic_name)
     result = subprocess.run(['rostopic', 'list', topic_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     topic_list = result.stdout.decode('utf-8').splitlines()
     assert topic_name in topic_list, f"{topic_name} is not online"
@@ -35,7 +36,7 @@ def step_when_check_sensors_publishing_data(context):
     # Run all topics in parallel
     with ThreadPoolExecutor() as executor:
         future_to_topic = {
-            executor.submit(capture_topic_data, row['Topic Name'], row['Data Type']): row
+            executor.submit(capture_topic_data, format_entity(row['Topic Name'])): row
             for row in context.table
         }
         for future in as_completed(future_to_topic):
@@ -66,7 +67,7 @@ def step_then_check_high_risk(context):
     for topic, data in context.sensor_data.items():
         assert 'risk' in data and data['risk'], f"No risk data detected in topic {topic}."
 
-@then('/TargetSystemData will receive the risks from sensors')
+@then('Target System Data will receive the risks from sensors')
 def step_then_check_target_system_receives_risk(context):
     #print(f'TargetSystemData is receiving the risk data from sensors: {context.target_system_data}')
     risk_key_mapping = {
@@ -97,7 +98,7 @@ def step_check_if_sensors_process_data(context):
 
     for topic, data in context.sensor_data.items():
         assert 'data' in data and data['data'], f"No risk data detected in topic {topic}."
-@then('/TargetSystemData will receive the data from sensors')
+@then('Target System Data will receive the data from sensors')
 def step_check_if_TargetSystem_process_data(context):
     data_key_mapping = {
     '/thermometer_data': 'trm_data',

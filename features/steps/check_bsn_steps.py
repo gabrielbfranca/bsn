@@ -2,6 +2,11 @@ from behave import given, when, then
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from utils.parsers import parse_topic_data, format_entity
+
+def node_is_active(node_name):
+    result = subprocess.run(['rosnode', 'list', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    node_list = result.stdout.decode('utf-8').splitlines()
+    return node_name in node_list
 def capture_topic_data(topic):
     if topic == '/TargetSystemData':
         parsed_data = parse_topic_data(topic, line_limit=10)
@@ -27,6 +32,10 @@ def step_given_topic_is_online(context, topic_name):
     topic_list = result.stdout.decode('utf-8').splitlines()
     assert topic_name in topic_list, f"{topic_name} is not online"
 
+@given('the node {node_name} is inactive')
+def step_given_node_is_inactive(context, node_name):
+    result = subprocess.run(['rosnode', 'kill', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    assert not node_is_active(node_name), f"{node_name} is active"
 
 @when('I listen to topics')
 def step_when_check_sensors_publishing_data(context):
@@ -91,6 +100,20 @@ def step_then_check_target_system_receives_risk(context):
         assert len(target_system_data['patient_status']) >= elements, "Patient status is not being updated in TargetSystemData."
         assert elements > 0, f"Topics {key} and {value} do not have matching risk data."
 
+@then("Target System Data should not receive any risk data or detect patient's status")
+def step_then_check_target_system_does_not_receive_risk(context):
+    # Print out the target system data for inspection
+    print("TARGET SYSTEM DATA (Expected to be empty): ", context.target_system_data)
+
+    target_system_data = context.target_system_data
+    
+    # Check that no risks are present in the target system data
+    for key in ['trm_risk', 'ecg_risk', 'oxi_risk', 'abps_risk', 'abpd_risk', 'glc_risk']:
+        # Assert that the target system data for risks is empty or doesn't contain any values
+        assert not target_system_data[key], f"Expected no data for {key}, but found: {target_system_data[key]}"
+
+    # Ensure that the patient status is not updated
+    assert not target_system_data['patient_status'], "Patient status is unexpectedly updated in TargetSystemData."
     
     
 @then('sensors will process the data')

@@ -1,6 +1,6 @@
 import re
 import subprocess
-
+import time
 def format_entity(raw_string):
     # Check if any words in the string start with an uppercase letter
     words = raw_string.split()
@@ -124,12 +124,6 @@ def get_rosnode_info(result):
             i += 1
     return node_info
 
-import subprocess
-import time
-
-import subprocess
-import time
-
 def parse_topic_data(topic, line_limit=10, timeout=1):
     """
     Capture CSV data from a ROS topic using Popen and organize it into a dictionary 
@@ -147,7 +141,14 @@ def parse_topic_data(topic, line_limit=10, timeout=1):
     start_time = time.time()  # Start timer for timeout handling
 
     try:
+        # Try to read the output with a timeout
         for i, line in enumerate(iter(process.stdout.readline, '')):
+            # Check for timeout
+            if time.time() - start_time > timeout:
+                print(f"Timeout reached after {timeout} seconds. Returning empty data.")
+                process.terminate()  # Terminate the process
+                return {}
+
             line = line.strip()
 
             # Capture headers from the first line
@@ -169,7 +170,6 @@ def parse_topic_data(topic, line_limit=10, timeout=1):
                 if i >= line_limit:
                     break
 
-
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
@@ -177,6 +177,8 @@ def parse_topic_data(topic, line_limit=10, timeout=1):
         process.wait()       # Ensure cleanup
 
     return parsed_data if parsed_data is not None else {}
+
+
 
 
 

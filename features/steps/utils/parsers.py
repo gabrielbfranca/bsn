@@ -167,7 +167,7 @@ def parse_topic_data(topic, line_limit=10):
 
             try:
                 # Try to read a line from the queue with a small timeout
-                line = output_queue.get(timeout=10)
+                line = output_queue.get(timeout=13)
                 print(f'{topic} returned: {line}')
                 # First line contains headers
                 if i == 0:
@@ -185,7 +185,9 @@ def parse_topic_data(topic, line_limit=10):
 
             except queue.Empty:
                 # No new data was found in the queue, continue until timeout
-                pass
+                process.terminate()  # Ensure subprocess terminates
+                process.wait() 
+                return parsed_data
 
     except Exception as e:
         print(f"An error occurred: {e}")

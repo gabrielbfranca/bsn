@@ -4,13 +4,14 @@ import time
 def before_scenario(context, scenario):
     if 'happy_path' in scenario.tags:
         # This block will run for happy path scenarios only
-        if hasattr(context, 'bsn_launch'):
+        if hasattr(context, 'sad_launch'):
             context.sad_launch.terminate()
             context.sad_launch.wait()
         # Launch the system (e.g., 'bsn.launch')
-        context.bsn_launch = subprocess.Popen(
-            ['roslaunch', 'bsn.launch'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
-        )
+        if not hasattr(context, 'bsn_launch'):
+            context.bsn_launch = subprocess.Popen(
+                ['roslaunch', 'bsn.launch'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
+            )
         time.sleep(30)  # Ensure the system is fully started before proceeding with the test
 
     elif 'inactive_central_hub' in scenario.tags:

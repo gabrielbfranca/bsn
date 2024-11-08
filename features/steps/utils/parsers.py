@@ -194,7 +194,8 @@ def parse_topic_data(topic, line_limit=10):
     finally:
         process.terminate()  # Ensure subprocess terminates
         process.wait()       # Ensure cleanup
-
+    if parsed_data is not None:
+        parsed_data = {key: tuple(values) for key, values in parsed_data.items()}
     return parsed_data if parsed_data is not None else {}
 
 

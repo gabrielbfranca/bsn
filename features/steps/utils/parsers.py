@@ -124,51 +124,68 @@ def get_rosnode_info(result):
             i += 1
     return node_info
 
-def parse_topic_data(topic, line_limit=10, timeout=1):
+
+
+import threading
+import queue
+
+
+def enqueue_output(out, output_queue):
+    """
+    Continuously reads lines from the process output and puts them into a queue.
+    This function is intended to be run in a separate thread.
+    """
+    for line in iter(out.readline, ''):
+        output_queue.put(line.strip())
+    out.close()
+
+def parse_topic_data(topic, line_limit=10):
     """
     Capture CSV data from a ROS topic using Popen and organize it into a dictionary 
     with headers dynamically set from the first line. Stops reading once line_limit 
-    is reached or after the timeout.
+    is reached or after the timeout if no data is received.
     """
     process = subprocess.Popen(
         ['rostopic', 'echo', '-p', '--offset', topic],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
-        universal_newlines=True  # Use this instead of `text=True` for Python 3.6
+        universal_newlines=True  # For Python 3.6 compatibility
     )
 
+    output_queue = queue.Queue()
+    thread = threading.Thread(target=enqueue_output, args=(process.stdout, output_queue))
+    thread.daemon = True
+    thread.start()
+
     parsed_data = None
-    start_time = time.time()  # Start timer for timeout handling
+    headers = None
+    start_time = time.time()
 
     try:
-        # Try to read the output with a timeout
-        for i, line in enumerate(iter(process.stdout.readline, '')):
-            # Check for timeout
-            if time.time() - start_time > timeout:
-                print(f"Timeout reached after {timeout} seconds. Returning empty data.")
-                process.terminate()  # Terminate the process
-                return {}
+        for i in range(line_limit + 1):
+            # Check if we've exceeded the timeout
 
-            line = line.strip()
+            try:
+                # Try to read a line from the queue with a small timeout
+                line = output_queue.get(timeout=10)
+                print(f'{topic} returned: {line}')
+                # First line contains headers
+                if i == 0:
+                    headers = [header.replace("field.", "").strip() for header in line.split(",")]
+                    parsed_data = {header: [] for header in headers}
+                    print("Headers found:", headers)
+                    continue
 
-            # Capture headers from the first line
-            if i == 0:
-                headers = [header.replace("field.", "").strip() for header in line.split(",")]
-                parsed_data = {header: [] for header in headers}
-                continue
+                # Process data lines if headers are set
+                if headers and parsed_data is not None:
+                    columns = line.split(",")
+                    if len(columns) == len(headers):
+                        for header, value in zip(headers, columns):
+                            parsed_data[header].append(value.strip())
 
-            # Process data lines after the headers
-            if i > 0 and parsed_data is not None:
-                columns = line.split(',')
-
-                # Only process if the column count matches header count
-                if len(columns) == len(headers):
-                    for header, value in zip(headers, columns):
-                        parsed_data[header].append(value.strip())
-
-                # Check line limit
-                if i >= line_limit:
-                    break
+            except queue.Empty:
+                # No new data was found in the queue, continue until timeout
+                pass
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -177,6 +194,10 @@ def parse_topic_data(topic, line_limit=10, timeout=1):
         process.wait()       # Ensure cleanup
 
     return parsed_data if parsed_data is not None else {}
+
+
+
+
 
 
 

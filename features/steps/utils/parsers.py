@@ -1,6 +1,8 @@
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import subprocess
 import time
+
 def format_entity(raw_string):
     # Check if any words in the string start with an uppercase letter
     words = raw_string.split()
@@ -198,6 +200,36 @@ def parse_topic_data(topic, line_limit=10):
         parsed_data = {key: tuple(values) for key, values in parsed_data.items()}
     return parsed_data if parsed_data is not None else {}
 
+
+
+def process_real_time_topics(context, capture_topic_data):
+    """
+    Process topics concurrently and organize results into context.
+
+    Args:
+        context: An object containing the table and attributes to store results.
+        capture_topic_data: A function to capture and process topic data.
+        format_entity: A function to format topic names.
+    """
+    with ThreadPoolExecutor() as executor:
+        # Map futures to rows for tracking
+        future_to_topic = {
+            executor.submit(capture_topic_data, format_entity(row['Topic Name'])): row
+            for row in context.table
+        }
+
+        for future in as_completed(future_to_topic):
+            row = future_to_topic[future]
+            try:
+                topic, parsed_data, is_high_risk, risk_key = future.result()
+
+                if topic == '/TargetSystemData':
+                    context.target_system_data = parsed_data
+                else:
+                    context.sensor_data[topic] = parsed_data
+
+            except Exception as e:
+                print(f"Error processing topic for row {row}: {e}")
 
 
 

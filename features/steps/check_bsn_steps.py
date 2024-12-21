@@ -1,7 +1,7 @@
 from behave import given, when, then
 import subprocess
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from utils.parsers import parse_topic_data, format_entity
+
+from utils.parsers import parse_topic_data, format_entity, process_real_time_topics
 
 def node_is_active(node_name):
     result = subprocess.run(['rosnode', 'list', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -71,26 +71,8 @@ def step_when_check_sensors_publishing_data(context):
     context.sensor_data = {}
     context.found_high_risk = []
     context.target_system_data = {}
-    # Run all topics in parallel
-    with ThreadPoolExecutor() as executor:
-        future_to_topic = {
-            executor.submit(capture_topic_data, format_entity(row['Topic Name'])): row
-            for row in context.table
-        }
-        for future in as_completed(future_to_topic):
-            row = future_to_topic[future]
-            topic, parsed_data, is_high_risk, risk_key = future.result()
-            #print(f"Topic: {topic}, \nData: {parsed_data}, \nRisk: {is_high_risk},\n Risk Key: {risk_key}")
-            if topic == '/TargetSystemData':
-                context.target_system_data = parsed_data
-            else:
-                context.sensor_data[topic] = parsed_data
-            
 
-    # Ensure at least one high risk was detected
-    #assert context.found_high_risk, "No high risk detected in sensor topics."
-
-
+    process_real_time_topics(context, capture_topic_data)
 
                 
 @then('sensors will process the risks')

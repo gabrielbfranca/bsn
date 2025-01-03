@@ -5,6 +5,9 @@ add_compile_options(-std=c++11)
 
 ## Find catkin and any catkin packages
 FIND_PACKAGE(catkin REQUIRED COMPONENTS roscpp std_msgs genmsg messages archlib lepton libbsn)
+find_package(GTest REQUIRED)
+include_directories(${catkin_INCLUDE_DIRS})
+
 
 # Export catkin package.
 CATKIN_PACKAGE(
@@ -19,6 +22,25 @@ INCLUDE_DIRECTORIES(include ${catkin_INCLUDE_DIRS})
 
 # Set include directory.
 INCLUDE_DIRECTORIES(include)
+# Include test directory
+include_directories(${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+
+# Add test executable
+catkin_add_gtest(${PROJECT_NAME}_test
+    test/test_CentralHub.cpp
+    test/test_Sensor.cpp
+)
+# Link libraries to the test executable
+if (TARGET ${PROJECT_NAME}_test)
+    target_link_libraries(${PROJECT_NAME}_test
+        ${GTEST_LIBRARIES}
+        ${catkin_LIBRARIES}
+        archlib
+        archlib 
+        lepton
+        libbsn
+    )
+endif()
 
 ###########################################################################
 # Build this project.

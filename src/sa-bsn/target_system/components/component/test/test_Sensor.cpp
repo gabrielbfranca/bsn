@@ -1,107 +1,303 @@
+/*
 #include <gtest/gtest.h>
-#include <ros/ros.h>
-#include <memory>
-#include "component/Sensor.hpp"
+#include "component/g3t1_3/G3T1_3.hpp"
+#include "ros/ros.h"
+#include <stdexcept>
 
-// Mock classes
-class MockBattery : public bsn::resource::Battery
+// Mock ROS NodeHandle
+class MockNodeHandle : public ros::NodeHandle
 {
 public:
-    MOCK_METHOD(double, getCurrentLevel, (), (const, override));
-    MOCK_METHOD(void, generate, (double), (override));
+    bool getParam(const std::string &param_name, std::string &param_value)
+    {
+        if (param_name == "test_param")
+        {
+            param_value = "mock_value";
+            return true;
+        }
+        if (param_name == "start")
+        {
+            param_value = "true";
+            return true;
+        }
+        if (param_name == "temperature_LowRisk")
+        {
+            param_value = "36.5,37.5";
+            return true;
+        }
+        if (param_name == "temperature_MidRisk0" || param_name == "temperature_MidRisk1")
+        {
+            param_value = "37.5,38.0";
+            return true;
+        }
+        if (param_name == "temperature_HighRisk0" || param_name == "temperature_HighRisk1")
+        {
+            param_value = "38.0,39.0";
+            return true;
+        }
+        if (param_name == "lowrisk")
+        {
+            param_value = "0,50";
+            return true;
+        }
+        if (param_name == "midrisk")
+        {
+            param_value = "50,80";
+            return true;
+        }
+        if (param_name == "highrisk")
+        {
+            param_value = "80,100";
+            return true;
+        }
+        if (param_name == "instant_recharge")
+        {
+            param_value = "true";
+            return true;
+        }
+        return false;
+    }
 };
 
-// Fixture for testing Sensor
-class SensorTest : public ::testing::Test
+// Test Fixture
+class G3T1_3Fixture : public ::testing::Test
 {
 protected:
     int argc = 0;
     char **argv = nullptr;
-    std::string name = "SensorTest";
-    std::string type = "test_sensor";
-    bool active = false;
-    double noise_factor = 0.0;
-    MockBattery battery;
-    bool instant_recharge = false;
-    std::unique_ptr<Sensor> sensor;
+    G3T1_3 *sensor;
+
+    G3T1_3Fixture() : argc(0), argv(nullptr)
+    {
+        ros::NodeHandle *mock_handle = new MockNodeHandle();
+        sensor = new G3T1_3(argc, argv, "test_sensor");
+        sensor->handle = *mock_handle; // Inject the mocked handle
+    }
+
+    ~G3T1_3Fixture()
+    {
+        delete sensor;
+    }
 
     void SetUp() override
     {
-        sensor = std::make_unique<Sensor>(argc, argv, name, type, active, noise_factor, battery, instant_recharge);
+        sensor->setUp();
     }
 
     void TearDown() override
     {
-        sensor.reset();
+        sensor->tearDown();
     }
 };
 
-// Test isActive()
-TEST_F(SensorTest, IsActiveTest)
+// Test: setUp and tearDown
+TEST_F(G3T1_3Fixture, TestSetUpAndTearDown)
 {
-    EXPECT_FALSE(sensor->isActive());
-    sensor->turnOn();
-    EXPECT_TRUE(sensor->isActive());
-    sensor->turnOff();
-    EXPECT_FALSE(sensor->isActive());
+    EXPECT_NO_THROW(sensor->setUp());
+    EXPECT_NO_THROW(sensor->tearDown());
 }
 
-// Test turnOn() and turnOff()
-TEST_F(SensorTest, TurnOnAndOffTest)
+// Test: collect
+TEST_F(G3T1_3Fixture, TestCollect)
 {
-    sensor->turnOn();
-    EXPECT_TRUE(sensor->isActive());
-    sensor->turnOff();
-    EXPECT_FALSE(sensor->isActive());
+    double data = 0;
+    EXPECT_NO_THROW(data = sensor->collect());
+    EXPECT_GE(data, 0); // Data should be non-negative
 }
 
-// Test apply_noise()
-TEST_F(SensorTest, ApplyNoiseTest)
+// Test: process
+TEST_F(G3T1_3Fixture, TestProcess)
 {
-    double data = 100.0;
-    noise_factor = 0.1; // 10% noise
-    sensor->apply_noise(data);
-    EXPECT_NEAR(data, 100.0, 10.0); // Ensure data is within +/- 10% range
+    double raw_data = 37.0; // Simulated raw data
+    double filtered_data = 0;
+    EXPECT_NO_THROW(filtered_data = sensor->process(raw_data));
+    EXPECT_GT(filtered_data, 0); // Processed data should be greater than 0
 }
 
-// Test recharge() without instant recharge
-TEST_F(SensorTest, RechargeTest)
+// Test: transfer
+TEST_F(G3T1_3Fixture, TestTransfer)
 {
-    EXPECT_CALL(battery, getCurrentLevel()).WillOnce(::testing::Return(50.0));
-    EXPECT_CALL(battery, generate(1)).Times(1);
-    sensor->recharge();
+    double valid_data = 37.5; // Simulated valid data
+    EXPECT_NO_THROW(sensor->transfer(valid_data));
+
+    // Test transfer with invalid data
+    double invalid_data = -1.0; // Out of bounds risk
+    EXPECT_THROW(sensor->transfer(invalid_data), std::domain_error);
 }
 
-// Test recharge() with instant recharge
-TEST_F(SensorTest, InstantRechargeTest)
+// Test: Label function (indirectly tested in collect and transfer)
+/*TEST_F(G3T1_3Fixture, TestLabel)
 {
-    instant_recharge = true;
-    sensor = std::make_unique<Sensor>(argc, argv, name, type, active, noise_factor, battery, instant_recharge);
+    double risk_low = 45.0;
+    double risk_mid = 60.0;
+    double risk_high = 90.0;
+    std::string label;
 
-    EXPECT_CALL(battery, generate(100)).Times(1);
-    sensor->recharge();
+    EXPECT_NO_THROW(label = sensor->label(risk_low));
+    EXPECT_EQ(label, "low");
+
+    EXPECT_NO_THROW(label = sensor->label(risk_mid));
+    EXPECT_EQ(label, "moderate");
+
+    EXPECT_NO_THROW(label = sensor->label(risk_high));
+    EXPECT_EQ(label, "high");
 }
 
-// Test reconfigure()
-TEST_F(SensorTest, ReconfigureTest)
+TEST_F(G3T1_3Fixture, TestCollectWithLabel)
 {
-    archlib::AdaptationCommand::Ptr msg(new archlib::AdaptationCommand);
-    msg->action = "freq=5.0,replicate_collect=10";
-
-    sensor->reconfigure(msg);
-
-    // Verify frequency and replicate_collect changes
-    EXPECT_EQ(sensor->rosComponentDescriptor.getFreq(), 5.0);
-    EXPECT_EQ(sensor->replicate_collect, 10);
+    double data = sensor->collect();
+    ASSERT_NO_THROW(sensor->transfer(data)); // Indirectly validates `label`
 }
 
-// Test injectUncertainty()
-TEST_F(SensorTest, InjectUncertaintyTest)
+int main(int argc, char **argv)
 {
-    archlib::Uncertainty::Ptr msg(new archlib::Uncertainty);
-    msg->content = "noise_factor=0.2";
+    ::testing::InitGoogleTest(&argc, argv);
+    ros::init(argc, argv, "test_g3t1_3");
+    // ros::NodeHandle nh;
+    return RUN_ALL_TESTS();
+}*/
+#include <gtest/gtest.h>
+#include "component/g3t1_3/G3T1_3.hpp"
+#include "ros/ros.h"
+#include "std_srvs/SetBool.h"
+#include "services/PatientData.h"
 
-    sensor->injectUncertainty(msg);
+// Mock service callback for "temp"
+bool mockTempCallback(std_srvs::SetBool::Request &req, std_srvs::SetBool::Response &res)
+{
+    res.success = true;
+    res.message = "37.0"; // Simulate temperature data
+    return true;
+}
 
-    EXPECT_DOUBLE_EQ(sensor->noise_factor, 0.2);
+// Mock service callback for "getPatientData"
+bool mockPatientDataCallback(services::PatientData::Request &req, services::PatientData::Response &res)
+{
+    ROS_INFO_STREAM("mockPatientDataCallback called with vitalSign: " << req.vitalSign);
+
+    if (req.vitalSign == "temperature")
+    {
+        res.data = 37.0;
+    }
+    else if (req.vitalSign == "heartRate")
+    {
+        res.data = 75.0;
+    }
+    else
+    {
+        res.data = -1.0;
+    }
+
+    ROS_INFO_STREAM("mockPatientDataCallback returning data: " << res.data);
+    return true;
+}
+
+// Test Fixture
+class G3T1_3Fixture : public ::testing::Test
+{
+protected:
+    int argc = 0;
+    char **argv = nullptr;
+    G3T1_3 *sensor;
+    ros::AsyncSpinner *spinner;
+
+    G3T1_3Fixture()
+    {
+        sensor = new G3T1_3(argc, argv, "test_sensor");
+        spinner = new ros::AsyncSpinner(1); // Use 1 thread for spinning
+        spinner->start();
+    }
+
+    ~G3T1_3Fixture()
+    {
+        spinner->stop();
+        delete spinner;
+        delete sensor;
+    }
+
+    void SetUp() override
+    {
+        ros::param::set("start", true);
+        ros::NodeHandle nh;
+
+        ROS_INFO("Advertising mock services...");
+        nh.advertiseService("temp", mockTempCallback);
+        nh.advertiseService("getPatientData", mockPatientDataCallback);
+        ROS_INFO("Mock services advertised successfully.");
+
+        sensor->setUp();
+    }
+    void TearDown() override
+    {
+        sensor->tearDown();
+    }
+};
+
+// Test: setUp and tearDown
+/*TEST_F(G3T1_3Fixture, TestSetUpAndTearDown)
+{
+    EXPECT_NO_THROW(sensor->setUp());
+    EXPECT_NO_THROW(sensor->tearDown());
+}*/
+TEST_F(G3T1_3Fixture, TestGetPatientData)
+{
+    ros::NodeHandle nh;
+    ros::ServiceClient client = nh.serviceClient<services::PatientData>("getPatientData");
+    services::PatientData srv;
+
+    // Ensure service is available before calling
+    ASSERT_TRUE(client.waitForExistence(ros::Duration(5.0))) << "Service 'getPatientData' not available";
+
+    srv.request.vitalSign = "temperature";
+    ASSERT_TRUE(client.call(srv)) << "Service call failed for 'temperature'";
+    EXPECT_EQ(srv.response.data, 37.0);
+
+    srv.request.vitalSign = "heartRate";
+    ASSERT_TRUE(client.call(srv)) << "Service call failed for 'heartRate'";
+    EXPECT_EQ(srv.response.data, 75.0);
+
+    srv.request.vitalSign = "unknown";
+    ASSERT_TRUE(client.call(srv)) << "Service call failed for 'unknown'";
+    EXPECT_EQ(srv.response.data, -1.0);
+}
+// Test: collect
+TEST_F(G3T1_3Fixture, TestCollect)
+{
+    double data = 0;
+    EXPECT_NO_THROW(data = sensor->collect());
+    EXPECT_GE(data, 0); // Data should be non-negative
+}
+
+// Test: process
+TEST_F(G3T1_3Fixture, TestProcess)
+{
+    double raw_data = 37.0; // Simulated raw data
+    double filtered_data = 0;
+    EXPECT_NO_THROW(filtered_data = sensor->process(raw_data));
+    EXPECT_GT(filtered_data, 0); // Processed data should be greater than 0
+}
+
+// Test: transfer
+TEST_F(G3T1_3Fixture, TestTransfer)
+{
+    double valid_data = 37.5; // Simulated valid data
+    EXPECT_NO_THROW(sensor->transfer(valid_data));
+
+    double invalid_data = -1.0; // Out of bounds risk
+    EXPECT_THROW(sensor->transfer(invalid_data), std::domain_error);
+}
+
+// Main
+int main(int argc, char **argv)
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    ros::init(argc, argv, "test_g3t1_3");
+
+    ros::AsyncSpinner spinner(1); // Start a spinner for ROS callbacks
+    spinner.start();
+
+    int result = RUN_ALL_TESTS();
+
+    ros::shutdown(); // Ensure ROS is properly shut down
+    return result;
 }

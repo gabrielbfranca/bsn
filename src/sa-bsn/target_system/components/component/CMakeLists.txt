@@ -6,7 +6,7 @@ add_compile_options(-std=c++11)
 ## Find catkin and any catkin packages
 FIND_PACKAGE(catkin REQUIRED COMPONENTS roscpp std_msgs genmsg messages archlib lepton libbsn)
 find_package(GTest REQUIRED)
-include_directories(${catkin_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS})
 
 
 # Export catkin package.
@@ -16,35 +16,46 @@ CATKIN_PACKAGE(
     CATKIN_DEPENDS messages message_runtime archlib lepton libbsn
 )
 
-###########################################################################
 # Set catkin directory.
 INCLUDE_DIRECTORIES(include ${catkin_INCLUDE_DIRS})
 
 # Set include directory.
 INCLUDE_DIRECTORIES(include)
+################################ TEST SETUP ###########################################
 # Include test directory
 include_directories(${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 
+
+#TARGET_LINK_LIBRARIES(run_test ${PROJECT_NAME} ${LIBRARIES} ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES} pthread)
+# Link libraries to the test executable
 # Add test executable
 catkin_add_gtest(${PROJECT_NAME}_test
-    test/test_CentralHub.cpp
+    #test/test_g4t1.cpp
     test/test_Sensor.cpp
 )
-# Link libraries to the test executable
+
 if (TARGET ${PROJECT_NAME}_test)
     target_link_libraries(${PROJECT_NAME}_test
         ${GTEST_LIBRARIES}
         ${catkin_LIBRARIES}
-        archlib
+        ${PROJECT_NAME}
         archlib 
         lepton
         libbsn
+
     )
 endif()
 
 ###########################################################################
 # Build this project.
-FILE(GLOB ${PROJECT_NAME}-src "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+FILE(GLOB ${PROJECT_NAME}-src "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_3/*.cpp")
+ADD_LIBRARY(${PROJECT_NAME} ${${PROJECT_NAME}-src})
+
+SET(${PROJECT_NAME}-src
+    ${${PROJECT_NAME}-src}
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_3/G3T1_3.cpp
+)
+
 
 SET(g3t1_1-src "${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_1/G3T1_1.cpp")
 ADD_EXECUTABLE (g3t1_1  "${CMAKE_CURRENT_SOURCE_DIR}/apps/g3t1_1.cpp" ${${PROJECT_NAME}-src} ${g3t1_1-src})

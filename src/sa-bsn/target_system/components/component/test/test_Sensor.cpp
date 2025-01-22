@@ -155,7 +155,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "test_g3t1_3");
     // ros::NodeHandle nh;
     return RUN_ALL_TESTS();
-}*/
+}
 #include <gtest/gtest.h>
 #include "component/g3t1_3/G3T1_3.hpp"
 #include "ros/ros.h"
@@ -234,11 +234,11 @@ protected:
 };
 
 // Test: setUp and tearDown
-/*TEST_F(G3T1_3Fixture, TestSetUpAndTearDown)
+TEST_F(G3T1_3Fixture, TestSetUpAndTearDown)
 {
     EXPECT_NO_THROW(sensor->setUp());
     EXPECT_NO_THROW(sensor->tearDown());
-}*/
+}
 TEST_F(G3T1_3Fixture, TestGetPatientData)
 {
     ros::NodeHandle nh;
@@ -300,4 +300,49 @@ int main(int argc, char **argv)
 
     ros::shutdown(); // Ensure ROS is properly shut down
     return result;
+}
+*/
+#include <gtest/gtest.h>
+#include "ros/ros.h"
+#include "ros/master.h"
+#include <chrono>
+#include <thread>
+TEST(SimpleROS, InitAndSpin)
+{
+    ros::NodeHandle nh;
+
+    for (int i = 0; i < 10; ++i)
+    { // Limit retries to 10 attempts
+        if (!ros::master::check())
+        {
+            FAIL() << "ROS master is not available. Please start roscore.";
+            return;
+        }
+        if (!ros::ok())
+        {
+            FAIL() << "ROS shutdown detected.";
+            return;
+        }
+        ros::spinOnce();
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        }
+}
+
+TEST(FailingTest, AlwaysFails)
+{
+    ASSERT_TRUE(false) << "This test is designed to fail.";
+}
+
+int main(int argc, char **argv)
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    ros::init(argc, argv, "test_ros_minimal");
+
+    if (!ros::master::check())
+    {
+        std::cerr << "ROS master is not running. Please start roscore." << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    return RUN_ALL_TESTS();
 }

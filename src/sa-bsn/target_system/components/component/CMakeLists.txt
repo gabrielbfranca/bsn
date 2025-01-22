@@ -6,6 +6,14 @@ add_compile_options(-std=c++11)
 ## Find catkin and any catkin packages
 FIND_PACKAGE(catkin REQUIRED COMPONENTS roscpp std_msgs genmsg messages archlib lepton libbsn)
 find_package(GTest REQUIRED)
+###########################################################################
+## ran an issue of gtest file directory not found, solved with:
+#cd /usr/src/gtest
+#sudo cmake .
+#sudo make
+#sudo cp *.a /usr/lib
+## after that make sure to clean and build
+##########################################################################
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 

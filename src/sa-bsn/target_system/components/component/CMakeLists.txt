@@ -14,9 +14,6 @@ find_package(GTest REQUIRED)
 #sudo cp *.a /usr/lib
 ## after that make sure to clean and build
 ##########################################################################
-include_directories(include ${catkin_INCLUDE_DIRS})
-
-
 # Export catkin package.
 CATKIN_PACKAGE(
     INCLUDE_DIRS include
@@ -24,20 +21,15 @@ CATKIN_PACKAGE(
     CATKIN_DEPENDS messages message_runtime archlib lepton libbsn
 )
 
-# Set include directory.
-INCLUDE_DIRECTORIES(include)
+
 ################################ TEST SETUP ###########################################
 # Include test directory
-include_directories(${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS} )
+include_directories(include ${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 
 
 #TARGET_LINK_LIBRARIES(run_test ${PROJECT_NAME} ${LIBRARIES} ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES} pthread)
 # Link libraries to the test executable
 # Add test executable
-catkin_add_gtest(${PROJECT_NAME}_test
-    #test/test_g4t1.cpp
-    test/test_Sensor.cpp
-)
 
 if (TARGET ${PROJECT_NAME}_test)
     target_link_libraries(${PROJECT_NAME}_test
@@ -99,6 +91,11 @@ ADD_EXECUTABLE (g4t1 "${CMAKE_CURRENT_SOURCE_DIR}/apps/g4t1.cpp" ${${PROJECT_NAM
 TARGET_LINK_LIBRARIES (g4t1 ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_DEPENDENCIES(g4t1 messages_generate_messages_cpp)
 
+
+catkin_add_gtest(${PROJECT_NAME}_test
+    #test/test_g4t1.cpp
+    test/test_Sensor.cpp
+)
 ###########################################################################
 # Install this project.
 #INSTALL(TARGETS ${PROJECT_NAME}

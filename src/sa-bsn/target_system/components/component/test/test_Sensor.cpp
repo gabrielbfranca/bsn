@@ -302,7 +302,7 @@ int main(int argc, char **argv)
     ros::shutdown(); // Ensure ROS is properly shut down
     return result;
 }
-*/
+
 #include <gtest/gtest.h>
 #include "ros/ros.h"
 #include "ros/master.h"
@@ -347,7 +347,7 @@ int main(int argc, char **argv)
 
     return RUN_ALL_TESTS();
 }
-* /
+*/
 #include "component/g3t1_3/G3T1_3.hpp"
 #include <gtest/gtest.h>
 #include <ros/ros.h>
@@ -355,66 +355,109 @@ int main(int argc, char **argv)
 #include <messages/SensorData.h>
 #include <services/PatientData.h>
 #include <unistd.h>
+#include "archlib/target_system/Probe.hpp"
+#include "effector/param_adapter/ParamAdapter.hpp"
+#include <thread>
 
-    void dummyCallback(const ros::MessageEvent<archlib::Event const> &event)
-{
-    // Dummy function that does nothing but ensures subscribers exist
-}
 class G3T1_3Tests : public ::testing::Test
 {
 protected:
     G3T1_3 *sensor_node;
+    ParamAdapter *effector_node; // Use ParamAdapter instead of Effector
+    pid_t roslaunch_pid;         // To track the PID of the launched process
 
-    // Override the default SetUp function
+    std::thread probe_thread;
+
+    // Launch the Probe node in a separate thread
+    void launchProbe()
+    {
+        int argc = 0;
+        char **argv = nullptr;
+
+        // Initialize the Probe node
+        arch::target_system::Probe probe(argc, argv, "probe_node");
+        probe.setUp(); // Set up the Probe node
+
+        // Run the Probe node in a separate thread
+        probe_thread = std::thread([&probe]()
+                                   {
+                                       probe.body(); // Start the Probe node's spin loop
+                                   });
+
+        // Allow some time for initialization
+        usleep(100000); // 100 ms
+    }
+
+    // Terminate the Probe node and its thread
+    void terminateProbe()
+    {
+        if (probe_thread.joinable())
+        {
+            ros::shutdown();     // Shutdown the Probe node
+            probe_thread.join(); // Join the thread
+        }
+    }
+
     void SetUp() override
     {
+        // Launch the Probe node
+        launchProbe();
+
+        // Set ROS parameters for G3T1_3 node
         ros::param::set("/temperature_LowRisk", "36.0,37.0");
         ros::param::set("/temperature_MidRisk0", "37.1,38.0");
         ros::param::set("/temperature_HighRisk0", "38.1,39.0");
         ros::param::set("/temperature_MidRisk1", "39.1,40.0");
         ros::param::set("/temperature_HighRisk1", "40.1,41.0");
-
         ros::param::set("/lowrisk", "0,20");
         ros::param::set("/midrisk", "21,65");
         ros::param::set("/highrisk", "66,100");
-
         ros::param::set("/instant_recharge", true);
         ros::param::set("/start", true);
 
+        // Initialize the G3T1_3 node
         int argc = 0;
         char **argv = nullptr;
         sensor_node = new G3T1_3(argc, argv, "test_g3t1_3");
-        ROS_INFO("g3t1 initialized");
-        // Mock subscribers to prevent blocking in Component::setUp
-        ros::NodeHandle nh;
-        nh.subscribe<archlib::Event>("collect_event", 10, &dummyCallback);                // Corrected type: archlib::Event
-        nh.subscribe<archlib::Status>("collect_status", 10, &dummyCallback);              // Corrected type: archlib::Status
-        nh.subscribe<archlib::EnergyStatus>("collect_energy_status", 10, &dummyCallback); // Corrected type: archlib::EnergyStatus
 
-        // Allow some time for subscribers to connect
-        ros::spinOnce(); // Process any pending messages
-        usleep(1000);    // Allow time for subscribers to connect
+        // Initialize the ParamAdapter (Effector)
+        effector_node = new ParamAdapter(argc, argv, "test_param_adapter");
 
-        sensor_node->setUp(); // Initialize the node
-        ROS_INFO("g3t1 setup");
+        // Allow time for the ROS system to settle and establish connections
+        ros::spinOnce();
+        usleep(100000); // 100 ms delay to ensure connections are established
+
+        ROS_INFO("G3T1_3 and ParamAdapter initializing...");
+
+        // Set up the sensor node and the effector node
+        sensor_node->setUp();   // Initialize the sensor node
+        effector_node->setUp(); // Initialize the effector node
+        ROS_INFO("G3T1_3 and ParamAdapter setup complete.");
     }
 
-    // Tear down resources
     void TearDown() override
     {
-        sensor_node->tearDown(); // Clean up the node
+        // Shut down the sensor node
+        sensor_node->tearDown();
         delete sensor_node;
-    }
-    bool mockPatientDataService(services::PatientData::Request &req, services::PatientData::Response &res)
-    {
-        if (req.vitalSign == "temperature")
-        {
-            res.data = 37.5; // Simulated patient temperature
-            return true;
-        }
-        return false;
+
+        // Terminate the Probe node
+        terminateProbe();
+
+        // Shut down the effector node
+        effector_node->tearDown();
+        delete effector_node;
     }
 };
+
+// Example test to verify sensor node processing
+TEST_F(G3T1_3Tests, TestProcess)
+{
+    double input_data = 36.5;
+    double processed_data = sensor_node->process(input_data);
+    EXPECT_NEAR(processed_data, input_data, 0.1); // Verify that processed data is close to input data
+}
+
 /*
 TEST_F(G3T1_3Tests, TestCollectPatientData)
 {
@@ -437,13 +480,6 @@ TEST_F(G3T1_3Tests, TestCollectPatientData)
     EXPECT_DOUBLE_EQ(collected_data, 37.5); // Assert that the collected data matches the mock response
 }
 */
-TEST_F(G3T1_3Tests, TestProcess)
-{
-    ROS_INFO("in testCASE");
-    double input_data = 36.5;
-    double processed_data = sensor_node->process(input_data);
-    EXPECT_NEAR(processed_data, input_data, 0.1); // Verify processed data is close to input
-}
 /*
 TEST_F(G3T1_3Tests, TestTransfer)
 {

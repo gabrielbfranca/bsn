@@ -1,0 +1,4 @@
+<launch>
+    <include file="/workspaces/bsn/src/sa-bsn/configurations/target_system/probe.launch" />  <!-- APPLICATION -->
+
+</launch>

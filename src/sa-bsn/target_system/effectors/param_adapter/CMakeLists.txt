@@ -30,7 +30,6 @@ INCLUDE_DIRECTORIES(${catkin_INCLUDE_DIRS})
 
 # Set include directory.
 INCLUDE_DIRECTORIES(include)
-
 ###########################################################################
 # Build this project.
 FILE(GLOB ${PROJECT_NAME}-src "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
@@ -39,5 +38,5 @@ SET(param_adapter-src "${CMAKE_CURRENT_SOURCE_DIR}/src/ParamAdapter.cpp")
 ADD_EXECUTABLE (param_adapter  "${CMAKE_CURRENT_SOURCE_DIR}/apps/param_adapter.cpp" ${${PROJECT_NAME}-src} ${param_adapter-src})
 TARGET_LINK_LIBRARIES (param_adapter ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_DEPENDENCIES(param_adapter services_generate_messages_cpp)
-
+#ADD_LIBRARY(${PROJECT_NAME} ${${PROJECT_NAME}-src})
 ###########################################################################

@@ -24,14 +24,11 @@ CATKIN_PACKAGE(
     CATKIN_DEPENDS messages message_runtime archlib lepton libbsn
 )
 
-# Set catkin directory.
-INCLUDE_DIRECTORIES(include ${catkin_INCLUDE_DIRS})
-
 # Set include directory.
 INCLUDE_DIRECTORIES(include)
 ################################ TEST SETUP ###########################################
 # Include test directory
-include_directories(${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+include_directories(${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS} )
 
 
 #TARGET_LINK_LIBRARIES(run_test ${PROJECT_NAME} ${LIBRARIES} ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES} pthread)
@@ -50,7 +47,7 @@ if (TARGET ${PROJECT_NAME}_test)
         archlib 
         lepton
         libbsn
-
+            
     )
 endif()
 
@@ -64,6 +61,8 @@ SET(${PROJECT_NAME}-src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_3/G3T1_3.cpp
 )
 
+install(DIRECTORY include/${PROJECT_NAME}/
+        DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
 
 SET(g3t1_1-src "${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_1/G3T1_1.cpp")
 ADD_EXECUTABLE (g3t1_1  "${CMAKE_CURRENT_SOURCE_DIR}/apps/g3t1_1.cpp" ${${PROJECT_NAME}-src} ${g3t1_1-src})

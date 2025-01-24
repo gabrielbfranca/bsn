@@ -15,16 +15,18 @@ find_package(GTest REQUIRED)
 ## after that make sure to clean and build
 ##########################################################################
 # Export catkin package.
+
 CATKIN_PACKAGE(
     INCLUDE_DIRS include
     LIBRARIES ${PROJECT_NAME}
     CATKIN_DEPENDS messages message_runtime archlib lepton libbsn
 )
 
-
+INCLUDE_DIRECTORIES(include ${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(include)
 ################################ TEST SETUP ###########################################
 # Include test directory
-include_directories(include ${GTEST_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+
 
 
 #TARGET_LINK_LIBRARIES(run_test ${PROJECT_NAME} ${LIBRARIES} ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES} pthread)
@@ -39,7 +41,6 @@ if (TARGET ${PROJECT_NAME}_test)
         archlib 
         lepton
         libbsn
-            
     )
 endif()
 
@@ -94,7 +95,8 @@ ADD_DEPENDENCIES(g4t1 messages_generate_messages_cpp)
 
 catkin_add_gtest(${PROJECT_NAME}_test
     #test/test_g4t1.cpp
-    test/test_Sensor.cpp
+    #test/unit/SensorTest.cpp
+    test/unit/sampleTest.cpp
 )
 ###########################################################################
 # Install this project.

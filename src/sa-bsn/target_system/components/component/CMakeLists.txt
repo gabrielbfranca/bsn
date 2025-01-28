@@ -6,6 +6,9 @@ add_compile_options(-std=c++11)
 ## Find catkin and any catkin packages
 FIND_PACKAGE(catkin REQUIRED COMPONENTS roscpp std_msgs genmsg messages archlib lepton libbsn)
 find_package(GTest REQUIRED)
+FIND_PACKAGE(PythonInterp 3.6 REQUIRED)
+FIND_PACKAGE(PythonLibs 3.6 REQUIRED)
+FIND_PACKAGE(pybind11 REQUIRED)
 ###########################################################################
 ## ran an issue of gtest file directory not found, solved with:
 #cd /usr/src/gtest
@@ -24,6 +27,18 @@ CATKIN_PACKAGE(
     CATKIN_DEPENDS messages message_runtime archlib lepton libbsn
 )
 
+################################ PYBIND11 SETUP ###########################################
+
+# Add pybind11 include directory manually (ensure it's cloned into /usr/local/include)
+include_directories(/usr/local/include/pybind11)
+
+# Python-specific paths
+set(PYTHON_INCLUDE_DIRS /usr/include/python3.6)
+set(PYTHON_LIBRARIES /usr/lib/x86_64-linux-gnu/libpython3.6m.so)
+include_directories(${PYTHON_INCLUDE_DIRS} ${PYTHON_INCLUDE_DIRS} )
+
+
+################################################################33
 # Set catkin directory.
 INCLUDE_DIRECTORIES(include ${catkin_INCLUDE_DIRS})
 
@@ -53,8 +68,21 @@ if (TARGET ${PROJECT_NAME}_test)
 
     )
 endif()
+################################ PYTHON MODULE ##########################################
 
-###########################################################################
+# Add a pybind11-based Python module
+add_library(pyexample MODULE src/bindings/example.cpp)
+
+# Link the Python library
+target_link_libraries(pyexample ${PYTHON_LIBRARIES})
+
+# Ensure proper naming for Python modules
+set_target_properties(pyexample PROPERTIES
+    PREFIX ""  # Removes the "lib" prefix
+    SUFFIX ".so"  # Ensures the output is a Python module
+)
+
+################################ ROS EXECUTABLES ########################################
 # Build this project.
 FILE(GLOB ${PROJECT_NAME}-src "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_3/*.cpp")
 ADD_LIBRARY(${PROJECT_NAME} ${${PROJECT_NAME}-src})

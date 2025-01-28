@@ -4,7 +4,8 @@ RUN apt update &&\
     apt install -y python-rosdep build-essential git python-pip python3-pip python-virtualenv python-rospkg ros-melodic-rosmon &&\
     sudo rosdep init && rosdep update &&\
     pip3 install pandas &&\
-    pip3 install behave
+    pip3 install behave &&\
+    python3 -m pip install rospkg catkin_pkg empy
 
 ENV DISPLAY=:0
 ENV QT_X11_NO_MITSHM=1

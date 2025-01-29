@@ -301,7 +301,7 @@ int main(int argc, char **argv)
     ros::shutdown(); // Ensure ROS is properly shut down
     return result;
 }
-*/
+
 #include <gtest/gtest.h>
 #include "ros/ros.h"
 #include "ros/master.h"
@@ -344,5 +344,18 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
+    return RUN_ALL_TESTS();
+}
+*/
+#include <gtest/gtest.h>
+
+TEST(ComponentTest, ExampleTest)
+{
+    EXPECT_EQ(1, 1);
+}
+
+int main(int argc, char **argv)
+{
+    testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }

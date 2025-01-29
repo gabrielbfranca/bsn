@@ -79,6 +79,7 @@ endif()
 
 if(CATKIN_ENABLE_TESTING)
     catkin_add_nosetests(test/integration/test_my_cpp_node.py)
+    catkin_add_nosetests(test/bdd/behave_config.py)
 endif()
 
 ###########################################################################

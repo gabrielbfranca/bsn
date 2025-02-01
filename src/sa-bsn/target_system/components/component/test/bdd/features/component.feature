@@ -1,6 +1,6 @@
 Feature: ROS Component Testing
 
 	Scenario: Verify message publishing
-		Given ROS is running
-		When I publish a message to "/test_topic"
-		Then the message should be received
+		Given the sensor is initialized
+		When I call the setup function
+		Then the sensor should be properly configured

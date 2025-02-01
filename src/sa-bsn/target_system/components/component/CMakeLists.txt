@@ -13,7 +13,7 @@ FIND_PACKAGE(catkin REQUIRED COMPONENTS
   lepton
   libbsn
 )
-
+find_package(Boost REQUIRED COMPONENTS python)
 # Export catkin package.
 CATKIN_PACKAGE(
   INCLUDE_DIRS include
@@ -67,6 +67,12 @@ SET(g4t1-src "${CMAKE_CURRENT_SOURCE_DIR}/src/g4t1/G4T1.cpp")
 ADD_EXECUTABLE(g4t1 "${CMAKE_CURRENT_SOURCE_DIR}/apps/g4t1.cpp" ${${PROJECT_NAME}-src} ${g4t1-src})
 TARGET_LINK_LIBRARIES(g4t1 ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_DEPENDENCIES(g4t1 messages_generate_messages_cpp)
+
+set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src/bindings/bindings.cpp")
+add_library(sensor_module MODULE $${CMAKE_CURRENT_SOURCE_DIR}/bindings.cpp)
+target_link_libraries(sensor_module PRIVATE ${Boost_LIBRARIES})
+set_target_properties(sensor_module PROPERTIES PREFIX "")
+
 
 if(CATKIN_ENABLE_TESTING)
     find_package(rostest REQUIRED)

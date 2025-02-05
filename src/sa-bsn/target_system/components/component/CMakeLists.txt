@@ -50,6 +50,12 @@ TARGET_LINK_LIBRARIES(g3t1_2 ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_DEPENDENCIES(g3t1_2 messages_generate_messages_cpp)
 
 SET(g3t1_3-src "${CMAKE_CURRENT_SOURCE_DIR}/src/g3t1_3/G3T1_3.cpp")
+ADD_LIBRARY(g3t1_3_lib SHARED ${g3t1_3-src} ${${PROJECT_NAME}-src})
+# Ensure it's placed in the right directory
+set_target_properties(g3t1_3_lib PROPERTIES
+    LIBRARY_OUTPUT_DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib
+)
+TARGET_LINK_LIBRARIES(g3t1_3_lib ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_EXECUTABLE(g3t1_3 "${CMAKE_CURRENT_SOURCE_DIR}/apps/g3t1_3.cpp" ${${PROJECT_NAME}-src} ${g3t1_3-src})
 TARGET_LINK_LIBRARIES(g3t1_3 ${catkin_LIBRARIES} ${LIBRARIES})
 ADD_DEPENDENCIES(g3t1_3 messages_generate_messages_cpp)
@@ -81,7 +87,11 @@ ADD_DEPENDENCIES(g4t1 messages_generate_messages_cpp)
 
 SET(bindings-src "${CMAKE_CURRENT_SOURCE_DIR}/src/bindings/bindings.cpp")
 add_library (sensor_module MODULE ${bindings-src})
-target_link_libraries(sensor_module ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} ${catkin_LIBRARIES} ${LIBRARIES})
+target_link_libraries(sensor_module ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} 
+${catkin_LIBRARIES} 
+${LIBRARIES}
+g3t1_3_lib
+)
 #set_target_properties(sensor_module PROPERTIES PREFIX "" SUFFIX ".so")
 set_target_properties(sensor_module PROPERTIES
         PREFIX ""

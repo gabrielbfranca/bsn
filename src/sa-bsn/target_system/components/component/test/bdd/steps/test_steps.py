@@ -1,5 +1,6 @@
+#!/usr/bin/env python2
 from behave import given, when, then
-import sensor_module  # Now uses Boost.Python instead of Pybind11
+from component import sensor_module # Using Boost.Python bindings
 
 @given('the sensor is initialized')
 def step_impl(context):

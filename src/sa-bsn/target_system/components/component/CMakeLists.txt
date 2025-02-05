@@ -6,6 +6,7 @@ add_compile_options(-std=c++11)
 ## Find catkin and any catkin packages
 FIND_PACKAGE(catkin REQUIRED COMPONENTS
   roscpp
+  roscpp_serialization
   std_msgs
   genmsg
   messages
@@ -13,8 +14,11 @@ FIND_PACKAGE(catkin REQUIRED COMPONENTS
   lepton
   libbsn
 )
-include_directories(${PYTHON_INCLUDE_DIRS})
 find_package(Boost REQUIRED COMPONENTS python)
+find_package(PythonLibs 2.7 REQUIRED)
+
+
+catkin_python_setup()
 # Export catkin package.
 CATKIN_PACKAGE(
   INCLUDE_DIRS include
@@ -28,7 +32,8 @@ INCLUDE_DIRECTORIES(include ${catkin_INCLUDE_DIRS})
 
 # Set include directory.
 INCLUDE_DIRECTORIES(include)
-
+include_directories(${PYTHON_INCLUDE_DIRS})
+include_directories(${Boost_INCLUDE_DIRS})
 ###########################################################################
 # Build this project.
 FILE(GLOB ${PROJECT_NAME}-src "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
@@ -77,7 +82,11 @@ ADD_DEPENDENCIES(g4t1 messages_generate_messages_cpp)
 SET(bindings-src "${CMAKE_CURRENT_SOURCE_DIR}/src/bindings/bindings.cpp")
 add_library (sensor_module MODULE ${bindings-src})
 target_link_libraries(sensor_module ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} ${catkin_LIBRARIES} ${LIBRARIES})
-set_target_properties(sensor_module PROPERTIES PREFIX "" SUFFIX ".so")
+#set_target_properties(sensor_module PROPERTIES PREFIX "" SUFFIX ".so")
+set_target_properties(sensor_module PROPERTIES
+        PREFIX ""
+        LIBRARY_OUTPUT_DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_PYTHON_DESTINATION}
+        )
 
 if(CATKIN_ENABLE_TESTING)
     find_package(rostest REQUIRED)

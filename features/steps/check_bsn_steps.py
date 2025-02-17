@@ -10,7 +10,6 @@ def node_is_active(node_name):
 def capture_topic_data(topic):
     
     if topic == '/TargetSystemData':
-        print('passei aqui no capture topic data')
         parsed_data = parse_topic_data(topic, line_limit=10)
         
         return topic, parsed_data, False, None

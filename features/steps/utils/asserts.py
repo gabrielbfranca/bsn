@@ -66,3 +66,13 @@ def is_node_publishing_to_topics(node_name, expected_topics):
 
     except subprocess.TimeoutExpired:
         raise AssertionError(f"Timeout: Failed to check if node {node_name} is publishing to topics {expected_topics}")
+    
+def node_is_active(node_names):
+    if isinstance(node_names, str):
+        node_names = [node_names]
+    
+    result = subprocess.run(['rosnode', 'list'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    node_list = result.stdout.decode('utf-8').splitlines()
+    
+    for node_name in node_names:
+        assert node_name in node_list, f"{node_name} is not online"

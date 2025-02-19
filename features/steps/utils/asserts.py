@@ -73,6 +73,6 @@ def node_is_active(node_names):
     
     result = subprocess.run(['rosnode', 'list'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     node_list = result.stdout.decode('utf-8').splitlines()
-    
+    print(f"node list: {node_list}")
     for node_name in node_names:
         assert node_name in node_list, f"{node_name} is not online"

@@ -170,12 +170,11 @@ def parse_topic_data(topic, line_limit=10):
             try:
                 # Try to read a line from the queue with a small timeout
                 line = output_queue.get(timeout=13)
-                print(f'{topic} returned: {line}')
+                
                 # First line contains headers
                 if i == 0:
                     headers = [header.replace("field.", "").strip() for header in line.split(",")]
                     parsed_data = {header: [] for header in headers}
-                    print("Headers found:", headers)
                     continue
 
                 # Process data lines if headers are set

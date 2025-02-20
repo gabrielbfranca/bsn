@@ -51,35 +51,8 @@ def count_and_get_matching_elements_with_time(sensor_data, target_system_data, k
 
     return matching_count, matched_data
 
-def check_time_performance(sensor_data, target_system_data, key, value, evaluate):
-    matching_count = 0
-    matched_data = []
 
-    # Iterate over both lists and check for matching values and time condition
-    for i, sensor_risk in enumerate(sensor_data[key][evaluate]):
-        for j, target_risk in enumerate(target_system_data[value]):
-            print(f'SENSOR RISK of {key}: {sensor_risk} TARGET RISK: {target_risk}')
-            if sensor_risk == target_risk:
-                # Parse time strings into floats
-                sensor_time = float(sensor_data[key]['%time'][i])
-                target_time = float(target_system_data['%time'][j])
-
-                # Round and compare times
-                rounded_sensor_time = round(sensor_time, -5) / 1e6
-                rounded_target_time = round(target_time, -5) / 1e6
-
-                print(f'TIME DIFFERENCE in {key}: {rounded_sensor_time} - {rounded_target_time}')
-                
-                if abs(rounded_sensor_time - rounded_target_time) < 2000:
-                    matching_count += 1
-                    matched_data.append({
-                        'sensor_risk': sensor_risk,
-                        'sensor_time': sensor_time,
-                        'target_risk': target_risk,
-                        'target_time': target_time
-                    })
-
-    return matching_count, matched_data
+    
 
 @given('the {topic_name} topic is online')
 def step_given_topic_is_online(context, topic_name):

@@ -1,7 +1,6 @@
 from behave import given, when, then
-import subprocess
 from utils.parsers import parse_topic_data, format_entity
-from utils.asserts import node_is_active
+from utils.asserts import node_is_active, check_time_performance
 def capture_topic_data(topic):
     parsed_data = parse_topic_data(topic, line_limit=10)
     high_risk_detected = any(float(value) > 10 for value in parsed_data.get('risk', []))
@@ -44,7 +43,8 @@ def step_when_high_risk_data_sent(context, node_name):
 
 @then('g4t1 will detect an emergency in less than 250 ms')
 def step_then_g4t1_detects_emergency(context):
-    assert context.high_risk_detected, "Emergency not detected in time"
+    assert check_time_performance(context.sensor_data, context.target_system_data,
+                                  '/thermometer_data','trm_data', 'data')
 
 @given('Patient Data is not active')
 def step_given_patient_data_inactive(context):

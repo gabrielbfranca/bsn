@@ -4,10 +4,11 @@ Feature: BSN-P03: Whenever the patients' health status is on high risk and an em
 	Scenario: Successful Sensor Execution
 		Given nodes are online:
 			| Nodes         |
-			| g4t1      	|
 			| collector     |
 			| param adapter |
 			| g3t1_3     	|
+			| g4t1          |
+			|patient data service|
 		When I listen to topics:
 			| Topic Name        |
 			| thermometer data  |

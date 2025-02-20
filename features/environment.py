@@ -14,7 +14,7 @@ def before_scenario(context, scenario):
             ['roslaunch', 'component', 'sensor_execution.launch'],
             stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
         )
-        time.sleep(35)  # Ensure the system is fully started before proceeding
+        time.sleep(50)  # Ensure the system is fully started before proceeding
 def after_scenario(context, scenario):
     # Check if scenario tag requires node to be reactivated
     if 'inactive_central_hub' in scenario.tags:

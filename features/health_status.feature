@@ -2,6 +2,9 @@ Feature: Patient Health Status (BSN-P10) - Whether the bodyhub has processed som
 
 	@reduced_system
 	Scenario: Successful Health Status (Happy Path)
+		# Given that nodes thermometer and central hub are online
+		# When I listen to thermometer data
+		# Then g4t1 will detect new patient health status
 		Given nodes are online:
 			| Nodes         |
 			| collector     |
@@ -17,6 +20,10 @@ Feature: Patient Health Status (BSN-P10) - Whether the bodyhub has processed som
 
 	@reduced_system
 	Scenario: Failure to Detect Health Status (Sad Path)
+		# Given that nodes thermometer and central hub are online
+		# When I listen to thermometer data
+		# But an internal processing error occurs in g4t1
+		# Then g4t1 will fail to detect new patient health status
 		Given nodes are online:
 			| Nodes         |
 			| g4t1      	|

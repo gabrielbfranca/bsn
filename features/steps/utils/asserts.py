@@ -75,7 +75,7 @@ def node_is_active(node_names):
     node_list = result.stdout.decode('utf-8').splitlines()
     print(f"node list: {node_list}")
     for node_name in node_names:
-        assert node_name in node_list, f"{node_name} is not online"
+        assert node_name in node_list, f"{node_name} is not online. Make sure give the system more time to start up."
 
 def check_time_performance(sensor_data, target_system_data, key, value, evaluate):
     time_threshold=250000

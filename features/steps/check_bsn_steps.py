@@ -79,7 +79,7 @@ def step_when_check_sensors_publishing_data(context):
 @then('sensors will process the risks')
 def step_then_check_high_risk(context):
     assert any(context.sensor_data.values()), "No risk data found in sensor topics."
-
+    print(f'Sensor data: {context.sensor_data}')
     for topic, data in context.sensor_data.items():
         assert 'risk' in data and data['risk'], f"No risk data detected in topic {topic}."
 
@@ -143,14 +143,13 @@ def step_check_if_TargetSystem_process_data(context):
     '/abpd_data': 'abpd_data',
     '/glucosemeter_data': 'glc_data',
     }
-    print(f'TARGET sytem data: {context.target_system_data}')
+    
     target_data= context.target_system_data
     sensor_data = context.sensor_data
 
     for key, value in data_key_mapping.items():
     
-        print("Target:", key, "Sensor:", value)
-        print(f"Target risks: {sensor_data[key]['data']} Sensor data: {target_data[value]}")
+
         count, matched = count_and_get_matching_elements_with_time(sensor_data, target_data, key, value, 'data')
         assert count > 0, f"Topics {key} and {value} do not have matching risk data."
 """

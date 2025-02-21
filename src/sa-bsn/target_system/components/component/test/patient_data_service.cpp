@@ -7,7 +7,7 @@ std::random_device rd;
 std::mt19937 gen(rd());
 std::uniform_real_distribution<double> normal_dist(36.5, 37.5); // Normal range
 std::uniform_real_distribution<double> high_dist(39.0, 41.0);   // High-risk range
-std::bernoulli_distribution state_change(0.6);                  // 30% chance of switching states
+std::bernoulli_distribution state_change(0.6);                  // 60% chance of switching states
 
 // Global state to track normal vs. high-risk
 bool is_high_risk = false;

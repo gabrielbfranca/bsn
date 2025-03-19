@@ -201,7 +201,7 @@ def parse_topic_data(topic, line_limit=10):
 
 
 
-def process_real_time_topics(context, capture_topic_data):
+def process_real_time_topics(context, capture_topic_data, topics):
     """
     Process topics concurrently and organize results into context.
 
@@ -213,8 +213,8 @@ def process_real_time_topics(context, capture_topic_data):
     with ThreadPoolExecutor() as executor:
         # Map futures to rows for tracking
         future_to_topic = {
-            executor.submit(capture_topic_data, format_entity(row['Topic Name'])): row
-            for row in context.table
+            executor.submit(capture_topic_data, topic): topic
+            for topic in topics
         }
 
         for future in as_completed(future_to_topic):

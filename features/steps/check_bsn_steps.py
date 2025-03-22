@@ -1,25 +1,12 @@
 from behave import given, when, then
 import subprocess
 
-from utils.parsers import parse_topic_data, format_entity, process_real_time_topics
+from utils.parsers import parse_topic_data, format_entity, process_real_time_topics, capture_topic_data
 from utils.constants import FULL_SYSTEM
 def node_is_active(node_name):
     result = subprocess.run(['rosnode', 'list', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     node_list = result.stdout.decode('utf-8').splitlines()
     return node_name in node_list
-def capture_topic_data(topic):
-    
-    if topic == '/TargetSystemData':
-        parsed_data = parse_topic_data(topic, line_limit=10)
-        
-        return topic, parsed_data, False, None
-    parsed_data = parse_topic_data(topic, line_limit=10)
-    
-    high_risk_detected = any(
-            float(value) > 10 for value in parsed_data['risk']  # Check each value in each list
-        )
-    risk_key = f"{topic}_risk"  # Append '_risk' to the data type 
-    return topic, parsed_data, high_risk_detected, risk_key
 
 def count_and_get_matching_elements_with_time(sensor_data, target_system_data, key, value, evaluate):
     matching_count = 0

@@ -2,6 +2,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import subprocess
 import time
+from utils.constants import NON_SENSOR_TOPICS
 
 def format_entity(raw_string):
     # Check if any words in the string start with an uppercase letter
@@ -15,7 +16,21 @@ def format_entity(raw_string):
     
     # Add a forward slash at the beginning
     return f'/{formatted_string}'
+
+def capture_topic_data(topic):
+
+    if topic in NON_SENSOR_TOPICS:
+        parsed_data = parse_topic_data(topic, line_limit=10)
+        
+        return topic, parsed_data, False, None
+    parsed_data = parse_topic_data(topic, line_limit=10)
     
+    high_risk_detected = any(
+            float(value) > 10 for value in parsed_data['risk']  # Check each value in each list
+        )
+    risk_key = f"{topic}_risk"  # Append '_risk' to the data type 
+    return topic, parsed_data, high_risk_detected, risk_key
+
 def get_rostopic_sensor_data(result):
     if result.returncode != 0:
         raise Exception(f"Error getting topic data: {result.stderr.decode('utf-8')}")
@@ -221,9 +236,10 @@ def process_real_time_topics(context, capture_topic_data, topics):
             row = future_to_topic[future]
             try:
                 topic, parsed_data, is_high_risk, risk_key = future.result()
-
                 if topic == '/TargetSystemData':
                     context.target_system_data = parsed_data
+                elif topic in NON_SENSOR_TOPICS:
+                    context.non_sensor[topic] = parsed_data
                 else:
                     context.sensor_data[topic] = parsed_data
 

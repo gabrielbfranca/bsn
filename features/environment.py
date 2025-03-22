@@ -14,7 +14,14 @@ def before_scenario(context, scenario):
             ['roslaunch', 'component', 'sensor_execution.launch'],
             stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
         )
-        time.sleep(50)  # Ensure the system is fully started before proceeding
+        time.sleep(50)
+    elif 'persistance_system' in scenario.tags:
+        context.persistance_system_launch = subprocess.Popen(
+            ['roslaunch', 'component', 'persistance_system.launch'],
+            stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
+        )
+        time.sleep(50)       
+        
 #    elif 'full_system' in scenario.tags:
 #        print("Starting full_system launch file...")
 #        context.bsn_launch = subprocess.Popen(
@@ -34,6 +41,9 @@ def after_scenario(context, scenario):
     if 'reduced_system' in scenario.tags and hasattr(context, 'health_status_launch'):
         context.health_status_launch.terminate()
         context.health_status_launch.wait()
+    elif 'persistance_system' in scenario.tags and hasattr(context, 'persistance_system_launch'):
+        context.persistance_system_launch.terminate()
+        context.persistance_system_launch.wait()
 #    elif 'full_system' in scenario.tags:
 #        context.bsn_launch.terminate()
 #        context.bsn_launch.wait()

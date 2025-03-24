@@ -4,6 +4,27 @@ import subprocess
 import time
 from utils.constants import NON_SENSOR_TOPICS
 
+
+def format_debug_data(data):
+    formatted_output = []
+    
+    for topic, details in data.items():
+        formatted_output.append(f"\n{'='*40}\nTOPIC: {topic}\n{'='*40}")
+        
+        headers = list(details.keys())
+        rows = zip(*details.values())  # Transpose to get row-wise data
+        
+        # Add headers
+        formatted_output.append(" | ".join(headers))
+        formatted_output.append("-" * len(formatted_output[-1]))  # Add separator
+        
+        # Add rows
+        for row in rows:
+            formatted_output.append(" | ".join(str(value) for value in row))
+    
+    return "\n".join(formatted_output)
+
+
 def format_entity(raw_string):
     # Check if any words in the string start with an uppercase letter
     words = raw_string.split()

@@ -1,7 +1,7 @@
 from behave import given, when, then
 import subprocess
 
-from utils.parsers import parse_topic_data, format_entity, process_real_time_topics, capture_topic_data
+from utils.parsers import parse_topic_data, format_entity, process_real_time_topics, capture_topic_data, format_debug_data
 from utils.constants import FULL_SYSTEM
 def node_is_active(node_name):
     result = subprocess.run(['rosnode', 'list', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -95,7 +95,8 @@ def step_when_check_sensors_publishing_data(context):
 @then('sensors will process the risks')
 def step_then_check_high_risk(context):
     assert any(context.sensor_data.values()), "No risk data found in sensor topics."
-    print(f'Sensor data: {context.sensor_data}')
+    print(f'Sensor data: {format_debug_data(context.sensor_data)}')
+    
     for topic, data in context.sensor_data.items():
         assert 'risk' in data and data['risk'], f"No risk data detected in topic {topic}."
 
@@ -129,8 +130,8 @@ def step_then_check_target_system_receives_risk(context):
 @then("Central hub will not process the risk")
 def step_then_check_target_system_does_not_receive_risk(context):
     # Print out the target system data for inspection
-    print("TARGET SYSTEM DATA (Expected to be empty): ", context.target_system_data)
-
+    print("TARGET SYSTEM DATA (Expected to be empty): ", format_debug_data(context.target_system_data))
+    
     target_system_data = context.target_system_data
     
     assert not target_system_data, "Patient status is unexpectedly updated in TargetSystemData."
@@ -143,7 +144,7 @@ def step_then_check_target_system_does_not_receive_risk(context):
 def step_then_check_target_system_does_not_receive_risk(context):
     # Print out the target system data for inspection
     print("TARGET SYSTEM DATA (Expected to be empty): ", context.target_system_data)
-
+    print("TARGET SYSTEM DATA (Expected to be empty): ", format_debug_data(context.target_system_data))
     target_system_data = context.target_system_data
     
     assert not target_system_data, "Patient status is unexpectedly updated in TargetSystemData."

@@ -18,7 +18,7 @@ PERSISTENCE_NODES = [
     "/param_adapter",
     "/g3t1_3",
     "/data_access",
-    "/Logger"
+    "/logger"
 ]
 PERSISTANCE_TOPICS = [
         '/thermometer_data',

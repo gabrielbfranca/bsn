@@ -1,10 +1,10 @@
 import subprocess
 import time
-def before_all(context):
-    context.bsn_launch = subprocess.Popen(
-                ['roslaunch', 'bsn.launch'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
-            )
-    time.sleep(30)  # Ensure the system is fully started before proceeding with the test
+#def before_all(context):
+#    context.bsn_launch = subprocess.Popen(
+#                ['roslaunch', 'bsn.launch'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
+#            )
+#    time.sleep(30)  # Ensure the system is fully started before proceeding with the test
 
 def before_scenario(context, scenario):
     # Check if the scenario is related to health status
@@ -20,7 +20,7 @@ def before_scenario(context, scenario):
             ['roslaunch', 'component', 'persistance_system.launch'],
             stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
         )
-        time.sleep(50)       
+        time.sleep(80)       
         
 #    elif 'full_system' in scenario.tags:
 #        print("Starting full_system launch file...")

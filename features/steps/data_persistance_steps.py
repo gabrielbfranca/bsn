@@ -1,8 +1,8 @@
 from behave import given, when, then
 import subprocess
-from utils.parsers import process_real_time_topics, capture_topic_data
+from utils.parsers import process_real_time_topics, capture_topic_data, format_debug_data, parse_topic_data
 from utils.constants import PERSISTENCE_NODES, PERSISTANCE_TOPICS
-
+from utils.asserts import kill_node
 
 REDUCED_SYSTEM_NODES = [
     "thermometer",
@@ -20,9 +20,9 @@ def check_nodes_online(node_list):
     for node in node_list:
         assert node_is_active(node), f"Node {node} is not online"
 
-@given('that nodes thermometer and central hub are online')
+@given('that persistence system is online')
 def step_given_reduced_system_nodes_online(context):
-    check_nodes_online(REDUCED_SYSTEM_NODES)
+    check_nodes_online(PERSISTENCE_NODES)
 
 @given('nodes are online')
 def step_given_all_persistence_nodes_online(context):
@@ -44,12 +44,12 @@ def step_when_i_listen_to_thermometer(context):
     ]
 
     process_real_time_topics(context, capture_topic_data, topics)
+    #print(f'non sensor data: {format_debug_data(context.non_sensor)}')
     print(context.non_sensor)
-
 @when('I send data to collector')
 def step_when_send_data_to_collector(context):
     """Simulate sending data to the collector."""
-    context.data_sent_to_collector = True
+    assert '/g3t1_3' in context.non_sensor['/collect_energy_status']['source'], f'No data detected in /collect_energy_status.'
 
 @when('collector receives collect_? topic')
 def step_when_collector_receives_collect_topic(context):
@@ -59,33 +59,22 @@ def step_when_collector_receives_collect_topic(context):
 @then('the data will be in persist topic')
 def step_then_data_persisted(context):
     """Simulate data persistence."""
-    assert context.data_sent_to_collector, "Data was not sent to collector, so it cannot be persisted."
-    context.data_persisted = True
+    assert 'Status' in context.non_sensor['/persist']['type'], f"Data was not sent to collector, so it cannot be persisted."
+    print(context.non_sensor['/persist']['type'])
 
-@then('the data will be received in logger')
-def step_then_data_received_in_logger(context):
-    """Simulate data being received in the logger."""
-    assert context.data_persisted, "Data was not persisted, so it cannot be logged."
-    context.data_logged = True
 
 @when('a database error prevents persistence')
 def step_when_database_error_occurs(context):
     """Simulate a database error preventing persistence."""
-    context.persistence_failed = True
+    kill_node('/logger')
 
 @then('the system must log a persistence failure')
 def step_then_system_logs_failure(context):
     """Ensure the system logs a persistence failure."""
-    assert context.persistence_failed, "No persistence failure occurred."
-    context.failure_logged = True
+    energyStatus = parse_topic_data('/log_energy_status')
+    print(f'energyStatus: {energyStatus}')
+    assert all(val == '' for val in energyStatus['target'])
+    persist_topic = parse_topic_data('/persist')
+    print(f'persist topic: {persist_topic}')
+    assert persist_topic is None
 
-@then('the data will not be persisted')
-def step_then_data_not_persisted(context):
-    """Ensure data was not persisted due to the failure."""
-    assert context.persistence_failed, "No persistence failure occurred."
-    assert not context.data_persisted, "Data should not be persisted."
-
-@then('the system may attempt a retry')
-def step_then_system_attempts_retry(context):
-    """Optionally handle retry logic."""
-    context.retry_attempted = True  # Simulating a retry mechanism

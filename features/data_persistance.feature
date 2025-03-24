@@ -2,7 +2,7 @@ Feature: Data Persistence (BSN-P08) - Whether the sensor node has collected some
 
 	@persistance_system
 	Scenario: Data Persisted Successfully (Happy Path)
-		Given that nodes thermometer and central hub are online
+		Given that persistence system is online
 		When I listen to thermometer data
 		And I send data to collector
 		Then the data will be in persist topic
@@ -20,7 +20,7 @@ Feature: Data Persistence (BSN-P08) - Whether the sensor node has collected some
 		
 	@persistance_system
 	Scenario: Data Not Persisted (Sad Path)
-		Given that nodes thermometer and central hub are online
+		Given that persistence system is online
 		When I listen to thermometer data
 		And I send data to collector
 		But a database error prevents persistence

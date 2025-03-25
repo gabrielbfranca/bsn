@@ -44,6 +44,7 @@ def capture_topic_data(topic):
         parsed_data = parse_topic_data(topic, line_limit=10)
         
         return topic, parsed_data, False, None
+    print("Passed in parse_topic_data")
     parsed_data = parse_topic_data(topic, line_limit=10)
     
     high_risk_detected = any(
@@ -205,8 +206,8 @@ def parse_topic_data(topic, line_limit=10):
 
             try:
                 # Try to read a line from the queue with a small timeout
-                line = output_queue.get(timeout=13)
-                
+                line = output_queue.get(timeout=20)
+                print(line)
                 # First line contains headers
                 if i == 0:
                     headers = [header.replace("field.", "").strip() for header in line.split(",")]

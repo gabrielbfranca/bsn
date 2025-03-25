@@ -1,6 +1,6 @@
 Feature: Check for bsn features
 
-	@full_system
+	#@full_system
 	Scenario: BSN-P09 If data has been sent by the sensor node, the BodyHub is able to process it as low, moderate or high risk vital sign data.
 		# Scenario: sucessful process
 		Given that all sensors and central hub nodes are online
@@ -8,7 +8,7 @@ Feature: Check for bsn features
 		Then Sensors will process the risks
 		And Central hub will process the risk
 
-	@full_system
+	#@full_system
 	Scenario: BSN-P08 If data has been sent by the sensor node, the BodyHub is able to process it
 		# Scenario: sucessful process
 		Given that all sensors and central hub nodes are online

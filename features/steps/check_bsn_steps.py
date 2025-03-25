@@ -3,10 +3,11 @@ import subprocess
 
 from utils.parsers import parse_topic_data, format_entity, process_real_time_topics, capture_topic_data, format_debug_data
 from utils.constants import FULL_SYSTEM
-def node_is_active(node_name):
-    result = subprocess.run(['rosnode', 'list', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    node_list = result.stdout.decode('utf-8').splitlines()
-    return node_name in node_list
+from utils.asserts import bool_node_is_active, node_is_active
+#def node_is_active(node_name):
+#    result = subprocess.run(['rosnode', 'list', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#    node_list = result.stdout.decode('utf-8').splitlines()
+#    return node_name in node_list
 
 def count_and_get_matching_elements_with_time(sensor_data, target_system_data, key, value, evaluate):
     matching_count = 0
@@ -50,12 +51,21 @@ def step_given_topic_is_online(context, topic_name):
     assert topic_name in topic_list, f"{topic_name} is not online"
 @given('that all sensors and central hub nodes are online')
 def step_given_full_system_nodes_online(context):
-    node_is_active(FULL_SYSTEM)   
+    if 'inactive_central_hub' in context.scenario.tags:
+        noG4T1system = FULL_SYSTEM
+        if '/g4t1' in noG4T1system:
+            noG4T1system.remove('/g4t1')
+        node_is_active(noG4T1system)
+    else:
+        node_is_active(FULL_SYSTEM)   
 @given('{node_name} is inactive')
 def step_given_node_is_inactive(context, node_name):
     if node_name == 'Central hub': 
         result = subprocess.run(['rosnode', 'kill', '/g4t1'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        assert not node_is_active(node_name), f"{node_name} is active"
+        assert not bool_node_is_active('/g4t1')
+    else:
+        print(f'{node_name} not implemented in step')
+        
 
 @when('I listen to sensors data')
 def step_when_check_sensors_publishing_data(context):
@@ -130,7 +140,7 @@ def step_then_check_target_system_receives_risk(context):
 @then("Central hub will not process the risk")
 def step_then_check_target_system_does_not_receive_risk(context):
     # Print out the target system data for inspection
-    print("TARGET SYSTEM DATA (Expected to be empty): ", format_debug_data(context.target_system_data))
+    print("TARGET SYSTEM DATA (Expected to be empty): ", context.target_system_data)
     
     target_system_data = context.target_system_data
     
@@ -144,7 +154,6 @@ def step_then_check_target_system_does_not_receive_risk(context):
 def step_then_check_target_system_does_not_receive_risk(context):
     # Print out the target system data for inspection
     print("TARGET SYSTEM DATA (Expected to be empty): ", context.target_system_data)
-    print("TARGET SYSTEM DATA (Expected to be empty): ", format_debug_data(context.target_system_data))
     target_system_data = context.target_system_data
     
     assert not target_system_data, "Patient status is unexpectedly updated in TargetSystemData."

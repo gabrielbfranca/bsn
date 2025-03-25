@@ -4,7 +4,7 @@ import time
 #    context.bsn_launch = subprocess.Popen(
 #                ['roslaunch', 'bsn.launch'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
 #            )
-#    time.sleep(30)  # Ensure the system is fully started before proceeding with the test
+#    time.sleep(50)  # Ensure the system is fully started before proceeding with the test
 
 def before_scenario(context, scenario):
     # Check if the scenario is related to health status
@@ -14,7 +14,7 @@ def before_scenario(context, scenario):
             ['roslaunch', 'component', 'sensor_execution.launch'],
             stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
         )
-        time.sleep(50)
+        time.sleep(110)
     elif 'persistance_system' in scenario.tags:
         context.persistance_system_launch = subprocess.Popen(
             ['roslaunch', 'component', 'persistance_system.launch'],
@@ -33,11 +33,11 @@ def after_scenario(context, scenario):
     if 'inactive_central_hub' in scenario.tags:
         # Restart the node
         context.central_hub = subprocess.Popen(
-            ['roslaunch', 'sa-bsn', 'configurations/target_system/bsn.launch'], 
+            ['roslaunch', 'sa-bsn', 'bsn.launch'], 
             stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
         )
         print("Node reactivated.")
-        time.sleep(5)  # Ensure the system is fully restarted before next scenario
+        time.sleep(50)  # Ensure the system is fully restarted before next scenario
     if 'reduced_system' in scenario.tags and hasattr(context, 'health_status_launch'):
         context.health_status_launch.terminate()
         context.health_status_launch.wait()
@@ -54,3 +54,7 @@ def after_all(context):
     if hasattr(context, 'central_hub'):
         context.central_hub.terminate()
         context.central_hub.wait()
+    if hasattr(context, 'health_status_launch'):
+        context.health_status_launch.terminate()
+        context.health_status_launch.wait()
+        

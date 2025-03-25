@@ -1,11 +1,12 @@
 from behave import given, when, then
-from utils.parsers import parse_topic_data, format_entity, process_real_time_topics
+from utils.parsers import parse_topic_data, format_entity, process_real_time_topics, capture_topic_data
 from utils.asserts import node_is_active, check_time_performance
 from utils.constants import REDUCED_SYSTEM, FULL_SYSTEM
-def capture_topic_data(topic):
-    parsed_data = parse_topic_data(topic, line_limit=10)
-    high_risk_detected = any(float(value) > 10 for value in parsed_data.get('risk', []))
-    return topic, parsed_data, high_risk_detected
+#def capture_topic_data(topic):
+#    parsed_data = parse_topic_data(topic, line_limit=10)
+#    print('PASSEI AQUI NO CAPTURE TOPIC DATA')
+#    high_risk_detected = any(float(value) > 10 for value in parsed_data.get('risk', []))
+#    return topic, parsed_data, high_risk_detected
 
 #@given('nodes are online')
 #def step_given_nodes_online(context):
@@ -28,11 +29,13 @@ def step_when_i_listen_to_thermometer(context):
     context.target_system_data = {}
     
     topics = [
-        '/thermometer_data',
-        '/TargetSystemData'
+        "/thermometer_data",
+        "/TargetSystemData"
     ]
 
     process_real_time_topics(context, capture_topic_data, topics)
+    print(f'Sensor data: {context.sensor_data}')
+    assert not context.sensor_data, f"No data capured from system"
 @then('g4t1 will detect new patient health status')
 def step_then_g4t1_detects_health_status(context):
     assert len(set(context.target_system_data['patient_status'])) > 1, f"status has not changed. Patient Satus: {context.target_system_data['patient_status']}"
@@ -61,6 +64,7 @@ def step_when_high_risk_data_sent(context, sensor_name):
 
 @then('Central hub will detect an emergency in less than 250 ms')
 def step_then_g4t1_detects_emergency(context):
+    print(context.sensor_data)
     assert check_time_performance(context.sensor_data, context.target_system_data,
                                   '/thermometer_data','trm_data', 'data')
 

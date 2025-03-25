@@ -5,7 +5,7 @@ Feature: Patient Health Status (BSN-P10) - Whether the bodyhub has processed som
 		Given that nodes thermometer and central hub are online
 		When I listen to thermometer
 		Then g4t1 will detect new patient health status
-
+	# NOT IMPLEMENTED
 	@reduced_system
 	Scenario: Failure to Detect Health Status (Sad Path)
 		Given that nodes thermometer and central hub are online

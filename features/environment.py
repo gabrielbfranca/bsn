@@ -49,12 +49,16 @@ def after_scenario(context, scenario):
 #        context.bsn_launch.wait()
 
 def after_all(context):
-    context.bsn_launch.terminate()
-    context.bsn_launch.wait()
+    if hasattr(context, 'bsn_launch'):
+        context.bsn_launch.terminate()
+        context.bsn_launch.wait()
     if hasattr(context, 'central_hub'):
         context.central_hub.terminate()
         context.central_hub.wait()
     if hasattr(context, 'health_status_launch'):
         context.health_status_launch.terminate()
         context.health_status_launch.wait()
+    if hasattr(context, 'persistance_system_launch'):
+        context.persistance_system_launch.terminate()
+        context.persistance_system_launch.wait()
         

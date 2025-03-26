@@ -29,13 +29,13 @@ def step_when_i_listen_to_thermometer(context):
     context.target_system_data = {}
     
     topics = [
-        "/thermometer_data",
-        "/TargetSystemData"
+        '/thermometer_data',
+        '/TargetSystemData'
     ]
 
     process_real_time_topics(context, capture_topic_data, topics)
     print(f'Sensor data: {context.sensor_data}')
-    assert not context.sensor_data, f"No data capured from system"
+    assert context.sensor_data, f"No data capured from system"
 @then('g4t1 will detect new patient health status')
 def step_then_g4t1_detects_health_status(context):
     assert len(set(context.target_system_data['patient_status'])) > 1, f"status has not changed. Patient Satus: {context.target_system_data['patient_status']}"

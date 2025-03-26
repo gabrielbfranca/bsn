@@ -39,7 +39,6 @@ def format_entity(raw_string):
     return f'/{formatted_string}'
 
 def capture_topic_data(topic):
-
     if topic in NON_SENSOR_TOPICS:
         parsed_data = parse_topic_data(topic, line_limit=10)
         
@@ -195,19 +194,18 @@ def parse_topic_data(topic, line_limit=10):
     thread = threading.Thread(target=enqueue_output, args=(process.stdout, output_queue))
     thread.daemon = True
     thread.start()
-
+    print(f"Capturing data from topic: {topic}")
     parsed_data = None
     headers = None
     start_time = time.time()
-
+    
     try:
         for i in range(line_limit + 1):
             # Check if we've exceeded the timeout
 
             try:
                 # Try to read a line from the queue with a small timeout
-                line = output_queue.get(timeout=20)
-                print(line)
+                line = output_queue.get(timeout=30)
                 # First line contains headers
                 if i == 0:
                     headers = [header.replace("field.", "").strip() for header in line.split(",")]
@@ -225,7 +223,7 @@ def parse_topic_data(topic, line_limit=10):
                 # No new data was found in the queue, continue until timeout
                 process.terminate()  # Ensure subprocess terminates
                 process.wait() 
-                return parsed_data
+                return {}
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -258,6 +256,7 @@ def process_real_time_topics(context, capture_topic_data, topics):
             row = future_to_topic[future]
             try:
                 topic, parsed_data, is_high_risk, risk_key = future.result()
+                
                 if topic == '/TargetSystemData':
                     context.target_system_data = parsed_data
                 elif topic in NON_SENSOR_TOPICS:

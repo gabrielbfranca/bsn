@@ -76,5 +76,5 @@ def step_then_system_logs_failure(context):
     assert all(val == '' for val in energyStatus['target'])
     persist_topic = parse_topic_data('/persist')
     print(f'persist topic: {persist_topic}')
-    assert persist_topic is None
+    assert persist_topic == {}
 

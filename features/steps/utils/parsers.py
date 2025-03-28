@@ -194,7 +194,6 @@ def parse_topic_data(topic, line_limit=10):
     thread = threading.Thread(target=enqueue_output, args=(process.stdout, output_queue))
     thread.daemon = True
     thread.start()
-    print(f"Capturing data from topic: {topic}")
     parsed_data = None
     headers = None
     start_time = time.time()

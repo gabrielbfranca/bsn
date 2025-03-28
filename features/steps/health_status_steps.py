@@ -1,6 +1,6 @@
 from behave import given, when, then
-from utils.parsers import parse_topic_data, format_entity, process_real_time_topics, capture_topic_data
-from utils.asserts import node_is_active, check_time_performance
+from utils.parsers import parse_topic_data,process_real_time_topics, capture_topic_data
+from utils.asserts import node_is_active, check_time_performance, kill_node
 from utils.constants import REDUCED_SYSTEM, FULL_SYSTEM
 #def capture_topic_data(topic):
 #    parsed_data = parse_topic_data(topic, line_limit=10)
@@ -47,13 +47,12 @@ def step_given_bodyhub_processed_data(context):
 
 @when('an internal processing error occurs in g4t1')
 def step_when_internal_error_occurs(context):
-    context.internal_error = True
+    kill_node('/g4t1')
 
 @then('Central hub will fail to detect the new patient health status')
 def step_then_g4t1_fails_to_detect_status(context):
-    assert context.internal_error, "No internal error detected"
-    assert 'patient_status' not in context.sensor_data[1], "g4t1 incorrectly detected a patient status"
-
+    central_hub_topic = parse_topic_data('/TargetSystemData')
+    assert central_hub_topic == {}
 @when('{sensor_name} sends data with high risk')
 def step_when_high_risk_data_sent(context, sensor_name):
     # implementation made by patient data service
@@ -64,7 +63,7 @@ def step_when_high_risk_data_sent(context, sensor_name):
 
 @then('Central hub will detect an emergency in less than 250 ms')
 def step_then_g4t1_detects_emergency(context):
-    print(context.sensor_data)
+    
     assert check_time_performance(context.sensor_data, context.target_system_data,
                                   '/thermometer_data','trm_data', 'data')
 
@@ -75,12 +74,9 @@ def step_given_patient_data_inactive(context):
 
 @when('{node_name} sends low-risk data with high frequency')
 def step_when_overloaded_data_sent(context, node_name):
-    topic = f'/{node_name}_data'
-    _, parsed_data, high_risk_detected = capture_topic_data(topic)
-    context.overloaded = True
-    context.high_risk_detected = high_risk_detected
-    assert context.overloaded, "Sensor data overload did not occur"
+    assert not context.found_high_risk
 
 @then('Central Hub will experience delayed emergency detection')
 def step_then_g4t1_might_delay_detection(context):
-    assert context.overloaded and context.high_risk_detected, "Delayed detection scenario not met"
+    assert set(context.target_system_data['trm_data']) <= 2
+    assert set(context.sensor_data['thermometer_data']['data']) >= 2  

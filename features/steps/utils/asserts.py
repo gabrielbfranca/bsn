@@ -1,5 +1,5 @@
 import subprocess
-from utils.parsers import get_rosnode_info
+from utils.parsers import get_rosnode_info, format_debug_data
 
 def kill_node(node_name):
     result = subprocess.run(['rosnode', 'kill', node_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -95,7 +95,8 @@ def bool_node_is_active(node_names):
     return False
 def check_time_performance(sensor_data, target_system_data, key, value, evaluate):
     time_threshold=250000
-
+    print(f'target system data: {target_system_data}')
+    format_debug_data(sensor_data)
     # Iterate over both lists and check for matching values and time condition
     for i, sensor_risk in enumerate(sensor_data[key][evaluate]):
         for j, target_risk in enumerate(target_system_data[value]):

@@ -20,8 +20,13 @@ def before_scenario(context, scenario):
             ['roslaunch', 'component', 'persistance_system.launch'],
             stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
         )
-        time.sleep(80)       
-        
+        time.sleep(80)   
+    elif 'high_frequency_system' in scenario.tags:  
+        context.high_frequency_system_launch = subprocess.Popen(
+            ['roslaunch', 'component', 'high_frequency.launch'],
+            stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
+        )
+        time.sleep(110)
 #    elif 'full_system' in scenario.tags:
 #        print("Starting full_system launch file...")
 #        context.bsn_launch = subprocess.Popen(
@@ -44,6 +49,9 @@ def after_scenario(context, scenario):
     elif 'persistance_system' in scenario.tags and hasattr(context, 'persistance_system_launch'):
         context.persistance_system_launch.terminate()
         context.persistance_system_launch.wait()
+    elif 'high_frequency_system' in scenario.tags and hasattr(context, 'high_frequency_system_launch'):
+        context.high_frequency_system_launch.terminate()
+        context.high_frequency_system_launch.wait()
 #    elif 'full_system' in scenario.tags:
 #        context.bsn_launch.terminate()
 #        context.bsn_launch.wait()
@@ -61,4 +69,6 @@ def after_all(context):
     if hasattr(context, 'persistance_system_launch'):
         context.persistance_system_launch.terminate()
         context.persistance_system_launch.wait()
-        
+    if hasattr(context, 'high_frequency_system_launch'):
+        context.high_frequency_system_launch.terminate()
+        context.high_frequency_system_launch.wait()    

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="param__adapter_8cpp" kind="file" language="C++">
+    <compoundname>param_adapter.cpp</compoundname>
+    <includes refid="ParamAdapter_8hpp" local="yes">param_adapter/ParamAdapter.hpp</includes>
+    <incdepgraph>
+      <node id="2443">
+        <label>param_adapter/ParamAdapter.hpp</label>
+        <link refid="ParamAdapter_8hpp"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2445" relation="include">
+        </childnode>
+        <childnode refid="2446" relation="include">
+        </childnode>
+        <childnode refid="2447" relation="include">
+        </childnode>
+        <childnode refid="2448" relation="include">
+        </childnode>
+      </node>
+      <node id="2451">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2445" relation="include">
+        </childnode>
+      </node>
+      <node id="2450">
+        <label>stdexcept</label>
+      </node>
+      <node id="2444">
+        <label>string</label>
+      </node>
+      <node id="2447">
+        <label>archlib/target_system/Effector.hpp</label>
+        <link refid="Effector_8hpp"/>
+        <childnode refid="2445" relation="include">
+        </childnode>
+        <childnode refid="2448" relation="include">
+        </childnode>
+        <childnode refid="2449" relation="include">
+        </childnode>
+      </node>
+      <node id="2448">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="2449">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2450" relation="include">
+        </childnode>
+        <childnode refid="2445" relation="include">
+        </childnode>
+        <childnode refid="2451" relation="include">
+        </childnode>
+      </node>
+      <node id="2445">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="2442">
+        <label>src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp</label>
+        <link refid="param__adapter_8cpp"/>
+        <childnode refid="2443" relation="include">
+        </childnode>
+      </node>
+      <node id="2446">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="param__adapter_8cpp_1a47132f8f79de6f2b482ca715383dc07e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp" line="3" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp" bodystart="3" bodyend="7"/>
+        <references refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" compoundref="ROSComponent_8cpp" startline="44" endline="56">arch::ROSComponent::run</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ParamAdapter_8hpp" kindref="compound">param_adapter/ParamAdapter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="param__adapter_8cpp_1a47132f8f79de6f2b482ca715383dc07e" refkind="member"><highlight class="normal">int32_t<sp/><ref refid="param__adapter_8cpp_1a47132f8f79de6f2b482ca715383dc07e" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref><sp/>paramadapter(argc,<sp/>argv,<sp/></highlight><highlight class="stringliteral">&quot;param_adapter&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>paramadapter.<ref refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp"/>
+  </compounddef>
+</doxygen>

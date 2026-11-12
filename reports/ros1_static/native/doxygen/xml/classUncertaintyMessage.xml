@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classUncertaintyMessage" kind="class" language="C++" prot="public">
+    <compoundname>UncertaintyMessage</compoundname>
+    <includes refid="UncertaintyMessage_8hpp" local="no">UncertaintyMessage.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="19" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classUncertaintyMessage_1a4ff249a4f00fbd9cf2ef6386de515916" compoundref="UncertaintyMessage_8hpp" startline="11" endline="11">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t UncertaintyMessage::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="20" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classUncertaintyMessage_1a6f3bb49680c01cd4824964f854766976" compoundref="UncertaintyMessage_8hpp" startline="12" endline="12">getTimestamp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t UncertaintyMessage::logical_clock</definition>
+        <argsstring></argsstring>
+        <name>logical_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="21" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classUncertaintyMessage_1a3a182508829e61963d20bd2b004d9614" compoundref="UncertaintyMessage_8hpp" startline="13" endline="13">getLogicalClock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="22" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classUncertaintyMessage_1a0569f920cd24b25833dad5d2ae136c33" compoundref="UncertaintyMessage_8hpp" startline="14" endline="14">getSource</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="23" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classUncertaintyMessage_1a5a12c49d95828fe130f53ffda6762494" compoundref="UncertaintyMessage_8hpp" startline="15" endline="15">getTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="24" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUncertaintyMessage_1a73177c51c3fc04c721f73dd6b92aab34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UncertaintyMessage::UncertaintyMessage</definition>
+        <argsstring>(const std::string &amp;name, const int64_t &amp;timestamp, const int64_t &amp;logical_clock, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>UncertaintyMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>logical_clock</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="9" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUncertaintyMessage_1a4ff249a4f00fbd9cf2ef6386de515916" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="11" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="11" bodyend="11"/>
+        <references refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" compoundref="UncertaintyMessage_8hpp" startline="16">name</references>
+      </memberdef>
+      <memberdef kind="function" id="classUncertaintyMessage_1a6f3bb49680c01cd4824964f854766976" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t UncertaintyMessage::getTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="12" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="12" bodyend="12"/>
+        <references refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" compoundref="UncertaintyMessage_8hpp" startline="20">timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="classUncertaintyMessage_1a3a182508829e61963d20bd2b004d9614" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t UncertaintyMessage::getLogicalClock</definition>
+        <argsstring>() const</argsstring>
+        <name>getLogicalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="13" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="13" bodyend="13"/>
+        <references refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" compoundref="UncertaintyMessage_8hpp" startline="21">logical_clock</references>
+      </memberdef>
+      <memberdef kind="function" id="classUncertaintyMessage_1a0569f920cd24b25833dad5d2ae136c33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::getSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="14" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="14" bodyend="14"/>
+        <references refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" compoundref="UncertaintyMessage_8hpp" startline="22">source</references>
+      </memberdef>
+      <memberdef kind="function" id="classUncertaintyMessage_1a5a12c49d95828fe130f53ffda6762494" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::getTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="15" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="15" bodyend="15"/>
+        <references refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" compoundref="UncertaintyMessage_8hpp" startline="23">target</references>
+      </memberdef>
+      <memberdef kind="function" id="classUncertaintyMessage_1ae1e84ebb14aa94c439fde9fae568b693" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UncertaintyMessage::getContent</definition>
+        <argsstring>() const</argsstring>
+        <name>getContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="16" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="6" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" prot="private" virt="non-virtual"><scope>UncertaintyMessage</scope><name>content</name></member>
+      <member refid="classUncertaintyMessage_1ae1e84ebb14aa94c439fde9fae568b693" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>getContent</name></member>
+      <member refid="classUncertaintyMessage_1a3a182508829e61963d20bd2b004d9614" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>getLogicalClock</name></member>
+      <member refid="classUncertaintyMessage_1a4ff249a4f00fbd9cf2ef6386de515916" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>getName</name></member>
+      <member refid="classUncertaintyMessage_1a0569f920cd24b25833dad5d2ae136c33" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>getSource</name></member>
+      <member refid="classUncertaintyMessage_1a5a12c49d95828fe130f53ffda6762494" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>getTarget</name></member>
+      <member refid="classUncertaintyMessage_1a6f3bb49680c01cd4824964f854766976" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>getTimestamp</name></member>
+      <member refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" prot="private" virt="non-virtual"><scope>UncertaintyMessage</scope><name>logical_clock</name></member>
+      <member refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" prot="private" virt="non-virtual"><scope>UncertaintyMessage</scope><name>name</name></member>
+      <member refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" prot="private" virt="non-virtual"><scope>UncertaintyMessage</scope><name>source</name></member>
+      <member refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" prot="private" virt="non-virtual"><scope>UncertaintyMessage</scope><name>target</name></member>
+      <member refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" prot="private" virt="non-virtual"><scope>UncertaintyMessage</scope><name>timestamp</name></member>
+      <member refid="classUncertaintyMessage_1a73177c51c3fc04c721f73dd6b92aab34" prot="public" virt="non-virtual"><scope>UncertaintyMessage</scope><name>UncertaintyMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

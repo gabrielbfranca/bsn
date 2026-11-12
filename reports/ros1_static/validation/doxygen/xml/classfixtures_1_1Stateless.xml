@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1Stateless" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::Stateless</compoundname>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfixtures_1_1Stateless_1aada67a95298bb9db7137b5654b573604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int fixtures::Stateless::a</definition>
+        <argsstring>()</argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="7" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classfixtures_1_1Stateless_1a1d8e5f8376bb5ae8c17e0ee1b506b59f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int fixtures::Stateless::b</definition>
+        <argsstring>()</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="7" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="7" bodyend="7"/>
+        <references refid="classfixtures_1_1SharedState_1a0d3f8fd3cf9a60388677ce926ab50d72" compoundref="classes_8hpp" startline="3" endline="3">fixtures::SharedState::a</references>
+        <references refid="classfixtures_1_1Stateless_1a1d8e5f8376bb5ae8c17e0ee1b506b59f" compoundref="classes_8hpp" startline="7" endline="7">b</references>
+        <referencedby refid="classfixtures_1_1Stateless_1a1d8e5f8376bb5ae8c17e0ee1b506b59f" compoundref="classes_8hpp" startline="7" endline="7">b</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="7" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="7" bodyend="7"/>
+    <listofallmembers>
+      <member refid="classfixtures_1_1Stateless_1aada67a95298bb9db7137b5654b573604" prot="public" virt="non-virtual"><scope>fixtures::Stateless</scope><name>a</name></member>
+      <member refid="classfixtures_1_1Stateless_1a1d8e5f8376bb5ae8c17e0ee1b506b59f" prot="public" virt="non-virtual"><scope>fixtures::Stateless</scope><name>b</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

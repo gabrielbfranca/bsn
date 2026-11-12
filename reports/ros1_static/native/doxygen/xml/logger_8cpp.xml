@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Logger_8cpp" kind="file" language="C++">
+    <compoundname>Logger.cpp</compoundname>
+    <includes refid="Logger_8hpp" local="yes">Logger.hpp</includes>
+    <incdepgraph>
+      <node id="1077">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="1084">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>stdexcept</label>
+      </node>
+      <node id="1082">
+        <label>string</label>
+      </node>
+      <node id="1074">
+        <label>ros/package.h</label>
+      </node>
+      <node id="1071">
+        <label>fstream</label>
+      </node>
+      <node id="1078">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="1070">
+        <label>Logger.hpp</label>
+        <link refid="Logger_8hpp"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+      </node>
+      <node id="1081">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+      </node>
+      <node id="1079">
+        <label>archlib/Uncertainty.h</label>
+      </node>
+      <node id="1075">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="1073">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="1076">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="1072">
+        <label>chrono</label>
+      </node>
+      <node id="1069">
+        <label>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</label>
+        <link refid="Logger_8cpp"/>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>archlib/Persist.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Logger_8hpp" kindref="compound">Logger.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classLogger_1a2a972e87899a345fbd2c237d3933fd26" refkind="member"><highlight class="normal"><ref refid="classLogger_1a2a972e87899a345fbd2c237d3933fd26" kindref="member">Logger::Logger</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>:<sp/>ROSComponent(argc,<sp/>argv,<sp/>name),<sp/>time_ref()<sp/>{}</highlight></codeline>
+<codeline lineno="5" refid="classLogger_1acb668a9e186a25fbaad2e4af6d1ed00a" refkind="member"><highlight class="normal"><ref refid="classLogger_1acb668a9e186a25fbaad2e4af6d1ed00a" kindref="member">Logger::~Logger</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classLogger_1a7a6704564d14bef375851b382f8b2887" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">Logger::now</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::chrono::high_resolution_clock::now().time_since_epoch().count();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" kindref="member">Logger::setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kindref="member">time_ref</ref><sp/>=<sp/>this-&gt;<ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">now</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" kindref="member">adapt</ref><sp/>=<sp/><ref refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" kindref="member">handle</ref>.advertise&lt;archlib::AdaptationCommand&gt;(</highlight><highlight class="stringliteral">&quot;reconfigure&quot;</highlight><highlight class="normal">,<sp/>1000);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kindref="member">persist</ref><sp/>=<sp/><ref refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" kindref="member">handle</ref>.advertise&lt;archlib::Persist&gt;(</highlight><highlight class="stringliteral">&quot;persist&quot;</highlight><highlight class="normal">,<sp/>1000);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" kindref="member">status</ref><sp/>=<sp/><ref refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" kindref="member">handle</ref>.advertise&lt;archlib::Status&gt;(</highlight><highlight class="stringliteral">&quot;status&quot;</highlight><highlight class="normal">,<sp/>1000);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>=<sp/><ref refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" kindref="member">handle</ref>.advertise&lt;archlib::Event&gt;(</highlight><highlight class="stringliteral">&quot;event&quot;</highlight><highlight class="normal">,<sp/>1000);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>freq;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;frequency&quot;</highlight><highlight class="normal">,<sp/>freq);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kindref="member">setFreq</ref>(freq);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classLogger_1aba38120a928c4fa5bf74dc92029dade5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1aba38120a928c4fa5bf74dc92029dade5" kindref="member">Logger::tearDown</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" kindref="member">Logger::body</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>n;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>reconfig_sub<sp/>=<sp/>n.subscribe(</highlight><highlight class="stringliteral">&quot;log_adapt&quot;</highlight><highlight class="normal">,<sp/>1000,<sp/>&amp;<ref refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" kindref="member">Logger::receiveAdaptationCommand</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>status_sub<sp/>=<sp/>n.subscribe(</highlight><highlight class="stringliteral">&quot;log_status&quot;</highlight><highlight class="normal">,<sp/>1000,<sp/>&amp;<ref refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" kindref="member">Logger::receiveStatus</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>energy_status_sub<sp/>=<sp/>n.subscribe(</highlight><highlight class="stringliteral">&quot;log_energy_status&quot;</highlight><highlight class="normal">,<sp/>1000,<sp/>&amp;<ref refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" kindref="member">Logger::receiveEnergyStatus</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>event_sub<sp/>=<sp/>n.subscribe(</highlight><highlight class="stringliteral">&quot;log_event&quot;</highlight><highlight class="normal">,<sp/>1000,<sp/>&amp;<ref refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" kindref="member">Logger::receiveEvent</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>uncertainty_sub<sp/>=<sp/>n.subscribe(</highlight><highlight class="stringliteral">&quot;log_uncertainty&quot;</highlight><highlight class="normal">,<sp/>1000,<sp/>&amp;<ref refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" kindref="member">Logger::receiveUncertainty</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::spin();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" kindref="member">Logger::receiveAdaptationCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ROS_DEBUG(&quot;I<sp/>heard:<sp/>[%s:<sp/>%s]&quot;,<sp/>msg-&gt;action.c_str(),<sp/>msg-&gt;target.c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>archlib::Persist<sp/>persistMsg;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.source<sp/>=<sp/>msg-&gt;source;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.target<sp/>=<sp/>msg-&gt;target;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;AdaptationCommand&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.timestamp<sp/>=<sp/>this-&gt;<ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">now</ref>()-<ref refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kindref="member">time_ref</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.content<sp/>=<sp/>msg-&gt;action;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kindref="member">persist</ref>.publish(persistMsg);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" kindref="member">adapt</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" kindref="member">Logger::receiveStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Status::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ROS_DEBUG(&quot;I<sp/>heard:<sp/>[%s:<sp/>%s]&quot;,<sp/>msg-&gt;source.c_str(),<sp/>msg-&gt;content.c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>archlib::Persist<sp/>persistMsg;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.source<sp/>=<sp/>msg-&gt;source;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.target<sp/>=<sp/>msg-&gt;target;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Status&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.timestamp<sp/>=<sp/>this-&gt;<ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">now</ref>()-<ref refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kindref="member">time_ref</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.content<sp/>=<sp/>msg-&gt;content;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kindref="member">persist</ref>.publish(persistMsg);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" kindref="member">status</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" kindref="member">Logger::receiveEnergyStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::EnergyStatus::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ROS_DEBUG(&quot;I<sp/>heard:<sp/>[%s:<sp/>%s]&quot;,<sp/>msg-&gt;source.c_str(),<sp/>to_string(msg-&gt;content).c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>archlib::Persist<sp/>persistMsg;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.source<sp/>=<sp/>msg-&gt;source;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.target<sp/>=<sp/>msg-&gt;target;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;EnergyStatus&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.timestamp<sp/>=<sp/>this-&gt;<ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">now</ref>()-<ref refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kindref="member">time_ref</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.content<sp/>=<sp/>msg-&gt;content;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kindref="member">persist</ref>.publish(persistMsg);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" kindref="member">Logger::receiveEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Event::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ROS_DEBUG(&quot;I<sp/>heard:<sp/>[%s:<sp/>%s]&quot;,<sp/>msg-&gt;source.c_str(),<sp/>msg-&gt;content.c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>archlib::Persist<sp/>persistMsg;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.source<sp/>=<sp/>msg-&gt;source;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.target<sp/>=<sp/>msg-&gt;target;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Event&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.timestamp<sp/>=<sp/>this-&gt;<ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">now</ref>()-<ref refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kindref="member">time_ref</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.content<sp/>=<sp/>msg-&gt;content;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kindref="member">persist</ref>.publish(persistMsg);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.publish(msg);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" kindref="member">Logger::receiveUncertainty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Uncertainty::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ROS_DEBUG(&quot;I<sp/>heard:<sp/>[%s:<sp/>%s]&quot;,<sp/>msg-&gt;source.c_str(),<sp/>msg-&gt;content.c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>archlib::Persist<sp/>persistMsg;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.source<sp/>=<sp/>msg-&gt;source;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.target<sp/>=<sp/>msg-&gt;target;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Uncertainty&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.timestamp<sp/>=<sp/>this-&gt;<ref refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kindref="member">now</ref>()-<ref refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kindref="member">time_ref</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>persistMsg.content<sp/>=<sp/>msg-&gt;content;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kindref="member">persist</ref>.publish(persistMsg);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp"/>
+  </compounddef>
+</doxygen>

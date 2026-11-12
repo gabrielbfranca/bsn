@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="G3T1__1_8hpp" kind="file" language="C++">
+    <compoundname>G3T1_1.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">exception</includes>
+    <includes local="yes">ros/ros.h</includes>
+    <includes refid="Battery_8hpp" local="yes">libbsn/resource/Battery.hpp</includes>
+    <includes refid="Range_8hpp" local="yes">libbsn/range/Range.hpp</includes>
+    <includes refid="Markov_8hpp" local="yes">libbsn/generator/Markov.hpp</includes>
+    <includes refid="DataGenerator_8hpp" local="yes">libbsn/generator/DataGenerator.hpp</includes>
+    <includes refid="MovingAverage_8hpp" local="yes">libbsn/filters/MovingAverage.hpp</includes>
+    <includes refid="utils_8hpp" local="yes">libbsn/utils/utils.hpp</includes>
+    <includes refid="SensorConfiguration_8hpp" local="yes">libbsn/configuration/SensorConfiguration.hpp</includes>
+    <includes refid="Sensor_8hpp" local="yes">component/Sensor.hpp</includes>
+    <includes local="yes">services/PatientData.h</includes>
+    <includes local="yes">messages/SensorData.h</includes>
+    <includedby refid="g3t1__1_8cpp" local="yes">src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</includedby>
+    <includedby refid="G3T1__1_8cpp" local="yes">src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</includedby>
+    <incdepgraph>
+      <node id="1837">
+        <label>list</label>
+      </node>
+      <node id="1845">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="1839">
+        <label>libbsn/configuration/SensorConfiguration.hpp</label>
+        <link refid="SensorConfiguration_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+      </node>
+      <node id="1841">
+        <label>component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>services/PatientData.h</label>
+      </node>
+      <node id="1851">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+      <node id="1827">
+        <label>stdint.h</label>
+      </node>
+      <node id="1856">
+        <label>messages/SensorData.h</label>
+      </node>
+      <node id="1828">
+        <label>stdexcept</label>
+      </node>
+      <node id="1822">
+        <label>string</label>
+      </node>
+      <node id="1835">
+        <label>libbsn/generator/DataGenerator.hpp</label>
+        <link refid="DataGenerator_8hpp"/>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>libbsn/filters/MovingAverage.hpp</label>
+        <link refid="MovingAverage_8hpp"/>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+      </node>
+      <node id="1823">
+        <label>exception</label>
+      </node>
+      <node id="1838">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>random</label>
+      </node>
+      <node id="1854">
+        <label>std_srvs/SetBool.h</label>
+      </node>
+      <node id="1829">
+        <label>libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+      </node>
+      <node id="1843">
+        <label>archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+      </node>
+      <node id="1848">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="1834">
+        <label>vector</label>
+      </node>
+      <node id="1844">
+        <label>signal.h</label>
+      </node>
+      <node id="1850">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>archlib/Uncertainty.h</label>
+      </node>
+      <node id="1832">
+        <label>array</label>
+      </node>
+      <node id="1826">
+        <label>sstream</label>
+      </node>
+      <node id="1846">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="1821">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="1840">
+        <label>math.h</label>
+      </node>
+      <node id="1831">
+        <label>libbsn/generator/Markov.hpp</label>
+        <link refid="Markov_8hpp"/>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+      </node>
+      <node id="1830">
+        <label>iostream</label>
+      </node>
+      <node id="1847">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="1853">
+        <label>std_msgs/Float32.h</label>
+      </node>
+      <node id="1825">
+        <label>libbsn/resource/Battery.hpp</label>
+        <link refid="Battery_8hpp"/>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+      </node>
+      <node id="1842">
+        <label>stdio.h</label>
+      </node>
+      <node id="1849">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1859">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</label>
+        <link refid="G3T1__1_8cpp"/>
+      </node>
+      <node id="1857">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="1858" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+      </node>
+      <node id="1858">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</label>
+        <link refid="g3t1__1_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classG3T1__1" prot="public">G3T1_1</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>G3T1_1_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>G3T1_1_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/ros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Battery_8hpp" kindref="compound">libbsn/resource/Battery.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Range_8hpp" kindref="compound">libbsn/range/Range.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Markov_8hpp" kindref="compound">libbsn/generator/Markov.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataGenerator_8hpp" kindref="compound">libbsn/generator/DataGenerator.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MovingAverage_8hpp" kindref="compound">libbsn/filters/MovingAverage.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8hpp" kindref="compound">libbsn/utils/utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SensorConfiguration_8hpp" kindref="compound">libbsn/configuration/SensorConfiguration.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Sensor_8hpp" kindref="compound">component/Sensor.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;services/PatientData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;messages/SensorData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classG3T1__1" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classG3T1__1" kindref="compound">G3T1_1</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classSensor" kindref="compound">Sensor</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__1_1ab1ac84247530830ee7579bd2aa5f6885" kindref="member">G3T1_1</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__1_1a018e43c574b735e6e4df9ef86dc7061e" kindref="member">~G3T1_1</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__1_1ab1ac84247530830ee7579bd2aa5f6885" kindref="member">G3T1_1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1" kindref="compound">G3T1_1</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__1" kindref="compound">G3T1_1</ref><sp/>&amp;<ref refid="classG3T1__1_1a5d333a1bc4a077a3202083d3544bafee" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1" kindref="compound">G3T1_1</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classG3T1__1_1ac520f751e76c00a16d47070d37a003c0" kindref="member">label</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;risk);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1_1afc0406d8cf445068c7f9ffea7293e99c" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1_1a26fe42a954281b0cc6a8cef9b5b88c57" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1_1a4696c0b3b423e6d0efe2a6f3f6e84cfa" kindref="member">collect</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1_1aff514b4de85780777a8326e353148fe1" kindref="member">process</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1_1a58277c46b8319bd35e3ffabd52805874" kindref="member">transfer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;data);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="classG3T1__1_1ac8faebd949889259169dbb5095db50c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">bsn::generator::Markov</ref><sp/><ref refid="classG3T1__1_1ac8faebd949889259169dbb5095db50c1" kindref="member">markov</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classG3T1__1_1a1a63f516a022f85df03ed4aa045f1dbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">bsn::generator::DataGenerator</ref><sp/><ref refid="classG3T1__1_1a1a63f516a022f85df03ed4aa045f1dbc" kindref="member">dataGenerator</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classG3T1__1_1a1abc629f5a71028728f2083d48f257ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1filters_1_1MovingAverage" kindref="compound">bsn::filters::MovingAverage</ref><sp/><ref refid="classG3T1__1_1a1abc629f5a71028728f2083d48f257ee" kindref="member">filter</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classG3T1__1_1a1c064d056021d91f508ea3cb027b3f61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1configuration_1_1SensorConfiguration" kindref="compound">bsn::configuration::SensorConfiguration</ref><sp/><ref refid="classG3T1__1_1a1c064d056021d91f508ea3cb027b3f61" kindref="member">sensorConfig</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classG3T1__1_1a8740b03768109e5dd5d306fad1026116" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/><ref refid="classG3T1__1_1a8740b03768109e5dd5d306fad1026116" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classG3T1__1_1a4020e77c66c2a19651b89ee6c5fdc780" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classG3T1__1_1a4020e77c66c2a19651b89ee6c5fdc780" kindref="member">data_pub</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="classG3T1__1_1a31c39930c35debcff7c41ff041f2548a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classG3T1__1_1a31c39930c35debcff7c41ff041f2548a" kindref="member">collected_risk</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp"/>
+  </compounddef>
+</doxygen>

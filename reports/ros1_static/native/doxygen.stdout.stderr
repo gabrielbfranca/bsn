@@ -1,0 +1,15 @@
+/workspaces/bsn_/src/libbsn/src/configuration/SensorConfiguration.cpp:17: warning: no matching class member found for 
+  bsn::configuration::SensorConfiguration::SensorConfiguration(int32_t i, bsn::range::Range l, array< bsn::range::Range, 2 > m, array< Range, 2 > h, array< Range, 3 > p)
+Possible candidates:
+  bsn::configuration::SensorConfiguration::SensorConfiguration()
+  bsn::configuration::SensorConfiguration::SensorConfiguration(int32_t i, bsn::range::Range, std::array< bsn::range::Range, 2 >, std::array< bsn::range::Range, 2 >, std::array< bsn::range::Range, 3 >)
+  bsn::configuration::SensorConfiguration::SensorConfiguration(const SensorConfiguration &)
+
+/workspaces/bsn_/src/libbsn/src/generator/Markov.cpp:11: warning: no matching class member found for 
+  bsn::generator::Markov::Markov(array< float, 25 > t, array< Range, 5 > r, int32_t initialState)
+Possible candidates:
+  bsn::generator::Markov::Markov()
+  bsn::generator::Markov::Markov(std::array< float, 25 > transitions, std::array< bsn::range::Range, 5 > states, int32_t initialState)
+  bsn::generator::Markov::Markov(const Markov &)
+
+/workspaces/bsn_/src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp:56: warning: argument 'prefix' of command @param is not found in the argument list of CostEngine::initialize_priority(std::vector< std::string > terms)

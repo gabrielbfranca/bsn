@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Sensor_8hpp" kind="file" language="C++">
+    <compoundname>Sensor.hpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="Component_8hpp" local="yes">archlib/target_system/Component.hpp</includes>
+    <includes local="yes">archlib/AdaptationCommand.h</includes>
+    <includes local="yes">archlib/Uncertainty.h</includes>
+    <includes refid="Battery_8hpp" local="yes">libbsn/resource/Battery.hpp</includes>
+    <includes refid="utils_8hpp" local="yes">libbsn/utils/utils.hpp</includes>
+    <includes local="no">std_msgs/Float32.h</includes>
+    <includes local="no">std_srvs/SetBool.h</includes>
+    <includedby refid="G3T1__1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</includedby>
+    <includedby refid="G3T1__2_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</includedby>
+    <includedby refid="G3T1__3_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</includedby>
+    <includedby refid="G3T1__4_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</includedby>
+    <includedby refid="G3T1__5_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</includedby>
+    <includedby refid="G3T1__6_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</includedby>
+    <includedby refid="Sensor_8cpp" local="yes">src/sa-bsn/target_system/components/component/src/Sensor.cpp</includedby>
+    <incdepgraph>
+      <node id="2096">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="2089">
+        <label>src/sa-bsn/target_system/components/component/include/component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="2090" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2092" relation="include">
+        </childnode>
+        <childnode refid="2093" relation="include">
+        </childnode>
+        <childnode refid="2099" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+      </node>
+      <node id="2107">
+        <label>stdint.h</label>
+      </node>
+      <node id="2103">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+      </node>
+      <node id="2102">
+        <label>stdexcept</label>
+      </node>
+      <node id="2091">
+        <label>string</label>
+      </node>
+      <node id="2108">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="2092" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+      </node>
+      <node id="2110">
+        <label>std_srvs/SetBool.h</label>
+      </node>
+      <node id="2093">
+        <label>archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2094" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+        <childnode refid="2096" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+        <childnode refid="2099" relation="include">
+        </childnode>
+        <childnode refid="2100" relation="include">
+        </childnode>
+        <childnode refid="2101" relation="include">
+        </childnode>
+      </node>
+      <node id="2099">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="2092">
+        <label>vector</label>
+      </node>
+      <node id="2094">
+        <label>signal.h</label>
+      </node>
+      <node id="2101">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+      </node>
+      <node id="2104">
+        <label>archlib/Uncertainty.h</label>
+      </node>
+      <node id="2106">
+        <label>sstream</label>
+      </node>
+      <node id="2097">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="2095">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="2098">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="2109">
+        <label>std_msgs/Float32.h</label>
+      </node>
+      <node id="2105">
+        <label>libbsn/resource/Battery.hpp</label>
+        <link refid="Battery_8hpp"/>
+        <childnode refid="2106" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+        <childnode refid="2102" relation="include">
+        </childnode>
+      </node>
+      <node id="2090">
+        <label>stdio.h</label>
+      </node>
+      <node id="2100">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2119">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp</label>
+        <link refid="g3t1__3_8cpp"/>
+      </node>
+      <node id="2117">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</label>
+        <link refid="G3T1__2_8cpp"/>
+      </node>
+      <node id="2111">
+        <label>src/sa-bsn/target_system/components/component/include/component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2115" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp</label>
+        <link refid="g3t1__6_8cpp"/>
+      </node>
+      <node id="2126">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</label>
+        <link refid="G3T1__5_8cpp"/>
+      </node>
+      <node id="2123">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</label>
+        <link refid="G3T1__4_8cpp"/>
+      </node>
+      <node id="2114">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</label>
+        <link refid="G3T1__1_8cpp"/>
+      </node>
+      <node id="2115">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</label>
+        <link refid="G3T1__2_8hpp"/>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2117" relation="include">
+        </childnode>
+      </node>
+      <node id="2129">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</label>
+        <link refid="G3T1__6_8cpp"/>
+      </node>
+      <node id="2130">
+        <label>src/sa-bsn/target_system/components/component/src/Sensor.cpp</label>
+        <link refid="Sensor_8cpp"/>
+      </node>
+      <node id="2112">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="2113" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+      </node>
+      <node id="2113">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</label>
+        <link refid="g3t1__1_8cpp"/>
+      </node>
+      <node id="2118">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</label>
+        <link refid="G3T1__3_8hpp"/>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+      </node>
+      <node id="2120">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</label>
+        <link refid="G3T1__3_8cpp"/>
+      </node>
+      <node id="2121">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</label>
+        <link refid="G3T1__4_8hpp"/>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2123" relation="include">
+        </childnode>
+      </node>
+      <node id="2122">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp</label>
+        <link refid="g3t1__4_8cpp"/>
+      </node>
+      <node id="2127">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</label>
+        <link refid="G3T1__6_8hpp"/>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+      </node>
+      <node id="2125">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp</label>
+        <link refid="g3t1__5_8cpp"/>
+      </node>
+      <node id="2116">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp</label>
+        <link refid="g3t1__2_8cpp"/>
+      </node>
+      <node id="2124">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</label>
+        <link refid="G3T1__5_8hpp"/>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSensor" prot="public">Sensor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SENSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Component_8hpp" kindref="compound">archlib/target_system/Component.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/AdaptationCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Uncertainty.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Battery_8hpp" kindref="compound">libbsn/resource/Battery.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8hpp" kindref="compound">libbsn/utils/utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/Float32.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_srvs/SetBool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classSensor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSensor" kindref="compound">Sensor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">arch::target_system::Component</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1ac7f3f9070732abb6e7b881ac66d734e2" kindref="member">Sensor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" kindref="member">type</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;<ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref><sp/>&amp;<ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;<ref refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kindref="member">instant_recharge</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" kindref="member">~Sensor</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor" kindref="compound">Sensor</ref><sp/>&amp;<ref refid="classSensor_1afebfbbf60a28c72389d5bd970fe78c0e" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSensor" kindref="compound">Sensor</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a46b45c4ec9d0675d2424ff2bb5df26ab" kindref="member">setUp</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1ad816b983559e220a9c360f57433f28de" kindref="member">tearDown</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a865bbaf085db8217e4d0c02e12e8a2a1" kindref="member">apply_noise</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a476760a7dd4be51136bf165e183526cf" kindref="member">reconfigure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a941f539d5f022334095705710338469c" kindref="member">injectUncertainty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Uncertainty::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSensor_1ab89214185c2da031e0f78b0f4dc031e8" kindref="member">collect</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a209530c83c3299a6587e1c87277dcd1e" kindref="member">process</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1afa34e334fc608034f8aeb8cb3d34abc9" kindref="member">transfer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" kindref="member">isActive</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1ab687b1dd4e4ecb1d806bf947cedc9b76" kindref="member">turnOn</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a7e0dadfc3dcde4c6c7b20d0c0ae09082" kindref="member">turnOff</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" kindref="member">recharge</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classSensor_1a70688e69c2a29191801550d1230b0807" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a70688e69c2a29191801550d1230b0807" kindref="member">buffer_size</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" kindref="member">replicate_collect</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref><sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kindref="member">instant_recharge</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" kindref="member">shouldStart</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" kindref="member">connected_sensor</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp"/>
+  </compounddef>
+</doxygen>

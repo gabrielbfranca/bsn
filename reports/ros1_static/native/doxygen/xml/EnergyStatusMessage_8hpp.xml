@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="EnergyStatusMessage_8hpp" kind="file" language="C++">
+    <compoundname>EnergyStatusMessage.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <incdepgraph>
+      <node id="977">
+        <label>string</label>
+      </node>
+      <node id="976">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</label>
+        <link refid="EnergyStatusMessage_8hpp"/>
+        <childnode refid="977" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="981">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="979">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="980" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+      </node>
+      <node id="980">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+      <node id="978">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</label>
+        <link refid="EnergyStatusMessage_8hpp"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classEnergyStatusMessage" prot="public">EnergyStatusMessage</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ENERGY_STATUS_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENERGY_STATUS_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classEnergyStatusMessage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEnergyStatusMessage" kindref="compound">EnergyStatusMessage</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classEnergyStatusMessage_1a8c9b881aa880bb6b44eeb4764d846620" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEnergyStatusMessage_1a8c9b881aa880bb6b44eeb4764d846620" kindref="member">EnergyStatusMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" kindref="member">timestamp</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" kindref="member">logical_clock</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" kindref="member">source</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" kindref="member">target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" kindref="member">cost</ref>)<sp/>:<sp/>name(name),<sp/>timestamp(timestamp),<sp/>logical_clock(logical_clock),<sp/>source(source),<sp/>target(target),<sp/>cost(cost){};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11" refid="classEnergyStatusMessage_1a6443612a1c5769aaedfe324cde05c98b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1a6443612a1c5769aaedfe324cde05c98b" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" kindref="member">name</ref>;};</highlight></codeline>
+<codeline lineno="12" refid="classEnergyStatusMessage_1a43bf32f6c780a46fe3085a1d9281976d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEnergyStatusMessage_1a43bf32f6c780a46fe3085a1d9281976d" kindref="member">getTimestamp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" kindref="member">timestamp</ref>;};</highlight></codeline>
+<codeline lineno="13" refid="classEnergyStatusMessage_1accaf3d8b9f3472487123995c437c1c38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEnergyStatusMessage_1accaf3d8b9f3472487123995c437c1c38" kindref="member">getLogicalClock</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" kindref="member">logical_clock</ref>;};</highlight></codeline>
+<codeline lineno="14" refid="classEnergyStatusMessage_1a11d09956fd817a15de68b6618d633081" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1a11d09956fd817a15de68b6618d633081" kindref="member">getSource</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" kindref="member">source</ref>;};</highlight></codeline>
+<codeline lineno="15" refid="classEnergyStatusMessage_1ae351c8fe3c89916c2d56ec88b53c9f7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1ae351c8fe3c89916c2d56ec88b53c9f7f" kindref="member">getTarget</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" kindref="member">target</ref>;};</highlight></codeline>
+<codeline lineno="16" refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1ac5e1f87fc7534e74b32704c56b0ab20c" kindref="member">getCost</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" kindref="member">cost</ref>;};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" kindref="member">logical_clock</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" kindref="member">source</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_32583e50bb5749fdc6c8eb55698ce5f6" kind="dir">
+    <compoundname>src/archlib/include/archlib</compoundname>
+    <innerdir refid="dir_03cba4c4b5fbabfa308208696f75219f">src/archlib/include/archlib/target_system</innerdir>
+    <innerfile refid="ROSComponent_8hpp">ROSComponent.hpp</innerfile>
+    <innerfile refid="ROSComponentDescriptor_8hpp">ROSComponentDescriptor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/archlib/include/archlib/"/>
+  </compounddef>
+</doxygen>

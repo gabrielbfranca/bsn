@@ -1,0 +1,6 @@
+{
+  "Consumer": true,
+  "SignatureUser": true,
+  "Supplier": true,
+  "Standalone": true
+}

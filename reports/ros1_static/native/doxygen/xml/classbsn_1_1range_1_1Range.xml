@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1range_1_1Range" kind="class" language="C++" prot="public">
+    <compoundname>bsn::range::Range</compoundname>
+    <includes refid="Range_8hpp" local="no">Range.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double bsn::range::Range::lowerBound</definition>
+        <argsstring></argsstring>
+        <name>lowerBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="37" column="1" bodyfile="src/libbsn/include/libbsn/range/Range.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" compoundref="Range_8cpp" startline="33" endline="38">convert</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" compoundref="Range_8cpp" startline="48" endline="50">getLowerBound</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" compoundref="Range_8cpp" startline="29" endline="31">in_range</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" compoundref="Range_8cpp" startline="22" endline="26">operator=</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" compoundref="Range_8cpp" startline="44" endline="46">setLowerBound</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" compoundref="Range_8cpp" startline="40" endline="42">to_print</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" compoundref="Range_8cpp" startline="60" endline="66">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double bsn::range::Range::upperBound</definition>
+        <argsstring></argsstring>
+        <name>upperBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="38" column="1" bodyfile="src/libbsn/include/libbsn/range/Range.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" compoundref="Range_8cpp" startline="33" endline="38">convert</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" compoundref="Range_8cpp" startline="56" endline="58">getUpperBound</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" compoundref="Range_8cpp" startline="29" endline="31">in_range</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" compoundref="Range_8cpp" startline="22" endline="26">operator=</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" compoundref="Range_8cpp" startline="52" endline="54">setUpperBound</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" compoundref="Range_8cpp" startline="40" endline="42">to_print</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" compoundref="Range_8cpp" startline="60" endline="66">toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::range::Range::Range</definition>
+        <argsstring>()</argsstring>
+        <name>Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="16" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a41643b5367a88263f328c9f8a82e0479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::range::Range::Range</definition>
+        <argsstring>(const double &amp;, const double &amp;)</argsstring>
+        <name>Range</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>l</defname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <defname>u</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="17" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1ac97bbbad31eaa12e560882347eb150d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::range::Range::~Range</definition>
+        <argsstring>()</argsstring>
+        <name>~Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="18" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1ab689347e8fe6b800352063428163af8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::range::Range::Range</definition>
+        <argsstring>(const Range &amp;)</argsstring>
+        <name>Range</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="20" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref> &amp;</type>
+        <definition>Range &amp; bsn::range::Range::operator=</definition>
+        <argsstring>(const Range &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="21" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="22" bodyend="26"/>
+        <references refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" compoundref="Range_8cpp" startline="48" endline="50">getLowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" compoundref="Range_8cpp" startline="56" endline="58">getUpperBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::range::Range::in_range</definition>
+        <argsstring>(double element)</argsstring>
+        <name>in_range</name>
+        <param>
+          <type>double</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="24" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="29" bodyend="31"/>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">bsn::configuration::SensorConfiguration::evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" compoundref="SensorConfiguration_8cpp" startline="170" endline="173">bsn::configuration::SensorConfiguration::isHighRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" compoundref="SensorConfiguration_8cpp" startline="161" endline="163">bsn::configuration::SensorConfiguration::isLowRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" compoundref="SensorConfiguration_8cpp" startline="165" endline="168">bsn::configuration::SensorConfiguration::isMediumRisk</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::range::Range::convert</definition>
+        <argsstring>(double new_lb, double new_ub, double input)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>double</type>
+          <declname>new_lb</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>new_ub</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="25" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="33" bodyend="38"/>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" compoundref="SensorConfiguration_8cpp" startline="86" endline="92">bsn::configuration::SensorConfiguration::convertRealPercentage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string bsn::range::Range::to_print</definition>
+        <argsstring>()</argsstring>
+        <name>to_print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="26" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="40" bodyend="42"/>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" compoundref="SensorConfiguration_8cpp" startline="127" endline="139">bsn::configuration::SensorConfiguration::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::range::Range::setLowerBound</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>setLowerBound</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>_lowerBound</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="28" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="44" bodyend="46"/>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::range::Range::getLowerBound</definition>
+        <argsstring>() const</argsstring>
+        <name>getLowerBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="29" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="48" bodyend="50"/>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">bsn::generator::DataGenerator::calculateValue</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" compoundref="SensorConfiguration_8cpp" startline="86" endline="92">bsn::configuration::SensorConfiguration::convertRealPercentage</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1aab092b8b249eda7ee53a38ec45ba9421" compoundref="SensorConfiguration_8cpp" startline="56" endline="84">bsn::configuration::SensorConfiguration::getDisplacement</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" compoundref="Range_8cpp" startline="22" endline="26">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::range::Range::setUpperBound</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>setUpperBound</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>_upperBound</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="31" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="52" bodyend="54"/>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::range::Range::getUpperBound</definition>
+        <argsstring>() const</argsstring>
+        <name>getUpperBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="32" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="56" bodyend="58"/>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">bsn::generator::DataGenerator::calculateValue</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" compoundref="SensorConfiguration_8cpp" startline="86" endline="92">bsn::configuration::SensorConfiguration::convertRealPercentage</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1aab092b8b249eda7ee53a38ec45ba9421" compoundref="SensorConfiguration_8cpp" startline="56" endline="84">bsn::configuration::SensorConfiguration::getDisplacement</referencedby>
+        <referencedby refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" compoundref="Range_8cpp" startline="22" endline="26">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const string bsn::range::Range::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/range/Range.hpp" line="34" column="1" bodyfile="src/libbsn/src/range/Range.cpp" bodystart="60" bodyend="66"/>
+        <references refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" compoundref="Range_8hpp" startline="37">lowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" compoundref="Range_8hpp" startline="38">upperBound</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/range/Range.hpp" line="13" column="1" bodyfile="src/libbsn/include/libbsn/range/Range.hpp" bodystart="13" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>convert</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>getLowerBound</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>getUpperBound</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>in_range</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" prot="private" virt="non-virtual"><scope>bsn::range::Range</scope><name>lowerBound</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>Range</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a41643b5367a88263f328c9f8a82e0479" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>Range</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1ab689347e8fe6b800352063428163af8e" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>Range</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>setLowerBound</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>setUpperBound</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>to_print</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>toString</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" prot="private" virt="non-virtual"><scope>bsn::range::Range</scope><name>upperBound</name></member>
+      <member refid="classbsn_1_1range_1_1Range_1ac97bbbad31eaa12e560882347eb150d2" prot="public" virt="non-virtual"><scope>bsn::range::Range</scope><name>~Range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

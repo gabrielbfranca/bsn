@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Context_8hpp" kind="file" language="C++">
+    <compoundname>Context.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="LeafTask_8hpp" local="yes">src/libbsn/include/libbsn/goalmodel/LeafTask.hpp</includedby>
+    <includedby refid="Context_8cpp" local="yes">src/libbsn/src/goalmodel/Context.cpp</includedby>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <includedby refid="CostEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</includedby>
+    <includedby refid="Engine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</includedby>
+    <includedby refid="ReliabilityEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</includedby>
+    <incdepgraph>
+      <node id="370">
+        <label>string</label>
+      </node>
+      <node id="369">
+        <label>src/libbsn/include/libbsn/goalmodel/Context.hpp</label>
+        <link refid="Context_8hpp"/>
+        <childnode refid="370" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="377">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="382">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</label>
+        <link refid="ReliabilityEngine_8hpp"/>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>src/libbsn/include/libbsn/goalmodel/GoalTree.hpp</label>
+        <link refid="GoalTree_8hpp"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</label>
+        <link refid="ReliabilityEngine_8cpp"/>
+      </node>
+      <node id="381">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</label>
+        <link refid="Engine_8hpp"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</label>
+        <link refid="CostEngine_8hpp"/>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+      <node id="379">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp</label>
+        <link refid="cost__engine_8cpp"/>
+      </node>
+      <node id="371">
+        <label>src/libbsn/include/libbsn/goalmodel/Context.hpp</label>
+        <link refid="Context_8hpp"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</label>
+        <link refid="Engine_8cpp"/>
+      </node>
+      <node id="374">
+        <label>src/libbsn/src/goalmodel/GoalTree.cpp</label>
+        <link refid="GoalTree_8cpp"/>
+      </node>
+      <node id="380">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</label>
+        <link refid="CostEngine_8cpp"/>
+      </node>
+      <node id="386">
+        <label>src/libbsn/src/goalmodel/LeafTask.cpp</label>
+        <link refid="LeafTask_8cpp"/>
+      </node>
+      <node id="383">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp</label>
+        <link refid="reli__engine_8cpp"/>
+      </node>
+      <node id="387">
+        <label>src/libbsn/src/goalmodel/Context.cpp</label>
+        <link refid="Context_8cpp"/>
+      </node>
+      <node id="372">
+        <label>src/libbsn/include/libbsn/goalmodel/LeafTask.hpp</label>
+        <link refid="LeafTask_8hpp"/>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Context" prot="public">bsn::goalmodel::Context</innerclass>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CONTEXT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTEXT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="namespacebsn_1_1goalmodel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">goalmodel<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classbsn_1_1goalmodel_1_1Context" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kindref="member">Context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="comment">/*id*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="comment">/*description*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*value*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kindref="member">Context</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1aa125049f930d3dd9a0a8d37e445d5aa8" kindref="member">~Context</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kindref="member">Context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;</highlight><highlight class="comment">/*rhs*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" kindref="member">setID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="comment">/*id*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" kindref="member">getID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" kindref="member">setDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="comment">/*description*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" kindref="member">getDescription</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" kindref="member">setValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*value*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" kindref="member">getValue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp"/>
+  </compounddef>
+</doxygen>

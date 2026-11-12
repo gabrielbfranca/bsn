@@ -1,0 +1,47 @@
+{
+  "repository": "https://github.com/rdinizcal/bsn2",
+  "ref": "metrics",
+  "commit": "e06541e63788439303ec6e5aa3ed03178f06dda4",
+  "files": [
+    {
+      "path": "tools/LCOM4.md",
+      "blob_sha": "ff7fa26b7baec96469b4461bd7744bbc94ab04b5",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/tools/LCOM4.md"
+    },
+    {
+      "path": "reports/lcom4/report.md",
+      "blob_sha": "2d2ce25fe8165aa205b2e6cb3f4182154dae50d5",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/reports/lcom4/report.md"
+    },
+    {
+      "path": "reports/class_modularity/report.md",
+      "blob_sha": "c1ad26cabc26b9796c7e001a3feb350f37ab9763",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/reports/class_modularity/report.md"
+    },
+    {
+      "path": "tools/semgrep/isolation-cpp.yml",
+      "blob_sha": "233dc341331efd08e048b5b9b5cf12f39e497aa7",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/tools/semgrep/isolation-cpp.yml"
+    },
+    {
+      "path": "tools/semgrep/tests/isolation-cpp.cpp",
+      "blob_sha": "5bcf305122f8b34f3ac50d2b37be69b7ffa76f2c",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/tools/semgrep/tests/isolation-cpp.cpp"
+    },
+    {
+      "path": "reports/isolation/summary.json",
+      "blob_sha": "99e004c9149ce0ed23e6b31ab1223a2227d9c59f",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/reports/isolation/summary.json"
+    },
+    {
+      "path": "reports/class_modularity/classes.csv",
+      "blob_sha": "a2ac112fe840a8f348992dc439dd58f8d13f8d05",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/reports/class_modularity/classes.csv"
+    },
+    {
+      "path": "reports/isolation/classes.csv",
+      "blob_sha": "4ee1343e7b2077049eaf7726b006603df7b020a9",
+      "url": "https://github.com/rdinizcal/bsn2/blob/e06541e63788439303ec6e5aa3ed03178f06dda4/reports/isolation/classes.csv"
+    }
+  ]
+}

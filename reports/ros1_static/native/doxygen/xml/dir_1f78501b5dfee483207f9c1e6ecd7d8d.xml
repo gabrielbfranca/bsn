@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_1f78501b5dfee483207f9c1e6ecd7d8d" kind="dir">
+    <compoundname>src/sa-bsn/system_manager/adaptation_engine/include</compoundname>
+    <innerdir refid="dir_cdff0d214610f5629d418322f75b48e5">src/sa-bsn/system_manager/adaptation_engine/include/engine</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/adaptation_engine/include/"/>
+  </compounddef>
+</doxygen>

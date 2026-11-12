@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classarch_1_1target__system_1_1Component" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>arch::target_system::Component</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <derivedcompoundref refid="classCentralHub" prot="public" virt="non-virtual">CentralHub</derivedcompoundref>
+    <derivedcompoundref refid="classSensor" prot="public" virt="non-virtual">Sensor</derivedcompoundref>
+    <includes refid="Component_8hpp" local="no">Component.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" prot="protected" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle arch::target_system::Component::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="47" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool arch::target_system::Component::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="51" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" compoundref="Component_8cpp" startline="152" endline="155">activate</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" compoundref="Component_8cpp" startline="157" endline="160">deactivate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher arch::target_system::Component::collect_event</definition>
+        <argsstring></argsstring>
+        <name>collect_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="52" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" compoundref="Component_8cpp" startline="120" endline="128">sendEvent</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher arch::target_system::Component::collect_status</definition>
+        <argsstring></argsstring>
+        <name>collect_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="53" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" compoundref="Component_8cpp" startline="130" endline="137">sendStatus</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher arch::target_system::Component::collect_energy_status</definition>
+        <argsstring></argsstring>
+        <name>collect_energy_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="54" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" compoundref="Component_8cpp" startline="139" endline="146">sendEnergyStatus</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Component_1a873aaa61ae03e7d1e5fd670ed4596a05" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber arch::target_system::Component::effect</definition>
+        <argsstring></argsstring>
+        <name>effect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="55" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::target_system::Component::Component</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>Component</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="23" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>arch::target_system::Component::~Component</definition>
+        <argsstring>()</argsstring>
+        <name>~Component</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="24" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <reimplementedby refid="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9">setUp</reimplementedby>
+        <reimplementedby refid="classSensor_1a46b45c4ec9d0675d2424ff2bb5df26ab">setUp</reimplementedby>
+        <reimplementedby refid="classG3T1__6_1a18cb80842d7823ae9929b29af6ab89e8">setUp</reimplementedby>
+        <reimplementedby refid="classG3T1__5_1a3978c48f730a640b8af43d100144ed71">setUp</reimplementedby>
+        <reimplementedby refid="classG3T1__4_1a0c30d795add04bf4e459650f28ab8de5">setUp</reimplementedby>
+        <reimplementedby refid="classG3T1__3_1a9dc06dbfd79fe9186c2583d3427bd349">setUp</reimplementedby>
+        <reimplementedby refid="classG3T1__2_1adf0bd406c544363148fdedc04638c327">setUp</reimplementedby>
+        <reimplementedby refid="classG3T1__1_1afc0406d8cf445068c7f9ffea7293e99c">setUp</reimplementedby>
+        <reimplementedby refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5">setUp</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="31" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="9" bodyend="46"/>
+        <references refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" compoundref="Component_8cpp" startline="152" endline="155">activate</references>
+        <references refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" compoundref="Component_8hpp" startline="54">collect_energy_status</references>
+        <references refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" compoundref="Component_8hpp" startline="52">collect_event</references>
+        <references refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" compoundref="Component_8hpp" startline="53">collect_status</references>
+        <references refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" compoundref="ROSComponent_8cpp" startline="58" endline="75">arch::ROSComponent::getRosNodeName</references>
+        <references refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" compoundref="Component_8hpp" startline="47">handle</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" compoundref="Component_8cpp" startline="130" endline="137">sendStatus</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+        <references refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" compoundref="Component_8cpp" startline="55" endline="57">sigIntHandler</references>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" compoundref="Component_8cpp" startline="99" endline="118">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <reimplementedby refid="classCentralHub_1a33ab84e2d47f41966b7a2c6c8763c755">tearDown</reimplementedby>
+        <reimplementedby refid="classSensor_1ad816b983559e220a9c360f57433f28de">tearDown</reimplementedby>
+        <reimplementedby refid="classG3T1__6_1aeb7749d4c82739285db2e311aac9828d">tearDown</reimplementedby>
+        <reimplementedby refid="classG3T1__5_1a022690dfe3fee702e20ea3f16c050ad5">tearDown</reimplementedby>
+        <reimplementedby refid="classG3T1__4_1a831e3082fad1d5982eb0392bfb6e93fb">tearDown</reimplementedby>
+        <reimplementedby refid="classG3T1__3_1ac850ab0dc5d7380d79dbbcc19e0a162b">tearDown</reimplementedby>
+        <reimplementedby refid="classG3T1__2_1a0c2d128e18b1cc9b0f75e8ac17c7479e">tearDown</reimplementedby>
+        <reimplementedby refid="classG3T1__1_1a26fe42a954281b0cc6a8cef9b5b88c57">tearDown</reimplementedby>
+        <reimplementedby refid="classG4T1_1a3027f9c8027d8fe09ae6ca7df2f6ab04">tearDown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="32" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="48" bodyend="53"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" compoundref="Component_8cpp" startline="99" endline="118">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t arch::target_system::Component::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d">run</reimplements>
+        <reimplementedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4">run</reimplementedby>
+        <reimplementedby refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499">run</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="33" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="99" bodyend="118"/>
+        <references refid="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22">body</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" compoundref="Component_8cpp" startline="130" endline="137">sendStatus</references>
+        <references refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</references>
+        <references refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" compoundref="Component_8cpp" startline="48" endline="53">tearDown</references>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void arch::target_system::Component::body</definition>
+        <argsstring>()=0</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <reimplementedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211">body</reimplementedby>
+        <reimplementedby refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133">body</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="34" column="1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" compoundref="Component_8cpp" startline="99" endline="118">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::sendEvent</definition>
+        <argsstring>(const std::string &amp;content)</argsstring>
+        <name>sendEvent</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="36" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="120" bodyend="128"/>
+        <references refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" compoundref="Component_8hpp" startline="52">collect_event</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" compoundref="ROSComponentDescriptor_8cpp" startline="21" endline="23">arch::ROSComponentDescriptor::getName</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" compoundref="Component_8cpp" startline="152" endline="155">activate</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" compoundref="Component_8cpp" startline="157" endline="160">deactivate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::sendStatus</definition>
+        <argsstring>(const std::string &amp;content)</argsstring>
+        <name>sendStatus</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="37" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="130" bodyend="137"/>
+        <references refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" compoundref="Component_8hpp" startline="53">collect_status</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" compoundref="ROSComponentDescriptor_8cpp" startline="21" endline="23">arch::ROSComponentDescriptor::getName</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">CentralHub::body</referencedby>
+        <referencedby refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" compoundref="Sensor_8cpp" startline="54" endline="87">Sensor::body</referencedby>
+        <referencedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" compoundref="CentralHub_8cpp" startline="9" endline="33">CentralHub::run</referencedby>
+        <referencedby refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" compoundref="Sensor_8cpp" startline="16" endline="52">Sensor::run</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" compoundref="Component_8cpp" startline="99" endline="118">run</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::sendEnergyStatus</definition>
+        <argsstring>(const double &amp;cost)</argsstring>
+        <name>sendEnergyStatus</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="38" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="139" bodyend="146"/>
+        <references refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" compoundref="Component_8hpp" startline="54">collect_energy_status</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" compoundref="ROSComponentDescriptor_8cpp" startline="21" endline="23">arch::ROSComponentDescriptor::getName</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <referencedby refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" compoundref="Sensor_8cpp" startline="54" endline="87">Sensor::body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::reconfigure</definition>
+        <argsstring>(const archlib::AdaptationCommand::ConstPtr &amp;msg)</argsstring>
+        <name>reconfigure</name>
+        <reimplementedby refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6">reconfigure</reimplementedby>
+        <reimplementedby refid="classSensor_1a476760a7dd4be51136bf165e183526cf">reconfigure</reimplementedby>
+        <param>
+          <type>const archlib::AdaptationCommand::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="40" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="148" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1afdc834e850139ebad2811b6342b0d00b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::target_system::Component::Component</definition>
+        <argsstring>(const Component &amp;)</argsstring>
+        <name>Component</name>
+        <param>
+          <type>const <ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a78dc2ea33dc96e3df648571af81b91a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref> &amp;</type>
+        <definition>Component&amp; arch::target_system::Component::operator=</definition>
+        <argsstring>(const Component &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="28" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::activate</definition>
+        <argsstring>()</argsstring>
+        <name>activate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="43" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="152" bodyend="155"/>
+        <references refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" compoundref="Component_8cpp" startline="120" endline="128">sendEvent</references>
+        <references refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" compoundref="Component_8hpp" startline="51">status</references>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+        <referencedby refid="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" compoundref="CentralHub_8cpp" startline="83" endline="86">CentralHub::turnOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::deactivate</definition>
+        <argsstring>()</argsstring>
+        <name>deactivate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="44" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="157" bodyend="160"/>
+        <references refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" compoundref="Component_8cpp" startline="120" endline="128">sendEvent</references>
+        <references refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" compoundref="Component_8hpp" startline="51">status</references>
+        <referencedby refid="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" compoundref="CentralHub_8cpp" startline="88" endline="91">CentralHub::turnOff</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::shutdownComponent</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="45" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="59" bodyend="97"/>
+        <references refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" compoundref="ROSComponent_8cpp" startline="58" endline="75">arch::ROSComponent::getRosNodeName</references>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" compoundref="Component_8cpp" startline="55" endline="57">sigIntHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Component::sigIntHandler</definition>
+        <argsstring>(int signal)</argsstring>
+        <name>sigIntHandler</name>
+        <param>
+          <type>int</type>
+          <declname>signal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Component.hpp" line="48" column="1" bodyfile="src/archlib/src/target_system/Component.cpp" bodystart="55" bodyend="57"/>
+        <references refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" compoundref="Component_8cpp" startline="59" endline="97">shutdownComponent</references>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>Sensor</label>
+        <link refid="classSensor"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="20">
+        <label>G3T1_1</label>
+        <link refid="classG3T1__1"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>G3T1_2</label>
+        <link refid="classG3T1__2"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>G3T1_3</label>
+        <link refid="classG3T1__3"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>G3T1_4</label>
+        <link refid="classG3T1__4"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>G3T1_5</label>
+        <link refid="classG3T1__5"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>G3T1_6</label>
+        <link refid="classG3T1__6"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>CentralHub</label>
+        <link refid="classCentralHub"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>G4T1</label>
+        <link refid="classG4T1"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="26">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/archlib/include/archlib/target_system/Component.hpp" line="20" column="1" bodyfile="src/archlib/include/archlib/target_system/Component.hpp" bodystart="20" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>activate</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22" prot="public" virt="pure-virtual"><scope>arch::target_system::Component</scope><name>body</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>collect_energy_status</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>collect_event</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>collect_status</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" prot="public" virt="non-virtual"><scope>arch::target_system::Component</scope><name>Component</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1afdc834e850139ebad2811b6342b0d00b" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>Component</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>deactivate</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a873aaa61ae03e7d1e5fd670ed4596a05" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>effect</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>getRosNodeName</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>handle</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a78dc2ea33dc96e3df648571af81b91a4" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>operator=</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" prot="public" virt="virtual"><scope>arch::target_system::Component</scope><name>reconfigure</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>arch::target_system::Component</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" prot="public" virt="virtual"><scope>arch::target_system::Component</scope><name>run</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" prot="public" virt="non-virtual"><scope>arch::target_system::Component</scope><name>sendEnergyStatus</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" prot="public" virt="non-virtual"><scope>arch::target_system::Component</scope><name>sendEvent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" prot="public" virt="non-virtual"><scope>arch::target_system::Component</scope><name>sendStatus</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" prot="public" virt="virtual"><scope>arch::target_system::Component</scope><name>setUp</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>shutdownComponent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" prot="protected" virt="non-virtual"><scope>arch::target_system::Component</scope><name>sigIntHandler</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" prot="private" virt="non-virtual"><scope>arch::target_system::Component</scope><name>status</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" prot="public" virt="virtual"><scope>arch::target_system::Component</scope><name>tearDown</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" prot="public" virt="virtual"><scope>arch::target_system::Component</scope><name>~Component</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>arch::target_system::Component</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

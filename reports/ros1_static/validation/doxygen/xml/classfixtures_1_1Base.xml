@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1Base" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::Base</compoundname>
+    <derivedcompoundref refid="classfixtures_1_1Derived" prot="public" virt="non-virtual">fixtures::Derived</derivedcompoundref>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>fixtures::Derived</label>
+        <link refid="classfixtures_1_1Derived"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>fixtures::Base</label>
+        <link refid="classfixtures_1_1Base"/>
+      </node>
+    </inheritancegraph>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="13" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="13" bodyend="13"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

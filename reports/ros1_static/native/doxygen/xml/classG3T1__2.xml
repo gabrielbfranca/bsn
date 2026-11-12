@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classG3T1__2" kind="class" language="C++" prot="public">
+    <compoundname>G3T1_2</compoundname>
+    <basecompoundref refid="classSensor" prot="public" virt="non-virtual">Sensor</basecompoundref>
+    <includes refid="G3T1__2_8hpp" local="no">G3T1_2.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classG3T1__2_1aec7c37833c84168074e4c52e8036da22" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">bsn::generator::Markov</ref></type>
+        <definition>bsn::generator::Markov G3T1_2::markov</definition>
+        <argsstring></argsstring>
+        <name>markov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="43" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1ab01e3654e4b5450d0f2c966b519d524e" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">bsn::generator::DataGenerator</ref></type>
+        <definition>bsn::generator::DataGenerator G3T1_2::dataGenerator</definition>
+        <argsstring></argsstring>
+        <name>dataGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="44" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1a39eb0ac8b38886fd850377d5dab70daf" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1filters_1_1MovingAverage" kindref="compound">bsn::filters::MovingAverage</ref></type>
+        <definition>bsn::filters::MovingAverage G3T1_2::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="45" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classG3T1__2_1a971571b3baee620f4fc36b31579db6ca" compoundref="G3T1__2_8cpp" startline="121" endline="132">process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1configuration_1_1SensorConfiguration" kindref="compound">bsn::configuration::SensorConfiguration</ref></type>
+        <definition>bsn::configuration::SensorConfiguration G3T1_2::sensorConfig</definition>
+        <argsstring></argsstring>
+        <name>sensorConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="46" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" compoundref="G3T1__2_8cpp" startline="85" endline="119">collect</referencedby>
+        <referencedby refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" compoundref="G3T1__2_8cpp" startline="158" endline="171">label</referencedby>
+        <referencedby refid="classG3T1__2_1adf0bd406c544363148fdedc04638c327" compoundref="G3T1__2_8cpp" startline="19" endline="79">setUp</referencedby>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1a4e96de32d6bf311e8795804d53f68820" prot="private" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle G3T1_2::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="48" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" compoundref="G3T1__2_8cpp" startline="85" endline="119">collect</referencedby>
+        <referencedby refid="classG3T1__2_1adf0bd406c544363148fdedc04638c327" compoundref="G3T1__2_8cpp" startline="19" endline="79">setUp</referencedby>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1acf5910b15e61d37ac89f0e8efc7332f5" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher G3T1_2::data_pub</definition>
+        <argsstring></argsstring>
+        <name>data_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="49" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1a4d5efa7205daa07d93b29e9cdab99cef" prot="private" static="no" mutable="no">
+        <type>ros::ServiceClient</type>
+        <definition>ros::ServiceClient G3T1_2::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="50" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" compoundref="G3T1__2_8cpp" startline="85" endline="119">collect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG3T1__2_1ab881e1e7381974541bad808f31e4755c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G3T1_2::collected_risk</definition>
+        <argsstring></argsstring>
+        <name>collected_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="52" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" compoundref="G3T1__2_8cpp" startline="85" endline="119">collect</referencedby>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">transfer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classG3T1__2_1a251c38b6954308b1fac2a78641904d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>G3T1_2::G3T1_2</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>G3T1_2</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="25" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1a07c72faf914c254e041bc96ae88d07db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>G3T1_2::~G3T1_2</definition>
+        <argsstring>()</argsstring>
+        <name>~G3T1_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="26" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1adf0bd406c544363148fdedc04638c327" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G3T1_2::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classSensor_1a46b45c4ec9d0675d2424ff2bb5df26ab">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="35" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="19" bodyend="79"/>
+        <references refid="classG3T1__2_1a4e96de32d6bf311e8795804d53f68820" compoundref="G3T1__2_8hpp" startline="48">handle</references>
+        <references refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" compoundref="Sensor_8hpp" startline="55">Sensor::instant_recharge</references>
+        <references refid="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" compoundref="G3T1__2_8hpp" startline="46">sensorConfig</references>
+        <references refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" compoundref="Sensor_8hpp" startline="56">Sensor::shouldStart</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1a0c2d128e18b1cc9b0f75e8ac17c7479e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G3T1_2::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classSensor_1ad816b983559e220a9c360f57433f28de">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="36" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double G3T1_2::collect</definition>
+        <argsstring>()</argsstring>
+        <name>collect</name>
+        <reimplements refid="classSensor_1ab89214185c2da031e0f78b0f4dc031e8">collect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="38" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="85" bodyend="119"/>
+        <references refid="G3T1__2_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" compoundref="G3T1__2_8cpp" startline="3">BATT_UNIT</references>
+        <references refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" compoundref="Sensor_8hpp" startline="53">Sensor::battery</references>
+        <references refid="classG3T1__2_1a4d5efa7205daa07d93b29e9cdab99cef" compoundref="G3T1__2_8hpp" startline="50">client</references>
+        <references refid="classG3T1__2_1ab881e1e7381974541bad808f31e4755c" compoundref="G3T1__2_8hpp" startline="52">collected_risk</references>
+        <references refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" compoundref="Sensor_8hpp" startline="58">Sensor::connected_sensor</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">bsn::resource::Battery::consume</references>
+        <references refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" compoundref="Sensor_8hpp" startline="57">Sensor::cost</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">bsn::configuration::SensorConfiguration::evaluateNumber</references>
+        <references refid="classG3T1__2_1a4e96de32d6bf311e8795804d53f68820" compoundref="G3T1__2_8hpp" startline="48">handle</references>
+        <references refid="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" compoundref="G3T1__2_8hpp" startline="46">sensorConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1a971571b3baee620f4fc36b31579db6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double G3T1_2::process</definition>
+        <argsstring>(const double &amp;data)</argsstring>
+        <name>process</name>
+        <reimplements refid="classSensor_1a209530c83c3299a6587e1c87277dcd1e">process</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="39" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="121" bodyend="132"/>
+        <references refid="G3T1__2_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" compoundref="G3T1__2_8cpp" startline="3">BATT_UNIT</references>
+        <references refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" compoundref="Sensor_8hpp" startline="53">Sensor::battery</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">bsn::resource::Battery::consume</references>
+        <references refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" compoundref="Sensor_8hpp" startline="57">Sensor::cost</references>
+        <references refid="classG3T1__2_1a39eb0ac8b38886fd850377d5dab70daf" compoundref="G3T1__2_8hpp" startline="45">filter</references>
+        <references refid="classbsn_1_1filters_1_1MovingAverage_1a5a462e665a7faa4df75d803a38d04d22" compoundref="MovingAverage_8cpp" startline="57" endline="59">bsn::filters::MovingAverage::getRange</references>
+        <references refid="classbsn_1_1filters_1_1MovingAverage_1a1b817aab4d87963ac5f2c868a81bfa9d" compoundref="MovingAverage_8cpp" startline="22" endline="45">bsn::filters::MovingAverage::getValue</references>
+        <references refid="classbsn_1_1filters_1_1MovingAverage_1a1064ba6989920ec1929a5992b1717993" compoundref="MovingAverage_8cpp" startline="47" endline="55">bsn::filters::MovingAverage::insert</references>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G3T1_2::transfer</definition>
+        <argsstring>(const double &amp;data)</argsstring>
+        <name>transfer</name>
+        <reimplements refid="classSensor_1afa34e334fc608034f8aeb8cb3d34abc9">transfer</reimplements>
+        <param>
+          <type>const double &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="40" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="134" bodyend="156"/>
+        <references refid="G3T1__2_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" compoundref="G3T1__2_8cpp" startline="3">BATT_UNIT</references>
+        <references refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" compoundref="Sensor_8hpp" startline="53">Sensor::battery</references>
+        <references refid="classG3T1__2_1ab881e1e7381974541bad808f31e4755c" compoundref="G3T1__2_8hpp" startline="52">collected_risk</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">bsn::resource::Battery::consume</references>
+        <references refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" compoundref="Sensor_8hpp" startline="57">Sensor::cost</references>
+        <references refid="classG3T1__2_1acf5910b15e61d37ac89f0e8efc7332f5" compoundref="G3T1__2_8hpp" startline="49">data_pub</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">bsn::configuration::SensorConfiguration::evaluateNumber</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" compoundref="Battery_8cpp" startline="80" endline="82">bsn::resource::Battery::getCurrentLevel</references>
+        <references refid="classG3T1__2_1a4e96de32d6bf311e8795804d53f68820" compoundref="G3T1__2_8hpp" startline="48">handle</references>
+        <references refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" compoundref="G3T1__2_8cpp" startline="158" endline="171">label</references>
+        <references refid="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" compoundref="G3T1__2_8hpp" startline="46">sensorConfig</references>
+        <references refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" compoundref="Sensor_8hpp" startline="48">Sensor::type</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classG3T1__2_1a5052a00133546ea912add2c775d67ea4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>G3T1_2::G3T1_2</definition>
+        <argsstring>(const G3T1_2 &amp;)</argsstring>
+        <name>G3T1_2</name>
+        <param>
+          <type>const <ref refid="classG3T1__2" kindref="compound">G3T1_2</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1aed3c894cf3dba9fd0c14e3739bc6783a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classG3T1__2" kindref="compound">G3T1_2</ref> &amp;</type>
+        <definition>G3T1_2&amp; G3T1_2::operator=</definition>
+        <argsstring>(const G3T1_2 &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classG3T1__2" kindref="compound">G3T1_2</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string G3T1_2::label</definition>
+        <argsstring>(double &amp;risk)</argsstring>
+        <name>label</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>risk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="32" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" bodystart="158" bodyend="171"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" compoundref="SensorConfiguration_8cpp" startline="170" endline="173">bsn::configuration::SensorConfiguration::isHighRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" compoundref="SensorConfiguration_8cpp" startline="161" endline="163">bsn::configuration::SensorConfiguration::isLowRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" compoundref="SensorConfiguration_8cpp" startline="165" endline="168">bsn::configuration::SensorConfiguration::isMediumRisk</references>
+        <references refid="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" compoundref="G3T1__2_8hpp" startline="46">sensorConfig</references>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">transfer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>Sensor</label>
+        <link refid="classSensor"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="95">
+        <label>G3T1_2</label>
+        <link refid="classG3T1__2"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>bsn::resource::Battery</label>
+        <link refid="classbsn_1_1resource_1_1Battery"/>
+      </node>
+      <node id="108">
+        <label>bsn::filters::MovingAverage</label>
+        <link refid="classbsn_1_1filters_1_1MovingAverage"/>
+      </node>
+      <node id="100">
+        <label>Sensor</label>
+        <link refid="classSensor"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>battery</edgelabel>
+        </childnode>
+      </node>
+      <node id="102">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="103" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="105">
+        <label>bsn::configuration::SensorConfiguration</label>
+        <link refid="classbsn_1_1configuration_1_1SensorConfiguration"/>
+        <childnode refid="106" relation="usage">
+          <edgelabel>highPercentage</edgelabel>
+          <edgelabel>midPercentage</edgelabel>
+          <edgelabel>lowPercentage</edgelabel>
+          <edgelabel>lowRisk</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>G3T1_2</label>
+        <link refid="classG3T1__2"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="105" relation="usage">
+          <edgelabel>sensorConfig</edgelabel>
+        </childnode>
+        <childnode refid="107" relation="usage">
+          <edgelabel>markov</edgelabel>
+        </childnode>
+        <childnode refid="108" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="109" relation="usage">
+          <edgelabel>dataGenerator</edgelabel>
+        </childnode>
+      </node>
+      <node id="103">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="101">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>bsn::range::Range</label>
+        <link refid="classbsn_1_1range_1_1Range"/>
+      </node>
+      <node id="107">
+        <label>bsn::generator::Markov</label>
+        <link refid="classbsn_1_1generator_1_1Markov"/>
+      </node>
+      <node id="109">
+        <label>bsn::generator::DataGenerator</label>
+        <link refid="classbsn_1_1generator_1_1DataGenerator"/>
+        <childnode refid="107" relation="usage">
+          <edgelabel>markovChain</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="22" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" bodystart="22" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>activate</name></member>
+      <member refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>active</name></member>
+      <member refid="classSensor_1a865bbaf085db8217e4d0c02e12e8a2a1" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>apply_noise</name></member>
+      <member refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>battery</name></member>
+      <member refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" prot="public" virt="virtual"><scope>G3T1_2</scope><name>body</name></member>
+      <member refid="classSensor_1a70688e69c2a29191801550d1230b0807" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>buffer_size</name></member>
+      <member refid="classG3T1__2_1a4d5efa7205daa07d93b29e9cdab99cef" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>client</name></member>
+      <member refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" prot="public" virt="virtual"><scope>G3T1_2</scope><name>collect</name></member>
+      <member refid="classG3T1__2_1ab881e1e7381974541bad808f31e4755c" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>collected_risk</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>Component</name></member>
+      <member refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>connected_sensor</name></member>
+      <member refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>cost</name></member>
+      <member refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>data</name></member>
+      <member refid="classG3T1__2_1acf5910b15e61d37ac89f0e8efc7332f5" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>data_pub</name></member>
+      <member refid="classG3T1__2_1ab01e3654e4b5450d0f2c966b519d524e" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>dataGenerator</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>deactivate</name></member>
+      <member refid="classG3T1__2_1a39eb0ac8b38886fd850377d5dab70daf" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>filter</name></member>
+      <member refid="classG3T1__2_1a251c38b6954308b1fac2a78641904d17" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>G3T1_2</name></member>
+      <member refid="classG3T1__2_1a5052a00133546ea912add2c775d67ea4" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>G3T1_2</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>getRosNodeName</name></member>
+      <member refid="classG3T1__2_1a4e96de32d6bf311e8795804d53f68820" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>handle</name></member>
+      <member refid="classSensor_1a941f539d5f022334095705710338469c" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>injectUncertainty</name></member>
+      <member refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>instant_recharge</name></member>
+      <member refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>isActive</name></member>
+      <member refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>label</name></member>
+      <member refid="classG3T1__2_1aec7c37833c84168074e4c52e8036da22" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>markov</name></member>
+      <member refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>noise_factor</name></member>
+      <member refid="classG3T1__2_1aed3c894cf3dba9fd0c14e3739bc6783a" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>operator=</name></member>
+      <member refid="classG3T1__2_1a971571b3baee620f4fc36b31579db6ca" prot="public" virt="virtual"><scope>G3T1_2</scope><name>process</name></member>
+      <member refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>recharge</name></member>
+      <member refid="classSensor_1a476760a7dd4be51136bf165e183526cf" prot="public" virt="virtual"><scope>G3T1_2</scope><name>reconfigure</name></member>
+      <member refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>replicate_collect</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" prot="public" virt="virtual"><scope>G3T1_2</scope><name>run</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>sendEnergyStatus</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>sendEvent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>sendStatus</name></member>
+      <member refid="classSensor_1ac7f3f9070732abb6e7b881ac66d734e2" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>Sensor</name></member>
+      <member refid="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" prot="private" virt="non-virtual"><scope>G3T1_2</scope><name>sensorConfig</name></member>
+      <member refid="classG3T1__2_1adf0bd406c544363148fdedc04638c327" prot="public" virt="virtual"><scope>G3T1_2</scope><name>setUp</name></member>
+      <member refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>shouldStart</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>shutdownComponent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>sigIntHandler</name></member>
+      <member refid="classG3T1__2_1a0c2d128e18b1cc9b0f75e8ac17c7479e" prot="public" virt="virtual"><scope>G3T1_2</scope><name>tearDown</name></member>
+      <member refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" prot="public" virt="virtual"><scope>G3T1_2</scope><name>transfer</name></member>
+      <member refid="classSensor_1a7e0dadfc3dcde4c6c7b20d0c0ae09082" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>turnOff</name></member>
+      <member refid="classSensor_1ab687b1dd4e4ecb1d806bf947cedc9b76" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>turnOn</name></member>
+      <member refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" prot="protected" virt="non-virtual"><scope>G3T1_2</scope><name>type</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" prot="public" virt="virtual"><scope>G3T1_2</scope><name>~Component</name></member>
+      <member refid="classG3T1__2_1a07c72faf914c254e041bc96ae88d07db" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>~G3T1_2</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>G3T1_2</scope><name>~ROSComponent</name></member>
+      <member refid="classSensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" prot="public" virt="non-virtual"><scope>G3T1_2</scope><name>~Sensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

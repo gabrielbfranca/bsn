@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classInjector" kind="class" language="C++" prot="public">
+    <compoundname>Injector</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <includes refid="Injector_8hpp" local="no">Injector.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInjector_1abe24d0c2aa32f842e9cfd741538a0c1b" prot="private" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle Injector::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="38" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a0b688f4088e8df1c2427ac76203ac690" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Injector::cycles</definition>
+        <argsstring></argsstring>
+        <name>cycles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="39" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" compoundref="Injector_8cpp" startline="45" endline="58">gen_noise</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a550422e1dfea5df5669c11fb41a649cf" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, ros::Publisher &gt;</type>
+        <definition>std::map&lt;std::string, ros::Publisher&gt; Injector::uncertainty_pub</definition>
+        <argsstring></argsstring>
+        <name>uncertainty_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="41" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" compoundref="Injector_8cpp" startline="78" endline="88">inject</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Injector::components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="43" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; Injector::noise_factor</definition>
+        <argsstring></argsstring>
+        <name>noise_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="45" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt;std::string, int&gt; Injector::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="46" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1ad9a982b5d898526a9351a3e554862db2" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; Injector::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="47" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; Injector::amplitude</definition>
+        <argsstring></argsstring>
+        <name>amplitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="48" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" compoundref="Injector_8cpp" startline="45" endline="58">gen_noise</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt;std::string, int&gt; Injector::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="49" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt;std::string, int&gt; Injector::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="50" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" compoundref="Injector_8cpp" startline="45" endline="58">gen_noise</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a1f5b39e601968de8bfaf69152e28940d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; Injector::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="51" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInjector_1a39c105f4444ab60f719260f87b31a6fc" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Injector::log_uncertainty</definition>
+        <argsstring></argsstring>
+        <name>log_uncertainty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="55" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" compoundref="Injector_8cpp" startline="78" endline="88">inject</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInjector_1a09393196e5037689464bde2bd5be2c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Injector::Injector</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>Injector</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="19" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1a904aaf462f9ebb0462418aa96d5f09fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Injector::~Injector</definition>
+        <argsstring>()</argsstring>
+        <name>~Injector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="20" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Injector::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="31" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="7" bodyend="33"/>
+        <references refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" compoundref="Injector_8hpp" startline="48">amplitude</references>
+        <references refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" compoundref="Injector_8hpp" startline="49">begin</references>
+        <references refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" compoundref="Injector_8hpp" startline="43">components</references>
+        <references refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" compoundref="Injector_8hpp" startline="46">duration</references>
+        <references refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" compoundref="Injector_8hpp" startline="50">end</references>
+        <references refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" compoundref="Injector_8hpp" startline="47">frequency</references>
+        <references refid="classInjector_1abe24d0c2aa32f842e9cfd741538a0c1b" compoundref="Injector_8hpp" startline="38">handle</references>
+        <references refid="classInjector_1a39c105f4444ab60f719260f87b31a6fc" compoundref="Injector_8hpp" startline="55">log_uncertainty</references>
+        <references refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" compoundref="Injector_8hpp" startline="45">noise_factor</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" compoundref="Injector_8cpp" startline="37" endline="39">seconds_in_cycles</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <references refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" compoundref="Injector_8hpp" startline="51">type</references>
+        <references refid="classInjector_1a550422e1dfea5df5669c11fb41a649cf" compoundref="Injector_8hpp" startline="41">uncertainty_pub</references>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1af4f05a4db5b7b9536b4033da098b90cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Injector::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="32" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1a0fece06f63240f874cda7c7f86829afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Injector::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="33" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="60" bodyend="76"/>
+        <references refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" compoundref="Injector_8hpp" startline="48">amplitude</references>
+        <references refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" compoundref="Injector_8hpp" startline="49">begin</references>
+        <references refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" compoundref="Injector_8hpp" startline="43">components</references>
+        <references refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" compoundref="Injector_8hpp" startline="39">cycles</references>
+        <references refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" compoundref="Injector_8hpp" startline="46">duration</references>
+        <references refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" compoundref="Injector_8hpp" startline="50">end</references>
+        <references refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" compoundref="Injector_8hpp" startline="47">frequency</references>
+        <references refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" compoundref="Injector_8cpp" startline="45" endline="58">gen_noise</references>
+        <references refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" compoundref="Injector_8cpp" startline="78" endline="88">inject</references>
+        <references refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" compoundref="Injector_8hpp" startline="45">noise_factor</references>
+        <references refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" compoundref="Injector_8cpp" startline="37" endline="39">seconds_in_cycles</references>
+        <references refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" compoundref="Injector_8hpp" startline="51">type</references>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Injector::inject</definition>
+        <argsstring>(const std::string &amp;component, const std::string &amp;content)</argsstring>
+        <name>inject</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>component</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="35" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="78" bodyend="88"/>
+        <references refid="classInjector_1a39c105f4444ab60f719260f87b31a6fc" compoundref="Injector_8hpp" startline="55">log_uncertainty</references>
+        <references refid="classInjector_1a550422e1dfea5df5669c11fb41a649cf" compoundref="Injector_8hpp" startline="41">uncertainty_pub</references>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classInjector_1acca5c716ebd7881b71997774ba7f3880" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Injector::Injector</definition>
+        <argsstring>(const Injector &amp;)</argsstring>
+        <name>Injector</name>
+        <param>
+          <type>const <ref refid="classInjector" kindref="compound">Injector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1aa45ab9c782eaf28a68b8d2733a0a9d2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classInjector" kindref="compound">Injector</ref> &amp;</type>
+        <definition>Injector&amp; Injector::operator=</definition>
+        <argsstring>(const Injector &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classInjector" kindref="compound">Injector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t Injector::seconds_in_cycles</definition>
+        <argsstring>(const double &amp;seconds)</argsstring>
+        <name>seconds_in_cycles</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="26" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="37" bodyend="39"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+        <referencedby refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" compoundref="Injector_8cpp" startline="45" endline="58">gen_noise</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1a35650e71bfa5d5fceff437fb8309c7d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t Injector::cycles_in_seconds</definition>
+        <argsstring>(const double &amp;cycles)</argsstring>
+        <name>cycles_in_seconds</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>cycles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="27" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="41" bodyend="43"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+      </memberdef>
+      <memberdef kind="function" id="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Injector::gen_noise</definition>
+        <argsstring>(const std::string &amp;component, double &amp;noise, int &amp;duration, double &amp;amplitude, std::string &amp;type)</argsstring>
+        <name>gen_noise</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>component</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>noise</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>amplitude</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="28" column="1" bodyfile="src/sa-bsn/simulation/injector/src/Injector.cpp" bodystart="45" bodyend="58"/>
+        <references refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" compoundref="Injector_8hpp" startline="48">amplitude</references>
+        <references refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" compoundref="Injector_8hpp" startline="39">cycles</references>
+        <references refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" compoundref="Injector_8hpp" startline="50">end</references>
+        <references refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" compoundref="Injector_8cpp" startline="37" endline="39">seconds_in_cycles</references>
+        <referencedby refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" compoundref="Injector_8cpp" startline="60" endline="76">body</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="186">
+        <label>Injector</label>
+        <link refid="classInjector"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="188">
+        <label>Injector</label>
+        <link refid="classInjector"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="190" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="190">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="16" column="1" bodyfile="src/sa-bsn/simulation/injector/include/Injector.hpp" bodystart="16" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" prot="private" virt="non-virtual"><scope>Injector</scope><name>amplitude</name></member>
+      <member refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" prot="private" virt="non-virtual"><scope>Injector</scope><name>begin</name></member>
+      <member refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" prot="public" virt="virtual"><scope>Injector</scope><name>body</name></member>
+      <member refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" prot="private" virt="non-virtual"><scope>Injector</scope><name>components</name></member>
+      <member refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" prot="private" virt="non-virtual"><scope>Injector</scope><name>cycles</name></member>
+      <member refid="classInjector_1a35650e71bfa5d5fceff437fb8309c7d8" prot="private" virt="non-virtual"><scope>Injector</scope><name>cycles_in_seconds</name></member>
+      <member refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" prot="private" virt="non-virtual"><scope>Injector</scope><name>duration</name></member>
+      <member refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" prot="private" virt="non-virtual"><scope>Injector</scope><name>end</name></member>
+      <member refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" prot="private" virt="non-virtual"><scope>Injector</scope><name>frequency</name></member>
+      <member refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" prot="private" virt="non-virtual"><scope>Injector</scope><name>gen_noise</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>Injector</scope><name>getRosNodeName</name></member>
+      <member refid="classInjector_1abe24d0c2aa32f842e9cfd741538a0c1b" prot="private" virt="non-virtual"><scope>Injector</scope><name>handle</name></member>
+      <member refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" prot="public" virt="non-virtual"><scope>Injector</scope><name>inject</name></member>
+      <member refid="classInjector_1a09393196e5037689464bde2bd5be2c68" prot="public" virt="non-virtual"><scope>Injector</scope><name>Injector</name></member>
+      <member refid="classInjector_1acca5c716ebd7881b71997774ba7f3880" prot="private" virt="non-virtual"><scope>Injector</scope><name>Injector</name></member>
+      <member refid="classInjector_1a39c105f4444ab60f719260f87b31a6fc" prot="private" virt="non-virtual"><scope>Injector</scope><name>log_uncertainty</name></member>
+      <member refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" prot="private" virt="non-virtual"><scope>Injector</scope><name>noise_factor</name></member>
+      <member refid="classInjector_1aa45ab9c782eaf28a68b8d2733a0a9d2c" prot="private" virt="non-virtual"><scope>Injector</scope><name>operator=</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>Injector</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>Injector</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>Injector</scope><name>run</name></member>
+      <member refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" prot="private" virt="non-virtual"><scope>Injector</scope><name>seconds_in_cycles</name></member>
+      <member refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" prot="public" virt="virtual"><scope>Injector</scope><name>setUp</name></member>
+      <member refid="classInjector_1af4f05a4db5b7b9536b4033da098b90cf" prot="public" virt="virtual"><scope>Injector</scope><name>tearDown</name></member>
+      <member refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" prot="private" virt="non-virtual"><scope>Injector</scope><name>type</name></member>
+      <member refid="classInjector_1a550422e1dfea5df5669c11fb41a649cf" prot="private" virt="non-virtual"><scope>Injector</scope><name>uncertainty_pub</name></member>
+      <member refid="classInjector_1a904aaf462f9ebb0462418aa96d5f09fa" prot="public" virt="virtual"><scope>Injector</scope><name>~Injector</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>Injector</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

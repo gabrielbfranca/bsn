@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Processor_8hpp" kind="file" language="C++">
+    <compoundname>Processor.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">list</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="Processor_8cpp" local="yes">src/libbsn/src/processor/Processor.cpp</includedby>
+    <includedby refid="G4T1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</includedby>
+    <incdepgraph>
+      <node id="552">
+        <label>list</label>
+      </node>
+      <node id="555">
+        <label>stdint.h</label>
+      </node>
+      <node id="553">
+        <label>string</label>
+      </node>
+      <node id="550">
+        <label>src/libbsn/include/libbsn/processor/Processor.hpp</label>
+        <link refid="Processor_8hpp"/>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+      </node>
+      <node id="551">
+        <label>vector</label>
+      </node>
+      <node id="554">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="558">
+        <label>src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</label>
+        <link refid="G4T1_8hpp"/>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+      </node>
+      <node id="560">
+        <label>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</label>
+        <link refid="G4T1_8cpp"/>
+      </node>
+      <node id="557">
+        <label>src/libbsn/src/processor/Processor.cpp</label>
+        <link refid="Processor_8cpp"/>
+      </node>
+      <node id="556">
+        <label>src/libbsn/include/libbsn/processor/Processor.hpp</label>
+        <link refid="Processor_8hpp"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>src/sa-bsn/target_system/components/component/apps/g4t1.cpp</label>
+        <link refid="g4t1_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1processor">bsn::processor</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PROCESSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROCESSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespacebsn_1_1processor" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">processor<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacebsn_1_1processor_1aa656f0fa70585ebf07c09768dc62101e" kindref="member">data_fuse</ref>(std::vector&lt;double&gt;);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="namespacebsn_1_1processor_1aa6b0a7c3cdf5f8a0d22d66dad542a6fe" kindref="member">get_sensor_id</ref>(std::string);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacebsn_1_1processor_1aa1ec43d2e713f862d73f806bf4b01fcc" kindref="member">get_value</ref>(std::string);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/include/libbsn/processor/Processor.hpp"/>
+  </compounddef>
+</doxygen>

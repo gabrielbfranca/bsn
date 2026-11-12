@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Controller-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="189" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="32" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="53" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="3.566" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.604" level="0" />
+<weighted_methods_per_class_unity value="8" level="0" />
+<weighted_methods_per_class_visibility value="1" level="0" />
+<depth_of_inheritance_tree value="2" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="4" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="6" />
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Controller(const Controller &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="12" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Controller(int &amp;,char **,string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="8" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="5" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>apply_cost_strategy(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="19" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="162" />
+</extent>
+<lines_of_code value="62" level="1" />
+<McCabes_cyclomatic_complexity value="13" level="1" />
+<lines_of_comment value="24" level="0" />
+<lines_of_code_per_line_of_comment value="2.583" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.542" level="0" />
+</member_function>
+<member_function>
+<name>apply_reli_strategy(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="18" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="71" />
+</extent>
+<lines_of_code value="63" level="1" />
+<McCabes_cyclomatic_complexity value="13" level="1" />
+<lines_of_comment value="24" level="0" />
+<lines_of_code_per_line_of_comment value="2.625" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.542" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const Controller &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="13" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>receiveEvent(const ConstPtr &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="20" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="38" />
+</extent>
+<lines_of_code value="30" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="15.000" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setUp()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="16" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="9" />
+</extent>
+<lines_of_code value="19" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~Controller()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="9" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="7" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Controller</name>
+<client_module>
+</client_module>
+<supplier_module>
+<name>ConstPtr</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="20" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="38" />
+</extent>
+<name>Enactor</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="6" />
+</extent>
+<name>map</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="25" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="8" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="23" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="71" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="162" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

@@ -1,0 +1,374 @@
+[
+  {
+    "class": "AdaptationMessage",
+    "file": "src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp",
+    "line": 6,
+    "id": "classAdaptationMessage",
+    "bases": []
+  },
+  {
+    "class": "bsn::resource::Battery",
+    "file": "src/libbsn/include/libbsn/resource/Battery.hpp",
+    "line": 12,
+    "id": "classbsn_1_1resource_1_1Battery",
+    "bases": []
+  },
+  {
+    "class": "CentralHub",
+    "file": "src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp",
+    "line": 16,
+    "id": "classCentralHub",
+    "bases": [
+      "arch::target_system::Component"
+    ]
+  },
+  {
+    "class": "arch::target_system::Component",
+    "file": "src/archlib/include/archlib/target_system/Component.hpp",
+    "line": 20,
+    "id": "classarch_1_1target__system_1_1Component",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "bsn::goalmodel::Context",
+    "file": "src/libbsn/include/libbsn/goalmodel/Context.hpp",
+    "line": 9,
+    "id": "classbsn_1_1goalmodel_1_1Context",
+    "bases": []
+  },
+  {
+    "class": "Controller",
+    "file": "src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp",
+    "line": 6,
+    "id": "classController",
+    "bases": [
+      "Enactor"
+    ]
+  },
+  {
+    "class": "CostEngine",
+    "file": "src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp",
+    "line": 35,
+    "id": "classCostEngine",
+    "bases": [
+      "Engine"
+    ]
+  },
+  {
+    "class": "DataAccess",
+    "file": "src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp",
+    "line": 35,
+    "id": "classDataAccess",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "bsn::generator::DataGenerator",
+    "file": "src/libbsn/include/libbsn/generator/DataGenerator.hpp",
+    "line": 11,
+    "id": "classbsn_1_1generator_1_1DataGenerator",
+    "bases": []
+  },
+  {
+    "class": "arch::target_system::Effector",
+    "file": "src/archlib/include/archlib/target_system/Effector.hpp",
+    "line": 12,
+    "id": "classarch_1_1target__system_1_1Effector",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "Enactor",
+    "file": "src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp",
+    "line": 23,
+    "id": "classEnactor",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "EnergyStatusMessage",
+    "file": "src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp",
+    "line": 6,
+    "id": "classEnergyStatusMessage",
+    "bases": []
+  },
+  {
+    "class": "Engine",
+    "file": "src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp",
+    "line": 34,
+    "id": "classEngine",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "EventMessage",
+    "file": "src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp",
+    "line": 6,
+    "id": "classEventMessage",
+    "bases": []
+  },
+  {
+    "class": "bsn::model::Formula",
+    "file": "src/libbsn/include/libbsn/model/Formula.hpp",
+    "line": 13,
+    "id": "classbsn_1_1model_1_1Formula",
+    "bases": []
+  },
+  {
+    "class": "G3T1_1",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp",
+    "line": 22,
+    "id": "classG3T1__1",
+    "bases": [
+      "Sensor"
+    ]
+  },
+  {
+    "class": "G3T1_2",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp",
+    "line": 22,
+    "id": "classG3T1__2",
+    "bases": [
+      "Sensor"
+    ]
+  },
+  {
+    "class": "G3T1_3",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp",
+    "line": 22,
+    "id": "classG3T1__3",
+    "bases": [
+      "Sensor"
+    ]
+  },
+  {
+    "class": "G3T1_4",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp",
+    "line": 22,
+    "id": "classG3T1__4",
+    "bases": [
+      "Sensor"
+    ]
+  },
+  {
+    "class": "G3T1_5",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp",
+    "line": 22,
+    "id": "classG3T1__5",
+    "bases": [
+      "Sensor"
+    ]
+  },
+  {
+    "class": "G3T1_6",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp",
+    "line": 22,
+    "id": "classG3T1__6",
+    "bases": [
+      "Sensor"
+    ]
+  },
+  {
+    "class": "G4T1",
+    "file": "src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp",
+    "line": 24,
+    "id": "classG4T1",
+    "bases": [
+      "CentralHub"
+    ]
+  },
+  {
+    "class": "bsn::goalmodel::Goal",
+    "file": "src/libbsn/include/libbsn/goalmodel/Goal.hpp",
+    "line": 13,
+    "id": "classbsn_1_1goalmodel_1_1Goal",
+    "bases": [
+      "bsn::goalmodel::Node"
+    ]
+  },
+  {
+    "class": "bsn::goalmodel::GoalTree",
+    "file": "src/libbsn/include/libbsn/goalmodel/GoalTree.hpp",
+    "line": 18,
+    "id": "classbsn_1_1goalmodel_1_1GoalTree",
+    "bases": []
+  },
+  {
+    "class": "Injector",
+    "file": "src/sa-bsn/simulation/injector/include/Injector.hpp",
+    "line": 16,
+    "id": "classInjector",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "bsn::goalmodel::LeafTask",
+    "file": "src/libbsn/include/libbsn/goalmodel/LeafTask.hpp",
+    "line": 14,
+    "id": "classbsn_1_1goalmodel_1_1LeafTask",
+    "bases": [
+      "bsn::goalmodel::Task"
+    ]
+  },
+  {
+    "class": "Logger",
+    "file": "src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp",
+    "line": 19,
+    "id": "classLogger",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "bsn::generator::Markov",
+    "file": "src/libbsn/include/libbsn/generator/Markov.hpp",
+    "line": 20,
+    "id": "classbsn_1_1generator_1_1Markov",
+    "bases": []
+  },
+  {
+    "class": "bsn::filters::MovingAverage",
+    "file": "src/libbsn/include/libbsn/filters/MovingAverage.hpp",
+    "line": 12,
+    "id": "classbsn_1_1filters_1_1MovingAverage",
+    "bases": []
+  },
+  {
+    "class": "bsn::goalmodel::Node",
+    "file": "src/libbsn/include/libbsn/goalmodel/Node.hpp",
+    "line": 12,
+    "id": "classbsn_1_1goalmodel_1_1Node",
+    "bases": []
+  },
+  {
+    "class": "ParamAdapter",
+    "file": "src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp",
+    "line": 12,
+    "id": "classParamAdapter",
+    "bases": [
+      "arch::target_system::Effector"
+    ]
+  },
+  {
+    "class": "PatientModule",
+    "file": "src/sa-bsn/environment/patient/include/PatientModule.hpp",
+    "line": 11,
+    "id": "classPatientModule",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "arch::target_system::Probe",
+    "file": "src/archlib/include/archlib/target_system/Probe.hpp",
+    "line": 14,
+    "id": "classarch_1_1target__system_1_1Probe",
+    "bases": [
+      "arch::ROSComponent"
+    ]
+  },
+  {
+    "class": "bsn::goalmodel::Property",
+    "file": "src/libbsn/include/libbsn/goalmodel/Property.hpp",
+    "line": 9,
+    "id": "classbsn_1_1goalmodel_1_1Property",
+    "bases": []
+  },
+  {
+    "class": "bsn::range::Range",
+    "file": "src/libbsn/include/libbsn/range/Range.hpp",
+    "line": 13,
+    "id": "classbsn_1_1range_1_1Range",
+    "bases": []
+  },
+  {
+    "class": "ReliabilityEngine",
+    "file": "src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp",
+    "line": 35,
+    "id": "classReliabilityEngine",
+    "bases": [
+      "Engine"
+    ]
+  },
+  {
+    "class": "arch::ROSComponent",
+    "file": "src/archlib/include/archlib/ROSComponent.hpp",
+    "line": 12,
+    "id": "classarch_1_1ROSComponent",
+    "bases": []
+  },
+  {
+    "class": "arch::ROSComponentDescriptor",
+    "file": "src/archlib/include/archlib/ROSComponentDescriptor.hpp",
+    "line": 9,
+    "id": "classarch_1_1ROSComponentDescriptor",
+    "bases": []
+  },
+  {
+    "class": "Sensor",
+    "file": "src/sa-bsn/target_system/components/component/include/component/Sensor.hpp",
+    "line": 18,
+    "id": "classSensor",
+    "bases": [
+      "arch::target_system::Component"
+    ]
+  },
+  {
+    "class": "bsn::configuration::SensorConfiguration",
+    "file": "src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp",
+    "line": 15,
+    "id": "classbsn_1_1configuration_1_1SensorConfiguration",
+    "bases": []
+  },
+  {
+    "class": "StatusMessage",
+    "file": "src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp",
+    "line": 6,
+    "id": "classStatusMessage",
+    "bases": []
+  },
+  {
+    "class": "bsn::goalmodel::Task",
+    "file": "src/libbsn/include/libbsn/goalmodel/Task.hpp",
+    "line": 15,
+    "id": "classbsn_1_1goalmodel_1_1Task",
+    "bases": [
+      "bsn::goalmodel::Node"
+    ]
+  },
+  {
+    "class": "bsn::time::TimeData",
+    "file": "src/libbsn/include/libbsn/time/TimeData.hpp",
+    "line": 15,
+    "id": "classbsn_1_1time_1_1TimeData",
+    "bases": []
+  },
+  {
+    "class": "UncertaintyMessage",
+    "file": "src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp",
+    "line": 6,
+    "id": "classUncertaintyMessage",
+    "bases": []
+  },
+  {
+    "class": "src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp::comp",
+    "file": "src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp",
+    "line": 5,
+    "id": "structcomp",
+    "bases": []
+  },
+  {
+    "class": "src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp::comp",
+    "file": "src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp",
+    "line": 5,
+    "id": "structcomp",
+    "bases": []
+  }
+]

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_f7cb86759195c51b2f06f9537b05b4b5" kind="dir">
+    <compoundname>src/libbsn/src/goalmodel</compoundname>
+    <innerfile refid="Context_8cpp">Context.cpp</innerfile>
+    <innerfile refid="Goal_8cpp">Goal.cpp</innerfile>
+    <innerfile refid="GoalTree_8cpp">GoalTree.cpp</innerfile>
+    <innerfile refid="LeafTask_8cpp">LeafTask.cpp</innerfile>
+    <innerfile refid="Node_8cpp">Node.cpp</innerfile>
+    <innerfile refid="Property_8cpp">Property.cpp</innerfile>
+    <innerfile refid="Task_8cpp">Task.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/src/goalmodel/"/>
+  </compounddef>
+</doxygen>

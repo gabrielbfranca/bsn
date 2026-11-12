@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1OnlyConstructor" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::OnlyConstructor</compoundname>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfixtures_1_1OnlyConstructor_1a6c9dcbee5392c48946ff6e473a9838d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fixtures::OnlyConstructor::OnlyConstructor</definition>
+        <argsstring>()</argsstring>
+        <name>OnlyConstructor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="6" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="6" bodyend="6"/>
+        <references refid="classfixtures_1_1OnlyConstructor_1a6c9dcbee5392c48946ff6e473a9838d8" compoundref="classes_8hpp" startline="6" endline="6">OnlyConstructor</references>
+        <referencedby refid="classfixtures_1_1OnlyConstructor_1a6c9dcbee5392c48946ff6e473a9838d8" compoundref="classes_8hpp" startline="6" endline="6">OnlyConstructor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="6" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="6" bodyend="6"/>
+    <listofallmembers>
+      <member refid="classfixtures_1_1OnlyConstructor_1a6c9dcbee5392c48946ff6e473a9838d8" prot="public" virt="non-virtual"><scope>fixtures::OnlyConstructor</scope><name>OnlyConstructor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

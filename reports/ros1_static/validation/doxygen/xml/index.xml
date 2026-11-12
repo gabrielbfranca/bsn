@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classfixtures_1_1A" kind="class"><name>fixtures::A</name>
+    <member refid="classfixtures_1_1A_1aa564ec37229d611aae07a5d56ad7627f" kind="variable"><name>b</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1B" kind="class"><name>fixtures::B</name>
+    <member refid="classfixtures_1_1B_1ac49b349e1c25f56764391d34f7a16dd0" kind="variable"><name>a</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1Base" kind="class"><name>fixtures::Base</name>
+  </compound>
+  <compound refid="classfixtures_1_1Branch" kind="class"><name>fixtures::Branch</name>
+    <member refid="classfixtures_1_1Branch_1aa6bbbf8923871a33523e954eb99f233b" kind="function"><name>linear</name></member>
+    <member refid="classfixtures_1_1Branch_1a8f6cb32960ee8f09163a24c1ee09a82e" kind="function"><name>branch</name></member>
+    <member refid="classfixtures_1_1Branch_1a54cf59be4c42f65317b45ac9bac63f24" kind="function"><name>abstract</name></member>
+  </compound>
+  <compound refid="classsecond_1_1Branch" kind="class"><name>second::Branch</name>
+    <member refid="classsecond_1_1Branch_1aef4cd6ae4aa05119cd0e39a1eb9a7311" kind="function"><name>inlineMethod</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1CallBridge" kind="class"><name>fixtures::CallBridge</name>
+    <member refid="classfixtures_1_1CallBridge_1a65896f2e0e7f61ac511aaeadd53f1b38" kind="variable"><name>x</name></member>
+    <member refid="classfixtures_1_1CallBridge_1abb3bf86ac0eea1067f5477626d9a2c20" kind="function"><name>a</name></member>
+    <member refid="classfixtures_1_1CallBridge_1ade244578e9d6ca3f16c10c8d101dae06" kind="function"><name>b</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1Derived" kind="class"><name>fixtures::Derived</name>
+    <member refid="classfixtures_1_1Derived_1aa177208b3dfcd9d907c134789a554ffa" kind="variable"><name>a</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1OnlyConstructor" kind="class"><name>fixtures::OnlyConstructor</name>
+    <member refid="classfixtures_1_1OnlyConstructor_1a6c9dcbee5392c48946ff6e473a9838d8" kind="function"><name>OnlyConstructor</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1SeparateGetters" kind="class"><name>fixtures::SeparateGetters</name>
+    <member refid="classfixtures_1_1SeparateGetters_1a6caba958615733bf512f6e10fa85da89" kind="variable"><name>x</name></member>
+    <member refid="classfixtures_1_1SeparateGetters_1af2d4d39032c0795afff8d5618b2b4ce2" kind="variable"><name>y</name></member>
+    <member refid="classfixtures_1_1SeparateGetters_1aa67d9d00a77cd735cc475df82441b769" kind="function"><name>a</name></member>
+    <member refid="classfixtures_1_1SeparateGetters_1ac321f2aca6ffb49a52eecb5b17b683fc" kind="function"><name>b</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1SharedState" kind="class"><name>fixtures::SharedState</name>
+    <member refid="classfixtures_1_1SharedState_1ad56b32e0fc1aa18f84d659b23cc6b6df" kind="variable"><name>x</name></member>
+    <member refid="classfixtures_1_1SharedState_1a0d3f8fd3cf9a60388677ce926ab50d72" kind="function"><name>a</name></member>
+    <member refid="classfixtures_1_1SharedState_1a8c2c6d41ece863019c4b079135331e7e" kind="function"><name>b</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1SplitState" kind="class"><name>fixtures::SplitState</name>
+    <member refid="classfixtures_1_1SplitState_1aed667abf533680f1d01a1c84beb2473f" kind="variable"><name>x</name></member>
+    <member refid="classfixtures_1_1SplitState_1a69030718543ea3253b241d43c05f90b0" kind="variable"><name>y</name></member>
+    <member refid="classfixtures_1_1SplitState_1aafd216f86ab6c2dcf41f3e59255495e2" kind="function"><name>SplitState</name></member>
+    <member refid="classfixtures_1_1SplitState_1a0e693de33e17d495c4c2211192563e60" kind="function"><name>a</name></member>
+    <member refid="classfixtures_1_1SplitState_1ae0c2f6b294cae4162d113a078e420a23" kind="function"><name>b</name></member>
+  </compound>
+  <compound refid="classfixtures_1_1Stateless" kind="class"><name>fixtures::Stateless</name>
+    <member refid="classfixtures_1_1Stateless_1aada67a95298bb9db7137b5654b573604" kind="function"><name>a</name></member>
+    <member refid="classfixtures_1_1Stateless_1a1d8e5f8376bb5ae8c17e0ee1b506b59f" kind="function"><name>b</name></member>
+  </compound>
+  <compound refid="namespacefixtures" kind="namespace"><name>fixtures</name>
+  </compound>
+  <compound refid="namespacesecond" kind="namespace"><name>second</name>
+  </compound>
+  <compound refid="classes_8cpp" kind="file"><name>classes.cpp</name>
+  </compound>
+  <compound refid="classes_8hpp" kind="file"><name>classes.hpp</name>
+  </compound>
+  <compound refid="dir_ecb5ca8fdeffd62c64e9ca4a0e4ead74" kind="dir"><name>tools/ros1_metrics/fixtures</name>
+  </compound>
+  <compound refid="dir_2c59520046cae4c73c36af9becf8f3be" kind="dir"><name>tools/ros1_metrics</name>
+  </compound>
+  <compound refid="dir_4eeb864c4eec08c7d6b9d3b0352cfdde" kind="dir"><name>tools</name>
+  </compound>
+</doxygenindex>

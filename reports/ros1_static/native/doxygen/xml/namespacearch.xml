@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacearch" kind="namespace" language="C++">
+    <compoundname>arch</compoundname>
+    <innerclass refid="classarch_1_1ROSComponent" prot="public">arch::ROSComponent</innerclass>
+    <innerclass refid="classarch_1_1ROSComponentDescriptor" prot="public">arch::ROSComponentDescriptor</innerclass>
+    <innernamespace refid="namespacearch_1_1target__system">arch::target_system</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/archlib/include/archlib/ROSComponent.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

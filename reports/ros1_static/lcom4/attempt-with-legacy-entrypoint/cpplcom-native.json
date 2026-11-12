@@ -1,0 +1,958 @@
+[
+ {
+  "class": "bsn::goalmodel::LeafTask",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/goalmodel/LeafTask.hpp:14",
+  "lcom4": 5,
+  "bare": 1,
+  "jobs": 4,
+  "methods": 9,
+  "fields": 4,
+  "components": [
+   [
+    "getContext",
+    "setContext"
+   ],
+   [
+    "getCost",
+    "setCost"
+   ],
+   [
+    "getReliability",
+    "setReliability"
+   ],
+   [
+    "getFrequency",
+    "setFrequency"
+   ],
+   [
+    "addChild"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::goalmodel::Context",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/goalmodel/Context.hpp:9",
+  "lcom4": 3,
+  "bare": 0,
+  "jobs": 3,
+  "methods": 7,
+  "fields": 3,
+  "components": [
+   [
+    "getID",
+    "operator==",
+    "setID"
+   ],
+   [
+    "getDescription",
+    "setDescription"
+   ],
+   [
+    "getValue",
+    "setValue"
+   ]
+  ]
+ },
+ {
+  "class": "CostEngine",
+  "location": "/workspaces/bsn_/src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp:35",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 9,
+  "fields": 8,
+  "components": [
+   [
+    "analyze",
+    "execute",
+    "initialize_priority",
+    "initialize_strategy",
+    "monitor",
+    "plan",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "get_prefix"
+   ]
+  ]
+ },
+ {
+  "class": "ReliabilityEngine",
+  "location": "/workspaces/bsn_/src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp:35",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 9,
+  "fields": 7,
+  "components": [
+   [
+    "analyze",
+    "execute",
+    "initialize_priority",
+    "initialize_strategy",
+    "monitor",
+    "plan",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "get_prefix"
+   ]
+  ]
+ },
+ {
+  "class": "G3T1_1",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp:22",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 6,
+  "fields": 7,
+  "components": [
+   [
+    "collect",
+    "label",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "process"
+   ]
+  ]
+ },
+ {
+  "class": "G3T1_2",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp:22",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 6,
+  "fields": 8,
+  "components": [
+   [
+    "collect",
+    "label",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "process"
+   ]
+  ]
+ },
+ {
+  "class": "G3T1_3",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp:22",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 6,
+  "fields": 8,
+  "components": [
+   [
+    "collect",
+    "label",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "process"
+   ]
+  ]
+ },
+ {
+  "class": "G3T1_4",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp:22",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 6,
+  "fields": 8,
+  "components": [
+   [
+    "collect",
+    "label",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "process"
+   ]
+  ]
+ },
+ {
+  "class": "G3T1_5",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp:22",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 6,
+  "fields": 8,
+  "components": [
+   [
+    "collect",
+    "label",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "process"
+   ]
+  ]
+ },
+ {
+  "class": "G3T1_6",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp:22",
+  "lcom4": 3,
+  "bare": 1,
+  "jobs": 2,
+  "methods": 6,
+  "fields": 8,
+  "components": [
+   [
+    "collect",
+    "label",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "process"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::goalmodel::GoalTree",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/goalmodel/GoalTree.hpp:18",
+  "lcom4": 2,
+  "bare": 0,
+  "jobs": 2,
+  "methods": 10,
+  "fields": 2,
+  "components": [
+   [
+    "addChildren",
+    "addNode",
+    "addRootGoal",
+    "getLeafTasks",
+    "getNode",
+    "getNodes",
+    "getSize"
+   ],
+   [
+    "getActor",
+    "operator==",
+    "setActor"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::goalmodel::Property",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/goalmodel/Property.hpp:9",
+  "lcom4": 2,
+  "bare": 0,
+  "jobs": 2,
+  "methods": 5,
+  "fields": 2,
+  "components": [
+   [
+    "getID",
+    "operator==",
+    "setID"
+   ],
+   [
+    "getValue",
+    "setValue"
+   ]
+  ]
+ },
+ {
+  "class": "arch::ROSComponentDescriptor",
+  "location": "/workspaces/bsn_/src/archlib/include/archlib/ROSComponentDescriptor.hpp:9",
+  "lcom4": 2,
+  "bare": 0,
+  "jobs": 2,
+  "methods": 4,
+  "fields": 2,
+  "components": [
+   [
+    "getName",
+    "setName"
+   ],
+   [
+    "getFreq",
+    "setFreq"
+   ]
+  ]
+ },
+ {
+  "class": "AdaptationMessage",
+  "location": "/workspaces/bsn_/src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp:6",
+  "lcom4": 6,
+  "bare": 6,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 6,
+  "components": [
+   [
+    "getName"
+   ],
+   [
+    "getTimestamp"
+   ],
+   [
+    "getLogicalClock"
+   ],
+   [
+    "getSource"
+   ],
+   [
+    "getTarget"
+   ],
+   [
+    "getContent"
+   ]
+  ]
+ },
+ {
+  "class": "EnergyStatusMessage",
+  "location": "/workspaces/bsn_/src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp:6",
+  "lcom4": 6,
+  "bare": 6,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 6,
+  "components": [
+   [
+    "getName"
+   ],
+   [
+    "getTimestamp"
+   ],
+   [
+    "getLogicalClock"
+   ],
+   [
+    "getSource"
+   ],
+   [
+    "getTarget"
+   ],
+   [
+    "getCost"
+   ]
+  ]
+ },
+ {
+  "class": "EventMessage",
+  "location": "/workspaces/bsn_/src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp:6",
+  "lcom4": 6,
+  "bare": 6,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 6,
+  "components": [
+   [
+    "getName"
+   ],
+   [
+    "getTimestamp"
+   ],
+   [
+    "getLogicalClock"
+   ],
+   [
+    "getSource"
+   ],
+   [
+    "getTarget"
+   ],
+   [
+    "getEvent"
+   ]
+  ]
+ },
+ {
+  "class": "StatusMessage",
+  "location": "/workspaces/bsn_/src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp:6",
+  "lcom4": 6,
+  "bare": 6,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 6,
+  "components": [
+   [
+    "getName"
+   ],
+   [
+    "getTimestamp"
+   ],
+   [
+    "getLogicalClock"
+   ],
+   [
+    "getSource"
+   ],
+   [
+    "getTarget"
+   ],
+   [
+    "getState"
+   ]
+  ]
+ },
+ {
+  "class": "UncertaintyMessage",
+  "location": "/workspaces/bsn_/src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp:6",
+  "lcom4": 6,
+  "bare": 6,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 6,
+  "components": [
+   [
+    "getName"
+   ],
+   [
+    "getTimestamp"
+   ],
+   [
+    "getLogicalClock"
+   ],
+   [
+    "getSource"
+   ],
+   [
+    "getTarget"
+   ],
+   [
+    "getContent"
+   ]
+  ]
+ },
+ {
+  "class": "Injector",
+  "location": "/workspaces/bsn_/src/sa-bsn/simulation/injector/include/Injector.hpp:16",
+  "lcom4": 3,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 7,
+  "fields": 12,
+  "components": [
+   [
+    "body",
+    "gen_noise",
+    "inject",
+    "seconds_in_cycles",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "cycles_in_seconds"
+   ]
+  ]
+ },
+ {
+  "class": "Enactor",
+  "location": "/workspaces/bsn_/src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp:23",
+  "lcom4": 3,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 13,
+  "components": [
+   [
+    "body",
+    "receiveAdaptationParameter",
+    "receiveStatus",
+    "receiveStrategy"
+   ],
+   [
+    "tearDown"
+   ],
+   [
+    "print"
+   ]
+  ]
+ },
+ {
+  "class": "DataAccess",
+  "location": "/workspaces/bsn_/src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp:35",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 17,
+  "fields": 30,
+  "components": [
+   [
+    "applyTimeWindow",
+    "body",
+    "calculateComponentCost",
+    "calculateComponentReliability",
+    "flush",
+    "now",
+    "nowInSeconds",
+    "persistAdaptation",
+    "persistEnergyStatus",
+    "persistEvent",
+    "persistStatus",
+    "persistUncertainty",
+    "processQuery",
+    "processTargetSystemData",
+    "receivePersistMessage",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "Logger",
+  "location": "/workspaces/bsn_/src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp:19",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 9,
+  "fields": 6,
+  "components": [
+   [
+    "body",
+    "now",
+    "receiveAdaptationCommand",
+    "receiveEnergyStatus",
+    "receiveEvent",
+    "receiveStatus",
+    "receiveUncertainty",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "arch::target_system::Component",
+  "location": "/workspaces/bsn_/src/archlib/include/archlib/target_system/Component.hpp:20",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 9,
+  "fields": 6,
+  "components": [
+   [
+    "activate",
+    "deactivate",
+    "run",
+    "sendEnergyStatus",
+    "sendEvent",
+    "sendStatus",
+    "setUp",
+    "tearDown"
+   ],
+   [
+    "reconfigure"
+   ]
+  ]
+ },
+ {
+  "class": "Engine",
+  "location": "/workspaces/bsn_/src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp:34",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 8,
+  "fields": 9,
+  "components": [
+   [
+    "body",
+    "calculate_qos",
+    "fetch_formula",
+    "receiveException",
+    "sendAdaptationParameter",
+    "setUp",
+    "setUp_formula"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "G4T1",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp:23",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 7,
+  "fields": 21,
+  "components": [
+   [
+    "collect",
+    "getPatientStatus",
+    "getSensorId",
+    "process",
+    "setUp",
+    "transfer"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "arch::target_system::Probe",
+  "location": "/workspaces/bsn_/src/archlib/include/archlib/target_system/Probe.hpp:14",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 7,
+  "components": [
+   [
+    "body",
+    "collectEnergyStatus",
+    "collectEvent",
+    "collectStatus",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "ParamAdapter",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp:12",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 5,
+  "fields": 2,
+  "components": [
+   [
+    "body",
+    "moduleConnect",
+    "receiveAdaptationCommand",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "PatientModule",
+  "location": "/workspaces/bsn_/src/sa-bsn/environment/patient/include/PatientModule.hpp:11",
+  "lcom4": 2,
+  "bare": 1,
+  "jobs": 1,
+  "methods": 5,
+  "fields": 8,
+  "components": [
+   [
+    "body",
+    "configureDataGenerator",
+    "getPatientData",
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "arch::target_system::Effector",
+  "location": "/workspaces/bsn_/src/archlib/include/archlib/target_system/Effector.hpp:12",
+  "lcom4": 2,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 1,
+  "components": [
+   [
+    "setUp"
+   ],
+   [
+    "tearDown"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::goalmodel::Task",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/goalmodel/Task.hpp:15",
+  "lcom4": 2,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 0,
+  "components": [
+   [
+    "addChild"
+   ],
+   [
+    "addChild"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::time::TimeData",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/time/TimeData.hpp:15",
+  "lcom4": 2,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 0,
+  "components": [
+   [
+    "elapsedTime"
+   ],
+   [
+    "get_time"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::configuration::SensorConfiguration",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp:15",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 21,
+  "fields": 7,
+  "components": [
+   [
+    "convertRealPercentage",
+    "evaluateNumber",
+    "getDisplacement",
+    "getHighPercentage",
+    "getHighRisk",
+    "getId",
+    "getLowPercentage",
+    "getLowRisk",
+    "getMediumRisk",
+    "getMidPercentage",
+    "isHighRisk",
+    "isLowRisk",
+    "isMediumRisk",
+    "setHighPercentage",
+    "setHighRisk",
+    "setId",
+    "setLowPercentage",
+    "setLowRisk",
+    "setMediumRisk",
+    "setMidPercentage",
+    "toString"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::goalmodel::Node",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/goalmodel/Node.hpp:12",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 11,
+  "fields": 3,
+  "components": [
+   [
+    "addChild",
+    "findChild",
+    "getChild",
+    "getChildren",
+    "getDescription",
+    "getID",
+    "hasChildren",
+    "operator==",
+    "removeChild",
+    "setDescription",
+    "setID"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::resource::Battery",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/resource/Battery.hpp:12",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 11,
+  "fields": 4,
+  "components": [
+   [
+    "consume",
+    "generate",
+    "getCapacity",
+    "getCurrentLevel",
+    "getId",
+    "getUnit",
+    "setCapacity",
+    "setCurrentLevel",
+    "setId",
+    "setUnit",
+    "toString"
+   ]
+  ]
+ },
+ {
+  "class": "Sensor",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/Sensor.hpp:18",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 9,
+  "fields": 11,
+  "components": [
+   [
+    "apply_noise",
+    "body",
+    "injectUncertainty",
+    "isActive",
+    "recharge",
+    "reconfigure",
+    "run",
+    "turnOff",
+    "turnOn"
+   ]
+  ]
+ },
+ {
+  "class": "CentralHub",
+  "location": "/workspaces/bsn_/src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp:16",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 8,
+  "fields": 6,
+  "components": [
+   [
+    "apply_noise",
+    "body",
+    "isActive",
+    "recharge",
+    "reconfigure",
+    "run",
+    "turnOff",
+    "turnOn"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::range::Range",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/range/Range.hpp:13",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 8,
+  "fields": 2,
+  "components": [
+   [
+    "convert",
+    "getLowerBound",
+    "getUpperBound",
+    "in_range",
+    "setLowerBound",
+    "setUpperBound",
+    "toString",
+    "to_print"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::model::Formula",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/model/Formula.hpp:13",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 7,
+  "fields": 2,
+  "components": [
+   [
+    "evaluate",
+    "getExpression",
+    "getTermValueMap",
+    "getTerms",
+    "setExpression",
+    "setTermValueMap",
+    "setTermValueMap"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::filters::MovingAverage",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/filters/MovingAverage.hpp:12",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 6,
+  "fields": 4,
+  "components": [
+   [
+    "getBuffer",
+    "getRange",
+    "getValue",
+    "insert",
+    "setRange",
+    "toString"
+   ]
+  ]
+ },
+ {
+  "class": "Controller",
+  "location": "/workspaces/bsn_/src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp:6",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 4,
+  "fields": 3,
+  "components": [
+   [
+    "apply_cost_strategy",
+    "apply_reli_strategy",
+    "receiveEvent",
+    "setUp"
+   ]
+  ]
+ },
+ {
+  "class": "bsn::generator::DataGenerator",
+  "location": "/workspaces/bsn_/src/libbsn/include/libbsn/generator/DataGenerator.hpp:11",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 4,
+  "fields": 3,
+  "components": [
+   [
+    "calculateValue",
+    "getValue",
+    "nextState",
+    "setSeed"
+   ]
+  ]
+ }
+]

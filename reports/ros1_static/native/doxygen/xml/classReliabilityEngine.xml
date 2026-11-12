@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classReliabilityEngine" kind="class" language="C++" prot="public">
+    <compoundname>ReliabilityEngine</compoundname>
+    <basecompoundref refid="classEngine" prot="public" virt="non-virtual">Engine</basecompoundref>
+    <includes refid="ReliabilityEngine_8hpp" local="no">ReliabilityEngine.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classReliabilityEngine_1afae828d23b1aa902824338975d9fa611" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ReliabilityEngine::setpoint</definition>
+        <argsstring></argsstring>
+        <name>setpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="60" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" compoundref="ReliabilityEngine_8cpp" startline="175" endline="192">analyze</referencedby>
+        <referencedby refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" compoundref="ReliabilityEngine_8cpp" startline="194" endline="311">plan</referencedby>
+        <referencedby refid="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" compoundref="ReliabilityEngine_8cpp" startline="20" endline="28">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classReliabilityEngine_1a5ba78cc9dab4a6945232b89fda3b9fe7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ReliabilityEngine::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="61" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" compoundref="ReliabilityEngine_8cpp" startline="194" endline="311">plan</referencedby>
+        <referencedby refid="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" compoundref="ReliabilityEngine_8cpp" startline="20" endline="28">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classReliabilityEngine_1ac68b63ecddecc5195ebf78613970076b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ReliabilityEngine::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="62" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" compoundref="ReliabilityEngine_8cpp" startline="194" endline="311">plan</referencedby>
+        <referencedby refid="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" compoundref="ReliabilityEngine_8cpp" startline="20" endline="28">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classReliabilityEngine_1ae373717575f4155a04c8efc1214ed884" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ReliabilityEngine::tolerance</definition>
+        <argsstring></argsstring>
+        <name>tolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="63" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" compoundref="ReliabilityEngine_8cpp" startline="175" endline="192">analyze</referencedby>
+        <referencedby refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" compoundref="ReliabilityEngine_8cpp" startline="194" endline="311">plan</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classReliabilityEngine_1ab0435877ed826de3a23bd030fe3951c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ReliabilityEngine::cycles</definition>
+        <argsstring></argsstring>
+        <name>cycles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="65" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" compoundref="ReliabilityEngine_8cpp" startline="175" endline="192">analyze</referencedby>
+        <referencedby refid="classReliabilityEngine_1afe74f85b5bb905500dec2f93586e0045" compoundref="ReliabilityEngine_8cpp" startline="71" endline="173">monitor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classReliabilityEngine_1a6a66ce2441c612a1a7e7c9bfa419c4b8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ReliabilityEngine::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="67" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1a66719cf0d379bef84459afb5b11c6e83" compoundref="ReliabilityEngine_8cpp" startline="34" endline="36">get_prefix</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classReliabilityEngine_1aadc44d269b35749e2a891933618eac31" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher ReliabilityEngine::enact</definition>
+        <argsstring></argsstring>
+        <name>enact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="69" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classReliabilityEngine_1a7837ed9e42d0b47872fe862cf0a4b63f" compoundref="ReliabilityEngine_8cpp" startline="313" endline="360">execute</referencedby>
+        <referencedby refid="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" compoundref="ReliabilityEngine_8cpp" startline="20" endline="28">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classReliabilityEngine_1ae94032f6b025f3d7ff26ab0883063de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReliabilityEngine::ReliabilityEngine</definition>
+        <argsstring>(int &amp;argc, char **argv, std::string name)</argsstring>
+        <name>ReliabilityEngine</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="38" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1afb45f62763bcdbeaaead33aa642136cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ReliabilityEngine::~ReliabilityEngine</definition>
+        <argsstring>()</argsstring>
+        <name>~ReliabilityEngine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="39" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReliabilityEngine::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classEngine_1ae0233e4936be42094d3dfd401633cccd">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="46" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="20" bodyend="28"/>
+        <references refid="classReliabilityEngine_1aadc44d269b35749e2a891933618eac31" compoundref="ReliabilityEngine_8hpp" startline="69">enact</references>
+        <references refid="classReliabilityEngine_1ac68b63ecddecc5195ebf78613970076b" compoundref="ReliabilityEngine_8hpp" startline="62">gain</references>
+        <references refid="classReliabilityEngine_1a5ba78cc9dab4a6945232b89fda3b9fe7" compoundref="ReliabilityEngine_8hpp" startline="61">offset</references>
+        <references refid="classReliabilityEngine_1afae828d23b1aa902824338975d9fa611" compoundref="ReliabilityEngine_8hpp" startline="60">setpoint</references>
+        <references refid="classEngine_1ae0233e4936be42094d3dfd401633cccd" compoundref="Engine_8cpp" startline="10" endline="52">Engine::setUp</references>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1ad5641aa98162231ec9ac3bc9b91eef14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReliabilityEngine::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classEngine_1afb19e44fe574a4c79f32aacbb9f24d19">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="47" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="30" bodyend="32"/>
+        <references refid="classEngine_1afb19e44fe574a4c79f32aacbb9f24d19" compoundref="Engine_8cpp" startline="54" endline="54">Engine::tearDown</references>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1a66719cf0d379bef84459afb5b11c6e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ReliabilityEngine::get_prefix</definition>
+        <argsstring>()</argsstring>
+        <name>get_prefix</name>
+        <reimplements refid="classEngine_1a88c4ce811856103bc01cc60ad09eeaca">get_prefix</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="49" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="34" bodyend="36"/>
+        <references refid="classReliabilityEngine_1a6a66ce2441c612a1a7e7c9bfa419c4b8" compoundref="ReliabilityEngine_8hpp" startline="67">prefix</references>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1a2f95ce2994cff8ba41b4937f336282d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt; std::string, int &gt; ReliabilityEngine::initialize_priority</definition>
+        <argsstring>(std::vector&lt; std::string &gt;)</argsstring>
+        <name>initialize_priority</name>
+        <reimplements refid="classEngine_1a70f52722c5037794f6fd52c2b6d3bae2">initialize_priority</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <defname>terms</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an initialized priorities vector with init_value values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The terms that compose the strategy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The map containing terms of the formula and initial values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="51" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="59" bodyend="69"/>
+        <references refid="classEngine_1aefcb8556fbc726c547f34bde72d70d90" compoundref="Engine_8hpp" startline="76">Engine::priority</references>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1af5994c899007fb60fad0168aafc571b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt; std::string, double &gt; ReliabilityEngine::initialize_strategy</definition>
+        <argsstring>(std::vector&lt; std::string &gt;)</argsstring>
+        <name>initialize_strategy</name>
+        <reimplements refid="classEngine_1a60b6aaac0bf5c293d5784666c701d777">initialize_strategy</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <defname>terms</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an initialized strategy with init_value values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The terms that compose the strategy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The map containing terms of the formula and initial values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="52" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="44" bodyend="52"/>
+        <references refid="classEngine_1abef7831110f292a6f33e8713e74d488b" compoundref="Engine_8hpp" startline="75">Engine::strategy</references>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1afe74f85b5bb905500dec2f93586e0045" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReliabilityEngine::monitor</definition>
+        <argsstring>()</argsstring>
+        <name>monitor</name>
+        <reimplements refid="classEngine_1ad738bba77de0d57a5c3424ea973140a7">monitor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="54" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="71" bodyend="173"/>
+        <references refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" compoundref="ReliabilityEngine_8cpp" startline="175" endline="192">analyze</references>
+        <references refid="classReliabilityEngine_1ab0435877ed826de3a23bd030fe3951c3" compoundref="ReliabilityEngine_8hpp" startline="65">cycles</references>
+        <references refid="classEngine_1aebdeb3d77ac1b29b408bead6ff1a525e" compoundref="Engine_8hpp" startline="77">Engine::deactivatedComponents</references>
+        <references refid="classEngine_1af7800c0e37c2c9190bd94e5d5e63536d" compoundref="Engine_8hpp" startline="70">Engine::info_quant</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <references refid="classEngine_1abef7831110f292a6f33e8713e74d488b" compoundref="Engine_8hpp" startline="75">Engine::strategy</references>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReliabilityEngine::analyze</definition>
+        <argsstring>()</argsstring>
+        <name>analyze</name>
+        <reimplements refid="classEngine_1afeaf1236d9e186380e1935d858b03b48">analyze</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="55" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="175" bodyend="192"/>
+        <references refid="classEngine_1a06f3ef2444912639996a3e4c45c34032" compoundref="Engine_8hpp" startline="72">Engine::actuation_freq</references>
+        <references refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" compoundref="Engine_8cpp" startline="135" endline="138">Engine::calculate_qos</references>
+        <references refid="classReliabilityEngine_1ab0435877ed826de3a23bd030fe3951c3" compoundref="ReliabilityEngine_8hpp" startline="65">cycles</references>
+        <references refid="classEngine_1a4336f1a210da0793d278a4ec0f4684c1" compoundref="Engine_8hpp" startline="71">Engine::monitor_freq</references>
+        <references refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" compoundref="ReliabilityEngine_8cpp" startline="194" endline="311">plan</references>
+        <references refid="classReliabilityEngine_1afae828d23b1aa902824338975d9fa611" compoundref="ReliabilityEngine_8hpp" startline="60">setpoint</references>
+        <references refid="classEngine_1abef7831110f292a6f33e8713e74d488b" compoundref="Engine_8hpp" startline="75">Engine::strategy</references>
+        <references refid="classEngine_1ab2ce55b3322bfef3d1ca39b368d238ff" compoundref="Engine_8hpp" startline="74">Engine::target_system_model</references>
+        <references refid="classReliabilityEngine_1ae373717575f4155a04c8efc1214ed884" compoundref="ReliabilityEngine_8hpp" startline="63">tolerance</references>
+        <referencedby refid="classReliabilityEngine_1afe74f85b5bb905500dec2f93586e0045" compoundref="ReliabilityEngine_8cpp" startline="71" endline="173">monitor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReliabilityEngine::plan</definition>
+        <argsstring>()</argsstring>
+        <name>plan</name>
+        <reimplements refid="classEngine_1aa195ea183ff2c3861dcb31e083d6df69">plan</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>blacklisted(*it) &amp;&amp; </para>        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="56" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="194" bodyend="311"/>
+        <references refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" compoundref="Engine_8cpp" startline="135" endline="138">Engine::calculate_qos</references>
+        <references refid="classEngine_1aebdeb3d77ac1b29b408bead6ff1a525e" compoundref="Engine_8hpp" startline="77">Engine::deactivatedComponents</references>
+        <references refid="classReliabilityEngine_1a7837ed9e42d0b47872fe862cf0a4b63f" compoundref="ReliabilityEngine_8cpp" startline="313" endline="360">execute</references>
+        <references refid="classReliabilityEngine_1ac68b63ecddecc5195ebf78613970076b" compoundref="ReliabilityEngine_8hpp" startline="62">gain</references>
+        <references refid="classReliabilityEngine_1a5ba78cc9dab4a6945232b89fda3b9fe7" compoundref="ReliabilityEngine_8hpp" startline="61">offset</references>
+        <references refid="classEngine_1aefcb8556fbc726c547f34bde72d70d90" compoundref="Engine_8hpp" startline="76">Engine::priority</references>
+        <references refid="classReliabilityEngine_1afae828d23b1aa902824338975d9fa611" compoundref="ReliabilityEngine_8hpp" startline="60">setpoint</references>
+        <references refid="classEngine_1abef7831110f292a6f33e8713e74d488b" compoundref="Engine_8hpp" startline="75">Engine::strategy</references>
+        <references refid="classEngine_1ab2ce55b3322bfef3d1ca39b368d238ff" compoundref="Engine_8hpp" startline="74">Engine::target_system_model</references>
+        <references refid="classReliabilityEngine_1ae373717575f4155a04c8efc1214ed884" compoundref="ReliabilityEngine_8hpp" startline="63">tolerance</references>
+        <referencedby refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" compoundref="ReliabilityEngine_8cpp" startline="175" endline="192">analyze</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1a7837ed9e42d0b47872fe862cf0a4b63f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReliabilityEngine::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <reimplements refid="classEngine_1ad85f4f9faf06e55c18ca57c4a69aeef0">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="57" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="313" bodyend="360"/>
+        <references refid="classReliabilityEngine_1aadc44d269b35749e2a891933618eac31" compoundref="ReliabilityEngine_8hpp" startline="69">enact</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <references refid="classEngine_1abef7831110f292a6f33e8713e74d488b" compoundref="Engine_8hpp" startline="75">Engine::strategy</references>
+        <referencedby refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" compoundref="ReliabilityEngine_8cpp" startline="194" endline="311">plan</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classReliabilityEngine_1a8511948fe0acf40255f3b29534207983" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReliabilityEngine::ReliabilityEngine</definition>
+        <argsstring>(const ReliabilityEngine &amp;)</argsstring>
+        <name>ReliabilityEngine</name>
+        <param>
+          <type>const <ref refid="classReliabilityEngine" kindref="compound">ReliabilityEngine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classReliabilityEngine_1ac3bf989773175b331a774fa2d22146c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classReliabilityEngine" kindref="compound">ReliabilityEngine</ref> &amp;</type>
+        <definition>ReliabilityEngine&amp; ReliabilityEngine::operator=</definition>
+        <argsstring>(const ReliabilityEngine &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classReliabilityEngine" kindref="compound">ReliabilityEngine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="236">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="234">
+        <label>ReliabilityEngine</label>
+        <link refid="classReliabilityEngine"/>
+        <childnode refid="235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>Engine</label>
+        <link refid="classEngine"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="239">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="240" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="241">
+        <label>bsn::model::Formula</label>
+        <link refid="classbsn_1_1model_1_1Formula"/>
+      </node>
+      <node id="237">
+        <label>ReliabilityEngine</label>
+        <link refid="classReliabilityEngine"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="238">
+        <label>Engine</label>
+        <link refid="classEngine"/>
+        <childnode refid="239" relation="public-inheritance">
+        </childnode>
+        <childnode refid="241" relation="usage">
+          <edgelabel>target_system_model</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="35" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" bodystart="35" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classEngine_1a06f3ef2444912639996a3e4c45c34032" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>actuation_freq</name></member>
+      <member refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>analyze</name></member>
+      <member refid="classEngine_1a5e5ad6951248487f662e40e9f67b7bc6" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>blacklisted</name></member>
+      <member refid="classEngine_1ae164dcb3bf318cb307ab7266974c2064" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>body</name></member>
+      <member refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>calculate_qos</name></member>
+      <member refid="classReliabilityEngine_1ab0435877ed826de3a23bd030fe3951c3" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>cycles</name></member>
+      <member refid="classEngine_1aebdeb3d77ac1b29b408bead6ff1a525e" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>deactivatedComponents</name></member>
+      <member refid="classReliabilityEngine_1aadc44d269b35749e2a891933618eac31" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>enact</name></member>
+      <member refid="classEngine_1a2cfb46480fd3d254e11933aee17a72de" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>enactor_server</name></member>
+      <member refid="classEngine_1a82834c36c2eacfd1f9b393708c2c6bb7" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>Engine</name></member>
+      <member refid="classReliabilityEngine_1a7837ed9e42d0b47872fe862cf0a4b63f" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>execute</name></member>
+      <member refid="classEngine_1a0a83dbc2fee3b317932ce4a166303f22" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>fetch_formula</name></member>
+      <member refid="classReliabilityEngine_1ac68b63ecddecc5195ebf78613970076b" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>gain</name></member>
+      <member refid="classReliabilityEngine_1a66719cf0d379bef84459afb5b11c6e83" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>get_prefix</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>ReliabilityEngine</scope><name>getRosNodeName</name></member>
+      <member refid="classEngine_1af7800c0e37c2c9190bd94e5d5e63536d" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>info_quant</name></member>
+      <member refid="classReliabilityEngine_1a2f95ce2994cff8ba41b4937f336282d5" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>initialize_priority</name></member>
+      <member refid="classReliabilityEngine_1af5994c899007fb60fad0168aafc571b1" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>initialize_strategy</name></member>
+      <member refid="classReliabilityEngine_1afe74f85b5bb905500dec2f93586e0045" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>monitor</name></member>
+      <member refid="classEngine_1a4336f1a210da0793d278a4ec0f4684c1" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>monitor_freq</name></member>
+      <member refid="classReliabilityEngine_1a5ba78cc9dab4a6945232b89fda3b9fe7" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>offset</name></member>
+      <member refid="classReliabilityEngine_1ac3bf989773175b331a774fa2d22146c4" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>operator=</name></member>
+      <member refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>plan</name></member>
+      <member refid="classReliabilityEngine_1a6a66ce2441c612a1a7e7c9bfa419c4b8" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>prefix</name></member>
+      <member refid="classEngine_1aefcb8556fbc726c547f34bde72d70d90" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>priority</name></member>
+      <member refid="classEngine_1aea9c523a0feb05871f020d4fd4f417e4" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>receiveException</name></member>
+      <member refid="classReliabilityEngine_1ae94032f6b025f3d7ff26ab0883063de2" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>ReliabilityEngine</name></member>
+      <member refid="classReliabilityEngine_1a8511948fe0acf40255f3b29534207983" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>ReliabilityEngine</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>ReliabilityEngine</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>run</name></member>
+      <member refid="classEngine_1a8aa6d778f6e3750b091c1ffebb6cafcc" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>sendAdaptationParameter</name></member>
+      <member refid="classReliabilityEngine_1afae828d23b1aa902824338975d9fa611" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>setpoint</name></member>
+      <member refid="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>setUp</name></member>
+      <member refid="classEngine_1a88afff420d0d1652ad974fd26df6de63" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>setUp_formula</name></member>
+      <member refid="classEngine_1abef7831110f292a6f33e8713e74d488b" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>strategy</name></member>
+      <member refid="classEngine_1ab2ce55b3322bfef3d1ca39b368d238ff" prot="public" virt="non-virtual"><scope>ReliabilityEngine</scope><name>target_system_model</name></member>
+      <member refid="classReliabilityEngine_1ad5641aa98162231ec9ac3bc9b91eef14" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>tearDown</name></member>
+      <member refid="classReliabilityEngine_1ae373717575f4155a04c8efc1214ed884" prot="private" virt="non-virtual"><scope>ReliabilityEngine</scope><name>tolerance</name></member>
+      <member refid="classEngine_1a8ef7030a089ecb30bbfcb9e43094717a" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>~Engine</name></member>
+      <member refid="classReliabilityEngine_1afb45f62763bcdbeaaead33aa642136cf" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>~ReliabilityEngine</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>ReliabilityEngine</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

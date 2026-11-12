@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classParamAdapter" kind="class" language="C++" prot="public">
+    <compoundname>ParamAdapter</compoundname>
+    <basecompoundref refid="classarch_1_1target__system_1_1Effector" prot="public" virt="non-virtual">arch::target_system::Effector</basecompoundref>
+    <includes refid="ParamAdapter_8hpp" local="no">ParamAdapter.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" prot="private" static="no" mutable="no">
+        <type>ros::ServiceServer</type>
+        <definition>ros::ServiceServer ParamAdapter::register_service</definition>
+        <argsstring></argsstring>
+        <name>register_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="31" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" compoundref="ParamAdapter_8cpp" startline="6" endline="12">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, ros::Publisher &gt;</type>
+        <definition>std::map&lt;std::string,ros::Publisher&gt; ParamAdapter::target_arr</definition>
+        <argsstring></argsstring>
+        <name>target_arr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="32" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" compoundref="ParamAdapter_8cpp" startline="31" endline="57">moduleConnect</referencedby>
+        <referencedby refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" compoundref="ParamAdapter_8cpp" startline="23" endline="29">receiveAdaptationCommand</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ParamAdapter::ParamAdapter</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>ParamAdapter</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="15" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1a12a2aebf8fcbad3a64399ae40843a6e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ParamAdapter::~ParamAdapter</definition>
+        <argsstring>()</argsstring>
+        <name>~ParamAdapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="16" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ParamAdapter::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="23" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="6" bodyend="12"/>
+        <references refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" compoundref="Effector_8hpp" startline="29">arch::target_system::Effector::handle</references>
+        <references refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" compoundref="ParamAdapter_8cpp" startline="31" endline="57">moduleConnect</references>
+        <references refid="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" compoundref="ParamAdapter_8hpp" startline="31">register_service</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ParamAdapter::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1target__system_1_1Effector_1a149b6881ceb74fc890a46a274581a1e4">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="24" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1a8067157ee9b80ea004424442237096ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ParamAdapter::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="25" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="16" bodyend="21"/>
+        <references refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" compoundref="ParamAdapter_8cpp" startline="23" endline="29">receiveAdaptationCommand</references>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ParamAdapter::receiveAdaptationCommand</definition>
+        <argsstring>(const archlib::AdaptationCommand::ConstPtr &amp;msg)</argsstring>
+        <name>receiveAdaptationCommand</name>
+        <reimplements refid="classarch_1_1target__system_1_1Effector_1a7547143ad58200c01b1dde0559ab9241">receiveAdaptationCommand</reimplements>
+        <param>
+          <type>const archlib::AdaptationCommand::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="27" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="23" bodyend="29"/>
+        <references refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" compoundref="ParamAdapter_8hpp" startline="32">target_arr</references>
+        <referencedby refid="classParamAdapter_1a8067157ee9b80ea004424442237096ee" compoundref="ParamAdapter_8cpp" startline="16" endline="21">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ParamAdapter::moduleConnect</definition>
+        <argsstring>(archlib::EffectorRegister::Request &amp;req, archlib::EffectorRegister::Response &amp;res)</argsstring>
+        <name>moduleConnect</name>
+        <param>
+          <type>archlib::EffectorRegister::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>archlib::EffectorRegister::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="28" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" bodystart="31" bodyend="57"/>
+        <references refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" compoundref="Effector_8hpp" startline="29">arch::target_system::Effector::handle</references>
+        <references refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" compoundref="ParamAdapter_8hpp" startline="32">target_arr</references>
+        <referencedby refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" compoundref="ParamAdapter_8cpp" startline="6" endline="12">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classParamAdapter_1a310ddc325aea35fdb4d54d261ef81ddf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ParamAdapter::ParamAdapter</definition>
+        <argsstring>(const ParamAdapter &amp;)</argsstring>
+        <name>ParamAdapter</name>
+        <param>
+          <type>const <ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classParamAdapter_1a1492852462fb9aa13dd2aec7d7b0ae45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref> &amp;</type>
+        <definition>ParamAdapter&amp; ParamAdapter::operator=</definition>
+        <argsstring>(const ParamAdapter &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="215">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="213">
+        <label>ParamAdapter</label>
+        <link refid="classParamAdapter"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>arch::target_system::Effector</label>
+        <link refid="classarch_1_1target__system_1_1Effector"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="218">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="219" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="219">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="216">
+        <label>ParamAdapter</label>
+        <link refid="classParamAdapter"/>
+        <childnode refid="217" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>arch::target_system::Effector</label>
+        <link refid="classarch_1_1target__system_1_1Effector"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="12" column="1" bodyfile="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" bodystart="12" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classParamAdapter_1a8067157ee9b80ea004424442237096ee" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>body</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a51cb64c0d697093680523952b2457847" prot="public" virt="non-virtual"><scope>ParamAdapter</scope><name>Effector</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>ParamAdapter</scope><name>getRosNodeName</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" prot="protected" virt="non-virtual"><scope>ParamAdapter</scope><name>handle</name></member>
+      <member refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" prot="public" virt="non-virtual"><scope>ParamAdapter</scope><name>moduleConnect</name></member>
+      <member refid="classParamAdapter_1a1492852462fb9aa13dd2aec7d7b0ae45" prot="private" virt="non-virtual"><scope>ParamAdapter</scope><name>operator=</name></member>
+      <member refid="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" prot="public" virt="non-virtual"><scope>ParamAdapter</scope><name>ParamAdapter</name></member>
+      <member refid="classParamAdapter_1a310ddc325aea35fdb4d54d261ef81ddf" prot="private" virt="non-virtual"><scope>ParamAdapter</scope><name>ParamAdapter</name></member>
+      <member refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>receiveAdaptationCommand</name></member>
+      <member refid="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" prot="private" virt="non-virtual"><scope>ParamAdapter</scope><name>register_service</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>ParamAdapter</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>ParamAdapter</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>run</name></member>
+      <member refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>setUp</name></member>
+      <member refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" prot="private" virt="non-virtual"><scope>ParamAdapter</scope><name>target_arr</name></member>
+      <member refid="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>tearDown</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a76d432f197f73d7233db6ca977464dd6" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>~Effector</name></member>
+      <member refid="classParamAdapter_1a12a2aebf8fcbad3a64399ae40843a6e3" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>~ParamAdapter</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>ParamAdapter</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

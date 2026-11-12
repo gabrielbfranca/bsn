@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_c1fd8870642fc348c13bba748557a702" kind="dir">
+    <compoundname>src/sa-bsn/knowledge_repository/data_access/include/data_access</compoundname>
+    <innerfile refid="AdaptationMessage_8hpp">AdaptationMessage.hpp</innerfile>
+    <innerfile refid="DataAccess_8hpp">DataAccess.hpp</innerfile>
+    <innerfile refid="EnergyStatusMessage_8hpp">EnergyStatusMessage.hpp</innerfile>
+    <innerfile refid="EventMessage_8hpp">EventMessage.hpp</innerfile>
+    <innerfile refid="StatusMessage_8hpp">StatusMessage.hpp</innerfile>
+    <innerfile refid="UncertaintyMessage_8hpp">UncertaintyMessage.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/"/>
+  </compounddef>
+</doxygen>

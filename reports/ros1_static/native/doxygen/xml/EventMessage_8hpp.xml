@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="EventMessage_8hpp" kind="file" language="C++">
+    <compoundname>EventMessage.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <incdepgraph>
+      <node id="982">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</label>
+        <link refid="EventMessage_8hpp"/>
+        <childnode refid="983" relation="include">
+        </childnode>
+      </node>
+      <node id="983">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="984">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</label>
+        <link refid="EventMessage_8hpp"/>
+        <childnode refid="985" relation="include">
+        </childnode>
+      </node>
+      <node id="987">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="985">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="987" relation="include">
+        </childnode>
+      </node>
+      <node id="986">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classEventMessage" prot="public">EventMessage</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVENT_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVENT_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classEventMessage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEventMessage" kindref="compound">EventMessage</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classEventMessage_1a068681c976e6967819bc401a6557f1b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEventMessage_1a068681c976e6967819bc401a6557f1b5" kindref="member">EventMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" kindref="member">timestamp</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" kindref="member">logical_clock</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" kindref="member">source</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" kindref="member">target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" kindref="member">event</ref>)<sp/>:<sp/>name(name),<sp/>timestamp(timestamp),<sp/>logical_clock(logical_clock),<sp/>source(source),<sp/>target(target),<sp/>event(event){};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classEventMessage_1aed8ac6c33aa6124bd1de2e2527471b3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1aed8ac6c33aa6124bd1de2e2527471b3d" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" kindref="member">name</ref>;};</highlight></codeline>
+<codeline lineno="12" refid="classEventMessage_1afcf60ef6f1366f5a0607292303db0ce3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEventMessage_1afcf60ef6f1366f5a0607292303db0ce3" kindref="member">getTimestamp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" kindref="member">timestamp</ref>;};</highlight></codeline>
+<codeline lineno="13" refid="classEventMessage_1ac13fb59e49963009dc47118b9845ca4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEventMessage_1ac13fb59e49963009dc47118b9845ca4d" kindref="member">getLogicalClock</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" kindref="member">logical_clock</ref>;};</highlight></codeline>
+<codeline lineno="14" refid="classEventMessage_1ace199488d87a0ebf55c6c81e66b9a5c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1ace199488d87a0ebf55c6c81e66b9a5c4" kindref="member">getSource</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" kindref="member">source</ref>;};</highlight></codeline>
+<codeline lineno="15" refid="classEventMessage_1afee2ba348b815683dc0eb148bc93f9cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1afee2ba348b815683dc0eb148bc93f9cb" kindref="member">getTarget</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" kindref="member">target</ref>;};</highlight></codeline>
+<codeline lineno="16" refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1a635d5a2c5e016dadb713f47f6f35e3d3" kindref="member">getEvent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" kindref="member">event</ref>;};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" kindref="member">logical_clock</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" kindref="member">source</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" kindref="member">event</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp"/>
+  </compounddef>
+</doxygen>

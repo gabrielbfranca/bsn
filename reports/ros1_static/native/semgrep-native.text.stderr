@@ -1,0 +1,19 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 104 files with 18 Code rules:
+  Scanning 104 files with 18 cpp rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 229 (229 blocking)
+ • Rules run: 18
+ • Targets scanned: 104
+ • Parsed lines: ~100.0%
+ • No ignore information available
+Ran 18 rules on 104 files: 229 findings.

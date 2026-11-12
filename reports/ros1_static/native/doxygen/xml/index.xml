@@ -1,0 +1,1325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classAdaptationMessage" kind="class"><name>AdaptationMessage</name>
+    <member refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" kind="variable"><name>name</name></member>
+    <member refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" kind="variable"><name>timestamp</name></member>
+    <member refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" kind="variable"><name>logical_clock</name></member>
+    <member refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" kind="variable"><name>source</name></member>
+    <member refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" kind="variable"><name>target</name></member>
+    <member refid="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" kind="variable"><name>content</name></member>
+    <member refid="classAdaptationMessage_1affef4901b50a23f2c26679d1b712ea10" kind="function"><name>AdaptationMessage</name></member>
+    <member refid="classAdaptationMessage_1a247af370b7dc198bd0075e4657fce95e" kind="function"><name>getName</name></member>
+    <member refid="classAdaptationMessage_1ae98612442ead2c0da9c1df5758ab6913" kind="function"><name>getTimestamp</name></member>
+    <member refid="classAdaptationMessage_1a9e15075e6e6303ce7d54098cd1f20cd6" kind="function"><name>getLogicalClock</name></member>
+    <member refid="classAdaptationMessage_1aea71d7d2554aaa0eb2a95abcdaccedd1" kind="function"><name>getSource</name></member>
+    <member refid="classAdaptationMessage_1a29c98add1583cfd5c02c09d924d45931" kind="function"><name>getTarget</name></member>
+    <member refid="classAdaptationMessage_1aaa11680ed61906ebcaa73059f6688c17" kind="function"><name>getContent</name></member>
+  </compound>
+  <compound refid="classbsn_1_1resource_1_1Battery" kind="class"><name>bsn::resource::Battery</name>
+    <member refid="classbsn_1_1resource_1_1Battery_1ae8bd347032dd9880fc870a3912480b77" kind="variable"><name>id</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" kind="variable"><name>capacity</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" kind="variable"><name>currentLevel</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" kind="variable"><name>unit</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1af0fbd98517df70769abb97e08a69ea6d" kind="function"><name>Battery</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1ae540af095ce21e4fe2c96bc6c71d683d" kind="function"><name>Battery</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a8f7804c0914a3ce3adf0efd2d33491e4" kind="function"><name>~Battery</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a8f128046b1b484dd8d3fdf924d26c92d" kind="function"><name>Battery</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" kind="function"><name>consume</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" kind="function"><name>generate</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a6d210f39d8490f050f4f4efe2a08a504" kind="function"><name>setId</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1ad5cd2177695d9bd27dd61d514b86470b" kind="function"><name>getId</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1acbac5f9c64777f5f2eadca92df7526be" kind="function"><name>setCapacity</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1ac0ac21b47793f078ac0de26fd039f17b" kind="function"><name>getCapacity</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a2953c6225bc1ed1be259cc6231ef08fa" kind="function"><name>setCurrentLevel</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" kind="function"><name>getCurrentLevel</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1adc734db0793f80794bd934c524fefca0" kind="function"><name>setUnit</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1af42ddcb306bcc9f8c7bb4d23a1c96a2d" kind="function"><name>getUnit</name></member>
+    <member refid="classbsn_1_1resource_1_1Battery_1af7b7e3bd0d56a03e17f1da8786866e8c" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classCentralHub" kind="class"><name>CentralHub</name>
+    <member refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" kind="variable"><name>active</name></member>
+    <member refid="classCentralHub_1aff51483cf7afd302270339c38d38ef32" kind="variable"><name>max_size</name></member>
+    <member refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" kind="variable"><name>total_buffer_size</name></member>
+    <member refid="classCentralHub_1a6d311af502fb652714855984d29737aa" kind="variable"><name>buffer_size</name></member>
+    <member refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" kind="variable"><name>battery</name></member>
+    <member refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" kind="variable"><name>data_buffer</name></member>
+    <member refid="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" kind="function"><name>CentralHub</name></member>
+    <member refid="classCentralHub_1a039f1cf3a24ad8ef5e7ecbb7300ba4dc" kind="function"><name>~CentralHub</name></member>
+    <member refid="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9" kind="function"><name>setUp</name></member>
+    <member refid="classCentralHub_1a33ab84e2d47f41966b7a2c6c8763c755" kind="function"><name>tearDown</name></member>
+    <member refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" kind="function"><name>run</name></member>
+    <member refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" kind="function"><name>body</name></member>
+    <member refid="classCentralHub_1ad6c1ba1c51d58a420e076fbd27cd2b5c" kind="function"><name>apply_noise</name></member>
+    <member refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" kind="function"><name>reconfigure</name></member>
+    <member refid="classCentralHub_1a4d658629e1d1fc8dc80ee298173e4c22" kind="function"><name>collect</name></member>
+    <member refid="classCentralHub_1a3527f7455ec82af84e32b182221ede80" kind="function"><name>process</name></member>
+    <member refid="classCentralHub_1a31e4df7094f5d176052056464d5886fa" kind="function"><name>transfer</name></member>
+    <member refid="classCentralHub_1a64e94d9a7b007d263a3b770e86ad2cd6" kind="function"><name>operator=</name></member>
+    <member refid="classCentralHub_1af876a75a76d2b8110123d69f29fae6da" kind="function"><name>isActive</name></member>
+    <member refid="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" kind="function"><name>turnOn</name></member>
+    <member refid="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" kind="function"><name>turnOff</name></member>
+    <member refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" kind="function"><name>recharge</name></member>
+  </compound>
+  <compound refid="structcomp" kind="struct"><name>comp</name>
+    <member refid="structcomp_1ab79c94c6be78f1e1b7f9d861228d3250" kind="function"><name>operator()</name></member>
+    <member refid="structcomp_1ab79c94c6be78f1e1b7f9d861228d3250" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classarch_1_1target__system_1_1Component" kind="class"><name>arch::target_system::Component</name>
+    <member refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" kind="variable"><name>handle</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" kind="variable"><name>status</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" kind="variable"><name>collect_event</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" kind="variable"><name>collect_status</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" kind="variable"><name>collect_energy_status</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a873aaa61ae03e7d1e5fd670ed4596a05" kind="variable"><name>effect</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" kind="function"><name>Component</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" kind="function"><name>~Component</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" kind="function"><name>setUp</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" kind="function"><name>tearDown</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" kind="function"><name>run</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22" kind="function"><name>body</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" kind="function"><name>sendEvent</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kind="function"><name>sendStatus</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" kind="function"><name>sendEnergyStatus</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" kind="function"><name>reconfigure</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1afdc834e850139ebad2811b6342b0d00b" kind="function"><name>Component</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a78dc2ea33dc96e3df648571af81b91a4" kind="function"><name>operator=</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" kind="function"><name>activate</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" kind="function"><name>deactivate</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" kind="function"><name>shutdownComponent</name></member>
+    <member refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" kind="function"><name>sigIntHandler</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1Context" kind="class"><name>bsn::goalmodel::Context</name>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kind="variable"><name>id</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kind="variable"><name>description</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kind="variable"><name>value</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1aee845ddb8b408f2bbc44cfc01a48a982" kind="function"><name>Context</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kind="function"><name>Context</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1aa125049f930d3dd9a0a8d37e445d5aa8" kind="function"><name>~Context</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1aff8e02ea20e1f41057f75a113102891d" kind="function"><name>Context</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" kind="function"><name>operator==</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" kind="function"><name>setID</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" kind="function"><name>getID</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" kind="function"><name>setDescription</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" kind="function"><name>getDescription</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" kind="function"><name>setValue</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" kind="function"><name>getValue</name></member>
+  </compound>
+  <compound refid="classController" kind="class"><name>Controller</name>
+    <member refid="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" kind="variable"><name>adaptation_parameter</name></member>
+    <member refid="classController_1a589c205dcd1e5f9ffd08c4340bdf6328" kind="variable"><name>KP</name></member>
+    <member refid="classController_1ac0c0fc6403b61f12053046595e8be77b" kind="variable"><name>kp</name></member>
+    <member refid="classController_1a09dcc652d6aeb03f63c492fb7c7966de" kind="function"><name>Controller</name></member>
+    <member refid="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" kind="function"><name>~Controller</name></member>
+    <member refid="classController_1ac5b5525e1a9fc6914657dd8d943a0928" kind="function"><name>setUp</name></member>
+    <member refid="classController_1a8196cd560dbfaa1da0b1edb385f61335" kind="function"><name>apply_reli_strategy</name></member>
+    <member refid="classController_1af1c3a4165179b04604420c434999fbf2" kind="function"><name>apply_cost_strategy</name></member>
+    <member refid="classController_1a22e7d109736f4f806c7884a2f5d6eea0" kind="function"><name>receiveEvent</name></member>
+    <member refid="classController_1a7a9db90b6ae0e4cc439b2cb41d52efea" kind="function"><name>Controller</name></member>
+    <member refid="classController_1a54d6eeadbdda5a0f33c505d0dcc3722b" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classCostEngine" kind="class"><name>CostEngine</name>
+    <member refid="classCostEngine_1a70e68743351180a6e7759a7820614669" kind="variable"><name>setpoint</name></member>
+    <member refid="classCostEngine_1a9abdd0172e3bf89e9cccd05231a679aa" kind="variable"><name>offset</name></member>
+    <member refid="classCostEngine_1a10e103f199ecb1a6dca504b193e21e23" kind="variable"><name>gain</name></member>
+    <member refid="classCostEngine_1a1bd495a44b8d0e62b5374451e64483c7" kind="variable"><name>tolerance</name></member>
+    <member refid="classCostEngine_1ab3c15f716ddf59a98e78c74f9618e556" kind="variable"><name>cycles</name></member>
+    <member refid="classCostEngine_1ad31959c5afb75862578739ddef489cef" kind="variable"><name>prefix</name></member>
+    <member refid="classCostEngine_1ab59fbe636dd20bae18ea7cdc39962479" kind="variable"><name>enact</name></member>
+    <member refid="classCostEngine_1a5333b007bd98a0323596ae5e513b0f13" kind="variable"><name>energy_status</name></member>
+    <member refid="classCostEngine_1a9d1480f2a4d8e76f189936151d31cdba" kind="function"><name>CostEngine</name></member>
+    <member refid="classCostEngine_1a35c8c093ff3400281e0d49e98f6d8be5" kind="function"><name>~CostEngine</name></member>
+    <member refid="classCostEngine_1abf2d8b5da61c0c372c6d632d9a55e832" kind="function"><name>setUp</name></member>
+    <member refid="classCostEngine_1a8c22fd6bae0654d9ad7af830991a30c8" kind="function"><name>tearDown</name></member>
+    <member refid="classCostEngine_1a55301f3ab0670419e4662f6a15484070" kind="function"><name>get_prefix</name></member>
+    <member refid="classCostEngine_1ad3b2b9ceeab5aef1167db366e50548a1" kind="function"><name>initialize_priority</name></member>
+    <member refid="classCostEngine_1aa73f8f13d15bb7f32746b42eba86cfb2" kind="function"><name>initialize_strategy</name></member>
+    <member refid="classCostEngine_1a0f1a60c2da68544287595ac66d070fe2" kind="function"><name>monitor</name></member>
+    <member refid="classCostEngine_1ac10858408b67774d09aa0cae6b2baa59" kind="function"><name>analyze</name></member>
+    <member refid="classCostEngine_1aca556d9a4dd63201a41c04498b4f2e3d" kind="function"><name>plan</name></member>
+    <member refid="classCostEngine_1af1d8ce6fb8bfdb627e60879e98e929df" kind="function"><name>execute</name></member>
+    <member refid="classCostEngine_1a274f060c41c45a44f03256a186ecbe5c" kind="function"><name>CostEngine</name></member>
+    <member refid="classCostEngine_1a66a6a039a9db81905ceae7117cd0b1c4" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classDataAccess" kind="class"><name>DataAccess</name>
+    <member refid="classDataAccess_1af25e39b3738ee3b218aaf5ba6ca457ed" kind="variable"><name>handle</name></member>
+    <member refid="classDataAccess_1a9c4510e157c7072385ead3e8d98816ba" kind="variable"><name>handle_persist</name></member>
+    <member refid="classDataAccess_1a8dc03a2e054e3837b296f81d13251b66" kind="variable"><name>server</name></member>
+    <member refid="classDataAccess_1a2a74a76bf9bd650d46646996221433e5" kind="variable"><name>targetSystemSub</name></member>
+    <member refid="classDataAccess_1abb2e47eb8905f71a9a12412e72cc67a5" kind="variable"><name>fp</name></member>
+    <member refid="classDataAccess_1ad54e65a1128644057b1c6e0c01b0e8ed" kind="variable"><name>event_filepath</name></member>
+    <member refid="classDataAccess_1ac23baae435d922a2895c3c01ed241f20" kind="variable"><name>status_filepath</name></member>
+    <member refid="classDataAccess_1a600fb929eb5662c98951a965855951a9" kind="variable"><name>energy_status_filepath</name></member>
+    <member refid="classDataAccess_1af2a67170f8809d6c899585c2868c5631" kind="variable"><name>uncertainty_filepath</name></member>
+    <member refid="classDataAccess_1a3d48622ac3e2e3c5a189c6e49da45cc5" kind="variable"><name>adaptation_filepath</name></member>
+    <member refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" kind="variable"><name>logical_clock</name></member>
+    <member refid="classDataAccess_1a79ba15e2bdef1e41763235d11eb7bfe0" kind="variable"><name>statusVec</name></member>
+    <member refid="classDataAccess_1aff27aea5f1b3efd006be58122ecc49fb" kind="variable"><name>energystatusVec</name></member>
+    <member refid="classDataAccess_1aa0f4716524a841b3518b9a7d3c72ee9e" kind="variable"><name>eventVec</name></member>
+    <member refid="classDataAccess_1a6b2bea48a398c475f79dfd79d8672916" kind="variable"><name>uncertainVec</name></member>
+    <member refid="classDataAccess_1a359f2fd8782a2a0c4e6da991e2568f75" kind="variable"><name>adaptVec</name></member>
+    <member refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" kind="variable"><name>status</name></member>
+    <member refid="classDataAccess_1ad9d6163aaeb8831263c4e7e489cad787" kind="variable"><name>events</name></member>
+    <member refid="classDataAccess_1ab112776bd110084a7ea6954d872ade9b" kind="variable"><name>buffer_size</name></member>
+    <member refid="classDataAccess_1af948085757b1c74c0be445d322c2d629" kind="variable"><name>components_reliabilities</name></member>
+    <member refid="classDataAccess_1a6fe06ded54549b754d50a265d014b7d9" kind="variable"><name>components_batteries</name></member>
+    <member refid="classDataAccess_1a03b190af3fed7cb233853e8dda75ef26" kind="variable"><name>components_costs_engine</name></member>
+    <member refid="classDataAccess_1a8f0ff388ceb15b39d3895679e9b52bb3" kind="variable"><name>components_costs_enactor</name></member>
+    <member refid="classDataAccess_1ac16bdebb9536c1d8328d09c92bc6af05" kind="variable"><name>contexts</name></member>
+    <member refid="classDataAccess_1aacb868a01e3dd70a3796aa0325cae52b" kind="variable"><name>reliability_formula</name></member>
+    <member refid="classDataAccess_1ade22e1525e1ef59702805d2a5f36ab67" kind="variable"><name>cost_formula</name></member>
+    <member refid="classDataAccess_1acc6814af19b5b7d61e2535dccb7a8f3d" kind="variable"><name>frequency</name></member>
+    <member refid="classDataAccess_1a38a80dbd0ed1ee36ed9f0ef2d6a0d88a" kind="variable"><name>count_to_calc_and_reset</name></member>
+    <member refid="classDataAccess_1aa3b6266a9999c40c9a492270963eb003" kind="variable"><name>count_to_fetch</name></member>
+    <member refid="classDataAccess_1a64952e48c14f428fb25efa44723b7b11" kind="variable"><name>arrived_status</name></member>
+    <member refid="classDataAccess_1a1d89301d9e42ee285f0c9d0e8f163eba" kind="function"><name>DataAccess</name></member>
+    <member refid="classDataAccess_1a02d65c4dff5b263dddb2d90d695fbe0e" kind="function"><name>~DataAccess</name></member>
+    <member refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" kind="function"><name>setUp</name></member>
+    <member refid="classDataAccess_1afe4f4f677d6a31cd1c6ac967f81b4b42" kind="function"><name>tearDown</name></member>
+    <member refid="classDataAccess_1a01b996865224272d1bcafe6307442422" kind="function"><name>body</name></member>
+    <member refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" kind="function"><name>receivePersistMessage</name></member>
+    <member refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" kind="function"><name>processQuery</name></member>
+    <member refid="classDataAccess_1a8a0b01f7a39714b33d5465ef31c3c147" kind="function"><name>processTargetSystemData</name></member>
+    <member refid="classDataAccess_1a82d2be6337ffbc067cef4332a247920f" kind="function"><name>DataAccess</name></member>
+    <member refid="classDataAccess_1abca1c0839561d704bbdf5e2e404fa23f" kind="function"><name>operator=</name></member>
+    <member refid="classDataAccess_1ab51a1acc1d5b42424672d5f691919edd" kind="function"><name>now</name></member>
+    <member refid="classDataAccess_1a20021e615ce46f11936444e88ae43d82" kind="function"><name>nowInSeconds</name></member>
+    <member refid="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" kind="function"><name>persistEvent</name></member>
+    <member refid="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" kind="function"><name>persistStatus</name></member>
+    <member refid="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" kind="function"><name>persistEnergyStatus</name></member>
+    <member refid="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" kind="function"><name>persistUncertainty</name></member>
+    <member refid="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" kind="function"><name>persistAdaptation</name></member>
+    <member refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" kind="function"><name>flush</name></member>
+    <member refid="classDataAccess_1aaf72a25de07ebe4b4880e3151ce66242" kind="function"><name>calculateReliability</name></member>
+    <member refid="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" kind="function"><name>calculateComponentReliability</name></member>
+    <member refid="classDataAccess_1aa59aa03ad28b0da217953f804ce9493d" kind="function"><name>calculateComponentCost</name></member>
+    <member refid="classDataAccess_1a36a00a334d2f4661552497cc31bb9539" kind="function"><name>resetStatus</name></member>
+    <member refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" kind="function"><name>applyTimeWindow</name></member>
+  </compound>
+  <compound refid="classbsn_1_1generator_1_1DataGenerator" kind="class"><name>bsn::generator::DataGenerator</name>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1ad2953242be3566c00914eaeb17655230" kind="variable"><name>markovChain</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1ae1ce8b691264104bd9ea23d01905381c" kind="variable"><name>value</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a2bd30cf19667664aaf29685d0baf7ca1" kind="variable"><name>seed</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a1e1627c22143f5764f08c9847b3e2b76" kind="function"><name>DataGenerator</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a007d1879a9d160396f4c5c043836567e" kind="function"><name>DataGenerator</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1ad47458ef68863d2689c1b19c558a6c09" kind="function"><name>DataGenerator</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a08fde4eb8530c1237896c6c52a287d11" kind="function"><name>~DataGenerator</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a1cd2d028c552461ae2084c3d90a8a6bb" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1acc7cc7cec86a17465054307a4814295b" kind="function"><name>getValue</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a39c91084817846319e7dca9ed4e4f9e3" kind="function"><name>setSeed</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" kind="function"><name>nextState</name></member>
+    <member refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" kind="function"><name>calculateValue</name></member>
+  </compound>
+  <compound refid="classarch_1_1target__system_1_1Effector" kind="class"><name>arch::target_system::Effector</name>
+    <member refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" kind="variable"><name>handle</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1a51cb64c0d697093680523952b2457847" kind="function"><name>Effector</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1a76d432f197f73d7233db6ca977464dd6" kind="function"><name>~Effector</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" kind="function"><name>setUp</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1a149b6881ceb74fc890a46a274581a1e4" kind="function"><name>tearDown</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1a7547143ad58200c01b1dde0559ab9241" kind="function"><name>receiveAdaptationCommand</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1a3a95187510f0bb90086584b76713286f" kind="function"><name>Effector</name></member>
+    <member refid="classarch_1_1target__system_1_1Effector_1ab6101462039fb0e1ed3fa4c1e128eca4" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classEnactor" kind="class"><name>Enactor</name>
+    <member refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" kind="variable"><name>adapt</name></member>
+    <member refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" kind="variable"><name>except</name></member>
+    <member refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" kind="variable"><name>invocations</name></member>
+    <member refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" kind="variable"><name>exception_buffer</name></member>
+    <member refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" kind="variable"><name>freq</name></member>
+    <member refid="classEnactor_1a2050fc7d8efd62087b753ea0b52c0aa0" kind="variable"><name>r_curr</name></member>
+    <member refid="classEnactor_1a3efbb4d3a6f73dbebf4441152901cee4" kind="variable"><name>c_curr</name></member>
+    <member refid="classEnactor_1af80f8e1c8d34b1ca82d56a467b0d8496" kind="variable"><name>r_ref</name></member>
+    <member refid="classEnactor_1a49403d606de5625d38fee85049728d81" kind="variable"><name>c_ref</name></member>
+    <member refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" kind="variable"><name>replicate_task</name></member>
+    <member refid="classEnactor_1a5f802c97618f3f2131011a648618bc5d" kind="variable"><name>cycles</name></member>
+    <member refid="classEnactor_1ac24011d94d321e2805059484ac55678c" kind="variable"><name>stability_margin</name></member>
+    <member refid="classEnactor_1a0901f3e450d96dd3906e2dd7333da6b2" kind="variable"><name>adaptation_parameter</name></member>
+    <member refid="classEnactor_1aaaaa2841d776d7ac1f8ef51cd8e83919" kind="function"><name>Enactor</name></member>
+    <member refid="classEnactor_1ab2ae8d73dc15505286e8c74277c3147c" kind="function"><name>~Enactor</name></member>
+    <member refid="classEnactor_1a4b149f71b41f0a9a3b28871de77f2202" kind="function"><name>setUp</name></member>
+    <member refid="classEnactor_1a721175369a6ca933119b173e3f54f6f0" kind="function"><name>tearDown</name></member>
+    <member refid="classEnactor_1abd25ade60e175a09b8a71f2d0c87c7d1" kind="function"><name>body</name></member>
+    <member refid="classEnactor_1a9e10c68a47e83737f8b45b9c504cdc97" kind="function"><name>receiveStatus</name></member>
+    <member refid="classEnactor_1aee03d216ab1a7ed1b841cefac05541c5" kind="function"><name>receiveStrategy</name></member>
+    <member refid="classEnactor_1a9d0b5483b278c26e060c9dd4b921edb5" kind="function"><name>receiveAdaptationParameter</name></member>
+    <member refid="classEnactor_1afc29580144b70a3ce72140b9c8759b44" kind="function"><name>receiveEvent</name></member>
+    <member refid="classEnactor_1adb51e3aab4684a4b63a419c71ee2997d" kind="function"><name>apply_reli_strategy</name></member>
+    <member refid="classEnactor_1a8f1424e1fe9fad565bd8b0f58ff8697c" kind="function"><name>apply_cost_strategy</name></member>
+    <member refid="classEnactor_1a97d75a722f948bbb167cc5cc08246472" kind="function"><name>print</name></member>
+    <member refid="classEnactor_1a8126265d6f76d5ac6367be86683552e4" kind="function"><name>Enactor</name></member>
+    <member refid="classEnactor_1aa150c48455809ca4565a6c8b0c6e83de" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classEnergyStatusMessage" kind="class"><name>EnergyStatusMessage</name>
+    <member refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" kind="variable"><name>name</name></member>
+    <member refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" kind="variable"><name>timestamp</name></member>
+    <member refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" kind="variable"><name>logical_clock</name></member>
+    <member refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" kind="variable"><name>source</name></member>
+    <member refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" kind="variable"><name>target</name></member>
+    <member refid="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" kind="variable"><name>cost</name></member>
+    <member refid="classEnergyStatusMessage_1a8c9b881aa880bb6b44eeb4764d846620" kind="function"><name>EnergyStatusMessage</name></member>
+    <member refid="classEnergyStatusMessage_1a6443612a1c5769aaedfe324cde05c98b" kind="function"><name>getName</name></member>
+    <member refid="classEnergyStatusMessage_1a43bf32f6c780a46fe3085a1d9281976d" kind="function"><name>getTimestamp</name></member>
+    <member refid="classEnergyStatusMessage_1accaf3d8b9f3472487123995c437c1c38" kind="function"><name>getLogicalClock</name></member>
+    <member refid="classEnergyStatusMessage_1a11d09956fd817a15de68b6618d633081" kind="function"><name>getSource</name></member>
+    <member refid="classEnergyStatusMessage_1ae351c8fe3c89916c2d56ec88b53c9f7f" kind="function"><name>getTarget</name></member>
+    <member refid="classEnergyStatusMessage_1ac5e1f87fc7534e74b32704c56b0ab20c" kind="function"><name>getCost</name></member>
+  </compound>
+  <compound refid="classEngine" kind="class"><name>Engine</name>
+    <member refid="classEngine_1aebb2b6fa2ac601086913f4146cf19e7d" kind="variable"><name>qos_attribute</name></member>
+    <member refid="classEngine_1af7800c0e37c2c9190bd94e5d5e63536d" kind="variable"><name>info_quant</name></member>
+    <member refid="classEngine_1a4336f1a210da0793d278a4ec0f4684c1" kind="variable"><name>monitor_freq</name></member>
+    <member refid="classEngine_1a06f3ef2444912639996a3e4c45c34032" kind="variable"><name>actuation_freq</name></member>
+    <member refid="classEngine_1ab2ce55b3322bfef3d1ca39b368d238ff" kind="variable"><name>target_system_model</name></member>
+    <member refid="classEngine_1abef7831110f292a6f33e8713e74d488b" kind="variable"><name>strategy</name></member>
+    <member refid="classEngine_1aefcb8556fbc726c547f34bde72d70d90" kind="variable"><name>priority</name></member>
+    <member refid="classEngine_1aebdeb3d77ac1b29b408bead6ff1a525e" kind="variable"><name>deactivatedComponents</name></member>
+    <member refid="classEngine_1a2cfb46480fd3d254e11933aee17a72de" kind="variable"><name>enactor_server</name></member>
+    <member refid="classEngine_1a82834c36c2eacfd1f9b393708c2c6bb7" kind="function"><name>Engine</name></member>
+    <member refid="classEngine_1a8ef7030a089ecb30bbfcb9e43094717a" kind="function"><name>~Engine</name></member>
+    <member refid="classEngine_1ae0233e4936be42094d3dfd401633cccd" kind="function"><name>setUp</name></member>
+    <member refid="classEngine_1afb19e44fe574a4c79f32aacbb9f24d19" kind="function"><name>tearDown</name></member>
+    <member refid="classEngine_1ae164dcb3bf318cb307ab7266974c2064" kind="function"><name>body</name></member>
+    <member refid="classEngine_1aea9c523a0feb05871f020d4fd4f417e4" kind="function"><name>receiveException</name></member>
+    <member refid="classEngine_1a8aa6d778f6e3750b091c1ffebb6cafcc" kind="function"><name>sendAdaptationParameter</name></member>
+    <member refid="classEngine_1a88c4ce811856103bc01cc60ad09eeaca" kind="function"><name>get_prefix</name></member>
+    <member refid="classEngine_1a70f52722c5037794f6fd52c2b6d3bae2" kind="function"><name>initialize_priority</name></member>
+    <member refid="classEngine_1a60b6aaac0bf5c293d5784666c701d777" kind="function"><name>initialize_strategy</name></member>
+    <member refid="classEngine_1a0a83dbc2fee3b317932ce4a166303f22" kind="function"><name>fetch_formula</name></member>
+    <member refid="classEngine_1a88afff420d0d1652ad974fd26df6de63" kind="function"><name>setUp_formula</name></member>
+    <member refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" kind="function"><name>calculate_qos</name></member>
+    <member refid="classEngine_1a5e5ad6951248487f662e40e9f67b7bc6" kind="function"><name>blacklisted</name></member>
+    <member refid="classEngine_1ad738bba77de0d57a5c3424ea973140a7" kind="function"><name>monitor</name></member>
+    <member refid="classEngine_1afeaf1236d9e186380e1935d858b03b48" kind="function"><name>analyze</name></member>
+    <member refid="classEngine_1aa195ea183ff2c3861dcb31e083d6df69" kind="function"><name>plan</name></member>
+    <member refid="classEngine_1ad85f4f9faf06e55c18ca57c4a69aeef0" kind="function"><name>execute</name></member>
+    <member refid="classEngine_1a55951777076d6fc5b7596e887fe7d688" kind="function"><name>Engine</name></member>
+    <member refid="classEngine_1a194c45596b3ad0c7ef49a9a4c203f3b0" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classEventMessage" kind="class"><name>EventMessage</name>
+    <member refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" kind="variable"><name>name</name></member>
+    <member refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" kind="variable"><name>timestamp</name></member>
+    <member refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" kind="variable"><name>logical_clock</name></member>
+    <member refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" kind="variable"><name>source</name></member>
+    <member refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" kind="variable"><name>target</name></member>
+    <member refid="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" kind="variable"><name>event</name></member>
+    <member refid="classEventMessage_1a068681c976e6967819bc401a6557f1b5" kind="function"><name>EventMessage</name></member>
+    <member refid="classEventMessage_1aed8ac6c33aa6124bd1de2e2527471b3d" kind="function"><name>getName</name></member>
+    <member refid="classEventMessage_1afcf60ef6f1366f5a0607292303db0ce3" kind="function"><name>getTimestamp</name></member>
+    <member refid="classEventMessage_1ac13fb59e49963009dc47118b9845ca4d" kind="function"><name>getLogicalClock</name></member>
+    <member refid="classEventMessage_1ace199488d87a0ebf55c6c81e66b9a5c4" kind="function"><name>getSource</name></member>
+    <member refid="classEventMessage_1afee2ba348b815683dc0eb148bc93f9cb" kind="function"><name>getTarget</name></member>
+    <member refid="classEventMessage_1a635d5a2c5e016dadb713f47f6f35e3d3" kind="function"><name>getEvent</name></member>
+  </compound>
+  <compound refid="classbsn_1_1model_1_1Formula" kind="class"><name>bsn::model::Formula</name>
+    <member refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kind="variable"><name>expression</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kind="variable"><name>term_value</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" kind="function"><name>Formula</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1a2a082f72ae62ff2049ddc4a33154b704" kind="function"><name>Formula</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1acd52c33aadcbde66aef55577eb039a8a" kind="function"><name>Formula</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1aa07ebaa8fafd971d0bceb0a141bfbece" kind="function"><name>~Formula</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1ac874ee14de83c79ff9a4c3e8a4eac731" kind="function"><name>Formula</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" kind="function"><name>getExpression</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1add7c9f8b64bce70ec50e1c945f5fe4c1" kind="function"><name>setExpression</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" kind="function"><name>getTermValueMap</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" kind="function"><name>setTermValueMap</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1a302aaa2cabfb31818e62aa67f42b8028" kind="function"><name>setTermValueMap</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" kind="function"><name>evaluate</name></member>
+    <member refid="classbsn_1_1model_1_1Formula_1a5867d8c6d3860a5c5b73048b88ac25e6" kind="function"><name>getTerms</name></member>
+  </compound>
+  <compound refid="classG3T1__1" kind="class"><name>G3T1_1</name>
+    <member refid="classG3T1__1_1ac8faebd949889259169dbb5095db50c1" kind="variable"><name>markov</name></member>
+    <member refid="classG3T1__1_1a1a63f516a022f85df03ed4aa045f1dbc" kind="variable"><name>dataGenerator</name></member>
+    <member refid="classG3T1__1_1a1abc629f5a71028728f2083d48f257ee" kind="variable"><name>filter</name></member>
+    <member refid="classG3T1__1_1a1c064d056021d91f508ea3cb027b3f61" kind="variable"><name>sensorConfig</name></member>
+    <member refid="classG3T1__1_1a8740b03768109e5dd5d306fad1026116" kind="variable"><name>handle</name></member>
+    <member refid="classG3T1__1_1a4020e77c66c2a19651b89ee6c5fdc780" kind="variable"><name>data_pub</name></member>
+    <member refid="classG3T1__1_1a31c39930c35debcff7c41ff041f2548a" kind="variable"><name>collected_risk</name></member>
+    <member refid="classG3T1__1_1ab1ac84247530830ee7579bd2aa5f6885" kind="function"><name>G3T1_1</name></member>
+    <member refid="classG3T1__1_1a018e43c574b735e6e4df9ef86dc7061e" kind="function"><name>~G3T1_1</name></member>
+    <member refid="classG3T1__1_1afc0406d8cf445068c7f9ffea7293e99c" kind="function"><name>setUp</name></member>
+    <member refid="classG3T1__1_1a26fe42a954281b0cc6a8cef9b5b88c57" kind="function"><name>tearDown</name></member>
+    <member refid="classG3T1__1_1a4696c0b3b423e6d0efe2a6f3f6e84cfa" kind="function"><name>collect</name></member>
+    <member refid="classG3T1__1_1aff514b4de85780777a8326e353148fe1" kind="function"><name>process</name></member>
+    <member refid="classG3T1__1_1a58277c46b8319bd35e3ffabd52805874" kind="function"><name>transfer</name></member>
+    <member refid="classG3T1__1_1a955b296cc2cf00b29992bcfcc31fbf5c" kind="function"><name>G3T1_1</name></member>
+    <member refid="classG3T1__1_1a5d333a1bc4a077a3202083d3544bafee" kind="function"><name>operator=</name></member>
+    <member refid="classG3T1__1_1ac520f751e76c00a16d47070d37a003c0" kind="function"><name>label</name></member>
+  </compound>
+  <compound refid="classG3T1__2" kind="class"><name>G3T1_2</name>
+    <member refid="classG3T1__2_1aec7c37833c84168074e4c52e8036da22" kind="variable"><name>markov</name></member>
+    <member refid="classG3T1__2_1ab01e3654e4b5450d0f2c966b519d524e" kind="variable"><name>dataGenerator</name></member>
+    <member refid="classG3T1__2_1a39eb0ac8b38886fd850377d5dab70daf" kind="variable"><name>filter</name></member>
+    <member refid="classG3T1__2_1a70075f4363d6872d7913cb7911dec250" kind="variable"><name>sensorConfig</name></member>
+    <member refid="classG3T1__2_1a4e96de32d6bf311e8795804d53f68820" kind="variable"><name>handle</name></member>
+    <member refid="classG3T1__2_1acf5910b15e61d37ac89f0e8efc7332f5" kind="variable"><name>data_pub</name></member>
+    <member refid="classG3T1__2_1a4d5efa7205daa07d93b29e9cdab99cef" kind="variable"><name>client</name></member>
+    <member refid="classG3T1__2_1ab881e1e7381974541bad808f31e4755c" kind="variable"><name>collected_risk</name></member>
+    <member refid="classG3T1__2_1a251c38b6954308b1fac2a78641904d17" kind="function"><name>G3T1_2</name></member>
+    <member refid="classG3T1__2_1a07c72faf914c254e041bc96ae88d07db" kind="function"><name>~G3T1_2</name></member>
+    <member refid="classG3T1__2_1adf0bd406c544363148fdedc04638c327" kind="function"><name>setUp</name></member>
+    <member refid="classG3T1__2_1a0c2d128e18b1cc9b0f75e8ac17c7479e" kind="function"><name>tearDown</name></member>
+    <member refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" kind="function"><name>collect</name></member>
+    <member refid="classG3T1__2_1a971571b3baee620f4fc36b31579db6ca" kind="function"><name>process</name></member>
+    <member refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" kind="function"><name>transfer</name></member>
+    <member refid="classG3T1__2_1a5052a00133546ea912add2c775d67ea4" kind="function"><name>G3T1_2</name></member>
+    <member refid="classG3T1__2_1aed3c894cf3dba9fd0c14e3739bc6783a" kind="function"><name>operator=</name></member>
+    <member refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" kind="function"><name>label</name></member>
+  </compound>
+  <compound refid="classG3T1__3" kind="class"><name>G3T1_3</name>
+    <member refid="classG3T1__3_1afab843a2a53b921f53bb1682e30528b8" kind="variable"><name>markov</name></member>
+    <member refid="classG3T1__3_1aa0c8399785727be8a226191776e62fd6" kind="variable"><name>dataGenerator</name></member>
+    <member refid="classG3T1__3_1a9de129e2524f0e2b74aa9effc91179b3" kind="variable"><name>filter</name></member>
+    <member refid="classG3T1__3_1a38010d50ed59963edb34b165a6d97499" kind="variable"><name>sensorConfig</name></member>
+    <member refid="classG3T1__3_1a416b49f2fe58813cd9007f420e5b1c78" kind="variable"><name>handle</name></member>
+    <member refid="classG3T1__3_1ae1f511fddaa40ac5a248a9213abe03a5" kind="variable"><name>data_pub</name></member>
+    <member refid="classG3T1__3_1a86da1c67a4e6a3f7f83da6d8c69baf89" kind="variable"><name>client</name></member>
+    <member refid="classG3T1__3_1aeeb543ab57f555182715cc6379c2bc36" kind="variable"><name>collected_risk</name></member>
+    <member refid="classG3T1__3_1aca9217d999c56b9da88bab5a0d881547" kind="function"><name>G3T1_3</name></member>
+    <member refid="classG3T1__3_1acb5897bb24614ecbd9b87e1f57c88ffc" kind="function"><name>~G3T1_3</name></member>
+    <member refid="classG3T1__3_1a9dc06dbfd79fe9186c2583d3427bd349" kind="function"><name>setUp</name></member>
+    <member refid="classG3T1__3_1ac850ab0dc5d7380d79dbbcc19e0a162b" kind="function"><name>tearDown</name></member>
+    <member refid="classG3T1__3_1a3519014bd56d810164d86d9756169c44" kind="function"><name>collect</name></member>
+    <member refid="classG3T1__3_1a82334e4d79cb9a4b4a757a96c60fe4ce" kind="function"><name>process</name></member>
+    <member refid="classG3T1__3_1a4bd1c419743c7c128fd1c3cf4fa5e434" kind="function"><name>transfer</name></member>
+    <member refid="classG3T1__3_1a301625d202724913e7b580ab60fe5a9d" kind="function"><name>G3T1_3</name></member>
+    <member refid="classG3T1__3_1a23227046b5bfe9a7ccdc9f1d6aaac5bb" kind="function"><name>operator=</name></member>
+    <member refid="classG3T1__3_1abcb75a52b8c7bfd9cbdbb34f73af3996" kind="function"><name>label</name></member>
+  </compound>
+  <compound refid="classG3T1__4" kind="class"><name>G3T1_4</name>
+    <member refid="classG3T1__4_1af836aa549f6778ff0c3c3622285bb474" kind="variable"><name>markov</name></member>
+    <member refid="classG3T1__4_1aebe8314094425f373aa7126cf26a45ae" kind="variable"><name>dataGenerator</name></member>
+    <member refid="classG3T1__4_1ac9c6a56d44774ba49a8862b24ad6b845" kind="variable"><name>filter</name></member>
+    <member refid="classG3T1__4_1abdedef5970bc77ee3741cfe8eb60e091" kind="variable"><name>sensorConfig</name></member>
+    <member refid="classG3T1__4_1a1ed616076cc2747b4459fe564175123c" kind="variable"><name>handle</name></member>
+    <member refid="classG3T1__4_1ae151aeb0bc9febd7a6ef5d08f8a8f246" kind="variable"><name>data_pub</name></member>
+    <member refid="classG3T1__4_1a6ba5b401bde112a5316fbcac34f6b76d" kind="variable"><name>client</name></member>
+    <member refid="classG3T1__4_1ad5b479cb1f34338d506401117f605adf" kind="variable"><name>collected_risk</name></member>
+    <member refid="classG3T1__4_1a380c54b9c8a27b3c3faaed10e4f4b0e9" kind="function"><name>G3T1_4</name></member>
+    <member refid="classG3T1__4_1a06c4b2381e435a2e0d14f5b1ea2f8f77" kind="function"><name>~G3T1_4</name></member>
+    <member refid="classG3T1__4_1a0c30d795add04bf4e459650f28ab8de5" kind="function"><name>setUp</name></member>
+    <member refid="classG3T1__4_1a831e3082fad1d5982eb0392bfb6e93fb" kind="function"><name>tearDown</name></member>
+    <member refid="classG3T1__4_1aac00c133f2199079b671b3094496fb33" kind="function"><name>collect</name></member>
+    <member refid="classG3T1__4_1ab743af6fc3e6ad0f64ef2520b811bb63" kind="function"><name>process</name></member>
+    <member refid="classG3T1__4_1a20ad5272beba24e4879fb29985b85f69" kind="function"><name>transfer</name></member>
+    <member refid="classG3T1__4_1a5c8b6e08b27f73cbba91c62d3a20e6be" kind="function"><name>G3T1_4</name></member>
+    <member refid="classG3T1__4_1a4305fc0b00dd324bc2c1884df50929e4" kind="function"><name>operator=</name></member>
+    <member refid="classG3T1__4_1af0fc42d30f6d230e14318bd2cf34fe30" kind="function"><name>label</name></member>
+  </compound>
+  <compound refid="classG3T1__5" kind="class"><name>G3T1_5</name>
+    <member refid="classG3T1__5_1aea6fc5df31ed327db86f878da40cb9fa" kind="variable"><name>markov</name></member>
+    <member refid="classG3T1__5_1a91c95c08dccbdc4213e57447ed2e3184" kind="variable"><name>dataGenerator</name></member>
+    <member refid="classG3T1__5_1aec491766601a4d21dc6dbaf70a38c771" kind="variable"><name>filter</name></member>
+    <member refid="classG3T1__5_1a1eeb4428e8b806bb11e1e69959e7b6dc" kind="variable"><name>sensorConfig</name></member>
+    <member refid="classG3T1__5_1a6a45353e75ad45778aa2d31c7d3043c6" kind="variable"><name>handle</name></member>
+    <member refid="classG3T1__5_1ac4f4424e9ad16e067fa39ade8edaf2b1" kind="variable"><name>data_pub</name></member>
+    <member refid="classG3T1__5_1a3e4b4c36d6b6007a35ba475d2b43a741" kind="variable"><name>client</name></member>
+    <member refid="classG3T1__5_1aa21294239850467aa0073feee365089c" kind="variable"><name>collected_risk</name></member>
+    <member refid="classG3T1__5_1aebc3b0eb96dcfbfb5b1c6973288ada7d" kind="function"><name>G3T1_5</name></member>
+    <member refid="classG3T1__5_1ac5b5727467ffd760b9260f0620472019" kind="function"><name>~G3T1_5</name></member>
+    <member refid="classG3T1__5_1a3978c48f730a640b8af43d100144ed71" kind="function"><name>setUp</name></member>
+    <member refid="classG3T1__5_1a022690dfe3fee702e20ea3f16c050ad5" kind="function"><name>tearDown</name></member>
+    <member refid="classG3T1__5_1a1aa8fb64b30b7263df5c2189fb5995dc" kind="function"><name>collect</name></member>
+    <member refid="classG3T1__5_1acef5ff056ed22c930ae583f87cf1f03a" kind="function"><name>process</name></member>
+    <member refid="classG3T1__5_1ae9918da7342a4fb88c6f633db43b9fe8" kind="function"><name>transfer</name></member>
+    <member refid="classG3T1__5_1a7e56fdd93d57edea66598c70dc9367ae" kind="function"><name>G3T1_5</name></member>
+    <member refid="classG3T1__5_1a736496863b76e5ef5c584e23a5c30d75" kind="function"><name>operator=</name></member>
+    <member refid="classG3T1__5_1ab459ba1325060ec80bfe8908512a2855" kind="function"><name>label</name></member>
+  </compound>
+  <compound refid="classG3T1__6" kind="class"><name>G3T1_6</name>
+    <member refid="classG3T1__6_1a543526fb5876f61d956740f0c23177ab" kind="variable"><name>markov</name></member>
+    <member refid="classG3T1__6_1a40f46bb54a45ca00a61472df9f6f7000" kind="variable"><name>dataGenerator</name></member>
+    <member refid="classG3T1__6_1a1b6ab37ef694ef0a3803044f82e09d11" kind="variable"><name>filter</name></member>
+    <member refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kind="variable"><name>sensorConfig</name></member>
+    <member refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kind="variable"><name>handle</name></member>
+    <member refid="classG3T1__6_1a87d1a4280675ce4818b4aa612d1fd179" kind="variable"><name>data_pub</name></member>
+    <member refid="classG3T1__6_1ae4ae2b5c48db74cacf040d355a36e49f" kind="variable"><name>client</name></member>
+    <member refid="classG3T1__6_1ad06a6233898e085456a67bfe6e5bdbb6" kind="variable"><name>collected_risk</name></member>
+    <member refid="classG3T1__6_1a41170e3247fb2addd536d433868b3865" kind="function"><name>G3T1_6</name></member>
+    <member refid="classG3T1__6_1af8b8f5ebef1c3d35b1f774f37db05312" kind="function"><name>~G3T1_6</name></member>
+    <member refid="classG3T1__6_1a18cb80842d7823ae9929b29af6ab89e8" kind="function"><name>setUp</name></member>
+    <member refid="classG3T1__6_1aeb7749d4c82739285db2e311aac9828d" kind="function"><name>tearDown</name></member>
+    <member refid="classG3T1__6_1a0deb9a2b913d7753ef6708ccbd87df34" kind="function"><name>collect</name></member>
+    <member refid="classG3T1__6_1ab103fd747d38c26358039e4108c2a07d" kind="function"><name>process</name></member>
+    <member refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" kind="function"><name>transfer</name></member>
+    <member refid="classG3T1__6_1a8acefb6f907342c415e364a1826e36be" kind="function"><name>G3T1_6</name></member>
+    <member refid="classG3T1__6_1a95e78a1ddb91741f7aa5d335ebf42310" kind="function"><name>operator=</name></member>
+    <member refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" kind="function"><name>label</name></member>
+  </compound>
+  <compound refid="classG4T1" kind="class"><name>G4T1</name>
+    <member refid="classG4T1_1a25245fa2ffbc1ab6d803ff0bc341c1e4" kind="variable"><name>patient_status</name></member>
+    <member refid="classG4T1_1aa8772ed4b8308c733c9234a7961cb2ab" kind="variable"><name>abps_risk</name></member>
+    <member refid="classG4T1_1aa526d0e2492db145772d584a447706fd" kind="variable"><name>abpd_risk</name></member>
+    <member refid="classG4T1_1a18ed16ae8118217fa36cbd3cb89beb18" kind="variable"><name>oxi_risk</name></member>
+    <member refid="classG4T1_1a2bd7b25a0f40eeeb581c445dc972ce9b" kind="variable"><name>ecg_risk</name></member>
+    <member refid="classG4T1_1a447bfc6e757b3ad59c296a41a974a347" kind="variable"><name>trm_risk</name></member>
+    <member refid="classG4T1_1a4d915c767ecfb6915a8c4a78f81c194d" kind="variable"><name>glc_risk</name></member>
+    <member refid="classG4T1_1a954637218ed5d8cf532e5c869a15f369" kind="variable"><name>abps_batt</name></member>
+    <member refid="classG4T1_1a5b247797fd3e154bcbc2d615b0c33ac1" kind="variable"><name>abpd_batt</name></member>
+    <member refid="classG4T1_1a8cd57657a96e1d7cb048c97ade3154a6" kind="variable"><name>oxi_batt</name></member>
+    <member refid="classG4T1_1af2c987b92fe328634f449e3f7387b6e9" kind="variable"><name>ecg_batt</name></member>
+    <member refid="classG4T1_1a87264bbdd9fc2c22c6c8f399250d039b" kind="variable"><name>trm_batt</name></member>
+    <member refid="classG4T1_1ac51c682e560eb432fccef6f82bffb7c1" kind="variable"><name>glc_batt</name></member>
+    <member refid="classG4T1_1a9e726f9e5f9bedf413d219e649e0cc53" kind="variable"><name>abps_raw</name></member>
+    <member refid="classG4T1_1a16a9fe1a79ca4837980a2f033735c8a8" kind="variable"><name>abpd_raw</name></member>
+    <member refid="classG4T1_1a13cddbd17febf9e8d4c4d9ddb3b6414c" kind="variable"><name>oxi_raw</name></member>
+    <member refid="classG4T1_1a7e6dd01b50f9e30c340f5a4a5006e5a1" kind="variable"><name>ecg_raw</name></member>
+    <member refid="classG4T1_1acf0b07bd805662b8a79ec1c245fdc105" kind="variable"><name>trm_raw</name></member>
+    <member refid="classG4T1_1a1e41e92e3b5f99c449a95116c2ca5612" kind="variable"><name>glc_raw</name></member>
+    <member refid="classG4T1_1a61f274ec722bb3be2d0c5f54e8c944f6" kind="variable"><name>pub</name></member>
+    <member refid="classG4T1_1a36209947e30c167e2554d66926fbdc4e" kind="variable"><name>lost_packt</name></member>
+    <member refid="classG4T1_1a57a6f5f09169bdb66973e1b76cb98326" kind="function"><name>G4T1</name></member>
+    <member refid="classG4T1_1aca857970da001f02b1a956d5b3b3f182" kind="function"><name>~G4T1</name></member>
+    <member refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5" kind="function"><name>setUp</name></member>
+    <member refid="classG4T1_1a3027f9c8027d8fe09ae6ca7df2f6ab04" kind="function"><name>tearDown</name></member>
+    <member refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" kind="function"><name>collect</name></member>
+    <member refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" kind="function"><name>process</name></member>
+    <member refid="classG4T1_1ace103170a712570f3583900aae954459" kind="function"><name>transfer</name></member>
+    <member refid="classG4T1_1a6ca378f4d6b9bc5cf740966c79a66c93" kind="function"><name>G4T1</name></member>
+    <member refid="classG4T1_1a0c39e86812db60d58ea685438f409de3" kind="function"><name>operator=</name></member>
+    <member refid="classG4T1_1ac3ee2d223923b6b9c74ebaeaa74010db" kind="function"><name>makePacket</name></member>
+    <member refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" kind="function"><name>getPatientStatus</name></member>
+    <member refid="classG4T1_1a03d3e2da5083dc1763b7251082b91416" kind="function"><name>getSensorId</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1Goal" kind="class"><name>bsn::goalmodel::Goal</name>
+    <member refid="classbsn_1_1goalmodel_1_1Goal_1a2139d0c1be339d6a7f3a3d172edc8b6b" kind="function"><name>Goal</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Goal_1a86bb68efd40be42eba58f01fd2f1be1a" kind="function"><name>Goal</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Goal_1a5e9e234511d91cd837499e98b994d91d" kind="function"><name>~Goal</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1GoalTree" kind="class"><name>bsn::goalmodel::GoalTree</name>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kind="variable"><name>actor</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kind="variable"><name>nodes</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1ab2125dbc5979fc446380d43a4898d851" kind="function"><name>GoalTree</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" kind="function"><name>GoalTree</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1adbee309def15f18a8433248bde327ed3" kind="function"><name>~GoalTree</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a23180cab7d8c74b3436db03d143e88ae" kind="function"><name>GoalTree</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1ac54c8b27c45cf63b4fa54903301e7a2b" kind="function"><name>operator==</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a42999a550ba8f74d12fa9c1ba7baacff" kind="function"><name>setActor</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" kind="function"><name>getActor</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" kind="function"><name>addRootGoal</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1aa897db3ae8092163bc7c31cc0dff98d8" kind="function"><name>getNode</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a5034dbef893e0ab381e59b685b5471ac" kind="function"><name>getSize</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a3da90e5130f5badab8f7a535ec9a16" kind="function"><name>getLeafTasks</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" kind="function"><name>getNodes</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" kind="function"><name>addChildren</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" kind="function"><name>addNode</name></member>
+  </compound>
+  <compound refid="classInjector" kind="class"><name>Injector</name>
+    <member refid="classInjector_1abe24d0c2aa32f842e9cfd741538a0c1b" kind="variable"><name>handle</name></member>
+    <member refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kind="variable"><name>cycles</name></member>
+    <member refid="classInjector_1a550422e1dfea5df5669c11fb41a649cf" kind="variable"><name>uncertainty_pub</name></member>
+    <member refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" kind="variable"><name>components</name></member>
+    <member refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" kind="variable"><name>noise_factor</name></member>
+    <member refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" kind="variable"><name>duration</name></member>
+    <member refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" kind="variable"><name>frequency</name></member>
+    <member refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" kind="variable"><name>amplitude</name></member>
+    <member refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" kind="variable"><name>begin</name></member>
+    <member refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" kind="variable"><name>end</name></member>
+    <member refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" kind="variable"><name>type</name></member>
+    <member refid="classInjector_1a39c105f4444ab60f719260f87b31a6fc" kind="variable"><name>log_uncertainty</name></member>
+    <member refid="classInjector_1a09393196e5037689464bde2bd5be2c68" kind="function"><name>Injector</name></member>
+    <member refid="classInjector_1a904aaf462f9ebb0462418aa96d5f09fa" kind="function"><name>~Injector</name></member>
+    <member refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" kind="function"><name>setUp</name></member>
+    <member refid="classInjector_1af4f05a4db5b7b9536b4033da098b90cf" kind="function"><name>tearDown</name></member>
+    <member refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" kind="function"><name>body</name></member>
+    <member refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" kind="function"><name>inject</name></member>
+    <member refid="classInjector_1acca5c716ebd7881b71997774ba7f3880" kind="function"><name>Injector</name></member>
+    <member refid="classInjector_1aa45ab9c782eaf28a68b8d2733a0a9d2c" kind="function"><name>operator=</name></member>
+    <member refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kind="function"><name>seconds_in_cycles</name></member>
+    <member refid="classInjector_1a35650e71bfa5d5fceff437fb8309c7d8" kind="function"><name>cycles_in_seconds</name></member>
+    <member refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" kind="function"><name>gen_noise</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1LeafTask" kind="class"><name>bsn::goalmodel::LeafTask</name>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kind="variable"><name>context</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kind="variable"><name>cost</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kind="variable"><name>reliability</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kind="variable"><name>frequency</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a2e1a112f92802439c7d40d335b8c9076" kind="function"><name>LeafTask</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aae555a0e2bf1f9b68266ceced51fb666" kind="function"><name>LeafTask</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" kind="function"><name>LeafTask</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aa4063912deb5225a452f1d33fbeeefbe" kind="function"><name>~LeafTask</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aec908209587865d0543bfd7f2db0e5c6" kind="function"><name>LeafTask</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a2188abe54b01f27ced52f60313f6c806" kind="function"><name>setContext</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" kind="function"><name>getContext</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a362161b7df5ea2b23d085915dfbb52ed" kind="function"><name>setCost</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" kind="function"><name>getCost</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aa3f5aad58bc1136fcb9fc77f1634d793" kind="function"><name>setReliability</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" kind="function"><name>getReliability</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a9d3cac1479633c239fe8f58fdad3a16f" kind="function"><name>setFrequency</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" kind="function"><name>getFrequency</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a1313e8959be340ca1974f8aaafd83a7c" kind="function"><name>addChild</name></member>
+  </compound>
+  <compound refid="classLogger" kind="class"><name>Logger</name>
+    <member refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" kind="variable"><name>handle</name></member>
+    <member refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" kind="variable"><name>time_ref</name></member>
+    <member refid="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" kind="variable"><name>adapt</name></member>
+    <member refid="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" kind="variable"><name>status</name></member>
+    <member refid="classLogger_1a4873cc4cdf21bb837739d5a1e0130330" kind="variable"><name>event</name></member>
+    <member refid="classLogger_1a6b1229127c828c809519d972f857fcf1" kind="variable"><name>persist</name></member>
+    <member refid="classLogger_1a2a972e87899a345fbd2c237d3933fd26" kind="function"><name>Logger</name></member>
+    <member refid="classLogger_1acb668a9e186a25fbaad2e4af6d1ed00a" kind="function"><name>~Logger</name></member>
+    <member refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" kind="function"><name>setUp</name></member>
+    <member refid="classLogger_1aba38120a928c4fa5bf74dc92029dade5" kind="function"><name>tearDown</name></member>
+    <member refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" kind="function"><name>body</name></member>
+    <member refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" kind="function"><name>receiveAdaptationCommand</name></member>
+    <member refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" kind="function"><name>receiveStatus</name></member>
+    <member refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" kind="function"><name>receiveEnergyStatus</name></member>
+    <member refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" kind="function"><name>receiveEvent</name></member>
+    <member refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" kind="function"><name>receiveUncertainty</name></member>
+    <member refid="classLogger_1ad1dc4093a3d8c26802357fe2bdb1dabf" kind="function"><name>Logger</name></member>
+    <member refid="classLogger_1a643f1fb5e5e4f38efa257f92e8c711a8" kind="function"><name>operator=</name></member>
+    <member refid="classLogger_1a7a6704564d14bef375851b382f8b2887" kind="function"><name>now</name></member>
+  </compound>
+  <compound refid="classbsn_1_1generator_1_1Markov" kind="class"><name>bsn::generator::Markov</name>
+    <member refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kind="variable"><name>transitions</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kind="variable"><name>currentState</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kind="variable"><name>states</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" kind="function"><name>Markov</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1a5e00c2941e8ea3608271741fb7202e4b" kind="function"><name>Markov</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1ac162f1822a1639fe8389d11258e876bf" kind="function"><name>Markov</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1ad8c0269028bbeb7f854a1692c3fe5b6b" kind="function"><name>next_state</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1ad94342911e611efca754ea5a4c3b9dca" kind="function"><name>calculate_state</name></member>
+    <member refid="classbsn_1_1generator_1_1Markov_1a59725deb9f6496b5c8dce15bb7b1005a" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classbsn_1_1filters_1_1MovingAverage" kind="class"><name>bsn::filters::MovingAverage</name>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a133871674135d82e6190fb1d452a05b9" kind="variable"><name>computedAverage</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a494cad490069540038d9c5a36af7462b" kind="variable"><name>lastInserted</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a3f81b10cca9e7cc555e10974a4432da8" kind="variable"><name>range</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a324b21985e178724ddd6a9a7e273eff2" kind="variable"><name>buffer</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1aeb6e466bc4ee639f68f4565d13e91aa2" kind="function"><name>MovingAverage</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1ae2dfdd0ec0a86840688417f52fad7fc1" kind="function"><name>MovingAverage</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1ad98a0537dee4e7b8fbd25397acd5775a" kind="function"><name>MovingAverage</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a658186a97a8e095fe567d00119d0ad36" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a1b817aab4d87963ac5f2c868a81bfa9d" kind="function"><name>getValue</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a1064ba6989920ec1929a5992b1717993" kind="function"><name>insert</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1ae4dc5c7f8e52a0bb7c5af7e289efdac9" kind="function"><name>toString</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a5a462e665a7faa4df75d803a38d04d22" kind="function"><name>getRange</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1af215f049899c3eb512928c90a9f57a9f" kind="function"><name>setRange</name></member>
+    <member refid="classbsn_1_1filters_1_1MovingAverage_1a8e477f3a90860523d16b218fe5f5f2fd" kind="function"><name>getBuffer</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1Node" kind="class"><name>bsn::goalmodel::Node</name>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" kind="variable"><name>id</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" kind="variable"><name>description</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" kind="variable"><name>children</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1addc1569b8e62fbb1a8e222d6ceef482d" kind="function"><name>Node</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1ac66e87f7d3c17e1a6b06e158861b5f95" kind="function"><name>Node</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a1f05ee3a04f3954e35d09f1228802f6a" kind="function"><name>~Node</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a8add7ef85cb81e1d90704141aaf7c719" kind="function"><name>Node</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" kind="function"><name>operator==</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1ac8ea48fa240031a0c8b5fa2e76fba161" kind="function"><name>setID</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" kind="function"><name>getID</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a23c73e43071f1ca7d5a33e3992c42001" kind="function"><name>setDescription</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" kind="function"><name>getDescription</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a918e385077b367efbcf321acafe49b24" kind="function"><name>hasChildren</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" kind="function"><name>getChildren</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a331301404b90ce9d959957a36fa93f0d" kind="function"><name>addChild</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" kind="function"><name>removeChild</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" kind="function"><name>getChild</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1a0cf3374865c171a6d862bc6a18125905" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" kind="function"><name>findChild</name></member>
+  </compound>
+  <compound refid="classParamAdapter" kind="class"><name>ParamAdapter</name>
+    <member refid="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" kind="variable"><name>register_service</name></member>
+    <member refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kind="variable"><name>target_arr</name></member>
+    <member refid="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" kind="function"><name>ParamAdapter</name></member>
+    <member refid="classParamAdapter_1a12a2aebf8fcbad3a64399ae40843a6e3" kind="function"><name>~ParamAdapter</name></member>
+    <member refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" kind="function"><name>setUp</name></member>
+    <member refid="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10" kind="function"><name>tearDown</name></member>
+    <member refid="classParamAdapter_1a8067157ee9b80ea004424442237096ee" kind="function"><name>body</name></member>
+    <member refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" kind="function"><name>receiveAdaptationCommand</name></member>
+    <member refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" kind="function"><name>moduleConnect</name></member>
+    <member refid="classParamAdapter_1a310ddc325aea35fdb4d54d261ef81ddf" kind="function"><name>ParamAdapter</name></member>
+    <member refid="classParamAdapter_1a1492852462fb9aa13dd2aec7d7b0ae45" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classPatientModule" kind="class"><name>PatientModule</name>
+    <member refid="classPatientModule_1a85474af39f2a2b26c3d3c89f2cba87fe" kind="variable"><name>patientData</name></member>
+    <member refid="classPatientModule_1ac7e2ec7a414bebecc52bee5eb337968a" kind="variable"><name>vitalSignsFrequencies</name></member>
+    <member refid="classPatientModule_1a3e68e3325a214a3a9a0d8485f48a6be7" kind="variable"><name>vitalSignsChanges</name></member>
+    <member refid="classPatientModule_1a01a256214a7133fc2e73079cd94cddcc" kind="variable"><name>vitalSignsOffsets</name></member>
+    <member refid="classPatientModule_1a20370b4b7f7a291927c1bc160af3123f" kind="variable"><name>frequency</name></member>
+    <member refid="classPatientModule_1a5d801f31879d4f81d003aa630cefb9da" kind="variable"><name>period</name></member>
+    <member refid="classPatientModule_1adf07a9dc40eefcda9b4220c59bfee9f1" kind="variable"><name>nh</name></member>
+    <member refid="classPatientModule_1a77022bf9da531794e51ca604648e9b6b" kind="variable"><name>service</name></member>
+    <member refid="classPatientModule_1af6f5ad7060bc1220e3468f218053c2f2" kind="function"><name>PatientModule</name></member>
+    <member refid="classPatientModule_1ad31828c1285c199879bf43f3a39e6f9a" kind="function"><name>~PatientModule</name></member>
+    <member refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" kind="function"><name>setUp</name></member>
+    <member refid="classPatientModule_1a861ff456e5e7fead9939b4caee0093c0" kind="function"><name>tearDown</name></member>
+    <member refid="classPatientModule_1af9680229178013ce1256b3720522a06a" kind="function"><name>body</name></member>
+    <member refid="classPatientModule_1ae43b1c3404e42c1258e0599531ea6054" kind="function"><name>getPatientData</name></member>
+    <member refid="classPatientModule_1aa6a17cfd6d72002d9b493f0198b37edf" kind="function"><name>configureDataGenerator</name></member>
+  </compound>
+  <compound refid="classarch_1_1target__system_1_1Probe" kind="class"><name>arch::target_system::Probe</name>
+    <member refid="classarch_1_1target__system_1_1Probe_1a0dfdc16fd9743a56583fcc3892a1acf8" kind="variable"><name>handle</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1af5bc2bfcd0f19f7b97cd661e8bc18150" kind="variable"><name>collect_event</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a66e9a2150e45645168ec2b2c034e536d" kind="variable"><name>collect_status</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1aa34af4eec6a80fefb32c13e5739b171d" kind="variable"><name>collect_energy_status</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" kind="variable"><name>log_event</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" kind="variable"><name>log_status</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" kind="variable"><name>log_energy_status</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1aa7671d98e7f8b9dc178859bc18137a35" kind="function"><name>Probe</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a061d84c285240c95d036d19b32a38544" kind="function"><name>~Probe</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" kind="function"><name>setUp</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a367bbc30a9c31b49b8684ce5c6849b2e" kind="function"><name>tearDown</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" kind="function"><name>body</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a01aead06d320f6f2e583a1dbcf0990cf" kind="function"><name>collectEvent</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a2e582662575d5bec28730fd3b95296de" kind="function"><name>collectStatus</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a38c77474a3a960522c0abda3d0fb9b30" kind="function"><name>collectEnergyStatus</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1ad69766b406108233c7e302f7d31f471c" kind="function"><name>Probe</name></member>
+    <member refid="classarch_1_1target__system_1_1Probe_1a847c67ff49de90ec098dd19ac4646676" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1Property" kind="class"><name>bsn::goalmodel::Property</name>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kind="variable"><name>id</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kind="variable"><name>value</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a555c4af10f85f36066d506efffca2140" kind="function"><name>Property</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kind="function"><name>Property</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a055610f0f055ffaadbff8e9d1cdfedf3" kind="function"><name>~Property</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1af97182c147e505aefabc5e549cd498b4" kind="function"><name>Property</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a672a0f9fd98584a8a15c5a369749a016" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1ad89fe95a6b2f52f3acd66e0bbbb3f234" kind="function"><name>operator==</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1afbd7182447d01a0d38e8e77b34e39796" kind="function"><name>setID</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a6093b47a372aee1ee4e61a6c33ad8a5f" kind="function"><name>getID</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1aafcff8276f40f47fb53cdc4c51c26363" kind="function"><name>setValue</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Property_1a333f562fecf724207a06034e1baa9ca7" kind="function"><name>getValue</name></member>
+  </compound>
+  <compound refid="classbsn_1_1range_1_1Range" kind="class"><name>bsn::range::Range</name>
+    <member refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kind="variable"><name>lowerBound</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kind="variable"><name>upperBound</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" kind="function"><name>Range</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a41643b5367a88263f328c9f8a82e0479" kind="function"><name>Range</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1ac97bbbad31eaa12e560882347eb150d2" kind="function"><name>~Range</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1ab689347e8fe6b800352063428163af8e" kind="function"><name>Range</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" kind="function"><name>in_range</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" kind="function"><name>convert</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" kind="function"><name>to_print</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" kind="function"><name>setLowerBound</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" kind="function"><name>getLowerBound</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" kind="function"><name>setUpperBound</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" kind="function"><name>getUpperBound</name></member>
+    <member refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classReliabilityEngine" kind="class"><name>ReliabilityEngine</name>
+    <member refid="classReliabilityEngine_1afae828d23b1aa902824338975d9fa611" kind="variable"><name>setpoint</name></member>
+    <member refid="classReliabilityEngine_1a5ba78cc9dab4a6945232b89fda3b9fe7" kind="variable"><name>offset</name></member>
+    <member refid="classReliabilityEngine_1ac68b63ecddecc5195ebf78613970076b" kind="variable"><name>gain</name></member>
+    <member refid="classReliabilityEngine_1ae373717575f4155a04c8efc1214ed884" kind="variable"><name>tolerance</name></member>
+    <member refid="classReliabilityEngine_1ab0435877ed826de3a23bd030fe3951c3" kind="variable"><name>cycles</name></member>
+    <member refid="classReliabilityEngine_1a6a66ce2441c612a1a7e7c9bfa419c4b8" kind="variable"><name>prefix</name></member>
+    <member refid="classReliabilityEngine_1aadc44d269b35749e2a891933618eac31" kind="variable"><name>enact</name></member>
+    <member refid="classReliabilityEngine_1ae94032f6b025f3d7ff26ab0883063de2" kind="function"><name>ReliabilityEngine</name></member>
+    <member refid="classReliabilityEngine_1afb45f62763bcdbeaaead33aa642136cf" kind="function"><name>~ReliabilityEngine</name></member>
+    <member refid="classReliabilityEngine_1ad5323671d1e8645df2e0f7d9772bf806" kind="function"><name>setUp</name></member>
+    <member refid="classReliabilityEngine_1ad5641aa98162231ec9ac3bc9b91eef14" kind="function"><name>tearDown</name></member>
+    <member refid="classReliabilityEngine_1a66719cf0d379bef84459afb5b11c6e83" kind="function"><name>get_prefix</name></member>
+    <member refid="classReliabilityEngine_1a2f95ce2994cff8ba41b4937f336282d5" kind="function"><name>initialize_priority</name></member>
+    <member refid="classReliabilityEngine_1af5994c899007fb60fad0168aafc571b1" kind="function"><name>initialize_strategy</name></member>
+    <member refid="classReliabilityEngine_1afe74f85b5bb905500dec2f93586e0045" kind="function"><name>monitor</name></member>
+    <member refid="classReliabilityEngine_1a2fb81703ab556e8418389e4483ceaaed" kind="function"><name>analyze</name></member>
+    <member refid="classReliabilityEngine_1ac7179c4014de0c259d7794f544a2d1c7" kind="function"><name>plan</name></member>
+    <member refid="classReliabilityEngine_1a7837ed9e42d0b47872fe862cf0a4b63f" kind="function"><name>execute</name></member>
+    <member refid="classReliabilityEngine_1a8511948fe0acf40255f3b29534207983" kind="function"><name>ReliabilityEngine</name></member>
+    <member refid="classReliabilityEngine_1ac3bf989773175b331a774fa2d22146c4" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classarch_1_1ROSComponent" kind="class"><name>arch::ROSComponent</name>
+    <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kind="variable"><name>rosComponentDescriptor</name></member>
+    <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" kind="function"><name>ROSComponent</name></member>
+    <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" kind="function"><name>~ROSComponent</name></member>
+    <member refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d" kind="function"><name>setUp</name></member>
+    <member refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba" kind="function"><name>tearDown</name></member>
+    <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" kind="function"><name>run</name></member>
+    <member refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9" kind="function"><name>body</name></member>
+    <member refid="classarch_1_1ROSComponent_1a501c188814a399f5d2ad160f98d27298" kind="function"><name>ROSComponent</name></member>
+    <member refid="classarch_1_1ROSComponent_1ab7c8830db505b34306be1b176f04899a" kind="function"><name>operator=</name></member>
+    <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" kind="function"><name>getRosNodeName</name></member>
+  </compound>
+  <compound refid="classarch_1_1ROSComponentDescriptor" kind="class"><name>arch::ROSComponentDescriptor</name>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a1e94fef40bb09f54872dc682eebe9941" kind="variable"><name>name</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1abae0c6b53dd6b74adf8969594e90b89d" kind="variable"><name>freq</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1acaa08eaf1b6fc2386b56d73163f78fbb" kind="function"><name>ROSComponentDescriptor</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a9149fc01ac3ad2c104d7b1765a66a46c" kind="function"><name>~ROSComponentDescriptor</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a27e0d45f1bb2184d9d47d88f73871e9f" kind="function"><name>setName</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" kind="function"><name>getName</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kind="function"><name>setFreq</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" kind="function"><name>getFreq</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a510caa4c2fd19f8f39e1306997e6ec55" kind="function"><name>ROSComponentDescriptor</name></member>
+    <member refid="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classSensor" kind="class"><name>Sensor</name>
+    <member refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" kind="variable"><name>type</name></member>
+    <member refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kind="variable"><name>active</name></member>
+    <member refid="classSensor_1a70688e69c2a29191801550d1230b0807" kind="variable"><name>buffer_size</name></member>
+    <member refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" kind="variable"><name>replicate_collect</name></member>
+    <member refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kind="variable"><name>noise_factor</name></member>
+    <member refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kind="variable"><name>battery</name></member>
+    <member refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kind="variable"><name>data</name></member>
+    <member refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kind="variable"><name>instant_recharge</name></member>
+    <member refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" kind="variable"><name>shouldStart</name></member>
+    <member refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kind="variable"><name>cost</name></member>
+    <member refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" kind="variable"><name>connected_sensor</name></member>
+    <member refid="classSensor_1ac7f3f9070732abb6e7b881ac66d734e2" kind="function"><name>Sensor</name></member>
+    <member refid="classSensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" kind="function"><name>~Sensor</name></member>
+    <member refid="classSensor_1a46b45c4ec9d0675d2424ff2bb5df26ab" kind="function"><name>setUp</name></member>
+    <member refid="classSensor_1ad816b983559e220a9c360f57433f28de" kind="function"><name>tearDown</name></member>
+    <member refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" kind="function"><name>run</name></member>
+    <member refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" kind="function"><name>body</name></member>
+    <member refid="classSensor_1a865bbaf085db8217e4d0c02e12e8a2a1" kind="function"><name>apply_noise</name></member>
+    <member refid="classSensor_1a476760a7dd4be51136bf165e183526cf" kind="function"><name>reconfigure</name></member>
+    <member refid="classSensor_1a941f539d5f022334095705710338469c" kind="function"><name>injectUncertainty</name></member>
+    <member refid="classSensor_1ab89214185c2da031e0f78b0f4dc031e8" kind="function"><name>collect</name></member>
+    <member refid="classSensor_1a209530c83c3299a6587e1c87277dcd1e" kind="function"><name>process</name></member>
+    <member refid="classSensor_1afa34e334fc608034f8aeb8cb3d34abc9" kind="function"><name>transfer</name></member>
+    <member refid="classSensor_1afebfbbf60a28c72389d5bd970fe78c0e" kind="function"><name>operator=</name></member>
+    <member refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" kind="function"><name>isActive</name></member>
+    <member refid="classSensor_1ab687b1dd4e4ecb1d806bf947cedc9b76" kind="function"><name>turnOn</name></member>
+    <member refid="classSensor_1a7e0dadfc3dcde4c6c7b20d0c0ae09082" kind="function"><name>turnOff</name></member>
+    <member refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" kind="function"><name>recharge</name></member>
+  </compound>
+  <compound refid="classbsn_1_1configuration_1_1SensorConfiguration" kind="class"><name>bsn::configuration::SensorConfiguration</name>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a11c1cedfc3a87d49ad1287d03141d3bd" kind="variable"><name>id</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" kind="variable"><name>lowRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" kind="variable"><name>mediumRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" kind="variable"><name>highRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" kind="variable"><name>lowPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" kind="variable"><name>midPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" kind="variable"><name>highPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" kind="function"><name>SensorConfiguration</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a803a3b49f6089d753ddaf27d331d2b4d" kind="function"><name>SensorConfiguration</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a0f355f6a8201854b703c2ecf62e46cf4" kind="function"><name>SensorConfiguration</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" kind="function"><name>evaluateNumber</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1aab092b8b249eda7ee53a38ec45ba9421" kind="function"><name>getDisplacement</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" kind="function"><name>convertRealPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" kind="function"><name>isLowRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" kind="function"><name>isMediumRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" kind="function"><name>isHighRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a5cbb1f6ecadc4bbda6ac273cb4d4e5f5" kind="function"><name>getId</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ae89e7fd872467dba154397389e432a5a" kind="function"><name>setId</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a8670643b8a6f0e51ef28858c42ef1330" kind="function"><name>getLowRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a62b42b1f5f7fecb9f4c198f1f8c2880c" kind="function"><name>setLowRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ace2305e7f554676344e3d6dc15c59c08" kind="function"><name>getMediumRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a3d67705908e159fe7e22fe8da3c6459d" kind="function"><name>setMediumRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1acdfcb71e90acbca6036e0d93a9f7ef8e" kind="function"><name>getHighRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a90b348d540e0ecadc78eee3535506b9c" kind="function"><name>setHighRisk</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1acc1264bd8739fdc4d9ddaf0f00552a12" kind="function"><name>getLowPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a234427e4eafc20d2c17449b083735d9a" kind="function"><name>setLowPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a84047430dc4ca3d5efc65f454feebf1c" kind="function"><name>getMidPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a00960001bdeb1905c03b8fb9c6cec556" kind="function"><name>setMidPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a44ff7709db274eaa05ea8d41c6028e16" kind="function"><name>getHighPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad877e9ac2d6a98476ef8ac47f7414390" kind="function"><name>setHighPercentage</name></member>
+    <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classStatusMessage" kind="class"><name>StatusMessage</name>
+    <member refid="classStatusMessage_1a320f61b3608b65835b256a5ab4910421" kind="variable"><name>name</name></member>
+    <member refid="classStatusMessage_1a25666dda2d4a05b6ccf8adb10f1835cd" kind="variable"><name>timestamp</name></member>
+    <member refid="classStatusMessage_1aa3770b0be28f304276abba6cc2b079ca" kind="variable"><name>logical_clock</name></member>
+    <member refid="classStatusMessage_1a619a4877c17974e52428ef2120bd4d66" kind="variable"><name>source</name></member>
+    <member refid="classStatusMessage_1a85c6c87c50cf902697780ebae97bdac1" kind="variable"><name>target</name></member>
+    <member refid="classStatusMessage_1a1fba0259f7cb7168c157b7751f2c006d" kind="variable"><name>state</name></member>
+    <member refid="classStatusMessage_1aa16bc451804164e47970401aab6e7263" kind="function"><name>StatusMessage</name></member>
+    <member refid="classStatusMessage_1add3286d937a84582c8d2dd90d01c3c0a" kind="function"><name>getName</name></member>
+    <member refid="classStatusMessage_1a26d39898246103ead58a462dc9a56c03" kind="function"><name>getTimestamp</name></member>
+    <member refid="classStatusMessage_1a47d3dcfc3240e8b645e0136a0d4b5131" kind="function"><name>getLogicalClock</name></member>
+    <member refid="classStatusMessage_1a01ba555721c8cbc84ca2f80e0faf6a3d" kind="function"><name>getSource</name></member>
+    <member refid="classStatusMessage_1ad90052a63723e608a792047058a12173" kind="function"><name>getTarget</name></member>
+    <member refid="classStatusMessage_1a53b7d4fc382131654cbca086ae119ae2" kind="function"><name>getState</name></member>
+  </compound>
+  <compound refid="classbsn_1_1goalmodel_1_1Task" kind="class"><name>bsn::goalmodel::Task</name>
+    <member refid="classbsn_1_1goalmodel_1_1Task_1a39c08ec5c1c3a6462831526ff601364f" kind="function"><name>Task</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Task_1a793b6c88440f488ad96431eae8634799" kind="function"><name>Task</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Task_1a663798115e7b2cb3c3e0d91c4e0fba0f" kind="function"><name>~Task</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Task_1a8df193e5fcbf36a3b514ca283d763322" kind="function"><name>addChild</name></member>
+    <member refid="classbsn_1_1goalmodel_1_1Task_1a3a22146be660551a7d0f8fb63c8e5e12" kind="function"><name>addChild</name></member>
+  </compound>
+  <compound refid="classbsn_1_1time_1_1TimeData" kind="class"><name>bsn::time::TimeData</name>
+    <member refid="classbsn_1_1time_1_1TimeData_1ad75202b6559f854c523c0a3ccc283719" kind="function"><name>TimeData</name></member>
+    <member refid="classbsn_1_1time_1_1TimeData_1a3497566980bf0307f330ee0d9581d50b" kind="function"><name>~TimeData</name></member>
+    <member refid="classbsn_1_1time_1_1TimeData_1ab016638cac52b5aa309bd6dea3840b79" kind="function"><name>TimeData</name></member>
+    <member refid="classbsn_1_1time_1_1TimeData_1a20622fca155b47d1fa2bc883e57827d4" kind="function"><name>operator=</name></member>
+    <member refid="classbsn_1_1time_1_1TimeData_1a629866706395ff49bc82ad4121a4b14a" kind="function"><name>elapsedTime</name></member>
+    <member refid="classbsn_1_1time_1_1TimeData_1a47fd79c8ef63299143a28925d7552ef7" kind="function"><name>get_time</name></member>
+  </compound>
+  <compound refid="classUncertaintyMessage" kind="class"><name>UncertaintyMessage</name>
+    <member refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" kind="variable"><name>name</name></member>
+    <member refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" kind="variable"><name>timestamp</name></member>
+    <member refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" kind="variable"><name>logical_clock</name></member>
+    <member refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" kind="variable"><name>source</name></member>
+    <member refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" kind="variable"><name>target</name></member>
+    <member refid="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" kind="variable"><name>content</name></member>
+    <member refid="classUncertaintyMessage_1a73177c51c3fc04c721f73dd6b92aab34" kind="function"><name>UncertaintyMessage</name></member>
+    <member refid="classUncertaintyMessage_1a4ff249a4f00fbd9cf2ef6386de515916" kind="function"><name>getName</name></member>
+    <member refid="classUncertaintyMessage_1a6f3bb49680c01cd4824964f854766976" kind="function"><name>getTimestamp</name></member>
+    <member refid="classUncertaintyMessage_1a3a182508829e61963d20bd2b004d9614" kind="function"><name>getLogicalClock</name></member>
+    <member refid="classUncertaintyMessage_1a0569f920cd24b25833dad5d2ae136c33" kind="function"><name>getSource</name></member>
+    <member refid="classUncertaintyMessage_1a5a12c49d95828fe130f53ffda6762494" kind="function"><name>getTarget</name></member>
+    <member refid="classUncertaintyMessage_1ae1e84ebb14aa94c439fde9fae568b693" kind="function"><name>getContent</name></member>
+  </compound>
+  <compound refid="namespace_0D5" kind="namespace"><name>@5</name>
+  </compound>
+  <compound refid="namespacearch" kind="namespace"><name>arch</name>
+  </compound>
+  <compound refid="namespacearch_1_1target__system" kind="namespace"><name>arch::target_system</name>
+  </compound>
+  <compound refid="namespacebsn" kind="namespace"><name>bsn</name>
+  </compound>
+  <compound refid="namespacebsn_1_1configuration" kind="namespace"><name>bsn::configuration</name>
+  </compound>
+  <compound refid="namespacebsn_1_1filters" kind="namespace"><name>bsn::filters</name>
+  </compound>
+  <compound refid="namespacebsn_1_1generator" kind="namespace"><name>bsn::generator</name>
+    <member refid="namespacebsn_1_1generator_1aed8b98157588111aca3f20d0fb2a76b2" kind="function"><name>probabilityGenerator</name></member>
+  </compound>
+  <compound refid="namespacebsn_1_1goalmodel" kind="namespace"><name>bsn::goalmodel</name>
+    <member refid="namespacebsn_1_1goalmodel_1ae667127e89e6ad5a47bc0c6e86601687" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacebsn_1_1model" kind="namespace"><name>bsn::model</name>
+  </compound>
+  <compound refid="namespacebsn_1_1processor" kind="namespace"><name>bsn::processor</name>
+    <member refid="namespacebsn_1_1processor_1aa656f0fa70585ebf07c09768dc62101e" kind="function"><name>data_fuse</name></member>
+    <member refid="namespacebsn_1_1processor_1aa6b0a7c3cdf5f8a0d22d66dad542a6fe" kind="function"><name>get_sensor_id</name></member>
+    <member refid="namespacebsn_1_1processor_1aa1ec43d2e713f862d73f806bf4b01fcc" kind="function"><name>get_value</name></member>
+    <member refid="namespacebsn_1_1processor_1a803d0d1bfd322580ea866b160478fef8" kind="function"><name>get_sensor_id</name></member>
+    <member refid="namespacebsn_1_1processor_1aa6a79215fd3096840406a39c38480ef8" kind="function"><name>get_value</name></member>
+    <member refid="namespacebsn_1_1processor_1a85b474859eb91722abb8f7e92646e6fa" kind="function"><name>data_fuse</name></member>
+  </compound>
+  <compound refid="namespacebsn_1_1range" kind="namespace"><name>bsn::range</name>
+  </compound>
+  <compound refid="namespacebsn_1_1resource" kind="namespace"><name>bsn::resource</name>
+  </compound>
+  <compound refid="namespacebsn_1_1time" kind="namespace"><name>bsn::time</name>
+  </compound>
+  <compound refid="namespacebsn_1_1utils" kind="namespace"><name>bsn::utils</name>
+    <member refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kind="function"><name>split</name></member>
+    <member refid="namespacebsn_1_1utils_1a860932c30d471d3622987022c1cc4327" kind="function"><name>split</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="ROSComponent_8hpp" kind="file"><name>ROSComponent.hpp</name>
+  </compound>
+  <compound refid="ROSComponentDescriptor_8hpp" kind="file"><name>ROSComponentDescriptor.hpp</name>
+  </compound>
+  <compound refid="Component_8hpp" kind="file"><name>Component.hpp</name>
+  </compound>
+  <compound refid="Effector_8hpp" kind="file"><name>Effector.hpp</name>
+  </compound>
+  <compound refid="Probe_8hpp" kind="file"><name>Probe.hpp</name>
+  </compound>
+  <compound refid="ROSComponent_8cpp" kind="file"><name>ROSComponent.cpp</name>
+  </compound>
+  <compound refid="ROSComponentDescriptor_8cpp" kind="file"><name>ROSComponentDescriptor.cpp</name>
+  </compound>
+  <compound refid="Component_8cpp" kind="file"><name>Component.cpp</name>
+  </compound>
+  <compound refid="Effector_8cpp" kind="file"><name>Effector.cpp</name>
+  </compound>
+  <compound refid="Probe_8cpp" kind="file"><name>Probe.cpp</name>
+  </compound>
+  <compound refid="SensorConfiguration_8hpp" kind="file"><name>SensorConfiguration.hpp</name>
+  </compound>
+  <compound refid="MovingAverage_8hpp" kind="file"><name>MovingAverage.hpp</name>
+  </compound>
+  <compound refid="DataGenerator_8hpp" kind="file"><name>DataGenerator.hpp</name>
+  </compound>
+  <compound refid="Markov_8hpp" kind="file"><name>Markov.hpp</name>
+  </compound>
+  <compound refid="Context_8hpp" kind="file"><name>Context.hpp</name>
+  </compound>
+  <compound refid="Goal_8hpp" kind="file"><name>Goal.hpp</name>
+  </compound>
+  <compound refid="GoalTree_8hpp" kind="file"><name>GoalTree.hpp</name>
+  </compound>
+  <compound refid="LeafTask_8hpp" kind="file"><name>LeafTask.hpp</name>
+  </compound>
+  <compound refid="Node_8hpp" kind="file"><name>Node.hpp</name>
+  </compound>
+  <compound refid="Property_8hpp" kind="file"><name>Property.hpp</name>
+  </compound>
+  <compound refid="Task_8hpp" kind="file"><name>Task.hpp</name>
+  </compound>
+  <compound refid="Formula_8hpp" kind="file"><name>Formula.hpp</name>
+  </compound>
+  <compound refid="Processor_8hpp" kind="file"><name>Processor.hpp</name>
+  </compound>
+  <compound refid="Range_8hpp" kind="file"><name>Range.hpp</name>
+  </compound>
+  <compound refid="Battery_8hpp" kind="file"><name>Battery.hpp</name>
+  </compound>
+  <compound refid="TimeData_8hpp" kind="file"><name>TimeData.hpp</name>
+  </compound>
+  <compound refid="utils_8hpp" kind="file"><name>utils.hpp</name>
+  </compound>
+  <compound refid="SensorConfiguration_8cpp" kind="file"><name>SensorConfiguration.cpp</name>
+  </compound>
+  <compound refid="MovingAverage_8cpp" kind="file"><name>MovingAverage.cpp</name>
+  </compound>
+  <compound refid="DataGenerator_8cpp" kind="file"><name>DataGenerator.cpp</name>
+  </compound>
+  <compound refid="Markov_8cpp" kind="file"><name>Markov.cpp</name>
+  </compound>
+  <compound refid="Context_8cpp" kind="file"><name>Context.cpp</name>
+  </compound>
+  <compound refid="Goal_8cpp" kind="file"><name>Goal.cpp</name>
+  </compound>
+  <compound refid="GoalTree_8cpp" kind="file"><name>GoalTree.cpp</name>
+  </compound>
+  <compound refid="LeafTask_8cpp" kind="file"><name>LeafTask.cpp</name>
+  </compound>
+  <compound refid="Node_8cpp" kind="file"><name>Node.cpp</name>
+  </compound>
+  <compound refid="Property_8cpp" kind="file"><name>Property.cpp</name>
+  </compound>
+  <compound refid="Task_8cpp" kind="file"><name>Task.cpp</name>
+  </compound>
+  <compound refid="Formula_8cpp" kind="file"><name>Formula.cpp</name>
+  </compound>
+  <compound refid="Processor_8cpp" kind="file"><name>Processor.cpp</name>
+  </compound>
+  <compound refid="Range_8cpp" kind="file"><name>Range.cpp</name>
+  </compound>
+  <compound refid="Battery_8cpp" kind="file"><name>Battery.cpp</name>
+  </compound>
+  <compound refid="TimeData_8cpp" kind="file"><name>TimeData.cpp</name>
+  </compound>
+  <compound refid="utils_8cpp" kind="file"><name>utils.cpp</name>
+  </compound>
+  <compound refid="patient_8cpp" kind="file"><name>patient.cpp</name>
+    <member refid="patient_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="PatientModule_8hpp" kind="file"><name>PatientModule.hpp</name>
+  </compound>
+  <compound refid="PatientModule_8cpp" kind="file"><name>PatientModule.cpp</name>
+  </compound>
+  <compound refid="data__access_8cpp" kind="file"><name>data_access.cpp</name>
+    <member refid="data__access_8cpp_1a47132f8f79de6f2b482ca715383dc07e" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="AdaptationMessage_8hpp" kind="file"><name>AdaptationMessage.hpp</name>
+  </compound>
+  <compound refid="DataAccess_8hpp" kind="file"><name>DataAccess.hpp</name>
+  </compound>
+  <compound refid="EnergyStatusMessage_8hpp" kind="file"><name>EnergyStatusMessage.hpp</name>
+  </compound>
+  <compound refid="EventMessage_8hpp" kind="file"><name>EventMessage.hpp</name>
+  </compound>
+  <compound refid="StatusMessage_8hpp" kind="file"><name>StatusMessage.hpp</name>
+  </compound>
+  <compound refid="UncertaintyMessage_8hpp" kind="file"><name>UncertaintyMessage.hpp</name>
+  </compound>
+  <compound refid="DataAccess_8cpp" kind="file"><name>DataAccess.cpp</name>
+    <member refid="DataAccess_8cpp_1a91c81650aefc601969c8f6437b73709e" kind="function"><name>fetch_formula</name></member>
+  </compound>
+  <compound refid="logger_8cpp" kind="file"><name>logger.cpp</name>
+    <member refid="logger_8cpp_1a47132f8f79de6f2b482ca715383dc07e" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Logger_8hpp" kind="file"><name>Logger.hpp</name>
+  </compound>
+  <compound refid="Logger_8cpp" kind="file"><name>Logger.cpp</name>
+  </compound>
+  <compound refid="injector_8cpp" kind="file"><name>injector.cpp</name>
+    <member refid="injector_8cpp_1a47132f8f79de6f2b482ca715383dc07e" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Injector_8hpp" kind="file"><name>Injector.hpp</name>
+  </compound>
+  <compound refid="Injector_8cpp" kind="file"><name>Injector.cpp</name>
+  </compound>
+  <compound refid="cost__engine_8cpp" kind="file"><name>cost_engine.cpp</name>
+    <member refid="cost__engine_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="reli__engine_8cpp" kind="file"><name>reli_engine.cpp</name>
+    <member refid="reli__engine_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="CostEngine_8hpp" kind="file"><name>CostEngine.hpp</name>
+  </compound>
+  <compound refid="Engine_8hpp" kind="file"><name>Engine.hpp</name>
+  </compound>
+  <compound refid="ReliabilityEngine_8hpp" kind="file"><name>ReliabilityEngine.hpp</name>
+  </compound>
+  <compound refid="CostEngine_8cpp" kind="file"><name>CostEngine.cpp</name>
+  </compound>
+  <compound refid="Engine_8cpp" kind="file"><name>Engine.cpp</name>
+  </compound>
+  <compound refid="ReliabilityEngine_8cpp" kind="file"><name>ReliabilityEngine.cpp</name>
+  </compound>
+  <compound refid="controller_8cpp" kind="file"><name>controller.cpp</name>
+    <member refid="controller_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="enactor_8cpp" kind="file"><name>enactor.cpp</name>
+    <member refid="enactor_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Controller_8hpp" kind="file"><name>Controller.hpp</name>
+  </compound>
+  <compound refid="Enactor_8hpp" kind="file"><name>Enactor.hpp</name>
+  </compound>
+  <compound refid="Controller_8cpp" kind="file"><name>Controller.cpp</name>
+  </compound>
+  <compound refid="Enactor_8cpp" kind="file"><name>Enactor.cpp</name>
+  </compound>
+  <compound refid="g3t1__1_8cpp" kind="file"><name>g3t1_1.cpp</name>
+    <member refid="g3t1__1_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="g3t1__2_8cpp" kind="file"><name>g3t1_2.cpp</name>
+    <member refid="g3t1__2_8cpp_1af19ddca125f05a2090dd132045573ee4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="g3t1__3_8cpp" kind="file"><name>g3t1_3.cpp</name>
+    <member refid="g3t1__3_8cpp_1af19ddca125f05a2090dd132045573ee4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="g3t1__4_8cpp" kind="file"><name>g3t1_4.cpp</name>
+    <member refid="g3t1__4_8cpp_1af19ddca125f05a2090dd132045573ee4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="g3t1__5_8cpp" kind="file"><name>g3t1_5.cpp</name>
+    <member refid="g3t1__5_8cpp_1af19ddca125f05a2090dd132045573ee4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="g3t1__6_8cpp" kind="file"><name>g3t1_6.cpp</name>
+    <member refid="g3t1__6_8cpp_1af19ddca125f05a2090dd132045573ee4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="g4t1_8cpp" kind="file"><name>g4t1.cpp</name>
+    <member refid="g4t1_8cpp_1af19ddca125f05a2090dd132045573ee4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="CentralHub_8hpp" kind="file"><name>CentralHub.hpp</name>
+  </compound>
+  <compound refid="G3T1__1_8hpp" kind="file"><name>G3T1_1.hpp</name>
+  </compound>
+  <compound refid="G3T1__2_8hpp" kind="file"><name>G3T1_2.hpp</name>
+  </compound>
+  <compound refid="G3T1__3_8hpp" kind="file"><name>G3T1_3.hpp</name>
+  </compound>
+  <compound refid="G3T1__4_8hpp" kind="file"><name>G3T1_4.hpp</name>
+  </compound>
+  <compound refid="G3T1__5_8hpp" kind="file"><name>G3T1_5.hpp</name>
+  </compound>
+  <compound refid="G3T1__6_8hpp" kind="file"><name>G3T1_6.hpp</name>
+  </compound>
+  <compound refid="G4T1_8hpp" kind="file"><name>G4T1.hpp</name>
+  </compound>
+  <compound refid="Sensor_8hpp" kind="file"><name>Sensor.hpp</name>
+  </compound>
+  <compound refid="CentralHub_8cpp" kind="file"><name>CentralHub.cpp</name>
+  </compound>
+  <compound refid="G3T1__1_8cpp" kind="file"><name>G3T1_1.cpp</name>
+    <member refid="G3T1__1_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+  </compound>
+  <compound refid="G3T1__2_8cpp" kind="file"><name>G3T1_2.cpp</name>
+    <member refid="G3T1__2_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+  </compound>
+  <compound refid="G3T1__3_8cpp" kind="file"><name>G3T1_3.cpp</name>
+    <member refid="G3T1__3_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+  </compound>
+  <compound refid="G3T1__4_8cpp" kind="file"><name>G3T1_4.cpp</name>
+    <member refid="G3T1__4_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+  </compound>
+  <compound refid="G3T1__5_8cpp" kind="file"><name>G3T1_5.cpp</name>
+    <member refid="G3T1__5_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+  </compound>
+  <compound refid="G3T1__6_8cpp" kind="file"><name>G3T1_6.cpp</name>
+    <member refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+    <member refid="G3T1__6_8cpp_1ad99a3089c13b6f47b26b218a997fad73" kind="define"><name>INCREMENT</name></member>
+  </compound>
+  <compound refid="G4T1_8cpp" kind="file"><name>G4T1.cpp</name>
+    <member refid="G4T1_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kind="define"><name>BATT_UNIT</name></member>
+  </compound>
+  <compound refid="Sensor_8cpp" kind="file"><name>Sensor.cpp</name>
+  </compound>
+  <compound refid="param__adapter_8cpp" kind="file"><name>param_adapter.cpp</name>
+    <member refid="param__adapter_8cpp_1a47132f8f79de6f2b482ca715383dc07e" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="ParamAdapter_8hpp" kind="file"><name>ParamAdapter.hpp</name>
+  </compound>
+  <compound refid="ParamAdapter_8cpp" kind="file"><name>ParamAdapter.cpp</name>
+  </compound>
+  <compound refid="collector_8cpp" kind="file"><name>collector.cpp</name>
+    <member refid="collector_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_7aebaafb036e4faaba9604662e59a2d6" kind="dir"><name>src/sa-bsn/system_manager/adaptation_engine</name>
+  </compound>
+  <compound refid="dir_e7f61e5b6e0678a87df63aa6c0717d0a" kind="dir"><name>src/sa-bsn/knowledge_repository/data_access/apps</name>
+  </compound>
+  <compound refid="dir_c65bd38cc15a47d47c2d95ca9cdd2092" kind="dir"><name>src/sa-bsn/target_system/components/component/apps</name>
+  </compound>
+  <compound refid="dir_332e0e6f052338b0feb6964e9c6ffc66" kind="dir"><name>src/sa-bsn/logging_infrastructure/logger/apps</name>
+  </compound>
+  <compound refid="dir_ac6b2ed7a063a67663c5fdf9c79f481a" kind="dir"><name>src/sa-bsn/target_system/effectors/param_adapter/apps</name>
+  </compound>
+  <compound refid="dir_b0b52fa4030ffb1c8da49a9a5ada0fe1" kind="dir"><name>src/sa-bsn/target_system/probes/collector/apps</name>
+  </compound>
+  <compound refid="dir_fb00a96ac62725e17af6100df7307e7a" kind="dir"><name>src/sa-bsn/environment/patient/apps</name>
+  </compound>
+  <compound refid="dir_acd876476d56f7154e92a179061ac625" kind="dir"><name>src/sa-bsn/simulation/injector/apps</name>
+  </compound>
+  <compound refid="dir_e97b1a6214ff90c3cf2de24c68f45900" kind="dir"><name>src/sa-bsn/system_manager/adaptation_engine/apps</name>
+  </compound>
+  <compound refid="dir_a23855f60b7c54b0707f9a86f39b0d43" kind="dir"><name>src/sa-bsn/system_manager/enactor/apps</name>
+  </compound>
+  <compound refid="dir_32583e50bb5749fdc6c8eb55698ce5f6" kind="dir"><name>src/archlib/include/archlib</name>
+  </compound>
+  <compound refid="dir_7820f11c4482f02b738474524ce1ba7b" kind="dir"><name>src/archlib</name>
+  </compound>
+  <compound refid="dir_e0abd878bbdc0cd9749a6fc42c383798" kind="dir"><name>src/sa-bsn/target_system/probes/collector</name>
+  </compound>
+  <compound refid="dir_f70c295ff28c301a61b043dc8bc45c28" kind="dir"><name>src/sa-bsn/target_system/components/component</name>
+  </compound>
+  <compound refid="dir_18402482242147d3153d76b4ea813b0b" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component</name>
+  </compound>
+  <compound refid="dir_ae8593cfd9c55bfa5bb70cc8923d9ba7" kind="dir"><name>src/sa-bsn/target_system/components</name>
+  </compound>
+  <compound refid="dir_205f712d38e10a9a191eba20b71dc291" kind="dir"><name>src/libbsn/src/configuration</name>
+  </compound>
+  <compound refid="dir_8a676fa8bf3676acc0e762ad519b41c1" kind="dir"><name>src/libbsn/include/libbsn/configuration</name>
+  </compound>
+  <compound refid="dir_c33613a292a310e39c057f1f598baed4" kind="dir"><name>src/sa-bsn/system_manager/enactor/include/controller</name>
+  </compound>
+  <compound refid="dir_d708f9df864240b23690a9e4f82ab435" kind="dir"><name>src/sa-bsn/knowledge_repository/data_access</name>
+  </compound>
+  <compound refid="dir_c1fd8870642fc348c13bba748557a702" kind="dir"><name>src/sa-bsn/knowledge_repository/data_access/include/data_access</name>
+  </compound>
+  <compound refid="dir_78c3d85035859e77a69a25fb37583f0d" kind="dir"><name>src/sa-bsn/target_system/effectors</name>
+  </compound>
+  <compound refid="dir_4cfa5d186d967e0d0dc4c5e3b4ed19a5" kind="dir"><name>src/sa-bsn/system_manager/enactor/include/enactor</name>
+  </compound>
+  <compound refid="dir_4608eee037232a547391c866eb6a4619" kind="dir"><name>src/sa-bsn/system_manager/enactor</name>
+  </compound>
+  <compound refid="dir_cdff0d214610f5629d418322f75b48e5" kind="dir"><name>src/sa-bsn/system_manager/adaptation_engine/include/engine</name>
+  </compound>
+  <compound refid="dir_749ff10de60b3471b204734c07089d11" kind="dir"><name>src/sa-bsn/environment</name>
+  </compound>
+  <compound refid="dir_36327e7bf9070d30e045b80b98fcf77d" kind="dir"><name>src/libbsn/src/filters</name>
+  </compound>
+  <compound refid="dir_490c93b2d178fe0cb5faeea327b9b551" kind="dir"><name>src/libbsn/include/libbsn/filters</name>
+  </compound>
+  <compound refid="dir_1228ef77e0d452ae142f4c70489773c9" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g3t1_1</name>
+  </compound>
+  <compound refid="dir_cd1f0de2c857eb4f00100c82dab65b65" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g3t1_1</name>
+  </compound>
+  <compound refid="dir_7a2efd16d830dc92e0857984052b507e" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g3t1_2</name>
+  </compound>
+  <compound refid="dir_7cbd9eaac2774dcd34176b9b97c7322b" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g3t1_2</name>
+  </compound>
+  <compound refid="dir_62bed48faad69bedb898425cdc4d2424" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g3t1_3</name>
+  </compound>
+  <compound refid="dir_ec4904018f602ded76732331486ca470" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g3t1_3</name>
+  </compound>
+  <compound refid="dir_af9d90ef68e7847d546c46aeabc3fb9d" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g3t1_4</name>
+  </compound>
+  <compound refid="dir_3c94278dd2b629edb9709d72d9df7e0d" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g3t1_4</name>
+  </compound>
+  <compound refid="dir_f5b383c0c7108ffd8d1e457c0320638f" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g3t1_5</name>
+  </compound>
+  <compound refid="dir_8969386704e578c012962f50abe1ef1e" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g3t1_5</name>
+  </compound>
+  <compound refid="dir_32f9351f12aa67b265895c1b344436f0" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g3t1_6</name>
+  </compound>
+  <compound refid="dir_8f2fd1adb30a589e380b4edfcdc0b6a4" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g3t1_6</name>
+  </compound>
+  <compound refid="dir_8bfdeca4f6e72d1b967a406d8c2af3ad" kind="dir"><name>src/sa-bsn/target_system/components/component/include/component/g4t1</name>
+  </compound>
+  <compound refid="dir_dc9cf23742978750eef05a08f254186e" kind="dir"><name>src/sa-bsn/target_system/components/component/src/g4t1</name>
+  </compound>
+  <compound refid="dir_643fe34f7b2bdc1442276ebc87b3cb2f" kind="dir"><name>src/libbsn/include/libbsn/generator</name>
+  </compound>
+  <compound refid="dir_41e783f9e30e1b755fbf55c66439287d" kind="dir"><name>src/libbsn/src/generator</name>
+  </compound>
+  <compound refid="dir_f7cb86759195c51b2f06f9537b05b4b5" kind="dir"><name>src/libbsn/src/goalmodel</name>
+  </compound>
+  <compound refid="dir_4a90a0391c9fad23deb9cff6e18623ae" kind="dir"><name>src/libbsn/include/libbsn/goalmodel</name>
+  </compound>
+  <compound refid="dir_df7abd43abb61486b9ff190473949a1d" kind="dir"><name>src/libbsn/include</name>
+  </compound>
+  <compound refid="dir_f03eb50f104db3cea34c702cbda0e1eb" kind="dir"><name>src/sa-bsn/target_system/components/component/include</name>
+  </compound>
+  <compound refid="dir_84b6dcf2529969a80efa085b59b9089f" kind="dir"><name>src/sa-bsn/knowledge_repository/data_access/include</name>
+  </compound>
+  <compound refid="dir_00797661338d0b60cc5b0315c5afd764" kind="dir"><name>src/sa-bsn/environment/patient/include</name>
+  </compound>
+  <compound refid="dir_541953cd7281d88cebf7c74217de7a4c" kind="dir"><name>src/sa-bsn/target_system/effectors/param_adapter/include</name>
+  </compound>
+  <compound refid="dir_ac4db0263e564eeaafebb07bc2f809dd" kind="dir"><name>src/sa-bsn/logging_infrastructure/logger/include</name>
+  </compound>
+  <compound refid="dir_ccca917a6867a44e02405f971e0e01a3" kind="dir"><name>src/sa-bsn/simulation/injector/include</name>
+  </compound>
+  <compound refid="dir_67f664916e4a84898a9ed61e29be9a4d" kind="dir"><name>src/archlib/include</name>
+  </compound>
+  <compound refid="dir_1f78501b5dfee483207f9c1e6ecd7d8d" kind="dir"><name>src/sa-bsn/system_manager/adaptation_engine/include</name>
+  </compound>
+  <compound refid="dir_1f1d08cbadb67c7a44454216c00b3c3c" kind="dir"><name>src/sa-bsn/system_manager/enactor/include</name>
+  </compound>
+  <compound refid="dir_337eef705d22193098767f9854e5a52f" kind="dir"><name>src/sa-bsn/simulation/injector</name>
+  </compound>
+  <compound refid="dir_b99212792bdecdc886ba401cce59d31f" kind="dir"><name>src/sa-bsn/knowledge_repository</name>
+  </compound>
+  <compound refid="dir_8f7d975d66dcfbb8005559e9a945d9f0" kind="dir"><name>src/libbsn/include/libbsn</name>
+  </compound>
+  <compound refid="dir_1b3ed615309ca9bc94672b13777cb4d7" kind="dir"><name>src/libbsn</name>
+  </compound>
+  <compound refid="dir_f89ff0282686e89282a1d25615c5865f" kind="dir"><name>src/sa-bsn/logging_infrastructure/logger</name>
+  </compound>
+  <compound refid="dir_d581bd466ddd750643f8adfd4eb084b9" kind="dir"><name>src/sa-bsn/logging_infrastructure</name>
+  </compound>
+  <compound refid="dir_d6ffbb0b16dbe573c428b1a7d3bbb617" kind="dir"><name>src/libbsn/src/model</name>
+  </compound>
+  <compound refid="dir_e346bdf11713f0ab8422da634091a0da" kind="dir"><name>src/libbsn/include/libbsn/model</name>
+  </compound>
+  <compound refid="dir_bee2b3c94f8a5e52fec4471b723184f2" kind="dir"><name>src/sa-bsn/target_system/effectors/param_adapter</name>
+  </compound>
+  <compound refid="dir_a6b5881846e822b1c16223f7a90cd9aa" kind="dir"><name>src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter</name>
+  </compound>
+  <compound refid="dir_a002fd1ebd906690227ee829db4612d7" kind="dir"><name>src/sa-bsn/environment/patient</name>
+  </compound>
+  <compound refid="dir_0a05d3b0c9861b6955a9ad600ba25401" kind="dir"><name>src/sa-bsn/target_system/probes</name>
+  </compound>
+  <compound refid="dir_22bd3ae72c8b9ac44162bfdb06f014a2" kind="dir"><name>src/libbsn/include/libbsn/processor</name>
+  </compound>
+  <compound refid="dir_0c248d2aa3e5975019d0d4e8f849b240" kind="dir"><name>src/libbsn/src/processor</name>
+  </compound>
+  <compound refid="dir_64d389c66c8782a316ac0e9c13b7e863" kind="dir"><name>src/libbsn/src/range</name>
+  </compound>
+  <compound refid="dir_c03ba0c34b20eec6a4a6bb325bd4c427" kind="dir"><name>src/libbsn/include/libbsn/range</name>
+  </compound>
+  <compound refid="dir_eb0a9776c5de32e5e1c9837b6c35f4dd" kind="dir"><name>src/libbsn/src/resource</name>
+  </compound>
+  <compound refid="dir_cc2e5613f4416c0a7e7f289fb7ba109d" kind="dir"><name>src/libbsn/include/libbsn/resource</name>
+  </compound>
+  <compound refid="dir_67bfdd06b9e1d9840810a9d51e07a67d" kind="dir"><name>src/sa-bsn</name>
+  </compound>
+  <compound refid="dir_ee4fcc9b5917ecc41492dfd3086d4c86" kind="dir"><name>src/sa-bsn/simulation</name>
+  </compound>
+  <compound refid="dir_53db198a34ebb989fddaab2f2571e0a3" kind="dir"><name>src/sa-bsn/target_system/effectors/param_adapter/src</name>
+  </compound>
+  <compound refid="dir_b9cf9d22fcea8e4f52eabf3378ba0335" kind="dir"><name>src/sa-bsn/target_system/components/component/src</name>
+  </compound>
+  <compound refid="dir_28787ab5ba8dda38326637198f7b7d98" kind="dir"><name>src/sa-bsn/system_manager/adaptation_engine/src</name>
+  </compound>
+  <compound refid="dir_fbb7f83508d65ad88b882e23eeccc7ed" kind="dir"><name>src/libbsn/src</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_3b5ff61873bc38528b61ac0dc45e0bf7" kind="dir"><name>src/sa-bsn/knowledge_repository/data_access/src</name>
+  </compound>
+  <compound refid="dir_2f9e2cda59cdda6ec32a8bb917fab64b" kind="dir"><name>src/sa-bsn/system_manager/enactor/src</name>
+  </compound>
+  <compound refid="dir_6f9ea8a8df52491d1a897b47f811d33a" kind="dir"><name>src/sa-bsn/simulation/injector/src</name>
+  </compound>
+  <compound refid="dir_d978607e8ab218b5b824903d3f660863" kind="dir"><name>src/sa-bsn/logging_infrastructure/logger/src</name>
+  </compound>
+  <compound refid="dir_657dd72045f176ebb7e04fc2c410f402" kind="dir"><name>src/sa-bsn/environment/patient/src</name>
+  </compound>
+  <compound refid="dir_383c43fd0da3a69e1b7af261769a27c7" kind="dir"><name>src/archlib/src</name>
+  </compound>
+  <compound refid="dir_ac4796b96f58b29c127bc656c2ffdf13" kind="dir"><name>src/sa-bsn/system_manager</name>
+  </compound>
+  <compound refid="dir_e9cab8cc8a7f6a9707f8911617fd4baf" kind="dir"><name>src/archlib/src/target_system</name>
+  </compound>
+  <compound refid="dir_e70d6ec7091086c81b6e93c354deb1ee" kind="dir"><name>src/sa-bsn/target_system</name>
+  </compound>
+  <compound refid="dir_03cba4c4b5fbabfa308208696f75219f" kind="dir"><name>src/archlib/include/archlib/target_system</name>
+  </compound>
+  <compound refid="dir_bd559c46e337b77c0ba6591045fb5dd5" kind="dir"><name>src/libbsn/src/time</name>
+  </compound>
+  <compound refid="dir_800ec9653fc75de31ddb83b9b3a787bc" kind="dir"><name>src/libbsn/include/libbsn/time</name>
+  </compound>
+  <compound refid="dir_b3cfbae5d67ae7091005f5394b61d2ca" kind="dir"><name>src/libbsn/src/utils</name>
+  </compound>
+  <compound refid="dir_905bfabc4a82641fdd63268e9d9707f0" kind="dir"><name>src/libbsn/include/libbsn/utils</name>
+  </compound>
+</doxygenindex>

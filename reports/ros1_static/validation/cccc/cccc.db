@@ -1,0 +1,33 @@
+CCCC_Module@Consumer@class@
+CCCC_ModExt@Consumer@class@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@2@definition@F???2@LOC:1 COM:0 MVG:0@2@d@
+CCCC_Module@SignatureUser@class@
+CCCC_ModExt@SignatureUser@class@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@3@definition@F???2@LOC:1 COM:0 MVG:0@2@d@
+CCCC_Module@Standalone@class@
+CCCC_ModExt@Standalone@class@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@4@definition@F???2@LOC:1 COM:0 MVG:0@2@d@
+CCCC_Module@Supplier@class@
+CCCC_ModExt@Supplier@class@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@1@definition@F???2@LOC:1 COM:0 MVG:0@2@d@
+CCCC_Module@char@builtin@
+CCCC_ModExt@char@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@double@builtin@
+CCCC_ModExt@double@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@float@builtin@
+CCCC_ModExt@float@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@int@builtin@
+CCCC_ModExt@int@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@long@builtin@
+CCCC_ModExt@long@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@void@builtin@
+CCCC_ModExt@void@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Member@Consumer@run@@()@
+CCCC_MemExt@Consumer@run@@()@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@2@definition@F???0@LOC:0 COM:0 MVG:0@0@d@
+CCCC_Member@SignatureUser@use@@(Supplier &)@
+CCCC_MemExt@SignatureUser@use@@(Supplier &)@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@3@definition@F???0@LOC:0 COM:0 MVG:0@0@d@
+CCCC_Member@Standalone@work@@()@
+CCCC_MemExt@Standalone@work@@()@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@4@definition@F???0@LOC:0 COM:0 MVG:0@0@d@
+CCCC_Member@Supplier@work@@()@
+CCCC_MemExt@Supplier@work@@()@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@1@definition@F???0@LOC:0 COM:0 MVG:0@0@d@
+CCCC_UseRel@Supplier@Consumer@
+CCCC_UseExt@Supplier@Consumer@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@2@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseRel@Supplier@SignatureUser@
+CCCC_UseExt@Supplier@SignatureUser@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@3@pass by reference@F???0@*@0@p@
+CCCC_RejExt@/workspaces/bsn_/tools/ros1_metrics/fixtures/cbo.cpp@1@<file scope items>@F???2@LOC:0 COM:0 MVG:0@2@r@

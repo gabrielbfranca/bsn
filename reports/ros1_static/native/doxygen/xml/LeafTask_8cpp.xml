@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="LeafTask_8cpp" kind="file" language="C++">
+    <compoundname>LeafTask.cpp</compoundname>
+    <includes refid="LeafTask_8hpp" local="yes">libbsn/goalmodel/LeafTask.hpp</includes>
+    <includes local="no">memory</includes>
+    <incdepgraph>
+      <node id="772">
+        <label>libbsn/goalmodel/Goal.hpp</label>
+        <link refid="Goal_8hpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>libbsn/goalmodel/Task.hpp</label>
+        <link refid="Task_8hpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>stdexcept</label>
+      </node>
+      <node id="764">
+        <label>string</label>
+      </node>
+      <node id="770">
+        <label>libbsn/goalmodel/Node.hpp</label>
+        <link refid="Node_8hpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>vector</label>
+      </node>
+      <node id="767">
+        <label>libbsn/goalmodel/Property.hpp</label>
+        <link refid="Property_8hpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>libbsn/goalmodel/Context.hpp</label>
+        <link refid="Context_8hpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>src/libbsn/src/goalmodel/LeafTask.cpp</label>
+        <link refid="LeafTask_8cpp"/>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>libbsn/goalmodel/LeafTask.hpp</label>
+        <link refid="LeafTask_8hpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="771">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LeafTask_8hpp" kindref="compound">libbsn/goalmodel/LeafTask.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">goalmodel<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="7" refid="classbsn_1_1goalmodel_1_1LeafTask_1a2e1a112f92802439c7d40d335b8c9076" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" kindref="member">LeafTask::LeafTask</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;description,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref><sp/>&amp;context,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;cost,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;reliability,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;frequency)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Task" kindref="compound">Task</ref>(id,<sp/>description),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context(context),<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cost(cost),<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reliability(reliability),<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frequency(frequency)<sp/>{}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="classbsn_1_1goalmodel_1_1LeafTask_1aae555a0e2bf1f9b68266ceced51fb666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" kindref="member">LeafTask::LeafTask</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" kindref="member">description</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref>)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Task" kindref="compound">Task</ref>(id,<sp/>description),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref>(),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cost(cost),<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reliability(reliability),<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frequency(frequency)<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" kindref="member">LeafTask::LeafTask</ref>()<sp/>:<sp/><ref refid="classbsn_1_1goalmodel_1_1Task" kindref="compound">Task</ref>(),<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref>(),<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref>(),<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref>(),<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="22" refid="classbsn_1_1goalmodel_1_1LeafTask_1aa4063912deb5225a452f1d33fbeeefbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1aa4063912deb5225a452f1d33fbeeefbe" kindref="member">LeafTask::~LeafTask</ref>(){};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="classbsn_1_1goalmodel_1_1LeafTask_1aec908209587865d0543bfd7f2db0e5c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" kindref="member">LeafTask::LeafTask</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref><sp/>&amp;obj)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Task" kindref="compound">Task</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" kindref="member">getID</ref>(),<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" kindref="member">getDescription</ref>()),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" kindref="member">getContext</ref>()),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" kindref="member">getCost</ref>()),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" kindref="member">getReliability</ref>()),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" kindref="member">getFrequency</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref>&amp;<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" kindref="member">LeafTask::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" kindref="member">getID</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" kindref="member">description</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" kindref="member">getDescription</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" kindref="member">getContext</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" kindref="member">getCost</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" kindref="member">getReliability</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" kindref="member">getFrequency</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classbsn_1_1goalmodel_1_1LeafTask_1a2188abe54b01f27ced52f60313f6c806" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a2188abe54b01f27ced52f60313f6c806" kindref="member">LeafTask::setContext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;context<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" kindref="member">LeafTask::getContext</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" kindref="member">context</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classbsn_1_1goalmodel_1_1LeafTask_1a362161b7df5ea2b23d085915dfbb52ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a362161b7df5ea2b23d085915dfbb52ed" kindref="member">LeafTask::setCost</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cost<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" kindref="member">LeafTask::getCost</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classbsn_1_1goalmodel_1_1LeafTask_1aa3f5aad58bc1136fcb9fc77f1634d793" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1aa3f5aad58bc1136fcb9fc77f1634d793" kindref="member">LeafTask::setReliability</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;reliability<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" kindref="member">LeafTask::getReliability</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" kindref="member">reliability</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classbsn_1_1goalmodel_1_1LeafTask_1a9d3cac1479633c239fe8f58fdad3a16f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a9d3cac1479633c239fe8f58fdad3a16f" kindref="member">LeafTask::setFrequency</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;frequency<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" kindref="member">LeafTask::getFrequency</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" kindref="member">frequency</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classbsn_1_1goalmodel_1_1LeafTask_1a1313e8959be340ca1974f8aaafd83a7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1LeafTask_1a1313e8959be340ca1974f8aaafd83a7c" kindref="member">LeafTask::addChild</ref>(std::shared_ptr&lt;Node&gt;<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::invalid_argument(</highlight><highlight class="stringliteral">&quot;Leaf<sp/>Tasks<sp/>cannot<sp/>contain<sp/>children&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/goalmodel/LeafTask.cpp"/>
+  </compounddef>
+</doxygen>

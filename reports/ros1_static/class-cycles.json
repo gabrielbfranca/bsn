@@ -1,0 +1,8 @@
+{
+  "algorithm": "networkx.strongly_connected_components",
+  "nodes": 46,
+  "distinct_directed_edges": 65,
+  "relations": "inheritance and own attribute types from Doxygen XML; self relations excluded",
+  "cyclic_components": [],
+  "self_relations_excluded": true
+}

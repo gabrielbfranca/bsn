@@ -1,0 +1,60 @@
+rules:
+  - id: isolation.cpp.file-stream-extra
+    languages: [cpp]
+    severity: INFO
+    message: Stream de arquivo ou abertura por receptor de nome reconhecido; confirmar tipo.
+    metadata: {category: file_io, heuristic: receiver-name-or-declaration}
+    pattern-either:
+      - pattern: std::fstream $S;
+      - pattern: std::ifstream $S;
+      - pattern: std::ofstream $S;
+      - patterns:
+          - pattern: $S.open(...)
+          - metavariable-regex: {metavariable: $S, regex: '^(fp|file|stream|input|output)$'}
+  - id: isolation.cpp.high-resolution-clock
+    languages: [cpp]
+    severity: INFO
+    message: Leitura de relógio real de alta resolução.
+    metadata: {category: real_clock}
+    pattern: std::chrono::high_resolution_clock::now(...)
+  - id: isolation.cpp.ros-parameters
+    languages: [cpp]
+    severity: INFO
+    message: Acesso a parâmetros; confirmar que o receptor é ROS.
+    metadata: {category: ros_parameters, heuristic: method-name}
+    pattern-either:
+      - pattern: $N.getParam(...)
+      - pattern: $N.param(...)
+      - pattern: $N.param<$T>(...)
+      - pattern: ros::param::get(...)
+  - id: isolation.cpp.ros-rate-sleep
+    languages: [cpp]
+    severity: INFO
+    message: Espera por receptor de nome rate; confirmar tipo ROS.
+    metadata: {category: real_sleep, heuristic: receiver-name}
+    patterns:
+      - pattern: $R.sleep(...)
+      - metavariable-regex: {metavariable: $R, regex: '.*rate.*'}
+  - id: isolation.cpp.signal-handler
+    languages: [cpp]
+    severity: INFO
+    message: Instalação de tratador de sinal modifica estado global do processo.
+    metadata: {category: process_signal}
+    pattern-either:
+      - pattern: signal(...)
+      - pattern: std::signal(...)
+  - id: isolation.cpp.ros-package-path
+    languages: [cpp]
+    severity: INFO
+    message: Resolução de caminho dependente do ambiente ROS.
+    metadata: {category: ros_package_path}
+    pattern: ros::package::getPath(...)
+  - id: isolation.cpp.directory-io
+    languages: [cpp]
+    severity: INFO
+    message: Operação em diretório.
+    metadata: {category: directory_io}
+    pattern-either:
+      - pattern: mkdir(...)
+      - pattern: opendir(...)
+      - pattern: std::filesystem::create_directories(...)

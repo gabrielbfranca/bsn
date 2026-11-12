@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_f5b383c0c7108ffd8d1e457c0320638f" kind="dir">
+    <compoundname>src/sa-bsn/target_system/components/component/include/component/g3t1_5</compoundname>
+    <innerfile refid="G3T1__5_8hpp">G3T1_5.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/target_system/components/component/include/component/g3t1_5/"/>
+  </compounddef>
+</doxygen>

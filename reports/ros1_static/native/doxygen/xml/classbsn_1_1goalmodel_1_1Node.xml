@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1goalmodel_1_1Node" kind="class" language="C++" prot="public">
+    <compoundname>bsn::goalmodel::Node</compoundname>
+    <derivedcompoundref refid="classbsn_1_1goalmodel_1_1Goal" prot="public" virt="non-virtual">bsn::goalmodel::Goal</derivedcompoundref>
+    <derivedcompoundref refid="classbsn_1_1goalmodel_1_1Task" prot="public" virt="non-virtual">bsn::goalmodel::Task</derivedcompoundref>
+    <includes refid="Node_8hpp" local="no">Node.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Node::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="42" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Node.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" compoundref="Node_8cpp" startline="74" endline="82">findChild</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" compoundref="Node_8cpp" startline="40" endline="42">getID</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1ac8ea48fa240031a0c8b5fa2e76fba161" compoundref="Node_8cpp" startline="36" endline="38">setID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Node::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="43" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Node.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" compoundref="Node_8cpp" startline="48" endline="50">getDescription</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" compoundref="Node_8cpp" startline="17" endline="25">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">bsn::goalmodel::LeafTask::operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" compoundref="Node_8cpp" startline="27" endline="30">operator==</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a23c73e43071f1ca7d5a33e3992c42001" compoundref="Node_8cpp" startline="44" endline="46">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;Node&gt; &gt; bsn::goalmodel::Node::children</definition>
+        <argsstring></argsstring>
+        <name>children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="44" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Node.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Task_1a8df193e5fcbf36a3b514ca283d763322" compoundref="Task_8cpp" startline="11" endline="13">bsn::goalmodel::Task::addChild</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a331301404b90ce9d959957a36fa93f0d" compoundref="Node_8cpp" startline="60" endline="62">addChild</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" compoundref="Node_8cpp" startline="74" endline="82">findChild</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" compoundref="Node_8cpp" startline="69" endline="72">getChild</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" compoundref="Node_8cpp" startline="56" endline="58">getChildren</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a918e385077b367efbcf321acafe49b24" compoundref="Node_8cpp" startline="52" endline="54">hasChildren</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" compoundref="Node_8cpp" startline="17" endline="25">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" compoundref="Node_8cpp" startline="64" endline="67">removeChild</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1addc1569b8e62fbb1a8e222d6ceef482d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Node::Node</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="15" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1ac66e87f7d3c17e1a6b06e158861b5f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="16" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a1f05ee3a04f3954e35d09f1228802f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="17" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a8add7ef85cb81e1d90704141aaf7c719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Node::Node</definition>
+        <argsstring>(const Node &amp;)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="19" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &amp;</type>
+        <definition>Node &amp; bsn::goalmodel::Node::operator=</definition>
+        <argsstring>(const Node &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="20" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="17" bodyend="25"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" compoundref="Node_8hpp" startline="43">description</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" compoundref="Node_8cpp" startline="56" endline="58">getChildren</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" compoundref="Node_8cpp" startline="48" endline="50">getDescription</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" compoundref="Node_8cpp" startline="40" endline="42">getID</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::goalmodel::Node::operator==</definition>
+        <argsstring>(const Node &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="21" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="27" bodyend="30"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" compoundref="Node_8hpp" startline="43">description</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" compoundref="Node_8cpp" startline="48" endline="50">getDescription</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" compoundref="Node_8cpp" startline="40" endline="42">getID</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1ac8ea48fa240031a0c8b5fa2e76fba161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Node::setID</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="24" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="36" bodyend="38"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" compoundref="Node_8hpp" startline="42">id</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Node::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="25" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="40" bodyend="42"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" compoundref="Node_8hpp" startline="42">id</references>
+        <referencedby refid="namespacebsn_1_1goalmodel_1ae667127e89e6ad5a47bc0c6e86601687" compoundref="Node_8cpp" startline="32" endline="34">bsn::goalmodel::operator&lt;&lt;</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" compoundref="Node_8cpp" startline="17" endline="25">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">bsn::goalmodel::LeafTask::operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" compoundref="Node_8cpp" startline="27" endline="30">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a23c73e43071f1ca7d5a33e3992c42001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Node::setDescription</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="27" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="44" bodyend="46"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" compoundref="Node_8hpp" startline="43">description</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Node::getDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>getDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="28" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="48" bodyend="50"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" compoundref="Node_8hpp" startline="43">description</references>
+        <referencedby refid="namespacebsn_1_1goalmodel_1ae667127e89e6ad5a47bc0c6e86601687" compoundref="Node_8cpp" startline="32" endline="34">bsn::goalmodel::operator&lt;&lt;</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" compoundref="Node_8cpp" startline="17" endline="25">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">bsn::goalmodel::LeafTask::operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" compoundref="Node_8cpp" startline="27" endline="30">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a918e385077b367efbcf321acafe49b24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::goalmodel::Node::hasChildren</definition>
+        <argsstring>() const</argsstring>
+        <name>hasChildren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="30" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="52" bodyend="54"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; bsn::goalmodel::Node::getChildren</definition>
+        <argsstring>() const</argsstring>
+        <name>getChildren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="31" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="56" bodyend="58"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+        <referencedby refid="namespacebsn_1_1goalmodel_1ae667127e89e6ad5a47bc0c6e86601687" compoundref="Node_8cpp" startline="32" endline="34">bsn::goalmodel::operator&lt;&lt;</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" compoundref="Node_8cpp" startline="17" endline="25">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a331301404b90ce9d959957a36fa93f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Node::addChild</definition>
+        <argsstring>(std::shared_ptr&lt; Node &gt;)</argsstring>
+        <name>addChild</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt;</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="33" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="60" bodyend="62"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Node::removeChild</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>removeChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="34" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="64" bodyend="67"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" compoundref="Node_8cpp" startline="74" endline="82">findChild</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Node &gt; bsn::goalmodel::Node::getChild</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>getChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="35" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="69" bodyend="72"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" compoundref="Node_8cpp" startline="74" endline="82">findChild</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classbsn_1_1goalmodel_1_1Node_1a0cf3374865c171a6d862bc6a18125905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Node &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="22" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bsn::goalmodel::Node::findChild</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>findChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="39" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="74" bodyend="82"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" compoundref="Node_8hpp" startline="44">children</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" compoundref="Node_8hpp" startline="42">id</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" compoundref="Node_8cpp" startline="69" endline="72">getChild</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" compoundref="Node_8cpp" startline="64" endline="67">removeChild</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="210">
+        <label>bsn::goalmodel::Task</label>
+        <link refid="classbsn_1_1goalmodel_1_1Task"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>bsn::goalmodel::LeafTask</label>
+        <link refid="classbsn_1_1goalmodel_1_1LeafTask"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>bsn::goalmodel::Node</label>
+        <link refid="classbsn_1_1goalmodel_1_1Node"/>
+      </node>
+      <node id="209">
+        <label>bsn::goalmodel::Goal</label>
+        <link refid="classbsn_1_1goalmodel_1_1Goal"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="12" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Node.hpp" bodystart="12" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a331301404b90ce9d959957a36fa93f0d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>addChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>children</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>description</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1afc4cee14d6bbff822aad35eaf762631d" prot="private" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>findChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>getChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>getChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>getDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>getID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a918e385077b367efbcf321acafe49b24" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>hasChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>id</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1addc1569b8e62fbb1a8e222d6ceef482d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac66e87f7d3c17e1a6b06e158861b5f95" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a8add7ef85cb81e1d90704141aaf7c719" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a0cf3374865c171a6d862bc6a18125905" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>operator==</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>removeChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a23c73e43071f1ca7d5a33e3992c42001" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>setDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac8ea48fa240031a0c8b5fa2e76fba161" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Node</scope><name>setID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a1f05ee3a04f3954e35d09f1228802f6a" prot="public" virt="virtual"><scope>bsn::goalmodel::Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

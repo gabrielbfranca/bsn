@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_490c93b2d178fe0cb5faeea327b9b551" kind="dir">
+    <compoundname>src/libbsn/include/libbsn/filters</compoundname>
+    <innerfile refid="MovingAverage_8hpp">MovingAverage.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/filters/"/>
+  </compounddef>
+</doxygen>

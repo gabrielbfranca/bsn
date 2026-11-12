@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module PatientModule-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="96" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="9" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="3" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="32.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="3.000" level="0" />
+<weighted_methods_per_class_unity value="7" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="7" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="11" />
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>PatientModule(int &amp;,char **,string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="13" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="3" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>body()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="18" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="98" />
+</extent>
+<lines_of_code value="12" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>configureDataGenerator(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="22" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="41" />
+</extent>
+<lines_of_code value="38" level="1" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getPatientData(Request &amp;,Response &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="21" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="88" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setUp()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="16" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="7" />
+</extent>
+<lines_of_code value="22" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="7.333" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>tearDown()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="17" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="86" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~PatientModule()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="14" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="5" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>PatientModule</name>
+<client_module>
+</client_module>
+<supplier_module>
+<name>NodeHandle</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="31" />
+</extent>
+<name>ROSComponent</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="11" />
+</extent>
+<name>Request</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="88" />
+</extent>
+<name>Response</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="89" />
+</extent>
+<name>ServiceServer</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="32" />
+</extent>
+<name>map</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="24" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="25" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="26" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="27" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="13" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="22" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="3" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="41" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

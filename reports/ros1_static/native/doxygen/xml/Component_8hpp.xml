@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Component_8hpp" kind="file" language="C++">
+    <compoundname>Component.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">signal.h</includes>
+    <includes local="yes">ros/ros.h</includes>
+    <includes local="yes">archlib/Event.h</includes>
+    <includes local="yes">archlib/Status.h</includes>
+    <includes local="yes">archlib/EnergyStatus.h</includes>
+    <includes local="yes">archlib/AdaptationCommand.h</includes>
+    <includes local="yes">archlib/EffectorRegister.h</includes>
+    <includes refid="ROSComponent_8hpp" local="yes">archlib/ROSComponent.hpp</includes>
+    <includedby refid="Component_8cpp" local="yes">src/archlib/src/target_system/Component.cpp</includedby>
+    <includedby refid="CentralHub_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp</includedby>
+    <includedby refid="Sensor_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/Sensor.hpp</includedby>
+    <includedby refid="G4T1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</includedby>
+    <incdepgraph>
+      <node id="140">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="147">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>stdexcept</label>
+      </node>
+      <node id="137">
+        <label>string</label>
+      </node>
+      <node id="136">
+        <label>src/archlib/include/archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="138">
+        <label>signal.h</label>
+      </node>
+      <node id="145">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="139">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="142">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="144">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="163">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp</label>
+        <link refid="g3t1__3_8cpp"/>
+      </node>
+      <node id="150">
+        <label>src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp</label>
+        <link refid="CentralHub_8hpp"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</label>
+        <link refid="G4T1_8hpp"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</label>
+        <link refid="G3T1__2_8cpp"/>
+      </node>
+      <node id="153">
+        <label>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</label>
+        <link refid="G4T1_8cpp"/>
+      </node>
+      <node id="155">
+        <label>src/sa-bsn/target_system/components/component/include/component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</label>
+        <link refid="CentralHub_8cpp"/>
+      </node>
+      <node id="172">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp</label>
+        <link refid="g3t1__6_8cpp"/>
+      </node>
+      <node id="170">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</label>
+        <link refid="G3T1__5_8cpp"/>
+      </node>
+      <node id="167">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</label>
+        <link refid="G3T1__4_8cpp"/>
+      </node>
+      <node id="158">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</label>
+        <link refid="G3T1__1_8cpp"/>
+      </node>
+      <node id="159">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</label>
+        <link refid="G3T1__2_8hpp"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</label>
+        <link refid="G3T1__6_8cpp"/>
+      </node>
+      <node id="148">
+        <label>src/archlib/include/archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>src/sa-bsn/target_system/components/component/src/Sensor.cpp</label>
+        <link refid="Sensor_8cpp"/>
+      </node>
+      <node id="156">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</label>
+        <link refid="g3t1__1_8cpp"/>
+      </node>
+      <node id="162">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</label>
+        <link refid="G3T1__3_8hpp"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</label>
+        <link refid="G3T1__3_8cpp"/>
+      </node>
+      <node id="165">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</label>
+        <link refid="G3T1__4_8hpp"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp</label>
+        <link refid="g3t1__4_8cpp"/>
+      </node>
+      <node id="171">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</label>
+        <link refid="G3T1__6_8hpp"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp</label>
+        <link refid="g3t1__5_8cpp"/>
+      </node>
+      <node id="160">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp</label>
+        <link refid="g3t1__2_8cpp"/>
+      </node>
+      <node id="149">
+        <label>src/archlib/src/target_system/Component.cpp</label>
+        <link refid="Component_8cpp"/>
+      </node>
+      <node id="168">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</label>
+        <link refid="G3T1__5_8hpp"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>src/sa-bsn/target_system/components/component/apps/g4t1.cpp</label>
+        <link refid="g4t1_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classarch_1_1target__system_1_1Component" prot="public">arch::target_system::Component</innerclass>
+    <innernamespace refid="namespacearch">arch</innernamespace>
+    <innernamespace refid="namespacearch_1_1target__system">arch::target_system</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMPONENT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMPONENT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/ros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Status.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EnergyStatus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/AdaptationCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EffectorRegister.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ROSComponent_8hpp" kindref="compound">archlib/ROSComponent.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacearch" kindref="compound">arch</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="namespacearch_1_1target__system" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">target_system<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classarch_1_1target__system_1_1Component" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1ROSComponent" kindref="compound">ROSComponent</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" kindref="member">Component</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" kindref="member">~Component</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" kindref="member">Component</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref><sp/>&amp;<ref refid="classarch_1_1target__system_1_1Component_1a78dc2ea33dc96e3df648571af81b91a4" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">Component</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22" kindref="member">body</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" kindref="member">sendEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;content);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;content);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" kindref="member">sendEnergyStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;cost);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" kindref="member">reconfigure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" kindref="member">activate</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" kindref="member">deactivate</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" kindref="member">shutdownComponent</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/><ref refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" kindref="member">sigIntHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>signal);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" kindref="member">status</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" kindref="member">collect_event</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" kindref="member">collect_status</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" kindref="member">collect_energy_status</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classarch_1_1target__system_1_1Component_1a873aaa61ae03e7d1e5fd670ed4596a05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Subscriber<sp/><ref refid="classarch_1_1target__system_1_1Component_1a873aaa61ae03e7d1e5fd670ed4596a05" kindref="member">effect</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/archlib/include/archlib/target_system/Component.hpp"/>
+  </compounddef>
+</doxygen>

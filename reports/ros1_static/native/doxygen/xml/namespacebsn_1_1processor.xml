@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn_1_1processor" kind="namespace" language="C++">
+    <compoundname>bsn::processor</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebsn_1_1processor_1aa656f0fa70585ebf07c09768dc62101e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::processor::data_fuse</definition>
+        <argsstring>(std::vector&lt; double &gt;)</argsstring>
+        <name>data_fuse</name>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/processor/Processor.hpp" line="13" column="1"/>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">G4T1::process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebsn_1_1processor_1aa6b0a7c3cdf5f8a0d22d66dad542a6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t bsn::processor::get_sensor_id</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>get_sensor_id</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/processor/Processor.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebsn_1_1processor_1aa1ec43d2e713f862d73f806bf4b01fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::processor::get_value</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>get_value</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/processor/Processor.hpp" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebsn_1_1processor_1a803d0d1bfd322580ea866b160478fef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t bsn::processor::get_sensor_id</definition>
+        <argsstring>(string type)</argsstring>
+        <name>get_sensor_id</name>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/src/processor/Processor.cpp" line="8" column="1" bodyfile="src/libbsn/src/processor/Processor.cpp" bodystart="8" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebsn_1_1processor_1aa6a79215fd3096840406a39c38480ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::processor::get_value</definition>
+        <argsstring>(string packet)</argsstring>
+        <name>get_value</name>
+        <param>
+          <type>string</type>
+          <declname>packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/src/processor/Processor.cpp" line="27" column="1" bodyfile="src/libbsn/src/processor/Processor.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebsn_1_1processor_1a85b474859eb91722abb8f7e92646e6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::processor::data_fuse</definition>
+        <argsstring>(vector&lt; double &gt; packetsReceived)</argsstring>
+        <name>data_fuse</name>
+        <param>
+          <type>vector&lt; double &gt;</type>
+          <declname>packetsReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/src/processor/Processor.cpp" line="32" column="1" bodyfile="src/libbsn/src/processor/Processor.cpp" bodystart="32" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/processor/Processor.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

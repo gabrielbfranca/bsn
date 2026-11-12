@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_eb0a9776c5de32e5e1c9837b6c35f4dd" kind="dir">
+    <compoundname>src/libbsn/src/resource</compoundname>
+    <innerfile refid="Battery_8cpp">Battery.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/src/resource/"/>
+  </compounddef>
+</doxygen>

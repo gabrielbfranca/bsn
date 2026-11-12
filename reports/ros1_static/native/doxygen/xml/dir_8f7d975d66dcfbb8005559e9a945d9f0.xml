@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_8f7d975d66dcfbb8005559e9a945d9f0" kind="dir">
+    <compoundname>src/libbsn/include/libbsn</compoundname>
+    <innerdir refid="dir_8a676fa8bf3676acc0e762ad519b41c1">src/libbsn/include/libbsn/configuration</innerdir>
+    <innerdir refid="dir_490c93b2d178fe0cb5faeea327b9b551">src/libbsn/include/libbsn/filters</innerdir>
+    <innerdir refid="dir_643fe34f7b2bdc1442276ebc87b3cb2f">src/libbsn/include/libbsn/generator</innerdir>
+    <innerdir refid="dir_4a90a0391c9fad23deb9cff6e18623ae">src/libbsn/include/libbsn/goalmodel</innerdir>
+    <innerdir refid="dir_e346bdf11713f0ab8422da634091a0da">src/libbsn/include/libbsn/model</innerdir>
+    <innerdir refid="dir_22bd3ae72c8b9ac44162bfdb06f014a2">src/libbsn/include/libbsn/processor</innerdir>
+    <innerdir refid="dir_c03ba0c34b20eec6a4a6bb325bd4c427">src/libbsn/include/libbsn/range</innerdir>
+    <innerdir refid="dir_cc2e5613f4416c0a7e7f289fb7ba109d">src/libbsn/include/libbsn/resource</innerdir>
+    <innerdir refid="dir_800ec9653fc75de31ddb83b9b3a787bc">src/libbsn/include/libbsn/time</innerdir>
+    <innerdir refid="dir_905bfabc4a82641fdd63268e9d9707f0">src/libbsn/include/libbsn/utils</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/"/>
+  </compounddef>
+</doxygen>

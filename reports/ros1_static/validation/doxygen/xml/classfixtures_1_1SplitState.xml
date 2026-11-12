@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1SplitState" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::SplitState</compoundname>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfixtures_1_1SplitState_1aed667abf533680f1d01a1c84beb2473f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fixtures::SplitState::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="4" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfixtures_1_1SplitState_1a69030718543ea3253b241d43c05f90b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fixtures::SplitState::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="4" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfixtures_1_1SplitState_1aafd216f86ab6c2dcf41f3e59255495e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fixtures::SplitState::SplitState</definition>
+        <argsstring>()</argsstring>
+        <name>SplitState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="4" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classfixtures_1_1SplitState_1a0e693de33e17d495c4c2211192563e60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fixtures::SplitState::a</definition>
+        <argsstring>()</argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="4" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classfixtures_1_1SplitState_1ae0c2f6b294cae4162d113a078e420a23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fixtures::SplitState::b</definition>
+        <argsstring>()</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="4" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="4" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="4" bodyend="4"/>
+    <listofallmembers>
+      <member refid="classfixtures_1_1SplitState_1a0e693de33e17d495c4c2211192563e60" prot="public" virt="non-virtual"><scope>fixtures::SplitState</scope><name>a</name></member>
+      <member refid="classfixtures_1_1SplitState_1ae0c2f6b294cae4162d113a078e420a23" prot="public" virt="non-virtual"><scope>fixtures::SplitState</scope><name>b</name></member>
+      <member refid="classfixtures_1_1SplitState_1aafd216f86ab6c2dcf41f3e59255495e2" prot="public" virt="non-virtual"><scope>fixtures::SplitState</scope><name>SplitState</name></member>
+      <member refid="classfixtures_1_1SplitState_1aed667abf533680f1d01a1c84beb2473f" prot="private" virt="non-virtual"><scope>fixtures::SplitState</scope><name>x</name></member>
+      <member refid="classfixtures_1_1SplitState_1a69030718543ea3253b241d43c05f90b0" prot="private" virt="non-virtual"><scope>fixtures::SplitState</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Markov_8hpp" kind="file" language="C++">
+    <compoundname>Markov.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">array</includes>
+    <includes local="no">random</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="Range_8hpp" local="yes">libbsn/range/Range.hpp</includes>
+    <includedby refid="DataGenerator_8hpp" local="yes">src/libbsn/include/libbsn/generator/DataGenerator.hpp</includedby>
+    <includedby refid="Markov_8cpp" local="yes">src/libbsn/src/generator/Markov.cpp</includedby>
+    <includedby refid="G3T1__1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</includedby>
+    <includedby refid="G3T1__2_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</includedby>
+    <includedby refid="G3T1__3_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</includedby>
+    <includedby refid="G3T1__4_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</includedby>
+    <includedby refid="G3T1__5_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</includedby>
+    <includedby refid="G3T1__6_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</includedby>
+    <incdepgraph>
+      <node id="339">
+        <label>stdint.h</label>
+      </node>
+      <node id="343">
+        <label>stdexcept</label>
+      </node>
+      <node id="342">
+        <label>string</label>
+      </node>
+      <node id="337">
+        <label>random</label>
+      </node>
+      <node id="341">
+        <label>libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>vector</label>
+      </node>
+      <node id="336">
+        <label>array</label>
+      </node>
+      <node id="340">
+        <label>sstream</label>
+      </node>
+      <node id="334">
+        <label>src/libbsn/include/libbsn/generator/Markov.hpp</label>
+        <link refid="Markov_8hpp"/>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="357">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp</label>
+        <link refid="g3t1__3_8cpp"/>
+      </node>
+      <node id="368">
+        <label>src/libbsn/src/generator/Markov.cpp</label>
+        <link refid="Markov_8cpp"/>
+      </node>
+      <node id="355">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</label>
+        <link refid="G3T1__2_8cpp"/>
+      </node>
+      <node id="366">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp</label>
+        <link refid="g3t1__6_8cpp"/>
+      </node>
+      <node id="364">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</label>
+        <link refid="G3T1__5_8cpp"/>
+      </node>
+      <node id="361">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</label>
+        <link refid="G3T1__4_8cpp"/>
+      </node>
+      <node id="352">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</label>
+        <link refid="G3T1__1_8cpp"/>
+      </node>
+      <node id="345">
+        <label>src/libbsn/include/libbsn/generator/DataGenerator.hpp</label>
+        <link refid="DataGenerator_8hpp"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</label>
+        <link refid="G3T1__2_8hpp"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>src/sa-bsn/environment/patient/src/PatientModule.cpp</label>
+        <link refid="PatientModule_8cpp"/>
+      </node>
+      <node id="348">
+        <label>src/sa-bsn/environment/patient/apps/patient.cpp</label>
+        <link refid="patient_8cpp"/>
+      </node>
+      <node id="367">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</label>
+        <link refid="G3T1__6_8cpp"/>
+      </node>
+      <node id="347">
+        <label>src/sa-bsn/environment/patient/include/PatientModule.hpp</label>
+        <link refid="PatientModule_8hpp"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</label>
+        <link refid="g3t1__1_8cpp"/>
+      </node>
+      <node id="344">
+        <label>src/libbsn/include/libbsn/generator/Markov.hpp</label>
+        <link refid="Markov_8hpp"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</label>
+        <link refid="G3T1__3_8hpp"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</label>
+        <link refid="G3T1__3_8cpp"/>
+      </node>
+      <node id="359">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</label>
+        <link refid="G3T1__4_8hpp"/>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp</label>
+        <link refid="g3t1__4_8cpp"/>
+      </node>
+      <node id="365">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</label>
+        <link refid="G3T1__6_8hpp"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp</label>
+        <link refid="g3t1__5_8cpp"/>
+      </node>
+      <node id="346">
+        <label>src/libbsn/src/generator/DataGenerator.cpp</label>
+        <link refid="DataGenerator_8cpp"/>
+      </node>
+      <node id="354">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp</label>
+        <link refid="g3t1__2_8cpp"/>
+      </node>
+      <node id="362">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</label>
+        <link refid="G3T1__5_8hpp"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsn_1_1generator_1_1Markov" prot="public">bsn::generator::Markov</innerclass>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1generator">bsn::generator</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MARKOV_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MARKOV_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Range_8hpp" kindref="compound">libbsn/range/Range.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>OBS.:<sp/>Para<sp/>simplificação</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>O<sp/>vetor<sp/>de<sp/>transições<sp/>contém<sp/>as<sp/>probabilidades<sp/>de<sp/>tal<sp/>forma:</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">generator<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classbsn_1_1generator_1_1Markov" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" kindref="member">Markov</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" kindref="member">Markov</ref>(std::array&lt;float,<sp/>25&gt;<sp/><ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref>,<sp/>std::array&lt;bsn::range::Range,<sp/>5&gt;<sp/><ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref>,<sp/>int32_t<sp/>initialState);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" kindref="member">Markov</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref><sp/>&amp;<sp/></highlight><highlight class="comment">/*obj*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref>&amp;<sp/><ref refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref><sp/>&amp;<sp/></highlight><highlight class="comment">/*obj*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Contém<sp/>a<sp/>probabilidade<sp/>de<sp/>todas<sp/>as<sp/>transições</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;float,25&gt;<sp/><ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>para<sp/>low<sp/>1<sp/>para<sp/>medium<sp/>e<sp/>2<sp/>para<sp/>high</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kindref="member">currentState</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Contém<sp/>os<sp/>intervalos<sp/>de<sp/>cada<sp/>estado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;bsn::range::Range,<sp/>5&gt;<sp/><ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calcula<sp/>o<sp/>próximo<sp/>estado<sp/>da<sp/>cadeia<sp/>de<sp/>markov</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov_1ad8c0269028bbeb7f854a1692c3fe5b6b" kindref="member">next_state</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calcula<sp/>um<sp/>valor<sp/>baseado<sp/>no<sp/>intervalo<sp/>do<sp/>estado<sp/>atual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov_1ad94342911e611efca754ea5a4c3b9dca" kindref="member">calculate_state</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classbsn_1_1generator_1_1Markov_1a59725deb9f6496b5c8dce15bb7b1005a" kindref="member">toString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/include/libbsn/generator/Markov.hpp"/>
+  </compounddef>
+</doxygen>

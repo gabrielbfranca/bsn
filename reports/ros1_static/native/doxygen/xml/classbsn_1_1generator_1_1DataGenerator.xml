@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1generator_1_1DataGenerator" kind="class" language="C++" prot="public">
+    <compoundname>bsn::generator::DataGenerator</compoundname>
+    <includes refid="DataGenerator_8hpp" local="no">DataGenerator.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1generator_1_1DataGenerator_1ad2953242be3566c00914eaeb17655230" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref></type>
+        <definition>Markov bsn::generator::DataGenerator::markovChain</definition>
+        <argsstring></argsstring>
+        <name>markovChain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="27" column="1" bodyfile="src/libbsn/include/libbsn/generator/DataGenerator.hpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">calculateValue</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" compoundref="DataGenerator_8cpp" startline="32" endline="52">nextState</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a1cd2d028c552461ae2084c3d90a8a6bb" compoundref="DataGenerator_8cpp" startline="18" endline="21">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1generator_1_1DataGenerator_1ae1ce8b691264104bd9ea23d01905381c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double bsn::generator::DataGenerator::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="28" column="1" bodyfile="src/libbsn/include/libbsn/generator/DataGenerator.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1generator_1_1DataGenerator_1a2bd30cf19667664aaf29685d0baf7ca1" prot="private" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 bsn::generator::DataGenerator::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="29" column="1" bodyfile="src/libbsn/include/libbsn/generator/DataGenerator.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">calculateValue</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" compoundref="DataGenerator_8cpp" startline="32" endline="52">nextState</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a39c91084817846319e7dca9ed4e4f9e3" compoundref="DataGenerator_8cpp" startline="26" endline="30">setSeed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1a1e1627c22143f5764f08c9847b3e2b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::DataGenerator::DataGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>DataGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="13" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1a007d1879a9d160396f4c5c043836567e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::DataGenerator::DataGenerator</definition>
+        <argsstring>(const Markov &amp;markov)</argsstring>
+        <name>DataGenerator</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref> &amp;</type>
+          <declname>markov</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="14" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1ad47458ef68863d2689c1b19c558a6c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::DataGenerator::DataGenerator</definition>
+        <argsstring>(const DataGenerator &amp;obj)</argsstring>
+        <name>DataGenerator</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">DataGenerator</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="15" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1a08fde4eb8530c1237896c6c52a287d11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::DataGenerator::~DataGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>~DataGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="16" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1a1cd2d028c552461ae2084c3d90a8a6bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">DataGenerator</ref> &amp;</type>
+        <definition>DataGenerator &amp; bsn::generator::DataGenerator::operator=</definition>
+        <argsstring>(const DataGenerator &amp;obj)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">DataGenerator</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="18" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="18" bodyend="21"/>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1ad2953242be3566c00914eaeb17655230" compoundref="DataGenerator_8hpp" startline="27">markovChain</references>
+        <references refid="namespacebsn_1_1generator_1aed8b98157588111aca3f20d0fb2a76b2">bsn::generator::probabilityGenerator</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1acc7cc7cec86a17465054307a4814295b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::generator::DataGenerator::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="20" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="66" bodyend="68"/>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">calculateValue</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1a39c91084817846319e7dca9ed4e4f9e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::generator::DataGenerator::setSeed</definition>
+        <argsstring>()</argsstring>
+        <name>setSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="21" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="26" bodyend="30"/>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1a2bd30cf19667664aaf29685d0baf7ca1" compoundref="DataGenerator_8hpp" startline="29">seed</references>
+        <referencedby refid="classPatientModule_1aa6a17cfd6d72002d9b493f0198b37edf" compoundref="PatientModule_8cpp" startline="41" endline="84">PatientModule::configureDataGenerator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::generator::DataGenerator::nextState</definition>
+        <argsstring>()</argsstring>
+        <name>nextState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="22" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="32" bodyend="52"/>
+        <references refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" compoundref="Markov_8hpp" startline="32">bsn::generator::Markov::currentState</references>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1ad2953242be3566c00914eaeb17655230" compoundref="DataGenerator_8hpp" startline="27">markovChain</references>
+        <references refid="namespacebsn_1_1generator_1aed8b98157588111aca3f20d0fb2a76b2">bsn::generator::probabilityGenerator</references>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1a2bd30cf19667664aaf29685d0baf7ca1" compoundref="DataGenerator_8hpp" startline="29">seed</references>
+        <references refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" compoundref="Markov_8hpp" startline="30">bsn::generator::Markov::transitions</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::generator::DataGenerator::calculateValue</definition>
+        <argsstring>()</argsstring>
+        <name>calculateValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="25" column="1" bodyfile="src/libbsn/src/generator/DataGenerator.cpp" bodystart="54" bodyend="64"/>
+        <references refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" compoundref="Markov_8hpp" startline="32">bsn::generator::Markov::currentState</references>
+        <references refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" compoundref="Range_8cpp" startline="48" endline="50">bsn::range::Range::getLowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" compoundref="Range_8cpp" startline="56" endline="58">bsn::range::Range::getUpperBound</references>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1ad2953242be3566c00914eaeb17655230" compoundref="DataGenerator_8hpp" startline="27">markovChain</references>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1a2bd30cf19667664aaf29685d0baf7ca1" compoundref="DataGenerator_8hpp" startline="29">seed</references>
+        <references refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" compoundref="Markov_8hpp" startline="34">bsn::generator::Markov::states</references>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1acc7cc7cec86a17465054307a4814295b" compoundref="DataGenerator_8cpp" startline="66" endline="68">getValue</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="53">
+        <label>bsn::generator::Markov</label>
+        <link refid="classbsn_1_1generator_1_1Markov"/>
+      </node>
+      <node id="52">
+        <label>bsn::generator::DataGenerator</label>
+        <link refid="classbsn_1_1generator_1_1DataGenerator"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>markovChain</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="11" column="1" bodyfile="src/libbsn/include/libbsn/generator/DataGenerator.hpp" bodystart="11" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" prot="private" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>calculateValue</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a1e1627c22143f5764f08c9847b3e2b76" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>DataGenerator</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a007d1879a9d160396f4c5c043836567e" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>DataGenerator</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1ad47458ef68863d2689c1b19c558a6c09" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>DataGenerator</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1acc7cc7cec86a17465054307a4814295b" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>getValue</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1ad2953242be3566c00914eaeb17655230" prot="private" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>markovChain</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>nextState</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a1cd2d028c552461ae2084c3d90a8a6bb" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a2bd30cf19667664aaf29685d0baf7ca1" prot="private" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>seed</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a39c91084817846319e7dca9ed4e4f9e3" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>setSeed</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1ae1ce8b691264104bd9ea23d01905381c" prot="private" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>value</name></member>
+      <member refid="classbsn_1_1generator_1_1DataGenerator_1a08fde4eb8530c1237896c6c52a287d11" prot="public" virt="non-virtual"><scope>bsn::generator::DataGenerator</scope><name>~DataGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

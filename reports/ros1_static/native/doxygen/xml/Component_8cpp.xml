@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Component_8cpp" kind="file" language="C++">
+    <compoundname>Component.cpp</compoundname>
+    <includes refid="Component_8hpp" local="yes">archlib/target_system/Component.hpp</includes>
+    <incdepgraph>
+      <node id="217">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="224">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>stdexcept</label>
+      </node>
+      <node id="214">
+        <label>string</label>
+      </node>
+      <node id="213">
+        <label>archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="215">
+        <label>signal.h</label>
+      </node>
+      <node id="222">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="216">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="219">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="221">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+      <node id="212">
+        <label>src/archlib/src/target_system/Component.cpp</label>
+        <link refid="Component_8cpp"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacearch">arch</innernamespace>
+    <innernamespace refid="namespacearch_1_1target__system">arch::target_system</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Component_8hpp" kindref="compound">archlib/target_system/Component.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacearch" kindref="compound">arch</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">target_system<sp/>{</highlight></codeline>
+<codeline lineno="5" refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" kindref="member">Component::Component</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>:<sp/><ref refid="classarch_1_1ROSComponent" kindref="compound">ROSComponent</ref>(argc,<sp/>argv,<sp/>name)<sp/>{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" kindref="member">Component::~Component</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" kindref="member">Component::setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>freq<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>handle.getParam(&quot;frequency&quot;,<sp/>freq);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Module<sp/>initial<sp/>frequency:<sp/>%lf&quot;</highlight><highlight class="normal">,<sp/>freq);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kindref="member">setFreq</ref>(freq);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" kindref="member">collect_event</ref><sp/>=<sp/><ref refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" kindref="member">handle</ref>.advertise&lt;archlib::Event&gt;(</highlight><highlight class="stringliteral">&quot;collect_event&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" kindref="member">collect_event</ref>.getNumSubscribers()<sp/>&lt;<sp/>1)<sp/>{}<sp/></highlight><highlight class="comment">//<sp/>to<sp/>cope<sp/>with<sp/>the<sp/>delay<sp/>on<sp/>opening<sp/>the<sp/>connection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" kindref="member">collect_status</ref><sp/>=<sp/><ref refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" kindref="member">handle</ref>.advertise&lt;archlib::Status&gt;(</highlight><highlight class="stringliteral">&quot;collect_status&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" kindref="member">collect_status</ref>.getNumSubscribers()<sp/>&lt;<sp/>1)<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" kindref="member">collect_energy_status</ref><sp/>=<sp/><ref refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" kindref="member">handle</ref>.advertise&lt;archlib::EnergyStatus&gt;(</highlight><highlight class="stringliteral">&quot;collect_energy_status&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" kindref="member">collect_energy_status</ref>.getNumSubscribers()<sp/>&lt;<sp/>1)<sp/>{}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" kindref="member">activate</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signal(SIGINT,<sp/><ref refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" kindref="member">sigIntHandler</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>register<sp/>in<sp/>effector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>client_handler;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::ServiceClient<sp/>client_module;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>client_module<sp/>=<sp/>client_handler.serviceClient&lt;archlib::EffectorRegister&gt;(</highlight><highlight class="stringliteral">&quot;EffectorRegister&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::EffectorRegister<sp/>srv;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srv.request.name<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" kindref="member">getRosNodeName</ref>(ros::this_node::getName(),<sp/>ros::this_node::getNamespace());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srv.request.connection<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(client_module.call(srv))<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Succesfully<sp/>connected<sp/>to<sp/>effector.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_ERROR(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>connect<sp/>to<sp/>effector.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" kindref="member">Component::tearDown</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sigIntHandler<sp/>is<sp/>making<sp/>the<sp/>job<sp/>of<sp/>the<sp/>tearDown</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sendStatus(&quot;finish&quot;);</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deactivate();</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" kindref="member">Component::sigIntHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>signal)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" kindref="member">shutdownComponent</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" kindref="member">Component::shutdownComponent</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::Event<sp/>eventMsg;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::Status<sp/>statusMsg;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eventMsg.source<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" kindref="member">getRosNodeName</ref>(ros::this_node::getName(),<sp/>ros::this_node::getNamespace());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eventMsg.content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;deactivate&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statusMsg.source<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" kindref="member">getRosNodeName</ref>(ros::this_node::getName(),<sp/>ros::this_node::getNamespace());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statusMsg.content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;status&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>nh;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/>last_event<sp/>=<sp/>nh.advertise&lt;archlib::Event&gt;(</highlight><highlight class="stringliteral">&quot;collect_event&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(last_event.getNumSubscribers()<sp/>&lt;<sp/>1)<sp/>{}<sp/></highlight><highlight class="comment">//<sp/>to<sp/>cope<sp/>with<sp/>the<sp/>delay<sp/>on<sp/>opening<sp/>the<sp/>connection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last_event.publish(eventMsg);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/>last_status<sp/>=<sp/>nh.advertise&lt;archlib::Status&gt;(</highlight><highlight class="stringliteral">&quot;collect_status&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(last_status.getNumSubscribers()<sp/>&lt;<sp/>1)<sp/>{}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last_status.publish(statusMsg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unregister<sp/>from<sp/>effector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::EffectorRegister<sp/>srv;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srv.request.name<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" kindref="member">getRosNodeName</ref>(ros::this_node::getName(),<sp/>ros::this_node::getNamespace());</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srv.request.connection<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>client_handler;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::ServiceClient<sp/>client_module;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Connection<sp/>to<sp/>scheduler<sp/>module<sp/>management<sp/>service</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>client_module<sp/>=<sp/>client_handler.serviceClient&lt;archlib::EffectorRegister&gt;(</highlight><highlight class="stringliteral">&quot;EffectorRegister&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(client_module.call(srv))<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Succesfully<sp/>disconnected<sp/>from<sp/>effector.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_ERROR(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>disconnect<sp/>from<sp/>effector.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::shutdown();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" kindref="member">Component::run</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(ros::ok())<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Rate<sp/>loop_rate(<ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" kindref="member">getFreq</ref>());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::spinOnce();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;running&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::exception&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;fail&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loop_rate.sleep();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" kindref="member">Component::sendEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;content)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::Event<sp/>msg;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.source<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.content<sp/>=<sp/>content;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.freq<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" kindref="member">getFreq</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a90b774394259a3d37b4b96dd48db820a" kindref="member">collect_event</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">Component::sendStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;content)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::Status<sp/>msg;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.source<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.content<sp/>=<sp/>content;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1aebb1655a2b3a115d13bf1ec3566d6135" kindref="member">collect_status</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" kindref="member">Component::sendEnergyStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;cost)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archlib::EnergyStatus<sp/>msg;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.source<sp/>=<sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.content<sp/>=<sp/>std::to_string(cost);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a04aa64d087f0ffa0f7106ed6a61678a7" kindref="member">collect_energy_status</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" kindref="member">Component::reconfigure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac" kindref="member">reconfigure</ref>(msg);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" kindref="member">Component::activate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" kindref="member">sendEvent</ref>(</highlight><highlight class="stringliteral">&quot;activate&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" kindref="member">status</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" kindref="member">Component::deactivate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" kindref="member">sendEvent</ref>(</highlight><highlight class="stringliteral">&quot;deactivate&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1aa0f532183c45e7f9b5db3263245478b8" kindref="member">status</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/archlib/src/target_system/Component.cpp"/>
+  </compounddef>
+</doxygen>

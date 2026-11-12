@@ -1,0 +1,25 @@
+file,name,signature,start,end,cc,parameter_count,candidate_count
+src/archlib/src/ROSComponent.cpp,shutdownOnSignal,shutdownOnSignal( int),29,31,1,1,0
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::operator < <,"bsn::goalmodel::operator < <( std :: ostream & stream , const Node & node)",32,34,1,2,0
+src/libbsn/src/processor/Processor.cpp,bsn::processor::get_sensor_id,bsn::processor::get_sensor_id( string type),8,25,7,1,0
+src/libbsn/src/processor/Processor.cpp,bsn::processor::get_value,bsn::processor::get_value( string packet),27,30,1,1,0
+src/libbsn/src/processor/Processor.cpp,bsn::processor::data_fuse,bsn::processor::data_fuse( vector<double> packetsReceived),32,114,13,1,0
+src/libbsn/src/utils/utils.cpp,bsn::utils::split,"bsn::utils::split( const string & s , const char & c)",8,25,6,2,0
+src/sa-bsn/environment/patient/apps/patient.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,fetch_formula,fetch_formula( std :: string name),14,31,2,1,0
+src/sa-bsn/logging_infrastructure/logger/apps/logger.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/simulation/injector/apps/injector.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp,main,"main( int argc , char ** argv)",5,8,1,2,0
+src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp,main,"main( int argc , char ** argv)",5,8,1,2,0
+src/sa-bsn/system_manager/enactor/apps/controller.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/system_manager/enactor/apps/enactor.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp,main,"main( int32_t argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp,main,"main( int32_t argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp,main,"main( int32_t argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp,main,"main( int32_t argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp,main,"main( int32_t argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/components/component/apps/g4t1.cpp,main,"main( int32_t argc , char ** argv)",3,6,1,2,0
+src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp,main,"main( int argc , char ** argv)",3,7,1,2,0
+src/sa-bsn/target_system/probes/collector/apps/collector.cpp,main,"main( int argc , char ** argv)",3,6,1,2,0

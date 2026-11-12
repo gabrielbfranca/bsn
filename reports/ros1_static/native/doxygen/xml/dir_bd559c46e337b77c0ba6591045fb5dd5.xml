@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bd559c46e337b77c0ba6591045fb5dd5" kind="dir">
+    <compoundname>src/libbsn/src/time</compoundname>
+    <innerfile refid="TimeData_8cpp">TimeData.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/src/time/"/>
+  </compounddef>
+</doxygen>

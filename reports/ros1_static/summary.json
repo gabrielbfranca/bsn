@@ -1,0 +1,48 @@
+{
+  "files": 104,
+  "classes": 46,
+  "declared_methods": 498,
+  "defined_measured_methods": 422,
+  "max_wmc": 82,
+  "max_cc": 45,
+  "methods_cc_gt_10": 10,
+  "class_cyclic_components": [],
+  "native_semgrep_occurrences": 229,
+  "semgrep_categories": {
+    "ros_runtime": 13,
+    "process_signal": 3,
+    "real_sleep": 7,
+    "ros_resource": 70,
+    "client_call": 18,
+    "ros_parameters": 97,
+    "file_io": 13,
+    "real_clock": 3,
+    "ros_package_path": 2,
+    "service_wait": 3
+  },
+  "semgrep_classes_with_direct_findings": 23,
+  "semgrep_findings_outside_classes": 3,
+  "semgrep_errors": [],
+  "lcom4_status": "measured_cpplcom",
+  "cbo_equivalence": "not_established",
+  "testability_score": null,
+  "lcom4_classes": 41,
+  "lcom4_raw_distribution": {
+    "1": 10,
+    "2": 14,
+    "3": 11,
+    "5": 1,
+    "6": 5
+  },
+  "lcom4_classes_not_reported": [
+    "arch::ROSComponent",
+    "bsn::generator::Markov",
+    "bsn::goalmodel::Goal",
+    "src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp::comp",
+    "src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp::comp"
+  ],
+  "cbo_status": "measured_CCCC_variant_with_parser_limits",
+  "cbo_cccc_classes": 44,
+  "cbo_cccc_max": 11,
+  "cccc_rejected_lines": 313
+}

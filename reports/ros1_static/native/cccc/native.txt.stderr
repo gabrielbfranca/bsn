@@ -1,0 +1,353 @@
+CCCC - a code counter for C and C++
+===================================
+
+A program to analyse C and C++ source code and report on
+some simple software metrics
+Version 3.1.4
+Copyright Tim Littlefair, 1995, 1996, 1997, 1998, 1999, 2000
+with contributions from Bill McLean, Herman Hueni, Lynn Wilson 
+Peter Bell, Thomas Hieber and Kenneth H. Cox.
+
+The development of this program was heavily dependent on
+the Purdue Compiler Construction Tool Set (PCCTS) 
+by Terence Parr, Will Cohen, Hank Dietz, Russel Quoung,
+Tom Moog and others.
+
+CCCC comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions.  See the file COPYING in the source
+code distribution for details.
+Parsing
+Processing src/archlib/include/archlib/ROSComponent.hpp as C/C++ (c++.ansi)
+src/archlib/include/archlib/ROSComponent.hpp(36): syntax error at token <EOF>
+src/archlib/include/archlib/ROSComponent.hpp(11): trying to match namespace_block at 'namespace'
+Processing src/archlib/include/archlib/ROSComponentDescriptor.hpp as C/C++ (c++.ansi)
+src/archlib/include/archlib/ROSComponentDescriptor.hpp(33): syntax error at token #endifÿ
+src/archlib/include/archlib/ROSComponentDescriptor.hpp(8): trying to match namespace_block at 'namespace'
+Processing src/archlib/include/archlib/target_system/Component.hpp as C/C++ (c++.ansi)
+src/archlib/include/archlib/target_system/Component.hpp(59): syntax error at token }
+src/archlib/include/archlib/target_system/Component.hpp(18): trying to match namespace_block at 'namespace'
+src/archlib/include/archlib/target_system/Component.hpp(62): syntax error at token <EOF>
+src/archlib/include/archlib/target_system/Component.hpp(17): trying to match namespace_block at 'namespace'
+Processing src/archlib/include/archlib/target_system/Effector.hpp as C/C++ (c++.ansi)
+src/archlib/include/archlib/target_system/Effector.hpp(33): syntax error at token }
+src/archlib/include/archlib/target_system/Effector.hpp(10): trying to match namespace_block at 'namespace'
+src/archlib/include/archlib/target_system/Effector.hpp(36): syntax error at token #endif ÿ
+src/archlib/include/archlib/target_system/Effector.hpp(9): trying to match namespace_block at 'namespace'
+Processing src/archlib/include/archlib/target_system/Probe.hpp as C/C++ (c++.ansi)
+src/archlib/include/archlib/target_system/Probe.hpp(46): syntax error at token }
+src/archlib/include/archlib/target_system/Probe.hpp(12): trying to match namespace_block at 'namespace'
+src/archlib/include/archlib/target_system/Probe.hpp(49): syntax error at token #endif ÿ
+src/archlib/include/archlib/target_system/Probe.hpp(11): trying to match namespace_block at 'namespace'
+Processing src/archlib/src/ROSComponent.cpp as C/C++ (c++.ansi)
+src/archlib/src/ROSComponent.cpp(34): syntax error at token namespace
+src/archlib/src/ROSComponent.cpp(5): trying to match namespace_block at 'namespace'
+src/archlib/src/ROSComponent.cpp(77): syntax error at token <EOF>
+src/archlib/src/ROSComponent.cpp(34): trying to match namespace_block at 'namespace'
+Processing src/archlib/src/ROSComponentDescriptor.cpp as C/C++ (c++.ansi)
+src/archlib/src/ROSComponentDescriptor.cpp(32): syntax error at token <EOF>
+src/archlib/src/ROSComponentDescriptor.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/archlib/src/target_system/Component.cpp as C/C++ (c++.ansi)
+src/archlib/src/target_system/Component.cpp(162): syntax error at token }
+src/archlib/src/target_system/Component.cpp(4): trying to match namespace_block at 'namespace'
+src/archlib/src/target_system/Component.cpp(163): syntax error at token <EOF>
+src/archlib/src/target_system/Component.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/archlib/src/target_system/Effector.cpp as C/C++ (c++.ansi)
+src/archlib/src/target_system/Effector.cpp(17): syntax error at token }
+src/archlib/src/target_system/Effector.cpp(4): trying to match namespace_block at 'namespace'
+src/archlib/src/target_system/Effector.cpp(17): syntax error at token <EOF>
+src/archlib/src/target_system/Effector.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/archlib/src/target_system/Probe.cpp as C/C++ (c++.ansi)
+src/archlib/src/target_system/Probe.cpp(44): syntax error at token }
+src/archlib/src/target_system/Probe.cpp(4): trying to match namespace_block at 'namespace'
+src/archlib/src/target_system/Probe.cpp(44): syntax error at token <EOF>
+src/archlib/src/target_system/Probe.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp(81): syntax error at token }
+src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp(13): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp(83): syntax error at token #endifÿ
+src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp(12): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/filters/MovingAverage.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/filters/MovingAverage.hpp(39): syntax error at token }
+src/libbsn/include/libbsn/filters/MovingAverage.hpp(10): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/filters/MovingAverage.hpp(40): syntax error at token #endif ÿ
+src/libbsn/include/libbsn/filters/MovingAverage.hpp(9): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/generator/DataGenerator.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/generator/DataGenerator.hpp(32): syntax error at token }
+src/libbsn/include/libbsn/generator/DataGenerator.hpp(10): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/generator/DataGenerator.hpp(34): syntax error at token #endifÿ
+src/libbsn/include/libbsn/generator/DataGenerator.hpp(9): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/generator/Markov.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/generator/Markov.hpp(46): syntax error at token }
+src/libbsn/include/libbsn/generator/Markov.hpp(18): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/generator/Markov.hpp(48): syntax error at token #endifÿ
+src/libbsn/include/libbsn/generator/Markov.hpp(17): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/Context.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/Context.hpp(36): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/Context.hpp(7): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/Context.hpp(38): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/Context.hpp(6): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/Goal.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/Goal.hpp(21): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/Goal.hpp(11): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/Goal.hpp(23): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/Goal.hpp(10): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/GoalTree.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/GoalTree.hpp(30): syntax error at token std
+src/libbsn/include/libbsn/goalmodel/GoalTree.hpp(30): trying to match class_block_item_list at 'std'
+src/libbsn/include/libbsn/goalmodel/GoalTree.hpp(50): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/GoalTree.hpp(16): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/GoalTree.hpp(52): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/GoalTree.hpp(15): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/LeafTask.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/LeafTask.hpp(47): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/LeafTask.hpp(12): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/LeafTask.hpp(49): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/LeafTask.hpp(11): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/Node.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/Node.hpp(31): syntax error at token std
+src/libbsn/include/libbsn/goalmodel/Node.hpp(31): trying to match class_block_item_list at 'std'
+src/libbsn/include/libbsn/goalmodel/Node.hpp(47): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/Node.hpp(10): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/Node.hpp(49): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/Node.hpp(9): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/Property.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/Property.hpp(33): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/Property.hpp(7): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/Property.hpp(35): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/Property.hpp(6): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/goalmodel/Task.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/goalmodel/Task.hpp(28): syntax error at token }
+src/libbsn/include/libbsn/goalmodel/Task.hpp(13): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/goalmodel/Task.hpp(30): syntax error at token #endifÿ
+src/libbsn/include/libbsn/goalmodel/Task.hpp(12): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/model/Formula.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/model/Formula.hpp(40): syntax error at token }
+src/libbsn/include/libbsn/model/Formula.hpp(12): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/model/Formula.hpp(42): syntax error at token #endifÿ
+src/libbsn/include/libbsn/model/Formula.hpp(11): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/processor/Processor.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/processor/Processor.hpp(19): syntax error at token }
+src/libbsn/include/libbsn/processor/Processor.hpp(11): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/processor/Processor.hpp(22): syntax error at token #endifÿ
+src/libbsn/include/libbsn/processor/Processor.hpp(10): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/range/Range.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/range/Range.hpp(43): syntax error at token }
+src/libbsn/include/libbsn/range/Range.hpp(11): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/range/Range.hpp(45): syntax error at token #endif ÿ
+src/libbsn/include/libbsn/range/Range.hpp(10): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/resource/Battery.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/resource/Battery.hpp(47): syntax error at token }
+src/libbsn/include/libbsn/resource/Battery.hpp(10): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/resource/Battery.hpp(49): syntax error at token #endifÿ
+src/libbsn/include/libbsn/resource/Battery.hpp(9): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/time/TimeData.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/time/TimeData.hpp(29): syntax error at token }
+src/libbsn/include/libbsn/time/TimeData.hpp(13): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/time/TimeData.hpp(31): syntax error at token #endifÿ
+src/libbsn/include/libbsn/time/TimeData.hpp(12): trying to match namespace_block at 'namespace'
+Processing src/libbsn/include/libbsn/utils/utils.hpp as C/C++ (c++.ansi)
+src/libbsn/include/libbsn/utils/utils.hpp(13): syntax error at token }
+src/libbsn/include/libbsn/utils/utils.hpp(8): trying to match namespace_block at 'namespace'
+src/libbsn/include/libbsn/utils/utils.hpp(16): syntax error at token #endifÿ
+src/libbsn/include/libbsn/utils/utils.hpp(7): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/configuration/SensorConfiguration.cpp as C/C++ (c++.ansi)
+src/libbsn/src/configuration/SensorConfiguration.cpp(23): syntax error at token p
+src/libbsn/src/configuration/SensorConfiguration.cpp(23): trying to match init_expr_item at 'p'
+src/libbsn/src/configuration/SensorConfiguration.cpp(23): syntax error at token ,
+src/libbsn/src/configuration/SensorConfiguration.cpp(23): trying to match brace_block at ','
+src/libbsn/src/configuration/SensorConfiguration.cpp(23): syntax error at token ,
+src/libbsn/src/configuration/SensorConfiguration.cpp(7): trying to match namespace_block at 'namespace'
+failed opt_const_modifier for token 136 ,
+src/libbsn/src/configuration/SensorConfiguration.cpp(24): syntax error at token ,
+src/libbsn/src/configuration/SensorConfiguration.cpp(24): trying to match opt_const_modifier at ','
+src/libbsn/src/configuration/SensorConfiguration.cpp(204): syntax error at token }
+src/libbsn/src/configuration/SensorConfiguration.cpp(6): trying to match namespace_block at 'namespace'
+src/libbsn/src/configuration/SensorConfiguration.cpp(204): syntax error at token }
+src/libbsn/src/configuration/SensorConfiguration.cpp(204): trying to match start at '}'
+Processing src/libbsn/src/filters/MovingAverage.cpp as C/C++ (c++.ansi)
+src/libbsn/src/filters/MovingAverage.cpp(79): syntax error at token }
+src/libbsn/src/filters/MovingAverage.cpp(7): trying to match namespace_block at 'namespace'
+src/libbsn/src/filters/MovingAverage.cpp(79): syntax error at token <EOF>
+src/libbsn/src/filters/MovingAverage.cpp(6): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/generator/DataGenerator.cpp as C/C++ (c++.ansi)
+src/libbsn/src/generator/DataGenerator.cpp(71): syntax error at token }
+src/libbsn/src/generator/DataGenerator.cpp(5): trying to match namespace_block at 'namespace'
+src/libbsn/src/generator/DataGenerator.cpp(74): syntax error at token <EOF>
+src/libbsn/src/generator/DataGenerator.cpp(4): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/generator/Markov.cpp as C/C++ (c++.ansi)
+src/libbsn/src/generator/Markov.cpp(37): syntax error at token }
+src/libbsn/src/generator/Markov.cpp(7): trying to match namespace_block at 'namespace'
+src/libbsn/src/generator/Markov.cpp(38): syntax error at token <EOF>
+src/libbsn/src/generator/Markov.cpp(6): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/Context.cpp as C/C++ (c++.ansi)
+src/libbsn/src/goalmodel/Context.cpp(60): syntax error at token }
+src/libbsn/src/goalmodel/Context.cpp(4): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/Context.cpp(60): syntax error at token <EOF>
+src/libbsn/src/goalmodel/Context.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/Goal.cpp as C/C++ (c++.ansi)
+src/libbsn/src/goalmodel/Goal.cpp(11): syntax error at token }
+src/libbsn/src/goalmodel/Goal.cpp(4): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/Goal.cpp(11): syntax error at token <EOF>
+src/libbsn/src/goalmodel/Goal.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/GoalTree.cpp as C/C++ (c++.ansi)
+Unrecognized section from std on line 39 to } on line 41
+=====ignored section begins=====
+...} 
+===== ignored section ends =====
+Syntax error: parser failed to handle std :: map ......}  on lines 39 to 41
+src/libbsn/src/goalmodel/GoalTree.cpp(39): syntax error at token std
+src/libbsn/src/goalmodel/GoalTree.cpp(39): trying to match definition_or_declaration at 'std'
+Unrecognized section from std on line 76 to } on line 88
+=====ignored section begins=====
+...} 
+===== ignored section ends =====
+Syntax error: parser failed to handle std :: vector ......}  on lines 76 to 88
+src/libbsn/src/goalmodel/GoalTree.cpp(76): syntax error at token std
+src/libbsn/src/goalmodel/GoalTree.cpp(76): trying to match definition_or_declaration at 'std'
+src/libbsn/src/goalmodel/GoalTree.cpp(91): syntax error at token <EOF>
+src/libbsn/src/goalmodel/GoalTree.cpp(7): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/GoalTree.cpp(91): syntax error at token <EOF>
+src/libbsn/src/goalmodel/GoalTree.cpp(6): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/LeafTask.cpp as C/C++ (c++.ansi)
+src/libbsn/src/goalmodel/LeafTask.cpp(77): syntax error at token }
+src/libbsn/src/goalmodel/LeafTask.cpp(5): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/LeafTask.cpp(77): syntax error at token <EOF>
+src/libbsn/src/goalmodel/LeafTask.cpp(4): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/Node.cpp as C/C++ (c++.ansi)
+Unrecognized section from std on line 56 to } on line 58
+=====ignored section begins=====
+...} 
+===== ignored section ends =====
+Syntax error: parser failed to handle std :: vector ......}  on lines 56 to 58
+src/libbsn/src/goalmodel/Node.cpp(56): syntax error at token std
+src/libbsn/src/goalmodel/Node.cpp(56): trying to match definition_or_declaration at 'std'
+src/libbsn/src/goalmodel/Node.cpp(84): syntax error at token }
+src/libbsn/src/goalmodel/Node.cpp(7): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/Node.cpp(84): syntax error at token <EOF>
+src/libbsn/src/goalmodel/Node.cpp(6): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/Property.cpp as C/C++ (c++.ansi)
+src/libbsn/src/goalmodel/Property.cpp(43): syntax error at token }
+src/libbsn/src/goalmodel/Property.cpp(4): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/Property.cpp(43): syntax error at token <EOF>
+src/libbsn/src/goalmodel/Property.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/goalmodel/Task.cpp as C/C++ (c++.ansi)
+src/libbsn/src/goalmodel/Task.cpp(19): syntax error at token }
+src/libbsn/src/goalmodel/Task.cpp(5): trying to match namespace_block at 'namespace'
+src/libbsn/src/goalmodel/Task.cpp(19): syntax error at token <EOF>
+src/libbsn/src/goalmodel/Task.cpp(4): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/model/Formula.cpp as C/C++ (c++.ansi)
+src/libbsn/src/model/Formula.cpp(77): syntax error at token }
+src/libbsn/src/model/Formula.cpp(4): trying to match namespace_block at 'namespace'
+src/libbsn/src/model/Formula.cpp(78): syntax error at token <EOF>
+src/libbsn/src/model/Formula.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/processor/Processor.cpp as C/C++ (c++.ansi)
+src/libbsn/src/processor/Processor.cpp(116): syntax error at token }
+src/libbsn/src/processor/Processor.cpp(6): trying to match namespace_block at 'namespace'
+src/libbsn/src/processor/Processor.cpp(117): syntax error at token <EOF>
+src/libbsn/src/processor/Processor.cpp(5): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/range/Range.cpp as C/C++ (c++.ansi)
+src/libbsn/src/range/Range.cpp(69): syntax error at token }
+src/libbsn/src/range/Range.cpp(6): trying to match namespace_block at 'namespace'
+src/libbsn/src/range/Range.cpp(69): syntax error at token <EOF>
+src/libbsn/src/range/Range.cpp(5): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/resource/Battery.cpp as C/C++ (c++.ansi)
+src/libbsn/src/resource/Battery.cpp(101): syntax error at token }
+src/libbsn/src/resource/Battery.cpp(4): trying to match namespace_block at 'namespace'
+src/libbsn/src/resource/Battery.cpp(101): syntax error at token <EOF>
+src/libbsn/src/resource/Battery.cpp(3): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/time/TimeData.cpp as C/C++ (c++.ansi)
+src/libbsn/src/time/TimeData.cpp(53): syntax error at token }
+src/libbsn/src/time/TimeData.cpp(6): trying to match namespace_block at 'namespace'
+src/libbsn/src/time/TimeData.cpp(53): syntax error at token <EOF>
+src/libbsn/src/time/TimeData.cpp(5): trying to match namespace_block at 'namespace'
+Processing src/libbsn/src/utils/utils.cpp as C/C++ (c++.ansi)
+src/libbsn/src/utils/utils.cpp(28): syntax error at token }
+src/libbsn/src/utils/utils.cpp(6): trying to match namespace_block at 'namespace'
+src/libbsn/src/utils/utils.cpp(30): syntax error at token <EOF>
+src/libbsn/src/utils/utils.cpp(5): trying to match namespace_block at 'namespace'
+Processing src/sa-bsn/environment/patient/apps/patient.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/environment/patient/include/PatientModule.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/environment/patient/src/PatientModule.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp as C/C++ (c++.ansi)
+src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp(96): syntax error at token std
+src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp(96): trying to match class_block_item_list at 'std'
+Processing src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/logging_infrastructure/logger/apps/logger.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/simulation/injector/apps/injector.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/simulation/injector/include/Injector.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/simulation/injector/src/Injector.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp as C/C++ (c++.ansi)
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp(6): syntax error at token template
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp(6): trying to match class_block_item_list at 'template'
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp(14): syntax error at token }
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp(14): trying to match opt_instance_list at '}'
+Processing src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp as C/C++ (c++.ansi)
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp(6): syntax error at token template
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp(6): trying to match class_block_item_list at 'template'
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp(14): syntax error at token }
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp(14): trying to match opt_instance_list at '}'
+Processing src/sa-bsn/system_manager/enactor/apps/controller.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/enactor/apps/enactor.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp as C/C++ (c++.ansi)
+src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp(51): syntax error at token std
+src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp(51): trying to match class_block_item_list at 'std'
+Processing src/sa-bsn/system_manager/enactor/src/Controller.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/system_manager/enactor/src/Enactor.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/apps/g4t1.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp as C/C++ (c++.ansi)
+src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp(50): syntax error at token std
+src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp(50): trying to match class_block_item_list at 'std'
+Processing src/sa-bsn/target_system/components/component/include/component/Sensor.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/CentralHub.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/Sensor.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp as C/C++ (c++.ansi)
+Processing src/sa-bsn/target_system/probes/collector/apps/collector.cpp as C/C++ (c++.ansi)
+
+Generating HTML reports
+
+Generating XML reports
+
+Primary HTML output is in /workspaces/bsn_/reports/ros1_static/native/cccc/cccc.html
+Detailed HTML reports on modules and source are in /workspaces/bsn_/reports/ros1_static/native/cccc
+Primary XML output is in /workspaces/bsn_/reports/ros1_static/native/cccc/cccc.xml
+Detailed XML reports on modules are in /workspaces/bsn_/reports/ros1_static/native/cccc
+Database dump is in /workspaces/bsn_/reports/ros1_static/native/cccc/cccc.db
+

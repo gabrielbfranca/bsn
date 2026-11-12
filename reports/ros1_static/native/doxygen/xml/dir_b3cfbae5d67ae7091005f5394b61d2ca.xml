@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_b3cfbae5d67ae7091005f5394b61d2ca" kind="dir">
+    <compoundname>src/libbsn/src/utils</compoundname>
+    <innerfile refid="utils_8cpp">utils.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/src/utils/"/>
+  </compounddef>
+</doxygen>

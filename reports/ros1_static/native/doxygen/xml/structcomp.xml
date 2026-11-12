@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structcomp" kind="struct" language="C++" prot="public">
+    <compoundname>comp</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcomp_1ab79c94c6be78f1e1b7f9d861228d3250" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool comp::operator()</definition>
+        <argsstring>(const T &amp;l, const T &amp;r) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp" line="7" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structcomp_1ab79c94c6be78f1e1b7f9d861228d3250" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool comp::operator()</definition>
+        <argsstring>(const T &amp;l, const T &amp;r) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" line="7" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp" line="5" column="1" bodyfile="src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structcomp_1ab79c94c6be78f1e1b7f9d861228d3250" prot="public" virt="non-virtual"><scope>comp</scope><name>operator()</name></member>
+      <member refid="structcomp_1ab79c94c6be78f1e1b7f9d861228d3250" prot="public" virt="non-virtual"><scope>comp</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+{
+  "returncode": 1,
+  "limitation": "member template call in Tmpl fixture not joined with Clang 18"
+}

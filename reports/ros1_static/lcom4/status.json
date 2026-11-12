@@ -1,0 +1,16 @@
+{
+  "tool": "llnl/ROSE-LCOM-Tools",
+  "commit": "2ddcb76e4f85336430537434bd3c20f8c923cff0",
+  "archive_sha256": "c99a1c2618b9a6de07c44d58235b481374f41ebbba5ffcd10eae080a227e2d5e",
+  "configure_command": [
+    "/workspaces/bsn_/tools/.metrics-venv/bin/cmake",
+    "/workspaces/bsn_/tools/.metrics-runtime/llnl-ROSE-LCOM-Tools-2ddcb76"
+  ],
+  "configure_exit": 0,
+  "rose_installed": false,
+  "docker_available": false,
+  "lcom4_values": null,
+  "status": "not_measured",
+  "configure_cwd": "/workspaces/bsn_/tools/.metrics-runtime/rose-lcom-build",
+  "cmake_version": "3.29.6"
+}

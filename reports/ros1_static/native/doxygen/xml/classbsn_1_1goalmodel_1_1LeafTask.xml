@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1goalmodel_1_1LeafTask" kind="class" language="C++" prot="public">
+    <compoundname>bsn::goalmodel::LeafTask</compoundname>
+    <basecompoundref refid="classbsn_1_1goalmodel_1_1Task" prot="public" virt="non-virtual">bsn::goalmodel::Task</basecompoundref>
+    <includes refid="LeafTask_8hpp" local="no">LeafTask.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref></type>
+        <definition>goalmodel::Context bsn::goalmodel::LeafTask::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="41" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" compoundref="LeafTask_8cpp" startline="45" endline="47">getContext</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a2188abe54b01f27ced52f60313f6c806" compoundref="LeafTask_8cpp" startline="41" endline="43">setContext</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref></type>
+        <definition>goalmodel::Property bsn::goalmodel::LeafTask::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="42" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" compoundref="LeafTask_8cpp" startline="53" endline="55">getCost</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a362161b7df5ea2b23d085915dfbb52ed" compoundref="LeafTask_8cpp" startline="49" endline="51">setCost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref></type>
+        <definition>goalmodel::Property bsn::goalmodel::LeafTask::reliability</definition>
+        <argsstring></argsstring>
+        <name>reliability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="43" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" compoundref="LeafTask_8cpp" startline="61" endline="63">getReliability</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1aa3f5aad58bc1136fcb9fc77f1634d793" compoundref="LeafTask_8cpp" startline="57" endline="59">setReliability</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref></type>
+        <definition>goalmodel::Property bsn::goalmodel::LeafTask::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="44" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" compoundref="LeafTask_8cpp" startline="69" endline="71">getFrequency</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a9d3cac1479633c239fe8f58fdad3a16f" compoundref="LeafTask_8cpp" startline="65" endline="67">setFrequency</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a2e1a112f92802439c7d40d335b8c9076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::LeafTask::LeafTask</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;, const goalmodel::Context &amp;, const goalmodel::Property &amp;, const goalmodel::Property &amp;, const goalmodel::Property &amp;)</argsstring>
+        <name>LeafTask</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref> &amp;</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>cost</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>reliability</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>frequency</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="17" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1aae555a0e2bf1f9b68266ceced51fb666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::LeafTask::LeafTask</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;, const goalmodel::Property &amp;, const goalmodel::Property &amp;, const goalmodel::Property &amp;)</argsstring>
+        <name>LeafTask</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>cost</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>reliability</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>frequency</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="18" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::LeafTask::LeafTask</definition>
+        <argsstring>()</argsstring>
+        <name>LeafTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="20" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1aa4063912deb5225a452f1d33fbeeefbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::LeafTask::~LeafTask</definition>
+        <argsstring>()</argsstring>
+        <name>~LeafTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="21" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1aec908209587865d0543bfd7f2db0e5c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::LeafTask::LeafTask</definition>
+        <argsstring>(const LeafTask &amp;)</argsstring>
+        <name>LeafTask</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="23" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref> &amp;</type>
+        <definition>LeafTask &amp; bsn::goalmodel::LeafTask::operator=</definition>
+        <argsstring>(const LeafTask &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="24" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="31" bodyend="39"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" compoundref="LeafTask_8hpp" startline="41">context</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" compoundref="LeafTask_8hpp" startline="42">cost</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" compoundref="Node_8hpp" startline="43">bsn::goalmodel::Node::description</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" compoundref="LeafTask_8hpp" startline="44">frequency</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" compoundref="LeafTask_8cpp" startline="45" endline="47">getContext</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" compoundref="LeafTask_8cpp" startline="53" endline="55">getCost</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" compoundref="Node_8cpp" startline="48" endline="50">bsn::goalmodel::Node::getDescription</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" compoundref="LeafTask_8cpp" startline="69" endline="71">getFrequency</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" compoundref="Node_8cpp" startline="40" endline="42">bsn::goalmodel::Node::getID</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" compoundref="LeafTask_8cpp" startline="61" endline="63">getReliability</references>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" compoundref="LeafTask_8hpp" startline="43">reliability</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a2188abe54b01f27ced52f60313f6c806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::LeafTask::setContext</definition>
+        <argsstring>(const goalmodel::Context &amp;)</argsstring>
+        <name>setContext</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref> &amp;</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="26" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="41" bodyend="43"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" compoundref="LeafTask_8hpp" startline="41">context</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">goalmodel::Context</ref></type>
+        <definition>goalmodel::Context bsn::goalmodel::LeafTask::getContext</definition>
+        <argsstring>() const</argsstring>
+        <name>getContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="27" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="45" bodyend="47"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" compoundref="LeafTask_8hpp" startline="41">context</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a362161b7df5ea2b23d085915dfbb52ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::LeafTask::setCost</definition>
+        <argsstring>(const goalmodel::Property &amp;)</argsstring>
+        <name>setCost</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>cost</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="29" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="49" bodyend="51"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" compoundref="LeafTask_8hpp" startline="42">cost</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref></type>
+        <definition>goalmodel::Property bsn::goalmodel::LeafTask::getCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="30" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="53" bodyend="55"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" compoundref="LeafTask_8hpp" startline="42">cost</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1aa3f5aad58bc1136fcb9fc77f1634d793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::LeafTask::setReliability</definition>
+        <argsstring>(const goalmodel::Property &amp;)</argsstring>
+        <name>setReliability</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>reliability</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="32" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="57" bodyend="59"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" compoundref="LeafTask_8hpp" startline="43">reliability</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref></type>
+        <definition>goalmodel::Property bsn::goalmodel::LeafTask::getReliability</definition>
+        <argsstring>() const</argsstring>
+        <name>getReliability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="33" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="61" bodyend="63"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" compoundref="LeafTask_8hpp" startline="43">reliability</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a9d3cac1479633c239fe8f58fdad3a16f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::LeafTask::setFrequency</definition>
+        <argsstring>(const goalmodel::Property &amp;)</argsstring>
+        <name>setFrequency</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref> &amp;</type>
+          <defname>frequency</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="35" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="65" bodyend="67"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" compoundref="LeafTask_8hpp" startline="44">frequency</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">goalmodel::Property</ref></type>
+        <definition>goalmodel::Property bsn::goalmodel::LeafTask::getFrequency</definition>
+        <argsstring>() const</argsstring>
+        <name>getFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="36" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="69" bodyend="71"/>
+        <references refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" compoundref="LeafTask_8hpp" startline="44">frequency</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" compoundref="LeafTask_8cpp" startline="31" endline="39">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1LeafTask_1a1313e8959be340ca1974f8aaafd83a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::LeafTask::addChild</definition>
+        <argsstring>(std::shared_ptr&lt; Node &gt;)</argsstring>
+        <name>addChild</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt;</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="38" column="1" bodyfile="src/libbsn/src/goalmodel/LeafTask.cpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="192">
+        <label>bsn::goalmodel::Task</label>
+        <link refid="classbsn_1_1goalmodel_1_1Task"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>bsn::goalmodel::LeafTask</label>
+        <link refid="classbsn_1_1goalmodel_1_1LeafTask"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>bsn::goalmodel::Node</label>
+        <link refid="classbsn_1_1goalmodel_1_1Node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="195">
+        <label>bsn::goalmodel::Task</label>
+        <link refid="classbsn_1_1goalmodel_1_1Task"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>bsn::goalmodel::Context</label>
+        <link refid="classbsn_1_1goalmodel_1_1Context"/>
+      </node>
+      <node id="194">
+        <label>bsn::goalmodel::LeafTask</label>
+        <link refid="classbsn_1_1goalmodel_1_1LeafTask"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+        <childnode refid="197" relation="usage">
+          <edgelabel>frequency</edgelabel>
+          <edgelabel>reliability</edgelabel>
+          <edgelabel>cost</edgelabel>
+        </childnode>
+        <childnode refid="198" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+      </node>
+      <node id="196">
+        <label>bsn::goalmodel::Node</label>
+        <link refid="classbsn_1_1goalmodel_1_1Node"/>
+      </node>
+      <node id="197">
+        <label>bsn::goalmodel::Property</label>
+        <link refid="classbsn_1_1goalmodel_1_1Property"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="14" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" bodystart="14" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a1313e8959be340ca1974f8aaafd83a7c" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>addChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Task_1a8df193e5fcbf36a3b514ca283d763322" prot="public" virt="non-virtual" ambiguityscope="bsn::goalmodel::Task::"><scope>bsn::goalmodel::LeafTask</scope><name>addChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Task_1a3a22146be660551a7d0f8fb63c8e5e12" prot="public" virt="non-virtual" ambiguityscope="bsn::goalmodel::Task::"><scope>bsn::goalmodel::LeafTask</scope><name>addChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>children</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a82c3f1f5855677da3a9fafbf51bef646" prot="private" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>context</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a4a3149c0214d47a10be12bc629b991b2" prot="private" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>cost</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>description</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1ac8165aca3af0da7b08feb3b46ea45295" prot="private" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>frequency</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a05a6edfe1d551224522d1864fbac4155" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getContext</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a165ec6f4b6bb2edc66201376fec30e12" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getCost</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a7449c8d90f8210827cd3ebade39ab3da" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getFrequency</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1ae57e36bae78eae6a0deff6f6087cab39" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>getReliability</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a918e385077b367efbcf321acafe49b24" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>hasChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>id</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a2e1a112f92802439c7d40d335b8c9076" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>LeafTask</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aae555a0e2bf1f9b68266ceced51fb666" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>LeafTask</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a3a64b0b1618bef0b292a84eebc3f129b" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>LeafTask</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aec908209587865d0543bfd7f2db0e5c6" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>LeafTask</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1addc1569b8e62fbb1a8e222d6ceef482d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac66e87f7d3c17e1a6b06e158861b5f95" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a8add7ef85cb81e1d90704141aaf7c719" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a5a0f2631ba7d3681b78f4f7c2fe405f1" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" prot="public" virt="non-virtual" ambiguityscope="bsn::goalmodel::Task::"><scope>bsn::goalmodel::LeafTask</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>operator==</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a75b59636163a60488b539b55136ad55c" prot="private" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>reliability</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>removeChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a2188abe54b01f27ced52f60313f6c806" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>setContext</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a362161b7df5ea2b23d085915dfbb52ed" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>setCost</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a23c73e43071f1ca7d5a33e3992c42001" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>setDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1a9d3cac1479633c239fe8f58fdad3a16f" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>setFrequency</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac8ea48fa240031a0c8b5fa2e76fba161" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>setID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aa3f5aad58bc1136fcb9fc77f1634d793" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>setReliability</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Task_1a39c08ec5c1c3a6462831526ff601364f" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>Task</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Task_1a793b6c88440f488ad96431eae8634799" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>Task</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1LeafTask_1aa4063912deb5225a452f1d33fbeeefbe" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>~LeafTask</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a1f05ee3a04f3954e35d09f1228802f6a" prot="public" virt="virtual"><scope>bsn::goalmodel::LeafTask</scope><name>~Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Task_1a663798115e7b2cb3c3e0d91c4e0fba0f" prot="public" virt="non-virtual"><scope>bsn::goalmodel::LeafTask</scope><name>~Task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

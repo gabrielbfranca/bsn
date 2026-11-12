@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module DataAccess-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="394" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="56" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="16" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="24.625" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="3.500" level="0" />
+<weighted_methods_per_class_unity value="23" level="0" />
+<weighted_methods_per_class_visibility value="3" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="11" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="35" />
+<lines_of_code value="36" level="1" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>DataAccess(const DataAccess &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="42" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>DataAccess(int &amp;,char **,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="38" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="3" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>applyTimeWindow()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="63" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="419" />
+</extent>
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>body()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="67" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="116" />
+</extent>
+<lines_of_code value="19" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>calculateComponentCost(const string &amp;,string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="59" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="401" />
+</extent>
+<lines_of_code value="15" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>calculateComponentReliability(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="58" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="364" />
+</extent>
+<lines_of_code value="27" level="0" />
+<McCabes_cyclomatic_complexity value="7" level="0" />
+<lines_of_comment value="7" level="0" />
+<lines_of_code_per_line_of_comment value="3.857" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.000" level="0" />
+</member_function>
+<member_function>
+<name>calculateReliability()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="56" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>flush()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="53" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="298" />
+</extent>
+<lines_of_code value="58" level="1" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="0" />
+</member_function>
+<member_function>
+<name>now()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="44" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="6" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>nowInSeconds()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="45" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="10" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const DataAccess &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="43" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>persistAdaptation(const int64_t &amp;,const string &amp;,const string &amp;,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>persistEnergyStatus(const int64_t &amp;,const string &amp;,const string &amp;,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>persistEvent(const int64_t &amp;,const string &amp;,const string &amp;,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>persistStatus(const int64_t &amp;,const string &amp;,const string &amp;,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>persistUncertainty(const int64_t &amp;,const string &amp;,const string &amp;,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>processQuery(Request &amp;,Response &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="70" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="202" />
+</extent>
+<lines_of_code value="51" level="1" />
+<McCabes_cyclomatic_complexity value="16" level="1" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="25.500" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="8.000" level="1" />
+</member_function>
+<member_function>
+<name>processTargetSystemData(const ConstPtr &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="71" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="107" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>receivePersistMessage(const ConstPtr &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="69" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="140" />
+</extent>
+<lines_of_code value="55" level="1" />
+<McCabes_cyclomatic_complexity value="11" level="1" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>resetStatus()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="60" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setUp()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="65" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="33" />
+</extent>
+<lines_of_code value="60" level="1" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>tearDown()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="66" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="105" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~DataAccess()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="39" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="4" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>DataAccess</name>
+<client_module>
+</client_module>
+<supplier_module>
+<name>ConstPtr</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="69" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="71" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="107" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="140" />
+</extent>
+<name>NodeHandle</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="74" />
+</extent>
+<name>ROSComponent</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="35" />
+</extent>
+<name>Request</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="70" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="202" />
+</extent>
+<name>Response</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="70" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="202" />
+</extent>
+<name>ServiceServer</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="78" />
+</extent>
+<name>Subscriber</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="77" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="79" />
+</extent>
+<name>fstream</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="81" />
+</extent>
+<name>int64_t</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="88" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="58" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="59" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="59" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="82" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="83" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="84" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="85" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="86" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="3" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="364" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="401" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="401" />
+</extent>
+<name>vector</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="90" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="91" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="92" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="93" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="94" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

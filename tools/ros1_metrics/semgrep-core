@@ -1,0 +1,4 @@
+#!/bin/sh
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
+CORE="$ROOT/tools/.metrics-runtime/semgrep-musl/semgrep-1.185.0.data/purelib/semgrep/bin/semgrep-core"
+exec "$ROOT/tools/.metrics-runtime/musl-root/lib/ld-musl-x86_64.so.1" --library-path "$(dirname "$CORE")/libs:$ROOT/tools/.metrics-runtime/musl-root/lib" "$CORE" "$@"

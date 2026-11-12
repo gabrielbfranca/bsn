@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1generator_1_1Markov" kind="class" language="C++" prot="public">
+    <compoundname>bsn::generator::Markov</compoundname>
+    <includes refid="Markov_8hpp" local="no">Markov.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" prot="public" static="no" mutable="no">
+        <type>std::array&lt; float, 25 &gt;</type>
+        <definition>std::array&lt;float,25&gt; bsn::generator::Markov::transitions</definition>
+        <argsstring></argsstring>
+        <name>transitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="30" column="1" bodyfile="src/libbsn/include/libbsn/generator/Markov.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" compoundref="Markov_8cpp" startline="8" endline="8">Markov</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" compoundref="DataGenerator_8cpp" startline="32" endline="52">bsn::generator::DataGenerator::nextState</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" compoundref="Markov_8cpp" startline="21" endline="26">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t bsn::generator::Markov::currentState</definition>
+        <argsstring></argsstring>
+        <name>currentState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="32" column="1" bodyfile="src/libbsn/include/libbsn/generator/Markov.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">bsn::generator::DataGenerator::calculateValue</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" compoundref="Markov_8cpp" startline="8" endline="8">Markov</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" compoundref="DataGenerator_8cpp" startline="32" endline="52">bsn::generator::DataGenerator::nextState</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" compoundref="Markov_8cpp" startline="21" endline="26">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" prot="public" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 5 &gt;</type>
+        <definition>std::array&lt;bsn::range::Range, 5&gt; bsn::generator::Markov::states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="34" column="1" bodyfile="src/libbsn/include/libbsn/generator/Markov.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a80c185d38febe5cbe7b83f760e2b8023" compoundref="DataGenerator_8cpp" startline="54" endline="64">bsn::generator::DataGenerator::calculateValue</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" compoundref="Markov_8cpp" startline="8" endline="8">Markov</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" compoundref="Markov_8cpp" startline="21" endline="26">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::Markov::Markov</definition>
+        <argsstring>()</argsstring>
+        <name>Markov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="22" column="1" bodyfile="src/libbsn/src/generator/Markov.cpp" bodystart="8" bodyend="8"/>
+        <references refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" compoundref="Markov_8hpp" startline="32">currentState</references>
+        <references refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" compoundref="Markov_8hpp" startline="34">states</references>
+        <references refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" compoundref="Markov_8hpp" startline="30">transitions</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1a5e00c2941e8ea3608271741fb7202e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::Markov::Markov</definition>
+        <argsstring>(std::array&lt; float, 25 &gt; transitions, std::array&lt; bsn::range::Range, 5 &gt; states, int32_t initialState)</argsstring>
+        <name>Markov</name>
+        <param>
+          <type>std::array&lt; float, 25 &gt;</type>
+          <declname>transitions</declname>
+        </param>
+        <param>
+          <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 5 &gt;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>initialState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1ac162f1822a1639fe8389d11258e876bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::generator::Markov::Markov</definition>
+        <argsstring>(const Markov &amp;)</argsstring>
+        <name>Markov</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="26" column="1" bodyfile="src/libbsn/src/generator/Markov.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref> &amp;</type>
+        <definition>Markov &amp; bsn::generator::Markov::operator=</definition>
+        <argsstring>(const Markov &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="27" column="1" bodyfile="src/libbsn/src/generator/Markov.cpp" bodystart="21" bodyend="26"/>
+        <references refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" compoundref="Markov_8hpp" startline="32">currentState</references>
+        <references refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" compoundref="Markov_8hpp" startline="34">states</references>
+        <references refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" compoundref="Markov_8hpp" startline="30">transitions</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1ad8c0269028bbeb7f854a1692c3fe5b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::generator::Markov::next_state</definition>
+        <argsstring>()</argsstring>
+        <name>next_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1ad94342911e611efca754ea5a4c3b9dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::generator::Markov::calculate_state</definition>
+        <argsstring>()</argsstring>
+        <name>calculate_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1generator_1_1Markov_1a59725deb9f6496b5c8dce15bb7b1005a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const string bsn::generator::Markov::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="41" column="1" bodyfile="src/libbsn/src/generator/Markov.cpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/generator/Markov.hpp" line="20" column="1" bodyfile="src/libbsn/include/libbsn/generator/Markov.hpp" bodystart="20" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1generator_1_1Markov_1ad94342911e611efca754ea5a4c3b9dca" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>calculate_state</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>currentState</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>Markov</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1a5e00c2941e8ea3608271741fb7202e4b" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>Markov</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1ac162f1822a1639fe8389d11258e876bf" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>Markov</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1ad8c0269028bbeb7f854a1692c3fe5b6b" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>next_state</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>states</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1a59725deb9f6496b5c8dce15bb7b1005a" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>toString</name></member>
+      <member refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" prot="public" virt="non-virtual"><scope>bsn::generator::Markov</scope><name>transitions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

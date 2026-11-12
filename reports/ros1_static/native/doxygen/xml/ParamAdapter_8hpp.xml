@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ParamAdapter_8hpp" kind="file" language="C++">
+    <compoundname>ParamAdapter.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="yes">ros/ros.h</includes>
+    <includes local="yes">archlib/EffectorRegister.h</includes>
+    <includes refid="Effector_8hpp" local="yes">archlib/target_system/Effector.hpp</includes>
+    <includes local="yes">archlib/AdaptationCommand.h</includes>
+    <includedby refid="param__adapter_8cpp" local="yes">src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp</includedby>
+    <includedby refid="ParamAdapter_8cpp" local="yes">src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</includedby>
+    <incdepgraph>
+      <node id="2453">
+        <label>src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp</label>
+        <link refid="ParamAdapter_8hpp"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+        <childnode refid="2455" relation="include">
+        </childnode>
+        <childnode refid="2456" relation="include">
+        </childnode>
+        <childnode refid="2457" relation="include">
+        </childnode>
+        <childnode refid="2458" relation="include">
+        </childnode>
+      </node>
+      <node id="2461">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+        <childnode refid="2455" relation="include">
+        </childnode>
+      </node>
+      <node id="2460">
+        <label>stdexcept</label>
+      </node>
+      <node id="2454">
+        <label>string</label>
+      </node>
+      <node id="2457">
+        <label>archlib/target_system/Effector.hpp</label>
+        <link refid="Effector_8hpp"/>
+        <childnode refid="2455" relation="include">
+        </childnode>
+        <childnode refid="2458" relation="include">
+        </childnode>
+        <childnode refid="2459" relation="include">
+        </childnode>
+      </node>
+      <node id="2458">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="2459">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+        <childnode refid="2460" relation="include">
+        </childnode>
+        <childnode refid="2455" relation="include">
+        </childnode>
+        <childnode refid="2461" relation="include">
+        </childnode>
+      </node>
+      <node id="2455">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="2456">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2462">
+        <label>src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp</label>
+        <link refid="ParamAdapter_8hpp"/>
+        <childnode refid="2463" relation="include">
+        </childnode>
+        <childnode refid="2464" relation="include">
+        </childnode>
+      </node>
+      <node id="2464">
+        <label>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</label>
+        <link refid="ParamAdapter_8cpp"/>
+      </node>
+      <node id="2463">
+        <label>src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp</label>
+        <link refid="param__adapter_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classParamAdapter" prot="public">ParamAdapter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PARAM_ADAPTER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAM_ADAPTER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/ros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EffectorRegister.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Effector_8hpp" kindref="compound">archlib/target_system/Effector.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/AdaptationCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classParamAdapter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Effector" kindref="compound">arch::target_system::Effector</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" kindref="member">ParamAdapter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1a12a2aebf8fcbad3a64399ae40843a6e3" kindref="member">~ParamAdapter</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" kindref="member">ParamAdapter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref><sp/>&amp;<ref refid="classParamAdapter_1a1492852462fb9aa13dd2aec7d7b0ae45" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter" kindref="compound">ParamAdapter</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1a8067157ee9b80ea004424442237096ee" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" kindref="member">receiveAdaptationCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" kindref="member">moduleConnect</ref>(archlib::EffectorRegister::Request<sp/>&amp;req,<sp/>archlib::EffectorRegister::Response<sp/>&amp;res);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::ServiceServer<sp/><ref refid="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" kindref="member">register_service</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,ros::Publisher&gt;<sp/><ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp"/>
+  </compounddef>
+</doxygen>

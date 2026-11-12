@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_cdff0d214610f5629d418322f75b48e5" kind="dir">
+    <compoundname>src/sa-bsn/system_manager/adaptation_engine/include/engine</compoundname>
+    <innerfile refid="CostEngine_8hpp">CostEngine.hpp</innerfile>
+    <innerfile refid="Engine_8hpp">Engine.hpp</innerfile>
+    <innerfile refid="ReliabilityEngine_8hpp">ReliabilityEngine.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/"/>
+  </compounddef>
+</doxygen>

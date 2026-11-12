@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Component-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="135" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="9" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="10" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="13.500" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.900" level="0" />
+<weighted_methods_per_class_unity value="16" level="0" />
+<weighted_methods_per_class_visibility value="7" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="2" level="0" />
+<coupling_between_objects value="9" level="0" />
+<IF4 value="196" level="1" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="144" level="2" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="100" level="1" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="20" />
+<lines_of_code value="13" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Component(const Component &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="27" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Component(int &amp;,char **,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="23" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="5" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>activate()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="43" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="152" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>body()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="34" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>deactivate()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="44" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="157" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const Component &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="28" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>reconfigure(const ConstPtr &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="40" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="148" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>run()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="33" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="99" />
+</extent>
+<lines_of_code value="18" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>sendEnergyStatus(const double &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="38" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="139" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>sendEvent(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="36" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="120" />
+</extent>
+<lines_of_code value="8" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>sendStatus(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="37" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="130" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setUp()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="31" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="9" />
+</extent>
+<lines_of_code value="26" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="8.667" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>shutdownComponent()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="45" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="59" />
+</extent>
+<lines_of_code value="28" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="9.333" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>sigIntHandler(int)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="48" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="55" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>tearDown()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="32" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="48" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~Component()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="24" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="7" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Component</name>
+<client_module>
+<name>CentralHub</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="16" />
+</extent>
+<name>Sensor</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp" line="18" />
+</extent>
+</client_module>
+<supplier_module>
+<name>ConstPtr</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="40" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="148" />
+</extent>
+<name>NodeHandle</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="47" />
+</extent>
+<name>Publisher</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="52" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="53" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="54" />
+</extent>
+<name>ROSComponent</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="20" />
+</extent>
+<name>Subscriber</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="55" />
+</extent>
+<name>bool</name>
+<visible>false</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="51" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="37" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="120" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="130" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1resource_1_1Battery" kind="class" language="C++" prot="public">
+    <compoundname>bsn::resource::Battery</compoundname>
+    <includes refid="Battery_8hpp" local="no">Battery.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1resource_1_1Battery_1ae8bd347032dd9880fc870a3912480b77" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string bsn::resource::Battery::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="41" column="1" bodyfile="src/libbsn/include/libbsn/resource/Battery.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad5cd2177695d9bd27dd61d514b86470b" compoundref="Battery_8cpp" startline="64" endline="66">getId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double bsn::resource::Battery::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="42" column="1" bodyfile="src/libbsn/include/libbsn/resource/Battery.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" compoundref="Battery_8cpp" startline="54" endline="58">generate</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ac0ac21b47793f078ac0de26fd039f17b" compoundref="Battery_8cpp" startline="72" endline="74">getCapacity</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1acbac5f9c64777f5f2eadca92df7526be" compoundref="Battery_8cpp" startline="68" endline="70">setCapacity</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1af7b7e3bd0d56a03e17f1da8786866e8c" compoundref="Battery_8cpp" startline="92" endline="98">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double bsn::resource::Battery::currentLevel</definition>
+        <argsstring></argsstring>
+        <name>currentLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="43" column="1" bodyfile="src/libbsn/include/libbsn/resource/Battery.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">consume</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" compoundref="Battery_8cpp" startline="54" endline="58">generate</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" compoundref="Battery_8cpp" startline="80" endline="82">getCurrentLevel</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1a2953c6225bc1ed1be259cc6231ef08fa" compoundref="Battery_8cpp" startline="76" endline="78">setCurrentLevel</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1af7b7e3bd0d56a03e17f1da8786866e8c" compoundref="Battery_8cpp" startline="92" endline="98">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double bsn::resource::Battery::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="44" column="1" bodyfile="src/libbsn/include/libbsn/resource/Battery.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">consume</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" compoundref="Battery_8cpp" startline="54" endline="58">generate</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1af42ddcb306bcc9f8c7bb4d23a1c96a2d" compoundref="Battery_8cpp" startline="88" endline="90">getUnit</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1adc734db0793f80794bd934c524fefca0" compoundref="Battery_8cpp" startline="84" endline="86">setUnit</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1af7b7e3bd0d56a03e17f1da8786866e8c" compoundref="Battery_8cpp" startline="92" endline="98">toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1af0fbd98517df70769abb97e08a69ea6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::resource::Battery::Battery</definition>
+        <argsstring>(const std::string, const double, const double, const double)</argsstring>
+        <name>Battery</name>
+        <param>
+          <type>const std::string</type>
+          <defname>_id</defname>
+        </param>
+        <param>
+          <type>const double</type>
+          <defname>_capacity</defname>
+        </param>
+        <param>
+          <type>const double</type>
+          <defname>_currentLevel</defname>
+        </param>
+        <param>
+          <type>const double</type>
+          <defname>_unit</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="15" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="8" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1ae540af095ce21e4fe2c96bc6c71d683d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::resource::Battery::Battery</definition>
+        <argsstring>()</argsstring>
+        <name>Battery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="17" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1a8f7804c0914a3ce3adf0efd2d33491e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::resource::Battery::~Battery</definition>
+        <argsstring>()</argsstring>
+        <name>~Battery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="18" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1a8f128046b1b484dd8d3fdf924d26c92d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::resource::Battery::Battery</definition>
+        <argsstring>(const Battery &amp;)</argsstring>
+        <name>Battery</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">Battery</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="20" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">Battery</ref> &amp;</type>
+        <definition>Battery &amp; bsn::resource::Battery::operator=</definition>
+        <argsstring>(const Battery &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">Battery</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="21" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="38" bodyend="44"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" compoundref="Battery_8hpp" startline="42">capacity</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" compoundref="Battery_8hpp" startline="43">currentLevel</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1ac0ac21b47793f078ac0de26fd039f17b" compoundref="Battery_8cpp" startline="72" endline="74">getCapacity</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" compoundref="Battery_8cpp" startline="80" endline="82">getCurrentLevel</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1ad5cd2177695d9bd27dd61d514b86470b" compoundref="Battery_8cpp" startline="64" endline="66">getId</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1af42ddcb306bcc9f8c7bb4d23a1c96a2d" compoundref="Battery_8cpp" startline="88" endline="90">getUnit</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" compoundref="Battery_8hpp" startline="44">unit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::resource::Battery::consume</definition>
+        <argsstring>(const double)</argsstring>
+        <name>consume</name>
+        <param>
+          <type>const double</type>
+          <defname>mult</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="23" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="48" bodyend="52"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" compoundref="Battery_8hpp" startline="43">currentLevel</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" compoundref="Battery_8hpp" startline="44">unit</references>
+        <referencedby refid="classG3T1__1_1a4696c0b3b423e6d0efe2a6f3f6e84cfa" compoundref="G3T1__1_8cpp" startline="90" endline="135">G3T1_1::collect</referencedby>
+        <referencedby refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" compoundref="G3T1__2_8cpp" startline="85" endline="119">G3T1_2::collect</referencedby>
+        <referencedby refid="classG3T1__6_1a0deb9a2b913d7753ef6708ccbd87df34" compoundref="G3T1__6_8cpp" startline="88" endline="108">G3T1_6::collect</referencedby>
+        <referencedby refid="classG3T1__4_1aac00c133f2199079b671b3094496fb33" compoundref="G3T1__4_8cpp" startline="87" endline="107">G3T1_4::collect</referencedby>
+        <referencedby refid="classG3T1__3_1a3519014bd56d810164d86d9756169c44" compoundref="G3T1__3_8cpp" startline="87" endline="123">G3T1_3::collect</referencedby>
+        <referencedby refid="classG3T1__5_1a1aa8fb64b30b7263df5c2189fb5995dc" compoundref="G3T1__5_8cpp" startline="87" endline="107">G3T1_5::collect</referencedby>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">G4T1::collect</referencedby>
+        <referencedby refid="classG3T1__1_1aff514b4de85780777a8326e353148fe1" compoundref="G3T1__1_8cpp" startline="137" endline="148">G3T1_1::process</referencedby>
+        <referencedby refid="classG3T1__3_1a82334e4d79cb9a4b4a757a96c60fe4ce" compoundref="G3T1__3_8cpp" startline="125" endline="136">G3T1_3::process</referencedby>
+        <referencedby refid="classG3T1__2_1a971571b3baee620f4fc36b31579db6ca" compoundref="G3T1__2_8cpp" startline="121" endline="132">G3T1_2::process</referencedby>
+        <referencedby refid="classG3T1__4_1ab743af6fc3e6ad0f64ef2520b811bb63" compoundref="G3T1__4_8cpp" startline="109" endline="120">G3T1_4::process</referencedby>
+        <referencedby refid="classG3T1__6_1ab103fd747d38c26358039e4108c2a07d" compoundref="G3T1__6_8cpp" startline="110" endline="121">G3T1_6::process</referencedby>
+        <referencedby refid="classG3T1__5_1acef5ff056ed22c930ae583f87cf1f03a" compoundref="G3T1__5_8cpp" startline="109" endline="120">G3T1_5::process</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">G4T1::process</referencedby>
+        <referencedby refid="classG3T1__3_1a4bd1c419743c7c128fd1c3cf4fa5e434" compoundref="G3T1__3_8cpp" startline="138" endline="158">G3T1_3::transfer</referencedby>
+        <referencedby refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" compoundref="G3T1__6_8cpp" startline="123" endline="143">G3T1_6::transfer</referencedby>
+        <referencedby refid="classG3T1__4_1a20ad5272beba24e4879fb29985b85f69" compoundref="G3T1__4_8cpp" startline="122" endline="142">G3T1_4::transfer</referencedby>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">G3T1_2::transfer</referencedby>
+        <referencedby refid="classG3T1__1_1a58277c46b8319bd35e3ffabd52805874" compoundref="G3T1__1_8cpp" startline="150" endline="173">G3T1_1::transfer</referencedby>
+        <referencedby refid="classG3T1__5_1ae9918da7342a4fb88c6f633db43b9fe8" compoundref="G3T1__5_8cpp" startline="122" endline="142">G3T1_5::transfer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::resource::Battery::generate</definition>
+        <argsstring>(const double)</argsstring>
+        <name>generate</name>
+        <param>
+          <type>const double</type>
+          <defname>mult</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="24" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="54" bodyend="58"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" compoundref="Battery_8hpp" startline="42">capacity</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" compoundref="Battery_8hpp" startline="43">currentLevel</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" compoundref="Battery_8hpp" startline="44">unit</references>
+        <referencedby refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" compoundref="CentralHub_8cpp" startline="102" endline="105">CentralHub::recharge</referencedby>
+        <referencedby refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" compoundref="Sensor_8cpp" startline="154" endline="163">Sensor::recharge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1a6d210f39d8490f050f4f4efe2a08a504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::resource::Battery::setId</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setId</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="26" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1ad5cd2177695d9bd27dd61d514b86470b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string bsn::resource::Battery::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="27" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="64" bodyend="66"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1ae8bd347032dd9880fc870a3912480b77" compoundref="Battery_8hpp" startline="41">id</references>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1acbac5f9c64777f5f2eadca92df7526be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::resource::Battery::setCapacity</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>setCapacity</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>_cap</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="29" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="68" bodyend="70"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" compoundref="Battery_8hpp" startline="42">capacity</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1ac0ac21b47793f078ac0de26fd039f17b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::resource::Battery::getCapacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="30" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="72" bodyend="74"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" compoundref="Battery_8hpp" startline="42">capacity</references>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1a2953c6225bc1ed1be259cc6231ef08fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::resource::Battery::setCurrentLevel</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>setCurrentLevel</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>_cLevel</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="32" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="76" bodyend="78"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" compoundref="Battery_8hpp" startline="43">currentLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::resource::Battery::getCurrentLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="33" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="80" bodyend="82"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" compoundref="Battery_8hpp" startline="43">currentLevel</references>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">CentralHub::body</referencedby>
+        <referencedby refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" compoundref="Sensor_8cpp" startline="54" endline="87">Sensor::body</referencedby>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+        <referencedby refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" compoundref="CentralHub_8cpp" startline="102" endline="105">CentralHub::recharge</referencedby>
+        <referencedby refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" compoundref="Sensor_8cpp" startline="154" endline="163">Sensor::recharge</referencedby>
+        <referencedby refid="classG3T1__4_1a20ad5272beba24e4879fb29985b85f69" compoundref="G3T1__4_8cpp" startline="122" endline="142">G3T1_4::transfer</referencedby>
+        <referencedby refid="classG3T1__3_1a4bd1c419743c7c128fd1c3cf4fa5e434" compoundref="G3T1__3_8cpp" startline="138" endline="158">G3T1_3::transfer</referencedby>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">G3T1_2::transfer</referencedby>
+        <referencedby refid="classG3T1__1_1a58277c46b8319bd35e3ffabd52805874" compoundref="G3T1__1_8cpp" startline="150" endline="173">G3T1_1::transfer</referencedby>
+        <referencedby refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" compoundref="G3T1__6_8cpp" startline="123" endline="143">G3T1_6::transfer</referencedby>
+        <referencedby refid="classG3T1__5_1ae9918da7342a4fb88c6f633db43b9fe8" compoundref="G3T1__5_8cpp" startline="122" endline="142">G3T1_5::transfer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1adc734db0793f80794bd934c524fefca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::resource::Battery::setUnit</definition>
+        <argsstring>(const double &amp;)</argsstring>
+        <name>setUnit</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>_unit</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="35" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="84" bodyend="86"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" compoundref="Battery_8hpp" startline="44">unit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1af42ddcb306bcc9f8c7bb4d23a1c96a2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::resource::Battery::getUnit</definition>
+        <argsstring>() const</argsstring>
+        <name>getUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="36" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="88" bodyend="90"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" compoundref="Battery_8hpp" startline="44">unit</references>
+        <referencedby refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" compoundref="Battery_8cpp" startline="38" endline="44">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1resource_1_1Battery_1af7b7e3bd0d56a03e17f1da8786866e8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const string bsn::resource::Battery::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="38" column="1" bodyfile="src/libbsn/src/resource/Battery.cpp" bodystart="92" bodyend="98"/>
+        <references refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" compoundref="Battery_8hpp" startline="42">capacity</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" compoundref="Battery_8hpp" startline="43">currentLevel</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" compoundref="Battery_8hpp" startline="44">unit</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="12" column="1" bodyfile="src/libbsn/include/libbsn/resource/Battery.hpp" bodystart="12" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1resource_1_1Battery_1af0fbd98517df70769abb97e08a69ea6d" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>Battery</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1ae540af095ce21e4fe2c96bc6c71d683d" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>Battery</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a8f128046b1b484dd8d3fdf924d26c92d" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>Battery</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a8953a87c8485a60822c26a167a488352" prot="private" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>capacity</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>consume</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1af8a85886ead72fd056f2ebcde8423de2" prot="private" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>currentLevel</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>generate</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1ac0ac21b47793f078ac0de26fd039f17b" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>getCapacity</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>getCurrentLevel</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1ad5cd2177695d9bd27dd61d514b86470b" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>getId</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1af42ddcb306bcc9f8c7bb4d23a1c96a2d" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>getUnit</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1ae8bd347032dd9880fc870a3912480b77" prot="private" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>id</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1ad226c2dc5464351bbdbc6461120934ad" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1acbac5f9c64777f5f2eadca92df7526be" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>setCapacity</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a2953c6225bc1ed1be259cc6231ef08fa" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>setCurrentLevel</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a6d210f39d8490f050f4f4efe2a08a504" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>setId</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1adc734db0793f80794bd934c524fefca0" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>setUnit</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1af7b7e3bd0d56a03e17f1da8786866e8c" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>toString</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a5fe9d684461c52a92c0b51a28a70e49b" prot="private" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>unit</name></member>
+      <member refid="classbsn_1_1resource_1_1Battery_1a8f7804c0914a3ce3adf0efd2d33491e4" prot="public" virt="non-virtual"><scope>bsn::resource::Battery</scope><name>~Battery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

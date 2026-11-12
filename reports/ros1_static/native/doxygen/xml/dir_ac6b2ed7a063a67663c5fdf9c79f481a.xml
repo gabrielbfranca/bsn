@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ac6b2ed7a063a67663c5fdf9c79f481a" kind="dir">
+    <compoundname>src/sa-bsn/target_system/effectors/param_adapter/apps</compoundname>
+    <innerfile refid="param__adapter_8cpp">param_adapter.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/target_system/effectors/param_adapter/apps/"/>
+  </compounddef>
+</doxygen>

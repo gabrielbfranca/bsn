@@ -1,0 +1,31 @@
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+       1      1      9      0       1 fixtures::SharedState::a@3-3@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      9      0       1 fixtures::SharedState::b@3-3@tools/ros1_metrics/fixtures/classes.hpp
+       1      1     15      0       1 fixtures::SplitState::SplitState@4-4@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      9      0       1 fixtures::SplitState::a@4-4@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      9      0       1 fixtures::SplitState::b@4-4@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      9      0       1 fixtures::CallBridge::a@5-5@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      9      0       1 fixtures::CallBridge::b@5-5@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      5      0       1 fixtures::OnlyConstructor::OnlyConstructor@6-6@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      8      0       1 fixtures::Stateless::a@7-7@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      8      0       1 fixtures::Stateless::b@7-7@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      8      0       1 fixtures::SeparateGetters::a@8-8@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      8      0       1 fixtures::SeparateGetters::b@8-8@tools/ros1_metrics/fixtures/classes.hpp
+       1      1      8      0       1 second::Branch::inlineMethod@16-16@tools/ros1_metrics/fixtures/classes.hpp
+       1      1     14      1       1 fixtures::Branch::linear@2-2@tools/ros1_metrics/fixtures/classes.cpp
+       1      2     24      1       1 fixtures::Branch::branch@3-3@tools/ros1_metrics/fixtures/classes.cpp
+2 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+     15       1.0     1.0        8.8        13     tools/ros1_metrics/fixtures/classes.hpp
+      3       1.0     1.5       19.0         2     tools/ros1_metrics/fixtures/classes.cpp
+
+===============================================================================================================
+No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 1000000 or parameter_count > 100)
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+        18       1.0     1.1       10.1       15            0      0.00    0.00

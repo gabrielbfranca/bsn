@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1B" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::B</compoundname>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfixtures_1_1B_1ac49b349e1c25f56764391d34f7a16dd0" prot="private" static="no" mutable="no">
+        <type><ref refid="classfixtures_1_1A" kindref="compound">A</ref> *</type>
+        <definition>A* fixtures::B::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="12" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>fixtures::A</label>
+        <link refid="classfixtures_1_1A"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>fixtures::B</label>
+        <link refid="classfixtures_1_1B"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>a</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="12" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="12" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classfixtures_1_1B_1ac49b349e1c25f56764391d34f7a16dd0" prot="private" virt="non-virtual"><scope>fixtures::B</scope><name>a</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

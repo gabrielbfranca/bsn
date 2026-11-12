@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1goalmodel_1_1GoalTree" kind="class" language="C++" prot="public">
+    <compoundname>bsn::goalmodel::GoalTree</compoundname>
+    <includes refid="GoalTree_8hpp" local="no">GoalTree.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::GoalTree::actor</definition>
+        <argsstring></argsstring>
+        <name>actor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="46" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" compoundref="GoalTree_8cpp" startline="35" endline="37">getActor</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" compoundref="GoalTree_8cpp" startline="21" endline="25">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1ac54c8b27c45cf63b4fa54903301e7a2b" compoundref="GoalTree_8cpp" startline="27" endline="29">operator==</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a42999a550ba8f74d12fa9c1ba7baacff" compoundref="GoalTree_8cpp" startline="31" endline="33">setActor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;Node&gt; &gt; bsn::goalmodel::GoalTree::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="47" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" compoundref="GoalTree_8cpp" startline="53" endline="56">addNode</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" compoundref="GoalTree_8cpp" startline="58" endline="62">addRootGoal</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a3da90e5130f5badab8f7a535ec9a16" compoundref="GoalTree_8cpp" startline="76" endline="88">getLeafTasks</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" compoundref="GoalTree_8cpp" startline="39" endline="41">getNodes</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" compoundref="GoalTree_8cpp" startline="21" endline="25">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1ab2125dbc5979fc446380d43a4898d851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::GoalTree::GoalTree</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>GoalTree</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>actor</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="21" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::GoalTree::GoalTree</definition>
+        <argsstring>()</argsstring>
+        <name>GoalTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="22" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1adbee309def15f18a8433248bde327ed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::GoalTree::~GoalTree</definition>
+        <argsstring>()</argsstring>
+        <name>~GoalTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="23" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a23180cab7d8c74b3436db03d143e88ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::GoalTree::GoalTree</definition>
+        <argsstring>(const GoalTree &amp;)</argsstring>
+        <name>GoalTree</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="25" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref> &amp;</type>
+        <definition>GoalTree &amp; bsn::goalmodel::GoalTree::operator=</definition>
+        <argsstring>(const GoalTree &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="26" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="21" bodyend="25"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" compoundref="GoalTree_8hpp" startline="46">actor</references>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" compoundref="GoalTree_8cpp" startline="35" endline="37">getActor</references>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" compoundref="GoalTree_8cpp" startline="39" endline="41">getNodes</references>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" compoundref="GoalTree_8hpp" startline="47">nodes</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1ac54c8b27c45cf63b4fa54903301e7a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::goalmodel::GoalTree::operator==</definition>
+        <argsstring>(const GoalTree &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="27" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="27" bodyend="29"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" compoundref="GoalTree_8hpp" startline="46">actor</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a42999a550ba8f74d12fa9c1ba7baacff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::GoalTree::setActor</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setActor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>actor</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="35" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="31" bodyend="33"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" compoundref="GoalTree_8hpp" startline="46">actor</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::GoalTree::getActor</definition>
+        <argsstring>() const</argsstring>
+        <name>getActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="36" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="35" bodyend="37"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" compoundref="GoalTree_8hpp" startline="46">actor</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" compoundref="GoalTree_8cpp" startline="21" endline="25">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::GoalTree::addRootGoal</definition>
+        <argsstring>(std::shared_ptr&lt; Goal &gt;)</argsstring>
+        <name>addRootGoal</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Goal" kindref="compound">Goal</ref> &gt;</type>
+          <defname>rootgoal</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="38" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="58" bodyend="62"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" compoundref="GoalTree_8cpp" startline="53" endline="56">addNode</references>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" compoundref="GoalTree_8hpp" startline="47">nodes</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1aa897db3ae8092163bc7c31cc0dff98d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Node &gt; bsn::goalmodel::GoalTree::getNode</definition>
+        <argsstring>(const std::string &amp;) const</argsstring>
+        <name>getNode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>nodeID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="39" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="64" bodyend="70"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" compoundref="GoalTree_8cpp" startline="39" endline="41">getNodes</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a5034dbef893e0ab381e59b685b5471ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bsn::goalmodel::GoalTree::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="41" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="72" bodyend="74"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" compoundref="GoalTree_8cpp" startline="39" endline="41">getNodes</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a7a3da90e5130f5badab8f7a535ec9a16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1LeafTask" kindref="compound">LeafTask</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; LeafTask &gt; &gt; bsn::goalmodel::GoalTree::getLeafTasks</definition>
+        <argsstring>() const</argsstring>
+        <name>getLeafTasks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="43" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="76" bodyend="88"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" compoundref="GoalTree_8hpp" startline="47">nodes</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::map&lt; std::string, std::shared_ptr&lt; Node &gt; &gt; bsn::goalmodel::GoalTree::getNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="30" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="39" bodyend="41"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" compoundref="GoalTree_8hpp" startline="47">nodes</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1aa897db3ae8092163bc7c31cc0dff98d8" compoundref="GoalTree_8cpp" startline="64" endline="70">getNode</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a5034dbef893e0ab381e59b685b5471ac" compoundref="GoalTree_8cpp" startline="72" endline="74">getSize</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" compoundref="GoalTree_8cpp" startline="21" endline="25">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::GoalTree::addChildren</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; Node &gt;&gt;)</argsstring>
+        <name>addChildren</name>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt;&gt;</type>
+          <defname>children</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="31" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="43" bodyend="51"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" compoundref="GoalTree_8cpp" startline="53" endline="56">addNode</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" compoundref="GoalTree_8cpp" startline="53" endline="56">addNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::GoalTree::addNode</definition>
+        <argsstring>(std::shared_ptr&lt; Node &gt;)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &gt;</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="32" column="1" bodyfile="src/libbsn/src/goalmodel/GoalTree.cpp" bodystart="53" bodyend="56"/>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" compoundref="GoalTree_8cpp" startline="43" endline="51">addChildren</references>
+        <references refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" compoundref="GoalTree_8hpp" startline="47">nodes</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" compoundref="GoalTree_8cpp" startline="43" endline="51">addChildren</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" compoundref="GoalTree_8cpp" startline="58" endline="62">addRootGoal</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="18" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" prot="private" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>actor</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" prot="private" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>addChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" prot="private" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>addNode</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>addRootGoal</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>getActor</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a3da90e5130f5badab8f7a535ec9a16" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>getLeafTasks</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1aa897db3ae8092163bc7c31cc0dff98d8" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>getNode</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" prot="private" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>getNodes</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a5034dbef893e0ab381e59b685b5471ac" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>getSize</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1ab2125dbc5979fc446380d43a4898d851" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>GoalTree</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>GoalTree</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a23180cab7d8c74b3436db03d143e88ae" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>GoalTree</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" prot="private" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>nodes</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1ac54c8b27c45cf63b4fa54903301e7a2b" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>operator==</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1a42999a550ba8f74d12fa9c1ba7baacff" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>setActor</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1GoalTree_1adbee309def15f18a8433248bde327ed3" prot="public" virt="non-virtual"><scope>bsn::goalmodel::GoalTree</scope><name>~GoalTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

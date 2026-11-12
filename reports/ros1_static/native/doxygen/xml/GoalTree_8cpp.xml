@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="GoalTree_8cpp" kind="file" language="C++">
+    <compoundname>GoalTree.cpp</compoundname>
+    <includes refid="GoalTree_8hpp" local="yes">libbsn/goalmodel/GoalTree.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">memory</includes>
+    <incdepgraph>
+      <node id="755">
+        <label>libbsn/goalmodel/Goal.hpp</label>
+        <link refid="Goal_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>libbsn/goalmodel/Task.hpp</label>
+        <link refid="Task_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>libbsn/goalmodel/GoalTree.hpp</label>
+        <link refid="GoalTree_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+      </node>
+      <node id="751">
+        <label>stdexcept</label>
+      </node>
+      <node id="749">
+        <label>string</label>
+      </node>
+      <node id="754">
+        <label>libbsn/goalmodel/Node.hpp</label>
+        <link refid="Node_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>map</label>
+      </node>
+      <node id="752">
+        <label>vector</label>
+      </node>
+      <node id="759">
+        <label>libbsn/goalmodel/Property.hpp</label>
+        <link refid="Property_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>iostream</label>
+      </node>
+      <node id="758">
+        <label>libbsn/goalmodel/Context.hpp</label>
+        <link refid="Context_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>src/libbsn/src/goalmodel/GoalTree.cpp</label>
+        <link refid="GoalTree_8cpp"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>libbsn/goalmodel/LeafTask.hpp</label>
+        <link refid="LeafTask_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GoalTree_8hpp" kindref="compound">libbsn/goalmodel/GoalTree.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">goalmodel<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="classbsn_1_1goalmodel_1_1GoalTree_1ab2125dbc5979fc446380d43a4898d851" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" kindref="member">GoalTree::GoalTree</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;actor)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor(actor),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes()<sp/>{}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" kindref="member">GoalTree::GoalTree</ref>()<sp/>:<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref>(),<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classbsn_1_1goalmodel_1_1GoalTree_1adbee309def15f18a8433248bde327ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1adbee309def15f18a8433248bde327ed3" kindref="member">GoalTree::~GoalTree</ref>(){};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="classbsn_1_1goalmodel_1_1GoalTree_1a23180cab7d8c74b3436db03d143e88ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a52dfb21d69f95df7e87d74ba7ad63c75" kindref="member">GoalTree::GoalTree</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref><sp/>&amp;obj)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" kindref="member">getActor</ref>()),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" kindref="member">getNodes</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref>&amp;<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a9dbc9ae2a9601ae3f309b62df29b29" kindref="member">GoalTree::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" kindref="member">getActor</ref>();<sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" kindref="member">getNodes</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classbsn_1_1goalmodel_1_1GoalTree_1ac54c8b27c45cf63b4fa54903301e7a2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1ac54c8b27c45cf63b4fa54903301e7a2b" kindref="member">GoalTree::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree" kindref="compound">GoalTree</ref><sp/>&amp;rhs)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref><sp/>==<sp/>rhs.<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classbsn_1_1goalmodel_1_1GoalTree_1a42999a550ba8f74d12fa9c1ba7baacff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a42999a550ba8f74d12fa9c1ba7baacff" kindref="member">GoalTree::setActor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;actor<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a2c4ccbca09d94513751e3376a84a0d3a" kindref="member">GoalTree::getActor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a815205d80a4ce628475f805314d24e02" kindref="member">actor</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::shared_ptr&lt;Node&gt;&gt;<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" kindref="member">GoalTree::getNodes</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" kindref="member">GoalTree::addChildren</ref>(std::vector&lt;std::shared_ptr&lt;Node&gt;&gt;<sp/>children)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>What<sp/>if<sp/>the<sp/>goal<sp/>node<sp/>has<sp/>tasks<sp/>nodes<sp/>as<sp/>children?<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oh<sp/>no</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;std::shared_ptr&lt;Node&gt;&gt;::const_iterator<sp/>it<sp/>=<sp/>children.begin();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/>children.end();<sp/>++it<sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" kindref="member">addNode</ref>(*it);<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" kindref="member">GoalTree::addNode</ref>(std::shared_ptr&lt;Node&gt;<sp/>node)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>[node-&gt;getID()]<sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;hasChildren())<sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a2168980646bf79f2f78cfca8f404e968" kindref="member">addChildren</ref>(node-&gt;getChildren());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a3a07b0ec72560e4b4a70dc747c867ec7" kindref="member">GoalTree::addRootGoal</ref>(std::shared_ptr&lt;Goal&gt;<sp/>rootgoal)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>.size()<sp/>&gt;=<sp/>1)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::invalid_argument(</highlight><highlight class="stringliteral">&quot;No<sp/>more<sp/>than<sp/>1<sp/>root<sp/>goals<sp/>allowed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1ab3773b27168de7b4f3c04b12652fb5d9" kindref="member">addNode</ref>(rootgoal);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classbsn_1_1goalmodel_1_1GoalTree_1aa897db3ae8092163bc7c31cc0dff98d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Node&gt;<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1aa897db3ae8092163bc7c31cc0dff98d8" kindref="member">GoalTree::getNode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;nodeID)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" kindref="member">getNodes</ref>().find(nodeID)).second;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::out_of_range<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;err)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>find<sp/>node.&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classbsn_1_1goalmodel_1_1GoalTree_1a5034dbef893e0ab381e59b685b5471ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a5034dbef893e0ab381e59b685b5471ac" kindref="member">GoalTree::getSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1GoalTree_1acd9af5ce2488f21620f76b945d5106da" kindref="member">getNodes</ref>().size();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a3da90e5130f5badab8f7a535ec9a16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::shared_ptr&lt;LeafTask&gt;&gt;<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a7a3da90e5130f5badab8f7a535ec9a16" kindref="member">GoalTree::getLeafTasks</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Node&gt;<sp/>temp;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::shared_ptr&lt;LeafTask&gt;&gt;<sp/>leafTasks;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::map&lt;std::string,<sp/>std::shared_ptr&lt;Node&gt;&gt;::const_iterator<sp/>it<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>.begin();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/><ref refid="classbsn_1_1goalmodel_1_1GoalTree_1a692ca1c64e5aeb0e57957f04869e0fd1" kindref="member">nodes</ref>.end();<sp/>it++)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(it-&gt;second-&gt;hasChildren()))</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leafTasks.push_back(std::dynamic_pointer_cast&lt;LeafTask&gt;(it-&gt;second));<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>leafTasks;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/goalmodel/GoalTree.cpp"/>
+  </compounddef>
+</doxygen>

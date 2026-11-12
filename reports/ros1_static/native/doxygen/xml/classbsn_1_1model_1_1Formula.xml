@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1model_1_1Formula" kind="class" language="C++" prot="public">
+    <compoundname>bsn::model::Formula</compoundname>
+    <includes refid="Formula_8hpp" local="no">Formula.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" prot="private" static="no" mutable="no">
+        <type>Lepton::CompiledExpression</type>
+        <definition>Lepton::CompiledExpression bsn::model::Formula::expression</definition>
+        <argsstring></argsstring>
+        <name>expression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="35" column="1" bodyfile="src/libbsn/include/libbsn/model/Formula.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" compoundref="Formula_8cpp" startline="57" endline="65">evaluate</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1a2a082f72ae62ff2049ddc4a33154b704" compoundref="Formula_8cpp" startline="7" endline="9">Formula</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" compoundref="Formula_8cpp" startline="31" endline="33">getExpression</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1a5867d8c6d3860a5c5b73048b88ac25e6" compoundref="Formula_8cpp" startline="70" endline="75">getTerms</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" compoundref="Formula_8cpp" startline="25" endline="29">operator=</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1add7c9f8b64bce70ec50e1c945f5fe4c1" compoundref="Formula_8cpp" startline="35" endline="37">setExpression</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string,double&gt; bsn::model::Formula::term_value</definition>
+        <argsstring></argsstring>
+        <name>term_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="36" column="1" bodyfile="src/libbsn/include/libbsn/model/Formula.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" compoundref="Formula_8cpp" startline="57" endline="65">evaluate</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1acd52c33aadcbde66aef55577eb039a8a" compoundref="Formula_8cpp" startline="10" endline="19">Formula</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" compoundref="Formula_8cpp" startline="39" endline="41">getTermValueMap</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" compoundref="Formula_8cpp" startline="25" endline="29">operator=</referencedby>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" compoundref="Formula_8cpp" startline="43" endline="51">setTermValueMap</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::model::Formula::Formula</definition>
+        <argsstring>()</argsstring>
+        <name>Formula</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="16" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1a2a082f72ae62ff2049ddc4a33154b704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::model::Formula::Formula</definition>
+        <argsstring>(const std::string &amp;text)</argsstring>
+        <name>Formula</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="17" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="7" bodyend="9"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1acd52c33aadcbde66aef55577eb039a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::model::Formula::Formula</definition>
+        <argsstring>(const std::string &amp;text, const std::vector&lt; std::string &gt; terms, const std::vector&lt; double &gt; values)</argsstring>
+        <name>Formula</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="18" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="10" bodyend="19"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+        <references refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" compoundref="Formula_8hpp" startline="36">term_value</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1aa07ebaa8fafd971d0bceb0a141bfbece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::model::Formula::~Formula</definition>
+        <argsstring>()</argsstring>
+        <name>~Formula</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="19" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1ac874ee14de83c79ff9a4c3e8a4eac731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::model::Formula::Formula</definition>
+        <argsstring>(const Formula &amp;)</argsstring>
+        <name>Formula</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1model_1_1Formula" kindref="compound">Formula</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="21" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1model_1_1Formula" kindref="compound">Formula</ref> &amp;</type>
+        <definition>Formula &amp; bsn::model::Formula::operator=</definition>
+        <argsstring>(const Formula &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1model_1_1Formula" kindref="compound">Formula</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="22" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="25" bodyend="29"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+        <references refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" compoundref="Formula_8cpp" startline="31" endline="33">getExpression</references>
+        <references refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" compoundref="Formula_8cpp" startline="39" endline="41">getTermValueMap</references>
+        <references refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" compoundref="Formula_8hpp" startline="36">term_value</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Lepton::CompiledExpression</type>
+        <definition>Lepton::CompiledExpression bsn::model::Formula::getExpression</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="24" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="31" bodyend="33"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" compoundref="Formula_8cpp" startline="25" endline="29">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1add7c9f8b64bce70ec50e1c945f5fe4c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::model::Formula::setExpression</definition>
+        <argsstring>(const Lepton::CompiledExpression &amp;)</argsstring>
+        <name>setExpression</name>
+        <param>
+          <type>const Lepton::CompiledExpression &amp;</type>
+          <defname>newExpression</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="25" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="35" bodyend="37"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt; std::string, double &gt; bsn::model::Formula::getTermValueMap</definition>
+        <argsstring>() const</argsstring>
+        <name>getTermValueMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="27" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="39" bodyend="41"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" compoundref="Formula_8hpp" startline="36">term_value</references>
+        <referencedby refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" compoundref="Formula_8cpp" startline="25" endline="29">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::model::Formula::setTermValueMap</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;, const std::vector&lt; double &gt; &amp;)</argsstring>
+        <name>setTermValueMap</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <defname>terms</defname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <defname>values</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="28" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="43" bodyend="51"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" compoundref="Formula_8hpp" startline="36">term_value</references>
+        <referencedby refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" compoundref="Engine_8cpp" startline="135" endline="138">Engine::calculate_qos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1a302aaa2cabfb31818e62aa67f42b8028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::model::Formula::setTermValueMap</definition>
+        <argsstring>(const std::map&lt; std::string, double &gt; &amp;)</argsstring>
+        <name>setTermValueMap</name>
+        <param>
+          <type>const std::map&lt; std::string, double &gt; &amp;</type>
+          <defname>_term_value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="29" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="53" bodyend="55"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" compoundref="Formula_8hpp" startline="36">term_value</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::model::Formula::evaluate</definition>
+        <argsstring>()</argsstring>
+        <name>evaluate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="31" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="57" bodyend="65"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+        <references refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" compoundref="Formula_8hpp" startline="36">term_value</references>
+        <referencedby refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" compoundref="Engine_8cpp" startline="135" endline="138">Engine::calculate_qos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1model_1_1Formula_1a5867d8c6d3860a5c5b73048b88ac25e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; bsn::model::Formula::getTerms</definition>
+        <argsstring>()</argsstring>
+        <name>getTerms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>All terms of the formula. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="32" column="1" bodyfile="src/libbsn/src/model/Formula.cpp" bodystart="70" bodyend="75"/>
+        <references refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" compoundref="Formula_8hpp" startline="35">expression</references>
+        <referencedby refid="classEngine_1a88afff420d0d1652ad974fd26df6de63" compoundref="Engine_8cpp" startline="91" endline="102">Engine::setUp_formula</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/model/Formula.hpp" line="13" column="1" bodyfile="src/libbsn/include/libbsn/model/Formula.hpp" bodystart="13" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>evaluate</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" prot="private" virt="non-virtual"><scope>bsn::model::Formula</scope><name>expression</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>Formula</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a2a082f72ae62ff2049ddc4a33154b704" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>Formula</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1acd52c33aadcbde66aef55577eb039a8a" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>Formula</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1ac874ee14de83c79ff9a4c3e8a4eac731" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>Formula</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>getExpression</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a5867d8c6d3860a5c5b73048b88ac25e6" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>getTerms</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>getTermValueMap</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1add7c9f8b64bce70ec50e1c945f5fe4c1" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>setExpression</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>setTermValueMap</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a302aaa2cabfb31818e62aa67f42b8028" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>setTermValueMap</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" prot="private" virt="non-virtual"><scope>bsn::model::Formula</scope><name>term_value</name></member>
+      <member refid="classbsn_1_1model_1_1Formula_1aa07ebaa8fafd971d0bceb0a141bfbece" prot="public" virt="non-virtual"><scope>bsn::model::Formula</scope><name>~Formula</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

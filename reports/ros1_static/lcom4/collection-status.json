@@ -1,0 +1,8 @@
+{
+  "tool": "cpplcom",
+  "status": "measured",
+  "parse_errors": [],
+  "classes_reported": 41,
+  "native_json": "../native/cpplcom-native.json",
+  "validation_limits": "upstream member-template fixture differs with Clang 18"
+}

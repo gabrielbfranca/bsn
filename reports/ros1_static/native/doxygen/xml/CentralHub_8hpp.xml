@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="CentralHub_8hpp" kind="file" language="C++">
+    <compoundname>CentralHub.hpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">numeric</includes>
+    <includes refid="Component_8hpp" local="yes">archlib/target_system/Component.hpp</includes>
+    <includes local="yes">archlib/AdaptationCommand.h</includes>
+    <includes local="yes">messages/SensorData.h</includes>
+    <includes refid="Battery_8hpp" local="yes">libbsn/resource/Battery.hpp</includes>
+    <includes refid="utils_8hpp" local="yes">libbsn/utils/utils.hpp</includes>
+    <includedby refid="G4T1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</includedby>
+    <includedby refid="CentralHub_8cpp" local="yes">src/sa-bsn/target_system/components/component/src/CentralHub.cpp</includedby>
+    <incdepgraph>
+      <node id="1802">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="1795">
+        <label>src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp</label>
+        <link refid="CentralHub_8hpp"/>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1814" relation="include">
+        </childnode>
+      </node>
+      <node id="1813">
+        <label>stdint.h</label>
+      </node>
+      <node id="1809">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+      </node>
+      <node id="1810">
+        <label>messages/SensorData.h</label>
+      </node>
+      <node id="1808">
+        <label>stdexcept</label>
+      </node>
+      <node id="1798">
+        <label>numeric</label>
+      </node>
+      <node id="1797">
+        <label>string</label>
+      </node>
+      <node id="1814">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+      </node>
+      <node id="1799">
+        <label>archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="1815">
+        <label>vector</label>
+      </node>
+      <node id="1800">
+        <label>signal.h</label>
+      </node>
+      <node id="1807">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1809" relation="include">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>sstream</label>
+      </node>
+      <node id="1803">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="1801">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="1804">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="1811">
+        <label>libbsn/resource/Battery.hpp</label>
+        <link refid="Battery_8hpp"/>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1813" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+      </node>
+      <node id="1796">
+        <label>stdio.h</label>
+      </node>
+      <node id="1806">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1816">
+        <label>src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp</label>
+        <link refid="CentralHub_8hpp"/>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1817">
+        <label>src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</label>
+        <link refid="G4T1_8hpp"/>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+      </node>
+      <node id="1819">
+        <label>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</label>
+        <link refid="G4T1_8cpp"/>
+      </node>
+      <node id="1820">
+        <label>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</label>
+        <link refid="CentralHub_8cpp"/>
+      </node>
+      <node id="1818">
+        <label>src/sa-bsn/target_system/components/component/apps/g4t1.cpp</label>
+        <link refid="g4t1_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCentralHub" prot="public">CentralHub</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CENTRALHUB_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CENTRALHUB_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Component_8hpp" kindref="compound">archlib/target_system/Component.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/AdaptationCommand.h&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;messages/SensorData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Battery_8hpp" kindref="compound">libbsn/resource/Battery.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8hpp" kindref="compound">libbsn/utils/utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classCentralHub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCentralHub" kindref="compound">CentralHub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Component" kindref="compound">arch::target_system::Component</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" kindref="member">CentralHub</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;<ref refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" kindref="member">active</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref><sp/>&amp;<ref refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" kindref="member">battery</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCentralHub_1a039f1cf3a24ad8ef5e7ecbb7300ba4dc" kindref="member">~CentralHub</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCentralHub" kindref="compound">CentralHub</ref><sp/>&amp;<ref refid="classCentralHub_1a64e94d9a7b007d263a3b770e86ad2cd6" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCentralHub" kindref="compound">CentralHub</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9" kindref="member">setUp</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a33ab84e2d47f41966b7a2c6c8763c755" kindref="member">tearDown</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1ad6c1ba1c51d58a420e076fbd27cd2b5c" kindref="member">apply_noise</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" kindref="member">reconfigure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a4d658629e1d1fc8dc80ee298173e4c22" kindref="member">collect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>messages::SensorData::ConstPtr&amp;<sp/>sensor_data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a3527f7455ec82af84e32b182221ede80" kindref="member">process</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a31e4df7094f5d176052056464d5886fa" kindref="member">transfer</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1af876a75a76d2b8110123d69f29fae6da" kindref="member">isActive</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" kindref="member">turnOn</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" kindref="member">turnOff</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" kindref="member">recharge</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" kindref="member">active</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classCentralHub_1aff51483cf7afd302270339c38d38ef32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1aff51483cf7afd302270339c38d38ef32" kindref="member">max_size</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" kindref="member">total_buffer_size</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classCentralHub_1a6d311af502fb652714855984d29737aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;int,<sp/>6&gt;<sp/><ref refid="classCentralHub_1a6d311af502fb652714855984d29737aa" kindref="member">buffer_size</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref><sp/><ref refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" kindref="member">battery</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::list&lt;double&gt;&gt;<sp/><ref refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" kindref="member">data_buffer</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp"/>
+  </compounddef>
+</doxygen>

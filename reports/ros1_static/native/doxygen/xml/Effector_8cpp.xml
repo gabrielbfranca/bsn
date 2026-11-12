@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Effector_8cpp" kind="file" language="C++">
+    <compoundname>Effector.cpp</compoundname>
+    <includes refid="Effector_8hpp" local="yes">archlib/target_system/Effector.hpp</includes>
+    <incdepgraph>
+      <node id="233">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>stdexcept</label>
+      </node>
+      <node id="231">
+        <label>string</label>
+      </node>
+      <node id="227">
+        <label>archlib/target_system/Effector.hpp</label>
+        <link refid="Effector_8hpp"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>src/archlib/src/target_system/Effector.cpp</label>
+        <link refid="Effector_8cpp"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="230">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>ros/ros.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacearch">arch</innernamespace>
+    <innernamespace refid="namespacearch_1_1target__system">arch::target_system</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Effector_8hpp" kindref="compound">archlib/target_system/Effector.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacearch" kindref="compound">arch</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">target_system<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classarch_1_1target__system_1_1Effector_1a51cb64c0d697093680523952b2457847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Effector_1a51cb64c0d697093680523952b2457847" kindref="member">Effector::Effector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>:<sp/><ref refid="classarch_1_1ROSComponent" kindref="compound">ROSComponent</ref>(argc,<sp/>argv,<sp/>name)<sp/>{}</highlight></codeline>
+<codeline lineno="7" refid="classarch_1_1target__system_1_1Effector_1a76d432f197f73d7233db6ca977464dd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Effector_1a76d432f197f73d7233db6ca977464dd6" kindref="member">Effector::~Effector</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" kindref="member">Effector::setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>freq;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;frequency&quot;</highlight><highlight class="normal">,<sp/>freq);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kindref="member">setFreq</ref>(freq);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15" refid="classarch_1_1target__system_1_1Effector_1a149b6881ceb74fc890a46a274581a1e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Effector_1a149b6881ceb74fc890a46a274581a1e4" kindref="member">Effector::tearDown</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/archlib/src/target_system/Effector.cpp"/>
+  </compounddef>
+</doxygen>

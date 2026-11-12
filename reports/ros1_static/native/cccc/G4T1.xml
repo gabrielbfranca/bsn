@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module G4T1-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="214" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="50" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="9" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="23.778" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="5.556" level="1" />
+<weighted_methods_per_class_unity value="12" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="3" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="5" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="23" />
+<lines_of_code value="27" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="27.000" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>G4T1(const G4T1 &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="31" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>G4T1(int &amp;,char **,const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="27" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="7" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>collect(const ConstPtr &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="42" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="80" />
+</extent>
+<lines_of_code value="36" level="1" />
+<McCabes_cyclomatic_complexity value="9" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="18.000" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="4.500" level="0" />
+</member_function>
+<member_function>
+<name>getPatientStatus()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="35" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="13" />
+</extent>
+<lines_of_code value="43" level="1" />
+<McCabes_cyclomatic_complexity value="14" level="1" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>getSensorId(string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="36" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="165" />
+</extent>
+<lines_of_code value="19" level="0" />
+<McCabes_cyclomatic_complexity value="13" level="1" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>makePacket()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="34" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const G4T1 &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="32" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>process()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="43" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="120" />
+</extent>
+<lines_of_code value="38" level="1" />
+<McCabes_cyclomatic_complexity value="12" level="1" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="9.500" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="3.000" level="0" />
+</member_function>
+<member_function>
+<name>setUp()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="39" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="61" />
+</extent>
+<lines_of_code value="13" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>tearDown()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="40" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="78" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>transfer()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="44" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="184" />
+</extent>
+<lines_of_code value="27" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~G4T1()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="28" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="11" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>G4T1</name>
+<client_module>
+</client_module>
+<supplier_module>
+<name>CentralHub</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="23" />
+</extent>
+<name>ConstPtr</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="42" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="80" />
+</extent>
+<name>Publisher</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="70" />
+</extent>
+<name>bool</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="71" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="27" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="165" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

@@ -1,0 +1,423 @@
+file,name,signature,start,end,cc,parameter_count,class,constructor,mapping
+src/archlib/src/ROSComponent.cpp,arch::ROSComponent::ROSComponent,"arch::ROSComponent::ROSComponent( int & argc , char ** argv , const std :: string & name)",35,41,1,3,arch::ROSComponent,True,native_body_span
+src/archlib/src/ROSComponent.cpp,arch::ROSComponent::~ROSComponent,arch::ROSComponent::~ROSComponent(),42,42,1,0,arch::ROSComponent,False,native_body_span
+src/archlib/src/ROSComponent.cpp,arch::ROSComponent::run,arch::ROSComponent::run(),44,56,2,0,arch::ROSComponent,False,native_body_span
+src/archlib/src/ROSComponent.cpp,arch::ROSComponent::getRosNodeName,"arch::ROSComponent::getRosNodeName( const std :: string & node_name , const std :: string & node_namespace)",58,75,2,2,arch::ROSComponent,False,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::ROSComponentDescriptor,arch::ROSComponentDescriptor::ROSComponentDescriptor(),5,5,1,0,arch::ROSComponentDescriptor,True,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::~ROSComponentDescriptor,arch::ROSComponentDescriptor::~ROSComponentDescriptor(),6,6,1,0,arch::ROSComponentDescriptor,False,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::ROSComponentDescriptor,arch::ROSComponentDescriptor::ROSComponentDescriptor( const ROSComponentDescriptor & obj),8,10,1,1,arch::ROSComponentDescriptor,True,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::operator =,arch::ROSComponentDescriptor::operator =( const ROSComponentDescriptor & obj),12,15,1,1,arch::ROSComponentDescriptor,False,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::setName,arch::ROSComponentDescriptor::setName( const std :: string & name),17,19,1,1,arch::ROSComponentDescriptor,False,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::getName,arch::ROSComponentDescriptor::getName() const,21,23,1,0,arch::ROSComponentDescriptor,False,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::setFreq,arch::ROSComponentDescriptor::setFreq( const double & freq),25,27,1,1,arch::ROSComponentDescriptor,False,native_body_span
+src/archlib/src/ROSComponentDescriptor.cpp,arch::ROSComponentDescriptor::getFreq,arch::ROSComponentDescriptor::getFreq() const,29,31,1,0,arch::ROSComponentDescriptor,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::Component,"arch::target_system::Component::Component( int & argc , char ** argv , const std :: string & name)",5,5,1,3,arch::target_system::Component,True,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::~Component,arch::target_system::Component::~Component(),7,7,1,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::setUp,arch::target_system::Component::setUp(),9,46,5,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::tearDown,arch::target_system::Component::tearDown(),48,53,1,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::sigIntHandler,arch::target_system::Component::sigIntHandler( int signal),55,57,1,1,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::shutdownComponent,arch::target_system::Component::shutdownComponent(),59,97,4,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::run,arch::target_system::Component::run(),99,118,3,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::sendEvent,arch::target_system::Component::sendEvent( const std :: string & content),120,128,1,1,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::sendStatus,arch::target_system::Component::sendStatus( const std :: string & content),130,137,1,1,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::sendEnergyStatus,arch::target_system::Component::sendEnergyStatus( const double & cost),139,146,1,1,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::reconfigure,arch::target_system::Component::reconfigure( const archlib :: AdaptationCommand :: ConstPtr & msg),148,150,1,1,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::activate,arch::target_system::Component::activate(),152,155,1,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Component.cpp,arch::target_system::Component::deactivate,arch::target_system::Component::deactivate(),157,160,1,0,arch::target_system::Component,False,native_body_span
+src/archlib/src/target_system/Effector.cpp,arch::target_system::Effector::Effector,"arch::target_system::Effector::Effector( int & argc , char ** argv , const std :: string & name)",6,6,1,3,arch::target_system::Effector,True,native_body_span
+src/archlib/src/target_system/Effector.cpp,arch::target_system::Effector::~Effector,arch::target_system::Effector::~Effector(),7,7,1,0,arch::target_system::Effector,False,native_body_span
+src/archlib/src/target_system/Effector.cpp,arch::target_system::Effector::setUp,arch::target_system::Effector::setUp(),9,13,1,0,arch::target_system::Effector,False,native_body_span
+src/archlib/src/target_system/Effector.cpp,arch::target_system::Effector::tearDown,arch::target_system::Effector::tearDown(),15,15,1,0,arch::target_system::Effector,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::Probe,"arch::target_system::Probe::Probe( int & argc , char ** argv , const std :: string & name)",5,5,1,3,arch::target_system::Probe,True,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::~Probe,arch::target_system::Probe::~Probe(),7,7,1,0,arch::target_system::Probe,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::setUp,arch::target_system::Probe::setUp(),9,17,1,0,arch::target_system::Probe,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::tearDown,arch::target_system::Probe::tearDown(),19,20,1,0,arch::target_system::Probe,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::collectEvent,arch::target_system::Probe::collectEvent( const archlib :: Event :: ConstPtr & msg),22,25,1,1,arch::target_system::Probe,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::collectStatus,arch::target_system::Probe::collectStatus( const archlib :: Status :: ConstPtr & msg),27,30,1,1,arch::target_system::Probe,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::collectEnergyStatus,arch::target_system::Probe::collectEnergyStatus( const archlib :: EnergyStatus :: ConstPtr & msg),32,34,1,1,arch::target_system::Probe,False,native_body_span
+src/archlib/src/target_system/Probe.cpp,arch::target_system::Probe::body,arch::target_system::Probe::body(),36,42,1,0,arch::target_system::Probe,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::SensorConfiguration,bsn::configuration::SensorConfiguration::SensorConfiguration(),8,15,1,0,bsn::configuration::SensorConfiguration,True,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::SensorConfiguration,"bsn::configuration::SensorConfiguration::SensorConfiguration( int32_t i , Range l , array<Range,2> m , array<Range,2> h , array<Range,3> p)",17,25,1,5,bsn::configuration::SensorConfiguration,True,qualified_owner_name_and_unique_arity_Lizard_fallback
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::SensorConfiguration,bsn::configuration::SensorConfiguration::SensorConfiguration( const SensorConfiguration & obj),27,34,1,1,bsn::configuration::SensorConfiguration,True,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::operator =,bsn::configuration::SensorConfiguration::operator =( const SensorConfiguration & obj),36,45,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getId,bsn::configuration::SensorConfiguration::getId() const,47,49,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setId,bsn::configuration::SensorConfiguration::setId( const int32_t id),51,53,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getDisplacement,"bsn::configuration::SensorConfiguration::getDisplacement( Range range , double number , string logic = 'crescent')",56,84,4,3,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::convertRealPercentage,"bsn::configuration::SensorConfiguration::convertRealPercentage( Range newRange , double number)",86,92,1,2,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::evaluateNumber,bsn::configuration::SensorConfiguration::evaluateNumber( double number),94,125,6,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::toString,bsn::configuration::SensorConfiguration::toString(),127,139,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getLowRisk,bsn::configuration::SensorConfiguration::getLowRisk() const,141,143,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setLowRisk,bsn::configuration::SensorConfiguration::setLowRisk( const Range l),145,147,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getMediumRisk,bsn::configuration::SensorConfiguration::getMediumRisk() const,149,151,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setMediumRisk,"bsn::configuration::SensorConfiguration::setMediumRisk( const array<Range,2> m)",153,155,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getHighRisk,bsn::configuration::SensorConfiguration::getHighRisk() const,157,159,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::isLowRisk,bsn::configuration::SensorConfiguration::isLowRisk( double val),161,163,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::isMediumRisk,bsn::configuration::SensorConfiguration::isMediumRisk( double val),165,168,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::isHighRisk,bsn::configuration::SensorConfiguration::isHighRisk( double val),170,173,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setHighRisk,"bsn::configuration::SensorConfiguration::setHighRisk( const array<Range,2> h)",175,177,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getLowPercentage,bsn::configuration::SensorConfiguration::getLowPercentage() const,179,181,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setLowPercentage,bsn::configuration::SensorConfiguration::setLowPercentage( const Range lp),183,185,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getMidPercentage,bsn::configuration::SensorConfiguration::getMidPercentage() const,187,189,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setMidPercentage,bsn::configuration::SensorConfiguration::setMidPercentage( const Range mp),191,193,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::getHighPercentage,bsn::configuration::SensorConfiguration::getHighPercentage() const,195,197,1,0,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/configuration/SensorConfiguration.cpp,bsn::configuration::SensorConfiguration::setHighPercentage,bsn::configuration::SensorConfiguration::setHighPercentage( const Range hp),199,201,1,1,bsn::configuration::SensorConfiguration,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::MovingAverage,bsn::filters::MovingAverage::MovingAverage( int32_t max),9,9,1,1,bsn::filters::MovingAverage,True,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::MovingAverage,bsn::filters::MovingAverage::MovingAverage( const MovingAverage & obj),11,15,1,1,bsn::filters::MovingAverage,True,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::operator =,bsn::filters::MovingAverage::operator =( const MovingAverage & obj),17,20,1,1,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::getValue,bsn::filters::MovingAverage::getValue(),22,45,6,0,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::insert,bsn::filters::MovingAverage::insert( double value),47,55,2,1,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::getRange,bsn::filters::MovingAverage::getRange() const,57,59,1,0,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::setRange,bsn::filters::MovingAverage::setRange( const uint32_t r),61,63,1,1,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::toString,bsn::filters::MovingAverage::toString() const,65,71,1,0,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/filters/MovingAverage.cpp,bsn::filters::MovingAverage::getBuffer,bsn::filters::MovingAverage::getBuffer(),73,76,1,0,bsn::filters::MovingAverage,False,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::DataGenerator,bsn::generator::DataGenerator::DataGenerator(),6,6,1,0,bsn::generator::DataGenerator,True,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::DataGenerator,bsn::generator::DataGenerator::DataGenerator( const Markov & markov),8,10,1,1,bsn::generator::DataGenerator,True,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::DataGenerator,bsn::generator::DataGenerator::DataGenerator( const DataGenerator & obj),12,14,1,1,bsn::generator::DataGenerator,True,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::~DataGenerator,bsn::generator::DataGenerator::~DataGenerator(),16,16,1,0,bsn::generator::DataGenerator,False,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::operator =,bsn::generator::DataGenerator::operator =( const DataGenerator & obj),18,21,1,1,bsn::generator::DataGenerator,False,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::setSeed,bsn::generator::DataGenerator::setSeed(),26,30,1,0,bsn::generator::DataGenerator,False,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::nextState,bsn::generator::DataGenerator::nextState(),32,52,6,0,bsn::generator::DataGenerator,False,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::calculateValue,bsn::generator::DataGenerator::calculateValue(),54,64,3,0,bsn::generator::DataGenerator,False,native_body_span
+src/libbsn/src/generator/DataGenerator.cpp,bsn::generator::DataGenerator::getValue,bsn::generator::DataGenerator::getValue(),66,68,1,0,bsn::generator::DataGenerator,False,native_body_span
+src/libbsn/src/generator/Markov.cpp,bsn::generator::Markov::Markov,bsn::generator::Markov::Markov(),8,8,1,0,bsn::generator::Markov,True,native_body_span
+src/libbsn/src/generator/Markov.cpp,bsn::generator::Markov::Markov,"bsn::generator::Markov::Markov( array<float,25> t , array<Range,5> r , int32_t initialState)",11,14,1,3,bsn::generator::Markov,True,qualified_owner_name_and_unique_arity_Lizard_fallback
+src/libbsn/src/generator/Markov.cpp,bsn::generator::Markov::Markov,bsn::generator::Markov::Markov( const Markov & obj),16,19,1,1,bsn::generator::Markov,True,native_body_span
+src/libbsn/src/generator/Markov.cpp,bsn::generator::Markov::operator =,bsn::generator::Markov::operator =( const Markov & obj),21,26,1,1,bsn::generator::Markov,False,native_body_span
+src/libbsn/src/generator/Markov.cpp,bsn::generator::Markov::toString,bsn::generator::Markov::toString() const,28,34,1,0,bsn::generator::Markov,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::Context,"bsn::goalmodel::Context::Context( const std :: string & id , const std :: string & description , const bool & value)",6,9,1,3,bsn::goalmodel::Context,True,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::Context,bsn::goalmodel::Context::Context(),11,14,1,0,bsn::goalmodel::Context,True,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::~Context,bsn::goalmodel::Context::~Context(),16,16,1,0,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::Context,bsn::goalmodel::Context::Context( const Context & obj),18,21,1,1,bsn::goalmodel::Context,True,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::operator =,bsn::goalmodel::Context::operator =( const Context & obj),23,28,1,1,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::operator ==,bsn::goalmodel::Context::operator ==( const Context & rhs),30,32,1,1,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::setID,bsn::goalmodel::Context::setID( const std :: string & id),34,36,1,1,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::getID,bsn::goalmodel::Context::getID() const,38,40,1,0,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::setDescription,bsn::goalmodel::Context::setDescription( const std :: string & description),42,44,1,1,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::getDescription,bsn::goalmodel::Context::getDescription() const,46,48,1,0,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::setValue,bsn::goalmodel::Context::setValue( const bool & value),50,52,1,1,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Context.cpp,bsn::goalmodel::Context::getValue,bsn::goalmodel::Context::getValue() const,54,56,1,0,bsn::goalmodel::Context,False,native_body_span
+src/libbsn/src/goalmodel/Goal.cpp,bsn::goalmodel::Goal::Goal,"bsn::goalmodel::Goal::Goal( const std :: string & id , const std :: string & description)",6,6,1,2,bsn::goalmodel::Goal,True,native_body_span
+src/libbsn/src/goalmodel/Goal.cpp,bsn::goalmodel::Goal::Goal,bsn::goalmodel::Goal::Goal(),7,7,1,0,bsn::goalmodel::Goal,True,native_body_span
+src/libbsn/src/goalmodel/Goal.cpp,bsn::goalmodel::Goal::~Goal,bsn::goalmodel::Goal::~Goal(),8,8,1,0,bsn::goalmodel::Goal,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::GoalTree,bsn::goalmodel::GoalTree::GoalTree( const std :: string & actor),9,11,1,1,bsn::goalmodel::GoalTree,True,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::GoalTree,bsn::goalmodel::GoalTree::GoalTree(),13,13,1,0,bsn::goalmodel::GoalTree,True,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::~GoalTree,bsn::goalmodel::GoalTree::~GoalTree(),15,15,1,0,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::GoalTree,bsn::goalmodel::GoalTree::GoalTree( const GoalTree & obj),17,19,1,1,bsn::goalmodel::GoalTree,True,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::operator =,bsn::goalmodel::GoalTree::operator =( const GoalTree & obj),21,25,1,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::operator ==,bsn::goalmodel::GoalTree::operator ==( const GoalTree & rhs),27,29,1,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::setActor,bsn::goalmodel::GoalTree::setActor( const std :: string & actor),31,33,1,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::getActor,bsn::goalmodel::GoalTree::getActor() const,35,37,1,0,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::getNodes,bsn::goalmodel::GoalTree::getNodes() const,39,41,1,0,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::addChildren,bsn::goalmodel::GoalTree::addChildren( std :: vector<std::shared_ptr<Node>> children),43,51,2,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::addNode,bsn::goalmodel::GoalTree::addNode( std :: shared_ptr<Node> node),53,56,2,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::addRootGoal,bsn::goalmodel::GoalTree::addRootGoal( std :: shared_ptr<Goal> rootgoal),58,62,2,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::getNode,bsn::goalmodel::GoalTree::getNode( const std :: string & nodeID) const,64,70,2,1,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::getSize,bsn::goalmodel::GoalTree::getSize() const,72,74,1,0,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/GoalTree.cpp,bsn::goalmodel::GoalTree::getLeafTasks,bsn::goalmodel::GoalTree::getLeafTasks() const,76,88,3,0,bsn::goalmodel::GoalTree,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::LeafTask,"bsn::goalmodel::LeafTask::LeafTask( const std :: string & id , const std :: string & description , const goalmodel :: Context & context , const goalmodel :: Property & cost , const goalmodel :: Property & reliability , const goalmodel :: Property & frequency)",7,12,1,6,bsn::goalmodel::LeafTask,True,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::LeafTask,"bsn::goalmodel::LeafTask::LeafTask( const std :: string & id , const std :: string & description , const goalmodel :: Property & cost , const goalmodel :: Property & reliability , const goalmodel :: Property & frequency)",14,19,1,5,bsn::goalmodel::LeafTask,True,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::LeafTask,bsn::goalmodel::LeafTask::LeafTask(),21,21,1,0,bsn::goalmodel::LeafTask,True,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::~LeafTask,bsn::goalmodel::LeafTask::~LeafTask(),22,22,1,0,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::LeafTask,bsn::goalmodel::LeafTask::LeafTask( const LeafTask & obj),24,29,1,1,bsn::goalmodel::LeafTask,True,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::operator =,bsn::goalmodel::LeafTask::operator =( const LeafTask & obj),31,39,1,1,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::setContext,bsn::goalmodel::LeafTask::setContext( const goalmodel :: Context & context),41,43,1,1,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::getContext,bsn::goalmodel::LeafTask::getContext() const,45,47,1,0,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::setCost,bsn::goalmodel::LeafTask::setCost( const goalmodel :: Property & cost),49,51,1,1,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::getCost,bsn::goalmodel::LeafTask::getCost() const,53,55,1,0,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::setReliability,bsn::goalmodel::LeafTask::setReliability( const goalmodel :: Property & reliability),57,59,1,1,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::getReliability,bsn::goalmodel::LeafTask::getReliability() const,61,63,1,0,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::setFrequency,bsn::goalmodel::LeafTask::setFrequency( const goalmodel :: Property & frequency),65,67,1,1,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::getFrequency,bsn::goalmodel::LeafTask::getFrequency() const,69,71,1,0,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/LeafTask.cpp,bsn::goalmodel::LeafTask::addChild,bsn::goalmodel::LeafTask::addChild( std :: shared_ptr<Node> node),73,75,1,1,bsn::goalmodel::LeafTask,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::Node,bsn::goalmodel::Node::Node(),9,9,1,0,bsn::goalmodel::Node,True,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::~Node,bsn::goalmodel::Node::~Node(),11,11,1,0,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::Node,"bsn::goalmodel::Node::Node( const std :: string & id , const std :: string & description)",13,13,1,2,bsn::goalmodel::Node,True,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::Node,bsn::goalmodel::Node::Node( const Node & obj),15,15,1,1,bsn::goalmodel::Node,True,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::operator =,bsn::goalmodel::Node::operator =( const Node & obj),17,25,2,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::operator ==,bsn::goalmodel::Node::operator ==( const Node & rhs) const,27,30,2,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::setID,bsn::goalmodel::Node::setID( const std :: string & id),36,38,1,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::getID,bsn::goalmodel::Node::getID() const,40,42,1,0,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::setDescription,bsn::goalmodel::Node::setDescription( const std :: string & description),44,46,1,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::getDescription,bsn::goalmodel::Node::getDescription() const,48,50,1,0,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::hasChildren,bsn::goalmodel::Node::hasChildren() const,52,54,1,0,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::getChildren,bsn::goalmodel::Node::getChildren() const,56,58,1,0,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::addChild,bsn::goalmodel::Node::addChild( std :: shared_ptr<Node> node),60,62,1,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::removeChild,bsn::goalmodel::Node::removeChild( const std :: string & id),64,67,1,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::getChild,bsn::goalmodel::Node::getChild( const std :: string & id),69,72,1,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Node.cpp,bsn::goalmodel::Node::findChild,bsn::goalmodel::Node::findChild( const std :: string & id),74,82,3,1,bsn::goalmodel::Node,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::Property,"bsn::goalmodel::Property::Property( const std :: string & id , const double & value)",6,6,1,2,bsn::goalmodel::Property,True,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::Property,bsn::goalmodel::Property::Property(),8,8,1,0,bsn::goalmodel::Property,True,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::~Property,bsn::goalmodel::Property::~Property(),10,10,1,0,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::Property,bsn::goalmodel::Property::Property( const Property & obj),12,14,1,1,bsn::goalmodel::Property,True,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::operator =,bsn::goalmodel::Property::operator =( const Property & obj),16,20,1,1,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::operator ==,bsn::goalmodel::Property::operator ==( const Property & rhs),22,24,1,1,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::setID,bsn::goalmodel::Property::setID( const std :: string & id),26,28,1,1,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::getID,bsn::goalmodel::Property::getID() const,30,32,1,0,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::setValue,bsn::goalmodel::Property::setValue( const double & value),34,36,1,1,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Property.cpp,bsn::goalmodel::Property::getValue,bsn::goalmodel::Property::getValue() const,38,40,1,0,bsn::goalmodel::Property,False,native_body_span
+src/libbsn/src/goalmodel/Task.cpp,bsn::goalmodel::Task::Task,"bsn::goalmodel::Task::Task( const std :: string & id , const std :: string & description)",7,7,1,2,bsn::goalmodel::Task,True,native_body_span
+src/libbsn/src/goalmodel/Task.cpp,bsn::goalmodel::Task::Task,bsn::goalmodel::Task::Task(),8,8,1,0,bsn::goalmodel::Task,True,native_body_span
+src/libbsn/src/goalmodel/Task.cpp,bsn::goalmodel::Task::~Task,bsn::goalmodel::Task::~Task(),9,9,1,0,bsn::goalmodel::Task,False,native_body_span
+src/libbsn/src/goalmodel/Task.cpp,bsn::goalmodel::Task::addChild,bsn::goalmodel::Task::addChild( std :: shared_ptr<Task> task),11,13,1,1,bsn::goalmodel::Task,False,native_body_span
+src/libbsn/src/goalmodel/Task.cpp,bsn::goalmodel::Task::addChild,bsn::goalmodel::Task::addChild( std :: shared_ptr<Goal> goal),15,17,1,1,bsn::goalmodel::Task,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::Formula,bsn::model::Formula::Formula(),6,6,1,0,bsn::model::Formula,True,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::Formula,bsn::model::Formula::Formula( const std :: string & text),7,9,1,1,bsn::model::Formula,True,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::Formula,"bsn::model::Formula::Formula( const std :: string & text , const std :: vector<std::string> terms , const std :: vector<double> values)",10,19,3,3,bsn::model::Formula,True,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::~Formula,bsn::model::Formula::~Formula(),21,21,1,0,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::Formula,bsn::model::Formula::Formula( const Formula & obj),23,23,1,1,bsn::model::Formula,True,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::operator =,bsn::model::Formula::operator =( const Formula & obj),25,29,1,1,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::getExpression,bsn::model::Formula::getExpression() const,31,33,1,0,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::setExpression,bsn::model::Formula::setExpression( const Lepton :: CompiledExpression & newExpression),35,37,1,1,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::getTermValueMap,bsn::model::Formula::getTermValueMap() const,39,41,1,0,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::setTermValueMap,"bsn::model::Formula::setTermValueMap( const std :: vector<std::string> & terms , const std :: vector<double> & values)",43,51,3,2,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::setTermValueMap,"bsn::model::Formula::setTermValueMap( const std :: map<std::string,double> & _term_value)",53,55,1,1,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::evaluate,bsn::model::Formula::evaluate(),57,65,2,0,bsn::model::Formula,False,native_body_span
+src/libbsn/src/model/Formula.cpp,bsn::model::Formula::getTerms,bsn::model::Formula::getTerms(),70,75,1,0,bsn::model::Formula,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::Range,bsn::range::Range::Range(),8,8,1,0,bsn::range::Range,True,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::Range,"bsn::range::Range::Range( const double & l , const double & u)",10,14,2,2,bsn::range::Range,True,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::~Range,bsn::range::Range::~Range(),16,16,1,0,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::Range,bsn::range::Range::Range( const Range & obj),18,20,1,1,bsn::range::Range,True,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::operator =,bsn::range::Range::operator =( const Range & obj),22,26,1,1,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::in_range,bsn::range::Range::in_range( double element),29,31,3,1,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::convert,"bsn::range::Range::convert( double new_lb , double new_ub , double input)",33,38,1,3,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::to_print,bsn::range::Range::to_print(),40,42,1,0,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::setLowerBound,bsn::range::Range::setLowerBound( const double & _lowerBound),44,46,1,1,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::getLowerBound,bsn::range::Range::getLowerBound() const,48,50,1,0,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::setUpperBound,bsn::range::Range::setUpperBound( const double & _upperBound),52,54,1,1,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::getUpperBound,bsn::range::Range::getUpperBound() const,56,58,1,0,bsn::range::Range,False,native_body_span
+src/libbsn/src/range/Range.cpp,bsn::range::Range::toString,bsn::range::Range::toString() const,60,66,1,0,bsn::range::Range,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::Battery,"bsn::resource::Battery::Battery( const std :: string _id , const double _capacity , const double _currentLevel , const double _unit)",8,24,6,4,bsn::resource::Battery,True,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::Battery,bsn::resource::Battery::Battery(),26,30,1,0,bsn::resource::Battery,True,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::Battery,bsn::resource::Battery::Battery( const Battery & obj),32,36,1,1,bsn::resource::Battery,True,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::operator =,bsn::resource::Battery::operator =( const Battery & obj),38,44,1,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::~Battery,bsn::resource::Battery::~Battery(),46,46,1,0,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::consume,bsn::resource::Battery::consume( const double mult),48,52,2,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::generate,bsn::resource::Battery::generate( const double mult),54,58,2,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::setId,bsn::resource::Battery::setId( const string & _id),60,62,1,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::getId,bsn::resource::Battery::getId() const,64,66,1,0,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::setCapacity,bsn::resource::Battery::setCapacity( const double & _cap),68,70,1,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::getCapacity,bsn::resource::Battery::getCapacity() const,72,74,1,0,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::setCurrentLevel,bsn::resource::Battery::setCurrentLevel( const double & _cLevel),76,78,1,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::getCurrentLevel,bsn::resource::Battery::getCurrentLevel() const,80,82,1,0,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::setUnit,bsn::resource::Battery::setUnit( const double & _unit),84,86,1,1,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::getUnit,bsn::resource::Battery::getUnit() const,88,90,1,0,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/resource/Battery.cpp,bsn::resource::Battery::toString,bsn::resource::Battery::toString() const,92,98,1,0,bsn::resource::Battery,False,native_body_span
+src/libbsn/src/time/TimeData.cpp,bsn::time::TimeData::TimeData,bsn::time::TimeData::TimeData(),8,8,1,0,bsn::time::TimeData,True,native_body_span
+src/libbsn/src/time/TimeData.cpp,bsn::time::TimeData::~TimeData,bsn::time::TimeData::~TimeData(),10,10,1,0,bsn::time::TimeData,False,native_body_span
+src/libbsn/src/time/TimeData.cpp,bsn::time::TimeData::elapsedTime,"bsn::time::TimeData::elapsedTime( timespec & now , timespec & ref)",12,26,2,2,bsn::time::TimeData,False,native_body_span
+src/libbsn/src/time/TimeData.cpp,bsn::time::TimeData::get_time,bsn::time::TimeData::get_time(),28,50,2,0,bsn::time::TimeData,False,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::PatientModule,"PatientModule::PatientModule( int & argc , char ** argv , std :: string name)",3,3,1,3,PatientModule,True,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::~PatientModule,PatientModule::~PatientModule(),5,5,1,0,PatientModule,False,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::setUp,PatientModule::setUp(),7,39,3,0,PatientModule,False,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::configureDataGenerator,PatientModule::configureDataGenerator( const std :: string & vitalSign),41,84,4,1,PatientModule,False,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::tearDown,PatientModule::tearDown(),86,86,1,0,PatientModule,False,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::getPatientData,"PatientModule::getPatientData( services :: PatientData :: Request & request , services :: PatientData :: Response & response)",88,96,1,2,PatientModule,False,native_body_span
+src/sa-bsn/environment/patient/src/PatientModule.cpp,PatientModule::body,PatientModule::body(),98,110,3,0,PatientModule,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::AdaptationMessage,"AdaptationMessage::AdaptationMessage( const std :: string & name , const int64_t & timestamp , const int64_t & logical_clock , const std :: string & source , const std :: string & target , const std :: string & content)",9,9,1,6,AdaptationMessage,True,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::getName,AdaptationMessage::getName() const,11,11,1,0,AdaptationMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::getTimestamp,AdaptationMessage::getTimestamp() const,12,12,1,0,AdaptationMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::getLogicalClock,AdaptationMessage::getLogicalClock() const,13,13,1,0,AdaptationMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::getSource,AdaptationMessage::getSource() const,14,14,1,0,AdaptationMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::getTarget,AdaptationMessage::getTarget() const,15,15,1,0,AdaptationMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp,AdaptationMessage::getContent,AdaptationMessage::getContent() const,16,16,1,0,AdaptationMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::EnergyStatusMessage,"EnergyStatusMessage::EnergyStatusMessage( const std :: string & name , const int64_t & timestamp , const int64_t & logical_clock , const std :: string & source , const std :: string & target , const std :: string & cost)",9,9,1,6,EnergyStatusMessage,True,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::getName,EnergyStatusMessage::getName() const,11,11,1,0,EnergyStatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::getTimestamp,EnergyStatusMessage::getTimestamp() const,12,12,1,0,EnergyStatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::getLogicalClock,EnergyStatusMessage::getLogicalClock() const,13,13,1,0,EnergyStatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::getSource,EnergyStatusMessage::getSource() const,14,14,1,0,EnergyStatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::getTarget,EnergyStatusMessage::getTarget() const,15,15,1,0,EnergyStatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp,EnergyStatusMessage::getCost,EnergyStatusMessage::getCost() const,16,16,1,0,EnergyStatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::EventMessage,"EventMessage::EventMessage( const std :: string & name , const int64_t & timestamp , const int64_t & logical_clock , const std :: string & source , const std :: string & target , const std :: string & event)",9,9,1,6,EventMessage,True,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::getName,EventMessage::getName() const,11,11,1,0,EventMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::getTimestamp,EventMessage::getTimestamp() const,12,12,1,0,EventMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::getLogicalClock,EventMessage::getLogicalClock() const,13,13,1,0,EventMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::getSource,EventMessage::getSource() const,14,14,1,0,EventMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::getTarget,EventMessage::getTarget() const,15,15,1,0,EventMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp,EventMessage::getEvent,EventMessage::getEvent() const,16,16,1,0,EventMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::StatusMessage,"StatusMessage::StatusMessage( const std :: string & name , const int64_t & timestamp , const int64_t & logical_clock , const std :: string & source , const std :: string & target , const std :: string & state)",9,9,1,6,StatusMessage,True,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::getName,StatusMessage::getName() const,11,11,1,0,StatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::getTimestamp,StatusMessage::getTimestamp() const,12,12,1,0,StatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::getLogicalClock,StatusMessage::getLogicalClock() const,13,13,1,0,StatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::getSource,StatusMessage::getSource() const,14,14,1,0,StatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::getTarget,StatusMessage::getTarget() const,15,15,1,0,StatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp,StatusMessage::getState,StatusMessage::getState() const,16,16,1,0,StatusMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::UncertaintyMessage,"UncertaintyMessage::UncertaintyMessage( const std :: string & name , const int64_t & timestamp , const int64_t & logical_clock , const std :: string & source , const std :: string & target , const std :: string & content)",9,9,1,6,UncertaintyMessage,True,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::getName,UncertaintyMessage::getName() const,11,11,1,0,UncertaintyMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::getTimestamp,UncertaintyMessage::getTimestamp() const,12,12,1,0,UncertaintyMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::getLogicalClock,UncertaintyMessage::getLogicalClock() const,13,13,1,0,UncertaintyMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::getSource,UncertaintyMessage::getSource() const,14,14,1,0,UncertaintyMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::getTarget,UncertaintyMessage::getTarget() const,15,15,1,0,UncertaintyMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp,UncertaintyMessage::getContent,UncertaintyMessage::getContent() const,16,16,1,0,UncertaintyMessage,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::DataAccess,"DataAccess::DataAccess( int & argc , char ** argv , const std :: string & name)",3,3,1,3,DataAccess,True,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::~DataAccess,DataAccess::~DataAccess(),4,4,1,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::now,DataAccess::now() const,6,8,1,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::nowInSeconds,DataAccess::nowInSeconds() const,10,12,1,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::setUp,DataAccess::setUp(),33,103,1,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::tearDown,DataAccess::tearDown(),105,105,1,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::processTargetSystemData,DataAccess::processTargetSystemData( const messages :: TargetSystemData :: ConstPtr & msg),107,114,1,1,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::body,DataAccess::body(),116,138,4,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::receivePersistMessage,DataAccess::receivePersistMessage( const archlib :: Persist :: ConstPtr & msg),140,200,12,1,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::processQuery,"DataAccess::processQuery( archlib :: DataAccessRequest :: Request & req , archlib :: DataAccessRequest :: Response & res)",202,261,17,2,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::persistEvent,"DataAccess::persistEvent( const int64_t & timestamp , const std :: string & source , const std :: string & target , const std :: string & content)",263,268,2,4,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::persistStatus,"DataAccess::persistStatus( const int64_t & timestamp , const std :: string & source , const std :: string & target , const std :: string & content)",270,275,2,4,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::persistEnergyStatus,"DataAccess::persistEnergyStatus( const int64_t & timestamp , const std :: string & source , const std :: string & target , const std :: string & content)",277,282,2,4,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::persistUncertainty,"DataAccess::persistUncertainty( const int64_t & timestamp , const std :: string & source , const std :: string & target , const std :: string & content)",284,289,2,4,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::persistAdaptation,"DataAccess::persistAdaptation( const int64_t & timestamp , const std :: string & source , const std :: string & target , const std :: string & content)",291,296,2,4,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::flush,DataAccess::flush(),298,358,6,0,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::calculateComponentReliability,DataAccess::calculateComponentReliability( const std :: string & component),364,395,7,1,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::calculateComponentCost,"DataAccess::calculateComponentCost( const std :: string & component , std :: string req_name)",401,417,3,2,DataAccess,False,native_body_span
+src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp,DataAccess::applyTimeWindow,DataAccess::applyTimeWindow(),419,435,4,0,DataAccess,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::Logger,"Logger::Logger( int & argc , char ** argv , const std :: string & name)",4,4,1,3,Logger,True,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::~Logger,Logger::~Logger(),5,5,1,0,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::now,Logger::now() const,7,9,1,0,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::setUp,Logger::setUp(),11,22,1,0,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::tearDown,Logger::tearDown(),24,24,1,0,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::body,Logger::body(),26,34,1,0,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::receiveAdaptationCommand,Logger::receiveAdaptationCommand( const archlib :: AdaptationCommand :: ConstPtr & msg),36,48,1,1,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::receiveStatus,Logger::receiveStatus( const archlib :: Status :: ConstPtr & msg),51,63,1,1,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::receiveEnergyStatus,Logger::receiveEnergyStatus( const archlib :: EnergyStatus :: ConstPtr & msg),65,76,1,1,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::receiveEvent,Logger::receiveEvent( const archlib :: Event :: ConstPtr & msg),78,90,1,1,Logger,False,native_body_span
+src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp,Logger::receiveUncertainty,Logger::receiveUncertainty( const archlib :: Uncertainty :: ConstPtr & msg),92,103,1,1,Logger,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::Injector,"Injector::Injector( int & argc , char ** argv , const std :: string & name)",4,4,1,3,Injector,True,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::~Injector,Injector::~Injector(),5,5,1,0,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::setUp,Injector::setUp(),7,33,2,0,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::tearDown,Injector::tearDown(),35,35,1,0,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::seconds_in_cycles,Injector::seconds_in_cycles( const double & seconds),37,39,1,1,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::cycles_in_seconds,Injector::cycles_in_seconds( const double & cycles),41,43,1,1,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::gen_noise,"Injector::gen_noise( const std :: string & component , double & noise , int & duration , double & amplitude , std :: string & type)",45,58,7,5,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::body,Injector::body(),60,76,5,0,Injector,False,native_body_span
+src/sa-bsn/simulation/injector/src/Injector.cpp,Injector::inject,"Injector::inject( const std :: string & component , const std :: string & content)",78,88,1,2,Injector,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,comp::operator ( ),"comp::operator ( )( const T & l , const T & r) const",7,13,2,2,src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp::comp,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::CostEngine,"CostEngine::CostEngine( int & argc , char ** argv , std :: string name)",16,16,1,3,CostEngine,True,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::~CostEngine,CostEngine::~CostEngine(),18,18,1,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::setUp,CostEngine::setUp(),20,29,1,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::tearDown,CostEngine::tearDown(),31,33,1,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::get_prefix,CostEngine::get_prefix(),36,38,1,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::initialize_strategy,CostEngine::initialize_strategy( std :: vector<std::string> terms),45,53,2,1,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::initialize_priority,CostEngine::initialize_priority( std :: vector<std::string> terms),61,71,3,1,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::monitor,CostEngine::monitor(),73,176,14,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::analyze,CostEngine::analyze(),178,213,7,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::plan,CostEngine::plan(),215,391,45,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp,CostEngine::execute,CostEngine::execute(),393,441,6,0,CostEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::Engine,"Engine::Engine( int & argc , char ** argv , std :: string name)",5,5,1,3,Engine,True,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::~Engine,Engine::~Engine(),7,7,1,0,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::setUp,Engine::setUp(),10,52,5,0,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::tearDown,Engine::tearDown(),54,54,1,0,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::sendAdaptationParameter,"Engine::sendAdaptationParameter( archlib :: EngineRequest :: Request & req , archlib :: EngineRequest :: Response & res)",56,63,2,2,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::receiveException,Engine::receiveException( const archlib :: Exception :: ConstPtr & msg),65,84,4,1,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::setUp_formula,Engine::setUp_formula( std :: string formula_str),91,102,1,1,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::fetch_formula,Engine::fetch_formula( std :: string name),105,127,3,1,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::calculate_qos,"Engine::calculate_qos( bsn :: model :: Formula model , std :: map<std::string,double> conf)",135,138,1,2,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp,Engine::body,Engine::body(),148,176,4,0,Engine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,comp::operator ( ),"comp::operator ( )( const T & l , const T & r) const",7,13,2,2,src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp::comp,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::ReliabilityEngine,"ReliabilityEngine::ReliabilityEngine( int & argc , char ** argv , std :: string name)",16,16,1,3,ReliabilityEngine,True,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::~ReliabilityEngine,ReliabilityEngine::~ReliabilityEngine(),18,18,1,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::setUp,ReliabilityEngine::setUp(),20,28,1,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::tearDown,ReliabilityEngine::tearDown(),30,32,1,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::get_prefix,ReliabilityEngine::get_prefix(),34,36,1,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::initialize_strategy,ReliabilityEngine::initialize_strategy( std :: vector<std::string> terms),44,52,2,1,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::initialize_priority,ReliabilityEngine::initialize_priority( std :: vector<std::string> terms),59,69,3,1,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::monitor,ReliabilityEngine::monitor(),71,173,15,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::analyze,ReliabilityEngine::analyze(),175,192,4,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::plan,ReliabilityEngine::plan(),194,311,39,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp,ReliabilityEngine::execute,ReliabilityEngine::execute(),313,360,6,0,ReliabilityEngine,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Controller.cpp,Controller::Controller,"Controller::Controller( int & argc , char ** argv , std :: string name)",5,5,1,3,Controller,True,native_body_span
+src/sa-bsn/system_manager/enactor/src/Controller.cpp,Controller::~Controller,Controller::~Controller(),7,7,1,0,Controller,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Controller.cpp,Controller::setUp,Controller::setUp(),9,36,3,0,Controller,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Controller.cpp,Controller::receiveEvent,Controller::receiveEvent( const archlib :: Event :: ConstPtr & msg),38,69,5,1,Controller,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Controller.cpp,Controller::apply_reli_strategy,Controller::apply_reli_strategy( const std :: string & component),71,160,14,1,Controller,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Controller.cpp,Controller::apply_cost_strategy,Controller::apply_cost_strategy( const std :: string & component),162,251,14,1,Controller,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::Enactor,"Enactor::Enactor( int & argc , char ** argv , std :: string name)",3,3,1,3,Enactor,True,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::~Enactor,Enactor::~Enactor(),5,5,1,0,Enactor,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::tearDown,Enactor::tearDown(),7,7,1,0,Enactor,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::receiveAdaptationParameter,Enactor::receiveAdaptationParameter(),9,27,4,0,Enactor,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::receiveStatus,Enactor::receiveStatus(),29,69,6,0,Enactor,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::receiveStrategy,Enactor::receiveStrategy( const archlib :: Strategy :: ConstPtr & msg),71,83,3,1,Enactor,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::body,Enactor::body(),85,98,3,0,Enactor,False,native_body_span
+src/sa-bsn/system_manager/enactor/src/Enactor.cpp,Enactor::print,Enactor::print(),100,112,1,0,Enactor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::CentralHub,"CentralHub::CentralHub( int & argc , char ** argv , const std :: string & name , const bool & active , const bsn :: resource :: Battery & battery)",5,5,1,5,CentralHub,True,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::~CentralHub,CentralHub::~CentralHub(),7,7,1,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::run,CentralHub::run(),9,33,3,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::body,CentralHub::body(),35,55,7,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::apply_noise,CentralHub::apply_noise(),57,57,1,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::reconfigure,CentralHub::reconfigure( const archlib :: AdaptationCommand :: ConstPtr & msg),60,77,3,1,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::isActive,CentralHub::isActive(),79,81,1,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::turnOn,CentralHub::turnOn(),83,86,1,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::turnOff,CentralHub::turnOff(),88,91,1,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/CentralHub.cpp,CentralHub::recharge,CentralHub::recharge(),102,105,2,0,CentralHub,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::Sensor,"Sensor::Sensor( int & argc , char ** argv , const std :: string & name , const std :: string & type , const bool & active , const double & noise_factor , const bsn :: resource :: Battery & battery , const bool & instant_recharge)",3,3,1,8,Sensor,True,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::~Sensor,Sensor::~Sensor(),5,5,1,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::operator =,Sensor::operator =( const Sensor & obj),7,14,1,1,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::run,Sensor::run(),16,52,4,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::body,Sensor::body(),54,87,7,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::apply_noise,Sensor::apply_noise( double & data),93,99,2,1,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::reconfigure,Sensor::reconfigure( const archlib :: AdaptationCommand :: ConstPtr & msg),101,117,6,1,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::injectUncertainty,Sensor::injectUncertainty( const archlib :: Uncertainty :: ConstPtr & msg),119,131,3,1,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::isActive,Sensor::isActive(),133,135,1,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::turnOn,Sensor::turnOn(),137,139,1,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::turnOff,Sensor::turnOff(),141,143,1,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/Sensor.cpp,Sensor::recharge,Sensor::recharge(),154,163,3,0,Sensor,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::G3T1_1,"G3T1_1::G3T1_1( int & argc , char ** argv , const std :: string & name)",12,17,1,3,G3T1_1,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::~G3T1_1,G3T1_1::~G3T1_1(),19,19,1,0,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::setUp,G3T1_1::setUp(),21,83,1,0,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::tearDown,G3T1_1::tearDown(),85,88,1,0,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::collect,G3T1_1::collect(),90,135,4,0,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::process,G3T1_1::process( const double & m_data),137,148,1,1,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::transfer,G3T1_1::transfer( const double & m_data),150,173,4,1,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp,G3T1_1::label,G3T1_1::label( double & risk),175,196,4,1,G3T1_1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::G3T1_2,"G3T1_2::G3T1_2( int & argc , char ** argv , const std :: string & name)",9,15,1,3,G3T1_2,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::~G3T1_2,G3T1_2::~G3T1_2(),17,17,1,0,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::setUp,G3T1_2::setUp(),19,79,1,0,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::tearDown,G3T1_2::tearDown(),81,83,1,0,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::collect,G3T1_2::collect(),85,119,4,0,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::process,G3T1_2::process( const double & m_data),121,132,1,1,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::transfer,G3T1_2::transfer( const double & m_data),134,156,4,1,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp,G3T1_2::label,G3T1_2::label( double & risk),158,171,4,1,G3T1_2,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::G3T1_3,"G3T1_3::G3T1_3( int & argc , char ** argv , const std :: string & name)",11,17,1,3,G3T1_3,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::~G3T1_3,G3T1_3::~G3T1_3(),19,19,1,0,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::setUp,G3T1_3::setUp(),21,81,1,0,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::tearDown,G3T1_3::tearDown(),83,85,1,0,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::collect,G3T1_3::collect(),87,123,4,0,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::process,G3T1_3::process( const double & m_data),125,136,1,1,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::transfer,G3T1_3::transfer( const double & m_data),138,158,4,1,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp,G3T1_3::label,G3T1_3::label( double & risk),160,173,4,1,G3T1_3,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::G3T1_4,"G3T1_4::G3T1_4( int & argc , char ** argv , const std :: string & name)",11,17,1,3,G3T1_4,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::~G3T1_4,G3T1_4::~G3T1_4(),19,19,1,0,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::setUp,G3T1_4::setUp(),21,81,1,0,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::tearDown,G3T1_4::tearDown(),83,85,1,0,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::collect,G3T1_4::collect(),87,107,2,0,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::process,G3T1_4::process( const double & m_data),109,120,1,1,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::transfer,G3T1_4::transfer( const double & m_data),122,142,4,1,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp,G3T1_4::label,G3T1_4::label( double & risk),144,157,4,1,G3T1_4,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::G3T1_5,"G3T1_5::G3T1_5( int & argc , char ** argv , const std :: string & name)",11,17,1,3,G3T1_5,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::~G3T1_5,G3T1_5::~G3T1_5(),19,19,1,0,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::setUp,G3T1_5::setUp(),21,81,1,0,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::tearDown,G3T1_5::tearDown(),83,85,1,0,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::collect,G3T1_5::collect(),87,107,2,0,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::process,G3T1_5::process( const double & m_data),109,120,1,1,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::transfer,G3T1_5::transfer( const double & m_data),122,142,4,1,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp,G3T1_5::label,G3T1_5::label( double & risk),144,157,4,1,G3T1_5,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::G3T1_6,"G3T1_6::G3T1_6( int & argc , char ** argv , const std :: string & name)",12,18,1,3,G3T1_6,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::~G3T1_6,G3T1_6::~G3T1_6(),20,20,1,0,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::setUp,G3T1_6::setUp(),22,82,1,0,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::tearDown,G3T1_6::tearDown(),84,86,1,0,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::collect,G3T1_6::collect(),88,108,2,0,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::process,G3T1_6::process( const double & m_data),110,121,1,1,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::transfer,G3T1_6::transfer( const double & m_data),123,143,4,1,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp,G3T1_6::label,G3T1_6::label( double & risk),145,158,4,1,G3T1_6,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::G4T1,"G4T1::G4T1( int & argc , char ** argv , const std :: string & name)",7,9,1,3,G4T1,True,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::~G4T1,G4T1::~G4T1(),11,11,1,0,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::getPatientStatus,G4T1::getPatientStatus(),13,59,14,0,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::setUp,G4T1::setUp(),61,76,2,0,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::tearDown,G4T1::tearDown(),78,78,1,0,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::collect,G4T1::collect( const messages :: SensorData :: ConstPtr & msg),80,118,10,1,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::process,G4T1::process(),120,163,13,0,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::getSensorId,G4T1::getSensorId( std :: string type),165,182,7,1,G4T1,False,native_body_span
+src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp,G4T1::transfer,G4T1::transfer(),184,216,2,0,G4T1,False,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::ParamAdapter,"ParamAdapter::ParamAdapter( int & argc , char ** argv , const std :: string & name)",3,3,1,3,ParamAdapter,True,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::~ParamAdapter,ParamAdapter::~ParamAdapter(),4,4,1,0,ParamAdapter,False,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::setUp,ParamAdapter::setUp(),6,12,1,0,ParamAdapter,False,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::tearDown,ParamAdapter::tearDown(),14,14,1,0,ParamAdapter,False,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::body,ParamAdapter::body(),16,21,1,0,ParamAdapter,False,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::receiveAdaptationCommand,ParamAdapter::receiveAdaptationCommand( const archlib :: AdaptationCommand :: ConstPtr & msg),23,29,2,1,ParamAdapter,False,native_body_span
+src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp,ParamAdapter::moduleConnect,"ParamAdapter::moduleConnect( archlib :: EffectorRegister :: Request & req , archlib :: EffectorRegister :: Response & res)",31,57,3,2,ParamAdapter,False,native_body_span

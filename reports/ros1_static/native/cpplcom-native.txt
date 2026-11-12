@@ -1,0 +1,193 @@
+LCOM4 report  (threshold 0 job per class)
+
+ JOBS  LCOM4  BARE  METHODS  FIELDS  CLASS
+    4      5     1        9       4  bsn::goalmodel::LeafTask
+          src/libbsn/include/libbsn/goalmodel/LeafTask.hpp:14
+          {getContext, setContext}
+          {getCost, setCost}
+          {getReliability, setReliability}
+          {getFrequency, setFrequency}
+          {addChild}
+    3      3     0        7       3  bsn::goalmodel::Context
+          src/libbsn/include/libbsn/goalmodel/Context.hpp:9
+          {getID, operator==, setID}
+          {getDescription, setDescription}
+          {getValue, setValue}
+    2      3     1        9       8  CostEngine
+          src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp:35
+          {analyze, execute, initialize_priority, initialize_strategy, monitor, plan, setUp}
+          {tearDown}
+          {get_prefix}
+    2      3     1        9       7  ReliabilityEngine
+          src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp:35
+          {analyze, execute, initialize_priority, initialize_strategy, monitor, plan, setUp}
+          {tearDown}
+          {get_prefix}
+    2      3     1        6       7  G3T1_1
+          src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp:22
+          {collect, label, setUp, transfer}
+          {tearDown}
+          {process}
+    2      3     1        6       8  G3T1_2
+          src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp:22
+          {collect, label, setUp, transfer}
+          {tearDown}
+          {process}
+    2      3     1        6       8  G3T1_3
+          src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp:22
+          {collect, label, setUp, transfer}
+          {tearDown}
+          {process}
+    2      3     1        6       8  G3T1_4
+          src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp:22
+          {collect, label, setUp, transfer}
+          {tearDown}
+          {process}
+    2      3     1        6       8  G3T1_5
+          src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp:22
+          {collect, label, setUp, transfer}
+          {tearDown}
+          {process}
+    2      3     1        6       8  G3T1_6
+          src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp:22
+          {collect, label, setUp, transfer}
+          {tearDown}
+          {process}
+    2      2     0       10       2  bsn::goalmodel::GoalTree
+          src/libbsn/include/libbsn/goalmodel/GoalTree.hpp:18
+          {addChildren, addNode, addRootGoal, getLeafTasks, getNode, getNodes, getSize}
+          {getActor, operator==, setActor}
+    2      2     0        5       2  bsn::goalmodel::Property
+          src/libbsn/include/libbsn/goalmodel/Property.hpp:9
+          {getID, operator==, setID}
+          {getValue, setValue}
+    2      2     0        4       2  arch::ROSComponentDescriptor
+          src/archlib/include/archlib/ROSComponentDescriptor.hpp:9
+          {getName, setName}
+          {getFreq, setFreq}
+    1      6     6        6       6  AdaptationMessage
+          src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp:6
+          {getName}
+          {getTimestamp}
+          {getLogicalClock}
+          {getSource}
+          {getTarget}
+          {getContent}
+    1      6     6        6       6  EnergyStatusMessage
+          src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp:6
+          {getName}
+          {getTimestamp}
+          {getLogicalClock}
+          {getSource}
+          {getTarget}
+          {getCost}
+    1      6     6        6       6  EventMessage
+          src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp:6
+          {getName}
+          {getTimestamp}
+          {getLogicalClock}
+          {getSource}
+          {getTarget}
+          {getEvent}
+    1      6     6        6       6  StatusMessage
+          src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp:6
+          {getName}
+          {getTimestamp}
+          {getLogicalClock}
+          {getSource}
+          {getTarget}
+          {getState}
+    1      6     6        6       6  UncertaintyMessage
+          src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp:6
+          {getName}
+          {getTimestamp}
+          {getLogicalClock}
+          {getSource}
+          {getTarget}
+          {getContent}
+    1      3     2        7      12  Injector
+          src/sa-bsn/simulation/injector/include/Injector.hpp:16
+          {body, gen_noise, inject, seconds_in_cycles, setUp}
+          {tearDown}
+          {cycles_in_seconds}
+    1      3     2        6      13  Enactor
+          src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp:23
+          {body, receiveAdaptationParameter, receiveStatus, receiveStrategy}
+          {tearDown}
+          {print}
+    1      2     1       17      30  DataAccess
+          src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp:35
+          {applyTimeWindow, body, calculateComponentCost, calculateComponentReliability, flush, now, nowInSeconds, persistAdaptation, persistEnergyStatus, persistEvent, persistStatus, persistUncertainty, processQuery, processTargetSystemData, receivePersistMessage, setUp}
+          {tearDown}
+    1      2     1        9       6  Logger
+          src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp:19
+          {body, now, receiveAdaptationCommand, receiveEnergyStatus, receiveEvent, receiveStatus, receiveUncertainty, setUp}
+          {tearDown}
+    1      2     1        9       6  arch::target_system::Component
+          src/archlib/include/archlib/target_system/Component.hpp:20
+          {activate, deactivate, run, sendEnergyStatus, sendEvent, sendStatus, setUp, tearDown}
+          {reconfigure}
+    1      2     1        8       9  Engine
+          src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp:34
+          {body, calculate_qos, fetch_formula, receiveException, sendAdaptationParameter, setUp, setUp_formula}
+          {tearDown}
+    1      2     1        7      21  G4T1
+          src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp:23
+          {collect, getPatientStatus, getSensorId, process, setUp, transfer}
+          {tearDown}
+    1      2     1        6       7  arch::target_system::Probe
+          src/archlib/include/archlib/target_system/Probe.hpp:14
+          {body, collectEnergyStatus, collectEvent, collectStatus, setUp}
+          {tearDown}
+    1      2     1        5       2  ParamAdapter
+          src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp:12
+          {body, moduleConnect, receiveAdaptationCommand, setUp}
+          {tearDown}
+    1      2     1        5       8  PatientModule
+          src/sa-bsn/environment/patient/include/PatientModule.hpp:11
+          {body, configureDataGenerator, getPatientData, setUp}
+          {tearDown}
+    1      2     2        2       1  arch::target_system::Effector
+          src/archlib/include/archlib/target_system/Effector.hpp:12
+          {setUp}
+          {tearDown}
+    1      2     2        2       0  bsn::goalmodel::Task
+          src/libbsn/include/libbsn/goalmodel/Task.hpp:15
+          {addChild}
+          {addChild}
+    1      2     2        2       0  bsn::time::TimeData
+          src/libbsn/include/libbsn/time/TimeData.hpp:15
+          {elapsedTime}
+          {get_time}
+    1      1     0       21       7  bsn::configuration::SensorConfiguration
+          src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp:15
+          {convertRealPercentage, evaluateNumber, getDisplacement, getHighPercentage, getHighRisk, getId, getLowPercentage, getLowRisk, getMediumRisk, getMidPercentage, isHighRisk, isLowRisk, isMediumRisk, setHighPercentage, setHighRisk, setId, setLowPercentage, setLowRisk, setMediumRisk, setMidPercentage, toString}
+    1      1     0       11       3  bsn::goalmodel::Node
+          src/libbsn/include/libbsn/goalmodel/Node.hpp:12
+          {addChild, findChild, getChild, getChildren, getDescription, getID, hasChildren, operator==, removeChild, setDescription, setID}
+    1      1     0       11       4  bsn::resource::Battery
+          src/libbsn/include/libbsn/resource/Battery.hpp:12
+          {consume, generate, getCapacity, getCurrentLevel, getId, getUnit, setCapacity, setCurrentLevel, setId, setUnit, toString}
+    1      1     0        9      11  Sensor
+          src/sa-bsn/target_system/components/component/include/component/Sensor.hpp:18
+          {apply_noise, body, injectUncertainty, isActive, recharge, reconfigure, run, turnOff, turnOn}
+    1      1     0        8       6  CentralHub
+          src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp:16
+          {apply_noise, body, isActive, recharge, reconfigure, run, turnOff, turnOn}
+    1      1     0        8       2  bsn::range::Range
+          src/libbsn/include/libbsn/range/Range.hpp:13
+          {convert, getLowerBound, getUpperBound, in_range, setLowerBound, setUpperBound, toString, to_print}
+    1      1     0        7       2  bsn::model::Formula
+          src/libbsn/include/libbsn/model/Formula.hpp:13
+          {evaluate, getExpression, getTermValueMap, getTerms, setExpression, setTermValueMap, setTermValueMap}
+    1      1     0        6       4  bsn::filters::MovingAverage
+          src/libbsn/include/libbsn/filters/MovingAverage.hpp:12
+          {getBuffer, getRange, getValue, insert, setRange, toString}
+    1      1     0        4       3  Controller
+          src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp:6
+          {apply_cost_strategy, apply_reli_strategy, receiveEvent, setUp}
+    1      1     0        4       3  bsn::generator::DataGenerator
+          src/libbsn/include/libbsn/generator/DataGenerator.hpp:11
+          {calculateValue, getValue, nextState, setSeed}
+
+  41 classes with 2+ methods, 41 over the threshold; by jobs: 1: 28, 2: 11, 3: 1, 4: 1

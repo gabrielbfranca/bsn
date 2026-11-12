@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Range_8hpp" kind="file" language="C++">
+    <compoundname>Range.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="SensorConfiguration_8hpp" local="yes">src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp</includedby>
+    <includedby refid="Markov_8hpp" local="yes">src/libbsn/include/libbsn/generator/Markov.hpp</includedby>
+    <includedby refid="DataGenerator_8cpp" local="yes">src/libbsn/src/generator/DataGenerator.cpp</includedby>
+    <includedby refid="Range_8cpp" local="yes">src/libbsn/src/range/Range.cpp</includedby>
+    <includedby refid="PatientModule_8hpp" local="yes">src/sa-bsn/environment/patient/include/PatientModule.hpp</includedby>
+    <includedby refid="G3T1__1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</includedby>
+    <includedby refid="G3T1__2_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</includedby>
+    <includedby refid="G3T1__3_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</includedby>
+    <includedby refid="G3T1__4_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</includedby>
+    <includedby refid="G3T1__5_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</includedby>
+    <includedby refid="G3T1__6_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</includedby>
+    <incdepgraph>
+      <node id="565">
+        <label>stdint.h</label>
+      </node>
+      <node id="563">
+        <label>stdexcept</label>
+      </node>
+      <node id="562">
+        <label>string</label>
+      </node>
+      <node id="561">
+        <label>src/libbsn/include/libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>sstream</label>
+      </node>
+      <node id="564">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="577">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp</label>
+        <link refid="g3t1__3_8cpp"/>
+      </node>
+      <node id="594">
+        <label>src/libbsn/src/generator/Markov.cpp</label>
+        <link refid="Markov_8cpp"/>
+      </node>
+      <node id="575">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</label>
+        <link refid="G3T1__2_8cpp"/>
+      </node>
+      <node id="568">
+        <label>src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp</label>
+        <link refid="SensorConfiguration_8hpp"/>
+        <childnode refid="569" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp</label>
+        <link refid="g3t1__6_8cpp"/>
+      </node>
+      <node id="584">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</label>
+        <link refid="G3T1__5_8cpp"/>
+      </node>
+      <node id="581">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</label>
+        <link refid="G3T1__4_8cpp"/>
+      </node>
+      <node id="572">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</label>
+        <link refid="G3T1__1_8cpp"/>
+      </node>
+      <node id="589">
+        <label>src/libbsn/include/libbsn/generator/DataGenerator.hpp</label>
+        <link refid="DataGenerator_8hpp"/>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+      </node>
+      <node id="573">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</label>
+        <link refid="G3T1__2_8hpp"/>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>src/sa-bsn/environment/patient/src/PatientModule.cpp</label>
+        <link refid="PatientModule_8cpp"/>
+      </node>
+      <node id="592">
+        <label>src/sa-bsn/environment/patient/apps/patient.cpp</label>
+        <link refid="patient_8cpp"/>
+      </node>
+      <node id="569">
+        <label>src/libbsn/src/configuration/SensorConfiguration.cpp</label>
+        <link refid="SensorConfiguration_8cpp"/>
+      </node>
+      <node id="587">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</label>
+        <link refid="G3T1__6_8cpp"/>
+      </node>
+      <node id="567">
+        <label>src/libbsn/include/libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>src/libbsn/src/range/Range.cpp</label>
+        <link refid="Range_8cpp"/>
+      </node>
+      <node id="591">
+        <label>src/sa-bsn/environment/patient/include/PatientModule.hpp</label>
+        <link refid="PatientModule_8hpp"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+      </node>
+      <node id="570">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="572" relation="include">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>src/libbsn/include/libbsn/generator/Markov.hpp</label>
+        <link refid="Markov_8hpp"/>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</label>
+        <link refid="g3t1__1_8cpp"/>
+      </node>
+      <node id="576">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</label>
+        <link refid="G3T1__3_8hpp"/>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</label>
+        <link refid="G3T1__3_8cpp"/>
+      </node>
+      <node id="579">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</label>
+        <link refid="G3T1__4_8hpp"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp</label>
+        <link refid="g3t1__4_8cpp"/>
+      </node>
+      <node id="585">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</label>
+        <link refid="G3T1__6_8hpp"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp</label>
+        <link refid="g3t1__5_8cpp"/>
+      </node>
+      <node id="590">
+        <label>src/libbsn/src/generator/DataGenerator.cpp</label>
+        <link refid="DataGenerator_8cpp"/>
+      </node>
+      <node id="574">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp</label>
+        <link refid="g3t1__2_8cpp"/>
+      </node>
+      <node id="582">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</label>
+        <link refid="G3T1__5_8hpp"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsn_1_1range_1_1Range" prot="public">bsn::range::Range</innerclass>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1range">bsn::range</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>RANGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RANGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespacebsn_1_1range" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">range<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classbsn_1_1range_1_1Range" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" kindref="member">Range</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" kindref="member">Range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*lower<sp/>bound*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*upper<sp/>bound*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1ac97bbbad31eaa12e560882347eb150d2" kindref="member">~Range</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" kindref="member">Range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>&amp;<sp/></highlight><highlight class="comment">/*obj*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>&amp;<ref refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>&amp;<sp/></highlight><highlight class="comment">/*obj*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>um<sp/>elemento<sp/>esta<sp/>dentro<sp/>do<sp/>intervalo<sp/>estipulado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" kindref="member">in_range</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>element);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" kindref="member">convert</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>new_lb,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>new_ub,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>input);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" kindref="member">to_print</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" kindref="member">setLowerBound</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*_lowerBound*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" kindref="member">getLowerBound</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" kindref="member">setUpperBound</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*_upperBound*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" kindref="member">getUpperBound</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" kindref="member">toString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/include/libbsn/range/Range.hpp"/>
+  </compounddef>
+</doxygen>

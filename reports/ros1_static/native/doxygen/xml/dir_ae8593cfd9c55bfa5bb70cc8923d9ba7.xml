@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ae8593cfd9c55bfa5bb70cc8923d9ba7" kind="dir">
+    <compoundname>src/sa-bsn/target_system/components</compoundname>
+    <innerdir refid="dir_f70c295ff28c301a61b043dc8bc45c28">src/sa-bsn/target_system/components/component</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/target_system/components/"/>
+  </compounddef>
+</doxygen>

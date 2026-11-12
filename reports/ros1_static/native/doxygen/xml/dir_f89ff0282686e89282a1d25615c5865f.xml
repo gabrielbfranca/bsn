@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_f89ff0282686e89282a1d25615c5865f" kind="dir">
+    <compoundname>src/sa-bsn/logging_infrastructure/logger</compoundname>
+    <innerdir refid="dir_332e0e6f052338b0feb6964e9c6ffc66">src/sa-bsn/logging_infrastructure/logger/apps</innerdir>
+    <innerdir refid="dir_ac4db0263e564eeaafebb07bc2f809dd">src/sa-bsn/logging_infrastructure/logger/include</innerdir>
+    <innerdir refid="dir_d978607e8ab218b5b824903d3f660863">src/sa-bsn/logging_infrastructure/logger/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/logging_infrastructure/logger/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ParamAdapter_8cpp" kind="file" language="C++">
+    <compoundname>ParamAdapter.cpp</compoundname>
+    <includes refid="ParamAdapter_8hpp" local="yes">param_adapter/ParamAdapter.hpp</includes>
+    <incdepgraph>
+      <node id="2466">
+        <label>param_adapter/ParamAdapter.hpp</label>
+        <link refid="ParamAdapter_8hpp"/>
+        <childnode refid="2467" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2469" relation="include">
+        </childnode>
+        <childnode refid="2470" relation="include">
+        </childnode>
+        <childnode refid="2471" relation="include">
+        </childnode>
+      </node>
+      <node id="2465">
+        <label>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</label>
+        <link refid="ParamAdapter_8cpp"/>
+        <childnode refid="2466" relation="include">
+        </childnode>
+      </node>
+      <node id="2474">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="2467" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+      </node>
+      <node id="2473">
+        <label>stdexcept</label>
+      </node>
+      <node id="2467">
+        <label>string</label>
+      </node>
+      <node id="2470">
+        <label>archlib/target_system/Effector.hpp</label>
+        <link refid="Effector_8hpp"/>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2471" relation="include">
+        </childnode>
+        <childnode refid="2472" relation="include">
+        </childnode>
+      </node>
+      <node id="2471">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="2472">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="2467" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+      </node>
+      <node id="2468">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="2469">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ParamAdapter_8hpp" kindref="compound">param_adapter/ParamAdapter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" refkind="member"><highlight class="normal"><ref refid="classParamAdapter_1ab2b2c49ff8e3da06cc250cced9ef4683" kindref="member">ParamAdapter::ParamAdapter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>:<sp/>Effector(argc,<sp/>argv,<sp/>name)<sp/>{}</highlight></codeline>
+<codeline lineno="4" refid="classParamAdapter_1a12a2aebf8fcbad3a64399ae40843a6e3" refkind="member"><highlight class="normal"><ref refid="classParamAdapter_1a12a2aebf8fcbad3a64399ae40843a6e3" kindref="member">ParamAdapter::~ParamAdapter</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" kindref="member">ParamAdapter::setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classParamAdapter_1ae0cbd9772a1cb7e097204378dd8b1499" kindref="member">register_service</ref><sp/>=<sp/><ref refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" kindref="member">handle</ref>.advertiseService(</highlight><highlight class="stringliteral">&quot;EffectorRegister&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" kindref="member">ParamAdapter::moduleConnect</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>freq;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;frequency&quot;</highlight><highlight class="normal">,<sp/>freq);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kindref="member">setFreq</ref>(freq);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10" kindref="member">ParamAdapter::tearDown</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classParamAdapter_1a8067157ee9b80ea004424442237096ee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1a8067157ee9b80ea004424442237096ee" kindref="member">ParamAdapter::body</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>n;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>reconf<sp/>=<sp/>n.subscribe(</highlight><highlight class="stringliteral">&quot;reconfigure&quot;</highlight><highlight class="normal">,<sp/>1000,<sp/>&amp;<ref refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" kindref="member">ParamAdapter::receiveAdaptationCommand</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::spin();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5" kindref="member">ParamAdapter::receiveAdaptationCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>.find(msg-&gt;target)<sp/>!=<sp/><ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>.end()){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>[msg-&gt;target].publish(msg);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;ERROR,<sp/>target<sp/>not<sp/>found!<sp/>[%s]&quot;</highlight><highlight class="normal">,<sp/>msg-&gt;target.c_str());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" kindref="member">ParamAdapter::moduleConnect</ref>(archlib::EffectorRegister::Request<sp/>&amp;req,<sp/>archlib::EffectorRegister::Response<sp/>&amp;res)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(req.connection<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/>pub<sp/>=<sp/><ref refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" kindref="member">handle</ref>.advertise&lt;archlib::AdaptationCommand&gt;(</highlight><highlight class="stringliteral">&quot;reconfigure_&quot;</highlight><highlight class="normal"><sp/>+<sp/>req.name,<sp/>1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>[req.name]<sp/>=<sp/>pub;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Module<sp/>Connected.<sp/>[%s]&quot;</highlight><highlight class="normal">,<sp/>req.name.c_str());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,ros::Publisher&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>=<sp/><ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>.find(req.name);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParamAdapter_1a41db908bdf24508a24c9136842e51ad5" kindref="member">target_arr</ref>.erase(it);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Module<sp/>Disconnected.<sp/>[%s]&quot;</highlight><highlight class="normal">,<sp/>req.name.c_str());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.ACK<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(...)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.ACK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp"/>
+  </compounddef>
+</doxygen>

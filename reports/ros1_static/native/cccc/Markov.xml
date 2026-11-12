@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Markov-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="33" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="8" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="4.125" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="7" level="0" />
+<weighted_methods_per_class_visibility value="1" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="9" level="0" />
+<IF4 value="196" level="1" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="196" level="2" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="196" level="2" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="20" />
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Markov()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="22" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="8" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Markov(array,array,int32_t)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="24" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="11" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Markov(const Markov &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="26" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="16" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>calculate_state()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="39" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>next_state()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="37" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const Markov &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="27" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="21" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>toString()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="41" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="28" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Markov</name>
+<client_module>
+<name>DataGenerator</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="14" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/generator/DataGenerator.cpp" line="8" />
+</extent>
+<name>G3T1_1</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp" line="43" />
+</extent>
+<name>G3T1_2</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="43" />
+</extent>
+<name>G3T1_3</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp" line="43" />
+</extent>
+<name>G3T1_4</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp" line="43" />
+</extent>
+<name>G3T1_5</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp" line="43" />
+</extent>
+<name>G3T1_6</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp" line="43" />
+</extent>
+</client_module>
+<supplier_module>
+<name>array</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="24" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="24" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="30" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="34" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="11" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="11" />
+</extent>
+<name>int32_t</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="24" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/generator/Markov.hpp" line="32" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/generator/Markov.cpp" line="11" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classAdaptationMessage" kind="class" language="C++" prot="public">
+    <compoundname>AdaptationMessage</compoundname>
+    <includes refid="AdaptationMessage_8hpp" local="no">AdaptationMessage.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="19" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classAdaptationMessage_1a247af370b7dc198bd0075e4657fce95e" compoundref="AdaptationMessage_8hpp" startline="11" endline="11">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AdaptationMessage::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="20" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classAdaptationMessage_1ae98612442ead2c0da9c1df5758ab6913" compoundref="AdaptationMessage_8hpp" startline="12" endline="12">getTimestamp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AdaptationMessage::logical_clock</definition>
+        <argsstring></argsstring>
+        <name>logical_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="21" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classAdaptationMessage_1a9e15075e6e6303ce7d54098cd1f20cd6" compoundref="AdaptationMessage_8hpp" startline="13" endline="13">getLogicalClock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="22" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classAdaptationMessage_1aea71d7d2554aaa0eb2a95abcdaccedd1" compoundref="AdaptationMessage_8hpp" startline="14" endline="14">getSource</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="23" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classAdaptationMessage_1a29c98add1583cfd5c02c09d924d45931" compoundref="AdaptationMessage_8hpp" startline="15" endline="15">getTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="24" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAdaptationMessage_1affef4901b50a23f2c26679d1b712ea10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AdaptationMessage::AdaptationMessage</definition>
+        <argsstring>(const std::string &amp;name, const int64_t &amp;timestamp, const int64_t &amp;logical_clock, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>AdaptationMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>logical_clock</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="9" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdaptationMessage_1a247af370b7dc198bd0075e4657fce95e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="11" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="11" bodyend="11"/>
+        <references refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" compoundref="AdaptationMessage_8hpp" startline="16">name</references>
+      </memberdef>
+      <memberdef kind="function" id="classAdaptationMessage_1ae98612442ead2c0da9c1df5758ab6913" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t AdaptationMessage::getTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="12" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="12" bodyend="12"/>
+        <references refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" compoundref="AdaptationMessage_8hpp" startline="20">timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="classAdaptationMessage_1a9e15075e6e6303ce7d54098cd1f20cd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t AdaptationMessage::getLogicalClock</definition>
+        <argsstring>() const</argsstring>
+        <name>getLogicalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="13" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="13" bodyend="13"/>
+        <references refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" compoundref="AdaptationMessage_8hpp" startline="21">logical_clock</references>
+      </memberdef>
+      <memberdef kind="function" id="classAdaptationMessage_1aea71d7d2554aaa0eb2a95abcdaccedd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::getSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="14" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="14" bodyend="14"/>
+        <references refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" compoundref="AdaptationMessage_8hpp" startline="22">source</references>
+      </memberdef>
+      <memberdef kind="function" id="classAdaptationMessage_1a29c98add1583cfd5c02c09d924d45931" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::getTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="15" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="15" bodyend="15"/>
+        <references refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" compoundref="AdaptationMessage_8hpp" startline="23">target</references>
+      </memberdef>
+      <memberdef kind="function" id="classAdaptationMessage_1aaa11680ed61906ebcaa73059f6688c17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AdaptationMessage::getContent</definition>
+        <argsstring>() const</argsstring>
+        <name>getContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="16" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="6" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classAdaptationMessage_1affef4901b50a23f2c26679d1b712ea10" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>AdaptationMessage</name></member>
+      <member refid="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" prot="private" virt="non-virtual"><scope>AdaptationMessage</scope><name>content</name></member>
+      <member refid="classAdaptationMessage_1aaa11680ed61906ebcaa73059f6688c17" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>getContent</name></member>
+      <member refid="classAdaptationMessage_1a9e15075e6e6303ce7d54098cd1f20cd6" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>getLogicalClock</name></member>
+      <member refid="classAdaptationMessage_1a247af370b7dc198bd0075e4657fce95e" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>getName</name></member>
+      <member refid="classAdaptationMessage_1aea71d7d2554aaa0eb2a95abcdaccedd1" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>getSource</name></member>
+      <member refid="classAdaptationMessage_1a29c98add1583cfd5c02c09d924d45931" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>getTarget</name></member>
+      <member refid="classAdaptationMessage_1ae98612442ead2c0da9c1df5758ab6913" prot="public" virt="non-virtual"><scope>AdaptationMessage</scope><name>getTimestamp</name></member>
+      <member refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" prot="private" virt="non-virtual"><scope>AdaptationMessage</scope><name>logical_clock</name></member>
+      <member refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" prot="private" virt="non-virtual"><scope>AdaptationMessage</scope><name>name</name></member>
+      <member refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" prot="private" virt="non-virtual"><scope>AdaptationMessage</scope><name>source</name></member>
+      <member refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" prot="private" virt="non-virtual"><scope>AdaptationMessage</scope><name>target</name></member>
+      <member refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" prot="private" virt="non-virtual"><scope>AdaptationMessage</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

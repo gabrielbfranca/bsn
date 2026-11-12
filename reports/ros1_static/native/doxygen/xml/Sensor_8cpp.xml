@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Sensor_8cpp" kind="file" language="C++">
+    <compoundname>Sensor.cpp</compoundname>
+    <includes refid="Sensor_8hpp" local="yes">component/Sensor.hpp</includes>
+    <incdepgraph>
+      <node id="2426">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="2419">
+        <label>component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="2420" relation="include">
+        </childnode>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2422" relation="include">
+        </childnode>
+        <childnode refid="2423" relation="include">
+        </childnode>
+        <childnode refid="2429" relation="include">
+        </childnode>
+        <childnode refid="2434" relation="include">
+        </childnode>
+        <childnode refid="2435" relation="include">
+        </childnode>
+        <childnode refid="2438" relation="include">
+        </childnode>
+        <childnode refid="2439" relation="include">
+        </childnode>
+        <childnode refid="2440" relation="include">
+        </childnode>
+      </node>
+      <node id="2437">
+        <label>stdint.h</label>
+      </node>
+      <node id="2433">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2425" relation="include">
+        </childnode>
+      </node>
+      <node id="2432">
+        <label>stdexcept</label>
+      </node>
+      <node id="2421">
+        <label>string</label>
+      </node>
+      <node id="2438">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="2422" relation="include">
+        </childnode>
+        <childnode refid="2421" relation="include">
+        </childnode>
+      </node>
+      <node id="2440">
+        <label>std_srvs/SetBool.h</label>
+      </node>
+      <node id="2423">
+        <label>archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2424" relation="include">
+        </childnode>
+        <childnode refid="2425" relation="include">
+        </childnode>
+        <childnode refid="2426" relation="include">
+        </childnode>
+        <childnode refid="2427" relation="include">
+        </childnode>
+        <childnode refid="2428" relation="include">
+        </childnode>
+        <childnode refid="2429" relation="include">
+        </childnode>
+        <childnode refid="2430" relation="include">
+        </childnode>
+        <childnode refid="2431" relation="include">
+        </childnode>
+      </node>
+      <node id="2429">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="2422">
+        <label>vector</label>
+      </node>
+      <node id="2424">
+        <label>signal.h</label>
+      </node>
+      <node id="2431">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2432" relation="include">
+        </childnode>
+        <childnode refid="2425" relation="include">
+        </childnode>
+        <childnode refid="2433" relation="include">
+        </childnode>
+      </node>
+      <node id="2418">
+        <label>src/sa-bsn/target_system/components/component/src/Sensor.cpp</label>
+        <link refid="Sensor_8cpp"/>
+        <childnode refid="2419" relation="include">
+        </childnode>
+      </node>
+      <node id="2434">
+        <label>archlib/Uncertainty.h</label>
+      </node>
+      <node id="2436">
+        <label>sstream</label>
+      </node>
+      <node id="2427">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="2425">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="2428">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="2439">
+        <label>std_msgs/Float32.h</label>
+      </node>
+      <node id="2435">
+        <label>libbsn/resource/Battery.hpp</label>
+        <link refid="Battery_8hpp"/>
+        <childnode refid="2436" relation="include">
+        </childnode>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2432" relation="include">
+        </childnode>
+      </node>
+      <node id="2420">
+        <label>stdio.h</label>
+      </node>
+      <node id="2430">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Sensor_8hpp" kindref="compound">component/Sensor.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classSensor_1ac7f3f9070732abb6e7b881ac66d734e2" refkind="member"><highlight class="normal"><ref refid="classSensor_1ac7f3f9070732abb6e7b881ac66d734e2" kindref="member">Sensor::Sensor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;active,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;noise_factor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref><sp/>&amp;battery,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;instant_recharge)<sp/>:<sp/>Component(argc,<sp/>argv,<sp/>name),<sp/>type(type),<sp/>active(active),<sp/>buffer_size(1),<sp/>replicate_collect(1),<sp/>noise_factor(0),<sp/>battery(battery),<sp/>data(0.0),<sp/>instant_recharge(instant_recharge),<sp/>cost(0.0)<sp/>{}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classSensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" refkind="member"><highlight class="normal"><ref refid="classSensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" kindref="member">Sensor::~Sensor</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classSensor_1afebfbbf60a28c72389d5bd970fe78c0e" refkind="member"><highlight class="normal"><ref refid="classSensor" kindref="compound">Sensor</ref>&amp;<sp/><ref refid="classSensor_1afebfbbf60a28c72389d5bd970fe78c0e" kindref="member">Sensor::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSensor" kindref="compound">Sensor</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" kindref="member">type</ref><sp/>=<sp/>obj.<ref refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref><sp/>=<sp/>obj.<ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref><sp/>=<sp/>obj.<ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref><sp/>=<sp/>obj.<ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref><sp/>=<sp/>obj.<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kindref="member">instant_recharge</ref><sp/>=<sp/>obj.<ref refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kindref="member">instant_recharge</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" refkind="member"><highlight class="normal">int32_t<sp/><ref refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" kindref="member">Sensor::run</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1a46b45c4ec9d0675d2424ff2bb5df26ab" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" kindref="member">shouldStart</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Component::shutdownComponent();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>nh;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>noise_subs<sp/>=<sp/>nh.subscribe(</highlight><highlight class="stringliteral">&quot;uncertainty_&quot;</highlight><highlight class="normal">+ros::this_node::getName(),<sp/>10,<sp/>&amp;<ref refid="classSensor_1a941f539d5f022334095705710338469c" kindref="member">Sensor::injectUncertainty</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::Subscriber<sp/>reconfig_subs<sp/>=<sp/>nh.subscribe(</highlight><highlight class="stringliteral">&quot;reconfigure_&quot;</highlight><highlight class="normal">+ros::this_node::getName(),<sp/>10,<sp/>&amp;<ref refid="classSensor_1a476760a7dd4be51136bf165e183526cf" kindref="member">Sensor::reconfigure</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>nh.getParam(</highlight><highlight class="stringliteral">&quot;connect_sensor&quot;</highlight><highlight class="normal">,<sp/><ref refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" kindref="member">connected_sensor</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Sensor<sp/>connected<sp/>=<sp/>%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="classSensor_1a3134771bf8e59923651d9f25252d9ea7" kindref="member">connected_sensor</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::spinOnce();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(ros::ok())<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Rate<sp/>loop_rate(<ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" kindref="member">getFreq</ref>());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::spinOnce();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::exception&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_ERROR(<sp/></highlight><highlight class="stringliteral">&quot;SENSOR<sp/>FAILED:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>e.what());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;fail&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loop_rate.sleep();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a043dabb8b92f70fc247d585b8d66e133" kindref="member">Sensor::body</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" kindref="member">isActive</ref>()<sp/>&amp;&amp;<sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" kindref="member">getCurrentLevel</ref>()<sp/>&gt;<sp/>90){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1ab687b1dd4e4ecb1d806bf947cedc9b76" kindref="member">turnOn</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" kindref="member">isActive</ref>()<sp/>&amp;&amp;<sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" kindref="member">getCurrentLevel</ref>()<sp/>&lt;<sp/>2){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a7e0dadfc3dcde4c6c7b20d0c0ae09082" kindref="member">turnOff</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" kindref="member">isActive</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;running&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref><sp/>=<sp/><ref refid="classSensor_1ab89214185c2da031e0f78b0f4dc031e8" kindref="member">collect</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*for<sp/>data<sp/>replication,<sp/>as<sp/>if<sp/>replicate_collect<sp/>values<sp/>were<sp/>collected*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sum;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" kindref="member">replicate_collect</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>aux_data<sp/>=<sp/><ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a865bbaf085db8217e4d0c02e12e8a2a1" kindref="member">apply_noise</ref>(aux_data);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>aux_data;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref><sp/>=<sp/>sum/<ref refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" kindref="member">replicate_collect</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref><sp/>=<sp/><ref refid="classSensor_1a209530c83c3299a6587e1c87277dcd1e" kindref="member">process</ref>(<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1afa34e334fc608034f8aeb8cb3d34abc9" kindref="member">transfer</ref>(<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" kindref="member">sendStatus</ref>(</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" kindref="member">sendEnergyStatus</ref>(<ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" kindref="member">recharge</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::domain_error(</highlight><highlight class="stringliteral">&quot;out<sp/>of<sp/>charge&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/>error<sp/>=<sp/>noise_factor<sp/>(%)</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>data<sp/>+-<sp/>[(error<sp/>+<sp/>rand(0,1))<sp/>*<sp/>error]<sp/>*<sp/>data</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classSensor_1a865bbaf085db8217e4d0c02e12e8a2a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a865bbaf085db8217e4d0c02e12e8a2a1" kindref="member">Sensor::apply_noise</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>(<ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref><sp/>+<sp/>((double)rand()<sp/>/<sp/>RAND_MAX)<sp/>*<sp/><ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref>)<sp/>*<sp/><ref refid="classSensor_1a3ec114499fe9c744e21e18dc3e8b2987" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>+=<sp/>(rand()%2==0)?offset:(-1)*offset;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classSensor_1a476760a7dd4be51136bf165e183526cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a476760a7dd4be51136bf165e183526cf" kindref="member">Sensor::reconfigure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::AdaptationCommand::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>action<sp/>=<sp/>msg-&gt;action.c_str();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>pairs<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(action,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;std::string&gt;::iterator<sp/>it<sp/>=<sp/>pairs.begin();<sp/>it<sp/>!=<sp/>pairs.end();<sp/>++it){</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(action,<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(param[0]==</highlight><highlight class="stringliteral">&quot;freq&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>new_freq<sp/>=<sp/><sp/>stod(param[1]);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kindref="member">setFreq</ref>(new_freq);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param[0]==</highlight><highlight class="stringliteral">&quot;replicate_collect&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_replicate_collect<sp/>=<sp/>stoi(param[1]);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(new_replicate_collect&gt;1<sp/>&amp;&amp;<sp/>new_replicate_collect&lt;200)<sp/><ref refid="classSensor_1a082ef8f59c9bc47232309780f8b07c70" kindref="member">replicate_collect</ref><sp/>=<sp/>new_replicate_collect;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classSensor_1a941f539d5f022334095705710338469c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a941f539d5f022334095705710338469c" kindref="member">Sensor::injectUncertainty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Uncertainty::ConstPtr&amp;<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>content<sp/>=<sp/>msg-&gt;content;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>pairs<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(content,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;std::string&gt;::iterator<sp/>it<sp/>=<sp/>pairs.begin();<sp/>it<sp/>!=<sp/>pairs.end();<sp/>++it){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(content,<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(param[0]==</highlight><highlight class="stringliteral">&quot;noise_factor&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1afa3d793843256b107d3dff7abb283a6b" kindref="member">noise_factor</ref><sp/>=<sp/>stod(param[1]);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSensor_1aeb95c3006f7155be956658f0b951b9db" kindref="member">Sensor::isActive</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classSensor_1ab687b1dd4e4ecb1d806bf947cedc9b76" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1ab687b1dd4e4ecb1d806bf947cedc9b76" kindref="member">Sensor::turnOn</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classSensor_1a7e0dadfc3dcde4c6c7b20d0c0ae09082" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1a7e0dadfc3dcde4c6c7b20d0c0ae09082" kindref="member">Sensor::turnOff</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1a24fd0c86c714edf603aac94428e96a01" kindref="member">active</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>battery<sp/>will<sp/>always<sp/>recover<sp/>in<sp/>200seconds</highlight></codeline>
+<codeline lineno="146"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">*<sp/><sp/>b/s<sp/>=<sp/>100%<sp/>/<sp/>200<sp/>seconds<sp/>=<sp/>0.2<sp/>%/s<sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/>=&gt;<sp/>recovers<sp/>5%<sp/>battery<sp/>per<sp/>second</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">*<sp/><sp/>if<sp/>we<sp/>divide<sp/>by<sp/>the<sp/>execution<sp/>frequency</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">*<sp/><sp/>we<sp/>get<sp/>the<sp/>amount<sp/>of<sp/>battery<sp/>we<sp/>need<sp/>to</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">*<sp/><sp/>recover<sp/>per<sp/>execution<sp/>cycle<sp/>to<sp/>achieve<sp/>the</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">*<sp/><sp/>0.2<sp/>%/s<sp/>battery<sp/>recovery<sp/>rate</highlight></codeline>
+<codeline lineno="153"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSensor_1aa2c5c0b7c6f69e6e25cf56bab5fc822b" kindref="member">Sensor::recharge</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kindref="member">instant_recharge</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" kindref="member">getCurrentLevel</ref>()<sp/>&lt;=<sp/>100)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" kindref="member">generate</ref>(1);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>battery.generate((100/2000)/rosComponentDescriptor.getFreq());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" kindref="member">generate</ref>(100);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/components/component/src/Sensor.cpp"/>
+  </compounddef>
+</doxygen>

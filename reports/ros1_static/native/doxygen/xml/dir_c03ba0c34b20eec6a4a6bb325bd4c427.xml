@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_c03ba0c34b20eec6a4a6bb325bd4c427" kind="dir">
+    <compoundname>src/libbsn/include/libbsn/range</compoundname>
+    <innerfile refid="Range_8hpp">Range.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/range/"/>
+  </compounddef>
+</doxygen>

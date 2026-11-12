@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4cfa5d186d967e0d0dc4c5e3b4ed19a5" kind="dir">
+    <compoundname>src/sa-bsn/system_manager/enactor/include/enactor</compoundname>
+    <innerfile refid="Enactor_8hpp">Enactor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/enactor/include/enactor/"/>
+  </compounddef>
+</doxygen>

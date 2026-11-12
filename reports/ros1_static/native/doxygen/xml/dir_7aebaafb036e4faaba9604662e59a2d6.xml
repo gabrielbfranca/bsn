@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_7aebaafb036e4faaba9604662e59a2d6" kind="dir">
+    <compoundname>src/sa-bsn/system_manager/adaptation_engine</compoundname>
+    <innerdir refid="dir_e97b1a6214ff90c3cf2de24c68f45900">src/sa-bsn/system_manager/adaptation_engine/apps</innerdir>
+    <innerdir refid="dir_1f78501b5dfee483207f9c1e6ecd7d8d">src/sa-bsn/system_manager/adaptation_engine/include</innerdir>
+    <innerdir refid="dir_28787ab5ba8dda38326637198f7b7d98">src/sa-bsn/system_manager/adaptation_engine/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/adaptation_engine/"/>
+  </compounddef>
+</doxygen>

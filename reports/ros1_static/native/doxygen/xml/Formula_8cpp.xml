@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Formula_8cpp" kind="file" language="C++">
+    <compoundname>Formula.cpp</compoundname>
+    <includes refid="Formula_8hpp" local="yes">libbsn/model/Formula.hpp</includes>
+    <incdepgraph>
+      <node id="800">
+        <label>lepton/Lepton.h</label>
+      </node>
+      <node id="798">
+        <label>stdexcept</label>
+      </node>
+      <node id="799">
+        <label>string</label>
+      </node>
+      <node id="795">
+        <label>src/libbsn/src/model/Formula.cpp</label>
+        <link refid="Formula_8cpp"/>
+        <childnode refid="796" relation="include">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>iostream</label>
+      </node>
+      <node id="796">
+        <label>libbsn/model/Formula.hpp</label>
+        <link refid="Formula_8hpp"/>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="798" relation="include">
+        </childnode>
+        <childnode refid="799" relation="include">
+        </childnode>
+        <childnode refid="800" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1model">bsn::model</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Formula_8hpp" kindref="compound">libbsn/model/Formula.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">model<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6" refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" kindref="member">Formula::Formula</ref>():<sp/>expression(),<sp/>term_value()<sp/>{};</highlight></codeline>
+<codeline lineno="7" refid="classbsn_1_1model_1_1Formula_1a2a082f72ae62ff2049ddc4a33154b704" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" kindref="member">Formula::Formula</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>text)<sp/>:<sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>(),<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref><sp/>=<sp/>Lepton::Parser::parse(text).createCompiledExpression();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10" refid="classbsn_1_1model_1_1Formula_1acd52c33aadcbde66aef55577eb039a8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" kindref="member">Formula::Formula</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>text,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>terms,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>values)<sp/>:<sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>(),<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(terms.size()<sp/>!=<sp/>values.size())<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::length_error(</highlight><highlight class="stringliteral">&quot;ERROR:<sp/>terms<sp/>and<sp/>values<sp/>size<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>each<sp/>other.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref><sp/>=<sp/>Lepton::Parser::parse(text).createCompiledExpression();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>terms.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>[terms.at(i)]<sp/>=<sp/>values.at(i);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classbsn_1_1model_1_1Formula_1aa07ebaa8fafd971d0bceb0a141bfbece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1aa07ebaa8fafd971d0bceb0a141bfbece" kindref="member">Formula::~Formula</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classbsn_1_1model_1_1Formula_1ac874ee14de83c79ff9a4c3e8a4eac731" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1accfe1558868c83bba4cefc742d33f6a3" kindref="member">Formula::Formula</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula" kindref="compound">Formula</ref><sp/>&amp;obj)<sp/>:<sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>(obj.<ref refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" kindref="member">getExpression</ref>()),<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>(obj.<ref refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" kindref="member">getTermValueMap</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula" kindref="compound">Formula</ref>&amp;<sp/><ref refid="classbsn_1_1model_1_1Formula_1ae5bae41ffe503228db75f10757344199" kindref="member">Formula::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula" kindref="compound">Formula</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" kindref="member">getExpression</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" kindref="member">getTermValueMap</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Lepton::CompiledExpression<sp/><ref refid="classbsn_1_1model_1_1Formula_1ab698d6f9512ebb6c2b5ca5240a13e0c6" kindref="member">Formula::getExpression</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classbsn_1_1model_1_1Formula_1add7c9f8b64bce70ec50e1c945f5fe4c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula_1add7c9f8b64bce70ec50e1c945f5fe4c1" kindref="member">Formula::setExpression</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Lepton::CompiledExpression<sp/>&amp;newExpression)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref><sp/>=<sp/>newExpression;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,double&gt;<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7d6f9d838dfd9b4daa62d6a6aee94e5a" kindref="member">Formula::getTermValueMap</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" kindref="member">Formula::setTermValueMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;terms,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;values)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;::const_iterator<sp/>t_iter;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;::const_iterator<sp/>v_iter;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>t_iter<sp/>=<sp/>terms.begin(),<sp/>v_iter<sp/>=<sp/>values.begin();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_iter<sp/>!=<sp/>terms.end()<sp/>&amp;&amp;<sp/>v_iter<sp/>!=<sp/>values.end();<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++t_iter,<sp/>++v_iter<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>[*t_iter]<sp/>=<sp/>*v_iter;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classbsn_1_1model_1_1Formula_1a302aaa2cabfb31818e62aa67f42b8028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula_1a49ea44acf0d7c9355d8134de7f3d7a3b" kindref="member">Formula::setTermValueMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;std::string,double&gt;<sp/>&amp;_term_value){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref><sp/>=<sp/>_term_value;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula_1afa267bb9172a038543604912d0b23ce8" kindref="member">Formula::evaluate</ref>(){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>keys;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>values;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::map&lt;std::string,double&gt;::iterator<sp/>it<sp/>=<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>.begin();<sp/>it<sp/>!=<sp/><ref refid="classbsn_1_1model_1_1Formula_1a7f56808d6597cf81dd07408f9ab0f25f" kindref="member">term_value</ref>.end();<sp/>++it)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>.getVariableReference(it-&gt;first)<sp/>=<sp/>it-&gt;second;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>.evaluate();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classbsn_1_1model_1_1Formula_1a5867d8c6d3860a5c5b73048b88ac25e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classbsn_1_1model_1_1Formula_1a5867d8c6d3860a5c5b73048b88ac25e6" kindref="member">Formula::getTerms</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;std::string&gt;<sp/>terms<sp/>=<sp/><ref refid="classbsn_1_1model_1_1Formula_1a5947fcbb949814a7e27b859f09f80f19" kindref="member">expression</ref>.getVariables();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>vec_terms(terms.begin(),terms.end());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vec_terms;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/model/Formula.cpp"/>
+  </compounddef>
+</doxygen>

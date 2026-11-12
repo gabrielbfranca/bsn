@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classStatusMessage" kind="class" language="C++" prot="public">
+    <compoundname>StatusMessage</compoundname>
+    <includes refid="StatusMessage_8hpp" local="no">StatusMessage.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStatusMessage_1a320f61b3608b65835b256a5ab4910421" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="19" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classStatusMessage_1add3286d937a84582c8d2dd90d01c3c0a" compoundref="StatusMessage_8hpp" startline="11" endline="11">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classStatusMessage_1a25666dda2d4a05b6ccf8adb10f1835cd" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t StatusMessage::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="20" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classStatusMessage_1a26d39898246103ead58a462dc9a56c03" compoundref="StatusMessage_8hpp" startline="12" endline="12">getTimestamp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classStatusMessage_1aa3770b0be28f304276abba6cc2b079ca" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t StatusMessage::logical_clock</definition>
+        <argsstring></argsstring>
+        <name>logical_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="21" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classStatusMessage_1a47d3dcfc3240e8b645e0136a0d4b5131" compoundref="StatusMessage_8hpp" startline="13" endline="13">getLogicalClock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classStatusMessage_1a619a4877c17974e52428ef2120bd4d66" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="22" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classStatusMessage_1a01ba555721c8cbc84ca2f80e0faf6a3d" compoundref="StatusMessage_8hpp" startline="14" endline="14">getSource</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classStatusMessage_1a85c6c87c50cf902697780ebae97bdac1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="23" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classStatusMessage_1ad90052a63723e608a792047058a12173" compoundref="StatusMessage_8hpp" startline="15" endline="15">getTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classStatusMessage_1a1fba0259f7cb7168c157b7751f2c006d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="24" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStatusMessage_1aa16bc451804164e47970401aab6e7263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StatusMessage::StatusMessage</definition>
+        <argsstring>(const std::string &amp;name, const int64_t &amp;timestamp, const int64_t &amp;logical_clock, const std::string &amp;source, const std::string &amp;target, const std::string &amp;state)</argsstring>
+        <name>StatusMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>logical_clock</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="9" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classStatusMessage_1add3286d937a84582c8d2dd90d01c3c0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="11" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="11" bodyend="11"/>
+        <references refid="classStatusMessage_1a320f61b3608b65835b256a5ab4910421" compoundref="StatusMessage_8hpp" startline="16">name</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusMessage_1a26d39898246103ead58a462dc9a56c03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t StatusMessage::getTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="12" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="12" bodyend="12"/>
+        <references refid="classStatusMessage_1a25666dda2d4a05b6ccf8adb10f1835cd" compoundref="StatusMessage_8hpp" startline="20">timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusMessage_1a47d3dcfc3240e8b645e0136a0d4b5131" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t StatusMessage::getLogicalClock</definition>
+        <argsstring>() const</argsstring>
+        <name>getLogicalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="13" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="13" bodyend="13"/>
+        <references refid="classStatusMessage_1aa3770b0be28f304276abba6cc2b079ca" compoundref="StatusMessage_8hpp" startline="21">logical_clock</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusMessage_1a01ba555721c8cbc84ca2f80e0faf6a3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::getSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="14" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="14" bodyend="14"/>
+        <references refid="classStatusMessage_1a619a4877c17974e52428ef2120bd4d66" compoundref="StatusMessage_8hpp" startline="22">source</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusMessage_1ad90052a63723e608a792047058a12173" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::getTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="15" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="15" bodyend="15"/>
+        <references refid="classStatusMessage_1a85c6c87c50cf902697780ebae97bdac1" compoundref="StatusMessage_8hpp" startline="23">target</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusMessage_1a53b7d4fc382131654cbca086ae119ae2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string StatusMessage::getState</definition>
+        <argsstring>() const</argsstring>
+        <name>getState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="16" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="6" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classStatusMessage_1a47d3dcfc3240e8b645e0136a0d4b5131" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>getLogicalClock</name></member>
+      <member refid="classStatusMessage_1add3286d937a84582c8d2dd90d01c3c0a" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>getName</name></member>
+      <member refid="classStatusMessage_1a01ba555721c8cbc84ca2f80e0faf6a3d" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>getSource</name></member>
+      <member refid="classStatusMessage_1a53b7d4fc382131654cbca086ae119ae2" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>getState</name></member>
+      <member refid="classStatusMessage_1ad90052a63723e608a792047058a12173" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>getTarget</name></member>
+      <member refid="classStatusMessage_1a26d39898246103ead58a462dc9a56c03" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>getTimestamp</name></member>
+      <member refid="classStatusMessage_1aa3770b0be28f304276abba6cc2b079ca" prot="private" virt="non-virtual"><scope>StatusMessage</scope><name>logical_clock</name></member>
+      <member refid="classStatusMessage_1a320f61b3608b65835b256a5ab4910421" prot="private" virt="non-virtual"><scope>StatusMessage</scope><name>name</name></member>
+      <member refid="classStatusMessage_1a619a4877c17974e52428ef2120bd4d66" prot="private" virt="non-virtual"><scope>StatusMessage</scope><name>source</name></member>
+      <member refid="classStatusMessage_1a1fba0259f7cb7168c157b7751f2c006d" prot="private" virt="non-virtual"><scope>StatusMessage</scope><name>state</name></member>
+      <member refid="classStatusMessage_1aa16bc451804164e47970401aab6e7263" prot="public" virt="non-virtual"><scope>StatusMessage</scope><name>StatusMessage</name></member>
+      <member refid="classStatusMessage_1a85c6c87c50cf902697780ebae97bdac1" prot="private" virt="non-virtual"><scope>StatusMessage</scope><name>target</name></member>
+      <member refid="classStatusMessage_1a25666dda2d4a05b6ccf8adb10f1835cd" prot="private" virt="non-virtual"><scope>StatusMessage</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

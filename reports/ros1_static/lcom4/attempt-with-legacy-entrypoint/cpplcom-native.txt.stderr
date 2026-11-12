@@ -1,0 +1,1 @@
+parse error in /workspaces/bsn_/src/sa-bsn/system_manager/enactor/apps/enactor.cpp: /workspaces/bsn_/src/sa-bsn/system_manager/enactor/apps/enactor.cpp:4:13: error: variable type 'Enactor' is an abstract class

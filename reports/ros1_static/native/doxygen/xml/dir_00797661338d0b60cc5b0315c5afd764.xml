@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_00797661338d0b60cc5b0315c5afd764" kind="dir">
+    <compoundname>src/sa-bsn/environment/patient/include</compoundname>
+    <innerfile refid="PatientModule_8hpp">PatientModule.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/environment/patient/include/"/>
+  </compounddef>
+</doxygen>

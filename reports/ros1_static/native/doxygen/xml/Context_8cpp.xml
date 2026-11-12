@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Context_8cpp" kind="file" language="C++">
+    <compoundname>Context.cpp</compoundname>
+    <includes refid="Context_8hpp" local="yes">libbsn/goalmodel/Context.hpp</includes>
+    <incdepgraph>
+      <node id="737">
+        <label>string</label>
+      </node>
+      <node id="736">
+        <label>libbsn/goalmodel/Context.hpp</label>
+        <link refid="Context_8hpp"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>src/libbsn/src/goalmodel/Context.cpp</label>
+        <link refid="Context_8cpp"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Context_8hpp" kindref="compound">libbsn/goalmodel/Context.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">goalmodel<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6" refid="classbsn_1_1goalmodel_1_1Context_1aee845ddb8b408f2bbc44cfc01a48a982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kindref="member">Context::Context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;description,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;value)<sp/>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id(id),</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description(description),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value(value)<sp/>{}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kindref="member">Context::Context</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kindref="member">id</ref>(),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref>(),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classbsn_1_1goalmodel_1_1Context_1aa125049f930d3dd9a0a8d37e445d5aa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1aa125049f930d3dd9a0a8d37e445d5aa8" kindref="member">Context::~Context</ref>(){};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="classbsn_1_1goalmodel_1_1Context_1aff8e02ea20e1f41057f75a113102891d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" kindref="member">Context::Context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;obj)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kindref="member">id</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" kindref="member">getID</ref>()),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" kindref="member">getDescription</ref>()),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" kindref="member">getValue</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref>&amp;<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" kindref="member">Context::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" kindref="member">getID</ref>();<sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" kindref="member">getDescription</ref>();<sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" kindref="member">getValue</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" kindref="member">Context::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref><sp/>&amp;rhs)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>rhs.<ref refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" kindref="member">Context::setID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" kindref="member">Context::getID</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" kindref="member">Context::setDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;description<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" kindref="member">Context::getDescription</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" kindref="member">Context::setValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;value<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" kindref="member">Context::getValue</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/goalmodel/Context.cpp"/>
+  </compounddef>
+</doxygen>

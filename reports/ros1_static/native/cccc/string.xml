@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module string-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="39" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>string</name>
+<client_module>
+<name>AdaptationMessage</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="22" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="23" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp" line="24" />
+</extent>
+<name>Battery</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/resource/Battery.hpp" line="15" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/resource/Battery.hpp" line="26" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/resource/Battery.hpp" line="41" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/resource/Battery.cpp" line="8" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/resource/Battery.cpp" line="60" />
+</extent>
+<name>CentralHub</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="19" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" line="5" />
+</extent>
+<name>Component</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="37" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="120" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="130" />
+</extent>
+<name>Context</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="24" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="31" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="32" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="34" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="42" />
+</extent>
+<name>Controller</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="8" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="23" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="71" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="162" />
+</extent>
+<name>CostEngine</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp" line="38" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp" line="67" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp" line="16" />
+</extent>
+<name>DataAccess</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="58" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="59" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="59" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="82" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="83" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="84" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="85" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="86" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="3" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="263" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="270" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="277" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="284" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="291" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="364" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="401" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="401" />
+</extent>
+<name>Effector</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Effector.hpp" line="15" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Effector.cpp" line="6" />
+</extent>
+<name>Enactor</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp" line="42" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp" line="43" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Enactor.cpp" line="3" />
+</extent>
+<name>EnergyStatusMessage</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="22" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="23" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="24" />
+</extent>
+<name>Engine</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="37" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="55" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="56" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="67" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="91" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="105" />
+</extent>
+<name>EventMessage</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="22" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="23" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="24" />
+</extent>
+<name>Formula</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="10" />
+</extent>
+<name>G3T1_1</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp" line="12" />
+</extent>
+<name>G3T1_2</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp" line="9" />
+</extent>
+<name>G3T1_3</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp" line="11" />
+</extent>
+<name>G3T1_4</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp" line="11" />
+</extent>
+<name>G3T1_5</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp" line="11" />
+</extent>
+<name>G3T1_6</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp" line="12" />
+</extent>
+<name>G4T1</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="27" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="165" />
+</extent>
+<name>Goal</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Goal.hpp" line="16" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Goal.hpp" line="16" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Goal.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Goal.cpp" line="6" />
+</extent>
+<name>GoalTree</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/GoalTree.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/GoalTree.cpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/GoalTree.cpp" line="31" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/GoalTree.cpp" line="64" />
+</extent>
+<name>Injector</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="19" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="28" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="28" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/src/Injector.cpp" line="4" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/src/Injector.cpp" line="45" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/src/Injector.cpp" line="45" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/src/Injector.cpp" line="78" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/simulation/injector/src/Injector.cpp" line="78" />
+</extent>
+<name>LeafTask</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/LeafTask.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/LeafTask.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/LeafTask.cpp" line="14" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/LeafTask.cpp" line="14" />
+</extent>
+<name>Logger</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="22" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" line="4" />
+</extent>
+<name>Node</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="15" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="15" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="24" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Node.hpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="13" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="13" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="44" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="64" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="69" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="74" />
+</extent>
+<name>ParamAdapter</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="15" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" line="3" />
+</extent>
+<name>PatientModule</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="13" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="22" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="3" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/environment/patient/src/PatientModule.cpp" line="41" />
+</extent>
+<name>Probe</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Probe.hpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Probe.cpp" line="5" />
+</extent>
+<name>Property</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Property.hpp" line="12" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Property.hpp" line="21" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Property.hpp" line="28" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Property.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Property.cpp" line="26" />
+</extent>
+<name>ROSComponent</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/ROSComponent.hpp" line="15" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/ROSComponent.hpp" line="31" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/ROSComponent.hpp" line="31" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/ROSComponent.cpp" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/ROSComponent.cpp" line="58" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/ROSComponent.cpp" line="58" />
+</extent>
+<name>ROSComponentDescriptor</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="20" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/ROSComponentDescriptor.cpp" line="17" />
+</extent>
+<name>ReliabilityEngine</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="38" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="67" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp" line="16" />
+</extent>
+<name>Sensor</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp" line="21" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp" line="48" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/Sensor.cpp" line="3" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/Sensor.cpp" line="3" />
+</extent>
+<name>SensorConfiguration</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="41" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="56" />
+</extent>
+<name>StatusMessage</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="22" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="23" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp" line="24" />
+</extent>
+<name>Task</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Task.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Task.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Task.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Task.cpp" line="7" />
+</extent>
+<name>UncertaintyMessage</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="9" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="22" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="23" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp" line="24" />
+</extent>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

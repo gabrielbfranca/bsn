@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a002fd1ebd906690227ee829db4612d7" kind="dir">
+    <compoundname>src/sa-bsn/environment/patient</compoundname>
+    <innerdir refid="dir_fb00a96ac62725e17af6100df7307e7a">src/sa-bsn/environment/patient/apps</innerdir>
+    <innerdir refid="dir_00797661338d0b60cc5b0315c5afd764">src/sa-bsn/environment/patient/include</innerdir>
+    <innerdir refid="dir_657dd72045f176ebb7e04fc2c410f402">src/sa-bsn/environment/patient/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/environment/patient/"/>
+  </compounddef>
+</doxygen>

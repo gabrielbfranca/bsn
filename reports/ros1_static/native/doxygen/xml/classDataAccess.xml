@@ -1,0 +1,1113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classDataAccess" kind="class" language="C++" prot="public">
+    <compoundname>DataAccess</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <includes refid="DataAccess_8hpp" local="no">DataAccess.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classDataAccess_1af25e39b3738ee3b218aaf5ba6ca457ed" prot="protected" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle DataAccess::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="74" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDataAccess_1a9c4510e157c7072385ead3e8d98816ba" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber DataAccess::handle_persist</definition>
+        <argsstring></argsstring>
+        <name>handle_persist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="77" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a8dc03a2e054e3837b296f81d13251b66" prot="private" static="no" mutable="no">
+        <type>ros::ServiceServer</type>
+        <definition>ros::ServiceServer DataAccess::server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="78" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a2a74a76bf9bd650d46646996221433e5" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber DataAccess::targetSystemSub</definition>
+        <argsstring></argsstring>
+        <name>targetSystemSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="79" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1abb2e47eb8905f71a9a12412e72cc67a5" prot="private" static="no" mutable="no">
+        <type>std::fstream</type>
+        <definition>std::fstream DataAccess::fp</definition>
+        <argsstring></argsstring>
+        <name>fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="81" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1ad54e65a1128644057b1c6e0c01b0e8ed" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::event_filepath</definition>
+        <argsstring></argsstring>
+        <name>event_filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="82" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1ac23baae435d922a2895c3c01ed241f20" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::status_filepath</definition>
+        <argsstring></argsstring>
+        <name>status_filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="83" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a600fb929eb5662c98951a965855951a9" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::energy_status_filepath</definition>
+        <argsstring></argsstring>
+        <name>energy_status_filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="84" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1af2a67170f8809d6c899585c2868c5631" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::uncertainty_filepath</definition>
+        <argsstring></argsstring>
+        <name>uncertainty_filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="85" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a3d48622ac3e2e3c5a189c6e49da45cc5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::adaptation_filepath</definition>
+        <argsstring></argsstring>
+        <name>adaptation_filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="86" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t DataAccess::logical_clock</definition>
+        <argsstring></argsstring>
+        <name>logical_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="88" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" compoundref="DataAccess_8cpp" startline="291" endline="296">persistAdaptation</referencedby>
+        <referencedby refid="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" compoundref="DataAccess_8cpp" startline="277" endline="282">persistEnergyStatus</referencedby>
+        <referencedby refid="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" compoundref="DataAccess_8cpp" startline="263" endline="268">persistEvent</referencedby>
+        <referencedby refid="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" compoundref="DataAccess_8cpp" startline="270" endline="275">persistStatus</referencedby>
+        <referencedby refid="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" compoundref="DataAccess_8cpp" startline="284" endline="289">persistUncertainty</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a79ba15e2bdef1e41763235d11eb7bfe0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classStatusMessage" kindref="compound">StatusMessage</ref> &gt;</type>
+        <definition>std::vector&lt;StatusMessage&gt; DataAccess::statusVec</definition>
+        <argsstring></argsstring>
+        <name>statusVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="90" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" compoundref="DataAccess_8cpp" startline="270" endline="275">persistStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1aff27aea5f1b3efd006be58122ecc49fb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classEnergyStatusMessage" kindref="compound">EnergyStatusMessage</ref> &gt;</type>
+        <definition>std::vector&lt;EnergyStatusMessage&gt; DataAccess::energystatusVec</definition>
+        <argsstring></argsstring>
+        <name>energystatusVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="91" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" compoundref="DataAccess_8cpp" startline="277" endline="282">persistEnergyStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1aa0f4716524a841b3518b9a7d3c72ee9e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classEventMessage" kindref="compound">EventMessage</ref> &gt;</type>
+        <definition>std::vector&lt;EventMessage&gt; DataAccess::eventVec</definition>
+        <argsstring></argsstring>
+        <name>eventVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="92" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="92" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" compoundref="DataAccess_8cpp" startline="263" endline="268">persistEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a6b2bea48a398c475f79dfd79d8672916" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classUncertaintyMessage" kindref="compound">UncertaintyMessage</ref> &gt;</type>
+        <definition>std::vector&lt;UncertaintyMessage&gt; DataAccess::uncertainVec</definition>
+        <argsstring></argsstring>
+        <name>uncertainVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="93" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="93" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" compoundref="DataAccess_8cpp" startline="284" endline="289">persistUncertainty</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a359f2fd8782a2a0c4e6da991e2568f75" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classAdaptationMessage" kindref="compound">AdaptationMessage</ref> &gt;</type>
+        <definition>std::vector&lt;AdaptationMessage&gt; DataAccess::adaptVec</definition>
+        <argsstring></argsstring>
+        <name>adaptVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="94" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</referencedby>
+        <referencedby refid="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" compoundref="DataAccess_8cpp" startline="291" endline="296">persistAdaptation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::deque&lt; std::pair&lt; std::chrono::high_resolution_clock::time_point, std::string &gt; &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::deque&lt;std::pair&lt;std::chrono::high_resolution_clock::time_point, std::string&gt; &gt; &gt; DataAccess::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="96" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" compoundref="DataAccess_8cpp" startline="419" endline="435">applyTimeWindow</referencedby>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" compoundref="DataAccess_8cpp" startline="364" endline="395">calculateComponentReliability</referencedby>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1ad9d6163aaeb8831263c4e7e489cad787" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::deque&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::deque&lt;std::string&gt; &gt; DataAccess::events</definition>
+        <argsstring></argsstring>
+        <name>events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="97" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1ab112776bd110084a7ea6954d872ade9b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DataAccess::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="98" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1af948085757b1c74c0be445d322c2d629" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; DataAccess::components_reliabilities</definition>
+        <argsstring></argsstring>
+        <name>components_reliabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="100" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" compoundref="DataAccess_8cpp" startline="364" endline="395">calculateComponentReliability</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a6fe06ded54549b754d50a265d014b7d9" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; DataAccess::components_batteries</definition>
+        <argsstring></argsstring>
+        <name>components_batteries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="101" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a8a0b01f7a39714b33d5465ef31c3c147" compoundref="DataAccess_8cpp" startline="107" endline="114">processTargetSystemData</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a03b190af3fed7cb233853e8dda75ef26" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; DataAccess::components_costs_engine</definition>
+        <argsstring></argsstring>
+        <name>components_costs_engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="102" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1aa59aa03ad28b0da217953f804ce9493d" compoundref="DataAccess_8cpp" startline="401" endline="417">calculateComponentCost</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a8f0ff388ceb15b39d3895679e9b52bb3" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; DataAccess::components_costs_enactor</definition>
+        <argsstring></argsstring>
+        <name>components_costs_enactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="102" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1aa59aa03ad28b0da217953f804ce9493d" compoundref="DataAccess_8cpp" startline="401" endline="417">calculateComponentCost</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1ac16bdebb9536c1d8328d09c92bc6af05" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, uint32_t &gt;</type>
+        <definition>std::map&lt;std::string, uint32_t&gt; DataAccess::contexts</definition>
+        <argsstring></argsstring>
+        <name>contexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="103" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1aacb868a01e3dd70a3796aa0325cae52b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::reliability_formula</definition>
+        <argsstring></argsstring>
+        <name>reliability_formula</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="105" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1ade22e1525e1ef59702805d2a5f36ab67" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataAccess::cost_formula</definition>
+        <argsstring></argsstring>
+        <name>cost_formula</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="106" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1acc6814af19b5b7d61e2535dccb7a8f3d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DataAccess::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="108" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="108" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a38a80dbd0ed1ee36ed9f0ef2d6a0d88a" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DataAccess::count_to_calc_and_reset</definition>
+        <argsstring></argsstring>
+        <name>count_to_calc_and_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="109" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1aa3b6266a9999c40c9a492270963eb003" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DataAccess::count_to_fetch</definition>
+        <argsstring></argsstring>
+        <name>count_to_fetch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="110" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDataAccess_1a64952e48c14f428fb25efa44723b7b11" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DataAccess::arrived_status</definition>
+        <argsstring></argsstring>
+        <name>arrived_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="111" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="111" bodyend="-1"/>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataAccess_1a1d89301d9e42ee285f0c9d0e8f163eba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataAccess::DataAccess</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>DataAccess</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="38" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a02d65c4dff5b263dddb2d90d695fbe0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>DataAccess::~DataAccess</definition>
+        <argsstring>()</argsstring>
+        <name>~DataAccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="39" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a79a37674517514869067d9afbf0417c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataAccess::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="65" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="33" bodyend="103"/>
+        <references refid="classDataAccess_1a3d48622ac3e2e3c5a189c6e49da45cc5" compoundref="DataAccess_8hpp" startline="86">adaptation_filepath</references>
+        <references refid="classDataAccess_1a64952e48c14f428fb25efa44723b7b11" compoundref="DataAccess_8hpp" startline="111">arrived_status</references>
+        <references refid="classDataAccess_1ab112776bd110084a7ea6954d872ade9b" compoundref="DataAccess_8hpp" startline="98">buffer_size</references>
+        <references refid="classDataAccess_1a6fe06ded54549b754d50a265d014b7d9" compoundref="DataAccess_8hpp" startline="101">components_batteries</references>
+        <references refid="classDataAccess_1a8f0ff388ceb15b39d3895679e9b52bb3" compoundref="DataAccess_8hpp" startline="102">components_costs_enactor</references>
+        <references refid="classDataAccess_1a03b190af3fed7cb233853e8dda75ef26" compoundref="DataAccess_8hpp" startline="102">components_costs_engine</references>
+        <references refid="classDataAccess_1af948085757b1c74c0be445d322c2d629" compoundref="DataAccess_8hpp" startline="100">components_reliabilities</references>
+        <references refid="classDataAccess_1ade22e1525e1ef59702805d2a5f36ab67" compoundref="DataAccess_8hpp" startline="106">cost_formula</references>
+        <references refid="classDataAccess_1a38a80dbd0ed1ee36ed9f0ef2d6a0d88a" compoundref="DataAccess_8hpp" startline="109">count_to_calc_and_reset</references>
+        <references refid="classDataAccess_1a600fb929eb5662c98951a965855951a9" compoundref="DataAccess_8hpp" startline="84">energy_status_filepath</references>
+        <references refid="classDataAccess_1ad54e65a1128644057b1c6e0c01b0e8ed" compoundref="DataAccess_8hpp" startline="82">event_filepath</references>
+        <references refid="DataAccess_8cpp_1a91c81650aefc601969c8f6437b73709e" compoundref="DataAccess_8cpp" startline="14" endline="31">fetch_formula</references>
+        <references refid="classDataAccess_1abb2e47eb8905f71a9a12412e72cc67a5" compoundref="DataAccess_8hpp" startline="81">fp</references>
+        <references refid="classDataAccess_1acc6814af19b5b7d61e2535dccb7a8f3d" compoundref="DataAccess_8hpp" startline="108">frequency</references>
+        <references refid="classDataAccess_1af25e39b3738ee3b218aaf5ba6ca457ed" compoundref="DataAccess_8hpp" startline="74">handle</references>
+        <references refid="classDataAccess_1a9c4510e157c7072385ead3e8d98816ba" compoundref="DataAccess_8hpp" startline="77">handle_persist</references>
+        <references refid="classDataAccess_1ab51a1acc1d5b42424672d5f691919edd" compoundref="DataAccess_8cpp" startline="6" endline="8">now</references>
+        <references refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</references>
+        <references refid="classDataAccess_1a8a0b01f7a39714b33d5465ef31c3c147" compoundref="DataAccess_8cpp" startline="107" endline="114">processTargetSystemData</references>
+        <references refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</references>
+        <references refid="classDataAccess_1aacb868a01e3dd70a3796aa0325cae52b" compoundref="DataAccess_8hpp" startline="105">reliability_formula</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classDataAccess_1a8dc03a2e054e3837b296f81d13251b66" compoundref="DataAccess_8hpp" startline="78">server</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+        <references refid="classDataAccess_1ac23baae435d922a2895c3c01ed241f20" compoundref="DataAccess_8hpp" startline="83">status_filepath</references>
+        <references refid="classDataAccess_1a2a74a76bf9bd650d46646996221433e5" compoundref="DataAccess_8hpp" startline="79">targetSystemSub</references>
+        <references refid="classDataAccess_1af2a67170f8809d6c899585c2868c5631" compoundref="DataAccess_8hpp" startline="85">uncertainty_filepath</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1afe4f4f677d6a31cd1c6ac967f81b4b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataAccess::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="66" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a01b996865224272d1bcafe6307442422" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataAccess::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="67" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="116" bodyend="138"/>
+        <references refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" compoundref="DataAccess_8cpp" startline="419" endline="435">applyTimeWindow</references>
+        <references refid="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" compoundref="DataAccess_8cpp" startline="364" endline="395">calculateComponentReliability</references>
+        <references refid="classDataAccess_1ade22e1525e1ef59702805d2a5f36ab67" compoundref="DataAccess_8hpp" startline="106">cost_formula</references>
+        <references refid="classDataAccess_1a38a80dbd0ed1ee36ed9f0ef2d6a0d88a" compoundref="DataAccess_8hpp" startline="109">count_to_calc_and_reset</references>
+        <references refid="classDataAccess_1aa3b6266a9999c40c9a492270963eb003" compoundref="DataAccess_8hpp" startline="110">count_to_fetch</references>
+        <references refid="DataAccess_8cpp_1a91c81650aefc601969c8f6437b73709e" compoundref="DataAccess_8cpp" startline="14" endline="31">fetch_formula</references>
+        <references refid="classDataAccess_1acc6814af19b5b7d61e2535dccb7a8f3d" compoundref="DataAccess_8hpp" startline="108">frequency</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classDataAccess_1aacb868a01e3dd70a3796aa0325cae52b" compoundref="DataAccess_8hpp" startline="105">reliability_formula</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" compoundref="DataAccess_8hpp" startline="96">status</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::receivePersistMessage</definition>
+        <argsstring>(const archlib::Persist::ConstPtr &amp;msg)</argsstring>
+        <name>receivePersistMessage</name>
+        <param>
+          <type>const archlib::Persist::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="69" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="140" bodyend="200"/>
+        <references refid="classDataAccess_1a64952e48c14f428fb25efa44723b7b11" compoundref="DataAccess_8hpp" startline="111">arrived_status</references>
+        <references refid="classDataAccess_1ab112776bd110084a7ea6954d872ade9b" compoundref="DataAccess_8hpp" startline="98">buffer_size</references>
+        <references refid="classDataAccess_1a8f0ff388ceb15b39d3895679e9b52bb3" compoundref="DataAccess_8hpp" startline="102">components_costs_enactor</references>
+        <references refid="classDataAccess_1a03b190af3fed7cb233853e8dda75ef26" compoundref="DataAccess_8hpp" startline="102">components_costs_engine</references>
+        <references refid="classDataAccess_1ac16bdebb9536c1d8328d09c92bc6af05" compoundref="DataAccess_8hpp" startline="103">contexts</references>
+        <references refid="classDataAccess_1ad9d6163aaeb8831263c4e7e489cad787" compoundref="DataAccess_8hpp" startline="97">events</references>
+        <references refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" compoundref="DataAccess_8hpp" startline="88">logical_clock</references>
+        <references refid="classDataAccess_1a20021e615ce46f11936444e88ae43d82" compoundref="DataAccess_8cpp" startline="10" endline="12">nowInSeconds</references>
+        <references refid="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" compoundref="DataAccess_8cpp" startline="291" endline="296">persistAdaptation</references>
+        <references refid="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" compoundref="DataAccess_8cpp" startline="277" endline="282">persistEnergyStatus</references>
+        <references refid="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" compoundref="DataAccess_8cpp" startline="263" endline="268">persistEvent</references>
+        <references refid="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" compoundref="DataAccess_8cpp" startline="270" endline="275">persistStatus</references>
+        <references refid="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" compoundref="DataAccess_8cpp" startline="284" endline="289">persistUncertainty</references>
+        <references refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" compoundref="DataAccess_8hpp" startline="96">status</references>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataAccess::processQuery</definition>
+        <argsstring>(archlib::DataAccessRequest::Request &amp;req, archlib::DataAccessRequest::Response &amp;res)</argsstring>
+        <name>processQuery</name>
+        <param>
+          <type>archlib::DataAccessRequest::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>archlib::DataAccessRequest::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="70" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="202" bodyend="261"/>
+        <references refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" compoundref="DataAccess_8cpp" startline="419" endline="435">applyTimeWindow</references>
+        <references refid="classDataAccess_1aa59aa03ad28b0da217953f804ce9493d" compoundref="DataAccess_8cpp" startline="401" endline="417">calculateComponentCost</references>
+        <references refid="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" compoundref="DataAccess_8cpp" startline="364" endline="395">calculateComponentReliability</references>
+        <references refid="classDataAccess_1ac16bdebb9536c1d8328d09c92bc6af05" compoundref="DataAccess_8hpp" startline="103">contexts</references>
+        <references refid="classDataAccess_1ade22e1525e1ef59702805d2a5f36ab67" compoundref="DataAccess_8hpp" startline="106">cost_formula</references>
+        <references refid="classDataAccess_1ad9d6163aaeb8831263c4e7e489cad787" compoundref="DataAccess_8hpp" startline="97">events</references>
+        <references refid="classDataAccess_1aacb868a01e3dd70a3796aa0325cae52b" compoundref="DataAccess_8hpp" startline="105">reliability_formula</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <references refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" compoundref="DataAccess_8hpp" startline="96">status</references>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a8a0b01f7a39714b33d5465ef31c3c147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::processTargetSystemData</definition>
+        <argsstring>(const messages::TargetSystemData::ConstPtr &amp;msg)</argsstring>
+        <name>processTargetSystemData</name>
+        <param>
+          <type>const messages::TargetSystemData::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="71" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="107" bodyend="114"/>
+        <references refid="classDataAccess_1a6fe06ded54549b754d50a265d014b7d9" compoundref="DataAccess_8hpp" startline="101">components_batteries</references>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDataAccess_1a82d2be6337ffbc067cef4332a247920f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataAccess::DataAccess</definition>
+        <argsstring>(const DataAccess &amp;)</argsstring>
+        <name>DataAccess</name>
+        <param>
+          <type>const <ref refid="classDataAccess" kindref="compound">DataAccess</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1abca1c0839561d704bbdf5e2e404fa23f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classDataAccess" kindref="compound">DataAccess</ref> &amp;</type>
+        <definition>DataAccess&amp; DataAccess::operator=</definition>
+        <argsstring>(const DataAccess &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classDataAccess" kindref="compound">DataAccess</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1ab51a1acc1d5b42424672d5f691919edd" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t DataAccess::now</definition>
+        <argsstring>() const</argsstring>
+        <name>now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="44" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="6" bodyend="8"/>
+        <referencedby refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" compoundref="DataAccess_8cpp" startline="419" endline="435">applyTimeWindow</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a20021e615ce46f11936444e88ae43d82" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point DataAccess::nowInSeconds</definition>
+        <argsstring>() const</argsstring>
+        <name>nowInSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="45" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="10" bodyend="12"/>
+        <referencedby refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" compoundref="DataAccess_8cpp" startline="419" endline="435">applyTimeWindow</referencedby>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::persistEvent</definition>
+        <argsstring>(const int64_t &amp;timestamp, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>persistEvent</name>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="47" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="263" bodyend="268"/>
+        <references refid="classDataAccess_1aa0f4716524a841b3518b9a7d3c72ee9e" compoundref="DataAccess_8hpp" startline="92">eventVec</references>
+        <references refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</references>
+        <references refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" compoundref="DataAccess_8hpp" startline="88">logical_clock</references>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::persistStatus</definition>
+        <argsstring>(const int64_t &amp;timestamp, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>persistStatus</name>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="48" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="270" bodyend="275"/>
+        <references refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</references>
+        <references refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" compoundref="DataAccess_8hpp" startline="88">logical_clock</references>
+        <references refid="classDataAccess_1a79ba15e2bdef1e41763235d11eb7bfe0" compoundref="DataAccess_8hpp" startline="90">statusVec</references>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::persistEnergyStatus</definition>
+        <argsstring>(const int64_t &amp;timestamp, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>persistEnergyStatus</name>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="49" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="277" bodyend="282"/>
+        <references refid="classDataAccess_1aff27aea5f1b3efd006be58122ecc49fb" compoundref="DataAccess_8hpp" startline="91">energystatusVec</references>
+        <references refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</references>
+        <references refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" compoundref="DataAccess_8hpp" startline="88">logical_clock</references>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::persistUncertainty</definition>
+        <argsstring>(const int64_t &amp;timestamp, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>persistUncertainty</name>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="50" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="284" bodyend="289"/>
+        <references refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</references>
+        <references refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" compoundref="DataAccess_8hpp" startline="88">logical_clock</references>
+        <references refid="classDataAccess_1a6b2bea48a398c475f79dfd79d8672916" compoundref="DataAccess_8hpp" startline="93">uncertainVec</references>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::persistAdaptation</definition>
+        <argsstring>(const int64_t &amp;timestamp, const std::string &amp;source, const std::string &amp;target, const std::string &amp;content)</argsstring>
+        <name>persistAdaptation</name>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="51" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="291" bodyend="296"/>
+        <references refid="classDataAccess_1a359f2fd8782a2a0c4e6da991e2568f75" compoundref="DataAccess_8hpp" startline="94">adaptVec</references>
+        <references refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" compoundref="DataAccess_8cpp" startline="298" endline="358">flush</references>
+        <references refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" compoundref="DataAccess_8hpp" startline="88">logical_clock</references>
+        <referencedby refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" compoundref="DataAccess_8cpp" startline="140" endline="200">receivePersistMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="53" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="298" bodyend="358"/>
+        <references refid="classDataAccess_1a3d48622ac3e2e3c5a189c6e49da45cc5" compoundref="DataAccess_8hpp" startline="86">adaptation_filepath</references>
+        <references refid="classDataAccess_1a359f2fd8782a2a0c4e6da991e2568f75" compoundref="DataAccess_8hpp" startline="94">adaptVec</references>
+        <references refid="classDataAccess_1a600fb929eb5662c98951a965855951a9" compoundref="DataAccess_8hpp" startline="84">energy_status_filepath</references>
+        <references refid="classDataAccess_1aff27aea5f1b3efd006be58122ecc49fb" compoundref="DataAccess_8hpp" startline="91">energystatusVec</references>
+        <references refid="classDataAccess_1ad54e65a1128644057b1c6e0c01b0e8ed" compoundref="DataAccess_8hpp" startline="82">event_filepath</references>
+        <references refid="classDataAccess_1aa0f4716524a841b3518b9a7d3c72ee9e" compoundref="DataAccess_8hpp" startline="92">eventVec</references>
+        <references refid="classDataAccess_1abb2e47eb8905f71a9a12412e72cc67a5" compoundref="DataAccess_8hpp" startline="81">fp</references>
+        <references refid="classDataAccess_1ac23baae435d922a2895c3c01ed241f20" compoundref="DataAccess_8hpp" startline="83">status_filepath</references>
+        <references refid="classDataAccess_1a79ba15e2bdef1e41763235d11eb7bfe0" compoundref="DataAccess_8hpp" startline="90">statusVec</references>
+        <references refid="classDataAccess_1af2a67170f8809d6c899585c2868c5631" compoundref="DataAccess_8hpp" startline="85">uncertainty_filepath</references>
+        <references refid="classDataAccess_1a6b2bea48a398c475f79dfd79d8672916" compoundref="DataAccess_8hpp" startline="93">uncertainVec</references>
+        <referencedby refid="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" compoundref="DataAccess_8cpp" startline="291" endline="296">persistAdaptation</referencedby>
+        <referencedby refid="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" compoundref="DataAccess_8cpp" startline="277" endline="282">persistEnergyStatus</referencedby>
+        <referencedby refid="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" compoundref="DataAccess_8cpp" startline="263" endline="268">persistEvent</referencedby>
+        <referencedby refid="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" compoundref="DataAccess_8cpp" startline="270" endline="275">persistStatus</referencedby>
+        <referencedby refid="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" compoundref="DataAccess_8cpp" startline="284" endline="289">persistUncertainty</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1aaf72a25de07ebe4b4880e3151ce66242" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double DataAccess::calculateReliability</definition>
+        <argsstring>()</argsstring>
+        <name>calculateReliability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string DataAccess::calculateComponentReliability</definition>
+        <argsstring>(const std::string &amp;component)</argsstring>
+        <name>calculateComponentReliability</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Builds the response string and calculate the reliability of the component specified as parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="58" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="364" bodyend="395"/>
+        <references refid="classDataAccess_1af948085757b1c74c0be445d322c2d629" compoundref="DataAccess_8hpp" startline="100">components_reliabilities</references>
+        <references refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" compoundref="DataAccess_8hpp" startline="96">status</references>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1aa59aa03ad28b0da217953f804ce9493d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string DataAccess::calculateComponentCost</definition>
+        <argsstring>(const std::string &amp;component, std::string req_name)</argsstring>
+        <name>calculateComponentCost</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>component</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>req_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Builds the response string and calculate the cost of the component specified as parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="59" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="401" bodyend="417"/>
+        <references refid="classDataAccess_1a8f0ff388ceb15b39d3895679e9b52bb3" compoundref="DataAccess_8hpp" startline="102">components_costs_enactor</references>
+        <references refid="classDataAccess_1a03b190af3fed7cb233853e8dda75ef26" compoundref="DataAccess_8hpp" startline="102">components_costs_engine</references>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1a36a00a334d2f4661552497cc31bb9539" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::resetStatus</definition>
+        <argsstring>()</argsstring>
+        <name>resetStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataAccess::applyTimeWindow</definition>
+        <argsstring>()</argsstring>
+        <name>applyTimeWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="63" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" bodystart="419" bodyend="435"/>
+        <references refid="classDataAccess_1ab51a1acc1d5b42424672d5f691919edd" compoundref="DataAccess_8cpp" startline="6" endline="8">now</references>
+        <references refid="classDataAccess_1a20021e615ce46f11936444e88ae43d82" compoundref="DataAccess_8cpp" startline="10" endline="12">nowInSeconds</references>
+        <references refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" compoundref="DataAccess_8hpp" startline="96">status</references>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">body</referencedby>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">processQuery</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="46">
+        <label>DataAccess</label>
+        <link refid="classDataAccess"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="49">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="48">
+        <label>DataAccess</label>
+        <link refid="classDataAccess"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="35" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" bodystart="35" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classDataAccess_1a3d48622ac3e2e3c5a189c6e49da45cc5" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>adaptation_filepath</name></member>
+      <member refid="classDataAccess_1a359f2fd8782a2a0c4e6da991e2568f75" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>adaptVec</name></member>
+      <member refid="classDataAccess_1ac936690f71d228bc0756b9b9539ffe88" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>applyTimeWindow</name></member>
+      <member refid="classDataAccess_1a64952e48c14f428fb25efa44723b7b11" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>arrived_status</name></member>
+      <member refid="classDataAccess_1a01b996865224272d1bcafe6307442422" prot="public" virt="virtual"><scope>DataAccess</scope><name>body</name></member>
+      <member refid="classDataAccess_1ab112776bd110084a7ea6954d872ade9b" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>buffer_size</name></member>
+      <member refid="classDataAccess_1aa59aa03ad28b0da217953f804ce9493d" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>calculateComponentCost</name></member>
+      <member refid="classDataAccess_1a410220f6e1c62e3819f0c007fc8d64bd" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>calculateComponentReliability</name></member>
+      <member refid="classDataAccess_1aaf72a25de07ebe4b4880e3151ce66242" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>calculateReliability</name></member>
+      <member refid="classDataAccess_1a6fe06ded54549b754d50a265d014b7d9" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>components_batteries</name></member>
+      <member refid="classDataAccess_1a8f0ff388ceb15b39d3895679e9b52bb3" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>components_costs_enactor</name></member>
+      <member refid="classDataAccess_1a03b190af3fed7cb233853e8dda75ef26" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>components_costs_engine</name></member>
+      <member refid="classDataAccess_1af948085757b1c74c0be445d322c2d629" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>components_reliabilities</name></member>
+      <member refid="classDataAccess_1ac16bdebb9536c1d8328d09c92bc6af05" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>contexts</name></member>
+      <member refid="classDataAccess_1ade22e1525e1ef59702805d2a5f36ab67" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>cost_formula</name></member>
+      <member refid="classDataAccess_1a38a80dbd0ed1ee36ed9f0ef2d6a0d88a" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>count_to_calc_and_reset</name></member>
+      <member refid="classDataAccess_1aa3b6266a9999c40c9a492270963eb003" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>count_to_fetch</name></member>
+      <member refid="classDataAccess_1a1d89301d9e42ee285f0c9d0e8f163eba" prot="public" virt="non-virtual"><scope>DataAccess</scope><name>DataAccess</name></member>
+      <member refid="classDataAccess_1a82d2be6337ffbc067cef4332a247920f" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>DataAccess</name></member>
+      <member refid="classDataAccess_1a600fb929eb5662c98951a965855951a9" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>energy_status_filepath</name></member>
+      <member refid="classDataAccess_1aff27aea5f1b3efd006be58122ecc49fb" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>energystatusVec</name></member>
+      <member refid="classDataAccess_1ad54e65a1128644057b1c6e0c01b0e8ed" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>event_filepath</name></member>
+      <member refid="classDataAccess_1ad9d6163aaeb8831263c4e7e489cad787" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>events</name></member>
+      <member refid="classDataAccess_1aa0f4716524a841b3518b9a7d3c72ee9e" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>eventVec</name></member>
+      <member refid="classDataAccess_1a616c69e71481fd7992f39d7873238fbe" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>flush</name></member>
+      <member refid="classDataAccess_1abb2e47eb8905f71a9a12412e72cc67a5" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>fp</name></member>
+      <member refid="classDataAccess_1acc6814af19b5b7d61e2535dccb7a8f3d" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>frequency</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>DataAccess</scope><name>getRosNodeName</name></member>
+      <member refid="classDataAccess_1af25e39b3738ee3b218aaf5ba6ca457ed" prot="protected" virt="non-virtual"><scope>DataAccess</scope><name>handle</name></member>
+      <member refid="classDataAccess_1a9c4510e157c7072385ead3e8d98816ba" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>handle_persist</name></member>
+      <member refid="classDataAccess_1add11c9b2d7dc83a98a2efa65b07db545" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>logical_clock</name></member>
+      <member refid="classDataAccess_1ab51a1acc1d5b42424672d5f691919edd" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>now</name></member>
+      <member refid="classDataAccess_1a20021e615ce46f11936444e88ae43d82" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>nowInSeconds</name></member>
+      <member refid="classDataAccess_1abca1c0839561d704bbdf5e2e404fa23f" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>operator=</name></member>
+      <member refid="classDataAccess_1aacc54114b920eb07f8600f793e48a12b" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>persistAdaptation</name></member>
+      <member refid="classDataAccess_1a59bae000390aaf8c80c3f88b99119b97" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>persistEnergyStatus</name></member>
+      <member refid="classDataAccess_1aee20a0df9fb24aa7d84550c3f479ff2e" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>persistEvent</name></member>
+      <member refid="classDataAccess_1aa3d2f4b370985d6585e6b085721dc50a" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>persistStatus</name></member>
+      <member refid="classDataAccess_1adf892470535b2855791fad3ee8c1eb58" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>persistUncertainty</name></member>
+      <member refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" prot="public" virt="non-virtual"><scope>DataAccess</scope><name>processQuery</name></member>
+      <member refid="classDataAccess_1a8a0b01f7a39714b33d5465ef31c3c147" prot="public" virt="non-virtual"><scope>DataAccess</scope><name>processTargetSystemData</name></member>
+      <member refid="classDataAccess_1abe7d46e840f7b047a9dfedb76e07518d" prot="public" virt="non-virtual"><scope>DataAccess</scope><name>receivePersistMessage</name></member>
+      <member refid="classDataAccess_1aacb868a01e3dd70a3796aa0325cae52b" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>reliability_formula</name></member>
+      <member refid="classDataAccess_1a36a00a334d2f4661552497cc31bb9539" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>resetStatus</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>DataAccess</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>DataAccess</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>DataAccess</scope><name>run</name></member>
+      <member refid="classDataAccess_1a8dc03a2e054e3837b296f81d13251b66" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>server</name></member>
+      <member refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" prot="public" virt="virtual"><scope>DataAccess</scope><name>setUp</name></member>
+      <member refid="classDataAccess_1a462d697d59631faf0240a138f8ce9ab2" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>status</name></member>
+      <member refid="classDataAccess_1ac23baae435d922a2895c3c01ed241f20" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>status_filepath</name></member>
+      <member refid="classDataAccess_1a79ba15e2bdef1e41763235d11eb7bfe0" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>statusVec</name></member>
+      <member refid="classDataAccess_1a2a74a76bf9bd650d46646996221433e5" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>targetSystemSub</name></member>
+      <member refid="classDataAccess_1afe4f4f677d6a31cd1c6ac967f81b4b42" prot="public" virt="virtual"><scope>DataAccess</scope><name>tearDown</name></member>
+      <member refid="classDataAccess_1af2a67170f8809d6c899585c2868c5631" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>uncertainty_filepath</name></member>
+      <member refid="classDataAccess_1a6b2bea48a398c475f79dfd79d8672916" prot="private" virt="non-virtual"><scope>DataAccess</scope><name>uncertainVec</name></member>
+      <member refid="classDataAccess_1a02d65c4dff5b263dddb2d90d695fbe0e" prot="public" virt="virtual"><scope>DataAccess</scope><name>~DataAccess</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>DataAccess</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

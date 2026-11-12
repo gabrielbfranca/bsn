@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacearch_1_1target__system" kind="namespace" language="C++">
+    <compoundname>arch::target_system</compoundname>
+    <innerclass refid="classarch_1_1target__system_1_1Component" prot="public">arch::target_system::Component</innerclass>
+    <innerclass refid="classarch_1_1target__system_1_1Effector" prot="public">arch::target_system::Effector</innerclass>
+    <innerclass refid="classarch_1_1target__system_1_1Probe" prot="public">arch::target_system::Probe</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/archlib/include/archlib/target_system/Component.hpp" line="18" column="1"/>
+  </compounddef>
+</doxygen>

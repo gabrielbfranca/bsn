@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Range_8cpp" kind="file" language="C++">
+    <compoundname>Range.cpp</compoundname>
+    <includes refid="Range_8hpp" local="yes">libbsn/range/Range.hpp</includes>
+    <incdepgraph>
+      <node id="815">
+        <label>stdint.h</label>
+      </node>
+      <node id="813">
+        <label>stdexcept</label>
+      </node>
+      <node id="812">
+        <label>string</label>
+      </node>
+      <node id="811">
+        <label>libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+        <childnode refid="814" relation="include">
+        </childnode>
+        <childnode refid="815" relation="include">
+        </childnode>
+        <childnode refid="816" relation="include">
+        </childnode>
+      </node>
+      <node id="816">
+        <label>sstream</label>
+      </node>
+      <node id="810">
+        <label>src/libbsn/src/range/Range.cpp</label>
+        <link refid="Range_8cpp"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="814">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1range">bsn::range</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Range_8hpp" kindref="compound">libbsn/range/Range.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">range<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Range::Range()<sp/>:<sp/>lowerBound(),<sp/>upperBound()<sp/>{}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classbsn_1_1range_1_1Range_1a41643b5367a88263f328c9f8a82e0479" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" kindref="member">Range::Range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;l,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;u)<sp/>:<sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>(l),<sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref>(u)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(l<sp/>&gt;<sp/>u)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::invalid_argument(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>Range(lower<sp/>bound<sp/>is<sp/>higher<sp/>than<sp/>uppper<sp/>bound)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classbsn_1_1range_1_1Range_1ac97bbbad31eaa12e560882347eb150d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1ac97bbbad31eaa12e560882347eb150d2" kindref="member">Range::~Range</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classbsn_1_1range_1_1Range_1ab689347e8fe6b800352063428163af8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a243d87e7bfaf43a016f1fa59bdf5730b" kindref="member">Range::Range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>&amp;obj)<sp/>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>(obj.<ref refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" kindref="member">getLowerBound</ref>()),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref>(obj.<ref refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" kindref="member">getUpperBound</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>&amp;<sp/><ref refid="classbsn_1_1range_1_1Range_1a35cf86ce26654472821f985c4b5790cf" kindref="member">Range::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" kindref="member">getLowerBound</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" kindref="member">getUpperBound</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>um<sp/>elemento<sp/>esta<sp/>dentro<sp/>do<sp/>intervalo<sp/>estipulado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" kindref="member">Range::in_range</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>element)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(element<sp/>&gt;=<sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref><sp/>&amp;&amp;<sp/>element<sp/>&lt;=<sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref>)?<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">:</highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" kindref="member">Range::convert</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>new_lb,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>new_ub,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>input)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>((input<sp/>-<sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>)<sp/>/<sp/>(<ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref><sp/>-<sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>))<sp/>*</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(new_ub<sp/>-<sp/>new_lb)<sp/>+<sp/>new_lb;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" kindref="member">Range::to_print</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>+<sp/>to_string(<ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(<ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref>)<sp/>+<sp/></highlight><highlight class="charliteral">&apos;)&apos;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a8eda775bde2030785c9d495039f4b0f0" kindref="member">Range::setLowerBound</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;_lowerBound)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref><sp/>=<sp/>_lowerBound;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" kindref="member">Range::getLowerBound</ref><sp/>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a1a39ab11d284a377b8015cac09bfd763" kindref="member">Range::setUpperBound</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;_upperBound)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref><sp/>=<sp/>_upperBound;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" kindref="member">Range::getUpperBound</ref><sp/>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1range_1_1Range_1a41c2f7826f39663aabc15cf59ae1fa1d" kindref="member">Range::toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringstream<sp/>sstr;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sstr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Range:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classbsn_1_1range_1_1Range_1a7f2cd438d1ddb636b9025bf4781c46ae" kindref="member">lowerBound</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classbsn_1_1range_1_1Range_1ac3b2076e53652006d4ff73b138787aa2" kindref="member">upperBound</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sstr.str();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/range/Range.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_41e783f9e30e1b755fbf55c66439287d" kind="dir">
+    <compoundname>src/libbsn/src/generator</compoundname>
+    <innerfile refid="DataGenerator_8cpp">DataGenerator.cpp</innerfile>
+    <innerfile refid="Markov_8cpp">Markov.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/src/generator/"/>
+  </compounddef>
+</doxygen>

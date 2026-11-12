@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_0a05d3b0c9861b6955a9ad600ba25401" kind="dir">
+    <compoundname>src/sa-bsn/target_system/probes</compoundname>
+    <innerdir refid="dir_e0abd878bbdc0cd9749a6fc42c383798">src/sa-bsn/target_system/probes/collector</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/target_system/probes/"/>
+  </compounddef>
+</doxygen>

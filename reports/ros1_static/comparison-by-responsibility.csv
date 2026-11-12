@@ -1,0 +1,15 @@
+mapping,nom_ros1_defined,nom_ros2,wmc_ros1,wmc_ros2,max_cc_ros1,max_cc_ros2
+DataAccess → DataAccess,19,22,70,99,17,17
+ReliabilityEngine → ReliabilityEngine,11,13,74,67,39,16
+Engine → Engine,10,16,23,33,5,6
+Controller → Controller,6,7,38,31,14,11
+Enactor → Enactor,8,15,20,40,6,8
+Logger → Logger,11,14,11,32,1,10
+PatientModule → Patient,7,9,14,32,4,7
+bsn::goalmodel::Context → Context,12,11,12,12,1,2
+bsn::goalmodel::Node → Node,16,17,20,25,3,3
+bsn::goalmodel::GoalTree → GoalTree,15,14,21,24,3,4
+bsn::goalmodel::LeafTask → LeafTask,15,13,15,17,1,5
+bsn::goalmodel::Property → Property,10,9,10,10,1,2
+bsn::model::Formula → Formula,13,16,18,50,3,12
+bsn::resource::Battery → Battery,16,4,23,11,6,6

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Injector_8cpp" kind="file" language="C++">
+    <compoundname>Injector.cpp</compoundname>
+    <includes refid="Injector_8hpp" local="yes">Injector.hpp</includes>
+    <incdepgraph>
+      <node id="1116">
+        <label>Injector.hpp</label>
+        <link refid="Injector_8hpp"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1126">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>stdexcept</label>
+      </node>
+      <node id="1124">
+        <label>string</label>
+      </node>
+      <node id="1120">
+        <label>map</label>
+      </node>
+      <node id="1118">
+        <label>ros/package.h</label>
+      </node>
+      <node id="1127">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>vector</label>
+      </node>
+      <node id="1123">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+      </node>
+      <node id="1122">
+        <label>archlib/Uncertainty.h</label>
+      </node>
+      <node id="1117">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="1119">
+        <label>time.h</label>
+      </node>
+      <node id="1115">
+        <label>src/sa-bsn/simulation/injector/src/Injector.cpp</label>
+        <link refid="Injector_8cpp"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Injector_8hpp" kindref="compound">Injector.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classInjector_1a09393196e5037689464bde2bd5be2c68" refkind="member"><highlight class="normal"><ref refid="classInjector_1a09393196e5037689464bde2bd5be2c68" kindref="member">Injector::Injector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>:<sp/>ROSComponent(argc,<sp/>argv,<sp/>name),<sp/>cycles(0),<sp/>duration(),<sp/>frequency(),<sp/>amplitude(),<sp/>noise_factor(),<sp/>begin(),<sp/>end(),<sp/>type()<sp/>{}</highlight></codeline>
+<codeline lineno="5" refid="classInjector_1a904aaf462f9ebb0462418aa96d5f09fa" refkind="member"><highlight class="normal"><ref refid="classInjector_1a904aaf462f9ebb0462418aa96d5f09fa" kindref="member">Injector::~Injector</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" kindref="member">Injector::setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>srand(time(NULL));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInjector_1a39c105f4444ab60f719260f87b31a6fc" kindref="member">log_uncertainty</ref><sp/>=<sp/><ref refid="classInjector_1abe24d0c2aa32f842e9cfd741538a0c1b" kindref="member">handle</ref>.advertise&lt;archlib::Uncertainty&gt;(</highlight><highlight class="stringliteral">&quot;log_uncertainty&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>config;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>freq;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>config.getParam(</highlight><highlight class="stringliteral">&quot;frequency&quot;</highlight><highlight class="normal">,<sp/>freq);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" kindref="member">setFreq</ref>(freq);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>comps;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>config.getParam(</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">,<sp/>comps);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" kindref="member">components</ref><sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(comps,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;std::string&gt;::iterator<sp/>component<sp/>=<sp/><ref refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" kindref="member">components</ref>.begin();<sp/>component<sp/>!=<sp/><ref refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" kindref="member">components</ref>.end();<sp/>++component){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1a550422e1dfea5df5669c11fb41a649cf" kindref="member">uncertainty_pub</ref>[*component]<sp/>=<sp/><ref refid="classInjector_1abe24d0c2aa32f842e9cfd741538a0c1b" kindref="member">handle</ref>.advertise&lt;archlib::Uncertainty&gt;(</highlight><highlight class="stringliteral">&quot;uncertainty_/&quot;</highlight><highlight class="normal">+(*component),<sp/>1000);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.getParam((*component)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/type&quot;</highlight><highlight class="normal">,<sp/><ref refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" kindref="member">type</ref>[*component]);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.getParam((*component)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/offset&quot;</highlight><highlight class="normal">,<sp/><ref refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" kindref="member">noise_factor</ref>[*component]);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.getParam((*component)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/amplitude&quot;</highlight><highlight class="normal">,<sp/><ref refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" kindref="member">amplitude</ref>[*component]);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.getParam((*component)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/frequency&quot;</highlight><highlight class="normal">,<sp/><ref refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" kindref="member">frequency</ref>[*component]);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.getParam((*component)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/duration&quot;</highlight><highlight class="normal">,<sp/><ref refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" kindref="member">duration</ref>[*component]);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>beg;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.getParam((*component)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/begin&quot;</highlight><highlight class="normal">,<sp/>beg);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" kindref="member">begin</ref>[*component]<sp/>=<sp/><ref refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kindref="member">seconds_in_cycles</ref>(beg);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" kindref="member">end</ref>[*component]<sp/>=<sp/><ref refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" kindref="member">begin</ref>[*component]<sp/>+<sp/><ref refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kindref="member">seconds_in_cycles</ref>(<ref refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" kindref="member">duration</ref>[*component]);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classInjector_1af4f05a4db5b7b9536b4033da098b90cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInjector_1af4f05a4db5b7b9536b4033da098b90cf" kindref="member">Injector::tearDown</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kindref="member">Injector::seconds_in_cycles</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;seconds){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>seconds*<ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" kindref="member">getFreq</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classInjector_1a35650e71bfa5d5fceff437fb8309c7d8" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="classInjector_1a35650e71bfa5d5fceff437fb8309c7d8" kindref="member">Injector::cycles_in_seconds</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kindref="member">cycles</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cycles/<ref refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" kindref="member">rosComponentDescriptor</ref>.<ref refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" kindref="member">getFreq</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" kindref="member">Injector::gen_noise</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;component,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;noise,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<ref refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" kindref="member">duration</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" kindref="member">amplitude</ref>,<sp/>std::string<sp/>&amp;<ref refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" kindref="member">type</ref>){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_last_cycle<sp/>=<sp/>(<ref refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kindref="member">cycles</ref><sp/>==<sp/><ref refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" kindref="member">end</ref>[component])?</highlight><highlight class="keyword">true</highlight><highlight class="normal">:</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type==</highlight><highlight class="stringliteral">&quot;step&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>!is_last_cycle){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" kindref="member">amplitude</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type==</highlight><highlight class="stringliteral">&quot;ramp&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>!is_last_cycle)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>noise<sp/>+<sp/>amplitude/<ref refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kindref="member">seconds_in_cycles</ref>(duration);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type==</highlight><highlight class="stringliteral">&quot;random&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>rand()<sp/>/<sp/>(RAND_MAX))<sp/>*<sp/><ref refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" kindref="member">amplitude</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInjector_1a0fece06f63240f874cda7c7f86829afd" kindref="member">Injector::body</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>++<ref refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kindref="member">cycles</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::vector&lt;std::string&gt;::iterator<sp/>component<sp/>=<sp/><ref refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" kindref="member">components</ref>.begin();<sp/>component<sp/>!=<sp/><ref refid="classInjector_1affecbcd3eb090c9c4c0ab62cd663145b" kindref="member">components</ref>.end();<sp/>++component){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" kindref="member">begin</ref>[*component]<sp/>&lt;=<sp/><ref refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kindref="member">cycles</ref><sp/>&amp;&amp;<sp/><ref refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kindref="member">cycles</ref><sp/>&lt;=<sp/><ref refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" kindref="member">end</ref>[*component])<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" kindref="member">noise_factor</ref>[*component]<sp/>=<sp/><ref refid="classInjector_1adff8b74963f8ddd83447fee0c33b58d2" kindref="member">gen_noise</ref>(*component,<sp/><ref refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" kindref="member">noise_factor</ref>[*component],<sp/><ref refid="classInjector_1a4e3dfa79c6ceb036bb6e235cff448af9" kindref="member">duration</ref>[*component],<sp/><ref refid="classInjector_1a78a2abcb75b51b466345b6dd02c5a8fe" kindref="member">amplitude</ref>[*component],<sp/><ref refid="classInjector_1a1f5b39e601968de8bfaf69152e28940d" kindref="member">type</ref>[*component]);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" kindref="member">inject</ref>(*component,<sp/></highlight><highlight class="stringliteral">&quot;noise_factor=&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classInjector_1a907bf6ff84cf0b00ecc82acd42dbb177" kindref="member">noise_factor</ref>[*component]));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//update<sp/>begin<sp/>and<sp/>end<sp/>tags<sp/>in<sp/>last<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classInjector_1a0b688f4088e8df1c2427ac76203ac690" kindref="member">cycles</ref><sp/>==<sp/><ref refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" kindref="member">end</ref>[*component]){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1aa78630eafff1d5d7c7b9ef09fb90b03e" kindref="member">begin</ref>[*component]<sp/>+=<sp/><ref refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kindref="member">seconds_in_cycles</ref>(1.0/<ref refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" kindref="member">frequency</ref>[*component]);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInjector_1a2cf7871c022c91d59402f3e4197a98b4" kindref="member">end</ref>[*component]<sp/><sp/><sp/>+=<sp/><ref refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" kindref="member">seconds_in_cycles</ref>(1.0/<ref refid="classInjector_1ad9a982b5d898526a9351a3e554862db2" kindref="member">frequency</ref>[*component]);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInjector_1a51a24f8144c1be6f3bde403c9bea6a56" kindref="member">Injector::inject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;component,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;content){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>archlib::Uncertainty<sp/>msg;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.source<sp/>=<sp/>ros::this_node::getName();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.target<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">+component;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.content<sp/>=<sp/>content;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInjector_1a550422e1dfea5df5669c11fb41a649cf" kindref="member">uncertainty_pub</ref>[component].publish(msg);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInjector_1a39c105f4444ab60f719260f87b31a6fc" kindref="member">log_uncertainty</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;Inject<sp/>[%s]<sp/>at<sp/>[%s].&quot;</highlight><highlight class="normal">,<sp/>content.c_str(),<sp/>component.c_str());</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/simulation/injector/src/Injector.cpp"/>
+  </compounddef>
+</doxygen>

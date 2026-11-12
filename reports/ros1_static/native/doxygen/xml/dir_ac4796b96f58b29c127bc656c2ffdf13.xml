@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ac4796b96f58b29c127bc656c2ffdf13" kind="dir">
+    <compoundname>src/sa-bsn/system_manager</compoundname>
+    <innerdir refid="dir_7aebaafb036e4faaba9604662e59a2d6">src/sa-bsn/system_manager/adaptation_engine</innerdir>
+    <innerdir refid="dir_4608eee037232a547391c866eb6a4619">src/sa-bsn/system_manager/enactor</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/"/>
+  </compounddef>
+</doxygen>

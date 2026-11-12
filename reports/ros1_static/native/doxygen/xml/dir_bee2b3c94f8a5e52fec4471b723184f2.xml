@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bee2b3c94f8a5e52fec4471b723184f2" kind="dir">
+    <compoundname>src/sa-bsn/target_system/effectors/param_adapter</compoundname>
+    <innerdir refid="dir_ac6b2ed7a063a67663c5fdf9c79f481a">src/sa-bsn/target_system/effectors/param_adapter/apps</innerdir>
+    <innerdir refid="dir_541953cd7281d88cebf7c74217de7a4c">src/sa-bsn/target_system/effectors/param_adapter/include</innerdir>
+    <innerdir refid="dir_53db198a34ebb989fddaab2f2571e0a3">src/sa-bsn/target_system/effectors/param_adapter/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/target_system/effectors/param_adapter/"/>
+  </compounddef>
+</doxygen>

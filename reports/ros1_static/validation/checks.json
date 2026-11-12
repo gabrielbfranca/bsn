@@ -1,0 +1,15 @@
+{
+  "cpp_cc": [
+    1,
+    2
+  ],
+  "python_cc": [
+    1,
+    2
+  ],
+  "distinct_homonymous_classes": true,
+  "cycle_detected": true,
+  "inheritance_detected": true,
+  "all_defined_methods_joined": true,
+  "abstract_excluded_from_defined": true
+}

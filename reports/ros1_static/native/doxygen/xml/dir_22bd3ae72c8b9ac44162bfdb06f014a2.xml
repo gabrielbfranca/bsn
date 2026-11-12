@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_22bd3ae72c8b9ac44162bfdb06f014a2" kind="dir">
+    <compoundname>src/libbsn/include/libbsn/processor</compoundname>
+    <innerfile refid="Processor_8hpp">Processor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/processor/"/>
+  </compounddef>
+</doxygen>

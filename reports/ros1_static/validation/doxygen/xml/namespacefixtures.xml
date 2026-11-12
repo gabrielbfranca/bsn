@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacefixtures" kind="namespace" language="C++">
+    <compoundname>fixtures</compoundname>
+    <innerclass refid="classfixtures_1_1A" prot="public">fixtures::A</innerclass>
+    <innerclass refid="classfixtures_1_1B" prot="public">fixtures::B</innerclass>
+    <innerclass refid="classfixtures_1_1Base" prot="public">fixtures::Base</innerclass>
+    <innerclass refid="classfixtures_1_1Branch" prot="public">fixtures::Branch</innerclass>
+    <innerclass refid="classfixtures_1_1CallBridge" prot="public">fixtures::CallBridge</innerclass>
+    <innerclass refid="classfixtures_1_1Derived" prot="public">fixtures::Derived</innerclass>
+    <innerclass refid="classfixtures_1_1OnlyConstructor" prot="public">fixtures::OnlyConstructor</innerclass>
+    <innerclass refid="classfixtures_1_1SeparateGetters" prot="public">fixtures::SeparateGetters</innerclass>
+    <innerclass refid="classfixtures_1_1SharedState" prot="public">fixtures::SharedState</innerclass>
+    <innerclass refid="classfixtures_1_1SplitState" prot="public">fixtures::SplitState</innerclass>
+    <innerclass refid="classfixtures_1_1Stateless" prot="public">fixtures::Stateless</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="2" column="1"/>
+  </compounddef>
+</doxygen>

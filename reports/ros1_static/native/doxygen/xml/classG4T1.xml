@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classG4T1" kind="class" language="C++" prot="public">
+    <compoundname>G4T1</compoundname>
+    <basecompoundref refid="classCentralHub" prot="public" virt="non-virtual">CentralHub</basecompoundref>
+    <includes refid="G4T1_8hpp" local="no">G4T1.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classG4T1_1a25245fa2ffbc1ab6d803ff0bc341c1e4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::patient_status</definition>
+        <argsstring></argsstring>
+        <name>patient_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="47" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1aa8772ed4b8308c733c9234a7961cb2ab" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::abps_risk</definition>
+        <argsstring></argsstring>
+        <name>abps_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="49" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1aa526d0e2492db145772d584a447706fd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::abpd_risk</definition>
+        <argsstring></argsstring>
+        <name>abpd_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="50" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a18ed16ae8118217fa36cbd3cb89beb18" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::oxi_risk</definition>
+        <argsstring></argsstring>
+        <name>oxi_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="51" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a2bd7b25a0f40eeeb581c445dc972ce9b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::ecg_risk</definition>
+        <argsstring></argsstring>
+        <name>ecg_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="52" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a447bfc6e757b3ad59c296a41a974a347" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::trm_risk</definition>
+        <argsstring></argsstring>
+        <name>trm_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="53" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a4d915c767ecfb6915a8c4a78f81c194d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::glc_risk</definition>
+        <argsstring></argsstring>
+        <name>glc_risk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="54" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a954637218ed5d8cf532e5c869a15f369" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::abps_batt</definition>
+        <argsstring></argsstring>
+        <name>abps_batt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="56" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a5b247797fd3e154bcbc2d615b0c33ac1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::abpd_batt</definition>
+        <argsstring></argsstring>
+        <name>abpd_batt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="57" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a8cd57657a96e1d7cb048c97ade3154a6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::oxi_batt</definition>
+        <argsstring></argsstring>
+        <name>oxi_batt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="58" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1af2c987b92fe328634f449e3f7387b6e9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::ecg_batt</definition>
+        <argsstring></argsstring>
+        <name>ecg_batt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="59" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a87264bbdd9fc2c22c6c8f399250d039b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::trm_batt</definition>
+        <argsstring></argsstring>
+        <name>trm_batt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="60" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1ac51c682e560eb432fccef6f82bffb7c1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::glc_batt</definition>
+        <argsstring></argsstring>
+        <name>glc_batt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="61" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a9e726f9e5f9bedf413d219e649e0cc53" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::abps_raw</definition>
+        <argsstring></argsstring>
+        <name>abps_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="63" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a16a9fe1a79ca4837980a2f033735c8a8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::abpd_raw</definition>
+        <argsstring></argsstring>
+        <name>abpd_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="64" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a13cddbd17febf9e8d4c4d9ddb3b6414c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::oxi_raw</definition>
+        <argsstring></argsstring>
+        <name>oxi_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="65" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a7e6dd01b50f9e30c340f5a4a5006e5a1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::ecg_raw</definition>
+        <argsstring></argsstring>
+        <name>ecg_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="66" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1acf0b07bd805662b8a79ec1c245fdc105" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::trm_raw</definition>
+        <argsstring></argsstring>
+        <name>trm_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="67" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a1e41e92e3b5f99c449a95116c2ca5612" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double G4T1::glc_raw</definition>
+        <argsstring></argsstring>
+        <name>glc_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="68" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a61f274ec722bb3be2d0c5f54e8c944f6" prot="public" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher G4T1::pub</definition>
+        <argsstring></argsstring>
+        <name>pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="70" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5" compoundref="G4T1_8cpp" startline="61" endline="76">setUp</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classG4T1_1a36209947e30c167e2554d66926fbdc4e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool G4T1::lost_packt</definition>
+        <argsstring></argsstring>
+        <name>lost_packt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="71" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+        <referencedby refid="classG4T1_1ace103170a712570f3583900aae954459" compoundref="G4T1_8cpp" startline="184" endline="216">transfer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classG4T1_1a57a6f5f09169bdb66973e1b76cb98326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>G4T1::G4T1</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>G4T1</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="27" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1aca857970da001f02b1a956d5b3b3f182" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>G4T1::~G4T1</definition>
+        <argsstring>()</argsstring>
+        <name>~G4T1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="28" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1ad02634c3bf56a245b99bb30f520628c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G4T1::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="39" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="61" bodyend="76"/>
+        <references refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" compoundref="CentralHub_8hpp" startline="50">CentralHub::data_buffer</references>
+        <references refid="classG4T1_1a61f274ec722bb3be2d0c5f54e8c944f6" compoundref="G4T1_8hpp" startline="70">pub</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1a3027f9c8027d8fe09ae6ca7df2f6ab04" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G4T1::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classCentralHub_1a33ab84e2d47f41966b7a2c6c8763c755">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="40" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1a1114e1a7142774484a14d34b69c8535d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G4T1::collect</definition>
+        <argsstring>(const messages::SensorData::ConstPtr &amp;sensor_data)</argsstring>
+        <name>collect</name>
+        <reimplements refid="classCentralHub_1a4d658629e1d1fc8dc80ee298173e4c22">collect</reimplements>
+        <param>
+          <type>const messages::SensorData::ConstPtr &amp;</type>
+          <declname>sensor_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="42" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="80" bodyend="118"/>
+        <references refid="classG4T1_1a5b247797fd3e154bcbc2d615b0c33ac1" compoundref="G4T1_8hpp" startline="57">abpd_batt</references>
+        <references refid="classG4T1_1a16a9fe1a79ca4837980a2f033735c8a8" compoundref="G4T1_8hpp" startline="64">abpd_raw</references>
+        <references refid="classG4T1_1a954637218ed5d8cf532e5c869a15f369" compoundref="G4T1_8hpp" startline="56">abps_batt</references>
+        <references refid="classG4T1_1a9e726f9e5f9bedf413d219e649e0cc53" compoundref="G4T1_8hpp" startline="63">abps_raw</references>
+        <references refid="G4T1_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" compoundref="G4T1_8cpp" startline="3">BATT_UNIT</references>
+        <references refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" compoundref="CentralHub_8hpp" startline="49">CentralHub::battery</references>
+        <references refid="classCentralHub_1a6d311af502fb652714855984d29737aa" compoundref="CentralHub_8hpp" startline="48">CentralHub::buffer_size</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">bsn::resource::Battery::consume</references>
+        <references refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" compoundref="CentralHub_8hpp" startline="50">CentralHub::data_buffer</references>
+        <references refid="classG4T1_1af2c987b92fe328634f449e3f7387b6e9" compoundref="G4T1_8hpp" startline="59">ecg_batt</references>
+        <references refid="classG4T1_1a7e6dd01b50f9e30c340f5a4a5006e5a1" compoundref="G4T1_8hpp" startline="66">ecg_raw</references>
+        <references refid="classG4T1_1a03d3e2da5083dc1763b7251082b91416" compoundref="G4T1_8cpp" startline="165" endline="182">getSensorId</references>
+        <references refid="classG4T1_1ac51c682e560eb432fccef6f82bffb7c1" compoundref="G4T1_8hpp" startline="61">glc_batt</references>
+        <references refid="classG4T1_1a1e41e92e3b5f99c449a95116c2ca5612" compoundref="G4T1_8hpp" startline="68">glc_raw</references>
+        <references refid="classG4T1_1a36209947e30c167e2554d66926fbdc4e" compoundref="G4T1_8hpp" startline="71">lost_packt</references>
+        <references refid="classCentralHub_1aff51483cf7afd302270339c38d38ef32" compoundref="CentralHub_8hpp" startline="46">CentralHub::max_size</references>
+        <references refid="classG4T1_1a8cd57657a96e1d7cb048c97ade3154a6" compoundref="G4T1_8hpp" startline="58">oxi_batt</references>
+        <references refid="classG4T1_1a13cddbd17febf9e8d4c4d9ddb3b6414c" compoundref="G4T1_8hpp" startline="65">oxi_raw</references>
+        <references refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" compoundref="CentralHub_8hpp" startline="47">CentralHub::total_buffer_size</references>
+        <references refid="classG4T1_1a87264bbdd9fc2c22c6c8f399250d039b" compoundref="G4T1_8hpp" startline="60">trm_batt</references>
+        <references refid="classG4T1_1acf0b07bd805662b8a79ec1c245fdc105" compoundref="G4T1_8hpp" startline="67">trm_raw</references>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G4T1::process</definition>
+        <argsstring>()</argsstring>
+        <name>process</name>
+        <reimplements refid="classCentralHub_1a3527f7455ec82af84e32b182221ede80">process</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="43" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="120" bodyend="163"/>
+        <references refid="classG4T1_1aa526d0e2492db145772d584a447706fd" compoundref="G4T1_8hpp" startline="50">abpd_risk</references>
+        <references refid="classG4T1_1aa8772ed4b8308c733c9234a7961cb2ab" compoundref="G4T1_8hpp" startline="49">abps_risk</references>
+        <references refid="G4T1_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" compoundref="G4T1_8cpp" startline="3">BATT_UNIT</references>
+        <references refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" compoundref="CentralHub_8hpp" startline="49">CentralHub::battery</references>
+        <references refid="classCentralHub_1a6d311af502fb652714855984d29737aa" compoundref="CentralHub_8hpp" startline="48">CentralHub::buffer_size</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" compoundref="Battery_8cpp" startline="48" endline="52">bsn::resource::Battery::consume</references>
+        <references refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" compoundref="CentralHub_8hpp" startline="50">CentralHub::data_buffer</references>
+        <references refid="namespacebsn_1_1processor_1aa656f0fa70585ebf07c09768dc62101e">bsn::processor::data_fuse</references>
+        <references refid="classG4T1_1a2bd7b25a0f40eeeb581c445dc972ce9b" compoundref="G4T1_8hpp" startline="52">ecg_risk</references>
+        <references refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">getPatientStatus</references>
+        <references refid="classG4T1_1a4d915c767ecfb6915a8c4a78f81c194d" compoundref="G4T1_8hpp" startline="54">glc_risk</references>
+        <references refid="classG4T1_1a18ed16ae8118217fa36cbd3cb89beb18" compoundref="G4T1_8hpp" startline="51">oxi_risk</references>
+        <references refid="classG4T1_1a25245fa2ffbc1ab6d803ff0bc341c1e4" compoundref="G4T1_8hpp" startline="47">patient_status</references>
+        <references refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" compoundref="CentralHub_8hpp" startline="47">CentralHub::total_buffer_size</references>
+        <references refid="classG4T1_1a447bfc6e757b3ad59c296a41a974a347" compoundref="G4T1_8hpp" startline="53">trm_risk</references>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1ace103170a712570f3583900aae954459" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void G4T1::transfer</definition>
+        <argsstring>()</argsstring>
+        <name>transfer</name>
+        <reimplements refid="classCentralHub_1a31e4df7094f5d176052056464d5886fa">transfer</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="44" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="184" bodyend="216"/>
+        <references refid="classG4T1_1a5b247797fd3e154bcbc2d615b0c33ac1" compoundref="G4T1_8hpp" startline="57">abpd_batt</references>
+        <references refid="classG4T1_1a16a9fe1a79ca4837980a2f033735c8a8" compoundref="G4T1_8hpp" startline="64">abpd_raw</references>
+        <references refid="classG4T1_1aa526d0e2492db145772d584a447706fd" compoundref="G4T1_8hpp" startline="50">abpd_risk</references>
+        <references refid="classG4T1_1a954637218ed5d8cf532e5c869a15f369" compoundref="G4T1_8hpp" startline="56">abps_batt</references>
+        <references refid="classG4T1_1a9e726f9e5f9bedf413d219e649e0cc53" compoundref="G4T1_8hpp" startline="63">abps_raw</references>
+        <references refid="classG4T1_1aa8772ed4b8308c733c9234a7961cb2ab" compoundref="G4T1_8hpp" startline="49">abps_risk</references>
+        <references refid="classG4T1_1af2c987b92fe328634f449e3f7387b6e9" compoundref="G4T1_8hpp" startline="59">ecg_batt</references>
+        <references refid="classG4T1_1a7e6dd01b50f9e30c340f5a4a5006e5a1" compoundref="G4T1_8hpp" startline="66">ecg_raw</references>
+        <references refid="classG4T1_1a2bd7b25a0f40eeeb581c445dc972ce9b" compoundref="G4T1_8hpp" startline="52">ecg_risk</references>
+        <references refid="classG4T1_1ac51c682e560eb432fccef6f82bffb7c1" compoundref="G4T1_8hpp" startline="61">glc_batt</references>
+        <references refid="classG4T1_1a1e41e92e3b5f99c449a95116c2ca5612" compoundref="G4T1_8hpp" startline="68">glc_raw</references>
+        <references refid="classG4T1_1a4d915c767ecfb6915a8c4a78f81c194d" compoundref="G4T1_8hpp" startline="54">glc_risk</references>
+        <references refid="classG4T1_1a36209947e30c167e2554d66926fbdc4e" compoundref="G4T1_8hpp" startline="71">lost_packt</references>
+        <references refid="classG4T1_1a8cd57657a96e1d7cb048c97ade3154a6" compoundref="G4T1_8hpp" startline="58">oxi_batt</references>
+        <references refid="classG4T1_1a13cddbd17febf9e8d4c4d9ddb3b6414c" compoundref="G4T1_8hpp" startline="65">oxi_raw</references>
+        <references refid="classG4T1_1a18ed16ae8118217fa36cbd3cb89beb18" compoundref="G4T1_8hpp" startline="51">oxi_risk</references>
+        <references refid="classG4T1_1a25245fa2ffbc1ab6d803ff0bc341c1e4" compoundref="G4T1_8hpp" startline="47">patient_status</references>
+        <references refid="classG4T1_1a61f274ec722bb3be2d0c5f54e8c944f6" compoundref="G4T1_8hpp" startline="70">pub</references>
+        <references refid="classG4T1_1a87264bbdd9fc2c22c6c8f399250d039b" compoundref="G4T1_8hpp" startline="60">trm_batt</references>
+        <references refid="classG4T1_1acf0b07bd805662b8a79ec1c245fdc105" compoundref="G4T1_8hpp" startline="67">trm_raw</references>
+        <references refid="classG4T1_1a447bfc6e757b3ad59c296a41a974a347" compoundref="G4T1_8hpp" startline="53">trm_risk</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classG4T1_1a6ca378f4d6b9bc5cf740966c79a66c93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>G4T1::G4T1</definition>
+        <argsstring>(const G4T1 &amp;)</argsstring>
+        <name>G4T1</name>
+        <param>
+          <type>const <ref refid="classG4T1" kindref="compound">G4T1</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1a0c39e86812db60d58ea685438f409de3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classG4T1" kindref="compound">G4T1</ref> &amp;</type>
+        <definition>G4T1&amp; G4T1::operator=</definition>
+        <argsstring>(const G4T1 &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classG4T1" kindref="compound">G4T1</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1ac3ee2d223923b6b9c74ebaeaa74010db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string G4T1::makePacket</definition>
+        <argsstring>()</argsstring>
+        <name>makePacket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; G4T1::getPatientStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getPatientStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="35" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="13" bodyend="59"/>
+        <references refid="classG4T1_1aa526d0e2492db145772d584a447706fd" compoundref="G4T1_8hpp" startline="50">abpd_risk</references>
+        <references refid="classG4T1_1aa8772ed4b8308c733c9234a7961cb2ab" compoundref="G4T1_8hpp" startline="49">abps_risk</references>
+        <references refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" compoundref="CentralHub_8hpp" startline="50">CentralHub::data_buffer</references>
+        <references refid="classG4T1_1a2bd7b25a0f40eeeb581c445dc972ce9b" compoundref="G4T1_8hpp" startline="52">ecg_risk</references>
+        <references refid="classG4T1_1a4d915c767ecfb6915a8c4a78f81c194d" compoundref="G4T1_8hpp" startline="54">glc_risk</references>
+        <references refid="classG4T1_1a18ed16ae8118217fa36cbd3cb89beb18" compoundref="G4T1_8hpp" startline="51">oxi_risk</references>
+        <references refid="classG4T1_1a447bfc6e757b3ad59c296a41a974a347" compoundref="G4T1_8hpp" startline="53">trm_risk</references>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classG4T1_1a03d3e2da5083dc1763b7251082b91416" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t G4T1::getSensorId</definition>
+        <argsstring>(std::string type)</argsstring>
+        <name>getSensorId</name>
+        <param>
+          <type>std::string</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="36" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" bodystart="165" bodyend="182"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">collect</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="173">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="171">
+        <label>CentralHub</label>
+        <link refid="classCentralHub"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="173" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>G4T1</label>
+        <link refid="classG4T1"/>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="179">
+        <label>bsn::resource::Battery</label>
+        <link refid="classbsn_1_1resource_1_1Battery"/>
+      </node>
+      <node id="177">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="178" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="175">
+        <label>CentralHub</label>
+        <link refid="classCentralHub"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>battery</edgelabel>
+        </childnode>
+      </node>
+      <node id="178">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="176">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>G4T1</label>
+        <link refid="classG4T1"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="24" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" bodystart="23" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classG4T1_1a5b247797fd3e154bcbc2d615b0c33ac1" prot="public" virt="non-virtual"><scope>G4T1</scope><name>abpd_batt</name></member>
+      <member refid="classG4T1_1a16a9fe1a79ca4837980a2f033735c8a8" prot="public" virt="non-virtual"><scope>G4T1</scope><name>abpd_raw</name></member>
+      <member refid="classG4T1_1aa526d0e2492db145772d584a447706fd" prot="public" virt="non-virtual"><scope>G4T1</scope><name>abpd_risk</name></member>
+      <member refid="classG4T1_1a954637218ed5d8cf532e5c869a15f369" prot="public" virt="non-virtual"><scope>G4T1</scope><name>abps_batt</name></member>
+      <member refid="classG4T1_1a9e726f9e5f9bedf413d219e649e0cc53" prot="public" virt="non-virtual"><scope>G4T1</scope><name>abps_raw</name></member>
+      <member refid="classG4T1_1aa8772ed4b8308c733c9234a7961cb2ab" prot="public" virt="non-virtual"><scope>G4T1</scope><name>abps_risk</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>activate</name></member>
+      <member refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>active</name></member>
+      <member refid="classCentralHub_1ad6c1ba1c51d58a420e076fbd27cd2b5c" prot="public" virt="non-virtual"><scope>G4T1</scope><name>apply_noise</name></member>
+      <member refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>battery</name></member>
+      <member refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" prot="public" virt="virtual"><scope>G4T1</scope><name>body</name></member>
+      <member refid="classCentralHub_1a6d311af502fb652714855984d29737aa" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>buffer_size</name></member>
+      <member refid="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" prot="public" virt="non-virtual"><scope>G4T1</scope><name>CentralHub</name></member>
+      <member refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" prot="public" virt="virtual"><scope>G4T1</scope><name>collect</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" prot="public" virt="non-virtual"><scope>G4T1</scope><name>Component</name></member>
+      <member refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>data_buffer</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>deactivate</name></member>
+      <member refid="classG4T1_1af2c987b92fe328634f449e3f7387b6e9" prot="public" virt="non-virtual"><scope>G4T1</scope><name>ecg_batt</name></member>
+      <member refid="classG4T1_1a7e6dd01b50f9e30c340f5a4a5006e5a1" prot="public" virt="non-virtual"><scope>G4T1</scope><name>ecg_raw</name></member>
+      <member refid="classG4T1_1a2bd7b25a0f40eeeb581c445dc972ce9b" prot="public" virt="non-virtual"><scope>G4T1</scope><name>ecg_risk</name></member>
+      <member refid="classG4T1_1a57a6f5f09169bdb66973e1b76cb98326" prot="public" virt="non-virtual"><scope>G4T1</scope><name>G4T1</name></member>
+      <member refid="classG4T1_1a6ca378f4d6b9bc5cf740966c79a66c93" prot="private" virt="non-virtual"><scope>G4T1</scope><name>G4T1</name></member>
+      <member refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" prot="private" virt="non-virtual"><scope>G4T1</scope><name>getPatientStatus</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>getRosNodeName</name></member>
+      <member refid="classG4T1_1a03d3e2da5083dc1763b7251082b91416" prot="private" virt="non-virtual"><scope>G4T1</scope><name>getSensorId</name></member>
+      <member refid="classG4T1_1ac51c682e560eb432fccef6f82bffb7c1" prot="public" virt="non-virtual"><scope>G4T1</scope><name>glc_batt</name></member>
+      <member refid="classG4T1_1a1e41e92e3b5f99c449a95116c2ca5612" prot="public" virt="non-virtual"><scope>G4T1</scope><name>glc_raw</name></member>
+      <member refid="classG4T1_1a4d915c767ecfb6915a8c4a78f81c194d" prot="public" virt="non-virtual"><scope>G4T1</scope><name>glc_risk</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>handle</name></member>
+      <member refid="classG4T1_1a36209947e30c167e2554d66926fbdc4e" prot="public" virt="non-virtual"><scope>G4T1</scope><name>lost_packt</name></member>
+      <member refid="classG4T1_1ac3ee2d223923b6b9c74ebaeaa74010db" prot="private" virt="non-virtual"><scope>G4T1</scope><name>makePacket</name></member>
+      <member refid="classCentralHub_1aff51483cf7afd302270339c38d38ef32" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>max_size</name></member>
+      <member refid="classG4T1_1a0c39e86812db60d58ea685438f409de3" prot="private" virt="non-virtual"><scope>G4T1</scope><name>operator=</name></member>
+      <member refid="classG4T1_1a8cd57657a96e1d7cb048c97ade3154a6" prot="public" virt="non-virtual"><scope>G4T1</scope><name>oxi_batt</name></member>
+      <member refid="classG4T1_1a13cddbd17febf9e8d4c4d9ddb3b6414c" prot="public" virt="non-virtual"><scope>G4T1</scope><name>oxi_raw</name></member>
+      <member refid="classG4T1_1a18ed16ae8118217fa36cbd3cb89beb18" prot="public" virt="non-virtual"><scope>G4T1</scope><name>oxi_risk</name></member>
+      <member refid="classG4T1_1a25245fa2ffbc1ab6d803ff0bc341c1e4" prot="public" virt="non-virtual"><scope>G4T1</scope><name>patient_status</name></member>
+      <member refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" prot="public" virt="virtual"><scope>G4T1</scope><name>process</name></member>
+      <member refid="classG4T1_1a61f274ec722bb3be2d0c5f54e8c944f6" prot="public" virt="non-virtual"><scope>G4T1</scope><name>pub</name></member>
+      <member refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" prot="public" virt="virtual"><scope>G4T1</scope><name>reconfigure</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>G4T1</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" prot="public" virt="virtual"><scope>G4T1</scope><name>run</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" prot="public" virt="non-virtual"><scope>G4T1</scope><name>sendEnergyStatus</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" prot="public" virt="non-virtual"><scope>G4T1</scope><name>sendEvent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" prot="public" virt="non-virtual"><scope>G4T1</scope><name>sendStatus</name></member>
+      <member refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5" prot="public" virt="virtual"><scope>G4T1</scope><name>setUp</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>shutdownComponent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>sigIntHandler</name></member>
+      <member refid="classG4T1_1a3027f9c8027d8fe09ae6ca7df2f6ab04" prot="public" virt="virtual"><scope>G4T1</scope><name>tearDown</name></member>
+      <member refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" prot="protected" virt="non-virtual"><scope>G4T1</scope><name>total_buffer_size</name></member>
+      <member refid="classG4T1_1ace103170a712570f3583900aae954459" prot="public" virt="virtual"><scope>G4T1</scope><name>transfer</name></member>
+      <member refid="classG4T1_1a87264bbdd9fc2c22c6c8f399250d039b" prot="public" virt="non-virtual"><scope>G4T1</scope><name>trm_batt</name></member>
+      <member refid="classG4T1_1acf0b07bd805662b8a79ec1c245fdc105" prot="public" virt="non-virtual"><scope>G4T1</scope><name>trm_raw</name></member>
+      <member refid="classG4T1_1a447bfc6e757b3ad59c296a41a974a347" prot="public" virt="non-virtual"><scope>G4T1</scope><name>trm_risk</name></member>
+      <member refid="classCentralHub_1a039f1cf3a24ad8ef5e7ecbb7300ba4dc" prot="public" virt="non-virtual"><scope>G4T1</scope><name>~CentralHub</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" prot="public" virt="virtual"><scope>G4T1</scope><name>~Component</name></member>
+      <member refid="classG4T1_1aca857970da001f02b1a956d5b3b3f182" prot="public" virt="virtual"><scope>G4T1</scope><name>~G4T1</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>G4T1</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

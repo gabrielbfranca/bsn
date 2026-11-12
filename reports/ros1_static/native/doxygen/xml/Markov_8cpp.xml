@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Markov_8cpp" kind="file" language="C++">
+    <compoundname>Markov.cpp</compoundname>
+    <includes refid="Markov_8hpp" local="yes">libbsn/generator/Markov.hpp</includes>
+    <incdepgraph>
+      <node id="723">
+        <label>src/libbsn/src/generator/Markov.cpp</label>
+        <link refid="Markov_8cpp"/>
+        <childnode refid="724" relation="include">
+        </childnode>
+      </node>
+      <node id="729">
+        <label>stdint.h</label>
+      </node>
+      <node id="733">
+        <label>stdexcept</label>
+      </node>
+      <node id="732">
+        <label>string</label>
+      </node>
+      <node id="727">
+        <label>random</label>
+      </node>
+      <node id="731">
+        <label>libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="725" relation="include">
+        </childnode>
+        <childnode refid="729" relation="include">
+        </childnode>
+        <childnode refid="730" relation="include">
+        </childnode>
+      </node>
+      <node id="728">
+        <label>vector</label>
+      </node>
+      <node id="726">
+        <label>array</label>
+      </node>
+      <node id="730">
+        <label>sstream</label>
+      </node>
+      <node id="724">
+        <label>libbsn/generator/Markov.hpp</label>
+        <link refid="Markov_8hpp"/>
+        <childnode refid="725" relation="include">
+        </childnode>
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="727" relation="include">
+        </childnode>
+        <childnode refid="728" relation="include">
+        </childnode>
+        <childnode refid="729" relation="include">
+        </childnode>
+        <childnode refid="730" relation="include">
+        </childnode>
+        <childnode refid="731" relation="include">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1generator">bsn::generator</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Markov_8hpp" kindref="compound">libbsn/generator/Markov.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn_1_1range" kindref="compound">bsn::range</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">generator<sp/>{</highlight></codeline>
+<codeline lineno="8" refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Markov::Markov()<sp/>:<sp/>transitions(),<sp/>currentState(),<sp/>states()<sp/>{}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construtor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" kindref="member">Markov::Markov</ref>(array&lt;float,25&gt;<sp/>t,<sp/>array&lt;Range,<sp/>5&gt;<sp/>r,<sp/>int32_t<sp/>initialState)<sp/>:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref>(t),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kindref="member">currentState</ref>(initialState),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref>(r)<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classbsn_1_1generator_1_1Markov_1ac162f1822a1639fe8389d11258e876bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a68ff58dfd7816f1b79416ec73cbc8d88" kindref="member">Markov::Markov</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref><sp/>&amp;obj)<sp/>:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref>(obj.<ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref>),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kindref="member">currentState</ref>(obj.<ref refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kindref="member">currentState</ref>),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref>(obj.<ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref>&amp;<sp/><ref refid="classbsn_1_1generator_1_1Markov_1a21b905eeacbe7c6e16c0504647aeafd1" kindref="member">Markov::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov" kindref="compound">Markov</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1generator_1_1Markov_1af8263b601e5b44801f14eaad70b6531b" kindref="member">transitions</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kindref="member">currentState</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1generator_1_1Markov_1a61f3ef7050d429fb8b88f259f2b03cf2" kindref="member">currentState</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1generator_1_1Markov_1a45720929268394c759380312fecec714" kindref="member">states</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classbsn_1_1generator_1_1Markov_1a59725deb9f6496b5c8dce15bb7b1005a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1generator_1_1Markov_1a59725deb9f6496b5c8dce15bb7b1005a" kindref="member">Markov::toString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringstream<sp/>sstr;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sstr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Markov<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sstr.str();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/generator/Markov.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn_1_1generator" kind="namespace" language="C++">
+    <compoundname>bsn::generator</compoundname>
+    <innerclass refid="classbsn_1_1generator_1_1DataGenerator" prot="public">bsn::generator::DataGenerator</innerclass>
+    <innerclass refid="classbsn_1_1generator_1_1Markov" prot="public">bsn::generator::Markov</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebsn_1_1generator_1aed8b98157588111aca3f20d0fb2a76b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::uniform_int_distribution&lt; int &gt;</type>
+        <definition>std::uniform_int_distribution&lt;int&gt; bsn::generator::probabilityGenerator</definition>
+        <argsstring>(1, 100)</argsstring>
+        <name>probabilityGenerator</name>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>100</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/src/generator/DataGenerator.cpp" line="23" column="1"/>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1aee4859b45a43ce3f9cde9750a3b6abd2" compoundref="DataGenerator_8cpp" startline="32" endline="52">bsn::generator::DataGenerator::nextState</referencedby>
+        <referencedby refid="classbsn_1_1generator_1_1DataGenerator_1a1cd2d028c552461ae2084c3d90a8a6bb" compoundref="DataGenerator_8cpp" startline="18" endline="21">bsn::generator::DataGenerator::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/generator/DataGenerator.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classController" kind="class" language="C++" prot="public">
+    <compoundname>Controller</compoundname>
+    <basecompoundref refid="classEnactor" prot="public" virt="non-virtual">Enactor</basecompoundref>
+    <includes refid="Controller_8hpp" local="no">Controller.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Controller::adaptation_parameter</definition>
+        <argsstring></argsstring>
+        <name>adaptation_parameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="23" column="1" bodyfile="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classController_1af1c3a4165179b04604420c434999fbf2" compoundref="Controller_8cpp" startline="162" endline="251">apply_cost_strategy</referencedby>
+        <referencedby refid="classController_1a8196cd560dbfaa1da0b1edb385f61335" compoundref="Controller_8cpp" startline="71" endline="160">apply_reli_strategy</referencedby>
+        <referencedby refid="classController_1a22e7d109736f4f806c7884a2f5d6eea0" compoundref="Controller_8cpp" startline="38" endline="69">receiveEvent</referencedby>
+        <referencedby refid="classController_1ac5b5525e1a9fc6914657dd8d943a0928" compoundref="Controller_8cpp" startline="9" endline="36">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classController_1a589c205dcd1e5f9ffd08c4340bdf6328" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Controller::KP</definition>
+        <argsstring></argsstring>
+        <name>KP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="24" column="1" bodyfile="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classController_1a22e7d109736f4f806c7884a2f5d6eea0" compoundref="Controller_8cpp" startline="38" endline="69">receiveEvent</referencedby>
+        <referencedby refid="classController_1ac5b5525e1a9fc6914657dd8d943a0928" compoundref="Controller_8cpp" startline="9" endline="36">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classController_1ac0c0fc6403b61f12053046595e8be77b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; Controller::kp</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="25" column="1" bodyfile="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classController_1af1c3a4165179b04604420c434999fbf2" compoundref="Controller_8cpp" startline="162" endline="251">apply_cost_strategy</referencedby>
+        <referencedby refid="classController_1a8196cd560dbfaa1da0b1edb385f61335" compoundref="Controller_8cpp" startline="71" endline="160">apply_reli_strategy</referencedby>
+        <referencedby refid="classController_1a22e7d109736f4f806c7884a2f5d6eea0" compoundref="Controller_8cpp" startline="38" endline="69">receiveEvent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classController_1a09dcc652d6aeb03f63c492fb7c7966de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::Controller</definition>
+        <argsstring>(int &amp;argc, char **argv, std::string name)</argsstring>
+        <name>Controller</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="8" column="1" bodyfile="src/sa-bsn/system_manager/enactor/src/Controller.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Controller::~Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="9" column="1" bodyfile="src/sa-bsn/system_manager/enactor/src/Controller.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1ac5b5525e1a9fc6914657dd8d943a0928" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Controller::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classEnactor_1a4b149f71b41f0a9a3b28871de77f2202">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="16" column="1" bodyfile="src/sa-bsn/system_manager/enactor/src/Controller.cpp" bodystart="9" bodyend="36"/>
+        <references refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" compoundref="Enactor_8hpp" startline="48">Enactor::adapt</references>
+        <references refid="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" compoundref="Controller_8hpp" startline="23">adaptation_parameter</references>
+        <references refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" compoundref="Enactor_8hpp" startline="49">Enactor::except</references>
+        <references refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" compoundref="Enactor_8hpp" startline="53">Enactor::freq</references>
+        <references refid="classController_1a589c205dcd1e5f9ffd08c4340bdf6328" compoundref="Controller_8hpp" startline="24">KP</references>
+        <references refid="classEnactor_1a9d0b5483b278c26e060c9dd4b921edb5" compoundref="Enactor_8cpp" startline="9" endline="27">Enactor::receiveAdaptationParameter</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a8196cd560dbfaa1da0b1edb385f61335" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Controller::apply_reli_strategy</definition>
+        <argsstring>(const std::string &amp;component)</argsstring>
+        <name>apply_reli_strategy</name>
+        <reimplements refid="classEnactor_1adb51e3aab4684a4b63a419c71ee2997d">apply_reli_strategy</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="18" column="1" bodyfile="src/sa-bsn/system_manager/enactor/src/Controller.cpp" bodystart="71" bodyend="160"/>
+        <references refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" compoundref="Enactor_8hpp" startline="48">Enactor::adapt</references>
+        <references refid="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" compoundref="Controller_8hpp" startline="23">adaptation_parameter</references>
+        <references refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" compoundref="Enactor_8hpp" startline="49">Enactor::except</references>
+        <references refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" compoundref="Enactor_8hpp" startline="52">Enactor::exception_buffer</references>
+        <references refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" compoundref="Enactor_8hpp" startline="53">Enactor::freq</references>
+        <references refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" compoundref="Enactor_8hpp" startline="51">Enactor::invocations</references>
+        <references refid="classController_1ac0c0fc6403b61f12053046595e8be77b" compoundref="Controller_8hpp" startline="25">kp</references>
+        <references refid="classEnactor_1a2050fc7d8efd62087b753ea0b52c0aa0" compoundref="Enactor_8hpp" startline="54">Enactor::r_curr</references>
+        <references refid="classEnactor_1af80f8e1c8d34b1ca82d56a467b0d8496" compoundref="Enactor_8hpp" startline="55">Enactor::r_ref</references>
+        <references refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" compoundref="Enactor_8hpp" startline="56">Enactor::replicate_task</references>
+        <references refid="classEnactor_1ac24011d94d321e2805059484ac55678c" compoundref="Enactor_8hpp" startline="59">Enactor::stability_margin</references>
+      </memberdef>
+      <memberdef kind="function" id="classController_1af1c3a4165179b04604420c434999fbf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Controller::apply_cost_strategy</definition>
+        <argsstring>(const std::string &amp;component)</argsstring>
+        <name>apply_cost_strategy</name>
+        <reimplements refid="classEnactor_1a8f1424e1fe9fad565bd8b0f58ff8697c">apply_cost_strategy</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="19" column="1" bodyfile="src/sa-bsn/system_manager/enactor/src/Controller.cpp" bodystart="162" bodyend="251"/>
+        <references refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" compoundref="Enactor_8hpp" startline="48">Enactor::adapt</references>
+        <references refid="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" compoundref="Controller_8hpp" startline="23">adaptation_parameter</references>
+        <references refid="classEnactor_1a3efbb4d3a6f73dbebf4441152901cee4" compoundref="Enactor_8hpp" startline="54">Enactor::c_curr</references>
+        <references refid="classEnactor_1a49403d606de5625d38fee85049728d81" compoundref="Enactor_8hpp" startline="55">Enactor::c_ref</references>
+        <references refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" compoundref="Enactor_8hpp" startline="49">Enactor::except</references>
+        <references refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" compoundref="Enactor_8hpp" startline="52">Enactor::exception_buffer</references>
+        <references refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" compoundref="Enactor_8hpp" startline="53">Enactor::freq</references>
+        <references refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" compoundref="Enactor_8hpp" startline="51">Enactor::invocations</references>
+        <references refid="classController_1ac0c0fc6403b61f12053046595e8be77b" compoundref="Controller_8hpp" startline="25">kp</references>
+        <references refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" compoundref="Enactor_8hpp" startline="56">Enactor::replicate_task</references>
+        <references refid="classEnactor_1ac24011d94d321e2805059484ac55678c" compoundref="Enactor_8hpp" startline="59">Enactor::stability_margin</references>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a22e7d109736f4f806c7884a2f5d6eea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Controller::receiveEvent</definition>
+        <argsstring>(const archlib::Event::ConstPtr &amp;msg)</argsstring>
+        <name>receiveEvent</name>
+        <reimplements refid="classEnactor_1afc29580144b70a3ce72140b9c8759b44">receiveEvent</reimplements>
+        <param>
+          <type>const archlib::Event::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="20" column="1" bodyfile="src/sa-bsn/system_manager/enactor/src/Controller.cpp" bodystart="38" bodyend="69"/>
+        <references refid="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" compoundref="Controller_8hpp" startline="23">adaptation_parameter</references>
+        <references refid="classEnactor_1a3efbb4d3a6f73dbebf4441152901cee4" compoundref="Enactor_8hpp" startline="54">Enactor::c_curr</references>
+        <references refid="classEnactor_1a49403d606de5625d38fee85049728d81" compoundref="Enactor_8hpp" startline="55">Enactor::c_ref</references>
+        <references refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" compoundref="Enactor_8hpp" startline="52">Enactor::exception_buffer</references>
+        <references refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" compoundref="Enactor_8hpp" startline="53">Enactor::freq</references>
+        <references refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" compoundref="Enactor_8hpp" startline="51">Enactor::invocations</references>
+        <references refid="classController_1a589c205dcd1e5f9ffd08c4340bdf6328" compoundref="Controller_8hpp" startline="24">KP</references>
+        <references refid="classController_1ac0c0fc6403b61f12053046595e8be77b" compoundref="Controller_8hpp" startline="25">kp</references>
+        <references refid="classEnactor_1a2050fc7d8efd62087b753ea0b52c0aa0" compoundref="Enactor_8hpp" startline="54">Enactor::r_curr</references>
+        <references refid="classEnactor_1af80f8e1c8d34b1ca82d56a467b0d8496" compoundref="Enactor_8hpp" startline="55">Enactor::r_ref</references>
+        <references refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" compoundref="Enactor_8hpp" startline="56">Enactor::replicate_task</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classController_1a7a9db90b6ae0e4cc439b2cb41d52efea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::Controller</definition>
+        <argsstring>(const Controller &amp;)</argsstring>
+        <name>Controller</name>
+        <param>
+          <type>const <ref refid="classController" kindref="compound">Controller</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a54d6eeadbdda5a0f33c505d0dcc3722b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classController" kindref="compound">Controller</ref> &amp;</type>
+        <definition>Controller&amp; Controller::operator=</definition>
+        <argsstring>(const Controller &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classController" kindref="compound">Controller</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="13" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="32">
+        <label>Enactor</label>
+        <link refid="classEnactor"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Controller</label>
+        <link refid="classController"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="35">
+        <label>Enactor</label>
+        <link refid="classEnactor"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Controller</label>
+        <link refid="classController"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="6" column="1" bodyfile="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" bodystart="6" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" prot="protected" virt="non-virtual"><scope>Controller</scope><name>adapt</name></member>
+      <member refid="classController_1af9b3aa9e433ffad4e6a8c26ef6b11c15" prot="private" virt="non-virtual"><scope>Controller</scope><name>adaptation_parameter</name></member>
+      <member refid="classController_1af1c3a4165179b04604420c434999fbf2" prot="public" virt="virtual"><scope>Controller</scope><name>apply_cost_strategy</name></member>
+      <member refid="classController_1a8196cd560dbfaa1da0b1edb385f61335" prot="public" virt="virtual"><scope>Controller</scope><name>apply_reli_strategy</name></member>
+      <member refid="classEnactor_1abd25ade60e175a09b8a71f2d0c87c7d1" prot="public" virt="virtual"><scope>Controller</scope><name>body</name></member>
+      <member refid="classEnactor_1a3efbb4d3a6f73dbebf4441152901cee4" prot="protected" virt="non-virtual"><scope>Controller</scope><name>c_curr</name></member>
+      <member refid="classEnactor_1a49403d606de5625d38fee85049728d81" prot="protected" virt="non-virtual"><scope>Controller</scope><name>c_ref</name></member>
+      <member refid="classController_1a09dcc652d6aeb03f63c492fb7c7966de" prot="public" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
+      <member refid="classController_1a7a9db90b6ae0e4cc439b2cb41d52efea" prot="private" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
+      <member refid="classEnactor_1a5f802c97618f3f2131011a648618bc5d" prot="protected" virt="non-virtual"><scope>Controller</scope><name>cycles</name></member>
+      <member refid="classEnactor_1aaaaa2841d776d7ac1f8ef51cd8e83919" prot="public" virt="non-virtual"><scope>Controller</scope><name>Enactor</name></member>
+      <member refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" prot="protected" virt="non-virtual"><scope>Controller</scope><name>except</name></member>
+      <member refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" prot="protected" virt="non-virtual"><scope>Controller</scope><name>exception_buffer</name></member>
+      <member refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" prot="protected" virt="non-virtual"><scope>Controller</scope><name>freq</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>Controller</scope><name>getRosNodeName</name></member>
+      <member refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" prot="protected" virt="non-virtual"><scope>Controller</scope><name>invocations</name></member>
+      <member refid="classController_1a589c205dcd1e5f9ffd08c4340bdf6328" prot="private" virt="non-virtual"><scope>Controller</scope><name>KP</name></member>
+      <member refid="classController_1ac0c0fc6403b61f12053046595e8be77b" prot="private" virt="non-virtual"><scope>Controller</scope><name>kp</name></member>
+      <member refid="classController_1a54d6eeadbdda5a0f33c505d0dcc3722b" prot="private" virt="non-virtual"><scope>Controller</scope><name>operator=</name></member>
+      <member refid="classEnactor_1a97d75a722f948bbb167cc5cc08246472" prot="public" virt="non-virtual"><scope>Controller</scope><name>print</name></member>
+      <member refid="classEnactor_1a2050fc7d8efd62087b753ea0b52c0aa0" prot="protected" virt="non-virtual"><scope>Controller</scope><name>r_curr</name></member>
+      <member refid="classEnactor_1af80f8e1c8d34b1ca82d56a467b0d8496" prot="protected" virt="non-virtual"><scope>Controller</scope><name>r_ref</name></member>
+      <member refid="classEnactor_1a9d0b5483b278c26e060c9dd4b921edb5" prot="public" virt="non-virtual"><scope>Controller</scope><name>receiveAdaptationParameter</name></member>
+      <member refid="classController_1a22e7d109736f4f806c7884a2f5d6eea0" prot="public" virt="virtual"><scope>Controller</scope><name>receiveEvent</name></member>
+      <member refid="classEnactor_1a9e10c68a47e83737f8b45b9c504cdc97" prot="public" virt="non-virtual"><scope>Controller</scope><name>receiveStatus</name></member>
+      <member refid="classEnactor_1aee03d216ab1a7ed1b841cefac05541c5" prot="public" virt="non-virtual"><scope>Controller</scope><name>receiveStrategy</name></member>
+      <member refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" prot="protected" virt="non-virtual"><scope>Controller</scope><name>replicate_task</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>Controller</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>Controller</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>Controller</scope><name>run</name></member>
+      <member refid="classController_1ac5b5525e1a9fc6914657dd8d943a0928" prot="public" virt="virtual"><scope>Controller</scope><name>setUp</name></member>
+      <member refid="classEnactor_1ac24011d94d321e2805059484ac55678c" prot="protected" virt="non-virtual"><scope>Controller</scope><name>stability_margin</name></member>
+      <member refid="classEnactor_1a721175369a6ca933119b173e3f54f6f0" prot="public" virt="virtual"><scope>Controller</scope><name>tearDown</name></member>
+      <member refid="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" virt="virtual"><scope>Controller</scope><name>~Controller</name></member>
+      <member refid="classEnactor_1ab2ae8d73dc15505286e8c74277c3147c" prot="public" virt="virtual"><scope>Controller</scope><name>~Enactor</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>Controller</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

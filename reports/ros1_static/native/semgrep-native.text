@@ -1,0 +1,945 @@
+                     
+                     
+┌───────────────────┐
+│ 229 Code Findings │
+└───────────────────┘
+                                    
+    src/archlib/src/ROSComponent.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           36┆ ros::init(argc, argv, name, ros::init_options::NoSigintHandler); //Configure node name and
+               sets commnd line arguments                                                                
+   
+     ❱ tools.ros1_metrics.isolation.cpp.signal-handler
+          ❰❰ Blocking ❱❱
+          Instalação de tratador de sinal modifica estado global do processo.
+                                                                             
+           37┆ signal(SIGINT, shutdownOnSignal);
+            ⋮┆----------------------------------------
+           38┆ signal(SIGTERM, shutdownOnSignal);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           49┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-rate-sleep
+          ❰❰ Blocking ❱❱
+          Espera por receptor de nome rate; confirmar tipo ROS.
+                                                               
+           51┆ loop_rate.sleep();
+                                               
+    src/archlib/src/target_system/Component.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           15┆ collect_event = handle.advertise<archlib::Event>("collect_event", 10);
+            ⋮┆----------------------------------------
+           18┆ collect_status = handle.advertise<archlib::Status>("collect_status", 10);
+            ⋮┆----------------------------------------
+           21┆ collect_energy_status = handle.advertise<archlib::EnergyStatus>("collect_energy_status",
+               10);                                                                                    
+   
+     ❱ tools.ros1_metrics.isolation.cpp.signal-handler
+          ❰❰ Blocking ❱❱
+          Instalação de tratador de sinal modifica estado global do processo.
+                                                                             
+           27┆ signal(SIGINT, sigIntHandler);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           33┆ client_module =                                                             
+               client_handler.serviceClient<archlib::EffectorRegister>("EffectorRegister");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           40┆ if(client_module.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           71┆ ros::Publisher last_event = nh.advertise<archlib::Event>("collect_event", 10);
+            ⋮┆----------------------------------------
+           75┆ ros::Publisher last_status = nh.advertise<archlib::Status>("collect_status", 10);
+            ⋮┆----------------------------------------
+           88┆ client_module =                                                             
+               client_handler.serviceClient<archlib::EffectorRegister>("EffectorRegister");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           90┆ if(client_module.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+          104┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-rate-sleep
+          ❰❰ Blocking ❱❱
+          Espera por receptor de nome rate; confirmar tipo ROS.
+                                                               
+          113┆ loop_rate.sleep();
+                                              
+    src/archlib/src/target_system/Effector.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           11┆ handle.getParam("frequency", freq);
+                                           
+    src/archlib/src/target_system/Probe.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           10┆ log_event = handle.advertise<archlib::Event>("log_event", 1000);
+            ⋮┆----------------------------------------
+           11┆ log_status = handle.advertise<archlib::Status>("log_status", 1000);
+            ⋮┆----------------------------------------
+           12┆ log_energy_status = handle.advertise<archlib::EnergyStatus>("log_energy_status", 1000);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           15┆ handle.getParam("frequency", freq);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           38┆ ros::Subscriber collect_event = n.subscribe("collect_event", 1000, &Probe::collectEvent,
+               this);                                                                                  
+            ⋮┆----------------------------------------
+           39┆ ros::Subscriber collect_status = n.subscribe("collect_status", 1000, &Probe::collectStatus,
+               this);                                                                                     
+            ⋮┆----------------------------------------
+           40┆ ros::Subscriber collect_energy_status = n.subscribe("collect_energy_status", 100,
+               &Probe::collectEnergyStatus, this);                                              
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           41┆ ros::spin();
+                                                        
+    src/sa-bsn/environment/patient/src/PatientModule.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           12┆ service = nh.advertiseService("getPatientData", &PatientModule::getPatientData, this);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           18┆ nh.getParam("vitalSigns", vitalSigns);
+            ⋮┆----------------------------------------
+           27┆ nh.getParam(s + "_Change", aux);
+            ⋮┆----------------------------------------
+           29┆ nh.getParam(s + "_Offset", vitalSignsOffsets[s]);
+            ⋮┆----------------------------------------
+           52┆ handle.getParam(vitalSign + "_State" + std::to_string(j), s);
+            ⋮┆----------------------------------------
+           62┆ handle.getParam(vitalSign + "_LowRisk", s);
+            ⋮┆----------------------------------------
+           64┆ handle.getParam(vitalSign + "_MidRisk0", s);
+            ⋮┆----------------------------------------
+           66┆ handle.getParam(vitalSign + "_HighRisk0", s);
+            ⋮┆----------------------------------------
+           68┆ handle.getParam(vitalSign + "_MidRisk1", s);
+            ⋮┆----------------------------------------
+           70┆ handle.getParam(vitalSign + "_HighRisk1", s);
+                                                                                  
+    src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp
+     ❱ tools.ros1_metrics.isolation.cpp.file-stream-extra
+          ❰❰ Blocking ❱❱
+          Stream de arquivo ou abertura por receptor de nome reconhecido; confirmar tipo.
+                                                                                         
+           81┆ std::fstream fp;
+                                                                  
+    src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.high-resolution-clock
+          ❰❰ Blocking ❱❱
+          Leitura de relógio real de alta resolução.
+                                                    
+            7┆ return std::chrono::high_resolution_clock::now().time_since_epoch().count();
+            ⋮┆----------------------------------------
+           11┆ return std::chrono::high_resolution_clock::now();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-package-path
+          ❰❰ Blocking ❱❱
+          Resolução de caminho dependente do ambiente ROS.
+                                                          
+           16┆ std::string path = ros::package::getPath("repository");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.file-stream-extra
+          ❰❰ Blocking ❱❱
+          Stream de arquivo ou abertura por receptor de nome reconhecido; confirmar tipo.
+                                                                                         
+           22┆ std::ifstream file;
+            ⋮┆----------------------------------------
+           23┆ file.open(path + filename);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-package-path
+          ❰❰ Blocking ❱❱
+          Resolução de caminho dependente do ambiente ROS.
+                                                          
+           34┆ std::string path = ros::package::getPath("repository");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.file-stream-extra
+          ❰❰ Blocking ❱❱
+          Stream de arquivo ou abertura por receptor de nome reconhecido; confirmar tipo.
+                                                                                         
+           44┆ fp.open(event_filepath, std::fstream::in | std::fstream::out | std::fstream::trunc);
+            ⋮┆----------------------------------------
+           48┆ fp.open(status_filepath, std::fstream::in | std::fstream::out | std::fstream::trunc);
+            ⋮┆----------------------------------------
+           52┆ fp.open(energy_status_filepath, std::fstream::in | std::fstream::out |
+               std::fstream::trunc);                                                 
+            ⋮┆----------------------------------------
+           56┆ fp.open(uncertainty_filepath, std::fstream::in | std::fstream::out | std::fstream::trunc);
+            ⋮┆----------------------------------------
+           60┆ fp.open(adaptation_filepath, std::fstream::in | std::fstream::out | std::fstream::trunc);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           64┆ handle.getParam("frequency", frequency);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          100┆ handle_persist = handle.subscribe("persist", 1000, &DataAccess::receivePersistMessage,
+               this);                                                                                
+            ⋮┆----------------------------------------
+          101┆ server = handle.advertiseService("DataAccessRequest", &DataAccess::processQuery, this);
+            ⋮┆----------------------------------------
+          102┆ targetSystemSub = handle.subscribe("TargetSystemData", 100,
+               &DataAccess::processTargetSystemData, this);               
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+          137┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.file-stream-extra
+          ❰❰ Blocking ❱❱
+          Stream de arquivo ou abertura por receptor de nome reconhecido; confirmar tipo.
+                                                                                         
+          299┆ fp.open(status_filepath, std::fstream::in | std::fstream::out | std::fstream::app);
+            ⋮┆----------------------------------------
+          311┆ fp.open(energy_status_filepath, std::fstream::in | std::fstream::out | std::fstream::app);
+            ⋮┆----------------------------------------
+          323┆ fp.open(event_filepath, std::fstream::in | std::fstream::out | std::fstream::app);
+            ⋮┆----------------------------------------
+          335┆ fp.open(uncertainty_filepath, std::fstream::in | std::fstream::out | std::fstream::app);
+            ⋮┆----------------------------------------
+          347┆ fp.open(adaptation_filepath, std::fstream::in | std::fstream::out | std::fstream::app);
+                                                           
+    src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.high-resolution-clock
+          ❰❰ Blocking ❱❱
+          Leitura de relógio real de alta resolução.
+                                                    
+            8┆ return std::chrono::high_resolution_clock::now().time_since_epoch().count();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           14┆ adapt = handle.advertise<archlib::AdaptationCommand>("reconfigure", 1000);
+            ⋮┆----------------------------------------
+           15┆ persist = handle.advertise<archlib::Persist>("persist", 1000);
+            ⋮┆----------------------------------------
+           16┆ status = handle.advertise<archlib::Status>("status", 1000);
+            ⋮┆----------------------------------------
+           17┆ event = handle.advertise<archlib::Event>("event", 1000);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           20┆ handle.getParam("frequency", freq);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           28┆ ros::Subscriber reconfig_sub = n.subscribe("log_adapt", 1000,
+               &Logger::receiveAdaptationCommand, this);                    
+            ⋮┆----------------------------------------
+           29┆ ros::Subscriber status_sub = n.subscribe("log_status", 1000, &Logger::receiveStatus, this);
+            ⋮┆----------------------------------------
+           30┆ ros::Subscriber energy_status_sub = n.subscribe("log_energy_status", 1000,
+               &Logger::receiveEnergyStatus, this);                                      
+            ⋮┆----------------------------------------
+           31┆ ros::Subscriber event_sub = n.subscribe("log_event", 1000, &Logger::receiveEvent, this);
+            ⋮┆----------------------------------------
+           32┆ ros::Subscriber uncertainty_sub = n.subscribe("log_uncertainty", 1000,
+               &Logger::receiveUncertainty, this);                                   
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           33┆ ros::spin();
+                                                   
+    src/sa-bsn/simulation/injector/src/Injector.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+            9┆ log_uncertainty = handle.advertise<archlib::Uncertainty>("log_uncertainty", 10);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           14┆ config.getParam("frequency", freq);
+            ⋮┆----------------------------------------
+           18┆ config.getParam("components", comps);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           22┆ uncertainty_pub[*component] =                                              
+               handle.advertise<archlib::Uncertainty>("uncertainty_/"+(*component), 1000);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           23┆ config.getParam((*component) + "/type", type[*component]);
+            ⋮┆----------------------------------------
+           24┆ config.getParam((*component) + "/offset", noise_factor[*component]);
+            ⋮┆----------------------------------------
+           25┆ config.getParam((*component) + "/amplitude", amplitude[*component]);
+            ⋮┆----------------------------------------
+           26┆ config.getParam((*component) + "/frequency", frequency[*component]);
+            ⋮┆----------------------------------------
+           27┆ config.getParam((*component) + "/duration", duration[*component]);
+            ⋮┆----------------------------------------
+           29┆ config.getParam((*component) + "/begin", beg);
+                                                                  
+    src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           23┆ handle.getParam("setpoint", setpoint);
+            ⋮┆----------------------------------------
+           24┆ handle.getParam("offset", offset);
+            ⋮┆----------------------------------------
+           25┆ handle.getParam("gain", gain);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           27┆ enact = handle.advertise<archlib::Strategy>("strategy", 10);
+            ⋮┆----------------------------------------
+           28┆ energy_status = handle.advertise<archlib::EnergyStatus>("log_energy_status", 10);
+            ⋮┆----------------------------------------
+           81┆ client_module =                                                               
+               client_handler.serviceClient<archlib::DataAccessRequest>("DataAccessRequest");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           94┆ if(!client_module.call(r_srv)) {
+            ⋮┆----------------------------------------
+          129┆ if (!client_module.call(c_srv)) {
+                                                              
+    src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           12┆ handle.getParam("qos_attribute", qos_attribute);
+            ⋮┆----------------------------------------
+           13┆ handle.getParam("info_quant", info_quant);
+            ⋮┆----------------------------------------
+           14┆ handle.getParam("monitor_freq", monitor_freq);
+            ⋮┆----------------------------------------
+           15┆ handle.getParam("actuation_freq", actuation_freq);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.service-wait
+          ❰❰ Blocking ❱❱
+          Espera pela disponibilidade de serviço ROS 1.
+                                                       
+           25┆ if (!ros::service::waitForService("DataAccessRequest", ros::Duration(15.0))) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           44┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.real-sleep
+          ❰❰ Blocking ❱❱
+          Espera temporal real.
+                               
+           45┆ ros::Duration(1.0).sleep();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           50┆ enactor_server = handle.advertiseService("EngineRequest", &Engine::sendAdaptationParameter,
+               this);                                                                                     
+            ⋮┆----------------------------------------
+          109┆ client_module =                                                               
+               client_handler.serviceClient<archlib::DataAccessRequest>("DataAccessRequest");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+          115┆ if(!client_module.call(r_srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          150┆ ros::Subscriber t_sub = n.subscribe("exception", 1000, &Engine::receiveException, this);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+          171┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-rate-sleep
+          ❰❰ Blocking ❱❱
+          Espera por receptor de nome rate; confirmar tipo ROS.
+                                                               
+          172┆ loop_rate.sleep();
+                                                                         
+    src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           23┆ handle.getParam("setpoint", setpoint);
+            ⋮┆----------------------------------------
+           24┆ handle.getParam("offset", offset);
+            ⋮┆----------------------------------------
+           25┆ handle.getParam("gain", gain);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           27┆ enact = handle.advertise<archlib::Strategy>("strategy", 10);
+            ⋮┆----------------------------------------
+           79┆ client_module =                                                               
+               client_handler.serviceClient<archlib::DataAccessRequest>("DataAccessRequest");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           92┆ if(!client_module.call(r_srv)) {
+            ⋮┆----------------------------------------
+          126┆ if (!client_module.call(c_srv)) {
+                                                        
+    src/sa-bsn/system_manager/enactor/src/Controller.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           12┆ adapt = nh.advertise<archlib::AdaptationCommand>("log_adapt", 10);
+            ⋮┆----------------------------------------
+           14┆ except = nh.advertise<archlib::Exception>("exception", 10);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           17┆ nh.getParam("frequency", freq);
+            ⋮┆----------------------------------------
+           18┆ nh.getParam("kp", KP);
+            ⋮┆----------------------------------------
+           19┆ nh.getParam("adaptation_parameter", adaptation_parameter);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.service-wait
+          ❰❰ Blocking ❱❱
+          Espera pela disponibilidade de serviço ROS 1.
+                                                       
+           26┆ if (!ros::service::waitForService("EngineRequest", ros::Duration(10.0))) {
+            ⋮┆----------------------------------------
+           31┆ if (!ros::service::waitForService("DataAccessRequest", ros::Duration(10.0))) {
+                                                     
+    src/sa-bsn/system_manager/enactor/src/Enactor.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           13┆ client_module = client_handler.serviceClient<archlib::EngineRequest>("EngineRequest");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           16┆ if(!client_module.call(adapt_srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           33┆ client_module =                                                               
+               client_handler.serviceClient<archlib::DataAccessRequest>("DataAccessRequest");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           42┆ if (!client_module.call(r_srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           88┆ ros::Subscriber subs_event = n.subscribe("event", 1000, &Enactor::receiveEvent, this);
+            ⋮┆----------------------------------------
+           89┆ ros::Subscriber subs_strategy = n.subscribe("strategy", 1000, &Enactor::receiveStrategy,
+               this);                                                                                  
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           95┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-rate-sleep
+          ❰❰ Blocking ❱❱
+          Espera por receptor de nome rate; confirmar tipo ROS.
+                                                               
+           96┆ loop_rate.sleep();
+                                                                    
+    src/sa-bsn/target_system/components/component/src/CentralHub.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           13┆ ros::Subscriber thermometerSub = nh.subscribe("thermometer_data", 10, &CentralHub::collect,
+               this);                                                                                     
+            ⋮┆----------------------------------------
+           14┆ ros::Subscriber oximeterSub = nh.subscribe("oximeter_data", 10, &CentralHub::collect,
+               this);                                                                               
+            ⋮┆----------------------------------------
+           15┆ ros::Subscriber ecgSub = nh.subscribe("ecg_data", 10, &CentralHub::collect, this);
+            ⋮┆----------------------------------------
+           16┆ ros::Subscriber abpsSub = nh.subscribe("abps_data", 10, &CentralHub::collect, this);
+            ⋮┆----------------------------------------
+           17┆ ros::Subscriber abpdSub = nh.subscribe("abpd_data", 10, &CentralHub::collect, this);
+            ⋮┆----------------------------------------
+           18┆ ros::Subscriber glucosemeterSub = nh.subscribe("glucosemeter_data", 10,
+               &CentralHub::collect, this);                                           
+            ⋮┆----------------------------------------
+           19┆ ros::Subscriber reconfigSub = nh.subscribe("reconfigure_"+ros::this_node::getName(), 10,
+               &CentralHub::reconfigure, this);                                                        
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-rate-sleep
+          ❰❰ Blocking ❱❱
+          Espera por receptor de nome rate; confirmar tipo ROS.
+                                                               
+           29┆ loop_rate.sleep();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           36┆ ros::spinOnce(); //calls collect() if there's data in the topics
+                                                                
+    src/sa-bsn/target_system/components/component/src/Sensor.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           26┆ ros::Subscriber noise_subs = nh.subscribe("uncertainty_"+ros::this_node::getName(), 10,
+               &Sensor::injectUncertainty, this);                                                     
+            ⋮┆----------------------------------------
+           27┆ ros::Subscriber reconfig_subs = nh.subscribe("reconfigure_"+ros::this_node::getName(), 10,
+               &Sensor::reconfigure, this);                                                              
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           29┆ nh.getParam("connect_sensor", connected_sensor);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           35┆ ros::spinOnce();
+            ⋮┆----------------------------------------
+           39┆ ros::spinOnce();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-rate-sleep
+          ❰❰ Blocking ❱❱
+          Espera por receptor de nome rate; confirmar tipo ROS.
+                                                               
+           48┆ loop_rate.sleep();
+                                                                       
+    src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           29┆ handle.getParam("start", shouldStart);
+            ⋮┆----------------------------------------
+           34┆ handle.getParam("oxigenation_LowRisk", s);
+            ⋮┆----------------------------------------
+           36┆ handle.getParam("oxigenation_MidRisk0", s);
+            ⋮┆----------------------------------------
+           38┆ handle.getParam("oxigenation_HighRisk0", s);
+            ⋮┆----------------------------------------
+           40┆ handle.getParam("oxigenation_MidRisk1", s);
+            ⋮┆----------------------------------------
+           42┆ handle.getParam("oxigenation_HighRisk1", s);
+            ⋮┆----------------------------------------
+           65┆ handle.getParam("lowrisk", s);
+            ⋮┆----------------------------------------
+           69┆ handle.getParam("midrisk", s);
+            ⋮┆----------------------------------------
+           73┆ handle.getParam("highrisk", s);
+            ⋮┆----------------------------------------
+           81┆ handle.getParam("instant_recharge", instant_recharge);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           97┆ ros::ServiceClient client = handle.serviceClient<std_srvs::SetBool>("spo2");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+          100┆ if (client.call(srv))
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          113┆ ros::ServiceClient client = handle.serviceClient<services::PatientData>("getPatientData");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+          118┆ if (client.call(srv))
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          161┆ data_pub = handle.advertise<messages::SensorData>("oximeter_data", 10);
+                                                                       
+    src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           25┆ handle.getParam("start", shouldStart);
+            ⋮┆----------------------------------------
+           30┆ handle.getParam("heart_rate_LowRisk", s);
+            ⋮┆----------------------------------------
+           32┆ handle.getParam("heart_rate_MidRisk0", s);
+            ⋮┆----------------------------------------
+           34┆ handle.getParam("heart_rate_HighRisk0", s);
+            ⋮┆----------------------------------------
+           36┆ handle.getParam("heart_rate_MidRisk1", s);
+            ⋮┆----------------------------------------
+           38┆ handle.getParam("heart_rate_HighRisk1", s);
+            ⋮┆----------------------------------------
+           61┆ handle.getParam("lowrisk", s);
+            ⋮┆----------------------------------------
+           65┆ handle.getParam("midrisk", s);
+            ⋮┆----------------------------------------
+           69┆ handle.getParam("highrisk", s);
+            ⋮┆----------------------------------------
+           77┆ handle.getParam("instant_recharge", instant_recharge);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           90┆ ros::ServiceClient client = handle.serviceClient<std_srvs::SetBool>("bpm");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           93┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          101┆ ros::ServiceClient client = handle.serviceClient<services::PatientData>("getPatientData");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+          106┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          142┆ data_pub = handle.advertise<messages::SensorData>("ecg_data", 10);
+                                                                       
+    src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           27┆ handle.getParam("start", shouldStart);
+            ⋮┆----------------------------------------
+           32┆ handle.getParam("temperature_LowRisk", s);
+            ⋮┆----------------------------------------
+           34┆ handle.getParam("temperature_MidRisk0", s);
+            ⋮┆----------------------------------------
+           36┆ handle.getParam("temperature_HighRisk0", s);
+            ⋮┆----------------------------------------
+           38┆ handle.getParam("temperature_MidRisk1", s);
+            ⋮┆----------------------------------------
+           40┆ handle.getParam("temperature_HighRisk1", s);
+            ⋮┆----------------------------------------
+           63┆ handle.getParam("lowrisk", s);
+            ⋮┆----------------------------------------
+           67┆ handle.getParam("midrisk", s);
+            ⋮┆----------------------------------------
+           71┆ handle.getParam("highrisk", s);
+            ⋮┆----------------------------------------
+           79┆ handle.getParam("instant_recharge", instant_recharge);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           92┆ ros::ServiceClient client = handle.serviceClient<std_srvs::SetBool>("temp");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           95┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          103┆ ros::ServiceClient client = handle.serviceClient<services::PatientData>("getPatientData");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+          108┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          145┆ data_pub = handle.advertise<messages::SensorData>("thermometer_data", 10);
+                                                                       
+    src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           27┆ handle.getParam("start", shouldStart);
+            ⋮┆----------------------------------------
+           32┆ handle.getParam("abps_LowRisk", s);
+            ⋮┆----------------------------------------
+           34┆ handle.getParam("abps_MidRisk0", s);
+            ⋮┆----------------------------------------
+           36┆ handle.getParam("abps_HighRisk0", s);
+            ⋮┆----------------------------------------
+           38┆ handle.getParam("abps_MidRisk1", s);
+            ⋮┆----------------------------------------
+           40┆ handle.getParam("abps_HighRisk1", s);
+            ⋮┆----------------------------------------
+           63┆ handle.getParam("lowrisk", s);
+            ⋮┆----------------------------------------
+           67┆ handle.getParam("midrisk", s);
+            ⋮┆----------------------------------------
+           71┆ handle.getParam("highrisk", s);
+            ⋮┆----------------------------------------
+           79┆ handle.getParam("instant_recharge", instant_recharge);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           89┆ ros::ServiceClient client = handle.serviceClient<services::PatientData>("getPatientData");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           94┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          129┆ data_pub = handle.advertise<messages::SensorData>("abps_data", 10);
+                                                                       
+    src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           27┆ handle.getParam("start", shouldStart);
+            ⋮┆----------------------------------------
+           32┆ handle.getParam("abpd_LowRisk", s);
+            ⋮┆----------------------------------------
+           34┆ handle.getParam("abpd_MidRisk0", s);
+            ⋮┆----------------------------------------
+           36┆ handle.getParam("abpd_HighRisk0", s);
+            ⋮┆----------------------------------------
+           38┆ handle.getParam("abpd_MidRisk1", s);
+            ⋮┆----------------------------------------
+           40┆ handle.getParam("abpd_HighRisk1", s);
+            ⋮┆----------------------------------------
+           63┆ handle.getParam("lowrisk", s);
+            ⋮┆----------------------------------------
+           67┆ handle.getParam("midrisk", s);
+            ⋮┆----------------------------------------
+           71┆ handle.getParam("highrisk", s);
+            ⋮┆----------------------------------------
+           79┆ handle.getParam("instant_recharge", instant_recharge);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           89┆ ros::ServiceClient client = handle.serviceClient<services::PatientData>("getPatientData");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           94┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          129┆ data_pub = handle.advertise<messages::SensorData>("abpd_data", 10);
+                                                                       
+    src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           28┆ handle.getParam("start", shouldStart);
+            ⋮┆----------------------------------------
+           33┆ handle.getParam("glucose_LowRisk", s);
+            ⋮┆----------------------------------------
+           35┆ handle.getParam("glucose_MidRisk0", s);
+            ⋮┆----------------------------------------
+           37┆ handle.getParam("glucose_HighRisk0", s);
+            ⋮┆----------------------------------------
+           39┆ handle.getParam("glucose_MidRisk1", s);
+            ⋮┆----------------------------------------
+           41┆ handle.getParam("glucose_HighRisk1", s);
+            ⋮┆----------------------------------------
+           64┆ handle.getParam("lowrisk", s);
+            ⋮┆----------------------------------------
+           68┆ handle.getParam("midrisk", s);
+            ⋮┆----------------------------------------
+           72┆ handle.getParam("highrisk", s);
+            ⋮┆----------------------------------------
+           80┆ handle.getParam("instant_recharge", instant_recharge);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           90┆ ros::ServiceClient client = handle.serviceClient<services::PatientData>("getPatientData");
+   
+     ❱ tools.ros1_metrics.isolation.cpp.client-call
+          ❰❰ Blocking ❱❱
+          Possível chamada de cliente ROS 1, identificada pelo nome; confirmar contexto.
+                                                                                        
+           95┆ if (client.call(srv)) {
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+          130┆ data_pub = handle.advertise<messages::SensorData>("glucosemeter_data", 10);
+                                                                   
+    src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           67┆ config.getParam("frequency", freq);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           75┆ pub = config.advertise<messages::TargetSystemData>("TargetSystemData", 10);
+                                                                         
+    src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+            7┆ register_service = handle.advertiseService("EffectorRegister",
+               &ParamAdapter::moduleConnect, this);                          
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-parameters
+          ❰❰ Blocking ❱❱
+          Acesso a parâmetros; confirmar que o receptor é ROS.
+                                                              
+           10┆ handle.getParam("frequency", freq);
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           18┆ ros::Subscriber reconf = n.subscribe("reconfigure", 1000,
+               &ParamAdapter::receiveAdaptationCommand, this);          
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-runtime
+          ❰❰ Blocking ❱❱
+          Inicialização ou execução de runtime ROS 1.
+                                                     
+           19┆ ros::spin();
+   
+     ❱ tools.ros1_metrics.isolation.cpp.ros-resource
+          ❰❰ Blocking ❱❱
+          Recurso ROS 1 criado diretamente; revisar isolamento do adaptador.
+                                                                            
+           36┆ ros::Publisher pub = handle.advertise<archlib::AdaptationCommand>("reconfigure_" +
+               req.name, 1);                                                                     
+

@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classEventMessage" kind="class" language="C++" prot="public">
+    <compoundname>EventMessage</compoundname>
+    <includes refid="EventMessage_8hpp" local="no">EventMessage.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EventMessage::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="19" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classEventMessage_1aed8ac6c33aa6124bd1de2e2527471b3d" compoundref="EventMessage_8hpp" startline="11" endline="11">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t EventMessage::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="20" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classEventMessage_1afcf60ef6f1366f5a0607292303db0ce3" compoundref="EventMessage_8hpp" startline="12" endline="12">getTimestamp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t EventMessage::logical_clock</definition>
+        <argsstring></argsstring>
+        <name>logical_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="21" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classEventMessage_1ac13fb59e49963009dc47118b9845ca4d" compoundref="EventMessage_8hpp" startline="13" endline="13">getLogicalClock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EventMessage::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="22" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classEventMessage_1ace199488d87a0ebf55c6c81e66b9a5c4" compoundref="EventMessage_8hpp" startline="14" endline="14">getSource</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EventMessage::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="23" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classEventMessage_1afee2ba348b815683dc0eb148bc93f9cb" compoundref="EventMessage_8hpp" startline="15" endline="15">getTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EventMessage::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="24" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEventMessage_1a068681c976e6967819bc401a6557f1b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EventMessage::EventMessage</definition>
+        <argsstring>(const std::string &amp;name, const int64_t &amp;timestamp, const int64_t &amp;logical_clock, const std::string &amp;source, const std::string &amp;target, const std::string &amp;event)</argsstring>
+        <name>EventMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>logical_clock</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="9" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classEventMessage_1aed8ac6c33aa6124bd1de2e2527471b3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EventMessage::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="11" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="11" bodyend="11"/>
+        <references refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" compoundref="EventMessage_8hpp" startline="16">name</references>
+      </memberdef>
+      <memberdef kind="function" id="classEventMessage_1afcf60ef6f1366f5a0607292303db0ce3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t EventMessage::getTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="12" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="12" bodyend="12"/>
+        <references refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" compoundref="EventMessage_8hpp" startline="20">timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="classEventMessage_1ac13fb59e49963009dc47118b9845ca4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t EventMessage::getLogicalClock</definition>
+        <argsstring>() const</argsstring>
+        <name>getLogicalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="13" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="13" bodyend="13"/>
+        <references refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" compoundref="EventMessage_8hpp" startline="21">logical_clock</references>
+      </memberdef>
+      <memberdef kind="function" id="classEventMessage_1ace199488d87a0ebf55c6c81e66b9a5c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EventMessage::getSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="14" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="14" bodyend="14"/>
+        <references refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" compoundref="EventMessage_8hpp" startline="22">source</references>
+      </memberdef>
+      <memberdef kind="function" id="classEventMessage_1afee2ba348b815683dc0eb148bc93f9cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EventMessage::getTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="15" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="15" bodyend="15"/>
+        <references refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" compoundref="EventMessage_8hpp" startline="23">target</references>
+      </memberdef>
+      <memberdef kind="function" id="classEventMessage_1a635d5a2c5e016dadb713f47f6f35e3d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EventMessage::getEvent</definition>
+        <argsstring>() const</argsstring>
+        <name>getEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="16" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" line="6" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classEventMessage_1a60e7df708394423bcd58a5673f96bc7c" prot="private" virt="non-virtual"><scope>EventMessage</scope><name>event</name></member>
+      <member refid="classEventMessage_1a068681c976e6967819bc401a6557f1b5" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>EventMessage</name></member>
+      <member refid="classEventMessage_1a635d5a2c5e016dadb713f47f6f35e3d3" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>getEvent</name></member>
+      <member refid="classEventMessage_1ac13fb59e49963009dc47118b9845ca4d" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>getLogicalClock</name></member>
+      <member refid="classEventMessage_1aed8ac6c33aa6124bd1de2e2527471b3d" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>getName</name></member>
+      <member refid="classEventMessage_1ace199488d87a0ebf55c6c81e66b9a5c4" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>getSource</name></member>
+      <member refid="classEventMessage_1afee2ba348b815683dc0eb148bc93f9cb" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>getTarget</name></member>
+      <member refid="classEventMessage_1afcf60ef6f1366f5a0607292303db0ce3" prot="public" virt="non-virtual"><scope>EventMessage</scope><name>getTimestamp</name></member>
+      <member refid="classEventMessage_1acc455283c964dd9c07ee50150b7f39cb" prot="private" virt="non-virtual"><scope>EventMessage</scope><name>logical_clock</name></member>
+      <member refid="classEventMessage_1a9a9b774dd2cd17b32be4d265deb344bc" prot="private" virt="non-virtual"><scope>EventMessage</scope><name>name</name></member>
+      <member refid="classEventMessage_1acec48e44c34631f8d8580927df60b7c1" prot="private" virt="non-virtual"><scope>EventMessage</scope><name>source</name></member>
+      <member refid="classEventMessage_1a708e7348b3f4506563978ef8a9b00b97" prot="private" virt="non-virtual"><scope>EventMessage</scope><name>target</name></member>
+      <member refid="classEventMessage_1a9f7dc8a76cb9e39e7227239d54cd015b" prot="private" virt="non-virtual"><scope>EventMessage</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

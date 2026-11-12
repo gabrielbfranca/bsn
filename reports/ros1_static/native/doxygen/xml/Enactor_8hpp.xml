@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Enactor_8hpp" kind="file" language="C++">
+    <compoundname>Enactor.hpp</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">math.h</includes>
+    <includes local="yes">ros/ros.h</includes>
+    <includes local="yes">ros/package.h</includes>
+    <includes refid="utils_8hpp" local="yes">libbsn/utils/utils.hpp</includes>
+    <includes local="yes">archlib/Status.h</includes>
+    <includes local="yes">archlib/Event.h</includes>
+    <includes local="yes">archlib/Strategy.h</includes>
+    <includes local="yes">archlib/Exception.h</includes>
+    <includes local="yes">archlib/AdaptationCommand.h</includes>
+    <includes local="yes">archlib/DataAccessRequest.h</includes>
+    <includes refid="ROSComponent_8hpp" local="yes">archlib/ROSComponent.hpp</includes>
+    <includes local="yes">archlib/EngineRequest.h</includes>
+    <includedby refid="enactor_8cpp" local="yes">src/sa-bsn/system_manager/enactor/apps/enactor.cpp</includedby>
+    <includedby refid="Controller_8hpp" local="yes">src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp</includedby>
+    <includedby refid="Enactor_8cpp" local="yes">src/sa-bsn/system_manager/enactor/src/Enactor.cpp</includedby>
+    <incdepgraph>
+      <node id="1475">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="1482">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="1473" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+      </node>
+      <node id="1481">
+        <label>stdexcept</label>
+      </node>
+      <node id="1473">
+        <label>string</label>
+      </node>
+      <node id="1466">
+        <label>map</label>
+      </node>
+      <node id="1470">
+        <label>ros/package.h</label>
+      </node>
+      <node id="1465">
+        <label>src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp</label>
+        <link refid="Enactor_8hpp"/>
+        <childnode refid="1466" relation="include">
+        </childnode>
+        <childnode refid="1467" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1470" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+        <childnode refid="1478" relation="include">
+        </childnode>
+        <childnode refid="1479" relation="include">
+        </childnode>
+        <childnode refid="1480" relation="include">
+        </childnode>
+        <childnode refid="1483" relation="include">
+        </childnode>
+      </node>
+      <node id="1471">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="1472" relation="include">
+        </childnode>
+        <childnode refid="1473" relation="include">
+        </childnode>
+      </node>
+      <node id="1478">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="1472">
+        <label>vector</label>
+      </node>
+      <node id="1480">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="1473" relation="include">
+        </childnode>
+        <childnode refid="1481" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1482" relation="include">
+        </childnode>
+      </node>
+      <node id="1483">
+        <label>archlib/EngineRequest.h</label>
+      </node>
+      <node id="1474">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="1469">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="1468">
+        <label>math.h</label>
+      </node>
+      <node id="1479">
+        <label>archlib/DataAccessRequest.h</label>
+      </node>
+      <node id="1477">
+        <label>archlib/Exception.h</label>
+      </node>
+      <node id="1467">
+        <label>deque</label>
+      </node>
+      <node id="1476">
+        <label>archlib/Strategy.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1484">
+        <label>src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp</label>
+        <link refid="Enactor_8hpp"/>
+        <childnode refid="1485" relation="include">
+        </childnode>
+        <childnode refid="1486" relation="include">
+        </childnode>
+        <childnode refid="1489" relation="include">
+        </childnode>
+      </node>
+      <node id="1485">
+        <label>src/sa-bsn/system_manager/enactor/apps/enactor.cpp</label>
+        <link refid="enactor_8cpp"/>
+      </node>
+      <node id="1487">
+        <label>src/sa-bsn/system_manager/enactor/apps/controller.cpp</label>
+        <link refid="controller_8cpp"/>
+      </node>
+      <node id="1488">
+        <label>src/sa-bsn/system_manager/enactor/src/Controller.cpp</label>
+        <link refid="Controller_8cpp"/>
+      </node>
+      <node id="1486">
+        <label>src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp</label>
+        <link refid="Controller_8hpp"/>
+        <childnode refid="1487" relation="include">
+        </childnode>
+        <childnode refid="1488" relation="include">
+        </childnode>
+      </node>
+      <node id="1489">
+        <label>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</label>
+        <link refid="Enactor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classEnactor" prot="public">Enactor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ENACTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENACTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/ros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/package.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8hpp" kindref="compound">libbsn/utils/utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Status.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Strategy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Exception.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/AdaptationCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/DataAccessRequest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ROSComponent_8hpp" kindref="compound">archlib/ROSComponent.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EngineRequest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classEnactor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEnactor" kindref="compound">Enactor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1ROSComponent" kindref="compound">arch::ROSComponent</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEnactor_1aaaaa2841d776d7ac1f8ef51cd8e83919" kindref="member">Enactor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/>std::string<sp/>name);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1ab2ae8d73dc15505286e8c74277c3147c" kindref="member">~Enactor</ref>();<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEnactor_1aaaaa2841d776d7ac1f8ef51cd8e83919" kindref="member">Enactor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEnactor" kindref="compound">Enactor</ref><sp/>&amp;);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEnactor" kindref="compound">Enactor</ref><sp/>&amp;<ref refid="classEnactor_1aa150c48455809ca4565a6c8b0c6e83de" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEnactor" kindref="compound">Enactor</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1a4b149f71b41f0a9a3b28871de77f2202" kindref="member">setUp</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1a721175369a6ca933119b173e3f54f6f0" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1abd25ade60e175a09b8a71f2d0c87c7d1" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1a9e10c68a47e83737f8b45b9c504cdc97" kindref="member">receiveStatus</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1aee03d216ab1a7ed1b841cefac05541c5" kindref="member">receiveStrategy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Strategy::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1a9d0b5483b278c26e060c9dd4b921edb5" kindref="member">receiveAdaptationParameter</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1afc29580144b70a3ce72140b9c8759b44" kindref="member">receiveEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Event::ConstPtr&amp;<sp/>msg)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1adb51e3aab4684a4b63a419c71ee2997d" kindref="member">apply_reli_strategy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;component)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1a8f1424e1fe9fad565bd8b0f58ff8697c" kindref="member">apply_cost_strategy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;component)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1a97d75a722f948bbb167cc5cc08246472" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classEnactor_1a4ebe47330bcdfa7c0d0dcc14b65498c1" kindref="member">adapt</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classEnactor_1a07d2a7aa3afa4a607d485f326b76b770" kindref="member">except</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::deque&lt;int&gt;&gt;<sp/><ref refid="classEnactor_1a3dfd6e71d197979f1c7a1b287caf1c42" kindref="member">invocations</ref>;<sp/></highlight><highlight class="comment">//a<sp/>map<sp/>of<sp/>deques<sp/>where<sp/>1s<sp/>represent<sp/>successes<sp/>and<sp/>0s<sp/>represents<sp/>failures</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="classEnactor_1a5e22d5975d3505202c27527e82a0f5b3" kindref="member">exception_buffer</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="classEnactor_1a447924bad3c9180bdbdd9c75a98fe015" kindref="member">freq</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classEnactor_1a2050fc7d8efd62087b753ea0b52c0aa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="classEnactor_1a2050fc7d8efd62087b753ea0b52c0aa0" kindref="member">r_curr</ref>,<sp/><ref refid="classEnactor_1a3efbb4d3a6f73dbebf4441152901cee4" kindref="member">c_curr</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classEnactor_1af80f8e1c8d34b1ca82d56a467b0d8496" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="classEnactor_1af80f8e1c8d34b1ca82d56a467b0d8496" kindref="member">r_ref</ref>,<sp/><ref refid="classEnactor_1a49403d606de5625d38fee85049728d81" kindref="member">c_ref</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="classEnactor_1a4447ca1e28aef1af5cd6a3caa8fce18c" kindref="member">replicate_task</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classEnactor_1a5f802c97618f3f2131011a648618bc5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classEnactor_1a5f802c97618f3f2131011a648618bc5d" kindref="member">cycles</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classEnactor_1ac24011d94d321e2805059484ac55678c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classEnactor_1ac24011d94d321e2805059484ac55678c" kindref="member">stability_margin</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classEnactor_1a0901f3e450d96dd3906e2dd7333da6b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEnactor_1a0901f3e450d96dd3906e2dd7333da6b2" kindref="member">adaptation_parameter</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classLogger" kind="class" language="C++" prot="public">
+    <compoundname>Logger</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <includes refid="Logger_8hpp" local="no">Logger.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" prot="protected" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle Logger::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="42" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t Logger::time_ref</definition>
+        <argsstring></argsstring>
+        <name>time_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="45" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" compoundref="Logger_8cpp" startline="36" endline="48">receiveAdaptationCommand</referencedby>
+        <referencedby refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" compoundref="Logger_8cpp" startline="65" endline="76">receiveEnergyStatus</referencedby>
+        <referencedby refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" compoundref="Logger_8cpp" startline="78" endline="90">receiveEvent</referencedby>
+        <referencedby refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" compoundref="Logger_8cpp" startline="51" endline="63">receiveStatus</referencedby>
+        <referencedby refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" compoundref="Logger_8cpp" startline="92" endline="103">receiveUncertainty</referencedby>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Logger::adapt</definition>
+        <argsstring></argsstring>
+        <name>adapt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="46" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" compoundref="Logger_8cpp" startline="36" endline="48">receiveAdaptationCommand</referencedby>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Logger::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="46" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" compoundref="Logger_8cpp" startline="51" endline="63">receiveStatus</referencedby>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLogger_1a4873cc4cdf21bb837739d5a1e0130330" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Logger::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="46" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLogger_1a6b1229127c828c809519d972f857fcf1" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher Logger::persist</definition>
+        <argsstring></argsstring>
+        <name>persist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="46" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" compoundref="Logger_8cpp" startline="36" endline="48">receiveAdaptationCommand</referencedby>
+        <referencedby refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" compoundref="Logger_8cpp" startline="65" endline="76">receiveEnergyStatus</referencedby>
+        <referencedby refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" compoundref="Logger_8cpp" startline="78" endline="90">receiveEvent</referencedby>
+        <referencedby refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" compoundref="Logger_8cpp" startline="51" endline="63">receiveStatus</referencedby>
+        <referencedby refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" compoundref="Logger_8cpp" startline="92" endline="103">receiveUncertainty</referencedby>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLogger_1a2a972e87899a345fbd2c237d3933fd26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Logger::Logger</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="22" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1acb668a9e186a25fbaad2e4af6d1ed00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Logger::~Logger</definition>
+        <argsstring>()</argsstring>
+        <name>~Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="23" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Logger::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="31" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="11" bodyend="22"/>
+        <references refid="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" compoundref="Logger_8hpp" startline="46">adapt</references>
+        <references refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" compoundref="Logger_8hpp" startline="42">handle</references>
+        <references refid="classLogger_1a7a6704564d14bef375851b382f8b2887" compoundref="Logger_8cpp" startline="7" endline="9">now</references>
+        <references refid="classLogger_1a6b1229127c828c809519d972f857fcf1" compoundref="Logger_8hpp" startline="46">persist</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+        <references refid="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" compoundref="Logger_8hpp" startline="46">status</references>
+        <references refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" compoundref="Logger_8hpp" startline="45">time_ref</references>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1aba38120a928c4fa5bf74dc92029dade5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Logger::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="32" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Logger::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="33" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="26" bodyend="34"/>
+        <references refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" compoundref="Logger_8cpp" startline="36" endline="48">receiveAdaptationCommand</references>
+        <references refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" compoundref="Logger_8cpp" startline="65" endline="76">receiveEnergyStatus</references>
+        <references refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" compoundref="Logger_8cpp" startline="78" endline="90">receiveEvent</references>
+        <references refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" compoundref="Logger_8cpp" startline="51" endline="63">receiveStatus</references>
+        <references refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" compoundref="Logger_8cpp" startline="92" endline="103">receiveUncertainty</references>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::receiveAdaptationCommand</definition>
+        <argsstring>(const archlib::AdaptationCommand::ConstPtr &amp;msg)</argsstring>
+        <name>receiveAdaptationCommand</name>
+        <param>
+          <type>const archlib::AdaptationCommand::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="35" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="36" bodyend="48"/>
+        <references refid="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" compoundref="Logger_8hpp" startline="46">adapt</references>
+        <references refid="classLogger_1a7a6704564d14bef375851b382f8b2887" compoundref="Logger_8cpp" startline="7" endline="9">now</references>
+        <references refid="classLogger_1a6b1229127c828c809519d972f857fcf1" compoundref="Logger_8hpp" startline="46">persist</references>
+        <references refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" compoundref="Logger_8hpp" startline="45">time_ref</references>
+        <referencedby refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" compoundref="Logger_8cpp" startline="26" endline="34">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::receiveStatus</definition>
+        <argsstring>(const archlib::Status::ConstPtr &amp;msg)</argsstring>
+        <name>receiveStatus</name>
+        <param>
+          <type>const archlib::Status::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="36" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="51" bodyend="63"/>
+        <references refid="classLogger_1a7a6704564d14bef375851b382f8b2887" compoundref="Logger_8cpp" startline="7" endline="9">now</references>
+        <references refid="classLogger_1a6b1229127c828c809519d972f857fcf1" compoundref="Logger_8hpp" startline="46">persist</references>
+        <references refid="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" compoundref="Logger_8hpp" startline="46">status</references>
+        <references refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" compoundref="Logger_8hpp" startline="45">time_ref</references>
+        <referencedby refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" compoundref="Logger_8cpp" startline="26" endline="34">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1a50f782a02a31340bbcd7f55e251484f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::receiveEnergyStatus</definition>
+        <argsstring>(const archlib::EnergyStatus::ConstPtr &amp;msg)</argsstring>
+        <name>receiveEnergyStatus</name>
+        <param>
+          <type>const archlib::EnergyStatus::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="37" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="65" bodyend="76"/>
+        <references refid="classLogger_1a7a6704564d14bef375851b382f8b2887" compoundref="Logger_8cpp" startline="7" endline="9">now</references>
+        <references refid="classLogger_1a6b1229127c828c809519d972f857fcf1" compoundref="Logger_8hpp" startline="46">persist</references>
+        <references refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" compoundref="Logger_8hpp" startline="45">time_ref</references>
+        <referencedby refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" compoundref="Logger_8cpp" startline="26" endline="34">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::receiveEvent</definition>
+        <argsstring>(const archlib::Event::ConstPtr &amp;msg)</argsstring>
+        <name>receiveEvent</name>
+        <param>
+          <type>const archlib::Event::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="38" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="78" bodyend="90"/>
+        <references refid="classLogger_1a7a6704564d14bef375851b382f8b2887" compoundref="Logger_8cpp" startline="7" endline="9">now</references>
+        <references refid="classLogger_1a6b1229127c828c809519d972f857fcf1" compoundref="Logger_8hpp" startline="46">persist</references>
+        <references refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" compoundref="Logger_8hpp" startline="45">time_ref</references>
+        <referencedby refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" compoundref="Logger_8cpp" startline="26" endline="34">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::receiveUncertainty</definition>
+        <argsstring>(const archlib::Uncertainty::ConstPtr &amp;msg)</argsstring>
+        <name>receiveUncertainty</name>
+        <param>
+          <type>const archlib::Uncertainty::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="39" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="92" bodyend="103"/>
+        <references refid="classLogger_1a7a6704564d14bef375851b382f8b2887" compoundref="Logger_8cpp" startline="7" endline="9">now</references>
+        <references refid="classLogger_1a6b1229127c828c809519d972f857fcf1" compoundref="Logger_8hpp" startline="46">persist</references>
+        <references refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" compoundref="Logger_8hpp" startline="45">time_ref</references>
+        <referencedby refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" compoundref="Logger_8cpp" startline="26" endline="34">body</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLogger_1ad1dc4093a3d8c26802357fe2bdb1dabf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Logger::Logger</definition>
+        <argsstring>(const Logger &amp;)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>const <ref refid="classLogger" kindref="compound">Logger</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1a643f1fb5e5e4f38efa257f92e8c711a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> &amp;</type>
+        <definition>Logger&amp; Logger::operator=</definition>
+        <argsstring>(const Logger &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classLogger" kindref="compound">Logger</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classLogger_1a7a6704564d14bef375851b382f8b2887" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t Logger::now</definition>
+        <argsstring>() const</argsstring>
+        <name>now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="28" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" bodystart="7" bodyend="9"/>
+        <referencedby refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" compoundref="Logger_8cpp" startline="36" endline="48">receiveAdaptationCommand</referencedby>
+        <referencedby refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" compoundref="Logger_8cpp" startline="65" endline="76">receiveEnergyStatus</referencedby>
+        <referencedby refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" compoundref="Logger_8cpp" startline="78" endline="90">receiveEvent</referencedby>
+        <referencedby refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" compoundref="Logger_8cpp" startline="51" endline="63">receiveStatus</referencedby>
+        <referencedby refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" compoundref="Logger_8cpp" startline="92" endline="103">receiveUncertainty</referencedby>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="200">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="199">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="202">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="203" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="203">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="201">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="19" column="1" bodyfile="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" bodystart="19" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classLogger_1a9a40c025bbb82ec7819a95440dbedf30" prot="private" virt="non-virtual"><scope>Logger</scope><name>adapt</name></member>
+      <member refid="classLogger_1ab3c76b5d301fa8eb1e20f779aa179883" prot="public" virt="virtual"><scope>Logger</scope><name>body</name></member>
+      <member refid="classLogger_1a4873cc4cdf21bb837739d5a1e0130330" prot="private" virt="non-virtual"><scope>Logger</scope><name>event</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>Logger</scope><name>getRosNodeName</name></member>
+      <member refid="classLogger_1a4358781880c20ce7e450c06dbd3ceecb" prot="protected" virt="non-virtual"><scope>Logger</scope><name>handle</name></member>
+      <member refid="classLogger_1a2a972e87899a345fbd2c237d3933fd26" prot="public" virt="non-virtual"><scope>Logger</scope><name>Logger</name></member>
+      <member refid="classLogger_1ad1dc4093a3d8c26802357fe2bdb1dabf" prot="private" virt="non-virtual"><scope>Logger</scope><name>Logger</name></member>
+      <member refid="classLogger_1a7a6704564d14bef375851b382f8b2887" prot="private" virt="non-virtual"><scope>Logger</scope><name>now</name></member>
+      <member refid="classLogger_1a643f1fb5e5e4f38efa257f92e8c711a8" prot="private" virt="non-virtual"><scope>Logger</scope><name>operator=</name></member>
+      <member refid="classLogger_1a6b1229127c828c809519d972f857fcf1" prot="private" virt="non-virtual"><scope>Logger</scope><name>persist</name></member>
+      <member refid="classLogger_1a91dc05b6320e8749822ea4b5d4bc816e" prot="public" virt="non-virtual"><scope>Logger</scope><name>receiveAdaptationCommand</name></member>
+      <member refid="classLogger_1a50f782a02a31340bbcd7f55e251484f1" prot="public" virt="non-virtual"><scope>Logger</scope><name>receiveEnergyStatus</name></member>
+      <member refid="classLogger_1ac5d3c71ae88d6e66f1a0f082a621f045" prot="public" virt="non-virtual"><scope>Logger</scope><name>receiveEvent</name></member>
+      <member refid="classLogger_1ae9034d8bf4e3fef539c6eca091cd8c43" prot="public" virt="non-virtual"><scope>Logger</scope><name>receiveStatus</name></member>
+      <member refid="classLogger_1a5e58080a4857c3ceba7cac7c14e96585" prot="public" virt="non-virtual"><scope>Logger</scope><name>receiveUncertainty</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>Logger</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>Logger</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>Logger</scope><name>run</name></member>
+      <member refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" prot="public" virt="virtual"><scope>Logger</scope><name>setUp</name></member>
+      <member refid="classLogger_1a167f0d89fe08597b66ac1b55f915c6e2" prot="private" virt="non-virtual"><scope>Logger</scope><name>status</name></member>
+      <member refid="classLogger_1aba38120a928c4fa5bf74dc92029dade5" prot="public" virt="virtual"><scope>Logger</scope><name>tearDown</name></member>
+      <member refid="classLogger_1a910bc7a303d11f0acdbc9583d0e7d8db" prot="private" virt="non-virtual"><scope>Logger</scope><name>time_ref</name></member>
+      <member refid="classLogger_1acb668a9e186a25fbaad2e4af6d1ed00a" prot="public" virt="virtual"><scope>Logger</scope><name>~Logger</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>Logger</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="AdaptationMessage_8hpp" kind="file" language="C++">
+    <compoundname>AdaptationMessage.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <incdepgraph>
+      <node id="936">
+        <label>string</label>
+      </node>
+      <node id="935">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</label>
+        <link refid="AdaptationMessage_8hpp"/>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="940">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="938">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+      </node>
+      <node id="939">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+      <node id="937">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</label>
+        <link refid="AdaptationMessage_8hpp"/>
+        <childnode refid="938" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAdaptationMessage" prot="public">AdaptationMessage</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ADAPTATION_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADAPTATION_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classAdaptationMessage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAdaptationMessage" kindref="compound">AdaptationMessage</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classAdaptationMessage_1affef4901b50a23f2c26679d1b712ea10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdaptationMessage_1affef4901b50a23f2c26679d1b712ea10" kindref="member">AdaptationMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" kindref="member">timestamp</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" kindref="member">logical_clock</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" kindref="member">source</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" kindref="member">target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" kindref="member">content</ref>)<sp/>:<sp/>name(name),<sp/>timestamp(timestamp),<sp/>logical_clock(logical_clock),<sp/>source(source),<sp/>target(target),<sp/>content(content){};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classAdaptationMessage_1a247af370b7dc198bd0075e4657fce95e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1a247af370b7dc198bd0075e4657fce95e" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" kindref="member">name</ref>;};</highlight></codeline>
+<codeline lineno="12" refid="classAdaptationMessage_1ae98612442ead2c0da9c1df5758ab6913" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classAdaptationMessage_1ae98612442ead2c0da9c1df5758ab6913" kindref="member">getTimestamp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" kindref="member">timestamp</ref>;};</highlight></codeline>
+<codeline lineno="13" refid="classAdaptationMessage_1a9e15075e6e6303ce7d54098cd1f20cd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classAdaptationMessage_1a9e15075e6e6303ce7d54098cd1f20cd6" kindref="member">getLogicalClock</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" kindref="member">logical_clock</ref>;};</highlight></codeline>
+<codeline lineno="14" refid="classAdaptationMessage_1aea71d7d2554aaa0eb2a95abcdaccedd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1aea71d7d2554aaa0eb2a95abcdaccedd1" kindref="member">getSource</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" kindref="member">source</ref>;};</highlight></codeline>
+<codeline lineno="15" refid="classAdaptationMessage_1a29c98add1583cfd5c02c09d924d45931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1a29c98add1583cfd5c02c09d924d45931" kindref="member">getTarget</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" kindref="member">target</ref>;};</highlight></codeline>
+<codeline lineno="16" refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1aaa11680ed61906ebcaa73059f6688c17" kindref="member">getContent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" kindref="member">content</ref>;};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1a031e4096ea0dfd2eacb1b6f593843fc6" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classAdaptationMessage_1affaf7ff8e3ac6e4e26fdfda261fe24a1" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classAdaptationMessage_1a2bd8d181c69ed5f5547a577b4680685a" kindref="member">logical_clock</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1acd9dcfdc576cb28f17ab59ce0f989f6c" kindref="member">source</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1ac12dce0d6cad407001030e1bbeb8eb71" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classAdaptationMessage_1a48210346a227e8eb8cdf0af9fb13b67b" kindref="member">content</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp"/>
+  </compounddef>
+</doxygen>

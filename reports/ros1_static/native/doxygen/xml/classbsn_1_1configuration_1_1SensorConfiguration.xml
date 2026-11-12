@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1configuration_1_1SensorConfiguration" kind="class" language="C++" prot="public">
+    <compoundname>bsn::configuration::SensorConfiguration</compoundname>
+    <includes refid="SensorConfiguration_8hpp" local="no">SensorConfiguration.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1a11c1cedfc3a87d49ad1287d03141d3bd" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t bsn::configuration::SensorConfiguration::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="29" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a5cbb1f6ecadc4bbda6ac273cb4d4e5f5" compoundref="SensorConfiguration_8cpp" startline="47" endline="49">getId</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1ae89e7fd872467dba154397389e432a5a" compoundref="SensorConfiguration_8cpp" startline="51" endline="53">setId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>bsn::range::Range bsn::configuration::SensorConfiguration::lowRisk</definition>
+        <argsstring></argsstring>
+        <name>lowRisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="30" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a8670643b8a6f0e51ef28858c42ef1330" compoundref="SensorConfiguration_8cpp" startline="141" endline="143">getLowRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a62b42b1f5f7fecb9f4c198f1f8c2880c" compoundref="SensorConfiguration_8cpp" startline="145" endline="147">setLowRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" compoundref="SensorConfiguration_8cpp" startline="127" endline="139">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        <definition>std::array&lt;bsn::range::Range, 2&gt; bsn::configuration::SensorConfiguration::mediumRisk</definition>
+        <argsstring></argsstring>
+        <name>mediumRisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="31" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1ace2305e7f554676344e3d6dc15c59c08" compoundref="SensorConfiguration_8cpp" startline="149" endline="151">getMediumRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a3d67705908e159fe7e22fe8da3c6459d" compoundref="SensorConfiguration_8cpp" startline="153" endline="155">setMediumRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" compoundref="SensorConfiguration_8cpp" startline="127" endline="139">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        <definition>std::array&lt;bsn::range::Range, 2&gt; bsn::configuration::SensorConfiguration::highRisk</definition>
+        <argsstring></argsstring>
+        <name>highRisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="32" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1acdfcb71e90acbca6036e0d93a9f7ef8e" compoundref="SensorConfiguration_8cpp" startline="157" endline="159">getHighRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a90b348d540e0ecadc78eee3535506b9c" compoundref="SensorConfiguration_8cpp" startline="175" endline="177">setHighRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" compoundref="SensorConfiguration_8cpp" startline="127" endline="139">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>bsn::range::Range bsn::configuration::SensorConfiguration::lowPercentage</definition>
+        <argsstring></argsstring>
+        <name>lowPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="33" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1acc1264bd8739fdc4d9ddaf0f00552a12" compoundref="SensorConfiguration_8cpp" startline="179" endline="181">getLowPercentage</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" compoundref="SensorConfiguration_8cpp" startline="161" endline="163">isLowRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a234427e4eafc20d2c17449b083735d9a" compoundref="SensorConfiguration_8cpp" startline="183" endline="185">setLowPercentage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>bsn::range::Range bsn::configuration::SensorConfiguration::midPercentage</definition>
+        <argsstring></argsstring>
+        <name>midPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="33" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a84047430dc4ca3d5efc65f454feebf1c" compoundref="SensorConfiguration_8cpp" startline="187" endline="189">getMidPercentage</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" compoundref="SensorConfiguration_8cpp" startline="165" endline="168">isMediumRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a00960001bdeb1905c03b8fb9c6cec556" compoundref="SensorConfiguration_8cpp" startline="191" endline="193">setMidPercentage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" prot="private" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>bsn::range::Range bsn::configuration::SensorConfiguration::highPercentage</definition>
+        <argsstring></argsstring>
+        <name>highPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="33" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a44ff7709db274eaa05ea8d41c6028e16" compoundref="SensorConfiguration_8cpp" startline="195" endline="197">getHighPercentage</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" compoundref="SensorConfiguration_8cpp" startline="170" endline="173">isHighRisk</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" compoundref="SensorConfiguration_8cpp" startline="8" endline="15">SensorConfiguration</referencedby>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad877e9ac2d6a98476ef8ac47f7414390" compoundref="SensorConfiguration_8cpp" startline="199" endline="201">setHighPercentage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::configuration::SensorConfiguration::SensorConfiguration</definition>
+        <argsstring>()</argsstring>
+        <name>SensorConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="17" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="8" bodyend="15"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" compoundref="SensorConfiguration_8hpp" startline="33">highPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" compoundref="SensorConfiguration_8hpp" startline="32">highRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a11c1cedfc3a87d49ad1287d03141d3bd" compoundref="SensorConfiguration_8hpp" startline="29">id</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" compoundref="SensorConfiguration_8hpp" startline="33">lowPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" compoundref="SensorConfiguration_8hpp" startline="30">lowRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" compoundref="SensorConfiguration_8hpp" startline="31">mediumRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" compoundref="SensorConfiguration_8hpp" startline="33">midPercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a803a3b49f6089d753ddaf27d331d2b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::configuration::SensorConfiguration::SensorConfiguration</definition>
+        <argsstring>(int32_t i, bsn::range::Range, std::array&lt; bsn::range::Range, 2 &gt;, std::array&lt; bsn::range::Range, 2 &gt;, std::array&lt; bsn::range::Range, 3 &gt;)</argsstring>
+        <name>SensorConfiguration</name>
+        <param>
+          <type>int32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        </param>
+        <param>
+          <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        </param>
+        <param>
+          <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        </param>
+        <param>
+          <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 3 &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a0f355f6a8201854b703c2ecf62e46cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::configuration::SensorConfiguration::SensorConfiguration</definition>
+        <argsstring>(const SensorConfiguration &amp;)</argsstring>
+        <name>SensorConfiguration</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1configuration_1_1SensorConfiguration" kindref="compound">SensorConfiguration</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="24" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1configuration_1_1SensorConfiguration" kindref="compound">SensorConfiguration</ref> &amp;</type>
+        <definition>SensorConfiguration &amp; bsn::configuration::SensorConfiguration::operator=</definition>
+        <argsstring>(const SensorConfiguration &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1configuration_1_1SensorConfiguration" kindref="compound">SensorConfiguration</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="25" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="36" bodyend="45"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a44ff7709db274eaa05ea8d41c6028e16" compoundref="SensorConfiguration_8cpp" startline="195" endline="197">getHighPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1acdfcb71e90acbca6036e0d93a9f7ef8e" compoundref="SensorConfiguration_8cpp" startline="157" endline="159">getHighRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a5cbb1f6ecadc4bbda6ac273cb4d4e5f5" compoundref="SensorConfiguration_8cpp" startline="47" endline="49">getId</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1acc1264bd8739fdc4d9ddaf0f00552a12" compoundref="SensorConfiguration_8cpp" startline="179" endline="181">getLowPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a8670643b8a6f0e51ef28858c42ef1330" compoundref="SensorConfiguration_8cpp" startline="141" endline="143">getLowRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ace2305e7f554676344e3d6dc15c59c08" compoundref="SensorConfiguration_8cpp" startline="149" endline="151">getMediumRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a84047430dc4ca3d5efc65f454feebf1c" compoundref="SensorConfiguration_8cpp" startline="187" endline="189">getMidPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" compoundref="SensorConfiguration_8hpp" startline="33">highPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" compoundref="SensorConfiguration_8hpp" startline="32">highRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" compoundref="SensorConfiguration_8hpp" startline="33">lowPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" compoundref="SensorConfiguration_8hpp" startline="30">lowRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" compoundref="SensorConfiguration_8hpp" startline="31">mediumRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" compoundref="SensorConfiguration_8hpp" startline="33">midPercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::configuration::SensorConfiguration::evaluateNumber</definition>
+        <argsstring>(double number)</argsstring>
+        <name>evaluateNumber</name>
+        <param>
+          <type>double</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="38" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="94" bodyend="125"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" compoundref="SensorConfiguration_8cpp" startline="86" endline="92">convertRealPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1aab092b8b249eda7ee53a38ec45ba9421" compoundref="SensorConfiguration_8cpp" startline="56" endline="84">getDisplacement</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" compoundref="SensorConfiguration_8hpp" startline="33">highPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" compoundref="SensorConfiguration_8hpp" startline="32">highRisk</references>
+        <references refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" compoundref="Range_8cpp" startline="29" endline="31">bsn::range::Range::in_range</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" compoundref="SensorConfiguration_8hpp" startline="33">lowPercentage</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" compoundref="SensorConfiguration_8hpp" startline="30">lowRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" compoundref="SensorConfiguration_8hpp" startline="31">mediumRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" compoundref="SensorConfiguration_8hpp" startline="33">midPercentage</references>
+        <referencedby refid="classG3T1__1_1a4696c0b3b423e6d0efe2a6f3f6e84cfa" compoundref="G3T1__1_8cpp" startline="90" endline="135">G3T1_1::collect</referencedby>
+        <referencedby refid="classG3T1__3_1a3519014bd56d810164d86d9756169c44" compoundref="G3T1__3_8cpp" startline="87" endline="123">G3T1_3::collect</referencedby>
+        <referencedby refid="classG3T1__5_1a1aa8fb64b30b7263df5c2189fb5995dc" compoundref="G3T1__5_8cpp" startline="87" endline="107">G3T1_5::collect</referencedby>
+        <referencedby refid="classG3T1__6_1a0deb9a2b913d7753ef6708ccbd87df34" compoundref="G3T1__6_8cpp" startline="88" endline="108">G3T1_6::collect</referencedby>
+        <referencedby refid="classG3T1__2_1af0d9cc4619906329eeb799c5a35e142a" compoundref="G3T1__2_8cpp" startline="85" endline="119">G3T1_2::collect</referencedby>
+        <referencedby refid="classG3T1__4_1aac00c133f2199079b671b3094496fb33" compoundref="G3T1__4_8cpp" startline="87" endline="107">G3T1_4::collect</referencedby>
+        <referencedby refid="classG3T1__2_1ac437972ecabb9e234c8717101d51eac8" compoundref="G3T1__2_8cpp" startline="134" endline="156">G3T1_2::transfer</referencedby>
+        <referencedby refid="classG3T1__3_1a4bd1c419743c7c128fd1c3cf4fa5e434" compoundref="G3T1__3_8cpp" startline="138" endline="158">G3T1_3::transfer</referencedby>
+        <referencedby refid="classG3T1__1_1a58277c46b8319bd35e3ffabd52805874" compoundref="G3T1__1_8cpp" startline="150" endline="173">G3T1_1::transfer</referencedby>
+        <referencedby refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" compoundref="G3T1__6_8cpp" startline="123" endline="143">G3T1_6::transfer</referencedby>
+        <referencedby refid="classG3T1__4_1a20ad5272beba24e4879fb29985b85f69" compoundref="G3T1__4_8cpp" startline="122" endline="142">G3T1_4::transfer</referencedby>
+        <referencedby refid="classG3T1__5_1ae9918da7342a4fb88c6f633db43b9fe8" compoundref="G3T1__5_8cpp" startline="122" endline="142">G3T1_5::transfer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1aab092b8b249eda7ee53a38ec45ba9421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::configuration::SensorConfiguration::getDisplacement</definition>
+        <argsstring>(bsn::range::Range, double, std::string)</argsstring>
+        <name>getDisplacement</name>
+        <param>
+          <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="41" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="56" bodyend="84"/>
+        <references refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" compoundref="Range_8cpp" startline="48" endline="50">bsn::range::Range::getLowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" compoundref="Range_8cpp" startline="56" endline="58">bsn::range::Range::getUpperBound</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double bsn::configuration::SensorConfiguration::convertRealPercentage</definition>
+        <argsstring>(bsn::range::Range range, double number)</argsstring>
+        <name>convertRealPercentage</name>
+        <param>
+          <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="44" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="86" bodyend="92"/>
+        <references refid="classbsn_1_1range_1_1Range_1ab8b7c15c1b6dc5c0e2c57b968271ac3b" compoundref="Range_8cpp" startline="33" endline="38">bsn::range::Range::convert</references>
+        <references refid="classbsn_1_1range_1_1Range_1a0785d0aa7d5463bcdd3842089069a2e7" compoundref="Range_8cpp" startline="48" endline="50">bsn::range::Range::getLowerBound</references>
+        <references refid="classbsn_1_1range_1_1Range_1a540c2181ec15a65b189a7fb89659f388" compoundref="Range_8cpp" startline="56" endline="58">bsn::range::Range::getUpperBound</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" compoundref="SensorConfiguration_8cpp" startline="94" endline="125">evaluateNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::configuration::SensorConfiguration::isLowRisk</definition>
+        <argsstring>(double)</argsstring>
+        <name>isLowRisk</name>
+        <param>
+          <type>double</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="47" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="161" bodyend="163"/>
+        <references refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" compoundref="Range_8cpp" startline="29" endline="31">bsn::range::Range::in_range</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" compoundref="SensorConfiguration_8hpp" startline="33">lowPercentage</references>
+        <referencedby refid="classG3T1__1_1ac520f751e76c00a16d47070d37a003c0" compoundref="G3T1__1_8cpp" startline="175" endline="196">G3T1_1::label</referencedby>
+        <referencedby refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" compoundref="G3T1__6_8cpp" startline="145" endline="158">G3T1_6::label</referencedby>
+        <referencedby refid="classG3T1__5_1ab459ba1325060ec80bfe8908512a2855" compoundref="G3T1__5_8cpp" startline="144" endline="157">G3T1_5::label</referencedby>
+        <referencedby refid="classG3T1__4_1af0fc42d30f6d230e14318bd2cf34fe30" compoundref="G3T1__4_8cpp" startline="144" endline="157">G3T1_4::label</referencedby>
+        <referencedby refid="classG3T1__3_1abcb75a52b8c7bfd9cbdbb34f73af3996" compoundref="G3T1__3_8cpp" startline="160" endline="173">G3T1_3::label</referencedby>
+        <referencedby refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" compoundref="G3T1__2_8cpp" startline="158" endline="171">G3T1_2::label</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::configuration::SensorConfiguration::isMediumRisk</definition>
+        <argsstring>(double)</argsstring>
+        <name>isMediumRisk</name>
+        <param>
+          <type>double</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="50" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="165" bodyend="168"/>
+        <references refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" compoundref="Range_8cpp" startline="29" endline="31">bsn::range::Range::in_range</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" compoundref="SensorConfiguration_8hpp" startline="33">midPercentage</references>
+        <referencedby refid="classG3T1__1_1ac520f751e76c00a16d47070d37a003c0" compoundref="G3T1__1_8cpp" startline="175" endline="196">G3T1_1::label</referencedby>
+        <referencedby refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" compoundref="G3T1__6_8cpp" startline="145" endline="158">G3T1_6::label</referencedby>
+        <referencedby refid="classG3T1__5_1ab459ba1325060ec80bfe8908512a2855" compoundref="G3T1__5_8cpp" startline="144" endline="157">G3T1_5::label</referencedby>
+        <referencedby refid="classG3T1__4_1af0fc42d30f6d230e14318bd2cf34fe30" compoundref="G3T1__4_8cpp" startline="144" endline="157">G3T1_4::label</referencedby>
+        <referencedby refid="classG3T1__3_1abcb75a52b8c7bfd9cbdbb34f73af3996" compoundref="G3T1__3_8cpp" startline="160" endline="173">G3T1_3::label</referencedby>
+        <referencedby refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" compoundref="G3T1__2_8cpp" startline="158" endline="171">G3T1_2::label</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::configuration::SensorConfiguration::isHighRisk</definition>
+        <argsstring>(double)</argsstring>
+        <name>isHighRisk</name>
+        <param>
+          <type>double</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="53" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="170" bodyend="173"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" compoundref="SensorConfiguration_8hpp" startline="33">highPercentage</references>
+        <references refid="classbsn_1_1range_1_1Range_1a803a947a39a06176384e00e2ad758ec9" compoundref="Range_8cpp" startline="29" endline="31">bsn::range::Range::in_range</references>
+        <referencedby refid="classG3T1__1_1ac520f751e76c00a16d47070d37a003c0" compoundref="G3T1__1_8cpp" startline="175" endline="196">G3T1_1::label</referencedby>
+        <referencedby refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" compoundref="G3T1__6_8cpp" startline="145" endline="158">G3T1_6::label</referencedby>
+        <referencedby refid="classG3T1__5_1ab459ba1325060ec80bfe8908512a2855" compoundref="G3T1__5_8cpp" startline="144" endline="157">G3T1_5::label</referencedby>
+        <referencedby refid="classG3T1__4_1af0fc42d30f6d230e14318bd2cf34fe30" compoundref="G3T1__4_8cpp" startline="144" endline="157">G3T1_4::label</referencedby>
+        <referencedby refid="classG3T1__3_1abcb75a52b8c7bfd9cbdbb34f73af3996" compoundref="G3T1__3_8cpp" startline="160" endline="173">G3T1_3::label</referencedby>
+        <referencedby refid="classG3T1__2_1ac5fd5af16314c4ee65c213b2bde136ca" compoundref="G3T1__2_8cpp" startline="158" endline="171">G3T1_2::label</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a5cbb1f6ecadc4bbda6ac273cb4d4e5f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t bsn::configuration::SensorConfiguration::getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="55" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="47" bodyend="49"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a11c1cedfc3a87d49ad1287d03141d3bd" compoundref="SensorConfiguration_8hpp" startline="29">id</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1ae89e7fd872467dba154397389e432a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setId</definition>
+        <argsstring>(const int32_t)</argsstring>
+        <name>setId</name>
+        <param>
+          <type>const int32_t</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="56" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="51" bodyend="53"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a11c1cedfc3a87d49ad1287d03141d3bd" compoundref="SensorConfiguration_8hpp" startline="29">id</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a8670643b8a6f0e51ef28858c42ef1330" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>Range bsn::configuration::SensorConfiguration::getLowRisk</definition>
+        <argsstring>() const</argsstring>
+        <name>getLowRisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="58" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="141" bodyend="143"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" compoundref="SensorConfiguration_8hpp" startline="30">lowRisk</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a62b42b1f5f7fecb9f4c198f1f8c2880c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setLowRisk</definition>
+        <argsstring>(const bsn::range::Range)</argsstring>
+        <name>setLowRisk</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+          <defname>l</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="59" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="145" bodyend="147"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" compoundref="SensorConfiguration_8hpp" startline="30">lowRisk</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1ace2305e7f554676344e3d6dc15c59c08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        <definition>array&lt; Range, 2 &gt; bsn::configuration::SensorConfiguration::getMediumRisk</definition>
+        <argsstring>() const</argsstring>
+        <name>getMediumRisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="61" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="149" bodyend="151"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" compoundref="SensorConfiguration_8hpp" startline="31">mediumRisk</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a3d67705908e159fe7e22fe8da3c6459d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setMediumRisk</definition>
+        <argsstring>(const std::array&lt; bsn::range::Range, 2 &gt;)</argsstring>
+        <name>setMediumRisk</name>
+        <param>
+          <type>const std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="62" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="153" bodyend="155"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" compoundref="SensorConfiguration_8hpp" startline="31">mediumRisk</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1acdfcb71e90acbca6036e0d93a9f7ef8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        <definition>array&lt; Range, 2 &gt; bsn::configuration::SensorConfiguration::getHighRisk</definition>
+        <argsstring>() const</argsstring>
+        <name>getHighRisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="64" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="157" bodyend="159"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" compoundref="SensorConfiguration_8hpp" startline="32">highRisk</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a90b348d540e0ecadc78eee3535506b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setHighRisk</definition>
+        <argsstring>(const std::array&lt; bsn::range::Range, 2 &gt;)</argsstring>
+        <name>setHighRisk</name>
+        <param>
+          <type>const std::array&lt; <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref>, 2 &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="65" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="175" bodyend="177"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" compoundref="SensorConfiguration_8hpp" startline="32">highRisk</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1acc1264bd8739fdc4d9ddaf0f00552a12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>Range bsn::configuration::SensorConfiguration::getLowPercentage</definition>
+        <argsstring>() const</argsstring>
+        <name>getLowPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="67" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="179" bodyend="181"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" compoundref="SensorConfiguration_8hpp" startline="33">lowPercentage</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a234427e4eafc20d2c17449b083735d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setLowPercentage</definition>
+        <argsstring>(const bsn::range::Range)</argsstring>
+        <name>setLowPercentage</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+          <defname>lp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="68" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="183" bodyend="185"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" compoundref="SensorConfiguration_8hpp" startline="33">lowPercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a84047430dc4ca3d5efc65f454feebf1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>Range bsn::configuration::SensorConfiguration::getMidPercentage</definition>
+        <argsstring>() const</argsstring>
+        <name>getMidPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="70" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="187" bodyend="189"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" compoundref="SensorConfiguration_8hpp" startline="33">midPercentage</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a00960001bdeb1905c03b8fb9c6cec556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setMidPercentage</definition>
+        <argsstring>(const bsn::range::Range)</argsstring>
+        <name>setMidPercentage</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+          <defname>mp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="71" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="191" bodyend="193"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" compoundref="SensorConfiguration_8hpp" startline="33">midPercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1a44ff7709db274eaa05ea8d41c6028e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+        <definition>Range bsn::configuration::SensorConfiguration::getHighPercentage</definition>
+        <argsstring>() const</argsstring>
+        <name>getHighPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="73" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="195" bodyend="197"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" compoundref="SensorConfiguration_8hpp" startline="33">highPercentage</references>
+        <referencedby refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" compoundref="SensorConfiguration_8cpp" startline="36" endline="45">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1ad877e9ac2d6a98476ef8ac47f7414390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::configuration::SensorConfiguration::setHighPercentage</definition>
+        <argsstring>(const bsn::range::Range)</argsstring>
+        <name>setHighPercentage</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1range_1_1Range" kindref="compound">bsn::range::Range</ref></type>
+          <defname>hp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="74" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="199" bodyend="201"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" compoundref="SensorConfiguration_8hpp" startline="33">highPercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const string bsn::configuration::SensorConfiguration::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="76" column="1" bodyfile="src/libbsn/src/configuration/SensorConfiguration.cpp" bodystart="127" bodyend="139"/>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" compoundref="SensorConfiguration_8hpp" startline="32">highRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" compoundref="SensorConfiguration_8hpp" startline="30">lowRisk</references>
+        <references refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" compoundref="SensorConfiguration_8hpp" startline="31">mediumRisk</references>
+        <references refid="classbsn_1_1range_1_1Range_1a57ec2c109250336e0308c1a2482d74f5" compoundref="Range_8cpp" startline="40" endline="42">bsn::range::Range::to_print</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="284">
+        <label>bsn::configuration::SensorConfiguration</label>
+        <link refid="classbsn_1_1configuration_1_1SensorConfiguration"/>
+        <childnode refid="285" relation="usage">
+          <edgelabel>highPercentage</edgelabel>
+          <edgelabel>midPercentage</edgelabel>
+          <edgelabel>lowPercentage</edgelabel>
+          <edgelabel>lowRisk</edgelabel>
+        </childnode>
+      </node>
+      <node id="285">
+        <label>bsn::range::Range</label>
+        <link refid="classbsn_1_1range_1_1Range"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="15" column="1" bodyfile="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" bodystart="15" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1aeb452f9154ebbc75bd54564fa0f94430" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>convertRealPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>evaluateNumber</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1aab092b8b249eda7ee53a38ec45ba9421" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getDisplacement</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a44ff7709db274eaa05ea8d41c6028e16" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getHighPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1acdfcb71e90acbca6036e0d93a9f7ef8e" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getHighRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a5cbb1f6ecadc4bbda6ac273cb4d4e5f5" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getId</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1acc1264bd8739fdc4d9ddaf0f00552a12" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getLowPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a8670643b8a6f0e51ef28858c42ef1330" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getLowRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ace2305e7f554676344e3d6dc15c59c08" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getMediumRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a84047430dc4ca3d5efc65f454feebf1c" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>getMidPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad974a05b5b51ab10399c502497d35320" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>highPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a68a10095ba89658e18779d04edc1bc18" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>highRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a11c1cedfc3a87d49ad1287d03141d3bd" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>id</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>isHighRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>isLowRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>isMediumRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a14676b77ffc31adeaaf12c7598597d89" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>lowPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad6d17a92d0bddaa7520a918b8a0cd6da" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>lowRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a693cee709b7fc0dafb84d413049d2412" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>mediumRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a70af65c922cf038a017ce1fcde6b8847" prot="private" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>midPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a4e7f120c65314cf58e2ef487ba57dd63" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a17f3cbbab72c23bae4aafa86789db509" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>SensorConfiguration</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a803a3b49f6089d753ddaf27d331d2b4d" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>SensorConfiguration</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a0f355f6a8201854b703c2ecf62e46cf4" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>SensorConfiguration</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad877e9ac2d6a98476ef8ac47f7414390" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setHighPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a90b348d540e0ecadc78eee3535506b9c" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setHighRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1ae89e7fd872467dba154397389e432a5a" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setId</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a234427e4eafc20d2c17449b083735d9a" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setLowPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a62b42b1f5f7fecb9f4c198f1f8c2880c" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setLowRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a3d67705908e159fe7e22fe8da3c6459d" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setMediumRisk</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1a00960001bdeb1905c03b8fb9c6cec556" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>setMidPercentage</name></member>
+      <member refid="classbsn_1_1configuration_1_1SensorConfiguration_1af51e385f3664a67a9459d3efc32175d0" prot="public" virt="non-virtual"><scope>bsn::configuration::SensorConfiguration</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

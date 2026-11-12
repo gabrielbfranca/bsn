@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn" kind="namespace" language="C++">
+    <compoundname>bsn</compoundname>
+    <innernamespace refid="namespacebsn_1_1configuration">bsn::configuration</innernamespace>
+    <innernamespace refid="namespacebsn_1_1filters">bsn::filters</innernamespace>
+    <innernamespace refid="namespacebsn_1_1generator">bsn::generator</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <innernamespace refid="namespacebsn_1_1model">bsn::model</innernamespace>
+    <innernamespace refid="namespacebsn_1_1processor">bsn::processor</innernamespace>
+    <innernamespace refid="namespacebsn_1_1range">bsn::range</innernamespace>
+    <innernamespace refid="namespacebsn_1_1resource">bsn::resource</innernamespace>
+    <innernamespace refid="namespacebsn_1_1time">bsn::time</innernamespace>
+    <innernamespace refid="namespacebsn_1_1utils">bsn::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="12" column="1"/>
+  </compounddef>
+</doxygen>

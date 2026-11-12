@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Formula-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="71" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="10" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="3" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="23.667" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="3.333" level="0" />
+<weighted_methods_per_class_unity value="13" level="0" />
+<weighted_methods_per_class_visibility value="1" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="5" level="0" />
+<IF4 value="16" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="16" level="0" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="9" level="0" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="13" />
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Formula()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="16" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="6" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Formula(const Formula &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="21" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="23" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Formula(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="17" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="7" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Formula(const string &amp;,const vector,const vector)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="18" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="10" />
+</extent>
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>evaluate()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="31" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="57" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getExpression()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="24" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="31" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getTermValueMap()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="27" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="39" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getTerms()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="32" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="70" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const Formula &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="22" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="25" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setExpression(const CompiledExpression &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="25" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="35" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setTermValueMap(const map &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="29" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="53" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setTermValueMap(const vector &amp;,const vector &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="28" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="43" />
+</extent>
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~Formula()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="19" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="21" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Formula</name>
+<client_module>
+<name>Engine</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="58" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="74" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="135" />
+</extent>
+</client_module>
+<supplier_module>
+<name>CompiledExpression</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="25" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="35" />
+</extent>
+<name>map</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="29" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="53" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="10" />
+</extent>
+<name>vector</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="28" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/model/Formula.hpp" line="28" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="10" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="10" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="43" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/model/Formula.cpp" line="43" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

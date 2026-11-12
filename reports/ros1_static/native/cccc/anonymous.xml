@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module anonymous-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="180" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="53" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="35" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="5.143" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.514" level="0" />
+<weighted_methods_per_class_unity value="11" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>data_fuse(vector)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/processor/Processor.hpp" line="13" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/processor/Processor.cpp" line="32" />
+</extent>
+<lines_of_code value="60" level="1" />
+<McCabes_cyclomatic_complexity value="14" level="1" />
+<lines_of_comment value="9" level="0" />
+<lines_of_code_per_line_of_comment value="6.667" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.556" level="0" />
+</member_function>
+<member_function>
+<name>fetch_formula(string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="14" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>get_sensor_id(string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/processor/Processor.hpp" line="14" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/processor/Processor.cpp" line="8" />
+</extent>
+<lines_of_code value="18" level="0" />
+<McCabes_cyclomatic_complexity value="13" level="1" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="13.000" level="2" />
+</member_function>
+<member_function>
+<name>get_value(string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/processor/Processor.hpp" line="16" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/processor/Processor.cpp" line="27" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>main(int,char **)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/environment/patient/apps/patient.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/apps/logger.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/simulation/injector/apps/injector.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp" line="5" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp" line="5" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/apps/controller.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/apps/enactor.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/probes/collector/apps/collector.cpp" line="3" />
+</extent>
+<lines_of_code value="38" level="1" />
+<McCabes_cyclomatic_complexity value="11" level="1" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>main(int32_t,char **)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp" line="3" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/target_system/components/component/apps/g4t1.cpp" line="3" />
+</extent>
+<lines_of_code value="19" level="0" />
+<McCabes_cyclomatic_complexity value="6" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>midPercentage(...)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="24" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator &lt;&lt;(ostream &amp;,const Node &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Node.cpp" line="32" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>probabilityGenerator(...)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/src/generator/DataGenerator.cpp" line="23" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>shutdownOnSignal(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/archlib/src/ROSComponent.cpp" line="29" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="24" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>split(const string &amp;,const char &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/utils/utils.hpp" line="10" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/utils/utils.cpp" line="8" />
+</extent>
+<lines_of_code value="17" level="0" />
+<McCabes_cyclomatic_complexity value="6" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>anonymous</name>
+<client_module>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

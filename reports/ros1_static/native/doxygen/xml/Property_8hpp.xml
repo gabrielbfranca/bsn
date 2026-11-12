@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Property_8hpp" kind="file" language="C++">
+    <compoundname>Property.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="LeafTask_8hpp" local="yes">src/libbsn/include/libbsn/goalmodel/LeafTask.hpp</includedby>
+    <includedby refid="Property_8cpp" local="yes">src/libbsn/src/goalmodel/Property.cpp</includedby>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <includedby refid="CostEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</includedby>
+    <includedby refid="Engine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</includedby>
+    <includedby refid="ReliabilityEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</includedby>
+    <incdepgraph>
+      <node id="490">
+        <label>string</label>
+      </node>
+      <node id="489">
+        <label>src/libbsn/include/libbsn/goalmodel/Property.hpp</label>
+        <link refid="Property_8hpp"/>
+        <childnode refid="490" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="497">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="502">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</label>
+        <link refid="ReliabilityEngine_8hpp"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>src/libbsn/include/libbsn/goalmodel/GoalTree.hpp</label>
+        <link refid="GoalTree_8hpp"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>src/libbsn/src/goalmodel/Property.cpp</label>
+        <link refid="Property_8cpp"/>
+      </node>
+      <node id="504">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</label>
+        <link refid="ReliabilityEngine_8cpp"/>
+      </node>
+      <node id="501">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</label>
+        <link refid="Engine_8hpp"/>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</label>
+        <link refid="CostEngine_8hpp"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+      <node id="499">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp</label>
+        <link refid="cost__engine_8cpp"/>
+      </node>
+      <node id="491">
+        <label>src/libbsn/include/libbsn/goalmodel/Property.hpp</label>
+        <link refid="Property_8hpp"/>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</label>
+        <link refid="Engine_8cpp"/>
+      </node>
+      <node id="494">
+        <label>src/libbsn/src/goalmodel/GoalTree.cpp</label>
+        <link refid="GoalTree_8cpp"/>
+      </node>
+      <node id="500">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</label>
+        <link refid="CostEngine_8cpp"/>
+      </node>
+      <node id="506">
+        <label>src/libbsn/src/goalmodel/LeafTask.cpp</label>
+        <link refid="LeafTask_8cpp"/>
+      </node>
+      <node id="503">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp</label>
+        <link refid="reli__engine_8cpp"/>
+      </node>
+      <node id="492">
+        <label>src/libbsn/include/libbsn/goalmodel/LeafTask.hpp</label>
+        <link refid="LeafTask_8hpp"/>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Property" prot="public">bsn::goalmodel::Property</innerclass>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GOALMODEL_PROPERTY_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GOALMODEL_PROPERTY_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">goalmodel<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classbsn_1_1goalmodel_1_1Property" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kindref="member">Property</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="comment">/*id*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*value*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kindref="member">Property</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a055610f0f055ffaadbff8e9d1cdfedf3" kindref="member">~Property</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kindref="member">Property</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1Property_1a672a0f9fd98584a8a15c5a369749a016" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1ad89fe95a6b2f52f3acd66e0bbbb3f234" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;</highlight><highlight class="comment">/*rhs*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afbd7182447d01a0d38e8e77b34e39796" kindref="member">setID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="comment">/*id*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a6093b47a372aee1ee4e61a6c33ad8a5f" kindref="member">getID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1aafcff8276f40f47fb53cdc4c51c26363" kindref="member">setValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="comment">/*value*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a333f562fecf724207a06034e1baa9ca7" kindref="member">getValue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/include/libbsn/goalmodel/Property.hpp"/>
+  </compounddef>
+</doxygen>

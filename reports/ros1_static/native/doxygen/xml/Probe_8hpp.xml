@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Probe_8hpp" kind="file" language="C++">
+    <compoundname>Probe.hpp</compoundname>
+    <includes local="yes">ros/ros.h</includes>
+    <includes local="yes">archlib/Event.h</includes>
+    <includes local="yes">archlib/Status.h</includes>
+    <includes local="yes">archlib/EnergyStatus.h</includes>
+    <includes refid="ROSComponent_8hpp" local="yes">archlib/ROSComponent.hpp</includes>
+    <includedby refid="Probe_8cpp" local="yes">src/archlib/src/target_system/Probe.cpp</includedby>
+    <includedby refid="collector_8cpp" local="yes">src/sa-bsn/target_system/probes/collector/apps/collector.cpp</includedby>
+    <incdepgraph>
+      <node id="189">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="195">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>src/archlib/include/archlib/target_system/Probe.hpp</label>
+        <link refid="Probe_8hpp"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>stdexcept</label>
+      </node>
+      <node id="193">
+        <label>string</label>
+      </node>
+      <node id="192">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="188">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="191">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="196">
+        <label>src/archlib/include/archlib/target_system/Probe.hpp</label>
+        <link refid="Probe_8hpp"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>src/sa-bsn/target_system/probes/collector/apps/collector.cpp</label>
+        <link refid="collector_8cpp"/>
+      </node>
+      <node id="197">
+        <label>src/archlib/src/target_system/Probe.cpp</label>
+        <link refid="Probe_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classarch_1_1target__system_1_1Probe" prot="public">arch::target_system::Probe</innerclass>
+    <innernamespace refid="namespacearch">arch</innernamespace>
+    <innernamespace refid="namespacearch_1_1target__system">arch::target_system</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PROBE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROBE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/ros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Status.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EnergyStatus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ROSComponent_8hpp" kindref="compound">archlib/ROSComponent.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacearch" kindref="compound">arch</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">target_system<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classarch_1_1target__system_1_1Probe" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1ROSComponent" kindref="compound">ROSComponent</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Probe_1aa7671d98e7f8b9dc178859bc18137a35" kindref="member">Probe</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a061d84c285240c95d036d19b32a38544" kindref="member">~Probe</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Probe_1aa7671d98e7f8b9dc178859bc18137a35" kindref="member">Probe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref><sp/>&amp;<ref refid="classarch_1_1target__system_1_1Probe_1a847c67ff49de90ec098dd19ac4646676" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a367bbc30a9c31b49b8684ce5c6849b2e" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a01aead06d320f6f2e583a1dbcf0990cf" kindref="member">collectEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Event::ConstPtr&amp;<sp/></highlight><highlight class="comment">/*msg*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a2e582662575d5bec28730fd3b95296de" kindref="member">collectStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Status::ConstPtr&amp;<sp/></highlight><highlight class="comment">/*msg*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1target__system_1_1Probe_1a38c77474a3a960522c0abda3d0fb9b30" kindref="member">collectEnergyStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::EnergyStatus::ConstPtr&amp;<sp/></highlight><highlight class="comment">/*msg*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="classarch_1_1target__system_1_1Probe_1a0dfdc16fd9743a56583fcc3892a1acf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/><ref refid="classarch_1_1target__system_1_1Probe_1a0dfdc16fd9743a56583fcc3892a1acf8" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="classarch_1_1target__system_1_1Probe_1af5bc2bfcd0f19f7b97cd661e8bc18150" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Subscriber<sp/><ref refid="classarch_1_1target__system_1_1Probe_1af5bc2bfcd0f19f7b97cd661e8bc18150" kindref="member">collect_event</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classarch_1_1target__system_1_1Probe_1a66e9a2150e45645168ec2b2c034e536d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Subscriber<sp/><ref refid="classarch_1_1target__system_1_1Probe_1a66e9a2150e45645168ec2b2c034e536d" kindref="member">collect_status</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classarch_1_1target__system_1_1Probe_1aa34af4eec6a80fefb32c13e5739b171d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Subscriber<sp/><ref refid="classarch_1_1target__system_1_1Probe_1aa34af4eec6a80fefb32c13e5739b171d" kindref="member">collect_energy_status</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" kindref="member">log_event</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" kindref="member">log_status</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::Publisher<sp/><ref refid="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" kindref="member">log_energy_status</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/archlib/include/archlib/target_system/Probe.hpp"/>
+  </compounddef>
+</doxygen>

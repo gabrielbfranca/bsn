@@ -1,0 +1,15 @@
+1,1,9,0,1,"fixtures::SharedState::a@3-3@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SharedState::a","fixtures::SharedState::a()",3,3
+1,1,9,0,1,"fixtures::SharedState::b@3-3@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SharedState::b","fixtures::SharedState::b()",3,3
+1,1,15,0,1,"fixtures::SplitState::SplitState@4-4@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SplitState::SplitState","fixtures::SplitState::SplitState()",4,4
+1,1,9,0,1,"fixtures::SplitState::a@4-4@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SplitState::a","fixtures::SplitState::a()",4,4
+1,1,9,0,1,"fixtures::SplitState::b@4-4@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SplitState::b","fixtures::SplitState::b()",4,4
+1,1,9,0,1,"fixtures::CallBridge::a@5-5@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::CallBridge::a","fixtures::CallBridge::a()",5,5
+1,1,9,0,1,"fixtures::CallBridge::b@5-5@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::CallBridge::b","fixtures::CallBridge::b()",5,5
+1,1,5,0,1,"fixtures::OnlyConstructor::OnlyConstructor@6-6@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::OnlyConstructor::OnlyConstructor","fixtures::OnlyConstructor::OnlyConstructor()",6,6
+1,1,8,0,1,"fixtures::Stateless::a@7-7@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::Stateless::a","fixtures::Stateless::a()",7,7
+1,1,8,0,1,"fixtures::Stateless::b@7-7@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::Stateless::b","fixtures::Stateless::b()",7,7
+1,1,8,0,1,"fixtures::SeparateGetters::a@8-8@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SeparateGetters::a","fixtures::SeparateGetters::a()",8,8
+1,1,8,0,1,"fixtures::SeparateGetters::b@8-8@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","fixtures::SeparateGetters::b","fixtures::SeparateGetters::b()",8,8
+1,1,8,0,1,"second::Branch::inlineMethod@16-16@tools/ros1_metrics/fixtures/classes.hpp","tools/ros1_metrics/fixtures/classes.hpp","second::Branch::inlineMethod","second::Branch::inlineMethod()",16,16
+1,1,14,1,1,"fixtures::Branch::linear@2-2@tools/ros1_metrics/fixtures/classes.cpp","tools/ros1_metrics/fixtures/classes.cpp","fixtures::Branch::linear","fixtures::Branch::linear( int x)",2,2
+1,2,24,1,1,"fixtures::Branch::branch@3-3@tools/ros1_metrics/fixtures/classes.cpp","tools/ros1_metrics/fixtures/classes.cpp","fixtures::Branch::branch","fixtures::Branch::branch( int x)",3,3

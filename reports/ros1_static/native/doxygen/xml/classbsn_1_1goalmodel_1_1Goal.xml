@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1goalmodel_1_1Goal" kind="class" language="C++" prot="public">
+    <compoundname>bsn::goalmodel::Goal</compoundname>
+    <basecompoundref refid="classbsn_1_1goalmodel_1_1Node" prot="public" virt="non-virtual">bsn::goalmodel::Node</basecompoundref>
+    <includes refid="Goal_8hpp" local="no">Goal.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Goal_1a2139d0c1be339d6a7f3a3d172edc8b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Goal::Goal</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>Goal</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Goal.hpp" line="16" column="1" bodyfile="src/libbsn/src/goalmodel/Goal.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Goal_1a86bb68efd40be42eba58f01fd2f1be1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Goal::Goal</definition>
+        <argsstring>()</argsstring>
+        <name>Goal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Goal.hpp" line="17" column="1" bodyfile="src/libbsn/src/goalmodel/Goal.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Goal_1a5e9e234511d91cd837499e98b994d91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Goal::~Goal</definition>
+        <argsstring>()</argsstring>
+        <name>~Goal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Goal.hpp" line="18" column="1" bodyfile="src/libbsn/src/goalmodel/Goal.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="181">
+        <label>bsn::goalmodel::Node</label>
+        <link refid="classbsn_1_1goalmodel_1_1Node"/>
+      </node>
+      <node id="180">
+        <label>bsn::goalmodel::Goal</label>
+        <link refid="classbsn_1_1goalmodel_1_1Goal"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="183">
+        <label>bsn::goalmodel::Node</label>
+        <link refid="classbsn_1_1goalmodel_1_1Node"/>
+      </node>
+      <node id="182">
+        <label>bsn::goalmodel::Goal</label>
+        <link refid="classbsn_1_1goalmodel_1_1Goal"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/libbsn/include/libbsn/goalmodel/Goal.hpp" line="13" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Goal.hpp" bodystart="13" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a331301404b90ce9d959957a36fa93f0d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>addChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1aca185a5f75cd9355ecd337f0256efc9f" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>children</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a68b41e73b839127371feb03594109685" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>description</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a435fcf16a48c8fee6adb729f550558db" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>getChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>getChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>getDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>getID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Goal_1a2139d0c1be339d6a7f3a3d172edc8b6b" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>Goal</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Goal_1a86bb68efd40be42eba58f01fd2f1be1a" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>Goal</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a918e385077b367efbcf321acafe49b24" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>hasChildren</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a79f9222c5aeb2ae3d40617e21ffcc0d7" prot="protected" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>id</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1addc1569b8e62fbb1a8e222d6ceef482d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac66e87f7d3c17e1a6b06e158861b5f95" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a8add7ef85cb81e1d90704141aaf7c719" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>Node</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a9a08ece2f46032f7fe474d341c3c22db" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac9a8f749fa881fe032db1cf9925f2780" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>operator==</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a54918fd1c3cf913da72d0ac6cd7a4efc" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>removeChild</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a23c73e43071f1ca7d5a33e3992c42001" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>setDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1ac8ea48fa240031a0c8b5fa2e76fba161" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>setID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Goal_1a5e9e234511d91cd837499e98b994d91d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Goal</scope><name>~Goal</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Node_1a1f05ee3a04f3954e35d09f1228802f6a" prot="public" virt="virtual"><scope>bsn::goalmodel::Goal</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

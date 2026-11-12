@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "production_sources_unchanged": true,
+    "same_sources_as_initial_collection": true,
+    "lcom4_final_no_parse_errors": true,
+    "lcom4_csv_equals_native": true,
+    "cbo_csv_equals_native": true,
+    "all_tool_values_keep_variant_labels": true,
+    "lcom4_fixture_values": true,
+    "cccc_fixture_values": true,
+    "wmc_matches_native_cc_aggregation": true,
+    "no_unmeasured_doxygen_bodies": true,
+    "semgrep_no_errors": true,
+    "semgrep_rules_tests_passed": true,
+    "all_final_report_links_exist": true
+  },
+  "missing_links": [],
+  "upstream_limitations": {
+    "returncode": 1,
+    "limitation": "member template call in Tmpl fixture not joined with Clang 18"
+  }
+}

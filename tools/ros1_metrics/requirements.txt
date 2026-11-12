@@ -1,0 +1,5 @@
+lizard==1.26.0
+semgrep==1.185.0
+networkx==3.4.2
+Jinja2==3.1.6
+Pygments==2.19.2

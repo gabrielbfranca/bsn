@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a23855f60b7c54b0707f9a86f39b0d43" kind="dir">
+    <compoundname>src/sa-bsn/system_manager/enactor/apps</compoundname>
+    <innerfile refid="controller_8cpp">controller.cpp</innerfile>
+    <innerfile refid="enactor_8cpp">enactor.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/system_manager/enactor/apps/"/>
+  </compounddef>
+</doxygen>

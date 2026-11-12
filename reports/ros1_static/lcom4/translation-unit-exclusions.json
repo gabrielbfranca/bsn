@@ -1,0 +1,7 @@
+[
+  {
+    "file": "src/sa-bsn/system_manager/enactor/apps/enactor.cpp",
+    "reason": "not a CMake target; instantiates abstract Enactor; deployed enactor uses apps/controller.cpp",
+    "class_definitions_retained_in": "src/sa-bsn/system_manager/enactor/src/Enactor.cpp"
+  }
+]

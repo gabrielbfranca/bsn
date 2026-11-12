@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn_1_1range" kind="namespace" language="C++">
+    <compoundname>bsn::range</compoundname>
+    <innerclass refid="classbsn_1_1range_1_1Range" prot="public">bsn::range::Range</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/range/Range.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

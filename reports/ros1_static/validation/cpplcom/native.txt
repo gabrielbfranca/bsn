@@ -1,0 +1,27 @@
+LCOM4 report  (threshold 0 job per class)
+
+ JOBS  LCOM4  BARE  METHODS  FIELDS  CLASS
+    2      2     0        2       2  fixtures::SeparateGetters
+          fixtures/classes.hpp:8
+          {a}
+          {b}
+    2      2     0        2       2  fixtures::SplitState
+          fixtures/classes.hpp:4
+          {a}
+          {b}
+    1      2     2        2       0  fixtures::Branch
+          fixtures/classes.hpp:9
+          {linear}
+          {branch}
+    1      2     2        2       0  fixtures::Stateless
+          fixtures/classes.hpp:7
+          {a}
+          {b}
+    1      1     0        2       1  fixtures::CallBridge
+          fixtures/classes.hpp:5
+          {a, b}
+    1      1     0        2       1  fixtures::SharedState
+          fixtures/classes.hpp:3
+          {a, b}
+
+  6 classes with 2+ methods, 6 over the threshold; by jobs: 1: 4, 2: 2

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn_1_1resource" kind="namespace" language="C++">
+    <compoundname>bsn::resource</compoundname>
+    <innerclass refid="classbsn_1_1resource_1_1Battery" prot="public">bsn::resource::Battery</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/resource/Battery.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

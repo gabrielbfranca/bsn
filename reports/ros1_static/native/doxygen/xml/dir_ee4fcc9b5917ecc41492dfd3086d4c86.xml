@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ee4fcc9b5917ecc41492dfd3086d4c86" kind="dir">
+    <compoundname>src/sa-bsn/simulation</compoundname>
+    <innerdir refid="dir_337eef705d22193098767f9854e5a52f">src/sa-bsn/simulation/injector</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/simulation/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classarch_1_1target__system_1_1Effector" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>arch::target_system::Effector</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <derivedcompoundref refid="classParamAdapter" prot="public" virt="non-virtual">ParamAdapter</derivedcompoundref>
+    <includes refid="Effector_8hpp" local="no">Effector.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" prot="protected" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle arch::target_system::Effector::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="29" column="1" bodyfile="src/archlib/include/archlib/target_system/Effector.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classParamAdapter_1aa65562126e45cacc10361914b62a80b3" compoundref="ParamAdapter_8cpp" startline="31" endline="57">ParamAdapter::moduleConnect</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" compoundref="Effector_8cpp" startline="9" endline="13">setUp</referencedby>
+        <referencedby refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" compoundref="ParamAdapter_8cpp" startline="6" endline="12">ParamAdapter::setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1a51cb64c0d697093680523952b2457847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::target_system::Effector::Effector</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>Effector</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="15" column="1" bodyfile="src/archlib/src/target_system/Effector.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1a76d432f197f73d7233db6ca977464dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>arch::target_system::Effector::~Effector</definition>
+        <argsstring>()</argsstring>
+        <name>~Effector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="16" column="1" bodyfile="src/archlib/src/target_system/Effector.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Effector::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <reimplementedby refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab">setUp</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="23" column="1" bodyfile="src/archlib/src/target_system/Effector.cpp" bodystart="9" bodyend="13"/>
+        <references refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" compoundref="Effector_8hpp" startline="29">handle</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1a149b6881ceb74fc890a46a274581a1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Effector::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <reimplementedby refid="classParamAdapter_1ad829271c4d5731ce1c375b99f88e3d10">tearDown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="24" column="1" bodyfile="src/archlib/src/target_system/Effector.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1a7547143ad58200c01b1dde0559ab9241" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void arch::target_system::Effector::receiveAdaptationCommand</definition>
+        <argsstring>(const archlib::AdaptationCommand::ConstPtr &amp;msg)=0</argsstring>
+        <name>receiveAdaptationCommand</name>
+        <reimplementedby refid="classParamAdapter_1acc7db9351d4bd7411c589c0aefd318b5">receiveAdaptationCommand</reimplementedby>
+        <param>
+          <type>const archlib::AdaptationCommand::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1a3a95187510f0bb90086584b76713286f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::target_system::Effector::Effector</definition>
+        <argsstring>(const Effector &amp;)</argsstring>
+        <name>Effector</name>
+        <param>
+          <type>const <ref refid="classarch_1_1target__system_1_1Effector" kindref="compound">Effector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Effector_1ab6101462039fb0e1ed3fa4c1e128eca4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classarch_1_1target__system_1_1Effector" kindref="compound">Effector</ref> &amp;</type>
+        <definition>Effector&amp; arch::target_system::Effector::operator=</definition>
+        <argsstring>(const Effector &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classarch_1_1target__system_1_1Effector" kindref="compound">Effector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="55">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="56">
+        <label>ParamAdapter</label>
+        <link refid="classParamAdapter"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>arch::target_system::Effector</label>
+        <link refid="classarch_1_1target__system_1_1Effector"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="57">
+        <label>arch::target_system::Effector</label>
+        <link refid="classarch_1_1target__system_1_1Effector"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/archlib/include/archlib/target_system/Effector.hpp" line="12" column="1" bodyfile="src/archlib/include/archlib/target_system/Effector.hpp" bodystart="12" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9" prot="public" virt="pure-virtual"><scope>arch::target_system::Effector</scope><name>body</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a51cb64c0d697093680523952b2457847" prot="public" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>Effector</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a3a95187510f0bb90086584b76713286f" prot="private" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>Effector</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>getRosNodeName</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a3f45e7f674c011c949719864a29fd869" prot="protected" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>handle</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1ab6101462039fb0e1ed3fa4c1e128eca4" prot="private" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>operator=</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a7547143ad58200c01b1dde0559ab9241" prot="public" virt="pure-virtual"><scope>arch::target_system::Effector</scope><name>receiveAdaptationCommand</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>arch::target_system::Effector</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>arch::target_system::Effector</scope><name>run</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" prot="public" virt="virtual"><scope>arch::target_system::Effector</scope><name>setUp</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a149b6881ceb74fc890a46a274581a1e4" prot="public" virt="virtual"><scope>arch::target_system::Effector</scope><name>tearDown</name></member>
+      <member refid="classarch_1_1target__system_1_1Effector_1a76d432f197f73d7233db6ca977464dd6" prot="public" virt="virtual"><scope>arch::target_system::Effector</scope><name>~Effector</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>arch::target_system::Effector</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

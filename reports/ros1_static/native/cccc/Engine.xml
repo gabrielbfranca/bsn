@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Engine-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="141" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="21" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="35" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="4.029" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.600" level="0" />
+<weighted_methods_per_class_unity value="20" level="0" />
+<weighted_methods_per_class_visibility value="3" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="2" level="0" />
+<coupling_between_objects value="11" level="0" />
+<IF4 value="324" level="1" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="324" level="2" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="144" level="2" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="34" />
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Engine(const Engine &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="41" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Engine(int &amp;,char **,string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="37" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="5" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>analyze()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="62" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>blacklisted(map &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="59" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>body()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="47" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="148" />
+</extent>
+<lines_of_code value="20" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="13" level="0" />
+<lines_of_code_per_line_of_comment value="1.538" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>calculate_qos(Formula,map)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="58" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="135" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>execute()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="64" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>fetch_formula(string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="55" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="105" />
+</extent>
+<lines_of_code value="18" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>get_prefix()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="52" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>initialize_priority(vector)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="53" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>initialize_strategy(vector)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="54" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>monitor()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="61" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const Engine &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="42" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>plan()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="63" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>receiveException(const ConstPtr &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="49" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="65" />
+</extent>
+<lines_of_code value="17" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>sendAdaptationParameter(Request &amp;,Response &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="50" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="56" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setUp()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="45" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="10" />
+</extent>
+<lines_of_code value="31" level="1" />
+<McCabes_cyclomatic_complexity value="6" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="6.200" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.200" level="0" />
+</member_function>
+<member_function>
+<name>setUp_formula(string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="56" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="91" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="7" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>tearDown()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="46" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="54" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~Engine()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="38" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="7" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Engine</name>
+<client_module>
+<name>CostEngine</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp" line="35" />
+</extent>
+<name>ReliabilityEngine</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp" line="35" />
+</extent>
+</client_module>
+<supplier_module>
+<name>ConstPtr</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="65" />
+</extent>
+<name>Formula</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="58" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="74" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="135" />
+</extent>
+<name>ROSComponent</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>inheritance</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="34" />
+</extent>
+<name>Request</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="56" />
+</extent>
+<name>Response</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="50" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="56" />
+</extent>
+<name>ServiceServer</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="79" />
+</extent>
+<name>map</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="58" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="59" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="75" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="76" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="77" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="135" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="37" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="55" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="56" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="67" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="91" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="105" />
+</extent>
+<name>vector</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="53" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="54" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

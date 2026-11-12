@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classPatientModule" kind="class" language="C++" prot="public">
+    <compoundname>PatientModule</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <includes refid="PatientModule_8hpp" local="no">PatientModule.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPatientModule_1a85474af39f2a2b26c3d3c89f2cba87fe" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">bsn::generator::DataGenerator</ref> &gt;</type>
+        <definition>std::map&lt;std::string, bsn::generator::DataGenerator&gt; PatientModule::patientData</definition>
+        <argsstring></argsstring>
+        <name>patientData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="24" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1af9680229178013ce1256b3720522a06a" compoundref="PatientModule_8cpp" startline="98" endline="110">body</referencedby>
+        <referencedby refid="classPatientModule_1ae43b1c3404e42c1258e0599531ea6054" compoundref="PatientModule_8cpp" startline="88" endline="96">getPatientData</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1ac7e2ec7a414bebecc52bee5eb337968a" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; PatientModule::vitalSignsFrequencies</definition>
+        <argsstring></argsstring>
+        <name>vitalSignsFrequencies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="25" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1af9680229178013ce1256b3720522a06a" compoundref="PatientModule_8cpp" startline="98" endline="110">body</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1a3e68e3325a214a3a9a0d8485f48a6be7" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; PatientModule::vitalSignsChanges</definition>
+        <argsstring></argsstring>
+        <name>vitalSignsChanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="26" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1af9680229178013ce1256b3720522a06a" compoundref="PatientModule_8cpp" startline="98" endline="110">body</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1a01a256214a7133fc2e73079cd94cddcc" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; PatientModule::vitalSignsOffsets</definition>
+        <argsstring></argsstring>
+        <name>vitalSignsOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="27" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1af9680229178013ce1256b3720522a06a" compoundref="PatientModule_8cpp" startline="98" endline="110">body</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1a20370b4b7f7a291927c1bc160af3123f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PatientModule::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="29" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1a5d801f31879d4f81d003aa630cefb9da" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PatientModule::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="30" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1af9680229178013ce1256b3720522a06a" compoundref="PatientModule_8cpp" startline="98" endline="110">body</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1adf07a9dc40eefcda9b4220c59bfee9f1" prot="private" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle PatientModule::nh</definition>
+        <argsstring></argsstring>
+        <name>nh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="31" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPatientModule_1a77022bf9da531794e51ca604648e9b6b" prot="private" static="no" mutable="no">
+        <type>ros::ServiceServer</type>
+        <definition>ros::ServiceServer PatientModule::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="32" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPatientModule_1af6f5ad7060bc1220e3468f218053c2f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PatientModule::PatientModule</definition>
+        <argsstring>(int &amp;argc, char **argv, std::string name)</argsstring>
+        <name>PatientModule</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="13" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classPatientModule_1ad31828c1285c199879bf43f3a39e6f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PatientModule::~PatientModule</definition>
+        <argsstring>()</argsstring>
+        <name>~PatientModule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="14" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PatientModule::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="16" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="7" bodyend="39"/>
+        <references refid="classPatientModule_1aa6a17cfd6d72002d9b493f0198b37edf" compoundref="PatientModule_8cpp" startline="41" endline="84">configureDataGenerator</references>
+        <references refid="classPatientModule_1a20370b4b7f7a291927c1bc160af3123f" compoundref="PatientModule_8hpp" startline="29">frequency</references>
+        <references refid="classPatientModule_1ae43b1c3404e42c1258e0599531ea6054" compoundref="PatientModule_8cpp" startline="88" endline="96">getPatientData</references>
+        <references refid="classPatientModule_1adf07a9dc40eefcda9b4220c59bfee9f1" compoundref="PatientModule_8hpp" startline="31">nh</references>
+        <references refid="classPatientModule_1a85474af39f2a2b26c3d3c89f2cba87fe" compoundref="PatientModule_8hpp" startline="24">patientData</references>
+        <references refid="classPatientModule_1a5d801f31879d4f81d003aa630cefb9da" compoundref="PatientModule_8hpp" startline="30">period</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classPatientModule_1a77022bf9da531794e51ca604648e9b6b" compoundref="PatientModule_8hpp" startline="32">service</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <references refid="classPatientModule_1a3e68e3325a214a3a9a0d8485f48a6be7" compoundref="PatientModule_8hpp" startline="26">vitalSignsChanges</references>
+        <references refid="classPatientModule_1ac7e2ec7a414bebecc52bee5eb337968a" compoundref="PatientModule_8hpp" startline="25">vitalSignsFrequencies</references>
+        <references refid="classPatientModule_1a01a256214a7133fc2e73079cd94cddcc" compoundref="PatientModule_8hpp" startline="27">vitalSignsOffsets</references>
+      </memberdef>
+      <memberdef kind="function" id="classPatientModule_1a861ff456e5e7fead9939b4caee0093c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PatientModule::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="17" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classPatientModule_1af9680229178013ce1256b3720522a06a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PatientModule::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="18" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="98" bodyend="110"/>
+        <references refid="classPatientModule_1a85474af39f2a2b26c3d3c89f2cba87fe" compoundref="PatientModule_8hpp" startline="24">patientData</references>
+        <references refid="classPatientModule_1a5d801f31879d4f81d003aa630cefb9da" compoundref="PatientModule_8hpp" startline="30">period</references>
+        <references refid="classPatientModule_1a3e68e3325a214a3a9a0d8485f48a6be7" compoundref="PatientModule_8hpp" startline="26">vitalSignsChanges</references>
+        <references refid="classPatientModule_1ac7e2ec7a414bebecc52bee5eb337968a" compoundref="PatientModule_8hpp" startline="25">vitalSignsFrequencies</references>
+        <references refid="classPatientModule_1a01a256214a7133fc2e73079cd94cddcc" compoundref="PatientModule_8hpp" startline="27">vitalSignsOffsets</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPatientModule_1ae43b1c3404e42c1258e0599531ea6054" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PatientModule::getPatientData</definition>
+        <argsstring>(services::PatientData::Request &amp;request, services::PatientData::Response &amp;response)</argsstring>
+        <name>getPatientData</name>
+        <param>
+          <type>services::PatientData::Request &amp;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>services::PatientData::Response &amp;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="21" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="88" bodyend="96"/>
+        <references refid="classPatientModule_1a85474af39f2a2b26c3d3c89f2cba87fe" compoundref="PatientModule_8hpp" startline="24">patientData</references>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPatientModule_1aa6a17cfd6d72002d9b493f0198b37edf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1generator_1_1DataGenerator" kindref="compound">bsn::generator::DataGenerator</ref></type>
+        <definition>bsn::generator::DataGenerator PatientModule::configureDataGenerator</definition>
+        <argsstring>(const std::string &amp;vitalSign)</argsstring>
+        <name>configureDataGenerator</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>vitalSign</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="22" column="1" bodyfile="src/sa-bsn/environment/patient/src/PatientModule.cpp" bodystart="41" bodyend="84"/>
+        <references refid="classbsn_1_1generator_1_1DataGenerator_1a39c91084817846319e7dca9ed4e4f9e3" compoundref="DataGenerator_8cpp" startline="26" endline="30">bsn::generator::DataGenerator::setSeed</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="220">
+        <label>PatientModule</label>
+        <link refid="classPatientModule"/>
+        <childnode refid="221" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="224" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="224">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="222">
+        <label>PatientModule</label>
+        <link refid="classPatientModule"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="11" column="1" bodyfile="src/sa-bsn/environment/patient/include/PatientModule.hpp" bodystart="11" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classPatientModule_1af9680229178013ce1256b3720522a06a" prot="public" virt="virtual"><scope>PatientModule</scope><name>body</name></member>
+      <member refid="classPatientModule_1aa6a17cfd6d72002d9b493f0198b37edf" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>configureDataGenerator</name></member>
+      <member refid="classPatientModule_1a20370b4b7f7a291927c1bc160af3123f" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>frequency</name></member>
+      <member refid="classPatientModule_1ae43b1c3404e42c1258e0599531ea6054" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>getPatientData</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>PatientModule</scope><name>getRosNodeName</name></member>
+      <member refid="classPatientModule_1adf07a9dc40eefcda9b4220c59bfee9f1" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>nh</name></member>
+      <member refid="classPatientModule_1a85474af39f2a2b26c3d3c89f2cba87fe" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>patientData</name></member>
+      <member refid="classPatientModule_1af6f5ad7060bc1220e3468f218053c2f2" prot="public" virt="non-virtual"><scope>PatientModule</scope><name>PatientModule</name></member>
+      <member refid="classPatientModule_1a5d801f31879d4f81d003aa630cefb9da" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>period</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>PatientModule</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>PatientModule</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>PatientModule</scope><name>run</name></member>
+      <member refid="classPatientModule_1a77022bf9da531794e51ca604648e9b6b" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>service</name></member>
+      <member refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" prot="public" virt="virtual"><scope>PatientModule</scope><name>setUp</name></member>
+      <member refid="classPatientModule_1a861ff456e5e7fead9939b4caee0093c0" prot="public" virt="virtual"><scope>PatientModule</scope><name>tearDown</name></member>
+      <member refid="classPatientModule_1a3e68e3325a214a3a9a0d8485f48a6be7" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>vitalSignsChanges</name></member>
+      <member refid="classPatientModule_1ac7e2ec7a414bebecc52bee5eb337968a" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>vitalSignsFrequencies</name></member>
+      <member refid="classPatientModule_1a01a256214a7133fc2e73079cd94cddcc" prot="private" virt="non-virtual"><scope>PatientModule</scope><name>vitalSignsOffsets</name></member>
+      <member refid="classPatientModule_1ad31828c1285c199879bf43f3a39e6f9a" prot="public" virt="non-virtual"><scope>PatientModule</scope><name>~PatientModule</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>PatientModule</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Property_8cpp" kind="file" language="C++">
+    <compoundname>Property.cpp</compoundname>
+    <includes refid="Property_8hpp" local="yes">libbsn/goalmodel/Property.hpp</includes>
+    <incdepgraph>
+      <node id="784">
+        <label>string</label>
+      </node>
+      <node id="782">
+        <label>src/libbsn/src/goalmodel/Property.cpp</label>
+        <link refid="Property_8cpp"/>
+        <childnode refid="783" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>libbsn/goalmodel/Property.hpp</label>
+        <link refid="Property_8hpp"/>
+        <childnode refid="784" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1goalmodel">bsn::goalmodel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Property_8hpp" kindref="compound">libbsn/goalmodel/Property.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">goalmodel<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6" refid="classbsn_1_1goalmodel_1_1Property_1a555c4af10f85f36066d506efffca2140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kindref="member">Property::Property</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;value)<sp/>:<sp/>id(id),<sp/>value(value)<sp/>{}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kindref="member">Property::Property</ref>()<sp/>:<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kindref="member">id</ref>(),<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10" refid="classbsn_1_1goalmodel_1_1Property_1a055610f0f055ffaadbff8e9d1cdfedf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a055610f0f055ffaadbff8e9d1cdfedf3" kindref="member">Property::~Property</ref>(){};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classbsn_1_1goalmodel_1_1Property_1af97182c147e505aefabc5e549cd498b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a40e438120b9468aef31aa84334c3af6b" kindref="member">Property::Property</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;obj)<sp/>:<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kindref="member">id</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1Property_1a6093b47a372aee1ee4e61a6c33ad8a5f" kindref="member">getID</ref>()),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref>(obj.<ref refid="classbsn_1_1goalmodel_1_1Property_1a333f562fecf724207a06034e1baa9ca7" kindref="member">getValue</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classbsn_1_1goalmodel_1_1Property_1a672a0f9fd98584a8a15c5a369749a016" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref>&amp;<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a672a0f9fd98584a8a15c5a369749a016" kindref="member">Property::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Property_1a6093b47a372aee1ee4e61a6c33ad8a5f" kindref="member">getID</ref>();<sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref><sp/>=<sp/>obj.<ref refid="classbsn_1_1goalmodel_1_1Property_1a333f562fecf724207a06034e1baa9ca7" kindref="member">getValue</ref>();<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classbsn_1_1goalmodel_1_1Property_1ad89fe95a6b2f52f3acd66e0bbbb3f234" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1ad89fe95a6b2f52f3acd66e0bbbb3f234" kindref="member">Property::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property" kindref="compound">Property</ref><sp/>&amp;rhs)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>rhs.<ref refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classbsn_1_1goalmodel_1_1Property_1afbd7182447d01a0d38e8e77b34e39796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afbd7182447d01a0d38e8e77b34e39796" kindref="member">Property::setID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classbsn_1_1goalmodel_1_1Property_1a6093b47a372aee1ee4e61a6c33ad8a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a6093b47a372aee1ee4e61a6c33ad8a5f" kindref="member">Property::getID</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1afd00ccfd16a71b86543f68ab27e82155" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classbsn_1_1goalmodel_1_1Property_1aafcff8276f40f47fb53cdc4c51c26363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1aafcff8276f40f47fb53cdc4c51c26363" kindref="member">Property::setValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;value<sp/>=<sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classbsn_1_1goalmodel_1_1Property_1a333f562fecf724207a06034e1baa9ca7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a333f562fecf724207a06034e1baa9ca7" kindref="member">Property::getValue</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classbsn_1_1goalmodel_1_1Property_1a5d7256e346864e4effa713a23775c836" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/src/goalmodel/Property.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+test_scores (tests.test_cli.CliTest.test_scores) ... FAIL
+test_threshold (tests.test_cli.CliTest.test_threshold) ... ok
+
+======================================================================
+FAIL: test_scores (tests.test_cli.CliTest.test_scores)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspaces/bsn_/tools/.metrics-runtime/ulfhammarqvist-st-cpplcom-3b8ce61/tests/test_cli.py", line 167, in test_scores
+    self.assertEqual(jobs["Tmpl"], (1, 1, 0), "this->, a member template and a lambda join")
+AssertionError: Tuples differ: (1, 2, 1) != (1, 1, 0)
+
+First differing element 1:
+2
+1
+
+- (1, 2, 1)
+?     ^  ^
+
++ (1, 1, 0)
+?     ^  ^
+ : this->, a member template and a lambda join
+
+----------------------------------------------------------------------
+Ran 2 tests in 2.760s
+
+FAILED (failures=1)

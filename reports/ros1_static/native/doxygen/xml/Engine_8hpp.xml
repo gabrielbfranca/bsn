@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="Engine_8hpp" kind="file" language="C++">
+    <compoundname>Engine.hpp</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includes local="no">set</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="yes">ros/ros.h</includes>
+    <includes local="yes">ros/package.h</includes>
+    <includes refid="Node_8hpp" local="yes">libbsn/goalmodel/Node.hpp</includes>
+    <includes refid="Goal_8hpp" local="yes">libbsn/goalmodel/Goal.hpp</includes>
+    <includes refid="Task_8hpp" local="yes">libbsn/goalmodel/Task.hpp</includes>
+    <includes refid="Property_8hpp" local="yes">libbsn/goalmodel/Property.hpp</includes>
+    <includes refid="LeafTask_8hpp" local="yes">libbsn/goalmodel/LeafTask.hpp</includes>
+    <includes refid="Context_8hpp" local="yes">libbsn/goalmodel/Context.hpp</includes>
+    <includes refid="GoalTree_8hpp" local="yes">libbsn/goalmodel/GoalTree.hpp</includes>
+    <includes refid="Formula_8hpp" local="yes">libbsn/model/Formula.hpp</includes>
+    <includes refid="utils_8hpp" local="yes">libbsn/utils/utils.hpp</includes>
+    <includes local="yes">lepton/Lepton.h</includes>
+    <includes local="yes">archlib/DataAccessRequest.h</includes>
+    <includes local="yes">archlib/Strategy.h</includes>
+    <includes local="yes">archlib/Exception.h</includes>
+    <includes local="yes">archlib/EnergyStatus.h</includes>
+    <includes refid="ROSComponent_8hpp" local="yes">archlib/ROSComponent.hpp</includes>
+    <includes local="yes">archlib/EngineRequest.h</includes>
+    <includedby refid="CostEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</includedby>
+    <includedby refid="ReliabilityEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</includedby>
+    <includedby refid="Engine_8cpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</includedby>
+    <incdepgraph>
+      <node id="1250">
+        <label>lepton/Lepton.h</label>
+      </node>
+      <node id="1242">
+        <label>libbsn/goalmodel/Goal.hpp</label>
+        <link refid="Goal_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>libbsn/goalmodel/Task.hpp</label>
+        <link refid="Task_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+      </node>
+      <node id="1247">
+        <label>libbsn/goalmodel/GoalTree.hpp</label>
+        <link refid="GoalTree_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1245" relation="include">
+        </childnode>
+      </node>
+      <node id="1240">
+        <label>stdexcept</label>
+      </node>
+      <node id="1232">
+        <label>string</label>
+      </node>
+      <node id="1238">
+        <label>libbsn/goalmodel/Node.hpp</label>
+        <link refid="Node_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+      </node>
+      <node id="1233">
+        <label>map</label>
+      </node>
+      <node id="1237">
+        <label>ros/package.h</label>
+      </node>
+      <node id="1230">
+        <label>fstream</label>
+      </node>
+      <node id="1229">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</label>
+        <link refid="Engine_8hpp"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+        <childnode refid="1234" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1245" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1254" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+      </node>
+      <node id="1251">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1239">
+        <label>vector</label>
+      </node>
+      <node id="1256">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>sstream</label>
+      </node>
+      <node id="1258">
+        <label>archlib/EngineRequest.h</label>
+      </node>
+      <node id="1236">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="1252">
+        <label>archlib/DataAccessRequest.h</label>
+      </node>
+      <node id="1254">
+        <label>archlib/Exception.h</label>
+      </node>
+      <node id="1244">
+        <label>libbsn/goalmodel/Property.hpp</label>
+        <link refid="Property_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1249">
+        <label>iostream</label>
+      </node>
+      <node id="1246">
+        <label>libbsn/goalmodel/Context.hpp</label>
+        <link refid="Context_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1255">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="1253">
+        <label>archlib/Strategy.h</label>
+      </node>
+      <node id="1234">
+        <label>set</label>
+      </node>
+      <node id="1235">
+        <label>algorithm</label>
+      </node>
+      <node id="1248">
+        <label>libbsn/model/Formula.hpp</label>
+        <link refid="Formula_8hpp"/>
+        <childnode refid="1249" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>libbsn/goalmodel/LeafTask.hpp</label>
+        <link refid="LeafTask_8hpp"/>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+      </node>
+      <node id="1241">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1263">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</label>
+        <link refid="ReliabilityEngine_8hpp"/>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</label>
+        <link refid="ReliabilityEngine_8cpp"/>
+      </node>
+      <node id="1259">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</label>
+        <link refid="Engine_8hpp"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+      </node>
+      <node id="1260">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</label>
+        <link refid="CostEngine_8hpp"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+      </node>
+      <node id="1261">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp</label>
+        <link refid="cost__engine_8cpp"/>
+      </node>
+      <node id="1266">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</label>
+        <link refid="Engine_8cpp"/>
+      </node>
+      <node id="1262">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</label>
+        <link refid="CostEngine_8cpp"/>
+      </node>
+      <node id="1264">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp</label>
+        <link refid="reli__engine_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classEngine" prot="public">Engine</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ENGINE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENGINE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/ros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ros/package.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Node_8hpp" kindref="compound">libbsn/goalmodel/Node.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Goal_8hpp" kindref="compound">libbsn/goalmodel/Goal.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Task_8hpp" kindref="compound">libbsn/goalmodel/Task.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Property_8hpp" kindref="compound">libbsn/goalmodel/Property.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LeafTask_8hpp" kindref="compound">libbsn/goalmodel/LeafTask.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Context_8hpp" kindref="compound">libbsn/goalmodel/Context.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GoalTree_8hpp" kindref="compound">libbsn/goalmodel/GoalTree.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Formula_8hpp" kindref="compound">libbsn/model/Formula.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8hpp" kindref="compound">libbsn/utils/utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lepton/Lepton.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/DataAccessRequest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Strategy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/Exception.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EnergyStatus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ROSComponent_8hpp" kindref="compound">archlib/ROSComponent.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;archlib/EngineRequest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classEngine" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEngine" kindref="compound">Engine</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classarch_1_1ROSComponent" kindref="compound">arch::ROSComponent</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEngine_1a82834c36c2eacfd1f9b393708c2c6bb7" kindref="member">Engine</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/>std::string<sp/>name);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a8ef7030a089ecb30bbfcb9e43094717a" kindref="member">~Engine</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEngine_1a82834c36c2eacfd1f9b393708c2c6bb7" kindref="member">Engine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEngine" kindref="compound">Engine</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEngine" kindref="compound">Engine</ref><sp/>&amp;<ref refid="classEngine_1a194c45596b3ad0c7ef49a9a4c203f3b0" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEngine" kindref="compound">Engine</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1ae0233e4936be42094d3dfd401633cccd" kindref="member">setUp</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1afb19e44fe574a4c79f32aacbb9f24d19" kindref="member">tearDown</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1ae164dcb3bf318cb307ab7266974c2064" kindref="member">body</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1aea9c523a0feb05871f020d4fd4f417e4" kindref="member">receiveException</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>archlib::Exception::ConstPtr&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a8aa6d778f6e3750b091c1ffebb6cafcc" kindref="member">sendAdaptationParameter</ref>(archlib::EngineRequest::Request<sp/>&amp;req,<sp/>archlib::EngineRequest::Response<sp/>&amp;res);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classEngine_1a88c4ce811856103bc01cc60ad09eeaca" kindref="member">get_prefix</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="classEngine_1a70f52722c5037794f6fd52c2b6d3bae2" kindref="member">initialize_priority</ref>(std::vector&lt;std::string&gt;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="classEngine_1a60b6aaac0bf5c293d5784666c701d777" kindref="member">initialize_strategy</ref>(std::vector&lt;std::string&gt;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEngine_1a0a83dbc2fee3b317932ce4a166303f22" kindref="member">fetch_formula</ref>(std::string);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a88afff420d0d1652ad974fd26df6de63" kindref="member">setUp_formula</ref>(std::string<sp/>formula);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a6b7b458cd4067230dfe02585ce00ab5b" kindref="member">calculate_qos</ref>(<ref refid="classbsn_1_1model_1_1Formula" kindref="compound">bsn::model::Formula</ref>,<sp/>std::map&lt;std::string,<sp/>double&gt;);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a5e5ad6951248487f662e40e9f67b7bc6" kindref="member">blacklisted</ref>(std::map&lt;std::string,double&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1ad738bba77de0d57a5c3424ea973140a7" kindref="member">monitor</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1afeaf1236d9e186380e1935d858b03b48" kindref="member">analyze</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1aa195ea183ff2c3861dcb31e083d6df69" kindref="member">plan</ref>()<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEngine_1ad85f4f9faf06e55c18ca57c4a69aeef0" kindref="member">execute</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="67" refid="classEngine_1aebb2b6fa2ac601086913f4146cf19e7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classEngine_1aebb2b6fa2ac601086913f4146cf19e7d" kindref="member">qos_attribute</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70" refid="classEngine_1af7800c0e37c2c9190bd94e5d5e63536d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classEngine_1af7800c0e37c2c9190bd94e5d5e63536d" kindref="member">info_quant</ref>;</highlight></codeline>
+<codeline lineno="71" refid="classEngine_1a4336f1a210da0793d278a4ec0f4684c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a4336f1a210da0793d278a4ec0f4684c1" kindref="member">monitor_freq</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classEngine_1a06f3ef2444912639996a3e4c45c34032" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classEngine_1a06f3ef2444912639996a3e4c45c34032" kindref="member">actuation_freq</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classEngine_1ab2ce55b3322bfef3d1ca39b368d238ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1model_1_1Formula" kindref="compound">bsn::model::Formula</ref><sp/><ref refid="classEngine_1ab2ce55b3322bfef3d1ca39b368d238ff" kindref="member">target_system_model</ref>;</highlight></codeline>
+<codeline lineno="75" refid="classEngine_1abef7831110f292a6f33e8713e74d488b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="classEngine_1abef7831110f292a6f33e8713e74d488b" kindref="member">strategy</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classEngine_1aefcb8556fbc726c547f34bde72d70d90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="classEngine_1aefcb8556fbc726c547f34bde72d70d90" kindref="member">priority</ref>;</highlight></codeline>
+<codeline lineno="77" refid="classEngine_1aebdeb3d77ac1b29b408bead6ff1a525e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="classEngine_1aebdeb3d77ac1b29b408bead6ff1a525e" kindref="member">deactivatedComponents</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classEngine_1a2cfb46480fd3d254e11933aee17a72de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ros::ServiceServer<sp/><ref refid="classEngine_1a2cfb46480fd3d254e11933aee17a72de" kindref="member">enactor_server</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp"/>
+  </compounddef>
+</doxygen>

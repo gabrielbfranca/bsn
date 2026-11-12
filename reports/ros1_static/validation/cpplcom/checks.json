@@ -1,0 +1,9 @@
+{
+  "fixtures::SharedState": true,
+  "fixtures::SplitState": true,
+  "fixtures::CallBridge": true,
+  "fixtures::SeparateGetters": true,
+  "fixtures::Stateless": true,
+  "only_constructor_omitted": true,
+  "declaration_and_implementation_merged": true
+}

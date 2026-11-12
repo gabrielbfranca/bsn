@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_e346bdf11713f0ab8422da634091a0da" kind="dir">
+    <compoundname>src/libbsn/include/libbsn/model</compoundname>
+    <innerfile refid="Formula_8hpp">Formula.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/model/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_1b3ed615309ca9bc94672b13777cb4d7" kind="dir">
+    <compoundname>src/libbsn</compoundname>
+    <innerdir refid="dir_df7abd43abb61486b9ff190473949a1d">src/libbsn/include</innerdir>
+    <innerdir refid="dir_fbb7f83508d65ad88b882e23eeccc7ed">src/libbsn/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/"/>
+  </compounddef>
+</doxygen>

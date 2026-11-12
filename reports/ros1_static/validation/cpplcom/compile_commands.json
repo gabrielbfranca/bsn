@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/workspaces/bsn_",
+    "file": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.cpp",
+    "arguments": [
+      "/workspaces/bsn_/tools/.metrics-runtime/clang18-root/usr/lib/llvm-18/bin/clang++",
+      "-x",
+      "c++",
+      "-std=c++11",
+      "-c",
+      "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.cpp"
+    ]
+  }
+]

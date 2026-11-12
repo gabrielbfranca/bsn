@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module SensorConfiguration-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="186" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="28" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="17" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="10.941" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.647" level="0" />
+<weighted_methods_per_class_unity value="25" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="10" level="0" />
+<IF4 value="576" level="1" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="576" level="2" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="576" level="2" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="15" />
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>SensorConfiguration()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="17" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="8" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>SensorConfiguration(const SensorConfiguration &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="24" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="27" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>SensorConfiguration(int32_t,Range,array,array,array)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="19" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="17" />
+</extent>
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>convertRealPercentage(Range,double)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="44" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="86" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>evaluateNumber(double)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="38" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="94" />
+</extent>
+<lines_of_code value="28" level="0" />
+<McCabes_cyclomatic_complexity value="11" level="1" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="28.000" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="11.000" level="2" />
+</member_function>
+<member_function>
+<name>getDisplacement(Range,double,string)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="41" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="56" />
+</extent>
+<lines_of_code value="24" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="4.800" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getHighPercentage()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="73" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="195" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getHighRisk()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="64" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="157" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getId()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="55" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="47" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getLowPercentage()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="67" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="179" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getLowRisk()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="58" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="141" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getMediumRisk()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="61" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="149" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getMidPercentage()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="70" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="187" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isHighRisk(double)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="53" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="170" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isLowRisk(double)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="47" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="161" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isMediumRisk(double)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="50" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="165" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const SensorConfiguration &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="25" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="36" />
+</extent>
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setHighPercentage(const Range)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="74" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="199" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setHighRisk(const array)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="65" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="175" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setId(const int32_t)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="56" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="51" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setLowPercentage(const Range)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="68" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="183" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setLowRisk(const Range)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="59" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="145" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setMediumRisk(const array)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="62" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="153" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setMidPercentage(const Range)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="71" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="191" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>toString()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="76" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="127" />
+</extent>
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>SensorConfiguration</name>
+<client_module>
+<name>G3T1_1</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp" line="46" />
+</extent>
+<name>G3T1_2</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="46" />
+</extent>
+<name>G3T1_3</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp" line="46" />
+</extent>
+<name>G3T1_4</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp" line="46" />
+</extent>
+<name>G3T1_5</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp" line="46" />
+</extent>
+<name>G3T1_6</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp" line="46" />
+</extent>
+</client_module>
+<supplier_module>
+<name>Range</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="30" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="33" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="41" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="44" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="59" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="68" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="71" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="74" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="17" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="56" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="86" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="145" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="183" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="191" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="199" />
+</extent>
+<name>array</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="20" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="22" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="31" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="32" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="62" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="65" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="18" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="18" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="18" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="153" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="175" />
+</extent>
+<name>int32_t</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="19" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="29" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="56" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="17" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="51" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/include/libbsn/configuration/SensorConfiguration.hpp" line="41" />
+</extent>
+<extent>
+<description>pass by value</description>
+<source_reference file="src/libbsn/src/configuration/SensorConfiguration.cpp" line="56" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

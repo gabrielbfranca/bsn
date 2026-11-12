@@ -1,0 +1,14 @@
+{
+  "cpplcom_json_sha256": "16a934d2b8ccaeda83f2885e9f83e430024fd7f06f3d8ab8ee0c3513deedd506",
+  "cccc_xml_sha256": "4d5b9e93342b837e12052a8680a26986b1d041e3042765c9a113618bb1f5d68c",
+  "lcom4_classes": 41,
+  "lcom4_distribution": {
+    "1": 10,
+    "2": 14,
+    "3": 11,
+    "5": 1,
+    "6": 5
+  },
+  "cccc_classes": 44,
+  "cccc_rejected_lines": 313
+}

@@ -1,0 +1,100 @@
+[
+ {
+  "class": "fixtures::SeparateGetters",
+  "location": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.hpp:8",
+  "lcom4": 2,
+  "bare": 0,
+  "jobs": 2,
+  "methods": 2,
+  "fields": 2,
+  "components": [
+   [
+    "a"
+   ],
+   [
+    "b"
+   ]
+  ]
+ },
+ {
+  "class": "fixtures::SplitState",
+  "location": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.hpp:4",
+  "lcom4": 2,
+  "bare": 0,
+  "jobs": 2,
+  "methods": 2,
+  "fields": 2,
+  "components": [
+   [
+    "a"
+   ],
+   [
+    "b"
+   ]
+  ]
+ },
+ {
+  "class": "fixtures::Branch",
+  "location": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.hpp:9",
+  "lcom4": 2,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 0,
+  "components": [
+   [
+    "linear"
+   ],
+   [
+    "branch"
+   ]
+  ]
+ },
+ {
+  "class": "fixtures::Stateless",
+  "location": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.hpp:7",
+  "lcom4": 2,
+  "bare": 2,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 0,
+  "components": [
+   [
+    "a"
+   ],
+   [
+    "b"
+   ]
+  ]
+ },
+ {
+  "class": "fixtures::CallBridge",
+  "location": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.hpp:5",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 1,
+  "components": [
+   [
+    "a",
+    "b"
+   ]
+  ]
+ },
+ {
+  "class": "fixtures::SharedState",
+  "location": "/workspaces/bsn_/tools/ros1_metrics/fixtures/classes.hpp:3",
+  "lcom4": 1,
+  "bare": 0,
+  "jobs": 1,
+  "methods": 2,
+  "fields": 1,
+  "components": [
+   [
+    "a",
+    "b"
+   ]
+  ]
+ }
+]

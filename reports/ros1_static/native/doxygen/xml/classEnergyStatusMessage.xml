@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classEnergyStatusMessage" kind="class" language="C++" prot="public">
+    <compoundname>EnergyStatusMessage</compoundname>
+    <includes refid="EnergyStatusMessage_8hpp" local="no">EnergyStatusMessage.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="19" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classEnergyStatusMessage_1a6443612a1c5769aaedfe324cde05c98b" compoundref="EnergyStatusMessage_8hpp" startline="11" endline="11">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t EnergyStatusMessage::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="20" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classEnergyStatusMessage_1a43bf32f6c780a46fe3085a1d9281976d" compoundref="EnergyStatusMessage_8hpp" startline="12" endline="12">getTimestamp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t EnergyStatusMessage::logical_clock</definition>
+        <argsstring></argsstring>
+        <name>logical_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="21" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classEnergyStatusMessage_1accaf3d8b9f3472487123995c437c1c38" compoundref="EnergyStatusMessage_8hpp" startline="13" endline="13">getLogicalClock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="22" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classEnergyStatusMessage_1a11d09956fd817a15de68b6618d633081" compoundref="EnergyStatusMessage_8hpp" startline="14" endline="14">getSource</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="23" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classEnergyStatusMessage_1ae351c8fe3c89916c2d56ec88b53c9f7f" compoundref="EnergyStatusMessage_8hpp" startline="15" endline="15">getTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="24" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEnergyStatusMessage_1a8c9b881aa880bb6b44eeb4764d846620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EnergyStatusMessage::EnergyStatusMessage</definition>
+        <argsstring>(const std::string &amp;name, const int64_t &amp;timestamp, const int64_t &amp;logical_clock, const std::string &amp;source, const std::string &amp;target, const std::string &amp;cost)</argsstring>
+        <name>EnergyStatusMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>logical_clock</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="9" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyStatusMessage_1a6443612a1c5769aaedfe324cde05c98b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="11" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="11" bodyend="11"/>
+        <references refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" compoundref="EnergyStatusMessage_8hpp" startline="16">name</references>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyStatusMessage_1a43bf32f6c780a46fe3085a1d9281976d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t EnergyStatusMessage::getTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="12" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="12" bodyend="12"/>
+        <references refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" compoundref="EnergyStatusMessage_8hpp" startline="20">timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyStatusMessage_1accaf3d8b9f3472487123995c437c1c38" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t EnergyStatusMessage::getLogicalClock</definition>
+        <argsstring>() const</argsstring>
+        <name>getLogicalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="13" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="13" bodyend="13"/>
+        <references refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" compoundref="EnergyStatusMessage_8hpp" startline="21">logical_clock</references>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyStatusMessage_1a11d09956fd817a15de68b6618d633081" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::getSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="14" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="14" bodyend="14"/>
+        <references refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" compoundref="EnergyStatusMessage_8hpp" startline="22">source</references>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyStatusMessage_1ae351c8fe3c89916c2d56ec88b53c9f7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::getTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="15" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="15" bodyend="15"/>
+        <references refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" compoundref="EnergyStatusMessage_8hpp" startline="23">target</references>
+      </memberdef>
+      <memberdef kind="function" id="classEnergyStatusMessage_1ac5e1f87fc7534e74b32704c56b0ab20c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EnergyStatusMessage::getCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="16" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" line="6" column="1" bodyfile="src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classEnergyStatusMessage_1a3221aed7cf7f57ead9e8f4b459b1bb77" prot="private" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>cost</name></member>
+      <member refid="classEnergyStatusMessage_1a8c9b881aa880bb6b44eeb4764d846620" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>EnergyStatusMessage</name></member>
+      <member refid="classEnergyStatusMessage_1ac5e1f87fc7534e74b32704c56b0ab20c" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>getCost</name></member>
+      <member refid="classEnergyStatusMessage_1accaf3d8b9f3472487123995c437c1c38" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>getLogicalClock</name></member>
+      <member refid="classEnergyStatusMessage_1a6443612a1c5769aaedfe324cde05c98b" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>getName</name></member>
+      <member refid="classEnergyStatusMessage_1a11d09956fd817a15de68b6618d633081" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>getSource</name></member>
+      <member refid="classEnergyStatusMessage_1ae351c8fe3c89916c2d56ec88b53c9f7f" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>getTarget</name></member>
+      <member refid="classEnergyStatusMessage_1a43bf32f6c780a46fe3085a1d9281976d" prot="public" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>getTimestamp</name></member>
+      <member refid="classEnergyStatusMessage_1a1671617bda861f7f7dc93f5250fa1b4c" prot="private" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>logical_clock</name></member>
+      <member refid="classEnergyStatusMessage_1a15343a13e5c6c2c2100f7d2dae9cbdc2" prot="private" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>name</name></member>
+      <member refid="classEnergyStatusMessage_1a48d2ab51c6ece62c3559eb59d5f58678" prot="private" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>source</name></member>
+      <member refid="classEnergyStatusMessage_1a3a512842693007fd5bdaa3152a38c1cd" prot="private" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>target</name></member>
+      <member refid="classEnergyStatusMessage_1aa0dca6a6a1a646cf989237f5fcd56009" prot="private" virt="non-virtual"><scope>EnergyStatusMessage</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

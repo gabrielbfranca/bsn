@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_67bfdd06b9e1d9840810a9d51e07a67d" kind="dir">
+    <compoundname>src/sa-bsn</compoundname>
+    <innerdir refid="dir_749ff10de60b3471b204734c07089d11">src/sa-bsn/environment</innerdir>
+    <innerdir refid="dir_b99212792bdecdc886ba401cce59d31f">src/sa-bsn/knowledge_repository</innerdir>
+    <innerdir refid="dir_d581bd466ddd750643f8adfd4eb084b9">src/sa-bsn/logging_infrastructure</innerdir>
+    <innerdir refid="dir_ee4fcc9b5917ecc41492dfd3086d4c86">src/sa-bsn/simulation</innerdir>
+    <innerdir refid="dir_ac4796b96f58b29c127bc656c2ffdf13">src/sa-bsn/system_manager</innerdir>
+    <innerdir refid="dir_e70d6ec7091086c81b6e93c354deb1ee">src/sa-bsn/target_system</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/"/>
+  </compounddef>
+</doxygen>

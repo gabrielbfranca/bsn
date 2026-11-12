@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_7820f11c4482f02b738474524ce1ba7b" kind="dir">
+    <compoundname>src/archlib</compoundname>
+    <innerdir refid="dir_67f664916e4a84898a9ed61e29be9a4d">src/archlib/include</innerdir>
+    <innerdir refid="dir_383c43fd0da3a69e1b7af261769a27c7">src/archlib/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/archlib/"/>
+  </compounddef>
+</doxygen>

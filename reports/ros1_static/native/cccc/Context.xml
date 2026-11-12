@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Context-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="58" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="7" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="8.286" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.714" level="0" />
+<weighted_methods_per_class_unity value="12" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="3" level="0" />
+<IF4 value="4" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="4" level="0" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="4" level="0" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="9" />
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Context()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="14" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="11" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Context(const Context &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="17" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="18" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Context(const string &amp;,const string &amp;,const bool &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="6" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getDescription()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="25" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="46" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getID()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="22" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="38" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getValue()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="28" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="54" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator =(const Context &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="18" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="23" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator ==(const Context &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="19" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="30" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setDescription(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="24" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="42" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setID(const string &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="21" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="34" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setValue(const bool &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="27" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="50" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~Context()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="15" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="16" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Context</name>
+<client_module>
+<name>LeafTask</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="26" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/LeafTask.hpp" line="41" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/LeafTask.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/LeafTask.cpp" line="41" />
+</extent>
+</client_module>
+<supplier_module>
+<name>bool</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="27" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="33" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="50" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="21" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="24" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="31" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="32" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="34" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/libbsn/src/goalmodel/Context.cpp" line="42" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

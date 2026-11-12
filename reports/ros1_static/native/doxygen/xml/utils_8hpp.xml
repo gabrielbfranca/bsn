@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="utils_8hpp" kind="file" language="C++">
+    <compoundname>utils.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includedby refid="utils_8cpp" local="yes">src/libbsn/src/utils/utils.cpp</includedby>
+    <includedby refid="PatientModule_8hpp" local="yes">src/sa-bsn/environment/patient/include/PatientModule.hpp</includedby>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <includedby refid="Injector_8hpp" local="yes">src/sa-bsn/simulation/injector/include/Injector.hpp</includedby>
+    <includedby refid="CostEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</includedby>
+    <includedby refid="Engine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</includedby>
+    <includedby refid="ReliabilityEngine_8hpp" local="yes">src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</includedby>
+    <includedby refid="Enactor_8hpp" local="yes">src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp</includedby>
+    <includedby refid="CentralHub_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp</includedby>
+    <includedby refid="Sensor_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/Sensor.hpp</includedby>
+    <includedby refid="G3T1__1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</includedby>
+    <includedby refid="G3T1__2_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</includedby>
+    <includedby refid="G3T1__3_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</includedby>
+    <includedby refid="G3T1__4_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</includedby>
+    <includedby refid="G3T1__5_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</includedby>
+    <includedby refid="G3T1__6_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</includedby>
+    <includedby refid="G4T1_8hpp" local="yes">src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</includedby>
+    <incdepgraph>
+      <node id="640">
+        <label>string</label>
+      </node>
+      <node id="638">
+        <label>src/libbsn/include/libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="640" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="679">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp</label>
+        <link refid="g3t1__3_8cpp"/>
+      </node>
+      <node id="649">
+        <label>src/sa-bsn/simulation/injector/include/Injector.hpp</label>
+        <link refid="Injector_8hpp"/>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp</label>
+        <link refid="CentralHub_8hpp"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp</label>
+        <link refid="G4T1_8hpp"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</label>
+        <link refid="G3T1__2_8cpp"/>
+      </node>
+      <node id="650">
+        <label>src/sa-bsn/simulation/injector/apps/injector.cpp</label>
+        <link refid="injector_8cpp"/>
+      </node>
+      <node id="648">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="669">
+        <label>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</label>
+        <link refid="G4T1_8cpp"/>
+      </node>
+      <node id="671">
+        <label>src/sa-bsn/target_system/components/component/include/component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</label>
+        <link refid="CentralHub_8cpp"/>
+      </node>
+      <node id="688">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp</label>
+        <link refid="g3t1__6_8cpp"/>
+      </node>
+      <node id="656">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/ReliabilityEngine.hpp</label>
+        <link refid="ReliabilityEngine_8hpp"/>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</label>
+        <link refid="G3T1__5_8cpp"/>
+      </node>
+      <node id="683">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</label>
+        <link refid="G3T1__4_8cpp"/>
+      </node>
+      <node id="674">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</label>
+        <link refid="G3T1__1_8cpp"/>
+      </node>
+      <node id="658">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</label>
+        <link refid="ReliabilityEngine_8cpp"/>
+      </node>
+      <node id="660">
+        <label>src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp</label>
+        <link refid="Enactor_8hpp"/>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp</label>
+        <link refid="Engine_8hpp"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp</label>
+        <link refid="G3T1__2_8hpp"/>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+      </node>
+      <node id="641">
+        <label>src/libbsn/include/libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>src/sa-bsn/environment/patient/src/PatientModule.cpp</label>
+        <link refid="PatientModule_8cpp"/>
+      </node>
+      <node id="644">
+        <label>src/sa-bsn/environment/patient/apps/patient.cpp</label>
+        <link refid="patient_8cpp"/>
+      </node>
+      <node id="652">
+        <label>src/sa-bsn/system_manager/adaptation_engine/include/engine/CostEngine.hpp</label>
+        <link refid="CostEngine_8hpp"/>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>src/sa-bsn/system_manager/enactor/apps/enactor.cpp</label>
+        <link refid="enactor_8cpp"/>
+      </node>
+      <node id="689">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</label>
+        <link refid="G3T1__6_8cpp"/>
+      </node>
+      <node id="663">
+        <label>src/sa-bsn/system_manager/enactor/apps/controller.cpp</label>
+        <link refid="controller_8cpp"/>
+      </node>
+      <node id="647">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+      <node id="690">
+        <label>src/sa-bsn/target_system/components/component/src/Sensor.cpp</label>
+        <link refid="Sensor_8cpp"/>
+      </node>
+      <node id="653">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp</label>
+        <link refid="cost__engine_8cpp"/>
+      </node>
+      <node id="664">
+        <label>src/sa-bsn/system_manager/enactor/src/Controller.cpp</label>
+        <link refid="Controller_8cpp"/>
+      </node>
+      <node id="662">
+        <label>src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp</label>
+        <link refid="Controller_8hpp"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>src/sa-bsn/environment/patient/include/PatientModule.hpp</label>
+        <link refid="PatientModule_8hpp"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp</label>
+        <link refid="G3T1__1_8hpp"/>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</label>
+        <link refid="g3t1__1_8cpp"/>
+      </node>
+      <node id="642">
+        <label>src/libbsn/src/utils/utils.cpp</label>
+        <link refid="utils_8cpp"/>
+      </node>
+      <node id="678">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp</label>
+        <link refid="G3T1__3_8hpp"/>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</label>
+        <link refid="Engine_8cpp"/>
+      </node>
+      <node id="680">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</label>
+        <link refid="G3T1__3_8cpp"/>
+      </node>
+      <node id="654">
+        <label>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</label>
+        <link refid="CostEngine_8cpp"/>
+      </node>
+      <node id="651">
+        <label>src/sa-bsn/simulation/injector/src/Injector.cpp</label>
+        <link refid="Injector_8cpp"/>
+      </node>
+      <node id="681">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp</label>
+        <link refid="G3T1__4_8hpp"/>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp</label>
+        <link refid="reli__engine_8cpp"/>
+      </node>
+      <node id="665">
+        <label>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</label>
+        <link refid="Enactor_8cpp"/>
+      </node>
+      <node id="682">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp</label>
+        <link refid="g3t1__4_8cpp"/>
+      </node>
+      <node id="687">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp</label>
+        <link refid="G3T1__6_8hpp"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp</label>
+        <link refid="g3t1__5_8cpp"/>
+      </node>
+      <node id="676">
+        <label>src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp</label>
+        <link refid="g3t1__2_8cpp"/>
+      </node>
+      <node id="684">
+        <label>src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp</label>
+        <link refid="G3T1__5_8hpp"/>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>src/sa-bsn/target_system/components/component/apps/g4t1.cpp</label>
+        <link refid="g4t1_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacebsn">bsn</innernamespace>
+    <innernamespace refid="namespacebsn_1_1utils">bsn::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn" kindref="compound">bsn</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="namespacebsn_1_1utils" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">utils<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">split</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/libbsn/include/libbsn/utils/utils.hpp"/>
+  </compounddef>
+</doxygen>

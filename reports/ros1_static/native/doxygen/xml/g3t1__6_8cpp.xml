@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="G3T1__6_8cpp" kind="file" language="C++">
+    <compoundname>G3T1_6.cpp</compoundname>
+    <includes refid="G3T1__6_8hpp" local="yes">component/g3t1_6/G3T1_6.hpp</includes>
+    <incdepgraph>
+      <node id="2364">
+        <label>list</label>
+      </node>
+      <node id="2372">
+        <label>archlib/Event.h</label>
+      </node>
+      <node id="2366">
+        <label>libbsn/configuration/SensorConfiguration.hpp</label>
+        <link refid="SensorConfiguration_8hpp"/>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2367" relation="include">
+        </childnode>
+        <childnode refid="2354" relation="include">
+        </childnode>
+        <childnode refid="2359" relation="include">
+        </childnode>
+        <childnode refid="2356" relation="include">
+        </childnode>
+        <childnode refid="2352" relation="include">
+        </childnode>
+      </node>
+      <node id="2368">
+        <label>component/Sensor.hpp</label>
+        <link refid="Sensor_8hpp"/>
+        <childnode refid="2369" relation="include">
+        </childnode>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2361" relation="include">
+        </childnode>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2379" relation="include">
+        </childnode>
+        <childnode refid="2357" relation="include">
+        </childnode>
+        <childnode refid="2365" relation="include">
+        </childnode>
+        <childnode refid="2380" relation="include">
+        </childnode>
+        <childnode refid="2381" relation="include">
+        </childnode>
+      </node>
+      <node id="2383">
+        <label>services/PatientData.h</label>
+      </node>
+      <node id="2378">
+        <label>archlib/ROSComponentDescriptor.hpp</label>
+        <link refid="ROSComponentDescriptor_8hpp"/>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2351" relation="include">
+        </childnode>
+      </node>
+      <node id="2355">
+        <label>stdint.h</label>
+      </node>
+      <node id="2382">
+        <label>messages/SensorData.h</label>
+      </node>
+      <node id="2353">
+        <label>stdexcept</label>
+      </node>
+      <node id="2349">
+        <label>string</label>
+      </node>
+      <node id="2362">
+        <label>libbsn/generator/DataGenerator.hpp</label>
+        <link refid="DataGenerator_8hpp"/>
+        <childnode refid="2358" relation="include">
+        </childnode>
+        <childnode refid="2360" relation="include">
+        </childnode>
+        <childnode refid="2355" relation="include">
+        </childnode>
+      </node>
+      <node id="2363">
+        <label>libbsn/filters/MovingAverage.hpp</label>
+        <link refid="MovingAverage_8hpp"/>
+        <childnode refid="2364" relation="include">
+        </childnode>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2355" relation="include">
+        </childnode>
+        <childnode refid="2356" relation="include">
+        </childnode>
+      </node>
+      <node id="2350">
+        <label>exception</label>
+      </node>
+      <node id="2365">
+        <label>libbsn/utils/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="2361" relation="include">
+        </childnode>
+        <childnode refid="2349" relation="include">
+        </childnode>
+      </node>
+      <node id="2360">
+        <label>random</label>
+      </node>
+      <node id="2347">
+        <label>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</label>
+        <link refid="G3T1__6_8cpp"/>
+        <childnode refid="2348" relation="include">
+        </childnode>
+      </node>
+      <node id="2381">
+        <label>std_srvs/SetBool.h</label>
+      </node>
+      <node id="2352">
+        <label>libbsn/range/Range.hpp</label>
+        <link refid="Range_8hpp"/>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2353" relation="include">
+        </childnode>
+        <childnode refid="2354" relation="include">
+        </childnode>
+        <childnode refid="2355" relation="include">
+        </childnode>
+        <childnode refid="2356" relation="include">
+        </childnode>
+      </node>
+      <node id="2370">
+        <label>archlib/target_system/Component.hpp</label>
+        <link refid="Component_8hpp"/>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+        <childnode refid="2351" relation="include">
+        </childnode>
+        <childnode refid="2372" relation="include">
+        </childnode>
+        <childnode refid="2373" relation="include">
+        </childnode>
+        <childnode refid="2374" relation="include">
+        </childnode>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2376" relation="include">
+        </childnode>
+        <childnode refid="2377" relation="include">
+        </childnode>
+      </node>
+      <node id="2375">
+        <label>archlib/AdaptationCommand.h</label>
+      </node>
+      <node id="2361">
+        <label>vector</label>
+      </node>
+      <node id="2371">
+        <label>signal.h</label>
+      </node>
+      <node id="2377">
+        <label>archlib/ROSComponent.hpp</label>
+        <link refid="ROSComponent_8hpp"/>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2353" relation="include">
+        </childnode>
+        <childnode refid="2351" relation="include">
+        </childnode>
+        <childnode refid="2378" relation="include">
+        </childnode>
+      </node>
+      <node id="2379">
+        <label>archlib/Uncertainty.h</label>
+      </node>
+      <node id="2359">
+        <label>array</label>
+      </node>
+      <node id="2356">
+        <label>sstream</label>
+      </node>
+      <node id="2373">
+        <label>archlib/Status.h</label>
+      </node>
+      <node id="2351">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="2367">
+        <label>math.h</label>
+      </node>
+      <node id="2358">
+        <label>libbsn/generator/Markov.hpp</label>
+        <link refid="Markov_8hpp"/>
+        <childnode refid="2354" relation="include">
+        </childnode>
+        <childnode refid="2359" relation="include">
+        </childnode>
+        <childnode refid="2360" relation="include">
+        </childnode>
+        <childnode refid="2361" relation="include">
+        </childnode>
+        <childnode refid="2355" relation="include">
+        </childnode>
+        <childnode refid="2356" relation="include">
+        </childnode>
+        <childnode refid="2352" relation="include">
+        </childnode>
+      </node>
+      <node id="2354">
+        <label>iostream</label>
+      </node>
+      <node id="2374">
+        <label>archlib/EnergyStatus.h</label>
+      </node>
+      <node id="2380">
+        <label>std_msgs/Float32.h</label>
+      </node>
+      <node id="2357">
+        <label>libbsn/resource/Battery.hpp</label>
+        <link refid="Battery_8hpp"/>
+        <childnode refid="2356" relation="include">
+        </childnode>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2355" relation="include">
+        </childnode>
+        <childnode refid="2353" relation="include">
+        </childnode>
+      </node>
+      <node id="2348">
+        <label>component/g3t1_6/G3T1_6.hpp</label>
+        <link refid="G3T1__6_8hpp"/>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2350" relation="include">
+        </childnode>
+        <childnode refid="2351" relation="include">
+        </childnode>
+        <childnode refid="2352" relation="include">
+        </childnode>
+        <childnode refid="2357" relation="include">
+        </childnode>
+        <childnode refid="2358" relation="include">
+        </childnode>
+        <childnode refid="2362" relation="include">
+        </childnode>
+        <childnode refid="2363" relation="include">
+        </childnode>
+        <childnode refid="2365" relation="include">
+        </childnode>
+        <childnode refid="2366" relation="include">
+        </childnode>
+        <childnode refid="2368" relation="include">
+        </childnode>
+        <childnode refid="2382" relation="include">
+        </childnode>
+        <childnode refid="2383" relation="include">
+        </childnode>
+      </node>
+      <node id="2369">
+        <label>stdio.h</label>
+      </node>
+      <node id="2376">
+        <label>archlib/EffectorRegister.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" prot="public" static="no">
+        <name>BATT_UNIT</name>
+        <initializer>0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp" line="3" column="9" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp" bodystart="3" bodyend="-1"/>
+        <referencedby refid="classG3T1__6_1a0deb9a2b913d7753ef6708ccbd87df34" compoundref="G3T1__6_8cpp" startline="88" endline="108">G3T1_6::collect</referencedby>
+        <referencedby refid="classG3T1__6_1ab103fd747d38c26358039e4108c2a07d" compoundref="G3T1__6_8cpp" startline="110" endline="121">G3T1_6::process</referencedby>
+        <referencedby refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" compoundref="G3T1__6_8cpp" startline="123" endline="143">G3T1_6::transfer</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="G3T1__6_8cpp_1ad99a3089c13b6f47b26b218a997fad73" prot="public" static="no">
+        <name>INCREMENT</name>
+        <initializer>0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp" line="4" column="9" bodyfile="src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="G3T1__6_8hpp" kindref="compound">component/g3t1_6/G3T1_6.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATT_UNIT<sp/>0.05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="G3T1__6_8cpp_1ad99a3089c13b6f47b26b218a997fad73" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCREMENT<sp/>0.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn_1_1range" kindref="compound">bsn::range</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn_1_1resource" kindref="compound">bsn::resource</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn_1_1generator" kindref="compound">bsn::generator</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacebsn_1_1configuration" kindref="compound">bsn::configuration</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classG3T1__6_1a41170e3247fb2addd536d433868b3865" refkind="member"><highlight class="normal"><ref refid="classG3T1__6_1a41170e3247fb2addd536d433868b3865" kindref="member">G3T1_6::G3T1_6</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor" kindref="compound">Sensor</ref>(argc,<sp/>argv,<sp/>name,<sp/></highlight><highlight class="stringliteral">&quot;glucosemeter&quot;</highlight><highlight class="normal">,<sp/>true,<sp/>1,<sp/><ref refid="namespacebsn" kindref="compound">bsn</ref>::resource::<ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">Battery</ref>(</highlight><highlight class="stringliteral">&quot;glc_batt&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>100,<sp/>1),<sp/>false),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>markov(),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>dataGenerator(),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>filter(1),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>sensorConfig(),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>collected_risk()<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classG3T1__6_1af8b8f5ebef1c3d35b1f774f37db05312" refkind="member"><highlight class="normal"><ref refid="classG3T1__6_1af8b8f5ebef1c3d35b1f774f37db05312" kindref="member">G3T1_6::~G3T1_6</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classG3T1__6_1a18cb80842d7823ae9929b29af6ab89e8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classG3T1__6_1a18cb80842d7823ae9929b29af6ab89e8" kindref="member">G3T1_6::setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>Component::setUp();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;bsn::range::Range,5&gt;<sp/>ranges;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>s;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;start&quot;</highlight><highlight class="normal">,<sp/><ref refid="classSensor_1a6f7f1a35f0ba36eed21c10498b43452d" kindref="member">shouldStart</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>ranges</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>lrs,mrs0,hrs0,mrs1,hrs1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;glucose_LowRisk&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lrs<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;glucose_MidRisk0&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrs0<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;glucose_HighRisk0&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hrs0<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;glucose_MidRisk1&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrs1<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;glucose_HighRisk1&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hrs1<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranges[0]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(hrs0[0]),<sp/>std::stod(hrs0[1]));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranges[1]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(mrs0[0]),<sp/>std::stod(mrs0[1]));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranges[2]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(lrs[0]),<sp/>std::stod(lrs[1]));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranges[3]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(mrs1[0]),<sp/>std::stod(mrs1[1]));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranges[4]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(hrs1[0]),<sp/>std::stod(hrs1[1]));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>sensor<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref><sp/>low_range<sp/>=<sp/>ranges[2];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;Range,2&gt;<sp/>midRanges;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>midRanges[0]<sp/>=<sp/>ranges[1];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>midRanges[1]<sp/>=<sp/>ranges[3];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;Range,2&gt;<sp/>highRanges;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>highRanges[0]<sp/>=<sp/>ranges[0];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>highRanges[1]<sp/>=<sp/>ranges[4];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;Range,3&gt;<sp/>percentages;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;lowrisk&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>low_p<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>percentages[0]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(low_p[0]),<sp/>std::stod(low_p[1]));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;midrisk&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>mid_p<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>percentages[1]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(mid_p[0]),<sp/>std::stod(mid_p[1]));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;highrisk&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>high_p<sp/>=<sp/><ref refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" kindref="member">bsn::utils::split</ref>(s,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>percentages[2]<sp/>=<sp/><ref refid="classbsn_1_1range_1_1Range" kindref="compound">Range</ref>(std::stod(high_p[0]),<sp/>std::stod(high_p[1]));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kindref="member">sensorConfig</ref><sp/>=<sp/><ref refid="classbsn_1_1configuration_1_1SensorConfiguration" kindref="compound">SensorConfiguration</ref>(0,<sp/>low_range,<sp/>midRanges,<sp/>highRanges,<sp/>percentages);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//Check<sp/>for<sp/>instant<sp/>recharge<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.getParam(</highlight><highlight class="stringliteral">&quot;instant_recharge&quot;</highlight><highlight class="normal">,<sp/><ref refid="classSensor_1ac39726c6e8c9c731f52bab8e57010828" kindref="member">instant_recharge</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classG3T1__6_1aeb7749d4c82739285db2e311aac9828d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classG3T1__6_1aeb7749d4c82739285db2e311aac9828d" kindref="member">G3T1_6::tearDown</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>Component::tearDown();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classG3T1__6_1a0deb9a2b913d7753ef6708ccbd87df34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classG3T1__6_1a0deb9a2b913d7753ef6708ccbd87df34" kindref="member">G3T1_6::collect</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::ServiceClient<sp/><ref refid="classG3T1__6_1ae4ae2b5c48db74cacf040d355a36e49f" kindref="member">client</ref><sp/>=<sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>.serviceClient&lt;services::PatientData&gt;(</highlight><highlight class="stringliteral">&quot;getPatientData&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>services::PatientData<sp/>srv;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>srv.request.vitalSign<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;glucose&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(client.call(srv))<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_data<sp/>=<sp/>srv.response.data;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;new<sp/>data<sp/>collected:<sp/>[%s]&quot;</highlight><highlight class="normal">,<sp/>std::to_string(m_data).c_str());</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;error<sp/>collecting<sp/>data&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" kindref="member">consume</ref>(<ref refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kindref="member">BATT_UNIT</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref><sp/>+=<sp/><ref refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kindref="member">BATT_UNIT</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1ad06a6233898e085456a67bfe6e5bdbb6" kindref="member">collected_risk</ref><sp/>=<sp/><ref refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kindref="member">sensorConfig</ref>.<ref refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" kindref="member">evaluateNumber</ref>(m_data);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classG3T1__6_1ab103fd747d38c26358039e4108c2a07d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classG3T1__6_1ab103fd747d38c26358039e4108c2a07d" kindref="member">G3T1_6::process</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;m_data)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>filtered_data;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a1b6ab37ef694ef0a3803044f82e09d11" kindref="member">filter</ref>.<ref refid="classbsn_1_1filters_1_1MovingAverage_1a1064ba6989920ec1929a5992b1717993" kindref="member">insert</ref>(m_data);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>filtered_data<sp/>=<sp/><ref refid="classG3T1__6_1a1b6ab37ef694ef0a3803044f82e09d11" kindref="member">filter</ref>.<ref refid="classbsn_1_1filters_1_1MovingAverage_1a1b817aab4d87963ac5f2c868a81bfa9d" kindref="member">getValue</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" kindref="member">consume</ref>(<ref refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kindref="member">BATT_UNIT</ref>*<ref refid="classG3T1__6_1a1b6ab37ef694ef0a3803044f82e09d11" kindref="member">filter</ref>.<ref refid="classbsn_1_1filters_1_1MovingAverage_1a5a462e665a7faa4df75d803a38d04d22" kindref="member">getRange</ref>());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref><sp/>+=<sp/><ref refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kindref="member">BATT_UNIT</ref>*<ref refid="classG3T1__6_1a1b6ab37ef694ef0a3803044f82e09d11" kindref="member">filter</ref>.<ref refid="classbsn_1_1filters_1_1MovingAverage_1a5a462e665a7faa4df75d803a38d04d22" kindref="member">getRange</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;filtered<sp/>data:<sp/>[%s]&quot;</highlight><highlight class="normal">,<sp/>std::to_string(filtered_data).c_str());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>filtered_data;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classG3T1__6_1aaa3c643ee36464eca9e095d150926e22" kindref="member">G3T1_6::transfer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;m_data)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>risk<sp/>=<sp/><ref refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kindref="member">sensorConfig</ref>.<ref refid="classbsn_1_1configuration_1_1SensorConfiguration_1a74040e24635beeffd7067a23c5bb91ab" kindref="member">evaluateNumber</ref>(m_data);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(risk<sp/>&lt;<sp/>0<sp/>||<sp/>risk<sp/>&gt;<sp/>100)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::domain_error(</highlight><highlight class="stringliteral">&quot;risk<sp/>data<sp/>out<sp/>of<sp/>boundaries&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" kindref="member">label</ref>(risk)<sp/>!=<sp/><ref refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" kindref="member">label</ref>(<ref refid="classG3T1__6_1ad06a6233898e085456a67bfe6e5bdbb6" kindref="member">collected_risk</ref>))<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::domain_error(</highlight><highlight class="stringliteral">&quot;sensor<sp/>accuracy<sp/>fail&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/><ref refid="classG3T1__6_1a602fc6614d7a564ff99f48982966a8e2" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a87d1a4280675ce4818b4aa612d1fd179" kindref="member">data_pub</ref><sp/>=<sp/>handle.advertise&lt;messages::SensorData&gt;(</highlight><highlight class="stringliteral">&quot;glucosemeter_data&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>messages::SensorData<sp/>msg;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.type<sp/>=<sp/><ref refid="classSensor_1a6fe1dbe1e72b79e52eb42afe07c976b7" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.data<sp/>=<sp/>m_data;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.risk<sp/>=<sp/>risk;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.batt<sp/>=<sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" kindref="member">getCurrentLevel</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classG3T1__6_1a87d1a4280675ce4818b4aa612d1fd179" kindref="member">data_pub</ref>.publish(msg);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1a8a7cfe86933e5942fdeaa847a604c8be" kindref="member">battery</ref>.<ref refid="classbsn_1_1resource_1_1Battery_1aedd16b53e50acce84e3f77dfd6d38e74" kindref="member">consume</ref>(<ref refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kindref="member">BATT_UNIT</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSensor_1ab67b9f33a87d67805e732b82f179fe0b" kindref="member">cost</ref><sp/>+=<sp/><ref refid="G3T1__6_8cpp_1a6e29750d4b0aed5e4641450c0baf29f9" kindref="member">BATT_UNIT</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;risk<sp/>calculated<sp/>and<sp/>transferred:<sp/>[%.2f%%]&quot;</highlight><highlight class="normal">,<sp/>risk);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classG3T1__6_1a5973f6560b7125f92faa14e88a114b49" kindref="member">G3T1_6::label</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;risk)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>ans;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kindref="member">sensorConfig</ref>.<ref refid="classbsn_1_1configuration_1_1SensorConfiguration_1ad634307e717a32be46cbf83f5bb64dd6" kindref="member">isLowRisk</ref>(risk)){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ans<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;low&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kindref="member">sensorConfig</ref>.<ref refid="classbsn_1_1configuration_1_1SensorConfiguration_1a03fedce8669b42a6b9b85a5118e1b1c7" kindref="member">isMediumRisk</ref>(risk))<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ans<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;moderate&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classG3T1__6_1a434dc62ab76058ce99816226a962c443" kindref="member">sensorConfig</ref>.<ref refid="classbsn_1_1configuration_1_1SensorConfiguration_1a10edc69659fac13589698a7f2f4f529b" kindref="member">isHighRisk</ref>(risk))<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ans<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;high&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ans<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ans;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp"/>
+  </compounddef>
+</doxygen>

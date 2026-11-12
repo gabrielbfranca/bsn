@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classarch_1_1target__system_1_1Probe" kind="class" language="C++" prot="public">
+    <compoundname>arch::target_system::Probe</compoundname>
+    <basecompoundref refid="classarch_1_1ROSComponent" prot="public" virt="non-virtual">arch::ROSComponent</basecompoundref>
+    <includes refid="Probe_8hpp" local="no">Probe.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1a0dfdc16fd9743a56583fcc3892a1acf8" prot="protected" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle arch::target_system::Probe::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="34" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" compoundref="Probe_8cpp" startline="9" endline="17">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1af5bc2bfcd0f19f7b97cd661e8bc18150" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber arch::target_system::Probe::collect_event</definition>
+        <argsstring></argsstring>
+        <name>collect_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="37" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" compoundref="Probe_8cpp" startline="36" endline="42">body</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1a66e9a2150e45645168ec2b2c034e536d" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber arch::target_system::Probe::collect_status</definition>
+        <argsstring></argsstring>
+        <name>collect_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="38" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" compoundref="Probe_8cpp" startline="36" endline="42">body</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1aa34af4eec6a80fefb32c13e5739b171d" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber arch::target_system::Probe::collect_energy_status</definition>
+        <argsstring></argsstring>
+        <name>collect_energy_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="39" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" compoundref="Probe_8cpp" startline="36" endline="42">body</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher arch::target_system::Probe::log_event</definition>
+        <argsstring></argsstring>
+        <name>log_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="40" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a01aead06d320f6f2e583a1dbcf0990cf" compoundref="Probe_8cpp" startline="22" endline="25">collectEvent</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" compoundref="Probe_8cpp" startline="9" endline="17">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher arch::target_system::Probe::log_status</definition>
+        <argsstring></argsstring>
+        <name>log_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="41" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a2e582662575d5bec28730fd3b95296de" compoundref="Probe_8cpp" startline="27" endline="30">collectStatus</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" compoundref="Probe_8cpp" startline="9" endline="17">setUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher arch::target_system::Probe::log_energy_status</definition>
+        <argsstring></argsstring>
+        <name>log_energy_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="42" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a38c77474a3a960522c0abda3d0fb9b30" compoundref="Probe_8cpp" startline="32" endline="34">collectEnergyStatus</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" compoundref="Probe_8cpp" startline="9" endline="17">setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1aa7671d98e7f8b9dc178859bc18137a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::target_system::Probe::Probe</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name)</argsstring>
+        <name>Probe</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="17" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a061d84c285240c95d036d19b32a38544" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>arch::target_system::Probe::~Probe</definition>
+        <argsstring>()</argsstring>
+        <name>~Probe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="18" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Probe::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ab134ea71604829a9e520a03bcae4bb8d">setUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="25" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="9" bodyend="17"/>
+        <references refid="classarch_1_1target__system_1_1Probe_1a0dfdc16fd9743a56583fcc3892a1acf8" compoundref="Probe_8hpp" startline="34">handle</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" compoundref="Probe_8hpp" startline="42">log_energy_status</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" compoundref="Probe_8hpp" startline="40">log_event</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" compoundref="Probe_8hpp" startline="41">log_status</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a367bbc30a9c31b49b8684ce5c6849b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Probe::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1ROSComponent_1a0069d6f5e45a9daf0bdbefd773973bba">tearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="26" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Probe::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1ROSComponent_1ad59a3de60bed73bf6d37f0da4775a2d9">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="27" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="36" bodyend="42"/>
+        <references refid="classarch_1_1target__system_1_1Probe_1aa34af4eec6a80fefb32c13e5739b171d" compoundref="Probe_8hpp" startline="39">collect_energy_status</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1af5bc2bfcd0f19f7b97cd661e8bc18150" compoundref="Probe_8hpp" startline="37">collect_event</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1a66e9a2150e45645168ec2b2c034e536d" compoundref="Probe_8hpp" startline="38">collect_status</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1a38c77474a3a960522c0abda3d0fb9b30" compoundref="Probe_8cpp" startline="32" endline="34">collectEnergyStatus</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1a01aead06d320f6f2e583a1dbcf0990cf" compoundref="Probe_8cpp" startline="22" endline="25">collectEvent</references>
+        <references refid="classarch_1_1target__system_1_1Probe_1a2e582662575d5bec28730fd3b95296de" compoundref="Probe_8cpp" startline="27" endline="30">collectStatus</references>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a01aead06d320f6f2e583a1dbcf0990cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Probe::collectEvent</definition>
+        <argsstring>(const archlib::Event::ConstPtr &amp;)</argsstring>
+        <name>collectEvent</name>
+        <param>
+          <type>const archlib::Event::ConstPtr &amp;</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="29" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="22" bodyend="25"/>
+        <references refid="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" compoundref="Probe_8hpp" startline="40">log_event</references>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" compoundref="Probe_8cpp" startline="36" endline="42">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a2e582662575d5bec28730fd3b95296de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Probe::collectStatus</definition>
+        <argsstring>(const archlib::Status::ConstPtr &amp;)</argsstring>
+        <name>collectStatus</name>
+        <param>
+          <type>const archlib::Status::ConstPtr &amp;</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="30" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="27" bodyend="30"/>
+        <references refid="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" compoundref="Probe_8hpp" startline="41">log_status</references>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" compoundref="Probe_8cpp" startline="36" endline="42">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a38c77474a3a960522c0abda3d0fb9b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::target_system::Probe::collectEnergyStatus</definition>
+        <argsstring>(const archlib::EnergyStatus::ConstPtr &amp;)</argsstring>
+        <name>collectEnergyStatus</name>
+        <param>
+          <type>const archlib::EnergyStatus::ConstPtr &amp;</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="31" column="1" bodyfile="src/archlib/src/target_system/Probe.cpp" bodystart="32" bodyend="34"/>
+        <references refid="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" compoundref="Probe_8hpp" startline="42">log_energy_status</references>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" compoundref="Probe_8cpp" startline="36" endline="42">body</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1ad69766b406108233c7e302f7d31f471c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::target_system::Probe::Probe</definition>
+        <argsstring>(const Probe &amp;)</argsstring>
+        <name>Probe</name>
+        <param>
+          <type>const <ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1target__system_1_1Probe_1a847c67ff49de90ec098dd19ac4646676" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref> &amp;</type>
+        <definition>Probe&amp; arch::target_system::Probe::operator=</definition>
+        <argsstring>(const Probe &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classarch_1_1target__system_1_1Probe" kindref="compound">Probe</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="226">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="225">
+        <label>arch::target_system::Probe</label>
+        <link refid="classarch_1_1target__system_1_1Probe"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="228">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="229" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="227">
+        <label>arch::target_system::Probe</label>
+        <link refid="classarch_1_1target__system_1_1Probe"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/archlib/include/archlib/target_system/Probe.hpp" line="14" column="1" bodyfile="src/archlib/include/archlib/target_system/Probe.hpp" bodystart="14" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classarch_1_1target__system_1_1Probe_1a314459b75344ac065eea914ed1646c51" prot="public" virt="virtual"><scope>arch::target_system::Probe</scope><name>body</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1aa34af4eec6a80fefb32c13e5739b171d" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>collect_energy_status</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1af5bc2bfcd0f19f7b97cd661e8bc18150" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>collect_event</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a66e9a2150e45645168ec2b2c034e536d" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>collect_status</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a38c77474a3a960522c0abda3d0fb9b30" prot="public" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>collectEnergyStatus</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a01aead06d320f6f2e583a1dbcf0990cf" prot="public" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>collectEvent</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a2e582662575d5bec28730fd3b95296de" prot="public" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>collectStatus</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>getRosNodeName</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a0dfdc16fd9743a56583fcc3892a1acf8" prot="protected" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>handle</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a90083c553e0defcf4edec87716ca9894" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>log_energy_status</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a292e834b76ce9785d4797217b087b612" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>log_event</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1ab877655e56333b38f6c7fbd5347a24fd" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>log_status</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a847c67ff49de90ec098dd19ac4646676" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>operator=</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1aa7671d98e7f8b9dc178859bc18137a35" prot="public" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>Probe</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1ad69766b406108233c7e302f7d31f471c" prot="private" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>Probe</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>arch::target_system::Probe</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" prot="public" virt="virtual"><scope>arch::target_system::Probe</scope><name>run</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" prot="public" virt="virtual"><scope>arch::target_system::Probe</scope><name>setUp</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a367bbc30a9c31b49b8684ce5c6849b2e" prot="public" virt="virtual"><scope>arch::target_system::Probe</scope><name>tearDown</name></member>
+      <member refid="classarch_1_1target__system_1_1Probe_1a061d84c285240c95d036d19b32a38544" prot="public" virt="virtual"><scope>arch::target_system::Probe</scope><name>~Probe</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>arch::target_system::Probe</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

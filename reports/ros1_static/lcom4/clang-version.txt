@@ -1,0 +1,4 @@
+Ubuntu clang version 18.1.8 (++20240923115638+3b5b5c1ec4a3-1~exp1~20240923115728.151)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /workspaces/bsn_/tools/.metrics-runtime/clang18-root/usr/lib/llvm-18/bin

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1SharedState" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::SharedState</compoundname>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfixtures_1_1SharedState_1ad56b32e0fc1aa18f84d659b23cc6b6df" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fixtures::SharedState::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="3" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfixtures_1_1SharedState_1a0d3f8fd3cf9a60388677ce926ab50d72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fixtures::SharedState::a</definition>
+        <argsstring>()</argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="3" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="3" bodyend="3"/>
+        <referencedby refid="classfixtures_1_1Stateless_1a1d8e5f8376bb5ae8c17e0ee1b506b59f" compoundref="classes_8hpp" startline="7" endline="7">fixtures::Stateless::b</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classfixtures_1_1SharedState_1a8c2c6d41ece863019c4b079135331e7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fixtures::SharedState::b</definition>
+        <argsstring>()</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="3" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="3" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="3" bodyend="3"/>
+    <listofallmembers>
+      <member refid="classfixtures_1_1SharedState_1a0d3f8fd3cf9a60388677ce926ab50d72" prot="public" virt="non-virtual"><scope>fixtures::SharedState</scope><name>a</name></member>
+      <member refid="classfixtures_1_1SharedState_1a8c2c6d41ece863019c4b079135331e7e" prot="public" virt="non-virtual"><scope>fixtures::SharedState</scope><name>b</name></member>
+      <member refid="classfixtures_1_1SharedState_1ad56b32e0fc1aa18f84d659b23cc6b6df" prot="private" virt="non-virtual"><scope>fixtures::SharedState</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

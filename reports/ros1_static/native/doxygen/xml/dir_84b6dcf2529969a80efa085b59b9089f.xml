@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_84b6dcf2529969a80efa085b59b9089f" kind="dir">
+    <compoundname>src/sa-bsn/knowledge_repository/data_access/include</compoundname>
+    <innerdir refid="dir_c1fd8870642fc348c13bba748557a702">src/sa-bsn/knowledge_repository/data_access/include/data_access</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9277 @@
+<!DOCTYPE HTML PUBLIC
+"-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Code complexity report</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <style>
+    h2
+    {
+          text-align: center;
+    }
+        td.footer
+        {
+          text-align: center;
+          padding-top: 3px;
+          font-family: sans-serif;
+        }
+    td.greater-value
+        {
+          padding-top: 2px;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-family: sans-serif;
+          white-space: nowrap;
+      background-color: LightPink;
+        }
+    td.lesser-value
+        {
+          padding-top: 2px;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-family: sans-serif;
+          white-space: nowrap;
+      background-color: LightGreen;
+        }
+    td.value
+        {
+          padding-top: 2px;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-family: sans-serif;
+          white-space: nowrap;
+        }
+    td.file-header
+        {
+          background-color: LightBlue;
+          font-weight: bold;
+        }
+    td.function-name
+        {
+          background-color: LightSteelBlue;
+        }
+    /* DataTables wrapper styling */
+    .dataTables_wrapper {
+          margin: 0 auto;
+          width: 95%;
+        }
+    /* Fallback styling if DataTables CSS doesn't load */
+    table#complexityTable {
+          border-collapse: collapse;
+          width: 95%;
+          margin: 0 auto;
+        }
+    table#complexityTable th {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+    table#complexityTable td {
+          border: 1px solid #ddd;
+        }
+    table#complexityTable tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+    table#complexityTable tr:hover {
+          background-color: #ddd;
+        }
+  </style>
+ </head>
+ <body>
+<h2>Code Complexity Report</h2>
+
+<center>
+
+<table id="complexityTable" class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Function name</th>
+      <th>Cyclomatic complexity (15)</th>
+      <th>LOC (1000000)</th>
+      <th>
+        
+           Token count
+        
+      </th>
+      <th>Parameter count (100)</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <tr>
+    <td>src/archlib/src/ROSComponent.cpp</td>
+    <td class="function-name">shutdownOnSignal</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">12</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponent.cpp</td>
+    <td class="function-name">arch::ROSComponent::ROSComponent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">87</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponent.cpp</td>
+    <td class="function-name">arch::ROSComponent::~ROSComponent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponent.cpp</td>
+    <td class="function-name">arch::ROSComponent::run</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">11</td>
+    
+
+    
+       <td class="value">56</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponent.cpp</td>
+    <td class="function-name">arch::ROSComponent::getRosNodeName</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">109</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::ROSComponentDescriptor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">16</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::~ROSComponentDescriptor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::ROSComponentDescriptor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">29</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">32</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::setName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::getName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::setFreq</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">17</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/ROSComponentDescriptor.cpp</td>
+    <td class="function-name">arch::ROSComponentDescriptor::getFreq</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::Component</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">30</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::~Component</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::setUp</td>
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="lesser-value">25</td>
+    
+
+    
+       <td class="value">212</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::sigIntHandler</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::shutdownComponent</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">27</td>
+    
+
+    
+       <td class="value">248</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::run</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">85</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::sendEvent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">51</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::sendStatus</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">41</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::sendEnergyStatus</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">44</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::reconfigure</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">20</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::activate</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">16</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Component.cpp</td>
+    <td class="function-name">arch::target_system::Component::deactivate</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">16</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/archlib/src/target_system/Effector.cpp</td>
+    <td class="function-name">arch::target_system::Effector::Effector</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">30</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Effector.cpp</td>
+    <td class="function-name">arch::target_system::Effector::~Effector</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Effector.cpp</td>
+    <td class="function-name">arch::target_system::Effector::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">26</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Effector.cpp</td>
+    <td class="function-name">arch::target_system::Effector::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::Probe</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">30</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::~Probe</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::collectEvent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::collectStatus</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::collectEnergyStatus</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/archlib/src/target_system/Probe.cpp</td>
+    <td class="function-name">arch::target_system::Probe::body</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">81</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::SensorConfiguration</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">35</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::SensorConfiguration</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">80</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::SensorConfiguration</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getId</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setId</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">16</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getDisplacement</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">23</td>
+    
+
+    
+       <td class="value">145</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::convertRealPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">50</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::evaluateNumber</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">27</td>
+    
+
+    
+       <td class="value">201</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::toString</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">107</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getLowRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setLowRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">14</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getMediumRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setMediumRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getHighRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::isLowRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">17</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::isMediumRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">17</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::isHighRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">17</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setHighRisk</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getLowPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setLowPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">14</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getMidPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setMidPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">14</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::getHighPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/configuration/SensorConfiguration.cpp</td>
+    <td class="function-name">bsn::configuration::SensorConfiguration::setHighPercentage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">14</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::MovingAverage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">30</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::MovingAverage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">36</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">26</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::getValue</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">18</td>
+    
+
+    
+       <td class="value">93</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::insert</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">38</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::getRange</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::setRange</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">14</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::toString</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">32</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/filters/MovingAverage.cpp</td>
+    <td class="function-name">bsn::filters::MovingAverage::getBuffer</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">10</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::DataGenerator</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::DataGenerator</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">20</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::DataGenerator</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::~DataGenerator</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">24</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::setSeed</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">26</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::nextState</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">19</td>
+    
+
+    
+       <td class="value">131</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::calculateValue</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">79</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/DataGenerator.cpp</td>
+    <td class="function-name">bsn::generator::DataGenerator::getValue</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">12</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/generator/Markov.cpp</td>
+    <td class="function-name">bsn::generator::Markov::Markov</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/Markov.cpp</td>
+    <td class="function-name">bsn::generator::Markov::Markov</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">40</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/Markov.cpp</td>
+    <td class="function-name">bsn::generator::Markov::Markov</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">32</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/Markov.cpp</td>
+    <td class="function-name">bsn::generator::Markov::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">36</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/generator/Markov.cpp</td>
+    <td class="function-name">bsn::generator::Markov::toString</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">29</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::Context</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">40</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::Context</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::~Context</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::Context</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">38</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">48</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::operator ==</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">21</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::setID</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::getID</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::setDescription</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::getDescription</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::setValue</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">17</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Context.cpp</td>
+    <td class="function-name">bsn::goalmodel::Context::getValue</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Goal.cpp</td>
+    <td class="function-name">bsn::goalmodel::Goal::Goal</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">27</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Goal.cpp</td>
+    <td class="function-name">bsn::goalmodel::Goal::Goal</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Goal.cpp</td>
+    <td class="function-name">bsn::goalmodel::Goal::~Goal</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::GoalTree</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::GoalTree</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::~GoalTree</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::GoalTree</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">29</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::operator ==</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">21</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::setActor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::getActor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::getNodes</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::addChildren</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">61</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::addNode</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">46</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::addRootGoal</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">40</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::getNode</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">53</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::getSize</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/GoalTree.cpp</td>
+    <td class="function-name">bsn::goalmodel::GoalTree::getLeafTasks</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">11</td>
+    
+
+    
+       <td class="value">102</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::LeafTask</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">75</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::LeafTask</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">67</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::LeafTask</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">27</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::~LeafTask</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::LeafTask</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">62</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">66</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::setContext</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::getContext</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::setCost</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::getCost</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::setReliability</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::getReliability</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::setFrequency</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::getFrequency</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/LeafTask.cpp</td>
+    <td class="function-name">bsn::goalmodel::LeafTask::addChild</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::Node</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::~Node</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::Node</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::Node</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">38</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::operator =</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">55</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::operator ==</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::operator < <</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">61</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::setID</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::getID</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::setDescription</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::getDescription</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::hasChildren</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">18</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::getChildren</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::addChild</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">23</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::removeChild</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">38</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::getChild</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">27</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Node.cpp</td>
+    <td class="function-name">bsn::goalmodel::Node::findChild</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">85</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::Property</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::Property</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::~Property</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::Property</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">29</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::operator ==</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">21</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::setID</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::getID</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::setValue</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">17</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Property.cpp</td>
+    <td class="function-name">bsn::goalmodel::Property::getValue</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Task.cpp</td>
+    <td class="function-name">bsn::goalmodel::Task::Task</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">27</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Task.cpp</td>
+    <td class="function-name">bsn::goalmodel::Task::Task</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Task.cpp</td>
+    <td class="function-name">bsn::goalmodel::Task::~Task</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Task.cpp</td>
+    <td class="function-name">bsn::goalmodel::Task::addChild</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">23</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/goalmodel/Task.cpp</td>
+    <td class="function-name">bsn::goalmodel::Task::addChild</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">22</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::Formula</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::Formula</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">36</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::Formula</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">117</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::~Formula</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::Formula</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">29</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::getExpression</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::setExpression</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::getTermValueMap</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::setTermValueMap</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">101</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::setTermValueMap</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">24</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::evaluate</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">80</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/model/Formula.cpp</td>
+    <td class="function-name">bsn::model::Formula::getTerms</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">49</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/processor/Processor.cpp</td>
+    <td class="function-name">bsn::processor::get_sensor_id</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">73</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/processor/Processor.cpp</td>
+    <td class="function-name">bsn::processor::get_value</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">36</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/processor/Processor.cpp</td>
+    <td class="function-name">bsn::processor::data_fuse</td>
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="lesser-value">59</td>
+    
+
+    
+       <td class="value">370</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::Range</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::Range</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">42</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::~Range</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::Range</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">29</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::in_range</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">24</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::convert</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">43</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::to_print</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">24</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::setLowerBound</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::getLowerBound</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::setUpperBound</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::getUpperBound</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/range/Range.cpp</td>
+    <td class="function-name">bsn::range::Range::toString</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">35</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::Battery</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">15</td>
+    
+
+    
+       <td class="value">100</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::Battery</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">26</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::Battery</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">47</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">50</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::~Battery</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::consume</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">26</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::generate</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">26</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::setId</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::getId</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::setCapacity</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::getCapacity</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::setCurrentLevel</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::getCurrentLevel</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::setUnit</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::getUnit</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/resource/Battery.cpp</td>
+    <td class="function-name">bsn::resource::Battery::toString</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">47</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/time/TimeData.cpp</td>
+    <td class="function-name">bsn::time::TimeData::TimeData</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/time/TimeData.cpp</td>
+    <td class="function-name">bsn::time::TimeData::~TimeData</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/time/TimeData.cpp</td>
+    <td class="function-name">bsn::time::TimeData::elapsedTime</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">12</td>
+    
+
+    
+       <td class="value">91</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/libbsn/src/time/TimeData.cpp</td>
+    <td class="function-name">bsn::time::TimeData::get_time</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">99</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/libbsn/src/utils/utils.cpp</td>
+    <td class="function-name">bsn::utils::split</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">16</td>
+    
+
+    
+       <td class="value">85</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/apps/patient.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::PatientModule</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::~PatientModule</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::setUp</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">21</td>
+    
+
+    
+       <td class="value">191</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::configureDataGenerator</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">37</td>
+    
+
+    
+       <td class="value">495</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::getPatientData</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">53</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/environment/patient/src/PatientModule.cpp</td>
+    <td class="function-name">PatientModule::body</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">11</td>
+    
+
+    
+       <td class="value">85</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::AdaptationMessage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::getName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::getTimestamp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::getLogicalClock</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::getSource</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::getTarget</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/AdaptationMessage.hpp</td>
+    <td class="function-name">AdaptationMessage::getContent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::EnergyStatusMessage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::getName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::getTimestamp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::getLogicalClock</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::getSource</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::getTarget</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EnergyStatusMessage.hpp</td>
+    <td class="function-name">EnergyStatusMessage::getCost</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::EventMessage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::getName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::getTimestamp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::getLogicalClock</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::getSource</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::getTarget</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/EventMessage.hpp</td>
+    <td class="function-name">EventMessage::getEvent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::StatusMessage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::getName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::getTimestamp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::getLogicalClock</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::getSource</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::getTarget</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/StatusMessage.hpp</td>
+    <td class="function-name">StatusMessage::getState</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::UncertaintyMessage</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::getName</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::getTimestamp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::getLogicalClock</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::getSource</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::getTarget</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</td>
+    <td class="function-name">UncertaintyMessage::getContent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::DataAccess</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::~DataAccess</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::now</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">27</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::nowInSeconds</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">19</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">fetch_formula</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="value">96</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">59</td>
+    
+
+    
+       <td class="value">534</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::processTargetSystemData</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">69</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::body</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">18</td>
+    
+
+    
+       <td class="value">87</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::receivePersistMessage</td>
+    
+       <td class="lesser-value">12</td>
+    
+
+    
+       <td class="lesser-value">54</td>
+    
+
+    
+       <td class="value">570</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::processQuery</td>
+    
+       <td class="greater-value">17</td>
+    
+
+    
+       <td class="lesser-value">50</td>
+    
+
+    
+       <td class="value">412</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::persistEvent</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">67</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::persistStatus</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">67</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::persistEnergyStatus</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">67</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::persistUncertainty</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">67</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::persistAdaptation</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">67</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::flush</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">57</td>
+    
+
+    
+       <td class="value">797</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::calculateComponentReliability</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">26</td>
+    
+
+    
+       <td class="value">174</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::calculateComponentCost</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="value">113</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</td>
+    <td class="function-name">DataAccess::applyTimeWindow</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">16</td>
+    
+
+    
+       <td class="value">107</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/apps/logger.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::Logger</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::~Logger</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::now</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">27</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">98</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::body</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">123</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::receiveAdaptationCommand</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">76</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::receiveStatus</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">76</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::receiveEnergyStatus</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">69</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::receiveEvent</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">76</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp</td>
+    <td class="function-name">Logger::receiveUncertainty</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">69</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/apps/injector.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::Injector</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">63</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::~Injector</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::setUp</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">23</td>
+    
+
+    
+       <td class="value">279</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::seconds_in_cycles</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">20</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::cycles_in_seconds</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">20</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::gen_noise</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">11</td>
+    
+
+    
+       <td class="value">111</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::body</td>
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">164</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/simulation/injector/src/Injector.cpp</td>
+    <td class="function-name">Injector::inject</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">85</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/apps/cost_engine.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/apps/reli_engine.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">comp::operator ( )</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">45</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::CostEngine</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">58</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::~CostEngine</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">77</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::get_prefix</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">10</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::initialize_strategy</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::initialize_priority</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">92</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::monitor</td>
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="lesser-value">74</td>
+    
+
+    
+       <td class="value">702</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::analyze</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">29</td>
+    
+
+    
+       <td class="value">249</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::plan</td>
+    
+       <td class="greater-value">45</td>
+    
+
+    
+       <td class="lesser-value">144</td>
+    
+
+    
+       <td class="value">1198</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/CostEngine.cpp</td>
+    <td class="function-name">CostEngine::execute</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">37</td>
+    
+
+    
+       <td class="value">289</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::Engine</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">55</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::~Engine</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::setUp</td>
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="lesser-value">30</td>
+    
+
+    
+       <td class="value">186</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::sendAdaptationParameter</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">43</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::receiveException</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">16</td>
+    
+
+    
+       <td class="value">189</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::setUp_formula</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">61</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::fetch_formula</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">105</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::calculate_qos</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">39</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp</td>
+    <td class="function-name">Engine::body</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">19</td>
+    
+
+    
+       <td class="value">122</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">comp::operator ( )</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">45</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::ReliabilityEngine</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">59</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::~ReliabilityEngine</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">61</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::get_prefix</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">10</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::initialize_strategy</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::initialize_priority</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">92</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::monitor</td>
+    
+       <td class="lesser-value">15</td>
+    
+
+    
+       <td class="lesser-value">75</td>
+    
+
+    
+       <td class="value">725</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::analyze</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::plan</td>
+    
+       <td class="greater-value">39</td>
+    
+
+    
+       <td class="lesser-value">92</td>
+    
+
+    
+       <td class="value">915</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/adaptation_engine/src/ReliabilityEngine.cpp</td>
+    <td class="function-name">ReliabilityEngine::execute</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">37</td>
+    
+
+    
+       <td class="value">289</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/apps/controller.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/apps/enactor.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Controller.cpp</td>
+    <td class="function-name">Controller::Controller</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Controller.cpp</td>
+    <td class="function-name">Controller::~Controller</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Controller.cpp</td>
+    <td class="function-name">Controller::setUp</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">18</td>
+    
+
+    
+       <td class="value">142</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Controller.cpp</td>
+    <td class="function-name">Controller::receiveEvent</td>
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="lesser-value">29</td>
+    
+
+    
+       <td class="value">223</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Controller.cpp</td>
+    <td class="function-name">Controller::apply_reli_strategy</td>
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="lesser-value">62</td>
+    
+
+    
+       <td class="value">582</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Controller.cpp</td>
+    <td class="function-name">Controller::apply_cost_strategy</td>
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="lesser-value">62</td>
+    
+
+    
+       <td class="value">581</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::Enactor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">38</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::~Enactor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::receiveAdaptationParameter</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">15</td>
+    
+
+    
+       <td class="value">82</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::receiveStatus</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">34</td>
+    
+
+    
+       <td class="value">271</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::receiveStrategy</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">11</td>
+    
+
+    
+       <td class="value">136</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::body</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">12</td>
+    
+
+    
+       <td class="value">107</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/system_manager/enactor/src/Enactor.cpp</td>
+    <td class="function-name">Enactor::print</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g3t1_1.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g3t1_2.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g3t1_3.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g3t1_4.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g3t1_5.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g3t1_6.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/apps/g4t1.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::CentralHub</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">110</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::~CentralHub</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::run</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">21</td>
+    
+
+    
+       <td class="value">225</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::body</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">19</td>
+    
+
+    
+       <td class="value">103</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::apply_noise</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::reconfigure</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">11</td>
+    
+
+    
+       <td class="value">132</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::isActive</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">10</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::turnOn</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::turnOff</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">15</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/CentralHub.cpp</td>
+    <td class="function-name">CentralHub::recharge</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">34</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::Sensor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">106</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::~Sensor</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::operator =</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">8</td>
+    
+
+    
+       <td class="value">60</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::run</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">26</td>
+    
+
+    
+       <td class="value">189</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::body</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">28</td>
+    
+
+    
+       <td class="value">150</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::apply_noise</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">61</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::reconfigure</td>
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="value">169</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::injectUncertainty</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">120</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::isActive</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">10</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::turnOn</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::turnOff</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">11</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/Sensor.cpp</td>
+    <td class="function-name">Sensor::recharge</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">43</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::G3T1_1</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::~G3T1_1</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">48</td>
+    
+
+    
+       <td class="value">591</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::collect</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">40</td>
+    
+
+    
+       <td class="value">204</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::process</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::transfer</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">20</td>
+    
+
+    
+       <td class="value">140</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_1/G3T1_1.cpp</td>
+    <td class="function-name">G3T1_1::label</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">21</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::G3T1_2</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::~G3T1_2</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">47</td>
+    
+
+    
+       <td class="value">591</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::collect</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">30</td>
+    
+
+    
+       <td class="value">204</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::process</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::transfer</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">140</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_2/G3T1_2.cpp</td>
+    <td class="function-name">G3T1_2::label</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::G3T1_3</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::~G3T1_3</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">47</td>
+    
+
+    
+       <td class="value">591</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::collect</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">30</td>
+    
+
+    
+       <td class="value">204</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::process</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::transfer</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">140</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_3/G3T1_3.cpp</td>
+    <td class="function-name">G3T1_3::label</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::G3T1_4</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::~G3T1_4</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">47</td>
+    
+
+    
+       <td class="value">591</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::collect</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">16</td>
+    
+
+    
+       <td class="value">108</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::process</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::transfer</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">140</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_4/G3T1_4.cpp</td>
+    <td class="function-name">G3T1_4::label</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::G3T1_5</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::~G3T1_5</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">47</td>
+    
+
+    
+       <td class="value">591</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::collect</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">16</td>
+    
+
+    
+       <td class="value">108</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::process</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::transfer</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">140</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_5/G3T1_5.cpp</td>
+    <td class="function-name">G3T1_5::label</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::G3T1_6</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">74</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::~G3T1_6</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">47</td>
+    
+
+    
+       <td class="value">591</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">13</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::collect</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">16</td>
+    
+
+    
+       <td class="value">108</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::process</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">9</td>
+    
+
+    
+       <td class="value">71</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::transfer</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">17</td>
+    
+
+    
+       <td class="value">140</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g3t1_6/G3T1_6.cpp</td>
+    <td class="function-name">G3T1_6::label</td>
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="value">72</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::G4T1</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="value">57</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::~G4T1</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::getPatientStatus</td>
+    
+       <td class="lesser-value">14</td>
+    
+
+    
+       <td class="lesser-value">42</td>
+    
+
+    
+       <td class="value">255</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::setUp</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">12</td>
+    
+
+    
+       <td class="value">98</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::collect</td>
+    
+       <td class="lesser-value">10</td>
+    
+
+    
+       <td class="lesser-value">35</td>
+    
+
+    
+       <td class="value">296</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::process</td>
+    
+       <td class="lesser-value">13</td>
+    
+
+    
+       <td class="lesser-value">37</td>
+    
+
+    
+       <td class="value">380</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::getSensorId</td>
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="lesser-value">18</td>
+    
+
+    
+       <td class="value">88</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp</td>
+    <td class="function-name">G4T1::transfer</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">27</td>
+    
+
+    
+       <td class="value">151</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/apps/param_adapter.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">28</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::ParamAdapter</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">30</td>
+    
+
+    
+       <td class="lesser-value">3</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::~ParamAdapter</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::setUp</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">6</td>
+    
+
+    
+       <td class="value">42</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::tearDown</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="value">7</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::body</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">5</td>
+    
+
+    
+       <td class="value">39</td>
+    
+
+    
+       <td class="lesser-value">0</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::receiveAdaptationCommand</td>
+    
+       <td class="lesser-value">2</td>
+    
+
+    
+       <td class="lesser-value">7</td>
+    
+
+    
+       <td class="value">62</td>
+    
+
+    
+       <td class="lesser-value">1</td>
+    
+  </tr>
+  
+  <tr>
+    <td>src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp</td>
+    <td class="function-name">ParamAdapter::moduleConnect</td>
+    
+       <td class="lesser-value">3</td>
+    
+
+    
+       <td class="lesser-value">18</td>
+    
+
+    
+       <td class="value">151</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  
+  <tr>
+    <td>src/sa-bsn/target_system/probes/collector/apps/collector.cpp</td>
+    <td class="function-name">main</td>
+    
+       <td class="lesser-value">1</td>
+    
+
+    
+       <td class="lesser-value">4</td>
+    
+
+    
+       <td class="value">32</td>
+    
+
+    
+       <td class="lesser-value">2</td>
+    
+  </tr>
+  
+
+  </tbody>
+</table>
+<center>
+
+<br>
+<table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="footer">Generated by
+    <a href="http://www.lizard.ws/">Lizard</a> on 2026-11-12 20:29
+    </td></tr>
+</table>
+
+<script>
+// Gracefully degrade if CDN is unavailable
+if (typeof jQuery !== 'undefined' && typeof jQuery.fn.dataTable !== 'undefined') {
+    $(document).ready(function() {
+        try {
+            $('#complexityTable').DataTable({
+                "pageLength": 25,
+                "order": [[2, "desc"]],  // Sort by cyclomatic complexity descending by default
+                "columnDefs": [
+                    { "type": "num", "targets": [2, 3, 4, 5] }  // Ensure numeric sorting for metric columns
+                ]
+            });
+        } catch (e) {
+            console.warn('DataTables initialization failed. Displaying static table.', e);
+        }
+    });
+} else {
+    // Fallback: Table will display as static HTML
+    console.info('DataTables not available. Displaying static HTML table.');
+}
+</script>
+
+ </body>
+</html>
+

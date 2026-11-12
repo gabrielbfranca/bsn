@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="UncertaintyMessage_8hpp" kind="file" language="C++">
+    <compoundname>UncertaintyMessage.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="DataAccess_8hpp" local="yes">src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</includedby>
+    <incdepgraph>
+      <node id="994">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</label>
+        <link refid="UncertaintyMessage_8hpp"/>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="995">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="999">
+        <label>src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp</label>
+        <link refid="DataAccess_8cpp"/>
+      </node>
+      <node id="996">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp</label>
+        <link refid="UncertaintyMessage_8hpp"/>
+        <childnode refid="997" relation="include">
+        </childnode>
+      </node>
+      <node id="997">
+        <label>src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp</label>
+        <link refid="DataAccess_8hpp"/>
+        <childnode refid="998" relation="include">
+        </childnode>
+        <childnode refid="999" relation="include">
+        </childnode>
+      </node>
+      <node id="998">
+        <label>src/sa-bsn/knowledge_repository/data_access/apps/data_access.cpp</label>
+        <link refid="data__access_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classUncertaintyMessage" prot="public">UncertaintyMessage</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>UNCERTAINTY_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNCERTAINTY_MESSAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classUncertaintyMessage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUncertaintyMessage" kindref="compound">UncertaintyMessage</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classUncertaintyMessage_1a73177c51c3fc04c721f73dd6b92aab34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUncertaintyMessage_1a73177c51c3fc04c721f73dd6b92aab34" kindref="member">UncertaintyMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" kindref="member">timestamp</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>&amp;<ref refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" kindref="member">logical_clock</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" kindref="member">source</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" kindref="member">target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" kindref="member">content</ref>)<sp/>:<sp/>name(name),<sp/>timestamp(timestamp),<sp/>logical_clock(logical_clock),<sp/>source(source),<sp/>target(target),<sp/>content(content){};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classUncertaintyMessage_1a4ff249a4f00fbd9cf2ef6386de515916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1a4ff249a4f00fbd9cf2ef6386de515916" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" kindref="member">name</ref>;};</highlight></codeline>
+<codeline lineno="12" refid="classUncertaintyMessage_1a6f3bb49680c01cd4824964f854766976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classUncertaintyMessage_1a6f3bb49680c01cd4824964f854766976" kindref="member">getTimestamp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" kindref="member">timestamp</ref>;};</highlight></codeline>
+<codeline lineno="13" refid="classUncertaintyMessage_1a3a182508829e61963d20bd2b004d9614" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classUncertaintyMessage_1a3a182508829e61963d20bd2b004d9614" kindref="member">getLogicalClock</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" kindref="member">logical_clock</ref>;};</highlight></codeline>
+<codeline lineno="14" refid="classUncertaintyMessage_1a0569f920cd24b25833dad5d2ae136c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1a0569f920cd24b25833dad5d2ae136c33" kindref="member">getSource</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" kindref="member">source</ref>;};</highlight></codeline>
+<codeline lineno="15" refid="classUncertaintyMessage_1a5a12c49d95828fe130f53ffda6762494" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1a5a12c49d95828fe130f53ffda6762494" kindref="member">getTarget</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" kindref="member">target</ref>;};</highlight></codeline>
+<codeline lineno="16" refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1ae1e84ebb14aa94c439fde9fae568b693" kindref="member">getContent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" kindref="member">content</ref>;};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1ac04994219864c888b9adabb0bbe1c3e8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classUncertaintyMessage_1a38062b8e7e39ff1b361ef31c25ca863a" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classUncertaintyMessage_1afa3ea1016f95fc781421b80801934034" kindref="member">logical_clock</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1a22976339c174432a0ca839d926d586a7" kindref="member">source</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1a8fc1050917aeeda15c3d2ec1f9ba5405" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classUncertaintyMessage_1a56aaaca7f47f2819f1e0cb8e5624b321" kindref="member">content</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/sa-bsn/knowledge_repository/data_access/include/data_access/UncertaintyMessage.hpp"/>
+  </compounddef>
+</doxygen>

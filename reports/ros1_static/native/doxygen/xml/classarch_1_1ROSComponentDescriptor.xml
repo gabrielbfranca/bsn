@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classarch_1_1ROSComponentDescriptor" kind="class" language="C++" prot="public">
+    <compoundname>arch::ROSComponentDescriptor</compoundname>
+    <includes refid="ROSComponentDescriptor_8hpp" local="no">ROSComponentDescriptor.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classarch_1_1ROSComponentDescriptor_1a1e94fef40bb09f54872dc682eebe9941" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string arch::ROSComponentDescriptor::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="27" column="1" bodyfile="src/archlib/include/archlib/ROSComponentDescriptor.hpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" compoundref="ROSComponentDescriptor_8cpp" startline="21" endline="23">getName</referencedby>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" compoundref="ROSComponentDescriptor_8cpp" startline="12" endline="15">operator=</referencedby>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a27e0d45f1bb2184d9d47d88f73871e9f" compoundref="ROSComponentDescriptor_8cpp" startline="17" endline="19">setName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classarch_1_1ROSComponentDescriptor_1abae0c6b53dd6b74adf8969594e90b89d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double arch::ROSComponentDescriptor::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="28" column="1" bodyfile="src/archlib/include/archlib/ROSComponentDescriptor.hpp" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">getFreq</referencedby>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" compoundref="ROSComponentDescriptor_8cpp" startline="12" endline="15">operator=</referencedby>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">setFreq</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1acaa08eaf1b6fc2386b56d73163f78fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::ROSComponentDescriptor::ROSComponentDescriptor</definition>
+        <argsstring>()</argsstring>
+        <name>ROSComponentDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="12" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a9149fc01ac3ad2c104d7b1765a66a46c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>arch::ROSComponentDescriptor::~ROSComponentDescriptor</definition>
+        <argsstring>()</argsstring>
+        <name>~ROSComponentDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="13" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a27e0d45f1bb2184d9d47d88f73871e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::ROSComponentDescriptor::setName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="20" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="17" bodyend="19"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a1e94fef40bb09f54872dc682eebe9941" compoundref="ROSComponentDescriptor_8hpp" startline="27">name</references>
+        <referencedby refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" compoundref="ROSComponent_8cpp" startline="35" endline="41">arch::ROSComponent::ROSComponent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string arch::ROSComponentDescriptor::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="21" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="21" bodyend="23"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a1e94fef40bb09f54872dc682eebe9941" compoundref="ROSComponentDescriptor_8hpp" startline="27">name</references>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" compoundref="ROSComponentDescriptor_8cpp" startline="12" endline="15">operator=</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" compoundref="Component_8cpp" startline="139" endline="146">arch::target_system::Component::sendEnergyStatus</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" compoundref="Component_8cpp" startline="120" endline="128">arch::target_system::Component::sendEvent</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" compoundref="Component_8cpp" startline="130" endline="137">arch::target_system::Component::sendStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arch::ROSComponentDescriptor::setFreq</definition>
+        <argsstring>(const double &amp;freq)</argsstring>
+        <name>setFreq</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="23" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="25" bodyend="27"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1abae0c6b53dd6b74adf8969594e90b89d" compoundref="ROSComponentDescriptor_8hpp" startline="28">freq</references>
+        <referencedby refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" compoundref="CentralHub_8cpp" startline="60" endline="77">CentralHub::reconfigure</referencedby>
+        <referencedby refid="classSensor_1a476760a7dd4be51136bf165e183526cf" compoundref="Sensor_8cpp" startline="101" endline="117">Sensor::reconfigure</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">PatientModule::setUp</referencedby>
+        <referencedby refid="classController_1ac5b5525e1a9fc6914657dd8d943a0928" compoundref="Controller_8cpp" startline="9" endline="36">Controller::setUp</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Effector_1a1af5c14648d7da1d22600914a0dd714e" compoundref="Effector_8cpp" startline="9" endline="13">arch::target_system::Effector::setUp</referencedby>
+        <referencedby refid="classParamAdapter_1a7c0398f646d90dfe7f017a7e972e0eab" compoundref="ParamAdapter_8cpp" startline="6" endline="12">ParamAdapter::setUp</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Probe_1a224b34084b08465e77bf6b1f5668bd29" compoundref="Probe_8cpp" startline="9" endline="17">arch::target_system::Probe::setUp</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5" compoundref="Component_8cpp" startline="9" endline="46">arch::target_system::Component::setUp</referencedby>
+        <referencedby refid="classLogger_1aab1efed2f9f6ac7929b2d8774ee9b70c" compoundref="Logger_8cpp" startline="11" endline="22">Logger::setUp</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">Injector::setUp</referencedby>
+        <referencedby refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5" compoundref="G4T1_8cpp" startline="61" endline="76">G4T1::setUp</referencedby>
+        <referencedby refid="classEngine_1ae0233e4936be42094d3dfd401633cccd" compoundref="Engine_8cpp" startline="10" endline="52">Engine::setUp</referencedby>
+        <referencedby refid="classDataAccess_1a79a37674517514869067d9afbf0417c1" compoundref="DataAccess_8cpp" startline="33" endline="103">DataAccess::setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double arch::ROSComponentDescriptor::getFreq</definition>
+        <argsstring>() const</argsstring>
+        <name>getFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="24" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="29" bodyend="31"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1abae0c6b53dd6b74adf8969594e90b89d" compoundref="ROSComponentDescriptor_8hpp" startline="28">freq</references>
+        <referencedby refid="classEnactor_1abd25ade60e175a09b8a71f2d0c87c7d1" compoundref="Enactor_8cpp" startline="85" endline="98">Enactor::body</referencedby>
+        <referencedby refid="classEngine_1ae164dcb3bf318cb307ab7266974c2064" compoundref="Engine_8cpp" startline="148" endline="176">Engine::body</referencedby>
+        <referencedby refid="classDataAccess_1a01b996865224272d1bcafe6307442422" compoundref="DataAccess_8cpp" startline="116" endline="138">DataAccess::body</referencedby>
+        <referencedby refid="classInjector_1a35650e71bfa5d5fceff437fb8309c7d8" compoundref="Injector_8cpp" startline="41" endline="43">Injector::cycles_in_seconds</referencedby>
+        <referencedby refid="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" compoundref="ROSComponentDescriptor_8cpp" startline="12" endline="15">operator=</referencedby>
+        <referencedby refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" compoundref="CentralHub_8cpp" startline="102" endline="105">CentralHub::recharge</referencedby>
+        <referencedby refid="classarch_1_1ROSComponent_1acb85f671d782a1c628fcbf9b36abf21d" compoundref="ROSComponent_8cpp" startline="44" endline="56">arch::ROSComponent::run</referencedby>
+        <referencedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" compoundref="CentralHub_8cpp" startline="9" endline="33">CentralHub::run</referencedby>
+        <referencedby refid="classSensor_1a1a664cdb090cb4295bbdedcffb1c8499" compoundref="Sensor_8cpp" startline="16" endline="52">Sensor::run</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f" compoundref="Component_8cpp" startline="99" endline="118">arch::target_system::Component::run</referencedby>
+        <referencedby refid="classInjector_1a40fd9b94b6e2de2ae02aa40039d32b44" compoundref="Injector_8cpp" startline="37" endline="39">Injector::seconds_in_cycles</referencedby>
+        <referencedby refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" compoundref="Component_8cpp" startline="120" endline="128">arch::target_system::Component::sendEvent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a510caa4c2fd19f8f39e1306997e6ec55" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>arch::ROSComponentDescriptor::ROSComponentDescriptor</definition>
+        <argsstring>(const ROSComponentDescriptor &amp;)</argsstring>
+        <name>ROSComponentDescriptor</name>
+        <param>
+          <type>const <ref refid="classarch_1_1ROSComponentDescriptor" kindref="compound">ROSComponentDescriptor</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="16" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classarch_1_1ROSComponentDescriptor" kindref="compound">ROSComponentDescriptor</ref> &amp;</type>
+        <definition>ROSComponentDescriptor &amp; arch::ROSComponentDescriptor::operator=</definition>
+        <argsstring>(const ROSComponentDescriptor &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classarch_1_1ROSComponentDescriptor" kindref="compound">ROSComponentDescriptor</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="17" column="1" bodyfile="src/archlib/src/ROSComponentDescriptor.cpp" bodystart="12" bodyend="15"/>
+        <references refid="classarch_1_1ROSComponentDescriptor_1abae0c6b53dd6b74adf8969594e90b89d" compoundref="ROSComponentDescriptor_8hpp" startline="28">freq</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">getFreq</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" compoundref="ROSComponentDescriptor_8cpp" startline="21" endline="23">getName</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a1e94fef40bb09f54872dc682eebe9941" compoundref="ROSComponentDescriptor_8hpp" startline="27">name</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/archlib/include/archlib/ROSComponentDescriptor.hpp" line="9" column="1" bodyfile="src/archlib/include/archlib/ROSComponentDescriptor.hpp" bodystart="9" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classarch_1_1ROSComponentDescriptor_1abae0c6b53dd6b74adf8969594e90b89d" prot="private" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>freq</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" prot="public" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>getFreq</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a462b00745d0de3f98d88f3eb1ba11e45" prot="public" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>getName</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a1e94fef40bb09f54872dc682eebe9941" prot="private" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>name</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a3b6f53faf7606923452d9dcb5e180a81" prot="private" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>operator=</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1acaa08eaf1b6fc2386b56d73163f78fbb" prot="public" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>ROSComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a510caa4c2fd19f8f39e1306997e6ec55" prot="private" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>ROSComponentDescriptor</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" prot="public" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>setFreq</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a27e0d45f1bb2184d9d47d88f73871e9f" prot="public" virt="non-virtual"><scope>arch::ROSComponentDescriptor</scope><name>setName</name></member>
+      <member refid="classarch_1_1ROSComponentDescriptor_1a9149fc01ac3ad2c104d7b1765a66a46c" prot="public" virt="virtual"><scope>arch::ROSComponentDescriptor</scope><name>~ROSComponentDescriptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

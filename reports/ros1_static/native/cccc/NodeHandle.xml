@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module NodeHandle-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="13" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>NodeHandle</name>
+<client_module>
+<name>Component</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="47" />
+</extent>
+<name>DataAccess</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="74" />
+</extent>
+<name>Effector</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Effector.hpp" line="29" />
+</extent>
+<name>G3T1_1</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_1/G3T1_1.hpp" line="48" />
+</extent>
+<name>G3T1_2</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_2/G3T1_2.hpp" line="48" />
+</extent>
+<name>G3T1_3</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_3/G3T1_3.hpp" line="48" />
+</extent>
+<name>G3T1_4</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_4/G3T1_4.hpp" line="48" />
+</extent>
+<name>G3T1_5</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_5/G3T1_5.hpp" line="48" />
+</extent>
+<name>G3T1_6</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g3t1_6/G3T1_6.hpp" line="48" />
+</extent>
+<name>Injector</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/simulation/injector/include/Injector.hpp" line="38" />
+</extent>
+<name>Logger</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="42" />
+</extent>
+<name>PatientModule</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/sa-bsn/environment/patient/include/PatientModule.hpp" line="31" />
+</extent>
+<name>Probe</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="src/archlib/include/archlib/target_system/Probe.hpp" line="34" />
+</extent>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

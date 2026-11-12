@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfixtures_1_1CallBridge" kind="class" language="C++" prot="public">
+    <compoundname>fixtures::CallBridge</compoundname>
+    <includes refid="classes_8hpp" local="no">classes.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfixtures_1_1CallBridge_1a65896f2e0e7f61ac511aaeadd53f1b38" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fixtures::CallBridge::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="5" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfixtures_1_1CallBridge_1abb3bf86ac0eea1067f5477626d9a2c20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fixtures::CallBridge::a</definition>
+        <argsstring>()</argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="5" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfixtures_1_1CallBridge_1ade244578e9d6ca3f16c10c8d101dae06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fixtures::CallBridge::b</definition>
+        <argsstring>()</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tools/ros1_metrics/fixtures/classes.hpp" line="5" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tools/ros1_metrics/fixtures/classes.hpp" line="5" column="1" bodyfile="tools/ros1_metrics/fixtures/classes.hpp" bodystart="5" bodyend="5"/>
+    <listofallmembers>
+      <member refid="classfixtures_1_1CallBridge_1abb3bf86ac0eea1067f5477626d9a2c20" prot="public" virt="non-virtual"><scope>fixtures::CallBridge</scope><name>a</name></member>
+      <member refid="classfixtures_1_1CallBridge_1ade244578e9d6ca3f16c10c8d101dae06" prot="public" virt="non-virtual"><scope>fixtures::CallBridge</scope><name>b</name></member>
+      <member refid="classfixtures_1_1CallBridge_1a65896f2e0e7f61ac511aaeadd53f1b38" prot="private" virt="non-virtual"><scope>fixtures::CallBridge</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

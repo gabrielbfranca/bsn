@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classCentralHub" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CentralHub</compoundname>
+    <basecompoundref refid="classarch_1_1target__system_1_1Component" prot="public" virt="non-virtual">arch::target_system::Component</basecompoundref>
+    <derivedcompoundref refid="classG4T1" prot="public" virt="non-virtual">G4T1</derivedcompoundref>
+    <includes refid="CentralHub_8hpp" local="no">CentralHub.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CentralHub::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="45" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classCentralHub_1af876a75a76d2b8110123d69f29fae6da" compoundref="CentralHub_8cpp" startline="79" endline="81">isActive</referencedby>
+        <referencedby refid="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" compoundref="CentralHub_8cpp" startline="88" endline="91">turnOff</referencedby>
+        <referencedby refid="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" compoundref="CentralHub_8cpp" startline="83" endline="86">turnOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCentralHub_1aff51483cf7afd302270339c38d38ef32" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CentralHub::max_size</definition>
+        <argsstring></argsstring>
+        <name>max_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="46" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">G4T1::collect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCentralHub_1a708713f43449837e25c4bb7510b8d924" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CentralHub::total_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>total_buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="47" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">G4T1::collect</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">G4T1::process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCentralHub_1a6d311af502fb652714855984d29737aa" prot="protected" static="no" mutable="no">
+        <type>std::array&lt; int, 6 &gt;</type>
+        <definition>std::array&lt;int, 6&gt; CentralHub::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="48" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">G4T1::collect</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">G4T1::process</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref></type>
+        <definition>bsn::resource::Battery CentralHub::battery</definition>
+        <argsstring></argsstring>
+        <name>battery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="49" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+        <referencedby refid="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" compoundref="CentralHub_8cpp" startline="5" endline="5">CentralHub</referencedby>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">G4T1::collect</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">G4T1::process</referencedby>
+        <referencedby refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" compoundref="CentralHub_8cpp" startline="102" endline="105">recharge</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCentralHub_1a40b402dd0a71688415f01901e7a29734" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::list&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::list&lt;double&gt; &gt; CentralHub::data_buffer</definition>
+        <argsstring></argsstring>
+        <name>data_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="50" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" compoundref="CentralHub_8cpp" startline="5" endline="5">CentralHub</referencedby>
+        <referencedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d" compoundref="G4T1_8cpp" startline="80" endline="118">G4T1::collect</referencedby>
+        <referencedby refid="classG4T1_1aa829724d9cbc8b1f9e65de530d266802" compoundref="G4T1_8cpp" startline="13" endline="59">G4T1::getPatientStatus</referencedby>
+        <referencedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9" compoundref="G4T1_8cpp" startline="120" endline="163">G4T1::process</referencedby>
+        <referencedby refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5" compoundref="G4T1_8cpp" startline="61" endline="76">G4T1::setUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CentralHub::CentralHub</definition>
+        <argsstring>(int &amp;argc, char **argv, const std::string &amp;name, const bool &amp;active, const bsn::resource::Battery &amp;battery)</argsstring>
+        <name>CentralHub</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>active</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1resource_1_1Battery" kindref="compound">bsn::resource::Battery</ref> &amp;</type>
+          <declname>battery</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="19" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="5" bodyend="5"/>
+        <references refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" compoundref="CentralHub_8hpp" startline="49">battery</references>
+        <references refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" compoundref="CentralHub_8hpp" startline="50">data_buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a039f1cf3a24ad8ef5e7ecbb7300ba4dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CentralHub::~CentralHub</definition>
+        <argsstring>()</argsstring>
+        <name>~CentralHub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="20" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CentralHub::setUp</definition>
+        <argsstring>()=0</argsstring>
+        <name>setUp</name>
+        <reimplements refid="classarch_1_1target__system_1_1Component_1a6a7bf2a65bcc78fc61167205509091a5">setUp</reimplements>
+        <reimplementedby refid="classG4T1_1ad02634c3bf56a245b99bb30f520628c5">setUp</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="26" column="1"/>
+        <referencedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" compoundref="CentralHub_8cpp" startline="9" endline="33">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a33ab84e2d47f41966b7a2c6c8763c755" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CentralHub::tearDown</definition>
+        <argsstring>()=0</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classarch_1_1target__system_1_1Component_1af8115ceb5653f47f04537fb0eb7dfff2">tearDown</reimplements>
+        <reimplementedby refid="classG4T1_1a3027f9c8027d8fe09ae6ca7df2f6ab04">tearDown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int32_t</type>
+        <definition>int32_t CentralHub::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classarch_1_1target__system_1_1Component_1ac590323763a5ea9e7edf1a5e67f8a94f">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="28" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="9" bodyend="33"/>
+        <references refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</references>
+        <references refid="classCentralHub_1a4d658629e1d1fc8dc80ee298173e4c22">collect</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" compoundref="CentralHub_8cpp" startline="60" endline="77">reconfigure</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" compoundref="Component_8cpp" startline="130" endline="137">arch::target_system::Component::sendStatus</references>
+        <references refid="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9">setUp</references>
+        <referencedby refid="g4t1_8cpp_1af19ddca125f05a2090dd132045573ee4" compoundref="g4t1_8cpp" startline="3" endline="6">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a48b13d52b79864e84eae5012108d3211" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CentralHub::body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <reimplements refid="classarch_1_1target__system_1_1Component_1ac473539ffdccdef20318a6c4bfea0b22">body</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="29" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="35" bodyend="55"/>
+        <references refid="classCentralHub_1ad6c1ba1c51d58a420e076fbd27cd2b5c" compoundref="CentralHub_8cpp" startline="57" endline="57">apply_noise</references>
+        <references refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" compoundref="CentralHub_8hpp" startline="49">battery</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" compoundref="Battery_8cpp" startline="80" endline="82">bsn::resource::Battery::getCurrentLevel</references>
+        <references refid="classCentralHub_1af876a75a76d2b8110123d69f29fae6da" compoundref="CentralHub_8cpp" startline="79" endline="81">isActive</references>
+        <references refid="classCentralHub_1a3527f7455ec82af84e32b182221ede80">process</references>
+        <references refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" compoundref="CentralHub_8cpp" startline="102" endline="105">recharge</references>
+        <references refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" compoundref="Component_8cpp" startline="130" endline="137">arch::target_system::Component::sendStatus</references>
+        <references refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" compoundref="CentralHub_8hpp" startline="47">total_buffer_size</references>
+        <references refid="classCentralHub_1a31e4df7094f5d176052056464d5886fa">transfer</references>
+        <references refid="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" compoundref="CentralHub_8cpp" startline="88" endline="91">turnOff</references>
+        <references refid="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" compoundref="CentralHub_8cpp" startline="83" endline="86">turnOn</references>
+        <referencedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" compoundref="CentralHub_8cpp" startline="9" endline="33">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1ad6c1ba1c51d58a420e076fbd27cd2b5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CentralHub::apply_noise</definition>
+        <argsstring>()</argsstring>
+        <name>apply_noise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="30" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="57" bodyend="57"/>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CentralHub::reconfigure</definition>
+        <argsstring>(const archlib::AdaptationCommand::ConstPtr &amp;msg)</argsstring>
+        <name>reconfigure</name>
+        <reimplements refid="classarch_1_1target__system_1_1Component_1ac3b38b32e446d2ae63ea8cd0796810ac">reconfigure</reimplements>
+        <param>
+          <type>const archlib::AdaptationCommand::ConstPtr &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="32" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="60" bodyend="77"/>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a6ae1f0c4c644bce7bc7e99e408dc7ca0" compoundref="ROSComponentDescriptor_8cpp" startline="25" endline="27">arch::ROSComponentDescriptor::setFreq</references>
+        <references refid="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68">bsn::utils::split</references>
+        <referencedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" compoundref="CentralHub_8cpp" startline="9" endline="33">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a4d658629e1d1fc8dc80ee298173e4c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CentralHub::collect</definition>
+        <argsstring>(const messages::SensorData::ConstPtr &amp;sensor_data)=0</argsstring>
+        <name>collect</name>
+        <reimplementedby refid="classG4T1_1a1114e1a7142774484a14d34b69c8535d">collect</reimplementedby>
+        <param>
+          <type>const messages::SensorData::ConstPtr &amp;</type>
+          <declname>sensor_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="34" column="1"/>
+        <referencedby refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" compoundref="CentralHub_8cpp" startline="9" endline="33">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a3527f7455ec82af84e32b182221ede80" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CentralHub::process</definition>
+        <argsstring>()=0</argsstring>
+        <name>process</name>
+        <reimplementedby refid="classG4T1_1a7d7a425b2d7fbbc0aa531cbb6ee5ddd9">process</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="35" column="1"/>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a31e4df7094f5d176052056464d5886fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CentralHub::transfer</definition>
+        <argsstring>()=0</argsstring>
+        <name>transfer</name>
+        <reimplementedby refid="classG4T1_1ace103170a712570f3583900aae954459">transfer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="36" column="1"/>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCentralHub_1a64e94d9a7b007d263a3b770e86ad2cd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCentralHub" kindref="compound">CentralHub</ref> &amp;</type>
+        <definition>CentralHub&amp; CentralHub::operator=</definition>
+        <argsstring>(const CentralHub &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCentralHub" kindref="compound">CentralHub</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1af876a75a76d2b8110123d69f29fae6da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CentralHub::isActive</definition>
+        <argsstring>()</argsstring>
+        <name>isActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="39" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="79" bodyend="81"/>
+        <references refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" compoundref="CentralHub_8hpp" startline="45">active</references>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CentralHub::turnOn</definition>
+        <argsstring>()</argsstring>
+        <name>turnOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="40" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="83" bodyend="86"/>
+        <references refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" compoundref="Component_8cpp" startline="152" endline="155">arch::target_system::Component::activate</references>
+        <references refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" compoundref="CentralHub_8hpp" startline="45">active</references>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CentralHub::turnOff</definition>
+        <argsstring>()</argsstring>
+        <name>turnOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="41" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="88" bodyend="91"/>
+        <references refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" compoundref="CentralHub_8hpp" startline="45">active</references>
+        <references refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" compoundref="Component_8cpp" startline="157" endline="160">arch::target_system::Component::deactivate</references>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CentralHub::recharge</definition>
+        <argsstring>()</argsstring>
+        <name>recharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="42" column="1" bodyfile="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" bodystart="102" bodyend="105"/>
+        <references refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" compoundref="CentralHub_8hpp" startline="49">battery</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1aa7265cd180da80242067253f7f42272c" compoundref="Battery_8cpp" startline="54" endline="58">bsn::resource::Battery::generate</references>
+        <references refid="classbsn_1_1resource_1_1Battery_1a674c7c02100126e91f040bc93f143c7e" compoundref="Battery_8cpp" startline="80" endline="82">bsn::resource::Battery::getCurrentLevel</references>
+        <references refid="classarch_1_1ROSComponentDescriptor_1a4b73f46f37241865a08e75ab202e28eb" compoundref="ROSComponentDescriptor_8cpp" startline="29" endline="31">arch::ROSComponentDescriptor::getFreq</references>
+        <references refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" compoundref="ROSComponent_8hpp" startline="29">arch::ROSComponent::rosComponentDescriptor</references>
+        <referencedby refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" compoundref="CentralHub_8cpp" startline="35" endline="55">body</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+      </node>
+      <node id="4">
+        <label>CentralHub</label>
+        <link refid="classCentralHub"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>G4T1</label>
+        <link refid="classG4T1"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>bsn::resource::Battery</label>
+        <link refid="classbsn_1_1resource_1_1Battery"/>
+      </node>
+      <node id="10">
+        <label>arch::ROSComponent</label>
+        <link refid="classarch_1_1ROSComponent"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>rosComponentDescriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>CentralHub</label>
+        <link refid="classCentralHub"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>battery</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>arch::ROSComponentDescriptor</label>
+        <link refid="classarch_1_1ROSComponentDescriptor"/>
+      </node>
+      <node id="9">
+        <label>arch::target_system::Component</label>
+        <link refid="classarch_1_1target__system_1_1Component"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="16" column="1" bodyfile="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" bodystart="16" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classarch_1_1target__system_1_1Component_1a766a2494155aaa42b3c8162cefb11b77" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>activate</name></member>
+      <member refid="classCentralHub_1a7f1a47c72faa9c25a551aadba922fb7a" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>active</name></member>
+      <member refid="classCentralHub_1ad6c1ba1c51d58a420e076fbd27cd2b5c" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>apply_noise</name></member>
+      <member refid="classCentralHub_1a2f6ad6070c29977f0faab595429d4af9" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>battery</name></member>
+      <member refid="classCentralHub_1a48b13d52b79864e84eae5012108d3211" prot="public" virt="virtual"><scope>CentralHub</scope><name>body</name></member>
+      <member refid="classCentralHub_1a6d311af502fb652714855984d29737aa" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>buffer_size</name></member>
+      <member refid="classCentralHub_1a6ece0353a79e6d460dd3b7d763f4b621" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>CentralHub</name></member>
+      <member refid="classCentralHub_1a4d658629e1d1fc8dc80ee298173e4c22" prot="public" virt="pure-virtual"><scope>CentralHub</scope><name>collect</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a27f9ae94922bb114edb7b23f9b4f6a2b" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>Component</name></member>
+      <member refid="classCentralHub_1a40b402dd0a71688415f01901e7a29734" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>data_buffer</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a7e504b0c12531376d3cca170a23b18e3" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>deactivate</name></member>
+      <member refid="classarch_1_1ROSComponent_1aa5fa36ba1bff54a60c9a0e5498e504f7" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>getRosNodeName</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a36f854f0a56f6c9bf5e8b0df3a0c61a9" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>handle</name></member>
+      <member refid="classCentralHub_1af876a75a76d2b8110123d69f29fae6da" prot="private" virt="non-virtual"><scope>CentralHub</scope><name>isActive</name></member>
+      <member refid="classCentralHub_1aff51483cf7afd302270339c38d38ef32" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>max_size</name></member>
+      <member refid="classCentralHub_1a64e94d9a7b007d263a3b770e86ad2cd6" prot="private" virt="non-virtual"><scope>CentralHub</scope><name>operator=</name></member>
+      <member refid="classCentralHub_1a3527f7455ec82af84e32b182221ede80" prot="public" virt="pure-virtual"><scope>CentralHub</scope><name>process</name></member>
+      <member refid="classCentralHub_1a2993053779a93fb8a3e64aaab4e0b66d" prot="private" virt="non-virtual"><scope>CentralHub</scope><name>recharge</name></member>
+      <member refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" prot="public" virt="virtual"><scope>CentralHub</scope><name>reconfigure</name></member>
+      <member refid="classarch_1_1ROSComponent_1a14aec82a7910613f34f96e64b45749fd" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>ROSComponent</name></member>
+      <member refid="classarch_1_1ROSComponent_1ad718ff3422780f2ada6d6fbf6c06579f" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>rosComponentDescriptor</name></member>
+      <member refid="classCentralHub_1a388e947318a28cf7cac762ac8b1cf3d4" prot="public" virt="virtual"><scope>CentralHub</scope><name>run</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a614676f17763a04020a2095ac541145c" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>sendEnergyStatus</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a9d793970d5fbdef5c31e5ab901b98030" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>sendEvent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1adc6ecb4090656eeac2289ec147a20f81" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>sendStatus</name></member>
+      <member refid="classCentralHub_1a91be8b44d7c4075c20434723c75fc6f9" prot="public" virt="pure-virtual"><scope>CentralHub</scope><name>setUp</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1ab67fdba3849fb31886a7e4d2b032f38c" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>shutdownComponent</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a859fdc651315139921d2b2c5fa75be76" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>sigIntHandler</name></member>
+      <member refid="classCentralHub_1a33ab84e2d47f41966b7a2c6c8763c755" prot="public" virt="pure-virtual"><scope>CentralHub</scope><name>tearDown</name></member>
+      <member refid="classCentralHub_1a708713f43449837e25c4bb7510b8d924" prot="protected" virt="non-virtual"><scope>CentralHub</scope><name>total_buffer_size</name></member>
+      <member refid="classCentralHub_1a31e4df7094f5d176052056464d5886fa" prot="public" virt="pure-virtual"><scope>CentralHub</scope><name>transfer</name></member>
+      <member refid="classCentralHub_1ad814de765eb1163e44fd8aecbfc84a3a" prot="private" virt="non-virtual"><scope>CentralHub</scope><name>turnOff</name></member>
+      <member refid="classCentralHub_1a226e3ea5c1990be13f163bffbbdb62c0" prot="private" virt="non-virtual"><scope>CentralHub</scope><name>turnOn</name></member>
+      <member refid="classCentralHub_1a039f1cf3a24ad8ef5e7ecbb7300ba4dc" prot="public" virt="non-virtual"><scope>CentralHub</scope><name>~CentralHub</name></member>
+      <member refid="classarch_1_1target__system_1_1Component_1a03fb9686f10067a21816e80f0024d7c5" prot="public" virt="virtual"><scope>CentralHub</scope><name>~Component</name></member>
+      <member refid="classarch_1_1ROSComponent_1a7118fa91f4f2e6ac65f35ff7ad2387b9" prot="public" virt="virtual"><scope>CentralHub</scope><name>~ROSComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

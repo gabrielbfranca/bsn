@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_c65bd38cc15a47d47c2d95ca9cdd2092" kind="dir">
+    <compoundname>src/sa-bsn/target_system/components/component/apps</compoundname>
+    <innerfile refid="g3t1__1_8cpp">g3t1_1.cpp</innerfile>
+    <innerfile refid="g3t1__2_8cpp">g3t1_2.cpp</innerfile>
+    <innerfile refid="g3t1__3_8cpp">g3t1_3.cpp</innerfile>
+    <innerfile refid="g3t1__4_8cpp">g3t1_4.cpp</innerfile>
+    <innerfile refid="g3t1__5_8cpp">g3t1_5.cpp</innerfile>
+    <innerfile refid="g3t1__6_8cpp">g3t1_6.cpp</innerfile>
+    <innerfile refid="g4t1_8cpp">g4t1.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sa-bsn/target_system/components/component/apps/"/>
+  </compounddef>
+</doxygen>

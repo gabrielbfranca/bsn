@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classbsn_1_1goalmodel_1_1Context" kind="class" language="C++" prot="public">
+    <compoundname>bsn::goalmodel::Context</compoundname>
+    <includes refid="Context_8hpp" local="no">Context.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Context::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="31" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Context.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" compoundref="Context_8cpp" startline="38" endline="40">getID</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" compoundref="Context_8cpp" startline="30" endline="32">operator==</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" compoundref="Context_8cpp" startline="34" endline="36">setID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Context::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="32" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Context.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" compoundref="Context_8cpp" startline="46" endline="48">getDescription</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" compoundref="Context_8cpp" startline="23" endline="28">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" compoundref="Context_8cpp" startline="42" endline="44">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool bsn::goalmodel::Context::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="33" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Context.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" compoundref="Context_8cpp" startline="54" endline="56">getValue</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" compoundref="Context_8cpp" startline="23" endline="28">operator=</referencedby>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" compoundref="Context_8cpp" startline="50" endline="52">setValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1aee845ddb8b408f2bbc44cfc01a48a982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Context::Context</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;, const bool &amp;)</argsstring>
+        <name>Context</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="12" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Context::Context</definition>
+        <argsstring>()</argsstring>
+        <name>Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="14" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1aa125049f930d3dd9a0a8d37e445d5aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Context::~Context</definition>
+        <argsstring>()</argsstring>
+        <name>~Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="15" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1aff8e02ea20e1f41057f75a113102891d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsn::goalmodel::Context::Context</definition>
+        <argsstring>(const Context &amp;)</argsstring>
+        <name>Context</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="17" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref> &amp;</type>
+        <definition>Context &amp; bsn::goalmodel::Context::operator=</definition>
+        <argsstring>(const Context &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="18" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="23" bodyend="28"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" compoundref="Context_8hpp" startline="32">description</references>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" compoundref="Context_8cpp" startline="46" endline="48">getDescription</references>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" compoundref="Context_8cpp" startline="38" endline="40">getID</references>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" compoundref="Context_8cpp" startline="54" endline="56">getValue</references>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" compoundref="Context_8hpp" startline="33">value</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::goalmodel::Context::operator==</definition>
+        <argsstring>(const Context &amp;)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <defname>rhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="19" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="30" bodyend="32"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" compoundref="Context_8hpp" startline="31">id</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Context::setID</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="21" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="34" bodyend="36"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" compoundref="Context_8hpp" startline="31">id</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Context::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="22" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="38" bodyend="40"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" compoundref="Context_8hpp" startline="31">id</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" compoundref="Context_8cpp" startline="23" endline="28">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Context::setDescription</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>description</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="24" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="42" bodyend="44"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" compoundref="Context_8hpp" startline="32">description</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string bsn::goalmodel::Context::getDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>getDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="25" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="46" bodyend="48"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" compoundref="Context_8hpp" startline="32">description</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" compoundref="Context_8cpp" startline="23" endline="28">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsn::goalmodel::Context::setValue</definition>
+        <argsstring>(const bool &amp;)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>const bool &amp;</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="27" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="50" bodyend="52"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" compoundref="Context_8hpp" startline="33">value</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bsn::goalmodel::Context::getValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="28" column="1" bodyfile="src/libbsn/src/goalmodel/Context.cpp" bodystart="54" bodyend="56"/>
+        <references refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" compoundref="Context_8hpp" startline="33">value</references>
+        <referencedby refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" compoundref="Context_8cpp" startline="23" endline="28">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="9" column="1" bodyfile="src/libbsn/include/libbsn/goalmodel/Context.hpp" bodystart="9" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1aee845ddb8b408f2bbc44cfc01a48a982" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>Context</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a510da85456be79aac667c231e6bb6d4d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>Context</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1aff8e02ea20e1f41057f75a113102891d" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>Context</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1afb4e7d26a066b5c14926b33d0174371a" prot="private" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>description</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a9f20ad24f09de5021153ee43849bc761" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>getDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a1a85b9742883830048170eb0e0d6ec63" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>getID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1ae83fe1b52f926d67ca2abafc9d47484a" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>getValue</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a51faad0512dda014ea0ce978c2cbf908" prot="private" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>id</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1aaeac2023a360724dce59ed1c340a6558" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>operator=</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a3a40c8a3824d51deb8012c1b2ddcb7ea" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>operator==</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1af454662129916422579d71096f649bc7" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>setDescription</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a45f2aef98718ee50e7f2e315f4cec838" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>setID</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1aadd6c3dc4944e548bfac20497d52789b" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>setValue</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1a4cf0de1b33d505fbd733cca6e0cd4627" prot="private" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>value</name></member>
+      <member refid="classbsn_1_1goalmodel_1_1Context_1aa125049f930d3dd9a0a8d37e445d5aa8" prot="public" virt="non-virtual"><scope>bsn::goalmodel::Context</scope><name>~Context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

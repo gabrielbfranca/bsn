@@ -1,3 +1,24 @@
+# Isolated runtime for modern VS Code Server; ROS keeps Ubuntu 18.04's libc.
+FROM ubuntu:22.04 AS vscode-runtime
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        autoconf automake build-essential ca-certificates curl && \
+    mkdir -p /tmp/runtime-packages /opt/vscode-sysroot && \
+    cd /tmp/runtime-packages && \
+    apt-get download libc6 libstdc++6 libgcc-s1 && \
+    for package in ./*.deb; do dpkg-deb -x "$package" /opt/vscode-sysroot; done
+
+# Build patchelf statically so it can also execute on Bionic.
+# VS Code recommends patchelf >= 0.18 for the custom-runtime workaround.
+RUN curl -fsSL --retry 3 \
+        https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.bz2 \
+        -o /tmp/patchelf.tar.bz2 && \
+    tar -xjf /tmp/patchelf.tar.bz2 -C /tmp && \
+    cd /tmp/patchelf-0.18.0 && \
+    ./configure --prefix=/opt/vscode-sysroot LDFLAGS=-static && \
+    make -j2 && make install
+
 FROM ros:melodic-ros-core-bionic
 
 RUN apt update &&\
@@ -5,9 +26,16 @@ RUN apt update &&\
     sudo rosdep init && rosdep update &&\
     pip3 install pandas &&\
     pip3 install behave &&\
-    sudo apt-get install python3-rosdep python3-rosinstall-generator python3-vcstool &&\
-    sudo apt-get install python3-pybind11 &&\
-    sudo apt-get install python-pybind11
+    sudo apt-get install -y python3-rosdep python3-rosinstall-generator python3-vcstool &&\
+    sudo apt-get install -y python3-pybind11 &&\
+    sudo apt-get install -y python-pybind11
+
+COPY --from=vscode-runtime /opt/vscode-sysroot /opt/vscode-sysroot
+
+# Scope the newer libc to VS Code; do not set LD_LIBRARY_PATH for ROS tools.
+ENV VSCODE_SERVER_CUSTOM_GLIBC_LINKER=/opt/vscode-sysroot/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+ENV VSCODE_SERVER_CUSTOM_GLIBC_PATH=/opt/vscode-sysroot/lib/x86_64-linux-gnu:/opt/vscode-sysroot/usr/lib/x86_64-linux-gnu
+ENV VSCODE_SERVER_PATCHELF_PATH=/opt/vscode-sysroot/bin/patchelf
 
 
 ENV DISPLAY=:0

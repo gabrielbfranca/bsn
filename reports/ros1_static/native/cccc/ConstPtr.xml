@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module ConstPtr-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="12" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>ConstPtr</name>
+<client_module>
+<name>CentralHub</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="32" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/CentralHub.hpp" line="34" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/CentralHub.cpp" line="60" />
+</extent>
+<name>Component</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Component.hpp" line="40" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Component.cpp" line="148" />
+</extent>
+<name>Controller</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/controller/Controller.hpp" line="20" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Controller.cpp" line="38" />
+</extent>
+<name>DataAccess</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="69" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/include/data_access/DataAccess.hpp" line="71" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="107" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/knowledge_repository/data_access/src/DataAccess.cpp" line="140" />
+</extent>
+<name>Effector</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Effector.hpp" line="26" />
+</extent>
+<name>Enactor</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/include/enactor/Enactor.hpp" line="41" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/enactor/src/Enactor.cpp" line="71" />
+</extent>
+<name>Engine</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/include/engine/Engine.hpp" line="49" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/system_manager/adaptation_engine/src/Engine.cpp" line="65" />
+</extent>
+<name>G4T1</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/g4t1/G4T1.hpp" line="42" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/g4t1/G4T1.cpp" line="80" />
+</extent>
+<name>Logger</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="37" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/include/Logger.hpp" line="39" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" line="65" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" line="78" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/logging_infrastructure/logger/src/Logger.cpp" line="92" />
+</extent>
+<name>ParamAdapter</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/effectors/param_adapter/include/param_adapter/ParamAdapter.hpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/effectors/param_adapter/src/ParamAdapter.cpp" line="23" />
+</extent>
+<name>Probe</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Probe.hpp" line="29" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Probe.hpp" line="30" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/include/archlib/target_system/Probe.hpp" line="31" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Probe.cpp" line="22" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Probe.cpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/archlib/src/target_system/Probe.cpp" line="32" />
+</extent>
+<name>Sensor</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp" line="34" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/include/component/Sensor.hpp" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/Sensor.cpp" line="101" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/sa-bsn/target_system/components/component/src/Sensor.cpp" line="119" />
+</extent>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

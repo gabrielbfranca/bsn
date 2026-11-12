@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn_1_1goalmodel" kind="namespace" language="C++">
+    <compoundname>bsn::goalmodel</compoundname>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Context" prot="public">bsn::goalmodel::Context</innerclass>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Goal" prot="public">bsn::goalmodel::Goal</innerclass>
+    <innerclass refid="classbsn_1_1goalmodel_1_1GoalTree" prot="public">bsn::goalmodel::GoalTree</innerclass>
+    <innerclass refid="classbsn_1_1goalmodel_1_1LeafTask" prot="public">bsn::goalmodel::LeafTask</innerclass>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Node" prot="public">bsn::goalmodel::Node</innerclass>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Property" prot="public">bsn::goalmodel::Property</innerclass>
+    <innerclass refid="classbsn_1_1goalmodel_1_1Task" prot="public">bsn::goalmodel::Task</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebsn_1_1goalmodel_1ae667127e89e6ad5a47bc0c6e86601687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; bsn::goalmodel::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const Node &amp;node)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classbsn_1_1goalmodel_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/src/goalmodel/Node.cpp" line="32" column="1" bodyfile="src/libbsn/src/goalmodel/Node.cpp" bodystart="32" bodyend="34"/>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1ac7e1c2bc59a420499d0dac0a1593282e" compoundref="Node_8cpp" startline="56" endline="58">bsn::goalmodel::Node::getChildren</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1a6e9b650e57a8951f241d88267a4521e7" compoundref="Node_8cpp" startline="48" endline="50">bsn::goalmodel::Node::getDescription</references>
+        <references refid="classbsn_1_1goalmodel_1_1Node_1ae0ad7ddec09e54734821a25e84677553" compoundref="Node_8cpp" startline="40" endline="42">bsn::goalmodel::Node::getID</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/goalmodel/Context.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

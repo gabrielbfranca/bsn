@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacebsn_1_1utils" kind="namespace" language="C++">
+    <compoundname>bsn::utils</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebsn_1_1utils_1acf8b93a0d1b46cb065d16a9e79bc9c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; bsn::utils::split</definition>
+        <argsstring>(const std::string &amp;, const char &amp;)</argsstring>
+        <name>split</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/include/libbsn/utils/utils.hpp" line="10" column="1"/>
+        <referencedby refid="classPatientModule_1aa6a17cfd6d72002d9b493f0198b37edf" compoundref="PatientModule_8cpp" startline="41" endline="84">PatientModule::configureDataGenerator</referencedby>
+        <referencedby refid="classReliabilityEngine_1a7837ed9e42d0b47872fe862cf0a4b63f" compoundref="ReliabilityEngine_8cpp" startline="313" endline="360">ReliabilityEngine::execute</referencedby>
+        <referencedby refid="classCostEngine_1af1d8ce6fb8bfdb627e60879e98e929df" compoundref="CostEngine_8cpp" startline="393" endline="441">CostEngine::execute</referencedby>
+        <referencedby refid="classSensor_1a941f539d5f022334095705710338469c" compoundref="Sensor_8cpp" startline="119" endline="131">Sensor::injectUncertainty</referencedby>
+        <referencedby refid="classCostEngine_1a0f1a60c2da68544287595ac66d070fe2" compoundref="CostEngine_8cpp" startline="73" endline="176">CostEngine::monitor</referencedby>
+        <referencedby refid="classReliabilityEngine_1afe74f85b5bb905500dec2f93586e0045" compoundref="ReliabilityEngine_8cpp" startline="71" endline="173">ReliabilityEngine::monitor</referencedby>
+        <referencedby refid="classDataAccess_1a8bf4ba9143c8a274736aedbdacde9991" compoundref="DataAccess_8cpp" startline="202" endline="261">DataAccess::processQuery</referencedby>
+        <referencedby refid="classEngine_1aea9c523a0feb05871f020d4fd4f417e4" compoundref="Engine_8cpp" startline="65" endline="84">Engine::receiveException</referencedby>
+        <referencedby refid="classEnactor_1a9e10c68a47e83737f8b45b9c504cdc97" compoundref="Enactor_8cpp" startline="29" endline="69">Enactor::receiveStatus</referencedby>
+        <referencedby refid="classEnactor_1aee03d216ab1a7ed1b841cefac05541c5" compoundref="Enactor_8cpp" startline="71" endline="83">Enactor::receiveStrategy</referencedby>
+        <referencedby refid="classCentralHub_1a72336916ee15e722ee0b9f2c7c3747b6" compoundref="CentralHub_8cpp" startline="60" endline="77">CentralHub::reconfigure</referencedby>
+        <referencedby refid="classSensor_1a476760a7dd4be51136bf165e183526cf" compoundref="Sensor_8cpp" startline="101" endline="117">Sensor::reconfigure</referencedby>
+        <referencedby refid="classPatientModule_1a274d7a866de69b39ac08cbf8720b445c" compoundref="PatientModule_8cpp" startline="7" endline="39">PatientModule::setUp</referencedby>
+        <referencedby refid="classInjector_1ac7658d4d7db234ed9237fd186392c2b8" compoundref="Injector_8cpp" startline="7" endline="33">Injector::setUp</referencedby>
+        <referencedby refid="classG3T1__3_1a9dc06dbfd79fe9186c2583d3427bd349" compoundref="G3T1__3_8cpp" startline="21" endline="81">G3T1_3::setUp</referencedby>
+        <referencedby refid="classG3T1__4_1a0c30d795add04bf4e459650f28ab8de5" compoundref="G3T1__4_8cpp" startline="21" endline="81">G3T1_4::setUp</referencedby>
+        <referencedby refid="classG3T1__2_1adf0bd406c544363148fdedc04638c327" compoundref="G3T1__2_8cpp" startline="19" endline="79">G3T1_2::setUp</referencedby>
+        <referencedby refid="classG3T1__6_1a18cb80842d7823ae9929b29af6ab89e8" compoundref="G3T1__6_8cpp" startline="22" endline="82">G3T1_6::setUp</referencedby>
+        <referencedby refid="classG3T1__1_1afc0406d8cf445068c7f9ffea7293e99c" compoundref="G3T1__1_8cpp" startline="21" endline="83">G3T1_1::setUp</referencedby>
+        <referencedby refid="classG3T1__5_1a3978c48f730a640b8af43d100144ed71" compoundref="G3T1__5_8cpp" startline="21" endline="81">G3T1_5::setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebsn_1_1utils_1a860932c30d471d3622987022c1cc4327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; string &gt;</type>
+        <definition>const vector&lt;string&gt; bsn::utils::split</definition>
+        <argsstring>(const string &amp;s, const char &amp;c)</argsstring>
+        <name>split</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/libbsn/src/utils/utils.cpp" line="8" column="1" bodyfile="src/libbsn/src/utils/utils.cpp" bodystart="8" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/libbsn/include/libbsn/utils/utils.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>
